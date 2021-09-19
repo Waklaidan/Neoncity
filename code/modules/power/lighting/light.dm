@@ -107,34 +107,39 @@
 	return ..()
 
 /obj/machinery/light/update_icon_state()
-	switch(status) // set icon_states
-		if(LIGHT_OK)
-			var/area/local_area = get_area(src)
-			if(emergency_mode || (local_area?.fire))
-				icon_state = "[base_state]_emergency"
-			else
-				icon_state = "[base_state]"
-		if(LIGHT_EMPTY)
-			icon_state = "[base_state]-empty"
-		if(LIGHT_BURNED)
-			icon_state = "[base_state]-burned"
-		if(LIGHT_BROKEN)
-			icon_state = "[base_state]-broken"
-	return ..()
+	. = ..()
+	icon_state = "[base_state]-empty"
+	update_overlays()
+
 
 /obj/machinery/light/update_overlays()
 	. = ..()
-	if(!on || status != LIGHT_OK)
-		return
 
-	var/area/local_area = get_area(src)
-	if(emergency_mode || (local_area?.fire))
-		. += mutable_appearance(overlay_icon, "[base_state]_emergency")
-		return
-	if(nightshift_enabled)
-		. += mutable_appearance(overlay_icon, "[base_state]_nightshift")
-		return
-	. += mutable_appearance(overlay_icon, base_state)
+	switch(status)		// set icon_states
+		if(LIGHT_OK)
+			var/area/A = get_area(src)
+			if(emergency_mode || (A?.fire))
+				. += mutable_appearance(icon, "[base_state]-emergency", alpha = src.alpha)
+			else
+				. += mutable_appearance(icon, "[base_state]-light", alpha = src.alpha)
+				. += emissive_appearance(icon, "[base_state]-light", alpha = src.alpha)
+
+		else if(LIGHT_BURNED)
+			. += mutable_appearance(icon, "[base_state]-burned", alpha = src.alpha)
+		else if(LIGHT_BROKEN)
+			. += mutable_appearance(icon, "[base_state]-broken", alpha = src.alpha)
+
+	if(on && status == LIGHT_OK)
+		var/area/A = get_area(src)
+		if(emergency_mode || (A?.fire))
+			. += mutable_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
+			. += emissive_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
+		else if (nightshift_enabled)
+			. += mutable_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
+			. += emissive_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
+		else
+			. += mutable_appearance(overlay_icon, base_state, alpha = src.alpha)
+			. += emissive_appearance(overlay_icon, base_state, alpha = src.alpha)
 
 // update the icon_state and luminosity of the light depending on its state
 /obj/machinery/light/proc/update(trigger = TRUE)
@@ -599,3 +604,13 @@
 	layer = 2.5
 	light_type = /obj/item/light/bulb
 	fitting = "bulb"
+
+/obj/machinery/light/wall
+	name = "square wall light"
+	icon = 'icons/obj/lighting.dmi'
+	base_state = "wall"		// base description and icon_state
+	icon_state = "wall"
+	brightness = 4
+	light_type = /obj/item/light/square
+	fitting = "bulb"
+	bulb_colour = "#FFD6AA"
