@@ -124,7 +124,8 @@
 				. += mutable_appearance(icon, "[base_state]-emergency", alpha = src.alpha, color = COLOR_RED)
 			else	//if not, show the normal icon
 				. += mutable_appearance(icon, "[base_state]-light", alpha = src.alpha, color =  bulb_colour)
-				. += emissive_appearance(icon, "[base_state]-light", alpha = src.alpha)
+				if(on)
+					. += emissive_appearance(icon, "[base_state]-light", alpha = src.alpha)
 
 		if(LIGHT_BURNED) // if it's burned, it's a broken light
 			. += mutable_appearance(icon, "[base_state]-burned", alpha = src.alpha)
