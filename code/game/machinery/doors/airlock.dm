@@ -21,12 +21,12 @@
 /// Someone, for the love of god, profile this.  Is there a reason to cache mutable_appearance
 /// if so, why are we JUST doing the airlocks when we can put this in mutable_appearance.dm for
 /// everything
-/proc/get_airlock_overlay(icon_state, icon_file, em_block)
+/proc/get_airlock_overlay(icon_state, icon_file, em_block, colour)
 	var/static/list/airlock_overlays = list()
 
-	var/base_icon_key = "[icon_state][icon_file]"
+	var/base_icon_key = "[icon_state][icon_file][colour]"
 	if(!(. = airlock_overlays[base_icon_key]))
-		. = airlock_overlays[base_icon_key] = mutable_appearance(icon_file, icon_state)
+		. = airlock_overlays[base_icon_key] = mutable_appearance(icon_file, icon_state, color = colour)
 	if(isnull(em_block))
 		return
 

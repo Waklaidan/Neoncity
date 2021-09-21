@@ -24,6 +24,7 @@
 	var/static/list/lighttile_designs
 	///used for light floors that cycle colours
 	var/cycle = FALSE
+	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN)
 
 /turf/open/floor/light/setup_broken_states()
 	return list("light_broken")

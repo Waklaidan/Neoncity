@@ -68,6 +68,14 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	///the holodeck can load onto this turf if TRUE
 	var/holodeck_compatible = FALSE
 
+	//turf painting
+	var/base_color = ""
+	var/paint_color = ""
+
+	var/pattern_type = 'icons/turf/walls/stripes.dmi' // icon file for the pattern
+	var/pattern_color = ""
+	var/pattern_glow = FALSE // if pattern is added, does it glow?
+
 	/// If this turf contained an RCD'able object (or IS one, for walls)
 	/// but is now destroyed, this will preserve the value.
 	/// See __DEFINES/construction.dm for RCD_MEMORY_*.
@@ -78,6 +86,29 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	if(var_name in banned_edits)
 		return FALSE
 	. = ..()
+
+/turf/set_smoothed_icon_state()
+	..()
+	update_overlays()
+
+/turf/update_overlays()
+	. = ..()
+
+	//remove overlays
+	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
+	set_light(0)
+
+	if(base_color || paint_color)
+		var/applied_color = (paint_color ? paint_color : base_color)
+		. += mutable_appearance(icon, icon_state, alpha = 200, color = applied_color)
+
+	//readd overlays
+	if(pattern_type && pattern_color)
+		. += mutable_appearance(pattern_type, smoothing_junction, alpha = 255, color = pattern_color)
+
+		if(pattern_glow)
+			set_light(2,2, pattern_color)
+			. += emissive_appearance(pattern_type, smoothing_junction, alpha = 255)
 
 /**
  * Turf Initialize
