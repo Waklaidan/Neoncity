@@ -367,3 +367,94 @@
 	base_icon_state = "sepia"
 	desc = "Well, the flow of time is normal on these tiles, weird."
 	floor_tile = /obj/item/stack/tile/iron/sepia
+
+// colored tiles
+/turf/open/floor/iron/color
+	icon_state = "white"
+	base_icon_state = "white"
+
+//normal
+/turf/open/floor/iron/color/red
+	color = "#ad5349"
+
+/turf/open/floor/iron/color/green
+	color = "#74ad49"
+
+/turf/open/floor/iron/color/yellow
+	color = "#adad49"
+
+/turf/open/floor/iron/color/blue
+	color = "#4976ad"
+
+/turf/open/floor/iron/color/turq
+	color = "#49ada5"
+
+/turf/open/floor/iron/color/pink
+	color = "#ad495f"
+
+/turf/open/floor/iron/color/purp
+	color = "#a249ad"
+
+/turf/open/floor/iron/color/orange
+	color = "#a86632"
+
+/turf/open/floor/iron/color/brown
+	color = "#82522e"
+
+//light
+/turf/open/floor/iron/color/light/red
+	color = "#f04943"
+
+/turf/open/floor/iron/color/light/green
+	color = "#9af043"
+
+/turf/open/floor/iron/color/light/yellow
+	color = "#edf043"
+
+/turf/open/floor/iron/color/light/blue
+	color = "#438ef0"
+
+/turf/open/floor/iron/color/light/turq
+	color = "#43f0dc"
+
+/turf/open/floor/iron/color/light/pink
+	color = "#f04394"
+
+/turf/open/floor/iron/color/light/purp
+	color = "#cd43f0"
+
+/turf/open/floor/iron/color/light/orange
+	color = "#ad7949"
+
+//dark
+/turf/open/floor/iron/color/dark
+	icon_state = "darkfull"
+	base_icon_state = "darkfull"
+
+/turf/open/floor/iron/color/dark/red
+	color = "#ad5349"
+
+/turf/open/floor/iron/color/dark/green
+	color = "#74ad49"
+
+/turf/open/floor/iron/color/dark/yellow
+	color = "#adad49"
+
+/turf/open/floor/iron/color/dark/blue
+	color = "#4976ad"
+
+/turf/open/floor/iron/color/dark/turq
+	color = "#49ada5"
+
+/turf/open/floor/iron/color/dark/pink
+	color = "#ad495f"
+
+/turf/open/floor/iron/color/dark/purp
+	color = "#a249ad"
+
+/turf/open/floor/iron/color/dark/orange
+	color = "#a86632"
+
+/turf/open/floor/iron/white
+	icon_state = "white"
+	base_icon_state = "white"

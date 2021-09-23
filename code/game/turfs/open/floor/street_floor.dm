@@ -9,7 +9,7 @@
 	floor_tile = /obj/item/stack/tile/pavement
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_PAVEMENT)
-	canSmoothWith = list(SMOOTH_GROUP_PAVEMENT, SMOOTH_GROUP_CLOSED_TURFS)
+	canSmoothWith = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_PAVEMENT, SMOOTH_GROUP_CLOSED_TURFS)
 	flags_1 = NONE
 	bullet_bounce_sound = null
 	tiled_dirt = FALSE
@@ -41,6 +41,7 @@
 	icon_state = "road"
 	floor_tile = /obj/item/stack/tile/road
 	tiled_dirt = FALSE
+	smoothing_groups = list()
 
 /turf/open/floor/brick_paving
 	name = "brick paving"

@@ -320,3 +320,7 @@
 
 /obj/effect/turf_decal/siding/wideplating/dark/end
 	icon_state = "siding_wideplating_end"
+
+/obj/effect/turf_decal/pavement_grit/New()
+	icon_state = "pavement_grit[rand(1,4)]"
+	..()

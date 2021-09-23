@@ -72,7 +72,8 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	var/base_color = ""
 	var/paint_color = ""
 
-	var/pattern_type = 'icons/turf/walls/stripes.dmi' // icon file for the pattern
+	var/pattern_type = 'icons/turf/walls/patterns/stripes.dmi' // icon file for the pattern
+	var/paint_type = 'icons/turf/walls/paint.dmi'
 	var/pattern_color = ""
 	var/pattern_glow = FALSE // if pattern is added, does it glow?
 
@@ -87,15 +88,18 @@ GLOBAL_LIST_EMPTY(station_turfs)
 		return FALSE
 	. = ..()
 
+	update_icon()
+
 /turf/set_smoothed_icon_state()
 	..()
 	update_overlays()
 
 /turf/update_overlays()
 	. = ..()
+	if(color)
+		base_color = color
+		color = null
 
-	//remove overlays
-	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
 	set_light(0)
 
 	if(base_color || paint_color)
@@ -104,11 +108,11 @@ GLOBAL_LIST_EMPTY(station_turfs)
 
 	//readd overlays
 	if(pattern_type && pattern_color)
-		. += mutable_appearance(pattern_type, smoothing_junction, alpha = 255, color = pattern_color)
+		. += mutable_appearance(pattern_type, "[smoothing_junction]", alpha = 255, color = pattern_color)
 
 		if(pattern_glow)
 			set_light(2,2, pattern_color)
-			. += emissive_appearance(pattern_type, smoothing_junction, alpha = 255)
+			. += emissive_appearance(pattern_type, "[smoothing_junction]", alpha = 255)
 
 /**
  * Turf Initialize

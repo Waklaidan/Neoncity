@@ -623,3 +623,17 @@
 	light_type = /obj/item/light/square
 	fitting = "bulb"
 	bulb_colour = "#FFD6AA"
+
+/obj/machinery/light/street
+	name = "street light"
+	icon = 'icons/obj/lighting_street.dmi'
+	base_state = "streetlight"		// base description and icon_state
+	icon_state = "streetlight"
+	brightness = 8
+	bulb_power = 1
+	light_type = /obj/item/light/bulb
+	fitting = "bulb"
+	bulb_colour = "#33ccff"
+	density = 1
+	layer = FLY_LAYER
+

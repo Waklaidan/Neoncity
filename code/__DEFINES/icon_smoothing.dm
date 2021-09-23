@@ -93,7 +93,6 @@ DEFINE_BITFIELD(smoothing_flags, list(
 #define SMOOTH_GROUP_CARPET_SIMPLE_NEON_PURPLE_NODOTS S_TURF(49) //![turf/open/floor/carpet/neon/simple/purple/nodots]
 #define SMOOTH_GROUP_CARPET_SIMPLE_NEON_VIOLET_NODOTS S_TURF(50) //![turf/open/floor/carpet/neon/simple/violet/nodots]
 #define SMOOTH_GROUP_CARPET_SIMPLE_NEON_PINK_NODOTS S_TURF(51) //![turf/open/floor/carpet/neon/simple/pink/nodots]
-#define SMOOTH_GROUP_PAVEMENT S_TURF(52)						///turf/open/floor/pavement
 
 #define SMOOTH_GROUP_CLOSED_TURFS S_TURF(52) ///turf/closed
 #define SMOOTH_GROUP_MATERIAL_WALLS S_TURF(53) ///turf/closed/wall/material
@@ -103,7 +102,9 @@ DEFINE_BITFIELD(smoothing_flags, list(
 #define SMOOTH_GROUP_BOSS_WALLS S_TURF(57) ///turf/closed/indestructible/riveted/boss
 #define SMOOTH_GROUP_SURVIVAL_TITANIUM_WALLS S_TURF(58) ///turf/closed/wall/mineral/titanium/survival
 
-#define MAX_S_TURF SMOOTH_GROUP_SURVIVAL_TITANIUM_WALLS //Always match this value with the one above it.
+#define SMOOTH_GROUP_PAVEMENT S_TURF(59)						///turf/open/floor/pavement
+
+#define MAX_S_TURF SMOOTH_GROUP_PAVEMENT //Always match this value with the one above it.
 
 
 #define S_OBJ(num) (MAX_S_TURF + 1 + num)

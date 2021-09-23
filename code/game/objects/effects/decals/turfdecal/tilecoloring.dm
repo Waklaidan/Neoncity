@@ -21,6 +21,25 @@
 
 #undef PRIDE_ALPHA
 
+// Black tiles
+
+/obj/effect/turf_decal/tile/black
+	name = "black corner"
+	color = "#0a0a0a"
+	alpha = 215
+
+/obj/effect/turf_decal/tile/black/half
+	icon_state = "tile_half"
+	name = "black half"
+
+/obj/effect/turf_decal/tile/black/anticorner
+	icon_state = "tile_anticorner"
+	name = "black anticorner"
+
+/obj/effect/turf_decal/tile/black/full
+	icon_state = "tile_full"
+	name = "black full"
+
 /// Blue tiles
 
 /obj/effect/turf_decal/tile/blue
@@ -206,6 +225,147 @@
 /obj/effect/turf_decal/tile/random/Initialize(mapload)
 	color = "#[random_short_color()]"
 	. = ..()
+
+// diagonal corners
+/obj/effect/turf_decal/tile/diagonal
+	icon_state = "tile_diagonal"
+
+/obj/effect/turf_decal/tile/diagonal/black
+	name = "black diagonal corner"
+	color = "#0a0a0a"
+	alpha = 215
+
+/obj/effect/turf_decal/tile/diagonal/blue
+	name = "blue diagonal corner"
+	color = "#52B4E9"
+
+/obj/effect/turf_decal/tile/diagonal/green
+	name = "green diagonal corner"
+	color = "#9FED58"
+
+/obj/effect/turf_decal/tile/diagonal/yellow
+	name = "yellow diagonal corner"
+	color = "#EFB341"
+
+/obj/effect/turf_decal/tile/diagonal/red
+	name = "red diagonal corner"
+	color = "#DE3A3A"
+
+/obj/effect/turf_decal/tile/diagonal/bar
+	name = "bar diagonal corner"
+	color = "#791500"
+	alpha = 130
+
+/obj/effect/turf_decal/tile/diagonal/purple
+	name = "purple diagonal corner"
+	color = "#D381C9"
+
+/obj/effect/turf_decal/tile/diagonal/brown
+	name = "brown diagonal corner"
+	color = "#A46106"
+
+/obj/effect/turf_decal/tile/diagonal/neutral
+	name = "neutral diagonal corner"
+	color = "#D4D4D4"
+	alpha = 50
+
+/obj/effect/turf_decal/tile/diagonal/random // so many colors
+	name = "colorful diagonal corner"
+	color = "#E300FF" //bright pink as default for mapping
+
+//three-quarter corners
+/obj/effect/turf_decal/tile/threequarter
+	icon_state = "tile_three_quarters"
+
+/obj/effect/turf_decal/tile/threequarter/black
+	name = "black threequarter corner"
+	color = "#0a0a0a"
+	alpha = 215
+
+/obj/effect/turf_decal/tile/threequarter/blue
+	name = "blue threequarter corner"
+	color = "#52B4E9"
+
+/obj/effect/turf_decal/tile/threequarter/green
+	name = "green threequarter corner"
+	color = "#9FED58"
+
+/obj/effect/turf_decal/tile/threequarter/yellow
+	name = "yellow threequarter corner"
+	color = "#EFB341"
+
+/obj/effect/turf_decal/tile/threequarter/red
+	name = "red threequarter corner"
+	color = "#DE3A3A"
+
+/obj/effect/turf_decal/tile/threequarter/bar
+	name = "bar threequarter corner"
+	color = "#791500"
+	alpha = 130
+
+/obj/effect/turf_decal/tile/threequarter/purple
+	name = "purple threequarter corner"
+	color = "#D381C9"
+
+/obj/effect/turf_decal/tile/threequarter/brown
+	name = "brown threequarter corner"
+	color = "#A46106"
+
+/obj/effect/turf_decal/tile/threequarter/neutral
+	name = "neutral threequarter corner"
+	color = "#D4D4D4"
+	alpha = 50
+
+/obj/effect/turf_decal/tile/threequarter/random // so many colors
+	name = "colorful threequarter corner"
+	color = "#E300FF" //bright pink as default for mapping
+
+// straight corners
+/obj/effect/turf_decal/tile/straight
+	icon_state = "tile_straight"
+
+/obj/effect/turf_decal/tile/straight/black
+	name = "black straight corner"
+	color = "#0a0a0a"
+	alpha = 215
+
+/obj/effect/turf_decal/tile/straight/blue
+	name = "blue straight corner"
+	color = "#52B4E9"
+
+/obj/effect/turf_decal/tile/straight/green
+	name = "green straight corner"
+	color = "#9FED58"
+
+/obj/effect/turf_decal/tile/straight/yellow
+	name = "yellow straight corner"
+	color = "#EFB341"
+
+/obj/effect/turf_decal/tile/straight/red
+	name = "red straight corner"
+	color = "#DE3A3A"
+
+/obj/effect/turf_decal/tile/straight/bar
+	name = "bar straight corner"
+	color = "#791500"
+	alpha = 130
+
+/obj/effect/turf_decal/tile/straight/purple
+	name = "purple straight corner"
+	color = "#D381C9"
+
+/obj/effect/turf_decal/tile/straight/brown
+	name = "brown straight corner"
+	color = "#A46106"
+
+/obj/effect/turf_decal/tile/straight/neutral
+	name = "neutral straight corner"
+	color = "#D4D4D4"
+	alpha = 50
+
+/obj/effect/turf_decal/tile/straight/random // so many colors
+	name = "colorful straight corner"
+	color = "#E300FF" //bright pink as default for mapping
 
 /// Trimlines
 
