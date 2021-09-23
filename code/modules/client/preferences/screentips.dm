@@ -15,4 +15,4 @@
 	client.mob?.hud_used?.screentip_color = value
 
 /datum/preference/color/screentip_color/create_default_value()
-	return "#ffd391"
+	return "#85d1e4"
