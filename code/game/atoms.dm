@@ -2109,7 +2109,7 @@
 		if(!active_hud.screentips_enabled || (flags_1 & NO_SCREENTIPS_1))
 			active_hud.screentip_text.maptext = ""
 		else
-			usr.hud_used.screentip_text.maptext = MAPTEXT("<span style='text-align: center'><span style='font-size: 32px'><span style='color:[usr.hud_used.screentip_color]: 32px; font-family: \"Small Fonts\";'>[name]</span>")
+			usr.hud_used.screentip_text.maptext = MAPTEXT("<span style='text-align: center'><span style='font-size: 32px'><span style='color:[usr.hud_used.screentip_color]: 32px; text-shadow: 1px 1px 0 #000000,-1px -1px 0 #000000, 2px 2px 0 #000000,-2px -2px 0 #000000;;font-family: \"Small Fonts\";'>[uppertext(name)]</span>")
 
 /// Gets a merger datum representing the connected blob of objects in the allowed_types argument
 /atom/proc/GetMergeGroup(id, list/allowed_types)
