@@ -1,7 +1,7 @@
 /obj/structure/railing
 	name = "railing"
 	desc = "Basic railing meant to protect idiots like you from falling."
-	icon = 'icons/obj/fluff.dmi'
+	icon = 'icons/obj/railings.dmi'
 	icon_state = "railing"
 	flags_1 = ON_BORDER_1
 	density = TRUE
@@ -129,3 +129,6 @@
 
 /obj/structure/railing/proc/after_rotation(mob/user,rotation_type)
 	add_fingerprint(user)
+
+/obj/structure/railing/industrial
+	icon_state = "railing_industrial"

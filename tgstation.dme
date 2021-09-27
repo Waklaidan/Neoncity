@@ -1719,6 +1719,8 @@
 #include "code\game\objects\structures\plaques\static_plaques.dm"
 #include "code\game\objects\structures\props\alien.dm"
 #include "code\game\objects\structures\props\city.dm"
+#include "code\game\objects\structures\props\consoles.dm"
+#include "code\game\objects\structures\props\industrial.dm"
 #include "code\game\objects\structures\props\mad_science.dm"
 #include "code\game\objects\structures\props\misc.dm"
 #include "code\game\objects\structures\props\props.dm"
