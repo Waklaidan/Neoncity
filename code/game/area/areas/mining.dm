@@ -216,3 +216,56 @@
 /area/icemoon/underground/explored // ruins can't spawn here
 	name = "Icemoon Underground"
 	area_flags = UNIQUE_AREA | NO_ALERTS
+
+/**********************Tartarus Areas**************************/
+
+/area/tartarus
+	icon_state = "mining"
+	has_gravity = STANDARD_GRAVITY
+	flags_1 = NONE
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
+	sound_environment = SOUND_AREA_LAVALAND
+
+/area/tartarus/surface
+	name = "Tartarus"
+	icon_state = "explored"
+	always_unpowered = TRUE
+	power_environ = FALSE
+	power_equip = FALSE
+	power_light = FALSE
+	requires_power = TRUE
+	ambience_index = AMBIENCE_MINING
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED | NO_ALERTS
+	min_ambience_cooldown = 70 SECONDS
+	max_ambience_cooldown = 220 SECONDS
+
+/area/tartarus/underground
+	name = "Tartarus Caves"
+	icon_state = "unexplored"
+	always_unpowered = TRUE
+	requires_power = TRUE
+	power_environ = FALSE
+	power_equip = FALSE
+	power_light = FALSE
+	ambience_index = AMBIENCE_MINING
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED | NO_ALERTS
+	min_ambience_cooldown = 70 SECONDS
+	max_ambience_cooldown = 220 SECONDS
+
+/area/tartarus/surface/outdoors
+	name = "Tartarus Wastes"
+	outdoors = TRUE
+
+/area/tartarus/surface/outdoors/unexplored //monsters and ruins spawn here
+	icon_state = "unexplored"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | NO_ALERTS
+	map_generator = /datum/map_generator/cave_generator/tartarus
+
+/area/tartarus/surface/outdoors/unexplored/danger //megafauna will also spawn here
+	icon_state = "danger"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED | NO_ALERTS
+
+/area/tartarus/surface/outdoors/explored
+	name = "Tartarus Labor Camp"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | NO_ALERTS
+
