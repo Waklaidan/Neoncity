@@ -14,3 +14,10 @@
 
 /obj/effect/turf_decal/road/side/yellow
 	color = "#EFB341"
+
+/obj/effect/turf_decal/road/corner
+	icon_state = "road_corner_marking"
+
+/obj/effect/turf_decal/road/corner/yellow
+	color = "#EFB341"
+
