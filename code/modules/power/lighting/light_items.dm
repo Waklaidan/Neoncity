@@ -69,6 +69,20 @@
 /obj/item/light/square/broken
 	status = LIGHT_BROKEN
 
+/obj/item/light/street
+	name = "street lamp bulb"
+	desc = "A specialized gas filled bulb used in street lamps found across the city."
+	icon_state = "sbulb"
+	base_state = "sbulb"
+	inhand_icon_state = "contvapour"
+	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
+	brightness = 8
+	custom_price = PAYCHECK_EASY * 0.6
+
+/obj/item/light/street/broken
+	status = LIGHT_BROKEN
+
 /obj/item/light/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(!..()) //not caught by a mob
 		shatter()
