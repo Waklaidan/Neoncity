@@ -259,8 +259,8 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 /datum/material/wood
 	name = "wood"
 	desc = "Flexible, durable, but flamable. Hard to come across in space."
-	color = "#bb8e53"
-	greyscale_colors = "#bb8e53"
+	color = MATERIAL_WOOD_OAK
+	greyscale_colors = MATERIAL_WOOD_OAK
 	strength_modifier = 0.5
 	sheet_type = /obj/item/stack/sheet/mineral/wood
 	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
@@ -287,6 +287,31 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	source_item?.reagents?.add_reagent(/datum/reagent/cellulose, source_item.reagents.total_volume*(2/5))
 
 	return TRUE
+
+/datum/material/wood/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+	greyscale_colors = MATERIAL_WOOD_MAHOGANY
+	sheet_type = /obj/item/stack/sheet/mineral/wood/mahogany
+
+/datum/material/wood/ebony
+	color = MATERIAL_WOOD_EBONY
+	greyscale_colors = MATERIAL_WOOD_EBONY
+	sheet_type = /obj/item/stack/sheet/mineral/wood/ebony
+
+/datum/material/wood/pine
+	color = MATERIAL_WOOD_PINE
+	greyscale_colors = MATERIAL_WOOD_PINE
+	sheet_type = /obj/item/stack/sheet/mineral/wood/pine
+
+/datum/material/wood/maple
+	color = MATERIAL_WOOD_MAPLE
+	greyscale_colors = MATERIAL_WOOD_MAPLE
+	sheet_type = /obj/item/stack/sheet/mineral/wood/maple
+
+/datum/material/wood/yew
+	color = MATERIAL_WOOD_YEW
+	greyscale_colors = MATERIAL_WOOD_YEW
+	sheet_type = /obj/item/stack/sheet/mineral/wood/yew
 
 ///Stronk force increase
 /datum/material/adamantine
