@@ -158,7 +158,27 @@
 	buildstacktype = /obj/item/stack/sheet/mineral/wood
 	buildstackamount = 3
 	item_chair = /obj/item/chair/wood
-	color = "#5e4523"
+	color = MATERIAL_WOOD_OAK
+
+/obj/structure/chair/wood/mahogany
+	item_chair = /obj/item/chair/wood/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+
+/obj/structure/chair/wood/ebony
+	item_chair = /obj/item/chair/wood/ebony
+	color = MATERIAL_WOOD_EBONY
+
+/obj/structure/chair/wood/pine
+	item_chair = /obj/item/chair/wood/pine
+	color = MATERIAL_WOOD_PINE
+
+/obj/structure/chair/wood/maple
+	item_chair = /obj/item/chair/wood/maple
+	color = MATERIAL_WOOD_MAPLE
+
+/obj/structure/chair/wood/yew
+	item_chair = /obj/item/chair/wood/yew
+	color = MATERIAL_WOOD_YEW
 
 /obj/structure/chair/wood/narsie_act()
 	return
@@ -166,6 +186,27 @@
 /obj/structure/chair/wood/wings
 	icon_state = "wooden_chair_wings"
 	item_chair = /obj/item/chair/wood/wings
+	color = MATERIAL_WOOD_OAK
+
+/obj/structure/chair/wood/wings/mahogany
+	item_chair = /obj/item/chair/wood/wings/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+
+/obj/structure/chair/wood/wings/ebony
+	item_chair = /obj/item/chair/wood/wings/ebony
+	color = MATERIAL_WOOD_EBONY
+
+/obj/structure/chair/wood/wings/pine
+	item_chair = /obj/item/chair/wood/wings/pine
+	color = MATERIAL_WOOD_PINE
+
+/obj/structure/chair/wood/wings/maple
+	item_chair = /obj/item/chair/wood/wings/maple
+	color = MATERIAL_WOOD_MAPLE
+
+/obj/structure/chair/wood/wings/yew
+	item_chair = /obj/item/chair/wood/wings/yew
+	color = MATERIAL_WOOD_YEW
 
 /obj/structure/chair/comfy
 	name = "comfy chair"
@@ -207,19 +248,23 @@
 	update_armrest()
 
 /obj/structure/chair/comfy/brown
-	color = rgb(255,113,0)
+	color = "#8B5921"
 
 /obj/structure/chair/comfy/beige
-	color = rgb(255,253,195)
+	color = "#fffdc3"
 
 /obj/structure/chair/comfy/teal
-	color = rgb(0,255,255)
+	color = "#00ffff"
 
 /obj/structure/chair/comfy/black
-	color = rgb(167,164,153)
+	color = "#494949"
 
 /obj/structure/chair/comfy/lime
-	color = rgb(255,251,0)
+	color = "#fffb00"
+
+/obj/structure/chair/comfy/red
+	color = "#CB2A2A"
+
 
 /obj/structure/chair/comfy/shuttle
 	name = "shuttle seat"
@@ -413,8 +458,27 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/chair/stool/bar, 0)
 	origin_type = /obj/structure/chair/wood
 	custom_materials = null
 	break_chance = 50
-	color = "#5e4523"
+	color = MATERIAL_WOOD_OAK
 
+/obj/item/chair/wood/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+	origin_type = /obj/structure/chair/wood/mahogany
+
+/obj/item/chair/wood/ebony
+	color = MATERIAL_WOOD_EBONY
+	origin_type = /obj/structure/chair/wood/ebony
+
+/obj/item/chair/wood/pine
+	color = MATERIAL_WOOD_PINE
+	origin_type = /obj/structure/chair/wood/pine
+
+/obj/item/chair/wood/maple
+	color = MATERIAL_WOOD_MAPLE
+	origin_type = /obj/structure/chair/wood/maple
+
+/obj/item/chair/wood/yew
+	color = MATERIAL_WOOD_YEW
+	origin_type = /obj/structure/chair/wood/yew
 
 /obj/item/chair/wood/narsie_act()
 	return
@@ -422,6 +486,28 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/chair/stool/bar, 0)
 /obj/item/chair/wood/wings
 	icon_state = "wooden_chair_wings_toppled"
 	origin_type = /obj/structure/chair/wood/wings
+	color = MATERIAL_WOOD_OAK
+
+/obj/item/chair/wood/wings/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+	origin_type = /obj/structure/chair/wood/wings/mahogany
+
+/obj/item/chair/wood/wings/ebony
+	color = MATERIAL_WOOD_EBONY
+	origin_type = /obj/structure/chair/wood/wings/ebony
+
+/obj/item/chair/wood/wings/pine
+	color = MATERIAL_WOOD_PINE
+	origin_type = /obj/structure/chair/wood/wings/pine
+
+/obj/item/chair/wood/wings/maple
+	color = MATERIAL_WOOD_MAPLE
+	origin_type = /obj/structure/chair/wood/wings/maple
+
+/obj/item/chair/wood/wings/yew
+	color = MATERIAL_WOOD_YEW
+	origin_type = /obj/structure/chair/wood/wings/yew
+
 
 /obj/structure/chair/old
 	name = "strange chair"

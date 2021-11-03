@@ -433,6 +433,19 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	turf_sound_override = FOOTSTEP_WOOD
 	texture_layer_icon_state = "brick"
 
+/datum/material/concrete
+	name = "concrete"
+	desc = "Bialtaakid 'ant taerif ma hdha."
+	color = COLOR_GRAY
+	greyscale_colors = COLOR_GRAY
+	categories = list(MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
+	sheet_type = /obj/item/stack/sheet/mineral/concrete
+	value_per_unit = 0.0025
+	armor_modifiers = list(MELEE = 0.5, BULLET = 0.5, LASER = 1.25, ENERGY = 0.5, BOMB = 0.5, BIO = 0.25, RAD = 1.5, FIRE = 1.5, ACID = 1.5)
+	beauty_modifier = 0.2
+	turf_sound_override = FOOTSTEP_WOOD
+	texture_layer_icon_state = "brick"
+
 /datum/material/snow
 	name = "snow"
 	desc = "There's no business like snow business."

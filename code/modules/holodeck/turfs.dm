@@ -154,6 +154,7 @@
 /turf/open/floor/holofloor/wood
 	icon_state = "wood"
 	tiled_dirt = FALSE
+	color = MATERIAL_WOOD_OAK
 
 /turf/open/floor/holofloor/snow
 	gender = PLURAL

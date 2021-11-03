@@ -255,12 +255,42 @@
 
 /obj/effect/turf_decal/siding/wood
 	icon_state = "siding_wood_line"
-	color = "#55391A"
+	color = MATERIAL_WOOD_OAK
 
 /obj/effect/turf_decal/siding/wood/corner
 	icon_state = "siding_wood_corner"
 
 /obj/effect/turf_decal/siding/wood/end
+	icon_state = "siding_wood_end"
+
+/obj/effect/turf_decal/siding/wood/ebony
+	icon_state = "siding_wood_line"
+	color = MATERIAL_WOOD_EBONY
+
+/obj/effect/turf_decal/siding/wood/ebony/corner
+	icon_state = "siding_wood_corner"
+
+/obj/effect/turf_decal/siding/wood/ebony/end
+	icon_state = "siding_wood_end"
+
+/obj/effect/turf_decal/siding/wood/mahogany
+	icon_state = "siding_wood_line"
+	color = MATERIAL_WOOD_MAHOGANY
+
+/obj/effect/turf_decal/siding/wood/mahogany/corner
+	icon_state = "siding_wood_corner"
+
+/obj/effect/turf_decal/siding/wood/mahogany/end
+	icon_state = "siding_wood_end"
+
+/obj/effect/turf_decal/siding/wood/maple
+	icon_state = "siding_wood_line"
+	color = MATERIAL_WOOD_MAPLE
+
+/obj/effect/turf_decal/siding/wood/maple/corner
+	icon_state = "siding_wood_corner"
+
+/obj/effect/turf_decal/siding/wood/maple/end
 	icon_state = "siding_wood_end"
 
 /obj/effect/turf_decal/siding/thinplating
