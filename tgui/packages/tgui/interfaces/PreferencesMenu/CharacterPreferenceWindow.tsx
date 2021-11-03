@@ -100,6 +100,11 @@ export const CharacterPreferenceWindow = (props, context) => {
             </Stack.Item>
           )}
 
+          <Stack.Item align="center">
+		<Button onClick={() => act("save")}>Save 		Character</Button>
+		<Button onClick={() => act("delete")}>Delete 		Character</Button>
+          </Stack.Item>
+
           <Stack.Divider />
 
           <Stack.Item>

@@ -333,6 +333,15 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	all_quirks = SSquirks.filter_invalid_quirks(SANITIZE_LIST(all_quirks))
 	validate_quirks()
 
+	if(SSdbcore.Connect())
+		if(!add_character_to_db())// dup check is already included in proc
+			update_character_prefs_to_db()
+
+		if(!add_character_bank_to_db()) // dup check in proc
+			// we're updating the bank from the db since they can earn offline
+			// end of round saving uses a different proc.
+			update_bank_from_db()
+
 	return TRUE
 
 /datum/preferences/proc/save_character()
@@ -375,6 +384,19 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Quirks
 	WRITE_FILE(S["all_quirks"] , all_quirks)
 
+	if(SSdbcore.Connect())
+		if(current_character_exists_in_db())
+			update_character_prefs_to_db()
+		else
+			add_character_to_db()
+
+		if(current_bank_exists_in_db())
+			// since we're in-game, we can save to this proc.
+			bank_prefs_to_db()
+		else
+			add_character_bank_to_db()
+
+
 	return TRUE
 
 /datum/preferences/proc/sanitize_be_special(list/input_be_special)
@@ -385,6 +407,28 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 			output += role
 
 	return output.len == input_be_special.len ? input_be_special : output
+
+/datum/preferences/proc/delete_character()
+
+	delete_character_entry_from_db()
+	delete_character_bank_from_db()
+
+	for (var/datum/preference/preference as anything in get_preferences_in_priority_order())
+		if (preference.savefile_identifier != PREFERENCE_CHARACTER)
+			continue
+
+		if (preference.type in value_cache)
+			write_preference(preference, preference.create_informed_default_value())
+
+	tainted_character_profiles = TRUE
+
+	randomise_appearance_prefs() //let's create a random character then
+
+	save_character()
+
+	return TRUE
+
+
 
 /proc/sanitize_keybindings(value)
 	var/list/base_bindings = sanitize_islist(value,list())

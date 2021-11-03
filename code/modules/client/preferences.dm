@@ -84,6 +84,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	/// If set to TRUE, will update character_profiles on the next ui_data tick.
 	var/tainted_character_profiles = FALSE
 
+	// A cooldown to prevent load/save abuse.
+	var/loadprefcooldown
+
 /datum/preferences/Destroy(force, ...)
 	QDEL_NULL(character_preview_view)
 	QDEL_LIST(middleware)
@@ -202,8 +205,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	switch (action)
 		if ("change_slot")
-			// Save existing character
-			save_character()
+
+			if(world.time < loadprefcooldown)
+				tgui_alert(parent, "You're attempting to save/load/delete a little too fast. Wait half a second, then try again.", "Change Slot")
+				return 0
+
+			loadprefcooldown = world.time + PREF_SAVELOAD_COOLDOWN
+
+			if(tgui_alert(usr, "Save changes to current slot before changing slot?", "Save Character", list("Save Character", "Discard Changes")) != "Discard Changes")
+				// Save existing character
+				save_character()
+			else
+				tainted_character_profiles = TRUE
 
 			// SAFETY: `load_character` performs sanitization the slot number
 			if (!load_character(params["slot"]))
@@ -214,7 +227,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			for (var/datum/preference_middleware/preference_middleware as anything in middleware)
 				preference_middleware.on_new_character(usr)
 
-			character_preview_view.update_body()
+			if(character_preview_view)
+				character_preview_view.update_body()
 
 			return TRUE
 		if ("rotate")
@@ -269,6 +283,32 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			return TRUE
 
+		if ("delete")
+			if(world.time < loadprefcooldown)
+				tgui_alert(parent, "You're attempting to save/load/delete a little too fast. Wait half a second, then try again.", "Change Slot")
+				return 0
+
+			loadprefcooldown = world.time + PREF_SAVELOAD_COOLDOWN
+
+			if(tgui_alert(usr, "Are you sure you'd like to permanently delete this character? If you do, you may not be able to play them again. This cannot be reversed! Adminhelp if you want a modification (within reason) instead.", "Hold up!", list("Yes", "No")) != "Yes")
+				return FALSE
+
+			tainted_character_profiles = TRUE
+			delete_character()
+			return TRUE
+
+		if ("save")
+			if(world.time < loadprefcooldown)
+				tgui_alert(parent, "You're attempting to save/load/delete a little too fast. Wait half a second, then try again.", "Change Slot")
+				return 0
+
+			loadprefcooldown = world.time + PREF_SAVELOAD_COOLDOWN
+
+			if(tgui_alert(usr, "Save this character?", "Save Character", list("Yes", "No")) != "Yes")
+				return FALSE
+			save_character()
+			return TRUE
+
 	for (var/datum/preference_middleware/preference_middleware as anything in middleware)
 		var/delegation = preference_middleware.action_delegations[action]
 		if (!isnull(delegation))
@@ -277,7 +317,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	return FALSE
 
 /datum/preferences/ui_close(mob/user)
-	save_character()
+	if(tgui_alert(usr, "Save changes to current slot before closing?", "Save Character", list("Save Character", "Discard Changes")) != "Discard Changes")
+		// Save existing character
+		save_character()
 	save_preferences()
 	QDEL_NULL(character_preview_view)
 
@@ -473,6 +515,17 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/character_preview_view)
 /datum/preferences/proc/safe_transfer_prefs_to(mob/living/carbon/human/character, icon_updates = TRUE, is_antag = FALSE)
 	apply_character_randomization_prefs(is_antag)
 	apply_prefs_to(character, icon_updates)
+
+/datum/preferences/proc/apply_bank_to(mob/living/carbon/human/character)
+	var/datum/bank_account/B = character.get_bank_account()
+
+	if(!B)
+		return
+
+	for (var/datum/preference/preference as anything in get_preferences_in_priority_order())
+		if (preference.savefile_identifier != PREFERENCE_CHARACTER)
+			continue
+		preference.apply_to_bank(B, read_preference(preference.type))
 
 /// Applies the given preferences to a human mob.
 /datum/preferences/proc/apply_prefs_to(mob/living/carbon/human/character, icon_updates = TRUE)

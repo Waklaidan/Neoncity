@@ -105,6 +105,9 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 	/// will show the feature as selectable.
 	var/relevant_species_trait = null
 
+	/// If enabled, this value will save at round end during a canonical round.
+	var/persistent = FALSE
+
 /// Called on the saved input when retrieving.
 /// Also called by the value sent from the user through UI. Do not trust it.
 /// Input is the value inside the savefile, output is to tell other code
@@ -199,6 +202,23 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 	SHOULD_NOT_SLEEP(TRUE)
 	SHOULD_CALL_PARENT(FALSE)
 	CRASH("`apply_to_human()` was not implemented for [type]!")
+
+/// Apply this preference onto the bank account of the human.
+/// Must be overriden by subtypes.
+/// Called when the savefile_identifier == PREFERENCE_CHARACTER.
+/datum/preference/proc/apply_to_bank(datum/bank_account/target, value)
+	SHOULD_NOT_SLEEP(TRUE)
+	SHOULD_CALL_PARENT(FALSE)
+
+/// At the end of the round this will be called on the human.
+/datum/preference/proc/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	SHOULD_NOT_SLEEP(TRUE)
+	SHOULD_CALL_PARENT(FALSE)
+
+/// At the end of the round this will be called on the bank.
+/datum/preference/proc/on_persistent_bank_save(datum/bank_account/target, datum/preferences/preferences)
+	SHOULD_NOT_SLEEP(TRUE)
+	SHOULD_CALL_PARENT(FALSE)
 
 /// Returns which savefile to use for a given savefile identifier
 /datum/preferences/proc/get_savefile_for_savefile_identifier(savefile_identifier)

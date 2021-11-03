@@ -3,6 +3,8 @@
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "skin_tone"
 
+	persistent = TRUE
+
 /datum/preference/choiced/skin_tone/init_possible_values()
 	return GLOB.skin_tones
 
@@ -34,3 +36,7 @@
 
 	var/datum/species/species_type = preferences.read_preference(/datum/preference/choiced/species)
 	return initial(species_type.use_skintones)
+
+/datum/preference/choiced/skin_tone/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.value_cache[type] = target.skin_tone
+

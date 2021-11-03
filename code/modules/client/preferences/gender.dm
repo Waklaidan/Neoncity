@@ -11,3 +11,6 @@
 	if(!target.dna.species.sexes)
 		value = PLURAL //disregard gender preferences on this species
 	target.gender = value
+
+/datum/preference/choiced/gender/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.value_cache[type] = target.gender

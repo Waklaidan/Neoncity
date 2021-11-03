@@ -532,3 +532,6 @@ GLOBAL_LIST_INIT(pda_styles, sort_list(list(MONO, VT, ORBITRON, SHARE)))
 #define EMOJI_SET 'icons/emoji.dmi'
 /// Achievements icon set
 #define ACHIEVEMENTS_SET 'icons/ui_icons/achievements/achievements.dmi'
+
+// Preference cooldown
+#define PREF_SAVELOAD_COOLDOWN 5

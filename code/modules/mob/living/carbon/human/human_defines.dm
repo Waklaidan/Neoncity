@@ -13,6 +13,9 @@
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	can_be_shoved_into = TRUE
 
+	var/unique_id = null // player's unique id for this particular character, used for persistence.
+	var/social_class = MIDDLE_CLASS
+
 	//Hair colour and style
 	var/hair_color = "#000000"
 	var/hairstyle = "Bald"
