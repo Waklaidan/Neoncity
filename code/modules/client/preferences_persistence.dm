@@ -1,6 +1,6 @@
 /mob/living/carbon/human/proc/save_persistent_prefs()
 	if(!unique_id || !mind || !mind.client || !mind.client.prefs)
-		return
+		return FALSE
 
 	// Read everything into cache
 	var/datum/preferences/preferences = mind.client.prefs
@@ -14,9 +14,11 @@
 	if(!starting_bank)
 		message_admins("WARNING: [src]'s bank ([unique_id]) does not exist in-game, it won't be saved to their file.")
 
-	for (var/preference_type in GLOB.preference_entries)
-		var/datum/preference/preference = GLOB.preference_entries[preference_type]
-		if (preference.savefile_identifier != PREFERENCE_CHARACTER || !preference.persistent)
+	for (var/datum/preference/preference as anything in get_preferences_in_priority_order())
+		if (preference.savefile_identifier != PREFERENCE_CHARACTER)
+			continue
+
+		if(!preference.persistent)
 			continue
 
 		preference.on_persistent_human_save(src, preferences)

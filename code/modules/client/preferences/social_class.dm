@@ -17,5 +17,5 @@
 	target.social_class = value
 
 /datum/preference/choiced/social_class/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
-	preferences.value_cache[type] = target.social_class
-
+	preferences.write_preference(src, target.social_class)
+	return TRUE

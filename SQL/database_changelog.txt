@@ -876,3 +876,34 @@ UPDATE erro_library SET deleted = 1 WHERE id = someid
 (Replace someid with the id of the book you want to soft delete.)
 
 ----------------------------------------------------
+
+5 November 2021, by cassyjenelle
+
+Added new table 'characters' and 'banking' for persistent saving
+
+To create this new table run the following command:
+
+CREATE TABLE `characters` (
+  `ckey` varchar(32) NOT NULL,
+  `real_name` varchar(60) NOT NULL,
+  `slot` int(2) NOT NULL,
+  `unique_id` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `characters`
+  ADD PRIMARY KEY (`unique_id`);
+COMMIT;
+
+CREATE TABLE `banks` (
+  `unique_id` varchar(64) NOT NULL,
+  `account_holder` varchar(60) NOT NULL,
+  `bank_balance` int(18) NOT NULL,
+  `ckey` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `banks`
+  ADD PRIMARY KEY (`unique_id`);
+COMMIT;
+
+
+Remember to add prefix to the table name if you use them.

@@ -38,5 +38,6 @@
 	return initial(species_type.use_skintones)
 
 /datum/preference/choiced/skin_tone/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
-	preferences.value_cache[type] = target.skin_tone
+	preferences.write_preference(src, target.skin_tone)
+	return TRUE
 

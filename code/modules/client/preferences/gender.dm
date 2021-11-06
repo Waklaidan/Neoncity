@@ -3,6 +3,7 @@
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "gender"
 	priority = PREFERENCE_PRIORITY_GENDER
+	persistent = TRUE
 
 /datum/preference/choiced/gender/init_possible_values()
 	return list(MALE, FEMALE, PLURAL)
@@ -13,4 +14,5 @@
 	target.gender = value
 
 /datum/preference/choiced/gender/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
-	preferences.value_cache[type] = target.gender
+	preferences.write_preference(src, target.gender)
+	return TRUE

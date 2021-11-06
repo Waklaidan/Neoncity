@@ -79,12 +79,18 @@
 	main_feature_name = "Socks"
 	category = PREFERENCE_CATEGORY_CLOTHING
 	should_generate_icons = TRUE
+	persistent = TRUE
 
 /datum/preference/choiced/socks/init_possible_values()
 	return generate_values_for_underwear(GLOB.socks_list, list("human_r_leg", "human_l_leg"))
 
 /datum/preference/choiced/socks/apply_to_human(mob/living/carbon/human/target, value)
 	target.socks = value
+
+/datum/preference/choiced/socks/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.write_preference(src, target.socks)
+	return TRUE
+
 
 /// Undershirt preference
 /datum/preference/choiced/undershirt
@@ -93,6 +99,7 @@
 	main_feature_name = "Undershirt"
 	category = PREFERENCE_CATEGORY_CLOTHING
 	should_generate_icons = TRUE
+	persistent = TRUE
 
 /datum/preference/choiced/undershirt/init_possible_values()
 	var/icon/body = icon('icons/mob/human_parts_greyscale.dmi', "human_r_leg")
@@ -121,6 +128,10 @@
 /datum/preference/choiced/undershirt/apply_to_human(mob/living/carbon/human/target, value)
 	target.undershirt = value
 
+/datum/preference/choiced/undershirt/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.write_preference(src, target.undershirt)
+	return TRUE
+
 /// Underwear preference
 /datum/preference/choiced/underwear
 	savefile_key = "underwear"
@@ -128,6 +139,7 @@
 	main_feature_name = "Underwear"
 	category = PREFERENCE_CATEGORY_CLOTHING
 	should_generate_icons = TRUE
+	persistent = TRUE
 
 /datum/preference/choiced/underwear/init_possible_values()
 	return generate_values_for_underwear(GLOB.underwear_list, list("human_chest_m", "human_r_leg", "human_l_leg"), COLOR_ALMOST_BLACK)
@@ -149,3 +161,7 @@
 	data[SUPPLEMENTAL_FEATURE_KEY] = "underwear_color"
 
 	return data
+
+/datum/preference/choiced/underwear/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.write_preference(src, target.underwear)
+	return TRUE
