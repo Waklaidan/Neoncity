@@ -96,23 +96,19 @@ GLOBAL_LIST_EMPTY(station_turfs)
 
 /turf/update_overlays()
 	. = ..()
-	if(color)
-		base_color = color
-		color = null
 
 	set_light(0)
 
 	if(base_color || paint_color)
-		var/applied_color = (paint_color ? paint_color : base_color)
-		. += mutable_appearance(icon, icon_state, alpha = 200, color = applied_color)
+		color = paint_color ? paint_color : base_color
 
 	//readd overlays
 	if(pattern_type && pattern_color)
-		. += mutable_appearance(pattern_type, "[smoothing_junction]", alpha = 255, color = pattern_color)
+		. += mutable_appearance(pattern_type, "[smoothing_junction]", appearance_flags = RESET_COLOR, alpha = 255, color = pattern_color)
 
 		if(pattern_glow)
 			set_light(2,2, pattern_color)
-			. += emissive_appearance(pattern_type, "[smoothing_junction]", alpha = 255)
+			. += emissive_appearance(pattern_type, "[smoothing_junction]", appearance_flags = RESET_COLOR, alpha = 255)
 
 /**
  * Turf Initialize
@@ -135,6 +131,9 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	assemble_baseturfs()
 
 	levelupdate()
+
+	if(color)
+		base_color = color
 
 	if (length(smoothing_groups))
 		sortTim(smoothing_groups) //In case it's not properly ordered, let's avoid duplicate entries with the same values.
@@ -184,6 +183,7 @@ GLOBAL_LIST_EMPTY(station_turfs)
 			armor = getArmor(arglist(armor))
 		else if (!armor)
 			armor = getArmor()
+
 
 	return INITIALIZE_HINT_NORMAL
 
