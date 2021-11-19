@@ -99,10 +99,16 @@ GLOBAL_LIST_EMPTY(station_turfs)
 
 	set_light(0)
 
-	if(base_color || paint_color)
-		color = paint_color ? paint_color : base_color
+	remove_atom_colour(FIXED_COLOUR_PRIORITY)
+	remove_atom_colour(WASHABLE_COLOUR_PRIORITY)
 
-	//readd overlays
+	if(base_color && !paint_color)
+		add_atom_colour(base_color, FIXED_COLOUR_PRIORITY)
+
+	if(paint_color)
+		add_atom_colour(paint_color, WASHABLE_COLOUR_PRIORITY)
+
+//readd overlays
 	if(pattern_type && pattern_color)
 		. += mutable_appearance(pattern_type, "[smoothing_junction]", appearance_flags = RESET_COLOR, alpha = 255, color = pattern_color)
 
