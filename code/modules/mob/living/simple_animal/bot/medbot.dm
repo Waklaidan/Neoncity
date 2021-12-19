@@ -424,7 +424,7 @@
 		return FALSE
 
 	if(C.suiciding)
-		return FALSE //Kevorkian school of robotic medical assistants.
+		return FALSE //Kevorkian school of robotic medical civilians.
 
 	if(bot_cover_flags & BOT_COVER_EMAGGED) //Everyone needs our medicine. (Our medicine is toxins)
 		return TRUE

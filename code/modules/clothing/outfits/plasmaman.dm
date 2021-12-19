@@ -1,5 +1,5 @@
 /datum/outfit/plasmaman
-	name = "Assistant Plasmaman"
+	name = "Civilian Plasmaman"
 
 	uniform = /obj/item/clothing/under/plasmaman
 	gloves = /obj/item/clothing/gloves/color/plasmaman

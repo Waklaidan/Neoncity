@@ -38,7 +38,7 @@
 	var/obj/item/clothing/under/color/C = get_random_jumpsuit()
 	if(ishuman(loc))
 		var/mob/living/carbon/human/H = loc
-		H.equip_to_slot_or_del(new C(H), ITEM_SLOT_ICLOTHING, initial=TRUE) //or else you end up with naked assistants running around everywhere...
+		H.equip_to_slot_or_del(new C(H), ITEM_SLOT_ICLOTHING, initial=TRUE) //or else you end up with naked civilians running around everywhere...
 	else
 		new C(loc)
 	return INITIALIZE_HINT_QDEL

@@ -71,7 +71,7 @@
 	fill_icon_state = "shot_glass"
 	volume = 15
 	custom_materials = list(/datum/material/glass=100)
-	custom_price = PAYCHECK_ASSISTANT * 0.4
+	custom_price = PAYCHECK_CIVILIAN * 0.4
 
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass/update_name(updates)
 	if(renamedByPlayer)

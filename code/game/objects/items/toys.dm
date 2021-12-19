@@ -1401,9 +1401,9 @@
 	icon_state = "cmo"
 	toysay = "Suit sensors!"
 
-/obj/item/toy/figure/assistant
-	name = "\improper Assistant action figure"
-	icon_state = "assistant"
+/obj/item/toy/figure/civilian
+	name = "\improper Civilian action figure"
+	icon_state = "civilian"
 	inhand_icon_state = "assistant"
 	toysay = "Greytide world wide!"
 

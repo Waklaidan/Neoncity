@@ -129,7 +129,7 @@
 
 /obj/item/gun/ballistic/rifle/boltaction/pipegun
 	name = "pipegun"
-	desc = "An excellent weapon for flushing out tunnel rats and enemy assistants, but its rifling leaves much to be desired."
+	desc = "An excellent weapon for flushing out tunnel rats and enemy civilians, but its rifling leaves much to be desired."
 	icon_state = "musket"
 	inhand_icon_state = "musket"
 	worn_icon_state = "musket"

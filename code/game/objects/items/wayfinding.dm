@@ -33,7 +33,7 @@
 								"Can't find the disk? Need a pinpointer? Buy a wayfinding pinpointer and find the captain's office today!",
 								"Bleeding to death? Can't read? Find your way to medbay today!", //there are signs that point to medbay but you need basic literacy to get the most out of them
 								"Voted tenth best pinpointer in the universe in 2560!", //there were no more than ten pinpointers in the game in 2020
-								"Helping assistants find the departments they tide since 2560.", //not really but it's advertising
+								"Helping civilians find the departments they tide since 2560.", //not really but it's advertising
 								"These pinpointers are flying out the airlock!", //because they're being thrown into space
 								"Grey pinpointers for the grey tide!", //I didn't pick the colour but it works
 								"Feeling lost? Find direction.",

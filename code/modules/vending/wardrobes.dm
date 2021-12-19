@@ -2,7 +2,7 @@
 	icon_state = "refill_clothes"
 
 /obj/machinery/vending/wardrobe
-	default_price = PAYCHECK_ASSISTANT
+	default_price = PAYCHECK_CIVILIAN
 	extra_price = PAYCHECK_HARD
 	payment_department = NO_FREEBIES
 	input_display_header = "Returned Clothing"
@@ -129,7 +129,7 @@
 	name = "CargoDrobe"
 	desc = "A highly advanced vending machine for buying cargo related clothing for free."
 	icon_state = "cargodrobe"
-	product_ads = "Upgraded Assistant Style! Pick yours today!;These shorts are comfy and easy to wear, get yours now!"
+	product_ads = "Upgraded civilian style! Pick yours today!;These shorts are comfy and easy to wear, get yours now!"
 	vend_reply = "Thank you for using the CargoDrobe!"
 	products = list(
 		/obj/item/storage/bag/mail = 3,

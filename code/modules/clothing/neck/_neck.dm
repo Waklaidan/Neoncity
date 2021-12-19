@@ -160,17 +160,17 @@
 /obj/item/clothing/neck/stripedredscarf
 	name = "striped red scarf"
 	icon_state = "stripedredscarf"
-	custom_price = PAYCHECK_ASSISTANT * 0.2
+	custom_price = PAYCHECK_CIVILIAN * 0.2
 
 /obj/item/clothing/neck/stripedgreenscarf
 	name = "striped green scarf"
 	icon_state = "stripedgreenscarf"
-	custom_price = PAYCHECK_ASSISTANT * 0.2
+	custom_price = PAYCHECK_CIVILIAN * 0.2
 
 /obj/item/clothing/neck/stripedbluescarf
 	name = "striped blue scarf"
 	icon_state = "stripedbluescarf"
-	custom_price = PAYCHECK_ASSISTANT * 0.2
+	custom_price = PAYCHECK_CIVILIAN * 0.2
 
 /obj/item/clothing/neck/petcollar
 	name = "pet collar"
@@ -262,7 +262,7 @@
 	icon = 'icons/obj/clothing/neck.dmi'
 	icon_state = "beads"
 	color = "#ffffff"
-	custom_price = PAYCHECK_ASSISTANT * 0.2
+	custom_price = PAYCHECK_CIVILIAN * 0.2
 	custom_materials = (list(/datum/material/plastic = 500))
 
 /obj/item/clothing/neck/beads/Initialize(mapload)

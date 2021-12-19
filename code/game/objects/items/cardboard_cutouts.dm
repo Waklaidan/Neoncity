@@ -16,7 +16,7 @@
 /obj/item/cardboard_cutout/Initialize(mapload)
 	. = ..()
 	possible_appearances = sort_list(list(
-		JOB_ASSISTANT = image(icon = src.icon, icon_state = "cutout_greytide"),
+		JOB_CIVILIAN = image(icon = src.icon, icon_state = "cutout_greytide"),
 		"Clown" = image(icon = src.icon, icon_state = "cutout_clown"),
 		"Mime" = image(icon = src.icon, icon_state = "cutout_mime"),
 		"Traitor" = image(icon = src.icon, icon_state = "cutout_traitor"),
@@ -115,9 +115,9 @@
 	if(!deceptive)
 		add_atom_colour("#FFD7A7", FIXED_COLOUR_PRIORITY)
 	switch(new_appearance)
-		if(JOB_ASSISTANT)
+		if(JOB_CIVILIAN)
 			name = "[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]"
-			desc = "A cardboat cutout of an assistant."
+			desc = "A cardboat cutout of a civilian."
 			icon_state = "cutout_greytide"
 		if("Clown")
 			name = pick(GLOB.clown_names)

@@ -46,7 +46,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
-/obj/item/card/emagfake/attack_self(mob/user) //for assistants with balls of plasteel
+/obj/item/card/emagfake/attack_self(mob/user) //for civilians with balls of plasteel
 	if(Adjacent(user))
 		user.visible_message(span_notice("[user] shows you: [icon2html(src, viewers(user))] [name]."), span_notice("You show [src]."))
 	add_fingerprint(user)

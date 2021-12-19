@@ -100,7 +100,7 @@
 /obj/item/storage/toolbox/mechanical/old/heirloom/PopulateContents()
 	return
 
-/obj/item/storage/toolbox/mechanical/old/clean // the assistant traitor toolbox, damage scales with TC inside
+/obj/item/storage/toolbox/mechanical/old/clean // the civilian traitor toolbox, damage scales with TC inside
 	name = "toolbox"
 	desc = "An old, blue toolbox, it looks robust."
 	icon_state = "oldtoolboxclean"

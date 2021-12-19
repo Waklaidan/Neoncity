@@ -14,7 +14,7 @@
 /// Trim for the mobster outfit.
 /datum/id_trim/mobster
 	assignment = "Mobster"
-	trim_state = "trim_assistant"
+	trim_state = "trim_civilian"
 
 /// Trim for VR outfits.
 /datum/id_trim/vr

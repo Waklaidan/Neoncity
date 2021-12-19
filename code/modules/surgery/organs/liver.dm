@@ -59,7 +59,7 @@
 		if(HAS_TRAIT(src, TRAIT_MEDICAL_METABOLISM))
 			. += "Marks of stress and a faint whiff of medicinal alcohol, imply that this is the liver of a <em>medical worker</em>."
 		if(HAS_TRAIT(src, TRAIT_GREYTIDE_METABOLISM))
-			. += "Greyer than most with electrical burn marks, this is the liver of an <em>assistant</em>."
+			. += "Greyer than most with electrical burn marks, this is the liver of an <em>civilian</em>."
 		if(HAS_TRAIT(src, TRAIT_ENGINEER_METABOLISM))
 			. += "Signs of radiation exposure and space adaption, implies that this is the liver of an <em>engineer</em>."
 
