@@ -190,9 +190,9 @@
 	icon_state = "hood_medical"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 40, FIRE = 10, ACID = 20)
 
-// Chief Medical Officer
-/obj/item/clothing/suit/hooded/wintercoat/medical/cmo
-	name = "chief medical officer's winter coat"
+// Medical Director
+/obj/item/clothing/suit/hooded/wintercoat/medical/md
+	name = "medical director's winter coat"
 	desc = "A winter coat in a vibrant shade of blue with a small silver caduceus instead of a plastic zipper tab. The normal liner is replaced with an exceptionally thick, soft layer of fur."
 	icon_state = "coatcmo"
 	inhand_icon_state = "coatcmo"
@@ -205,7 +205,7 @@
 		/obj/item/melee/baton/telescopic,
 	)
 
-/obj/item/clothing/head/hooded/winterhood/medical/cmo
+/obj/item/clothing/head/hooded/winterhood/medical/md
 	desc = "A blue winter coat hood."
 	icon_state = "hood_cmo"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 50, FIRE = 20, ACID = 30)

@@ -68,7 +68,7 @@
 
 /datum/bounty/item/medical/chainsaw
 	name = "Chainsaw"
-	description = "A CMO at CentCom is having trouble operating on golems. She requests one chainsaw, please."
+	description = "A MD at CentCom is having trouble operating on golems. She requests one chainsaw, please."
 	reward = CARGO_CRATE_VALUE * 5
 	wanted_types = list(/obj/item/chainsaw)
 

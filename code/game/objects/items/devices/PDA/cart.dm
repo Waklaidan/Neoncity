@@ -175,9 +175,9 @@
 		FIRE_BOT,
 	)
 
-/obj/item/cartridge/cmo
+/obj/item/cartridge/md
 	name = "\improper Med-U DELUXE cartridge"
-	icon_state = "cart-cmo"
+	icon_state = "cart-md"
 	access = CART_MANIFEST | CART_STATUS_DISPLAY | CART_REAGENT_SCANNER | CART_MEDICAL
 	bot_access = list(
 		MED_BOT,

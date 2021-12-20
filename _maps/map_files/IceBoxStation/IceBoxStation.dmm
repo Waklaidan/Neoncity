@@ -13446,6 +13446,23 @@
 	pixel_x = -32;
 	pixel_y = 56
 	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/table/glass,
+/obj/item/folder/white,
+/obj/item/stamp/md,
+/obj/item/clothing/neck/stethoscope,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
 /turf/open/floor/iron/dark,
 /area/security/checkpoint/medical)
 "drO" = (
@@ -13496,6 +13513,23 @@
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
+"dsX" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool/directional/west,
+/obj/effect/landmark/start/civilian,
+/turf/open/floor/iron,
+/area/commons/locker)
 "dtd" = (
 /obj/effect/turf_decal/siding/white,
 /obj/machinery/firealarm/directional/south,
@@ -13797,6 +13831,20 @@
 /obj/machinery/requests_console/directional/east,
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/tile/red/full,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/obj/machinery/computer/security/telescreen/md{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/effect/landmark/start/medical_director,
 /turf/open/floor/iron/dark/smooth_large,
 /area/security/checkpoint/medical)
 "dAD" = (
@@ -14463,6 +14511,15 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/office,
+/obj/effect/landmark/start/civilian,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/wood,
 /area/service/library)
 "dSx" = (
@@ -17245,6 +17302,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/security/prison)
+"fru" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool/directional/south,
+/obj/effect/landmark/start/civilian,
+/turf/open/openspace,
+/area/service/chapel)
 "frx" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
@@ -21963,6 +22028,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/showroomfloor,
 /area/security/office)
+"hEB" = (
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/mob/living/carbon/human/species/monkey,
+/turf/closed/wall,
+/area/medical/surgery/room_b)
 "hFj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
 /turf/closed/wall,
@@ -22425,6 +22500,23 @@
 "hSM" = (
 /turf/closed/wall/r_wall,
 /area/command/heads_quarters/ce)
+"hSX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "medsecprivacy";
+	name = "privacy shutter"
+	},
+/obj/structure/cable,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/suit_storage_unit/md,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/plating,
+/area/security/checkpoint/medical)
 "hTB" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -24596,6 +24688,11 @@
 /area/cargo/office)
 "iVB" = (
 /obj/structure/chair/stool/directional/east,
+/obj/effect/landmark/start/civilian,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool/directional/west,
 /obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/dorms)
@@ -29820,6 +29917,11 @@
 /obj/structure/table,
 /obj/item/folder,
 /obj/item/pen,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool/directional/east,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/locker)
 "lIw" = (
@@ -33022,6 +33124,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/mob/living/carbon/human/species/monkey,
 /turf/open/floor/iron/white,
 /area/medical/break_room)
 "ntF" = (
@@ -46851,6 +46960,11 @@
 "uoh" = (
 /obj/structure/chair/stool/directional/south,
 /obj/effect/landmark/start/civilian,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool/directional/north,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/storage/primary)
 "uoj" = (
@@ -51907,6 +52021,11 @@
 "wUK" = (
 /obj/structure/chair/stool/directional/west,
 /obj/effect/landmark/start/civilian,
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/chair/stool/directional/east,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/dorms)
 "wVe" = (
@@ -52040,6 +52159,18 @@
 "wXI" = (
 /obj/structure/bed/dogbed/ian,
 /obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/mob/living/simple_animal/pet/dog/corgi/ian{
+	dir = 8
+	},
+/obj{
+	name = "---Merge conflict marker---"
+	},
+/obj/structure/bed/dogbed/ian,
+/obj/machinery/power/apc/auto_name/north,
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -72368,7 +72499,7 @@ pTR
 cPo
 kmi
 dkw
-kQD
+dsX
 lYu
 cLy
 xPS
@@ -93198,7 +93329,7 @@ bfK
 vGk
 iNf
 gtM
-vGk
+hSX
 bfK
 hWS
 gCY
@@ -95278,7 +95409,7 @@ brp
 mwb
 vxu
 icL
-bpJ
+hEB
 bST
 nUu
 xXp
@@ -101152,7 +101283,7 @@ iim
 iim
 iim
 iim
-iim
+fru
 iim
 iim
 jSJ
@@ -102179,7 +102310,7 @@ iim
 iim
 iim
 iim
-iim
+fru
 iim
 iim
 iim

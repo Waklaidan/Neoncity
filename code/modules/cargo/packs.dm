@@ -1277,9 +1277,9 @@
 
 /datum/supply_pack/medical/virus
 	name = "Virus Crate"
-	desc = "Contains twelve different bottles, containing several viral samples for virology research. Also includes seven beakers and syringes. Balled-up jeans not included. Requires CMO access to open."
+	desc = "Contains twelve different bottles, containing several viral samples for virology research. Also includes seven beakers and syringes. Balled-up jeans not included. Requires MD access to open."
 	cost = CARGO_CRATE_VALUE * 5
-	access = ACCESS_CMO
+	access = ACCESS_MD
 	access_view = ACCESS_VIROLOGY
 	contains = list(/obj/item/reagent_containers/glass/bottle/flu_virion,
 					/obj/item/reagent_containers/glass/bottle/cold,

@@ -102,9 +102,9 @@
 	icon_state = "ce_cypherkey"
 	channels = list(RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_COMMAND = 1)
 
-/obj/item/encryptionkey/heads/cmo
-	name = "\proper the chief medical officer's encryption key"
-	icon_state = "cmo_cypherkey"
+/obj/item/encryptionkey/heads/md
+	name = "\proper the medical director's encryption key"
+	icon_state = "md_cypherkey"
 	channels = list(RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_COMMAND = 1)
 
 /obj/item/encryptionkey/heads/hop

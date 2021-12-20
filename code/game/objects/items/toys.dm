@@ -1396,9 +1396,9 @@
 		to_chat(user, span_notice("[src] says \"[toysay]\""))
 		playsound(user, toysound, 20, TRUE)
 
-/obj/item/toy/figure/cmo
-	name = "\improper Chief Medical Officer action figure"
-	icon_state = "cmo"
+/obj/item/toy/figure/md
+	name = "\improper Medical Director action figure"
+	icon_state = "md"
 	toysay = "Suit sensors!"
 
 /obj/item/toy/figure/civilian

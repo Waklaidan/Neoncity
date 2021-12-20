@@ -5,14 +5,14 @@
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 10, FIRE = 0, ACID = 0)
 
 /obj/item/clothing/under/rank/medical/chief_medical_officer
-	desc = "It's a jumpsuit worn by those with the experience to be \"Chief Medical Officer\". It provides minor biological protection."
-	name = "chief medical officer's jumpsuit"
+	desc = "It's a jumpsuit worn by those with the experience to be \"Medical Director\". It provides minor biological protection."
+	name = "medical director's jumpsuit"
 	icon_state = "cmo"
 	inhand_icon_state = "w_suit"
 
 /obj/item/clothing/under/rank/medical/chief_medical_officer/skirt
-	name = "chief medical officer's jumpskirt"
-	desc = "It's a jumpskirt worn by those with the experience to be \"Chief Medical Officer\". It provides minor biological protection."
+	name = "medical director's jumpskirt"
+	desc = "It's a jumpskirt worn by those with the experience to be \"Medical Director\". It provides minor biological protection."
 	icon_state = "cmo_skirt"
 	inhand_icon_state = "w_suit"
 	body_parts_covered = CHEST|GROIN|ARMS

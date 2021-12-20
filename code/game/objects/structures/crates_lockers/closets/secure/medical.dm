@@ -66,10 +66,10 @@
 	new /obj/item/clothing/mask/muzzle(src)
 	new /obj/item/clothing/glasses/blindfold(src)
 
-/obj/structure/closet/secure_closet/chief_medical
-	name = "\proper chief medical officer's locker"
-	req_access = list(ACCESS_CMO)
-	icon_state = "cmo"
+/obj/structure/closet/secure_closet/medical_director
+	name = "\proper medical director's locker"
+	req_access = list(ACCESS_MD)
+	icon_state = "md"
 
 /obj/structure/closet/secure_closet/chief_medical/PopulateContents()
 	..()
@@ -83,8 +83,8 @@
 	new /obj/item/defibrillator/compact/loaded(src)
 	new /obj/item/healthanalyzer/advanced(src)
 	new /obj/item/assembly/flash/handheld(src)
-	new /obj/item/reagent_containers/hypospray/cmo(src)
-	new /obj/item/autosurgeon/organ/cmo(src)
+	new /obj/item/reagent_containers/hypospray/md(src)
+	new /obj/item/autosurgeon/organ/md(src)
 	new /obj/item/door_remote/chief_medical_officer(src)
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)

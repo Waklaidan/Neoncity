@@ -26,7 +26,7 @@
 #define DYE_HOS "hos"
 #define DYE_CE "ce"
 #define DYE_RD "rd"
-#define DYE_CMO "cmo"
+#define DYE_MD "md"
 #define DYE_REDCOAT "redcoat"
 #define DYE_CLOWN "clown"
 #define DYE_CHAP "chap"

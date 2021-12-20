@@ -100,7 +100,7 @@
 		"stamp-deny" = 'icons/stamp_icons/large_stamp-deny.png',
 		"stamp-ok" = 'icons/stamp_icons/large_stamp-ok.png',
 		"stamp-hop" = 'icons/stamp_icons/large_stamp-hop.png',
-		"stamp-cmo" = 'icons/stamp_icons/large_stamp-cmo.png',
+		"stamp-md" = 'icons/stamp_icons/large_stamp-md.png',
 		"stamp-ce" = 'icons/stamp_icons/large_stamp-ce.png',
 		"stamp-hos" = 'icons/stamp_icons/large_stamp-hos.png',
 		"stamp-rd" = 'icons/stamp_icons/large_stamp-rd.png',

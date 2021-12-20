@@ -170,9 +170,9 @@ SUBSYSTEM_DEF(id_access)
 			"templates" = list(),
 			"pdas" = list(),
 		),
-		"[ACCESS_CMO]" = list(
+		"[ACCESS_MD]" = list(
 			"regions" = list(REGION_MEDBAY),
-			"head" = JOB_CHIEF_MEDICAL_OFFICER,
+			"head" = JOB_MEDICAL_DIRECTOR,
 			"templates" = list(),
 			"pdas" = list(),
 		),
@@ -283,7 +283,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_ROBOTICS]"] = "Robotics"
 	desc_by_access["[ACCESS_VIROLOGY]"] = "Virology"
 	desc_by_access["[ACCESS_PSYCHOLOGY]"] = "Psychology"
-	desc_by_access["[ACCESS_CMO]"] = "CMO Office"
+	desc_by_access["[ACCESS_MD]"] = "MD Office"
 	desc_by_access["[ACCESS_QM]"] = "Quartermaster"
 	desc_by_access["[ACCESS_SURGERY]"] = "Surgery"
 	desc_by_access["[ACCESS_THEATRE]"] = "Theatre"

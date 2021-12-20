@@ -1,5 +1,5 @@
 /datum/job/chief_medical_officer
-	title = JOB_CHIEF_MEDICAL_OFFICER
+	title = JOB_MEDICAL_DIRECTOR
 	description = "Coordinate doctors and other medbay employees, ensure they \
 		know how to save lives, check for injuries on the crew monitor."
 	department_head = list(JOB_CAPTAIN)
@@ -17,7 +17,7 @@
 	exp_required_type_department = EXP_TYPE_MEDICAL
 	exp_granted_type = EXP_TYPE_CREW
 
-	outfit = /datum/outfit/job/cmo
+	outfit = /datum/outfit/job/md
 	plasmaman_outfit = /datum/outfit/plasmaman/chief_medical_officer
 	departments_list = list(
 		/datum/job_department/medical,
@@ -45,25 +45,25 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 
 
-/datum/job/chief_medical_officer/get_captaincy_announcement(mob/living/captain)
+/datum/job/medical_director/get_captaincy_announcement(mob/living/captain)
 	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
 
 
-/datum/outfit/job/cmo
-	name = "Chief Medical Officer"
-	jobtype = /datum/job/chief_medical_officer
+/datum/outfit/job/md
+	name = "Medical Director"
+	jobtype = /datum/job/medical_director
 
 	id = /obj/item/card/id/advanced/silver
 	id_trim = /datum/id_trim/job/chief_medical_officer
 	uniform = /obj/item/clothing/under/rank/medical/chief_medical_officer
-	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
+	suit = /obj/item/clothing/suit/toggle/labcoat/md
 	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(
 		/obj/item/melee/baton/telescopic = 1,
 		/obj/item/modular_computer/tablet/preset/advanced/command = 1,
 		)
-	belt = /obj/item/pda/heads/cmo
-	ears = /obj/item/radio/headset/heads/cmo
+	belt = /obj/item/pda/heads/md
+	ears = /obj/item/radio/headset/heads/md
 	shoes = /obj/item/clothing/shoes/sneakers/blue
 	l_pocket = /obj/item/pinpointer/crew
 	l_hand = /obj/item/storage/firstaid/medical
@@ -75,11 +75,11 @@
 	box = /obj/item/storage/box/survival/medical
 	chameleon_extras = list(
 		/obj/item/gun/syringe,
-		/obj/item/stamp/cmo,
+		/obj/item/stamp/md,
 		)
 	skillchips = list(/obj/item/skillchip/entrails_reader)
 
-/datum/outfit/job/cmo/mod
+/datum/outfit/job/md/mod
 	name = "Chief Medical Officer (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen

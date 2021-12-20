@@ -74,11 +74,11 @@
 /obj/item/clothing/suit/bio_suit/scientist
 	icon_state = "bio_scientist"
 
-//CMO's biosuit, blue stripe
-/obj/item/clothing/head/bio_hood/cmo
+//MD's biosuit, blue stripe
+/obj/item/clothing/head/bio_hood/md
 	icon_state = "bio_cmo"
 
-/obj/item/clothing/suit/bio_suit/cmo
+/obj/item/clothing/suit/bio_suit/md
 	icon_state = "bio_cmo"
 
 /obj/item/clothing/suit/bio_suit/cmo/Initialize(mapload)

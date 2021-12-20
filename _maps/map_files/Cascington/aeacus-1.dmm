@@ -13175,14 +13175,14 @@
 	},
 /obj/item/folder/white,
 /obj/item/pen,
-/obj/item/stamp/cmo,
+/obj/item/stamp/md,
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "Mj" = (
 /obj/structure/table/glass,
 /obj/item/paper_bin,
 /obj/item/clipboard,
-/obj/item/toy/figure/cmo,
+/obj/item/toy/figure/md,
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "Mk" = (
@@ -16241,7 +16241,7 @@
 /turf/open/floor/wood/parquet/ebony,
 /area/city/outdoors)
 "Up" = (
-/obj/machinery/computer/security/telescreen/cmo{
+/obj/machinery/computer/security/telescreen/md{
 	dir = 4;
 	pixel_x = -30
 	},

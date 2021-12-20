@@ -260,7 +260,7 @@ GLOBAL_LIST_INIT(scarySounds, list(
 7 Security
 8 HoS Office
 9 Medbay
-10 CMO Office
+10 MD Office
 11 Chemistry
 12 Research
 13 RD Office
@@ -296,7 +296,7 @@ GLOBAL_LIST_INIT(TAGGERLOCATIONS, list(
 	"CE Office",
 	"Chapel",
 	"Chemistry",
-	"CMO Office",
+	"MD Office",
 	"Detective's Office",
 	"Disposals",
 	"Dormitories",
