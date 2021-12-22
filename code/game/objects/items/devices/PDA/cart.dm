@@ -199,9 +199,9 @@
 	. = ..()
 	radio = new(src)
 
-/obj/item/cartridge/captain
+/obj/item/cartridge/mayor
 	name = "\improper Value-PAK cartridge"
-	desc = "Now with 350% more value!" //Give the Captain...EVERYTHING! (Except Mime, Clown, and Syndie)
+	desc = "Now with 350% more value!" //Give the Mayor...EVERYTHING! (Except Mime, Clown, and Syndie)
 	icon_state = "cart-c"
 	access = ~(CART_CLOWN | CART_MIME | CART_REMOTE_DOOR)
 	spam_enabled = 1
@@ -216,7 +216,7 @@
 		VIBE_BOT,
 	)
 
-/obj/item/cartridge/captain/Initialize(mapload)
+/obj/item/cartridge/mayor/Initialize(mapload)
 	. = ..()
 	radio = new(src)
 
@@ -760,7 +760,7 @@
 		menu += "Keep an ID inserted to upload access codes upon summoning."
 
 	menu += "<HR><A href='byond://?src=[REF(src)];op=botlist'>[PDAIMG(back)]Return to bot list</A>"
-		
+
 	return menu
 
 //If the cartridge adds a special line to the top of the messaging app

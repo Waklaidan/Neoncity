@@ -12,7 +12,7 @@
 	antag_datum = /datum/antagonist/traitor
 	minimum_required_age = 0
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_PRISONER,
@@ -108,7 +108,7 @@
 	antag_flag = ROLE_BROTHER
 	antag_datum = /datum/antagonist/brother
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_PRISONER,
@@ -167,7 +167,7 @@
 	antag_flag = ROLE_CHANGELING
 	antag_datum = /datum/antagonist/changeling
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_PRISONER,
@@ -216,7 +216,7 @@
 	antag_flag = ROLE_HERETIC
 	antag_datum = /datum/antagonist/heretic
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_PRISONER,
@@ -274,9 +274,9 @@
 	flags = HIGH_IMPACT_RULESET
 	minimum_required_age = 14
 	restricted_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_HEAD_OF_SECURITY,
-	) // Just to be sure that a wizard getting picked won't ever imply a Captain or HoS not getting drafted
+	) // Just to be sure that a wizard getting picked won't ever imply a Mayor or HoS not getting drafted
 	required_candidates = 1
 	weight = 2
 	cost = 20
@@ -321,7 +321,7 @@
 	minimum_required_age = 14
 	restricted_roles = list(
 		JOB_AI,
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_CHAPLAIN,
 		JOB_CYBORG,
 		JOB_DETECTIVE,
@@ -389,9 +389,9 @@
 	var/datum/antagonist/antag_leader_datum = /datum/antagonist/nukeop/leader
 	minimum_required_age = 14
 	restricted_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_HEAD_OF_SECURITY,
-	) // Just to be sure that a nukie getting picked won't ever imply a Captain or HoS not getting drafted
+	) // Just to be sure that a nukie getting picked won't ever imply a Mayor or HoS not getting drafted
 	required_candidates = 5
 	weight = 3
 	cost = 20
@@ -478,7 +478,7 @@
 	minimum_required_age = 14
 	restricted_roles = list(
 		JOB_AI,
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_CHIEF_ENGINEER,
 		JOB_MEDICAL_DIRECTOR,
 		JOB_CYBORG,
@@ -578,7 +578,7 @@
 	)
 	restricted_roles = list(
 		JOB_AI,
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_CYBORG,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
@@ -710,7 +710,7 @@
 	antag_flag = ROLE_THIEF
 	antag_datum = /datum/antagonist/thief
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_PRISONER,

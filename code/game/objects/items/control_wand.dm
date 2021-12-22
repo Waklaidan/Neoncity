@@ -70,7 +70,7 @@
 	icon_state = "gangtool-yellow"
 	region_access = REGION_ALL_STATION
 
-/obj/item/door_remote/captain
+/obj/item/door_remote/mayor
 	name = "command door remote"
 	icon_state = "gangtool-yellow"
 	region_access = REGION_COMMAND

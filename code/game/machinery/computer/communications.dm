@@ -76,7 +76,7 @@
 /obj/machinery/computer/communications/syndicate/can_send_messages_to_other_sectors(mob/user)
 	return FALSE
 
-/obj/machinery/computer/communications/syndicate/authenticated_as_silicon_or_captain(mob/user)
+/obj/machinery/computer/communications/syndicate/authenticated_as_silicon_or_mayor(mob/user)
 	return FALSE
 
 /obj/machinery/computer/communications/syndicate/get_communication_players()
@@ -91,17 +91,17 @@
 	GLOB.shuttle_caller_list += src
 	AddComponent(/datum/component/gps, "Secured Communications Signal")
 
-/// Are we NOT a silicon, AND we're logged in as the captain?
-/obj/machinery/computer/communications/proc/authenticated_as_non_silicon_captain(mob/user)
+/// Are we NOT a silicon, AND we're logged in as the mayor?
+/obj/machinery/computer/communications/proc/authenticated_as_non_silicon_mayor(mob/user)
 	if (issilicon(user))
 		return FALSE
-	return ACCESS_CAPTAIN in authorize_access
+	return ACCESS_MAYOR in authorize_access
 
-/// Are we a silicon, OR we're logged in as the captain?
-/obj/machinery/computer/communications/proc/authenticated_as_silicon_or_captain(mob/user)
+/// Are we a silicon, OR we're logged in as the mayor?
+/obj/machinery/computer/communications/proc/authenticated_as_silicon_or_mayor(mob/user)
 	if (issilicon(user))
 		return TRUE
-	return ACCESS_CAPTAIN in authorize_access
+	return ACCESS_MAYOR in authorize_access
 
 /// Are we a silicon, OR logged in?
 /obj/machinery/computer/communications/proc/authenticated(mob/user)
@@ -180,7 +180,7 @@
 			SSshuttle.requestEvac(usr, reason)
 			post_status("shuttle")
 		if ("changeSecurityLevel")
-			if (!authenticated_as_silicon_or_captain(usr))
+			if (!authenticated_as_silicon_or_mayor(usr))
 				return
 
 			// Check if they have
@@ -191,7 +191,7 @@
 					to_chat(usr, span_warning("You need to swipe your ID!"))
 					playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, FALSE)
 					return
-				if (!(ACCESS_CAPTAIN in id_card.access))
+				if (!(ACCESS_MAYOR in id_card.access))
 					to_chat(usr, span_warning("You are not authorized to do this!"))
 					playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, FALSE)
 					return
@@ -223,15 +223,15 @@
 		if ("emergency_meeting")
 			if(!(SSevents.holidays && SSevents.holidays[APRIL_FOOLS]))
 				return
-			if (!authenticated_as_silicon_or_captain(usr))
+			if (!authenticated_as_silicon_or_mayor(usr))
 				return
 			emergency_meeting(usr)
 		if ("makePriorityAnnouncement")
-			if (!authenticated_as_silicon_or_captain(usr) && !syndicate)
+			if (!authenticated_as_silicon_or_mayor(usr) && !syndicate)
 				return
 			make_announcement(usr)
 		if ("messageAssociates")
-			if (!authenticated_as_non_silicon_captain(usr))
+			if (!authenticated_as_non_silicon_mayor(usr))
 				return
 			if (!COOLDOWN_FINISHED(src, important_action_cooldown))
 				return
@@ -293,7 +293,7 @@
 				return
 			SSshuttle.cancelEvac(usr)
 		if ("requestNukeCodes")
-			if (!authenticated_as_non_silicon_captain(usr))
+			if (!authenticated_as_non_silicon_mayor(usr))
 				return
 			if (!COOLDOWN_FINISHED(src, important_action_cooldown))
 				return
@@ -305,7 +305,7 @@
 			playsound(src, 'sound/machines/terminal_prompt.ogg', 50, FALSE)
 			COOLDOWN_START(src, important_action_cooldown, IMPORTANT_ACTION_COOLDOWN)
 		if ("restoreBackupRoutingData")
-			if (!authenticated_as_non_silicon_captain(usr))
+			if (!authenticated_as_non_silicon_mayor(usr))
 				return
 			if (!(obj_flags & EMAGGED))
 				return
@@ -313,7 +313,7 @@
 			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, FALSE)
 			obj_flags &= ~EMAGGED
 		if ("sendToOtherSector")
-			if (!authenticated_as_non_silicon_captain(usr))
+			if (!authenticated_as_non_silicon_mayor(usr))
 				return
 			if (!can_send_messages_to_other_sectors(usr))
 				return
@@ -396,7 +396,7 @@
 		if ("toggleEmergencyAccess")
 			if(emergency_access_cooldown(usr)) //if were in cooldown, dont allow the following code
 				return
-			if (!authenticated_as_silicon_or_captain(usr))
+			if (!authenticated_as_silicon_or_mayor(usr))
 				return
 			if (GLOB.emergency_access)
 				revoke_maint_all_access()
@@ -408,10 +408,10 @@
 				log_game("[key_name(usr)] enabled emergency maintenance access.")
 				message_admins("[ADMIN_LOOKUPFLW(usr)] enabled emergency maintenance access.")
 				deadchat_broadcast(" enabled emergency maintenance access at [span_name("[get_area_name(usr, TRUE)]")].", span_name("[usr.real_name]"), usr, message_type = DEADCHAT_ANNOUNCEMENT)
-		// Request codes for the Captain's Spare ID safe.
+		// Request codes for the Mayor's Spare ID safe.
 		if("requestSafeCodes")
-			if(SSjob.assigned_captain)
-				to_chat(usr, span_warning("There is already an assigned Captain or Acting Captain on deck!"))
+			if(SSjob.assigned_mayor)
+				to_chat(usr, span_warning("There is already an assigned Mayor or Acting Mayor on duty!"))
 				return
 
 			if(SSjob.safe_code_timer_id)
@@ -431,7 +431,7 @@
 			SSjob.safe_code_request_loc = pod_location
 			SSjob.safe_code_requested = TRUE
 			SSjob.safe_code_timer_id = addtimer(CALLBACK(SSjob, /datum/controller/subsystem/job.proc/send_spare_id_safe_code, pod_location), 120 SECONDS, TIMER_UNIQUE | TIMER_STOPPABLE)
-			minor_announce("Due to staff shortages, your station has been approved for delivery of access codes to secure the Captain's Spare ID. Delivery via drop pod at [get_area(pod_location)]. ETA 120 seconds.")
+			minor_announce("Due to staff shortages, your station has been approved for delivery of access codes to secure the Mayor's Spare ID. Delivery via drop pod at [get_area(pod_location)]. ETA 120 seconds.")
 
 /obj/machinery/computer/communications/proc/emergency_access_cooldown(mob/user)
 	if(toggle_uses == toggle_max_uses) //you have used up free uses already, do it one more time and start a cooldown
@@ -479,7 +479,7 @@
 	var/has_connection = has_communication()
 	data["hasConnection"] = has_connection
 
-	if(!SSjob.assigned_captain && !SSjob.safe_code_requested && SSid_access.spare_id_safe_code && has_connection)
+	if(!SSjob.assigned_mayor && !SSjob.safe_code_requested && SSid_access.spare_id_safe_code && has_connection)
 		data["canRequestSafeCode"] = TRUE
 		data["safeCodeDeliveryWait"] = 0
 	else
@@ -520,7 +520,7 @@
 				if(syndicate)
 					data["shuttleCanEvacOrFailReason"] = "You cannot summon the shuttle from this console!"
 
-				if (authenticated_as_non_silicon_captain(user))
+				if (authenticated_as_non_silicon_mayor(user))
 					data["canMessageAssociates"] = TRUE
 					data["canRequestNuke"] = TRUE
 
@@ -537,7 +537,7 @@
 
 					data["sectors"] = sectors
 
-				if (authenticated_as_silicon_or_captain(user))
+				if (authenticated_as_silicon_or_mayor(user))
 					data["canToggleEmergencyAccess"] = TRUE
 					data["emergencyAccess"] = GLOB.emergency_access
 
@@ -687,7 +687,7 @@
 	return FALSE
 
 /obj/machinery/computer/communications/proc/can_send_messages_to_other_sectors(mob/user)
-	if (!authenticated_as_non_silicon_captain(user))
+	if (!authenticated_as_non_silicon_mayor(user))
 		return
 
 	return length(CONFIG_GET(keyed_list/cross_server)) > 0

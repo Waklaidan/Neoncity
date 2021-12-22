@@ -359,15 +359,15 @@ SUBSYSTEM_DEF(ticker)
 		shuffle(GLOB.available_depts),
 	)
 
-	var/captainless = TRUE
+	var/mayorless = TRUE
 
 	var/highest_rank = length(SSjob.chain_of_command) + 1
 	var/list/spare_id_candidates = list()
 	var/mob/dead/new_player/picked_spare_id_candidate
 
-	// Find a suitable player to hold captaincy.
+	// Find a suitable player to hold mayordom.
 	for(var/mob/dead/new_player/new_player_mob as anything in GLOB.new_player_list)
-		if(is_banned_from(new_player_mob.ckey, list(JOB_CAPTAIN)))
+		if(is_banned_from(new_player_mob.ckey, list(JOB_MAYOR)))
 			CHECK_TICK
 			continue
 		if(!ishuman(new_player_mob.new_character))
@@ -404,21 +404,21 @@ SUBSYSTEM_DEF(ticker)
 			SSjob.EquipRank(new_player_living, player_assigned_role, new_player_mob.client)
 		player_assigned_role.after_roundstart_spawn(new_player_living, new_player_mob.client)
 		if(picked_spare_id_candidate == new_player_mob)
-			captainless = FALSE
-			var/acting_captain = !is_captain_job(player_assigned_role)
-			SSjob.promote_to_captain(new_player_living, acting_captain)
-			OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, player_assigned_role.get_captaincy_announcement(new_player_living)))
+			mayorless = FALSE
+			var/acting_mayor = !is_mayor_job(player_assigned_role)
+			SSjob.promote_to_mayor(new_player_living, acting_mayor)
+			OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, player_assigned_role.get_mayordom_announcement(new_player_living)))
 		if((player_assigned_role.job_flags & JOB_ASSIGN_QUIRKS) && ishuman(new_player_living) && CONFIG_GET(flag/roundstart_traits))
 			if(new_player_mob.client?.prefs?.should_be_random_hardcore(player_assigned_role, new_player_living.mind))
 				new_player_mob.client.prefs.hardcore_random_setup(new_player_living)
 			SSquirks.AssignQuirks(new_player_living, new_player_mob.client)
 		CHECK_TICK
 
-	if(captainless)
+	if(mayorless)
 		for(var/mob/dead/new_player/new_player_mob as anything in GLOB.new_player_list)
 			var/mob/living/carbon/human/new_player_human = new_player_mob.new_character
 			if(new_player_human)
-				to_chat(new_player_mob, span_notice("Captainship not forced on anyone."))
+				to_chat(new_player_mob, span_notice("Mayordom not forced on anyone."))
 			CHECK_TICK
 
 
@@ -590,7 +590,7 @@ SUBSYSTEM_DEF(ticker)
 		if(WIZARD_KILLED)
 			news_message = "Tensions have flared with the Space Wizard Federation following the death of one of their members aboard [decoded_station_name]."
 		if(STATION_NUKED)
-			news_message = "[decoded_station_name] activated its self-destruct device for unknown reasons. Attempts to clone the Captain for arrest and execution are underway."
+			news_message = "[decoded_station_name] activated its self-destruct device for unknown reasons. Attempts to clone the Mayor for arrest and execution are underway."
 		if(CLOCK_SUMMON)
 			news_message = "The garbled messages about hailing a mouse and strange energy readings from [decoded_station_name] have been discovered to be an ill-advised, if thorough, prank by a clown."
 		if(CLOCK_SILICONS)

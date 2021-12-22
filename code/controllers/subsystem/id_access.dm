@@ -33,7 +33,7 @@ SUBSYSTEM_DEF(id_access)
 	/// Helper list containing all station regions.
 	var/list/station_regions = list()
 
-	/// The roundstart generated code for the spare ID safe. This is given to the Captain on shift start. If there's no Captain, it's given to the HoP. If there's no HoP
+	/// The roundstart generated code for the spare ID safe. This is given to the Mayor on shift start. If there's no Mayor, it's given to the HoP. If there's no HoP
 	var/spare_id_safe_code = ""
 
 /datum/controller/subsystem/id_access/Initialize(timeofday)
@@ -80,9 +80,9 @@ SUBSYSTEM_DEF(id_access)
 	for(var/access in accesses_by_flag["[ACCESS_FLAG_PRV_COMMAND]"])
 		flags_by_access |= list("[access]" = ACCESS_FLAG_PRV_COMMAND)
 
-	accesses_by_flag["[ACCESS_FLAG_CAPTAIN]"] = CAPTAIN_ACCESS
-	for(var/access in accesses_by_flag["[ACCESS_FLAG_CAPTAIN]"])
-		flags_by_access |= list("[access]" = ACCESS_FLAG_CAPTAIN)
+	accesses_by_flag["[ACCESS_FLAG_MAYOR]"] = MAYOR_ACCESS
+	for(var/access in accesses_by_flag["[ACCESS_FLAG_MAYOR]"])
+		flags_by_access |= list("[access]" = ACCESS_FLAG_MAYOR)
 
 	accesses_by_flag["[ACCESS_FLAG_CENTCOM]"] = CENTCOM_ACCESS
 	for(var/access in accesses_by_flag["[ACCESS_FLAG_CENTCOM]"])
@@ -103,7 +103,7 @@ SUBSYSTEM_DEF(id_access)
 	access_flag_string_by_flag["[ACCESS_FLAG_COMMON]"] = ACCESS_FLAG_COMMON_NAME
 	access_flag_string_by_flag["[ACCESS_FLAG_COMMAND]"] = ACCESS_FLAG_COMMAND_NAME
 	access_flag_string_by_flag["[ACCESS_FLAG_PRV_COMMAND]"] = ACCESS_FLAG_PRV_COMMAND_NAME
-	access_flag_string_by_flag["[ACCESS_FLAG_CAPTAIN]"] = ACCESS_FLAG_CAPTAIN_NAME
+	access_flag_string_by_flag["[ACCESS_FLAG_MAYOR]"] = ACCESS_FLAG_MAYOR_NAME
 	access_flag_string_by_flag["[ACCESS_FLAG_CENTCOM]"] = ACCESS_FLAG_CENTCOM_NAME
 	access_flag_string_by_flag["[ACCESS_FLAG_SYNDICATE]"] = ACCESS_FLAG_SYNDICATE_NAME
 	access_flag_string_by_flag["[ACCESS_FLAG_AWAY]"] = ACCESS_FLAG_AWAY_NAME
@@ -152,9 +152,9 @@ SUBSYSTEM_DEF(id_access)
 		))
 
 	sub_department_managers_tgui = list(
-		"[ACCESS_CAPTAIN]" = list(
+		"[ACCESS_MAYOR]" = list(
 			"regions" = list(REGION_COMMAND),
-			"head" = JOB_CAPTAIN,
+			"head" = JOB_MAYOR,
 			"templates" = list(),
 			"pdas" = list(),
 		),
@@ -235,7 +235,7 @@ SUBSYSTEM_DEF(id_access)
 	wildcard_flags_by_wildcard[WILDCARD_NAME_COMMON] = WILDCARD_FLAG_COMMON
 	wildcard_flags_by_wildcard[WILDCARD_NAME_COMMAND] = WILDCARD_FLAG_COMMAND
 	wildcard_flags_by_wildcard[WILDCARD_NAME_PRV_COMMAND] = WILDCARD_FLAG_PRV_COMMAND
-	wildcard_flags_by_wildcard[WILDCARD_NAME_CAPTAIN] = WILDCARD_FLAG_CAPTAIN
+	wildcard_flags_by_wildcard[WILDCARD_NAME_MAYOR] = WILDCARD_FLAG_MAYOR
 	wildcard_flags_by_wildcard[WILDCARD_NAME_CENTCOM] = WILDCARD_FLAG_CENTCOM
 	wildcard_flags_by_wildcard[WILDCARD_NAME_SYNDICATE] = WILDCARD_FLAG_SYNDICATE
 	wildcard_flags_by_wildcard[WILDCARD_NAME_AWAY] = WILDCARD_FLAG_AWAY
@@ -268,7 +268,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_TELEPORTER]"] = "Teleporter"
 	desc_by_access["[ACCESS_EVA]"] = "EVA"
 	desc_by_access["[ACCESS_HEADS]"] = "Bridge"
-	desc_by_access["[ACCESS_CAPTAIN]"] = "Captain"
+	desc_by_access["[ACCESS_MAYOR]"] = "Mayor"
 	desc_by_access["[ACCESS_ALL_PERSONAL_LOCKERS]"] = "Personal Lockers"
 	desc_by_access["[ACCESS_CHAPEL_OFFICE]"] = "Chapel Office"
 	desc_by_access["[ACCESS_TECH_STORAGE]"] = "Technical Storage"
@@ -320,7 +320,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_CENT_MEDICAL]"] = "Code White"
 	desc_by_access["[ACCESS_CENT_TELEPORTER]"] = "Code Blue"
 	desc_by_access["[ACCESS_CENT_SPECOPS]"] = "Code Black"
-	desc_by_access["[ACCESS_CENT_CAPTAIN]"] = "Code Gold"
+	desc_by_access["[ACCESS_CENT_MAYOR]"] = "Code Gold"
 	desc_by_access["[ACCESS_CENT_BAR]"] = "Code Scotch"
 
 /**

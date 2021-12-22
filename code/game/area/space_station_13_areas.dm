@@ -498,14 +498,14 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/command/heads_quarters
 
-/area/command/heads_quarters/captain
-	name = "\improper Captain's Office"
-	icon_state = "captain"
+/area/command/heads_quarters/mayor
+	name = "\improper Mayor's Office"
+	icon_state = "mayor"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
-/area/command/heads_quarters/captain/private
-	name = "\improper Captain's Quarters"
-	icon_state = "captain_private"
+/area/command/heads_quarters/mayor/private
+	name = "\improper Mayor's Quarters"
+	icon_state = "mayor_private"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/command/heads_quarters/ce

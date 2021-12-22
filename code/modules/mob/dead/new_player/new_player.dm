@@ -208,22 +208,22 @@
 	SSjob.EquipRank(character, job, character.client)
 	job.after_latejoin_spawn(character)
 
-	#define IS_NOT_CAPTAIN 0
-	#define IS_ACTING_CAPTAIN 1
-	#define IS_FULL_CAPTAIN 2
-	var/is_captain = IS_NOT_CAPTAIN
-	// If we already have a captain, are they a "Captain" rank and are we allowing multiple of them to be assigned?
-	if(is_captain_job(job))
-		is_captain = IS_FULL_CAPTAIN
-	// If we don't have an assigned cap yet, check if this person qualifies for some from of captaincy.
-	else if(!SSjob.assigned_captain && ishuman(character) && SSjob.chain_of_command[rank] && !is_banned_from(ckey, list(JOB_CAPTAIN)))
-		is_captain = IS_ACTING_CAPTAIN
-	if(is_captain != IS_NOT_CAPTAIN)
-		minor_announce(job.get_captaincy_announcement(character))
-		SSjob.promote_to_captain(character, is_captain == IS_ACTING_CAPTAIN)
-	#undef IS_NOT_CAPTAIN
-	#undef IS_ACTING_CAPTAIN
-	#undef IS_FULL_CAPTAIN
+	#define IS_NOT_MAYOR 0
+	#define IS_ACTING_MAYOR 1
+	#define IS_FULL_MAYOR 2
+	var/is_mayor = IS_NOT_MAYOR
+	// If we already have a mayor, are they a "Mayor" rank and are we allowing multiple of them to be assigned?
+	if(is_mayor_job(job))
+		is_mayor = IS_FULL_MAYOR
+	// If we don't have an assigned cap yet, check if this person qualifies for some from of mayorcy.
+	else if(!SSjob.assigned_mayor && ishuman(character) && SSjob.chain_of_command[rank] && !is_banned_from(ckey, list(JOB_MAYOR)))
+		is_mayor = IS_ACTING_MAYOR
+	if(is_mayor != IS_NOT_MAYOR)
+		minor_announce(job.get_mayordom_announcement(character))
+		SSjob.promote_to_mayor(character, is_mayor == IS_ACTING_MAYOR)
+	#undef IS_NOT_MAYOR
+	#undef IS_ACTING_MAYOR
+	#undef IS_FULL_MAYOR
 
 	SSticker.minds += character.mind
 	character.client.init_verbs() // init verbs for the late join

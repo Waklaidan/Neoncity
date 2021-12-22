@@ -370,8 +370,8 @@
 /datum/preset_holoimage/researcher
 	outfit_type = /datum/outfit/job/scientist
 
-/datum/preset_holoimage/captain
-	outfit_type = /datum/outfit/job/captain
+/datum/preset_holoimage/mayor
+	outfit_type = /datum/outfit/job/mayor
 
 /datum/preset_holoimage/nanotrasenprivatesecurity
 	outfit_type = /datum/outfit/nanotrasensoldiercorpse2

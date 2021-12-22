@@ -5,7 +5,7 @@
 	var/targetitem = /obj/item/bikehorn //typepath of the objective item
 	var/list/valid_containers = list() // Valid containers that the target item can be in.
 	var/difficulty = 9001 //vaguely how hard it is to do this objective
-	var/list/excludefromjob = list() //If you don't want a job to get a certain objective (no captain stealing his own medal, etcetc)
+	var/list/excludefromjob = list() //If you don't want a job to get a certain objective (no mayor stealing his own medal, etcetc)
 	var/list/altitems = list() //Items which can serve as an alternative to the objective (darn you blueprints)
 	var/list/special_equipment = list()
 	var/objective_type = OBJECTIVE_ITEM_TYPE_NORMAL
@@ -37,7 +37,7 @@
 	name = "the (TECH BOARD) circuitboard in secure tech storage"
 	var/circuitboard_name
 	excludefromjob = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_CHIEF_ENGINEER,
 		JOB_RESEARCH_DIRECTOR,
 	)
@@ -59,7 +59,7 @@
 	targetitem = /obj/item/aicard
 	name = "an intelliCard"
 	excludefromjob = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_CHIEF_ENGINEER,
 		JOB_RESEARCH_DIRECTOR,
 		JOB_MEDICAL_DIRECTOR,
@@ -112,11 +112,11 @@
 	exists_on_map = TRUE
 
 // High risk steal objectives
-/datum/objective_item/steal/caplaser
-	name = "the captain's antique laser gun"
-	targetitem = /obj/item/gun/energy/laser/captain
+/datum/objective_item/steal/maylaser
+	name = "the mayor's antique laser gun"
+	targetitem = /obj/item/gun/energy/laser/mayor
 	difficulty = 5
-	excludefromjob = list(JOB_CAPTAIN)
+	excludefromjob = list(JOB_MAYOR)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/hoslaser
@@ -130,14 +130,14 @@
 	name = "a hand teleporter"
 	targetitem = /obj/item/hand_tele
 	difficulty = 5
-	excludefromjob = list(JOB_CAPTAIN, JOB_RESEARCH_DIRECTOR)
+	excludefromjob = list(JOB_MAYOR, JOB_RESEARCH_DIRECTOR)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/jetpack
-	name = "the Captain's jetpack"
-	targetitem = /obj/item/tank/jetpack/oxygen/captain
+	name = "the Mayor's jetpack"
+	targetitem = /obj/item/tank/jetpack/oxygen/mayor
 	difficulty = 5
-	excludefromjob = list(JOB_CAPTAIN)
+	excludefromjob = list(JOB_MAYOR)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/magboots
@@ -147,11 +147,11 @@
 	excludefromjob = list(JOB_CHIEF_ENGINEER)
 	exists_on_map = TRUE
 
-/datum/objective_item/steal/capmedal
-	name = "the medal of captaincy"
-	targetitem = /obj/item/clothing/accessory/medal/gold/captain
+/datum/objective_item/steal/maymedal
+	name = "the medal of mayordom"
+	targetitem = /obj/item/clothing/accessory/medal/gold/mayor
 	difficulty = 5
-	excludefromjob = list(JOB_CAPTAIN)
+	excludefromjob = list(JOB_MAYOR)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/hypo
@@ -165,7 +165,7 @@
 	name = "the nuclear authentication disk"
 	targetitem = /obj/item/disk/nuclear
 	difficulty = 5
-	excludefromjob = list(JOB_CAPTAIN)
+	excludefromjob = list(JOB_MAYOR)
 
 /datum/objective_item/steal/nukedisc/check_special_completion(obj/item/disk/nuclear/N)
 	return !N.fake
@@ -304,7 +304,7 @@
 
 //Old ninja objectives.
 /datum/objective_item/special/pinpointer
-	name = "the captain's pinpointer"
+	name = "the mayor's pinpointer"
 	targetitem = /obj/item/pinpointer/nuke
 	difficulty = 10
 	exists_on_map = TRUE

@@ -1,6 +1,6 @@
 /obj/structure/closet/secure_closet/captains
 	name = "\proper captain's locker"
-	req_access = list(ACCESS_CAPTAIN)
+	req_access = list(ACCESS_MAYOR)
 	icon_state = "cap"
 
 /obj/structure/closet/secure_closet/captains/PopulateContents()

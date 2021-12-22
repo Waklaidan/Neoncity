@@ -28,7 +28,7 @@
 #define ACCESS_EVA 18
 /// Bridge, EVA storage windoors, gateway shutters, AI integrity restorer, comms console
 #define ACCESS_HEADS 19
-#define ACCESS_CAPTAIN 20
+#define ACCESS_MAYOR 20
 #define ACCESS_ALL_PERSONAL_LOCKERS 21
 #define ACCESS_CHAPEL_OFFICE 22
 #define ACCESS_TECH_STORAGE 23
@@ -94,7 +94,7 @@
 #define ACCESS_CENT_GENERAL 101
 /// Thunderdome.
 #define ACCESS_CENT_THUNDER 102
-/// Special Ops. Captain's display case, Marauder and Seraph mechs.
+/// Special Ops. Mayor's display case, Marauder and Seraph mechs.
 #define ACCESS_CENT_SPECOPS 103
 /// Medical/Research
 #define ACCESS_CENT_MEDICAL 104
@@ -104,8 +104,8 @@
 #define ACCESS_CENT_STORAGE 106
 /// Teleporter.
 #define ACCESS_CENT_TELEPORTER 107
-/// Captain's office/ID comp/AI.
-#define ACCESS_CENT_CAPTAIN 109
+/// Mayor's office/ID comp/AI.
+#define ACCESS_CENT_MAYOR 109
 /// The non-existent CentCom Bar
 #define ACCESS_CENT_BAR 110
 
@@ -165,13 +165,13 @@
 #define ACCESS_FLAG_PRV_COMMAND_NAME "Private Command"
 /// Bitflag for Private Command ID card accesses. See PRIVATE_COMMAND_ACCESS.
 #define ACCESS_FLAG_PRV_COMMAND (1 << 2)
-/// Displayed name for Captain ID card accesses.
-#define ACCESS_FLAG_CAPTAIN_NAME "Captain"
-/// Bitflag for Captain ID card accesses. See CAPTAIN_ACCESS.
-#define ACCESS_FLAG_CAPTAIN (1 << 3)
+/// Displayed name for Mayor ID card accesses.
+#define ACCESS_FLAG_MAYOR_NAME "Mayor"
+/// Bitflag for Mayor ID card accesses. See MAYOR_ACCESS.
+#define ACCESS_FLAG_MAYOR (1 << 3)
 /// Displayed name for Centcom ID card accesses.
 #define ACCESS_FLAG_CENTCOM_NAME "Centcom"
-/// Bitflag for Centcom ID card accesses. See CENTCOM_ACCESS.
+/// Bitflag for Centcom ID card accesses. See MAYOR_ACCESS.
 #define ACCESS_FLAG_CENTCOM (1 << 4)
 /// Displayed name for Syndicate ID card accesses.
 #define ACCESS_FLAG_SYNDICATE_NAME "Syndicate"
@@ -202,16 +202,16 @@
 #define WILDCARD_FLAG_PRV_COMMAND ACCESS_FLAG_COMMON | ACCESS_FLAG_COMMAND | ACCESS_FLAG_PRV_COMMAND
 /// Name associated with the private command wildcard bitflag.
 #define WILDCARD_NAME_PRV_COMMAND ACCESS_FLAG_PRV_COMMAND_NAME
-/// Access flags that can be applied to captain wildcard slots.
-#define WILDCARD_FLAG_CAPTAIN ACCESS_FLAG_COMMON | ACCESS_FLAG_COMMAND | ACCESS_FLAG_PRV_COMMAND | ACCESS_FLAG_CAPTAIN
-/// Name associated with the captain wildcard bitflag.
-#define WILDCARD_NAME_CAPTAIN ACCESS_FLAG_CAPTAIN_NAME
+/// Access flags that can be applied to mayor wildcard slots.
+#define WILDCARD_FLAG_MAYOR ACCESS_FLAG_COMMON | ACCESS_FLAG_COMMAND | ACCESS_FLAG_PRV_COMMAND | ACCESS_FLAG_MAYOR
+/// Name associated with the Mayor wildcard bitflag.
+#define WILDCARD_NAME_MAYOR ACCESS_FLAG_MAYOR_NAME
 /// Access flags that can be applied to centcom wildcard slots.
-#define WILDCARD_FLAG_CENTCOM ACCESS_FLAG_COMMON | ACCESS_FLAG_COMMAND | ACCESS_FLAG_PRV_COMMAND | ACCESS_FLAG_CAPTAIN | ACCESS_FLAG_CENTCOM
+#define WILDCARD_FLAG_CENTCOM ACCESS_FLAG_COMMON | ACCESS_FLAG_COMMAND | ACCESS_FLAG_PRV_COMMAND | ACCESS_FLAG_MAYOR | ACCESS_FLAG_CENTCOM
 /// Name associated with the centcom wildcard bitflag.
 #define WILDCARD_NAME_CENTCOM ACCESS_FLAG_CENTCOM_NAME
 /// Access flags that can be applied to syndicate wildcard slots.
-#define WILDCARD_FLAG_SYNDICATE ACCESS_FLAG_COMMON | ACCESS_FLAG_COMMAND | ACCESS_FLAG_PRV_COMMAND | ACCESS_FLAG_CAPTAIN | ACCESS_FLAG_SYNDICATE
+#define WILDCARD_FLAG_SYNDICATE ACCESS_FLAG_COMMON | ACCESS_FLAG_COMMAND | ACCESS_FLAG_PRV_COMMAND | ACCESS_FLAG_MAYOR | ACCESS_FLAG_SYNDICATE
 /// Name associated with the syndicate wildcard bitflag.
 #define WILDCARD_NAME_SYNDICATE ACCESS_FLAG_SYNDICATE_NAME
 /// Access flags that can be applied to offstation wildcard slots.
@@ -307,14 +307,14 @@
 	ACCESS_RD, \
 )
 
-/// Captains private rooms. Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_CAPTAIN)
-#define CAPTAIN_ACCESS list( \
-	ACCESS_CAPTAIN, \
+/// Mayors private rooms. Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_MAYOR)
+#define MAYOR_ACCESS list( \
+	ACCESS_MAYOR, \
 )
 /// Centcom area stuff. Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_CENTCOM)
 #define CENTCOM_ACCESS list( \
 	ACCESS_CENT_BAR, \
-	ACCESS_CENT_CAPTAIN, \
+	ACCESS_CENT_MAYOR, \
 	ACCESS_CENT_TELEPORTER, \
 	ACCESS_CENT_STORAGE, \
 	ACCESS_CENT_LIVING, \
@@ -355,7 +355,7 @@
 /// Name for the Station All Access region.
 #define REGION_ALL_STATION "Station"
 /// Used to seed the accesses_by_region list in SSid_access. A list of all station accesses.
-#define REGION_ACCESS_ALL_STATION COMMON_ACCESS + COMMAND_ACCESS + PRIVATE_COMMAND_ACCESS + CAPTAIN_ACCESS
+#define REGION_ACCESS_ALL_STATION COMMON_ACCESS + COMMAND_ACCESS + PRIVATE_COMMAND_ACCESS + MAYOR_ACCESS
 /// Name for the General region.
 #define REGION_GENERAL "General"
 /// Used to seed the accesses_by_region list in SSid_access. A list of general service accesses that are overseen by the HoP.
@@ -446,7 +446,7 @@
 )
 /// Name for the Command region.
 #define REGION_COMMAND "Command"
-/// Used to seed the accesses_by_region list in SSid_access. A list of all command regional accesses that are overseen by the Captain.
+/// Used to seed the accesses_by_region list in SSid_access. A list of all command regional accesses that are overseen by the Mayor.
 #define REGION_ACCESS_COMMAND list( \
 	ACCESS_HEADS, \
 	ACCESS_RC_ANNOUNCE, \
@@ -458,7 +458,7 @@
 	ACCESS_GATEWAY, \
 	ACCESS_ALL_PERSONAL_LOCKERS, \
 	ACCESS_HOP, \
-	ACCESS_CAPTAIN, \
+	ACCESS_MAYOR, \
 	ACCESS_VAULT, \
 )
 /// Name for the Centcom region.
@@ -489,7 +489,7 @@
 	/obj/item/pda/heads/md = list(REGION_COMMAND), \
 	/obj/item/pda/heads/ce = list(REGION_COMMAND), \
 	/obj/item/pda/heads/rd = list(REGION_COMMAND), \
-	/obj/item/pda/captain = list(REGION_COMMAND), \
+	/obj/item/pda/mayor = list(REGION_COMMAND), \
 	/obj/item/pda/cargo = list(REGION_SUPPLY), \
 	/obj/item/pda/quartermaster = list(REGION_SUPPLY), \
 	/obj/item/pda/shaftminer = list(REGION_SUPPLY), \

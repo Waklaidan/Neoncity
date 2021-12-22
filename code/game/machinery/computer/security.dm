@@ -905,7 +905,7 @@ What a mess.*/
 							temp += "</ul>"
 					if("rank")
 						var/list/L = list(
-							JOB_CAPTAIN,
+							JOB_MAYOR,
 							JOB_HEAD_OF_PERSONNEL,
 							JOB_AI,
 							JOB_CENTCOM,

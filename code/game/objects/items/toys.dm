@@ -1428,9 +1428,9 @@
 	icon_state = "botanist"
 	toysay = "Blaze it!"
 
-/obj/item/toy/figure/captain
-	name = "\improper Captain action figure"
-	icon_state = "captain"
+/obj/item/toy/figure/mayor
+	name = "\improper Mayor action figure"
+	icon_state = "mayor"
 	toysay = "Any heads of staff?"
 
 /obj/item/toy/figure/cargotech
@@ -1519,9 +1519,9 @@
 	icon_state = "curator"
 	toysay = "One day while..."
 
-/obj/item/toy/figure/md
+/obj/item/toy/figure/doc
 	name = "\improper Medical Doctor action figure"
-	icon_state = "md"
+	icon_state = "doc"
 	toysay = "The patient is already dead!"
 
 /obj/item/toy/figure/paramedic

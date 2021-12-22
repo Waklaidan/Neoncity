@@ -13,7 +13,7 @@
 	/// How much does this shuttle cost the cargo budget to purchase? Put in terms of CARGO_CRATE_VALUE to properly scale the cost with the current balance of cargo's income.
 	var/credit_cost = INFINITY
 	/// What job accesses can buy this shuttle? If null, this shuttle cannot be bought.
-	var/list/who_can_purchase = list(ACCESS_CAPTAIN)
+	var/list/who_can_purchase = list(ACCESS_MAYOR)
 	/// Whether or not this shuttle is locked to emags only.
 	var/emag_only = FALSE
 	/// If set, overrides default movement_force on shuttle
@@ -170,7 +170,7 @@
 	description = "For the enterprising shuttle engineer! The chassis will dock upon purchase, but launch will have to be authorized as usual via shuttle call. Comes stocked with construction materials. Unlocks the ability to buy shuttle engine crates from cargo."
 	admin_notes = "No brig, no medical facilities, no shuttle console."
 	credit_cost = CARGO_CRATE_VALUE * 5
-	who_can_purchase = list(ACCESS_CAPTAIN, ACCESS_CE)
+	who_can_purchase = list(ACCESS_MAYOR, ACCESS_CE)
 
 /datum/map_template/shuttle/emergency/airless/post_load()
 	. = ..()
@@ -204,7 +204,7 @@
 	suffix = "russiafightpit"
 	name = "Mother Russia Bleeds"
 	description = "Dis is a high-quality shuttle, da. Many seats, lots of space, all equipment! Even includes entertainment! Such as lots to drink, and a fighting arena for drunk crew to have fun! If arena not fun enough, simply press button of releasing bears. Do not worry, bears trained not to break out of fighting pit, so totally safe so long as nobody stupid or drunk enough to leave door open. Try not to let asimov babycons ruin fun!"
-	admin_notes = "Includes a small variety of weapons. And bears. Only captain-access can release the bears. Bears won't smash the windows themselves, but they can escape if someone lets them."
+	admin_notes = "Includes a small variety of weapons. And bears. Only mayor-access can release the bears. Bears won't smash the windows themselves, but they can escape if someone lets them."
 	credit_cost = CARGO_CRATE_VALUE * 10 // While the shuttle is rusted and poorly maintained, trained bears are costly.
 
 /datum/map_template/shuttle/emergency/meteor
