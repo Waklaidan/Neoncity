@@ -5,9 +5,9 @@ export const eye_color: Feature<string> = {
   component: FeatureColorInput,
 };
 
-export const facial_hair_color: Feature<string> = {
+export const facial_hair_color: FeatureChoiced = {
   name: "Facial hair color",
-  component: FeatureColorInput,
+  component: FeatureDropdownInput,
 };
 
 export const facial_hair_gradient: FeatureChoiced = {
@@ -20,9 +20,9 @@ export const facial_hair_gradient_color: Feature<string> = {
   component: FeatureColorInput,
 };
 
-export const hair_color: Feature<string> = {
+export const hair_color: FeatureChoiced = {
   name: "Hair color",
-  component: FeatureColorInput,
+  component: FeatureDropdownInput,
 };
 
 export const hair_gradient: FeatureChoiced = {

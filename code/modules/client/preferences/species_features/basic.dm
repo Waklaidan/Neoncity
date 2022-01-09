@@ -71,19 +71,24 @@
 /datum/preference/choiced/facial_hairstyle/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
 	preferences.write_preference(src, target.facial_hairstyle)
 	return TRUE
-
-/datum/preference/color/facial_hair_color
-	savefile_key = "facial_hair_color"
-	savefile_identifier = PREFERENCE_CHARACTER
+/datum/preference/choiced/facial_hair_color
 	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
+	savefile_identifier = PREFERENCE_CHARACTER
+	savefile_key = "facial_hair_color"
 	relevant_species_trait = FACEHAIR
+	persistent = TRUE
 
-/datum/preference/color/facial_hair_color/apply_to_human(mob/living/carbon/human/target, value)
-	target.facial_hair_color = value
+/datum/preference/choiced/facial_hair_color/init_possible_values()
+	return GLOB.color_list_human_hair
 
-/datum/preference/color/facial_hair_color/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
-	preferences.write_preference(src, target.facial_hair_color)
-	return TRUE
+/datum/preference/choiced/facial_hair_color/create_default_value()
+	return GLOB.color_list_human_hair[1]
+
+/datum/preference/choiced/facial_hair_color/apply_to_human(mob/living/carbon/human/target, value)
+	target.facial_hair_color = GLOB.color_list_human_hair[value]
+
+/datum/preference/choiced/facial_hair_color/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.write_preference(src, KEYBYINDEX(GLOB.color_list_human_hair, target.facial_hair_color))
 
 /datum/preference/choiced/facial_hair_gradient
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
@@ -125,19 +130,24 @@
 /datum/preference/color/facial_hair_gradient/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
 	preferences.write_preference(src, target.grad_color[GRADIENT_FACIAL_HAIR_KEY])
 	return TRUE
-/datum/preference/color/hair_color
-	savefile_key = "hair_color"
-	savefile_identifier = PREFERENCE_CHARACTER
+/datum/preference/choiced/hair_color
 	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
+	savefile_identifier = PREFERENCE_CHARACTER
+	savefile_key = "hair_color"
 	relevant_species_trait = HAIR
 	persistent = TRUE
 
-/datum/preference/color/hair_color/apply_to_human(mob/living/carbon/human/target, value)
-	target.hair_color = value
+/datum/preference/choiced/hair_color/init_possible_values()
+	return GLOB.color_list_human_hair
 
-/datum/preference/color/hair_color/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
-	preferences.write_preference(src, target.hair_color)
-	return TRUE
+/datum/preference/choiced/hair_color/create_default_value()
+	return GLOB.color_list_human_hair[1]
+
+/datum/preference/choiced/hair_color/apply_to_human(mob/living/carbon/human/target, value)
+	target.hair_color = GLOB.color_list_human_hair[value]
+
+/datum/preference/choiced/hair_color/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.write_preference(src, KEYBYINDEX(GLOB.color_list_human_hair, target.hair_color))
 
 /datum/preference/choiced/hairstyle
 	savefile_key = "hairstyle_name"
