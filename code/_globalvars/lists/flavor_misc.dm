@@ -81,10 +81,10 @@ GLOBAL_LIST_INIT(color_list_human_hair, list(
 	"Light Auburn" = "91553D",
 	"Dark Auburn" = "533D32",
 	"Dark Brown" = "3B3024",
-	"Golden Brown" = "554838",
-	"Medium Brown" = "BB7744",
-	"Chestnut Brown" = "663311",
-	"Brown" = "885533",
+	"Golden Brown" = "AA7722",
+	"Medium Brown" = "775522",
+	"Chestnut Brown" = "774422",
+	"Mahogany Brown" = "772211",
 	"Light Brown" = "CC8855",
 	"Ash Brown" = "BB9966"
 	))
