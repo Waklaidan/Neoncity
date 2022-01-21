@@ -64,6 +64,8 @@
 	var/bulb_emergency_pow_mul = 0.75
 	///The minimum value for the light's power in emergency mode
 	var/bulb_emergency_pow_min = 0.5
+	//Does this light have a chance of breaking when it is made?
+	var/break_chance = 2
 
 /obj/machinery/light/Move()
 	if(status != LIGHT_BROKEN)
@@ -91,11 +93,11 @@
 	switch(fitting)
 		if("tube")
 			brightness = 8
-			if(prob(2))
+			if(prob(break_chance * 2))
 				break_light_tube(TRUE)
 		if("bulb")
 			brightness = 4
-			if(prob(5))
+			if(prob(break_chance))
 				break_light_tube(TRUE)
 	addtimer(CALLBACK(src, .proc/update, FALSE), 0.1 SECONDS)
 
@@ -119,25 +121,32 @@
 		if(LIGHT_OK)
 			var/area/A = get_area(src)
 			if(emergency_mode || (A?.fire))
+				// if the area is on fire, or emergency mode is on, show the fire icon
 				. += mutable_appearance(icon, "[base_state]-emergency", alpha = src.alpha)
 			else
+				// else, show the normal icon
 				. += mutable_appearance(icon, "[base_state]-light", alpha = src.alpha)
 				. += emissive_appearance(icon, "[base_state]-light", alpha = src.alpha)
 
-		else if(LIGHT_BURNED)
+	// if the light is burned out, set the icon_state to burned
+		if(LIGHT_BURNED)
 			. += mutable_appearance(icon, "[base_state]-burned", alpha = src.alpha)
-		else if(LIGHT_BROKEN)
+	// if the light's broken, set the icon_state to broken
+		if(LIGHT_BROKEN)
 			. += mutable_appearance(icon, "[base_state]-broken", alpha = src.alpha)
 
 	if(on && status == LIGHT_OK)
 		var/area/A = get_area(src)
 		if(emergency_mode || (A?.fire))
+			// if the light is in emergency or fire mode, show the emergency light
 			. += mutable_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
 			. += emissive_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
 		else if (nightshift_enabled)
+			// but if nightshift is enabled, show the nightshift light instead
 			. += mutable_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
 			. += emissive_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
 		else
+			// otherwise, show the normal light
 			. += mutable_appearance(overlay_icon, base_state, alpha = src.alpha)
 			. += emissive_appearance(overlay_icon, base_state, alpha = src.alpha)
 
