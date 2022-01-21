@@ -778,6 +778,14 @@
 	for(var/i in 1 to 7)
 		new /obj/item/light/bulb(src)
 
+/obj/item/storage/box/lights/square
+	name = "box of square replacement lights"
+	illustration = "lightmixed"
+
+/obj/item/storage/box/lights/square/PopulateContents()
+	for(var/i in 1 to 21)
+		new /obj/item/light/square(src)
+
 
 /obj/item/storage/box/deputy
 	name = "box of deputy armbands"

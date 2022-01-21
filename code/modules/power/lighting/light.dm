@@ -64,6 +64,8 @@
 	var/bulb_emergency_pow_mul = 0.75
 	///The minimum value for the light's power in emergency mode
 	var/bulb_emergency_pow_min = 0.5
+	//Does this light have a chance of breaking when it is made?
+	var/break_chance = 2
 
 /obj/machinery/light/Move()
 	if(status != LIGHT_BROKEN)
@@ -91,11 +93,11 @@
 	switch(fitting)
 		if("tube")
 			brightness = 8
-			if(prob(2))
+			if(prob(break_chance * 2))
 				break_light_tube(TRUE)
 		if("bulb")
 			brightness = 4
-			if(prob(5))
+			if(prob(break_chance))
 				break_light_tube(TRUE)
 	addtimer(CALLBACK(src, .proc/update, FALSE), 0.1 SECONDS)
 
@@ -107,34 +109,46 @@
 	return ..()
 
 /obj/machinery/light/update_icon_state()
-	switch(status) // set icon_states
-		if(LIGHT_OK)
-			var/area/local_area = get_area(src)
-			if(emergency_mode || (local_area?.fire))
-				icon_state = "[base_state]_emergency"
-			else
-				icon_state = "[base_state]"
-		if(LIGHT_EMPTY)
-			icon_state = "[base_state]-empty"
-		if(LIGHT_BURNED)
-			icon_state = "[base_state]-burned"
-		if(LIGHT_BROKEN)
-			icon_state = "[base_state]-broken"
-	return ..()
+	. = ..()
+	icon_state = "[base_state]-empty"
+	update_overlays()
+
 
 /obj/machinery/light/update_overlays()
 	. = ..()
-	if(!on || status != LIGHT_OK)
-		return
 
-	var/area/local_area = get_area(src)
-	if(emergency_mode || (local_area?.fire))
-		. += mutable_appearance(overlay_icon, "[base_state]_emergency")
-		return
-	if(nightshift_enabled)
-		. += mutable_appearance(overlay_icon, "[base_state]_nightshift")
-		return
-	. += mutable_appearance(overlay_icon, base_state)
+	switch(status)		// set icon_states
+		if(LIGHT_OK)
+			var/area/A = get_area(src)
+			if(emergency_mode || (A?.fire))
+				// if the area is on fire, or emergency mode is on, show the fire icon
+				. += mutable_appearance(icon, "[base_state]-emergency", alpha = src.alpha)
+			else
+				// else, show the normal icon
+				. += mutable_appearance(icon, "[base_state]-light", alpha = src.alpha)
+				. += emissive_appearance(icon, "[base_state]-light", alpha = src.alpha)
+
+	// if the light is burned out, set the icon_state to burned
+		if(LIGHT_BURNED)
+			. += mutable_appearance(icon, "[base_state]-burned", alpha = src.alpha)
+	// if the light's broken, set the icon_state to broken
+		if(LIGHT_BROKEN)
+			. += mutable_appearance(icon, "[base_state]-broken", alpha = src.alpha)
+
+	if(on && status == LIGHT_OK)
+		var/area/A = get_area(src)
+		if(emergency_mode || (A?.fire))
+			// if the light is in emergency or fire mode, show the emergency light
+			. += mutable_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
+			. += emissive_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
+		else if (nightshift_enabled)
+			// but if nightshift is enabled, show the nightshift light instead
+			. += mutable_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
+			. += emissive_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
+		else
+			// otherwise, show the normal light
+			. += mutable_appearance(overlay_icon, base_state, alpha = src.alpha)
+			. += emissive_appearance(overlay_icon, base_state, alpha = src.alpha)
 
 // update the icon_state and luminosity of the light depending on its state
 /obj/machinery/light/proc/update(trigger = TRUE)
@@ -599,3 +613,13 @@
 	layer = 2.5
 	light_type = /obj/item/light/bulb
 	fitting = "bulb"
+
+/obj/machinery/light/wall
+	name = "square wall light"
+	icon = 'icons/obj/lighting.dmi'
+	base_state = "wall"		// base description and icon_state
+	icon_state = "wall"
+	brightness = 4
+	light_type = /obj/item/light/square
+	fitting = "bulb"
+	bulb_colour = "#FFD6AA"
