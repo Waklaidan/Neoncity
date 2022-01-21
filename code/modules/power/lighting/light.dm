@@ -120,34 +120,32 @@
 	switch(status)		// set icon_states
 		if(LIGHT_OK)
 			var/area/A = get_area(src)
-			if(emergency_mode || (A?.fire))
-				// if the area is on fire, or emergency mode is on, show the fire icon
-				. += mutable_appearance(icon, "[base_state]-emergency", alpha = src.alpha)
-			else
-				// else, show the normal icon
-				. += mutable_appearance(icon, "[base_state]-light", alpha = src.alpha)
-				. += emissive_appearance(icon, "[base_state]-light", alpha = src.alpha)
+			if(emergency_mode || (A?.fire)) //if fire is in the area, or emergency mode is on, show the fire icon
+				. += mutable_appearance(icon, "[base_state]-emergency", alpha = src.alpha, color = COLOR_RED)
+			else	//if not, show the normal icon
+				. += mutable_appearance(icon, "[base_state]-light", alpha = src.alpha, color =  bulb_colour)
+				if(on)
+					. += emissive_appearance(icon, "[base_state]-light", alpha = src.alpha)
 
-	// if the light is burned out, set the icon_state to burned
-		if(LIGHT_BURNED)
+		if(LIGHT_BURNED) // if it's burned, it's a broken light
 			. += mutable_appearance(icon, "[base_state]-burned", alpha = src.alpha)
-	// if the light's broken, set the icon_state to broken
-		if(LIGHT_BROKEN)
+			return
+		if(LIGHT_BROKEN) // if it is broken, it is not on (no emissive)
 			. += mutable_appearance(icon, "[base_state]-broken", alpha = src.alpha)
+			return
+		if(LIGHT_EMPTY) // if empty, show the fitting only
+			return
 
 	if(on && status == LIGHT_OK)
 		var/area/A = get_area(src)
-		if(emergency_mode || (A?.fire))
-			// if the light is in emergency or fire mode, show the emergency light
-			. += mutable_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
+		if(emergency_mode || (A?.fire)) // if the area is on fire, show the emergency light
+			. += mutable_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha, color = COLOR_RED)
 			. += emissive_appearance(overlay_icon, "[base_state]_emergency", alpha = src.alpha)
-		else if (nightshift_enabled)
-			// but if nightshift is enabled, show the nightshift light instead
-			. += mutable_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
+		else if (nightshift_enabled) // if nightshift is enabled, show the nightshift light
+			. += mutable_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha, color =  bulb_colour)
 			. += emissive_appearance(overlay_icon, "[base_state]_nightshift", alpha = src.alpha)
-		else
-			// otherwise, show the normal light
-			. += mutable_appearance(overlay_icon, base_state, alpha = src.alpha)
+		else // otherwise show the normal light
+			. += mutable_appearance(overlay_icon, base_state, alpha = src.alpha, color =  bulb_colour)
 			. += emissive_appearance(overlay_icon, base_state, alpha = src.alpha)
 
 // update the icon_state and luminosity of the light depending on its state
@@ -230,7 +228,7 @@
 /obj/machinery/light/proc/burn_out()
 	if(status == LIGHT_OK)
 		status = LIGHT_BURNED
-		icon_state = "[base_state]-burned"
+		update_icon_state()
 		on = FALSE
 		set_light(l_range = 0)
 
