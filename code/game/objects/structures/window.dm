@@ -586,8 +586,9 @@
 	flags_1 = PREVENT_CLICK_UNDER_1
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_WINDOW_FULLTILE)
-	canSmoothWith = list(SMOOTH_GROUP_WINDOW_FULLTILE)
+	canSmoothWith = list(SMOOTH_GROUP_WINDOW_FULLTILE, SMOOTH_GROUP_WALLS)
 	glass_amount = 2
+	color = "#87bdd0"
 
 /obj/structure/window/fulltile/unanchored
 	anchored = FALSE
@@ -626,16 +627,17 @@
 
 /obj/structure/window/reinforced/fulltile
 	icon = 'icons/obj/smooth_structures/reinforced_window.dmi'
-	icon_state = "reinforced_window-0"
-	base_icon_state = "reinforced_window"
+	icon_state = "window-0"
+	base_icon_state = "window"
 	max_integrity = 150
 	fulltile = TRUE
 	flags_1 = PREVENT_CLICK_UNDER_1
 	state = RWINDOW_SECURE
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_WINDOW_FULLTILE)
-	canSmoothWith = list(SMOOTH_GROUP_WINDOW_FULLTILE)
+	canSmoothWith = list(SMOOTH_GROUP_WINDOW_FULLTILE, SMOOTH_GROUP_WALLS)
 	glass_amount = 2
+	color = "#87bdd0"
 
 /obj/structure/window/reinforced/fulltile/unanchored
 	anchored = FALSE
@@ -649,7 +651,7 @@
 	flags_1 = PREVENT_CLICK_UNDER_1
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_WINDOW_FULLTILE)
-	canSmoothWith = list(SMOOTH_GROUP_WINDOW_FULLTILE)
+	canSmoothWith = list(SMOOTH_GROUP_WINDOW_FULLTILE, SMOOTH_GROUP_WALLS)
 	glass_amount = 2
 
 /obj/structure/window/reinforced/fulltile/ice

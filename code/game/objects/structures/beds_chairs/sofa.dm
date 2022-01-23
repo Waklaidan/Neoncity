@@ -5,6 +5,7 @@
 	buildstackamount = 1
 	item_chair = null
 	var/mutable_appearance/armrest
+	color = "#c45c57"
 
 /obj/structure/chair/sofa/Initialize(mapload)
 	armrest = mutable_appearance(icon, "[icon_state]_armrest", ABOVE_MOB_LAYER)
@@ -46,6 +47,7 @@
 	name = "sofa"
 	desc = "Soft and cushy."
 	icon_state = "corp_sofamiddle"
+	color = null
 
 /obj/structure/chair/sofa/corp/left
 	icon_state = "corp_sofaend_left"
