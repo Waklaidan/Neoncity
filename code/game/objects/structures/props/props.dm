@@ -1,7 +1,6 @@
-/*
-	Props are handy tools for exposition. For use in away missions, event areas, yada yada. The sky's the limit with what you want
-	to do with these. Anything can be a prop! Even you!
-*/
+
+//	Props are handy tools for exposition. For use in away missions, event areas, yada yada. The sky's the limit with what you want
+//	to do with these. Anything can be a prop! Even you!
 
 /obj/structure/prop
 	name = "Mapping Prop"

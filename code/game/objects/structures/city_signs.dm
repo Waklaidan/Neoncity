@@ -190,9 +190,7 @@
 	icon_state = "carpark"
 	light_color = COLOR_YELLOW
 
-/*|	                                             */
-/*| Big Neon Signs
-   ----------------------------------------------*/
+// Big Neon Signs
 
 /obj/structure/sign/neon/big
 	icon = 'icons/obj/signs_large.dmi'
@@ -365,9 +363,7 @@
 	light_range = 0
 	light_power = 0
 
-/*|	                                             */
-/*| Large Signs
-   ----------------------------------------------*/
+//Large Signs
 
 /obj/structure/sign/neon/large
 	icon = 'icons/obj/signs_large.dmi'
@@ -394,13 +390,7 @@
 
 
 
-
-
-
-
-/*|	                                             */
-/*| Normal Signs
-   ----------------------------------------------*/
+//Normal Signs
 
 /obj/structure/sign/city/
 	desc = "A sign."
