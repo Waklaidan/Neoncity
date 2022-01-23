@@ -121,6 +121,10 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_WALLS)
 
+/turf/closed/indestructible/border
+	name = "border"
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "blank_dark"
 
 /turf/closed/indestructible/riveted
 	icon = 'icons/turf/walls/riveted.dmi'
@@ -154,7 +158,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 
 /turf/closed/indestructible/wood
 	icon = 'icons/turf/walls/wood_wall.dmi'
-	icon_state = "wood_wall-0"
+	icon_state = "wall-0"
 	base_icon_state = "wood_wall"
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_WOOD_WALLS)

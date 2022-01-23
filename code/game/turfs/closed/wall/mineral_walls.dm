@@ -1,7 +1,7 @@
 /turf/closed/wall/mineral
 	name = "mineral wall"
 	desc = "This shouldn't exist"
-	icon_state = ""
+//	icon_state = ""
 	smoothing_flags = SMOOTH_BITMASK
 	canSmoothWith = null
 	rcd_memory = null
@@ -12,40 +12,44 @@
 /turf/closed/wall/mineral/gold
 	name = "gold wall"
 	desc = "A wall with gold plating. Swag!"
-	icon = 'icons/turf/walls/gold_wall.dmi'
-	icon_state = "gold_wall-0"
-	base_icon_state = "gold_wall"
+//	icon = 'icons/turf/walls/gold_wall.dmi'
+//	icon_state = "gold_wall-0"
+//	base_icon_state = "gold_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/gold
 	explosion_block = 0 //gold is a soft metal you dingus.
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_GOLD_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_GOLD_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_GOLD_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/gold = 4000)
+	base_color = "#cf951f"
 
 /turf/closed/wall/mineral/silver
 	name = "silver wall"
 	desc = "A wall with silver plating. Shiny!"
-	icon = 'icons/turf/walls/silver_wall.dmi'
-	icon_state = "silver_wall-0"
-	base_icon_state = "silver_wall"
+//	icon = 'icons/turf/walls/silver_wall.dmi'
+//	icon_state = "silver_wall-0"
+//	base_icon_state = "silver_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/silver
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_SILVER_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_SILVER_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_SILVER_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/silver = 4000)
+	base_color = "#fff000"
 
 /turf/closed/wall/mineral/diamond
 	name = "diamond wall"
 	desc = "A wall with diamond plating. You monster."
-	icon = 'icons/turf/walls/diamond_wall.dmi'
-	icon_state = "diamond_wall-0"
-	base_icon_state = "diamond_wall"
+//	icon = 'icons/turf/walls/diamond_wall.dmi'
+//	icon_state = "diamond_wall-0"
+//	base_icon_state = "diamond_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/diamond
 	slicing_duration = 200   //diamond wall takes twice as much time to slice
 	explosion_block = 3
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_DIAMOND_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_DIAMOND_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_DIAMOND_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/diamond = 4000)
+
+	base_color = "#33cccc"
 
 /turf/closed/wall/mineral/diamond/hulk_recoil(obj/item/bodypart/arm, mob/living/carbon/human/hulkman, damage = 41)
 	return ..()
@@ -53,40 +57,46 @@
 /turf/closed/wall/mineral/bananium
 	name = "bananium wall"
 	desc = "A wall with bananium plating. Honk!"
-	icon = 'icons/turf/walls/bananium_wall.dmi'
-	icon_state = "bananium_wall-0"
-	base_icon_state = "bananium_wall"
+//	icon = 'icons/turf/walls/bananium_wall.dmi'
+//	icon_state = "bananium_wall-0"
+//	base_icon_state = "bananium_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/bananium
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_BANANIUM_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_BANANIUM_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_BANANIUM_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/bananium = 4000)
+
+	base_color = COLOR_YELLOW
 
 /turf/closed/wall/mineral/sandstone
 	name = "sandstone wall"
 	desc = "A wall with sandstone plating. Rough."
-	icon = 'icons/turf/walls/sandstone_wall.dmi'
-	icon_state = "sandstone_wall-0"
-	base_icon_state = "sandstone_wall"
+	icon = 'icons/turf/walls/brick.dmi'
+//	icon_state = "sandstone_wall-0"
+//	base_icon_state = "sandstone_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/sandstone
 	explosion_block = 0
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_SANDSTONE_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_SANDSTONE_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_SANDSTONE_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/sandstone = 4000)
+
+	base_color = "#ffcc66"
 
 /turf/closed/wall/mineral/uranium
 	article = "a"
 	name = "uranium wall"
 	desc = "A wall with uranium plating. This is probably a bad idea."
-	icon = 'icons/turf/walls/uranium_wall.dmi'
-	icon_state = "uranium_wall-0"
-	base_icon_state = "uranium_wall"
+//	icon = 'icons/turf/walls/uranium_wall.dmi'
+//	icon_state = "uranium_wall-0"
+//	base_icon_state = "uranium_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/uranium
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_URANIUM_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_URANIUM_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_URANIUM_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/uranium = 4000)
+
+	base_color = COLOR_GREEN
 
 /turf/closed/wall/mineral/uranium/proc/radiate()
 	if(!active)
@@ -124,30 +134,32 @@
 /turf/closed/wall/mineral/plasma
 	name = "plasma wall"
 	desc = "A wall with plasma plating. This is definitely a bad idea."
-	icon = 'icons/turf/walls/plasma_wall.dmi'
-	icon_state = "plasma_wall-0"
-	base_icon_state = "plasma_wall"
+//	icon = 'icons/turf/walls/plasma_wall.dmi'
+//	icon_state = "plasma_wall-0"
+//	base_icon_state = "plasma_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/plasma
 	thermal_conductivity = 0.04
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_PLASMA_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_PLASMA_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_PLASMA_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/plasma = 4000)
-
+	base_color = COLOR_PURPLE
 /turf/closed/wall/mineral/wood
 	name = "wooden wall"
 	desc = "A wall with wooden plating. Stiff."
 	icon = 'icons/turf/walls/wood_wall.dmi'
-	icon_state = "wood_wall-0"
-	base_icon_state = "wood_wall"
+//	icon_state = "wood_wall-0"
+//	base_icon_state = "wood_wall"
 	sheet_type = /obj/item/stack/sheet/mineral/wood
 	hardness = 70
 	turf_flags = NONE
 	explosion_block = 0
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_WOOD_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_WOOD_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_WOOD_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/wood = 4000)
+
+	base_color = COLOR_BROWN
 
 /turf/closed/wall/mineral/wood/attackby(obj/item/W, mob/user)
 	if(W.get_sharpness() && W.force)
@@ -170,22 +182,24 @@
 /turf/closed/wall/mineral/iron
 	name = "rough iron wall"
 	desc = "A wall with rough iron plating."
-	icon = 'icons/turf/walls/iron_wall.dmi'
-	icon_state = "iron_wall-0"
-	base_icon_state = "iron_wall"
+//	icon = 'icons/turf/walls/iron_wall.dmi'
+//	icon_state = "iron_wall-0"
+//	base_icon_state = "iron_wall"
 	sheet_type = /obj/item/stack/rods
 	sheet_amount = 5
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_IRON_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_IRON_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_IRON_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/iron = 5000)
+
+	base_color = COLOR_GRAY
 
 /turf/closed/wall/mineral/snow
 	name = "packed snow wall"
 	desc = "A wall made of densely packed snow blocks."
-	icon = 'icons/turf/walls/snow_wall.dmi'
-	icon_state = "snow_wall-0"
-	base_icon_state = "snow_wall"
+//	icon = 'icons/turf/walls/snow_wall.dmi'
+//	icon_state = "snow_wall-0"
+//	base_icon_state = "snow_wall"
 	smoothing_flags = SMOOTH_BITMASK
 	hardness = 80
 	explosion_block = 0
@@ -230,6 +244,8 @@
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_TITANIUM_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_TITANIUM_WALLS, SMOOTH_GROUP_AIRLOCK, SMOOTH_GROUP_SHUTTLE_PARTS)
 	custom_materials = list(/datum/material/titanium = 4000)
+
+	base_color = COLOR_VERY_LIGHT_GRAY
 
 /turf/closed/wall/mineral/titanium/rust_heretic_act()
 	return // titanium does not rust

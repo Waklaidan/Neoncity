@@ -3,7 +3,9 @@
 */
 
 /obj/machinery/door/airlock/command
-	icon = 'icons/obj/doors/airlocks/station/command.dmi'
+	color = COLOR_NAVY
+	pattern_types = list(DOOR_PATTERN_LINE)
+	pattern_color = COLOR_YELLOW
 	assemblytype = /obj/structure/door_assembly/door_assembly_com
 	normal_integrity = 450
 
@@ -17,7 +19,8 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_eng
 
 /obj/machinery/door/airlock/medical
-	icon = 'icons/obj/doors/airlocks/station/medical.dmi'
+	pattern_types = list(DOOR_PATTERN_LINE)
+	pattern_color = "#49ada5"
 	assemblytype = /obj/structure/door_assembly/door_assembly_med
 
 /obj/machinery/door/airlock/hydroponics	//Hydroponics front doors!
@@ -26,7 +29,9 @@
 
 /obj/machinery/door/airlock/maintenance
 	name = "maintenance access"
-	icon = 'icons/obj/doors/airlocks/station/maintenance.dmi'
+	pattern_types = list(DOOR_PATTERN_LINE)
+	pattern_color = COLOR_YELLOW
+	color = COLOR_SILVER
 	assemblytype = /obj/structure/door_assembly/door_assembly_mai
 	normal_integrity = 250
 
@@ -247,7 +252,7 @@
 /obj/machinery/door/airlock/bananium
 	name = "bananium airlock"
 	desc = "Honkhonkhonk"
-	icon = 'icons/obj/doors/airlocks/station/bananium.dmi'
+	color = COLOR_YELLOW
 	assemblytype = /obj/structure/door_assembly/door_assembly_bananium
 	doorOpen = 'sound/items/bikehorn.ogg'
 
@@ -436,8 +441,9 @@
 
 /obj/machinery/door/airlock/maintenance_hatch
 	name = "maintenance hatch"
-	icon = 'icons/obj/doors/airlocks/hatch/maintenance.dmi'
-	overlays_file = 'icons/obj/doors/airlocks/hatch/overlays.dmi'
+	color = COLOR_GRAY
+	pattern_types = DOOR_PATTERN_LINE
+	pattern_color = COLOR_OLIVE
 	note_overlay_file = 'icons/obj/doors/airlocks/hatch/overlays.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_mhatch
 

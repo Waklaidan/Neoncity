@@ -158,6 +158,7 @@
 	buildstacktype = /obj/item/stack/sheet/mineral/wood
 	buildstackamount = 3
 	item_chair = /obj/item/chair/wood
+	color = "#5e4523"
 
 /obj/structure/chair/wood/narsie_act()
 	return
@@ -412,6 +413,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/chair/stool/bar, 0)
 	origin_type = /obj/structure/chair/wood
 	custom_materials = null
 	break_chance = 50
+	color = "#5e4523"
+
 
 /obj/item/chair/wood/narsie_act()
 	return

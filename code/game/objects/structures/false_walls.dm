@@ -280,7 +280,7 @@
 	name = "wooden wall"
 	desc = "A wall with wooden plating. Stiff."
 	icon = 'icons/turf/walls/wood_wall.dmi'
-	icon_state = "wood_wall-0"
+	icon_state = "wall-0"
 	base_icon_state = "wood_wall"
 	mineral = /obj/item/stack/sheet/mineral/wood
 	walltype = /turf/closed/wall/mineral/wood

@@ -109,9 +109,22 @@
 	if(paintleft <= 0)
 		icon_state = "paint_empty"
 		return
-	if(!isturf(target) || isspaceturf(target))
-		return
-	target.add_atom_colour(paint_color, WASHABLE_COLOUR_PRIORITY)
+	if(iswallturf(target))
+		var/turf/W = target
+		var/choice = input(user, "What do you wish to paint?") as null|anything in list("Paint","Pattern","Toggle Glow","Remove Pattern")
+		if(choice == "Paint")
+			W.paint_color = paint_color
+		if(choice == "Pattern")
+			W.pattern_color = paint_color
+		if(choice == "Toggle Glow")
+			W.pattern_glow = !W.pattern_glow
+			W.pattern_color = paint_color
+		if(choice == "Remove Pattern")
+			W.pattern_color = null
+
+		W.update_icon()
+	else
+		target.add_atom_colour(paint_color, WASHABLE_COLOUR_PRIORITY)
 
 /obj/item/paint/paint_remover
 	gender = PLURAL
@@ -125,5 +138,13 @@
 		return
 	if(!isturf(target) || !isobj(target))
 		return
-	if(target.color != initial(target.color))
+	if(target.color == initial(target.color))
+		return
+
+	if(iswallturf(target))
+		var/turf/W = target
+		W.paint_color = null
+		W.pattern_glow = FALSE
+		W.update_icon()
+	else
 		target.remove_atom_colour(WASHABLE_COLOUR_PRIORITY)

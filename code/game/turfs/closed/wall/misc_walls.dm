@@ -100,9 +100,9 @@
 /turf/closed/wall/mineral/bronze
 	name = "clockwork wall"
 	desc = "A huge chunk of bronze, decorated like gears and cogs."
-	icon = 'icons/turf/walls/clockwork_wall.dmi'
-	icon_state = "clockwork_wall-0"
-	base_icon_state = "clockwork_wall"
+//	icon = 'icons/turf/walls/clockwork_wall.dmi'
+//	icon_state = "clockwork_wall-0"
+//	base_icon_state = "clockwork_wall"
 	turf_flags = NONE
 	smoothing_flags = SMOOTH_BITMASK
 	sheet_type = /obj/item/stack/sheet/bronze

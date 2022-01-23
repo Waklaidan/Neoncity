@@ -17,7 +17,7 @@
 
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_WALLS, SMOOTH_GROUP_AIRLOCK, SMOOTH_GROUP_WINDOW_FULLTILE)
 
 	rcd_memory = RCD_MEMORY_WALL
 	///bool on whether this wall can be chiselled into
@@ -32,6 +32,8 @@
 	var/decon_type
 
 	var/list/dent_decals
+
+	base_color = COLOR_FLOORTILE_GRAY
 
 /turf/closed/wall/Initialize(mapload)
 	. = ..()
