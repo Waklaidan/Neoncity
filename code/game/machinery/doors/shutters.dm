@@ -62,8 +62,11 @@
 	desc = "Heavy duty bars that you can't shove your head through. Extra sturdy."
 	icon = 'icons/obj/doors/bars.dmi'
 	damage_deflection = 40
-	armor = list("melee" = 70, "bullet" = 20, "laser" = 20, "energy" = 75, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
 	opacity = FALSE
+
+/obj/machinery/door/poddoor/shutters/bars/preopen
+	icon_state = "open"
+	density = FALSE
 
 // Gate
 
@@ -71,5 +74,8 @@
 	name = "gate"
 	desc = "This gate is designed to protect civil servants and bartenders from being murdered by their clientele."
 	icon = 'icons/obj/doors/gate.dmi'
-	armor = list("melee" = 55, "bullet" = 20, "laser" = 20, "energy" = 75, "bomb" = 25, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70)
 	opacity = FALSE
+
+/obj/machinery/door/poddoor/shutters/gates/preopen
+	icon_state = "open"
+	density = FALSE
