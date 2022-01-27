@@ -630,7 +630,7 @@
 	icon_state = "streetlight"
 	brightness = 8
 	bulb_power = 1
-	light_type = /obj/item/light/bulb
+	light_type = /obj/item/light/street
 	fitting = "bulb"
 	bulb_colour = "#6BA6CB"
 	density = 1
