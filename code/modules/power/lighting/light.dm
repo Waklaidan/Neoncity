@@ -632,7 +632,7 @@
 	bulb_power = 1
 	light_type = /obj/item/light/bulb
 	fitting = "bulb"
-	bulb_colour = "#33ccff"
+	bulb_colour = "#6BA6CB"
 	density = 1
 	layer = FLY_LAYER
 
