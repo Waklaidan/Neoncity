@@ -236,3 +236,11 @@
 
 /turf/open/lava/smooth/airless
 	initial_gas_mix = AIRLESS_ATMOS
+
+/turf/open/lava/smooth/phoron
+	name = "molten phoron"
+	baseturfs = /turf/open/lava/smooth/phoron
+	icon = 'icons/turf/plasmaland/floors.dmi'
+	icon_state = "lava-255"
+	base_icon_state = "lava"
+	light_color = "#9D14DB"

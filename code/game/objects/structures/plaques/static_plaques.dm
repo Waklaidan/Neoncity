@@ -137,3 +137,13 @@
 /obj/structure/sign/plaques/kiddie/perfect_drone
 	name = "\improper 'Perfect Drone' sign"
 	desc = "A guide to the drone shell dispenser, detailing the constructive and destructive applications of modern repair drones, as well as the development of the incorruptible cyborg servants of tomorrow, available today."
+
+/obj/structure/sign/plaques/kiddie/museum
+	name = "\improper Museum Rules Sign"
+	desc = "A long list of rules to be followed within the museum. Most notably is \"DO NOT TOUCH THE GLASS\" written in big bold letters."
+
+/obj/structure/sign/plaques/deempisi
+	name = "\improper Mr. Deempisi portrait"
+	desc = "Under the painting a plaque reads: 'While the meat grinder may not have spared you, fear not. Not one part of you has gone to waste... You were delicious.'"
+	icon_state = "monkey_painting"
+	custom_materials = list(/datum/material/wood = 2000) //The same as /obj/structure/sign/picture_frame
