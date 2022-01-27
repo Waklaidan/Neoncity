@@ -621,6 +621,7 @@
 	light_type = /obj/item/light/square
 	fitting = "bulb"
 	bulb_colour = "#FFD6AA"
+	pixel_y = 32
 
 /obj/machinery/light/street
 	name = "street light"
