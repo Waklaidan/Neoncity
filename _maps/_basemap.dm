@@ -7,6 +7,7 @@
 		#include "map_files\Mining\Tartarus.dmm"
 		#include "map_files\debug\runtimestation.dmm"
 		#include "map_files\debug\multiz.dmm"
+		#include "map_files\Cascington\aeacus-1.dmm"
 		#include "map_files\Deltastation\DeltaStation2.dmm"
 		#include "map_files\KiloStation\KiloStation.dmm"
 		#include "map_files\MetaStation\MetaStation.dmm"
