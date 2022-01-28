@@ -244,7 +244,6 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
  */
 GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("wooden sandals", /obj/item/clothing/shoes/sandal, 1), \
-	new/datum/stack_recipe("wood floor tile", /obj/item/stack/tile/wood, 1, 4, 20), \
 	new/datum/stack_recipe("wood table frame", /obj/structure/table_frame/wood, 2, time = 10), \
 	new/datum/stack_recipe("rolling pin", /obj/item/kitchen/rollingpin, 2, time = 30), \
 	new/datum/stack_recipe("wooden chair", /obj/structure/chair/wood/, 3, time = 10, one_per_turf = TRUE, on_floor = TRUE), \
@@ -283,6 +282,24 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	null, \
 	))
 
+GLOBAL_LIST_INIT(plain_wood_recipes, list ( \
+	new/datum/stack_recipe("wood floor tile", /obj/item/stack/tile/wood, 1, 4, 20)))
+
+GLOBAL_LIST_INIT(mahogany_wood_recipes, list ( \
+	new/datum/stack_recipe("mahogany wood floor tile", /obj/item/stack/tile/wood/mahogany, 1, 4, 20)))
+
+GLOBAL_LIST_INIT(ebony_wood_recipes, list ( \
+	new/datum/stack_recipe("ebony wood floor tile", /obj/item/stack/tile/wood/ebony, 1, 4, 20)))
+
+GLOBAL_LIST_INIT(pine_wood_recipes, list ( \
+	new/datum/stack_recipe("pine wood floor tile", /obj/item/stack/tile/wood/pine, 1, 4, 20)))
+
+GLOBAL_LIST_INIT(maple_wood_recipes, list ( \
+	new/datum/stack_recipe("maple wood floor tile", /obj/item/stack/tile/wood/maple, 1, 4, 20)))
+
+GLOBAL_LIST_INIT(yew_wood_recipes, list ( \
+	new/datum/stack_recipe("yew wood floor tile", /obj/item/stack/tile/wood/yew, 1, 4, 20)))
+
 /obj/item/stack/sheet/mineral/wood
 	name = "wooden plank"
 	desc = "One can only guess that this is a bunch of wood."
@@ -295,16 +312,93 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 50, ACID = 0)
 	resistance_flags = FLAMMABLE
 	merge_type = /obj/item/stack/sheet/mineral/wood
-	novariants = TRUE
 	material_type = /datum/material/wood
 	grind_results = list(/datum/reagent/cellulose = 20) //no lignocellulose or lignin reagents yet,
 	walltype = /turf/closed/wall/mineral/wood
+	color = MATERIAL_WOOD_OAK
+
+	var/wood_type = "wood"
 
 /obj/item/stack/sheet/mineral/wood/get_main_recipes()
 	. = ..()
+
 	. += GLOB.wood_recipes
 
+	switch(wood_type)
+		if("wood")
+			. += GLOB.plain_wood_recipes
+		if("mahogany")
+			. += GLOB.mahogany_wood_recipes
+		if("ebony")
+			. += GLOB.ebony_wood_recipes
+		if("pine")
+			. += GLOB.pine_wood_recipes
+		if("maple")
+			. += GLOB.maple_wood_recipes
+		if("yew")
+			. += GLOB.yew_wood_recipes
+
+/obj/item/stack/sheet/mineral/wood/mahogany
+	name = "mahogany wooden plank"
+	singular_name = "mahogany wood plank"
+	merge_type = /obj/item/stack/sheet/mineral/wood/mahogany
+	material_type = /datum/material/wood/mahogany
+	walltype = /turf/closed/wall/mineral/wood/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+	wood_type = "mahogany"
+
+/obj/item/stack/sheet/mineral/wood/ebony
+	name = "ebony wooden plank"
+	singular_name = "ebony wood plank"
+	merge_type = /obj/item/stack/sheet/mineral/wood/ebony
+	material_type = /datum/material/wood/ebony
+	walltype = /turf/closed/wall/mineral/wood/ebony
+	color = MATERIAL_WOOD_EBONY
+	wood_type = "ebony"
+
+/obj/item/stack/sheet/mineral/wood/pine
+	name = "pine wooden plank"
+	singular_name = "pine wood plank"
+	merge_type = /obj/item/stack/sheet/mineral/wood/pine
+	material_type = /datum/material/wood/pine
+	walltype = /turf/closed/wall/mineral/wood/pine
+	color = MATERIAL_WOOD_PINE
+	wood_type = "pine"
+
+/obj/item/stack/sheet/mineral/wood/maple
+	name = "maple wooden plank"
+	singular_name = "maple wood plank"
+	merge_type = /obj/item/stack/sheet/mineral/wood/maple
+	material_type = /datum/material/wood/maple
+	walltype = /turf/closed/wall/mineral/wood/maple
+	color = MATERIAL_WOOD_MAPLE
+	wood_type = "maple"
+
+/obj/item/stack/sheet/mineral/wood/yew
+	name = "yew wooden plank"
+	singular_name = "yew wood plank"
+	merge_type = /obj/item/stack/sheet/mineral/wood/yew
+	material_type = /datum/material/wood/yew
+	walltype = /turf/closed/wall/mineral/wood/yew
+	color = MATERIAL_WOOD_YEW
+	wood_type = "yew"
+
 /obj/item/stack/sheet/mineral/wood/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/wood/mahogany/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/wood/ebony/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/wood/pine/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/wood/maple/fifty
+	amount = 50
+
+/obj/item/stack/sheet/mineral/wood/yew/fifty
 	amount = 50
 
 /*

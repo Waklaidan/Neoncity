@@ -127,6 +127,15 @@
 
 ///Colors for eigenstates
 #define COLOR_PERIWINKLEE "#9999FF"
+
+
+//MATERIAL COLORS
+#define MATERIAL_WOOD_OAK "#663300"
+#define MATERIAL_WOOD_MAHOGANY "#661c00"
+#define MATERIAL_WOOD_EBONY "#331906"
+#define MATERIAL_WOOD_PINE "#f1ab65"
+#define MATERIAL_WOOD_MAPLE "#b04612"
+#define MATERIAL_WOOD_YEW "#dec973"
 /**
  * Some defines to generalise colours used in lighting.
  *

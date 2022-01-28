@@ -86,7 +86,7 @@
 	resistance_flags = FLAMMABLE
 	merge_type = /obj/item/stack/tile/fairygrass
 
-//Wood
+//Wood tiles
 /obj/item/stack/tile/wood
 	name = "wood floor tile"
 	singular_name = "wood floor tile"
@@ -103,6 +103,45 @@
 		/obj/item/stack/tile/wood/parquet,
 	)
 
+	color = MATERIAL_WOOD_OAK
+
+// Wood tile subtypes
+/obj/item/stack/tile/wood/mahogany
+	name = "mahogany wood floor tile"
+	singular_name = "mahogany wood floor tile"
+	color = MATERIAL_WOOD_MAHOGANY
+	turf_type = /turf/open/floor/wood/mahogany
+	merge_type = /obj/item/stack/tile/wood/mahogany
+
+/obj/item/stack/tile/wood/ebony
+	name = "ebony wood floor tile"
+	singular_name = "ebony wood floor tile"
+	color = MATERIAL_WOOD_EBONY
+	turf_type = /turf/open/floor/wood/ebony
+	merge_type = /obj/item/stack/tile/wood/ebony
+
+/obj/item/stack/tile/wood/pine
+	name = "pine wood floor tile"
+	singular_name = "pine wood floor tile"
+	color = MATERIAL_WOOD_PINE
+	turf_type = /turf/open/floor/wood/pine
+	merge_type = /obj/item/stack/tile/wood/pine
+
+/obj/item/stack/tile/wood/maple
+	name = "maple wood floor tile"
+	singular_name = "maple wood floor tile"
+	color = MATERIAL_WOOD_MAPLE
+	turf_type = /turf/open/floor/wood/maple
+	merge_type = /obj/item/stack/tile/wood/maple
+
+/obj/item/stack/tile/wood/yew
+	name = "yew wood floor tile"
+	singular_name = "yew wood floor tile"
+	color = MATERIAL_WOOD_YEW
+	turf_type = /turf/open/floor/wood/yew
+	merge_type = /obj/item/stack/tile/wood/yew
+
+// parquet wood tiles
 /obj/item/stack/tile/wood/parquet
 	name = "parquet wood floor tile"
 	singular_name = "parquet wood floor tile"
@@ -110,6 +149,43 @@
 	turf_type = /turf/open/floor/wood/parquet
 	merge_type = /obj/item/stack/tile/wood/parquet
 
+// parquet wood tile subtypes
+/obj/item/stack/tile/wood/parquet/mahogany
+	name = "mahogany parquet wood floor tile"
+	singular_name = "mahogany parquet wood floor tile"
+	color = MATERIAL_WOOD_MAHOGANY
+	turf_type = /turf/open/floor/wood/parquet/mahogany
+	merge_type = /obj/item/stack/tile/wood/parquet/mahogany
+
+/obj/item/stack/tile/wood/parquet/ebony
+	name = "ebony parquet wood floor tile"
+	singular_name = "ebony parquet wood floor tile"
+	color = MATERIAL_WOOD_EBONY
+	turf_type = /turf/open/floor/wood/parquet/ebony
+	merge_type = /obj/item/stack/tile/wood/parquet/ebony
+
+/obj/item/stack/tile/wood/parquet/pine
+	name = "pine parquet wood floor tile"
+	singular_name = "pine parquet wood floor tile"
+	color = MATERIAL_WOOD_PINE
+	turf_type = /turf/open/floor/wood/parquet/pine
+	merge_type = /obj/item/stack/tile/wood/parquet/pine
+
+/obj/item/stack/tile/wood/parquet/maple
+	name = "maple parquet wood floor tile"
+	singular_name = "maple parquet wood floor tile"
+	color = MATERIAL_WOOD_MAPLE
+	turf_type = /turf/open/floor/wood/parquet/maple
+	merge_type = /obj/item/stack/tile/wood/parquet/maple
+
+/obj/item/stack/tile/wood/parquet/yew
+	name = "yew parquet wood floor tile"
+	singular_name = "yew parquet wood floor tile"
+	color = MATERIAL_WOOD_YEW
+	turf_type = /turf/open/floor/wood/parquet/yew
+	merge_type = /obj/item/stack/tile/wood/parquet/yew
+
+// large wood tiles
 /obj/item/stack/tile/wood/large
 	name = "large wood floor tile"
 	singular_name = "large wood floor tile"
@@ -117,12 +193,85 @@
 	turf_type = /turf/open/floor/wood/large
 	merge_type = /obj/item/stack/tile/wood/large
 
+// large wood tiles subtypes
+/obj/item/stack/tile/wood/large/mahogany
+	name = "mahogany large wood floor tile"
+	singular_name = "mahogany large wood floor tile"
+	color = MATERIAL_WOOD_MAHOGANY
+	turf_type = /turf/open/floor/wood/large/mahogany
+	merge_type = /obj/item/stack/tile/wood/large/mahogany
+
+/obj/item/stack/tile/wood/large/ebony
+	name = "ebony large wood floor tile"
+	singular_name = "ebony large wood floor tile"
+	color = MATERIAL_WOOD_EBONY
+	turf_type = /turf/open/floor/wood/large/ebony
+	merge_type = /obj/item/stack/tile/wood/large/ebony
+
+/obj/item/stack/tile/wood/large/pine
+	name = "pine large wood floor tile"
+	singular_name = "pine large wood floor tile"
+	color = MATERIAL_WOOD_PINE
+	turf_type = /turf/open/floor/wood/large/pine
+	merge_type = /obj/item/stack/tile/wood/large/pine
+
+/obj/item/stack/tile/wood/large/maple
+	name = "maple large wood floor tile"
+	singular_name = "maple large wood floor tile"
+	color = MATERIAL_WOOD_MAPLE
+	turf_type = /turf/open/floor/wood/large/maple
+	merge_type = /obj/item/stack/tile/wood/large/maple
+
+/obj/item/stack/tile/wood/large/yew
+	name = "yew large wood floor tile"
+	singular_name = "yew large wood floor tile"
+	color = MATERIAL_WOOD_YEW
+	turf_type = /turf/open/floor/wood/large/yew
+	merge_type = /obj/item/stack/tile/wood/large/yew
+
+// tiled wood tiles
 /obj/item/stack/tile/wood/tile
 	name = "tiled wood floor tile"
 	singular_name = "tiled wood floor tile"
 	icon_state = "tile-wood_tile"
 	turf_type = /turf/open/floor/wood/tile
 	merge_type = /obj/item/stack/tile/wood/tile
+
+// tiled wood tile subtypes
+/obj/item/stack/tile/wood/tile/mahogany
+	name = "mahogany tile wood floor tile"
+	singular_name = "mahogany tile wood floor tile"
+	color = MATERIAL_WOOD_MAHOGANY
+	turf_type = /turf/open/floor/wood/tile/mahogany
+	merge_type = /obj/item/stack/tile/wood/tile/mahogany
+
+/obj/item/stack/tile/wood/tile/ebony
+	name = "ebony tile wood floor tile"
+	singular_name = "ebony tile wood floor tile"
+	color = MATERIAL_WOOD_EBONY
+	turf_type = /turf/open/floor/wood/tile/ebony
+	merge_type = /obj/item/stack/tile/wood/tile/ebony
+
+/obj/item/stack/tile/wood/tile/pine
+	name = "pine tile wood floor tile"
+	singular_name = "pine tile wood floor tile"
+	color = MATERIAL_WOOD_PINE
+	turf_type = /turf/open/floor/wood/tile/pine
+	merge_type = /obj/item/stack/tile/wood/tile/pine
+
+/obj/item/stack/tile/wood/tile/maple
+	name = "maple tile wood floor tile"
+	singular_name = "maple tile wood floor tile"
+	color = MATERIAL_WOOD_MAPLE
+	turf_type = /turf/open/floor/wood/tile/maple
+	merge_type = /obj/item/stack/tile/wood/tile/maple
+
+/obj/item/stack/tile/wood/tile/yew
+	name = "yew tile wood floor tile"
+	singular_name = "yew tile wood floor tile"
+	color = MATERIAL_WOOD_YEW
+	turf_type = /turf/open/floor/wood/tile/yew
+	merge_type = /obj/item/stack/tile/wood/tile/yew
 
 //Basalt
 /obj/item/stack/tile/basalt

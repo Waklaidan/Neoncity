@@ -159,7 +159,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_WOOD_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/wood = 4000)
 
-	base_color = COLOR_BROWN
+	color = MATERIAL_WOOD_OAK
 
 /turf/closed/wall/mineral/wood/attackby(obj/item/W, mob/user)
 	if(W.get_sharpness() && W.force)
@@ -178,6 +178,22 @@
 	desc = "A solidly wooden wall. It's a bit weaker than a wall made with metal."
 	girder_type = /obj/structure/barricade/wooden
 	hardness = 50
+
+/turf/closed/wall/mineral/wood/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+
+/turf/closed/wall/mineral/wood/ebony
+	color = MATERIAL_WOOD_EBONY
+
+/turf/closed/wall/mineral/wood/pine
+	color = MATERIAL_WOOD_PINE
+
+/turf/closed/wall/mineral/wood/maple
+	color = MATERIAL_WOOD_MAPLE
+
+/turf/closed/wall/mineral/wood/yew
+	color = MATERIAL_WOOD_YEW
+
 
 /turf/closed/wall/mineral/iron
 	name = "rough iron wall"

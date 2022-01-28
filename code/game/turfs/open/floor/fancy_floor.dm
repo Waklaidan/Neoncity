@@ -16,6 +16,7 @@
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
+	color = MATERIAL_WOOD_OAK
 
 /turf/open/floor/wood/setup_broken_states()
 	return list("wood-broken", "wood-broken2", "wood-broken3", "wood-broken4", "wood-broken5", "wood-broken6", "wood-broken7")
@@ -68,12 +69,43 @@
 /turf/open/floor/wood/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
+
+/turf/open/floor/wood/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+
+/turf/open/floor/wood/ebony
+	color = MATERIAL_WOOD_EBONY
+
+/turf/open/floor/wood/pine
+	color = MATERIAL_WOOD_PINE
+
+/turf/open/floor/wood/maple
+	color = MATERIAL_WOOD_MAPLE
+
+/turf/open/floor/wood/yew
+	color = MATERIAL_WOOD_YEW
+
 /turf/open/floor/wood/tile
 	icon_state = "wood_tile"
 	floor_tile = /obj/item/stack/tile/wood/tile
 
 /turf/open/floor/wood/tile/setup_broken_states()
 	return list("wood_tile-broken", "wood_tile-broken2", "wood_tile-broken3")
+
+/turf/open/floor/wood/tile/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+
+/turf/open/floor/wood/tile/ebony
+	color = MATERIAL_WOOD_EBONY
+
+/turf/open/floor/wood/tile/pine
+	color = MATERIAL_WOOD_PINE
+
+/turf/open/floor/wood/tile/maple
+	color = MATERIAL_WOOD_MAPLE
+
+/turf/open/floor/wood/tile/yew
+	color = MATERIAL_WOOD_YEW
 
 /turf/open/floor/wood/parquet
 	icon_state = "wood_parquet"
@@ -82,12 +114,43 @@
 /turf/open/floor/wood/parquet/setup_broken_states()
 	return list("wood_parquet-broken", "wood_parquet-broken2", "wood_parquet-broken3", "wood_parquet-broken4", "wood_parquet-broken5", "wood_parquet-broken6", "wood_parquet-broken7")
 
+/turf/open/floor/wood/parquet/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+
+/turf/open/floor/wood/parquet/ebony
+	color = MATERIAL_WOOD_EBONY
+
+/turf/open/floor/wood/parquet/pine
+	color = MATERIAL_WOOD_PINE
+
+/turf/open/floor/wood/parquet/maple
+	color = MATERIAL_WOOD_MAPLE
+
+/turf/open/floor/wood/parquet/yew
+	color = MATERIAL_WOOD_YEW
+
 /turf/open/floor/wood/large
 	icon_state = "wood_large"
 	floor_tile = /obj/item/stack/tile/wood/large
 
 /turf/open/floor/wood/large/setup_broken_states()
 	return list("wood_large-broken", "wood_large-broken2", "wood_large-broken3")
+
+
+/turf/open/floor/wood/large/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+
+/turf/open/floor/wood/large/ebony
+	color = MATERIAL_WOOD_EBONY
+
+/turf/open/floor/wood/large/pine
+	color = MATERIAL_WOOD_PINE
+
+/turf/open/floor/wood/large/maple
+	color = MATERIAL_WOOD_MAPLE
+
+/turf/open/floor/wood/large/yew
+	color = MATERIAL_WOOD_YEW
 
 /turf/open/floor/grass
 	name = "grass patch"
