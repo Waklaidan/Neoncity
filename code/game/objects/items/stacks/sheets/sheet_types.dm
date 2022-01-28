@@ -327,15 +327,15 @@ GLOBAL_LIST_INIT(yew_wood_recipes, list ( \
 	switch(wood_type)
 		if("wood")
 			. += GLOB.plain_wood_recipes
-		else if("mahogany")
+		if("mahogany")
 			. += GLOB.mahogany_wood_recipes
-		else if("ebony")
+		if("ebony")
 			. += GLOB.ebony_wood_recipes
-		else if("pine")
+		if("pine")
 			. += GLOB.pine_wood_recipes
-		else if("maple")
+		if("maple")
 			. += GLOB.maple_wood_recipes
-		else if("yew")
+		if("yew")
 			. += GLOB.yew_wood_recipes
 
 /obj/item/stack/sheet/mineral/wood/mahogany
