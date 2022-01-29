@@ -1,4 +1,4 @@
-/proc/bank_exists_in_db(var/unique_id)
+/proc/bank_exists_in_db(unique_id)
 	var/datum/db_query/bank_query = SSdbcore.NewQuery({"SELECT bank_balance FROM [format_table_name("banks")] WHERE unique_id = :unique_id"}, list(
 			"unique_id" = unique_id
 		))
@@ -114,7 +114,7 @@
 	if(bank_update_to_db(unique_id, bank_balance, account_holder, parent.ckey))
 		return TRUE
 
-/proc/delete_bank_from_db(var/unique_id)
+/proc/delete_bank_from_db(unique_id)
 
 	var/datum/db_query/query_delete_bank = SSdbcore.NewQuery(
 		"DELETE FROM [format_table_name("banks")] WHERE unique_id = :unique_id",
