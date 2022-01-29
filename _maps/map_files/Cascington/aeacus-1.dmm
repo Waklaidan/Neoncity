@@ -126,9 +126,6 @@
 /obj/item/stock_parts/manipulator,
 /turf/open/floor/iron,
 /area/city/outdoors)
-"aC" = (
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "aD" = (
 /obj/structure/sign/poster/party_game{
 	pixel_x = -32
@@ -182,12 +179,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
-"aP" = (
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron{
-	heat_capacity = 1e+006
-	},
-/area/city/outdoors)
 "aQ" = (
 /obj/structure/moisture_trap,
 /turf/open/floor/plating/dirt,
@@ -208,10 +199,6 @@
 	light_color = "#e8eaff"
 	},
 /turf/open/floor/iron/grimy,
-/area/city/outdoors)
-"aU" = (
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron,
 /area/city/outdoors)
 "aV" = (
 /obj/structure/punji_sticks/spikes,
@@ -265,10 +252,6 @@
 /obj/machinery/power/floodlight,
 /turf/open/floor/plating/dirt,
 /area/city/outdoors)
-"bf" = (
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating/dirt,
-/area/city/outdoors)
 "bg" = (
 /obj/machinery/power/port_gen/pacman/super,
 /turf/open/floor/plating/dirt,
@@ -314,44 +297,16 @@
 /obj/structure/lattice,
 /turf/open/water,
 /area/city/outdoors)
-"bq" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 10
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"br" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/end{
-	dir = 4
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "bs" = (
 /obj/structure/door_assembly/door_assembly_mhatch{
 	name = "broken airlock"
 	},
 /turf/open/floor/iron,
 /area/city/outdoors)
-"bt" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"bu" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 5
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "bv" = (
 /obj/item/stack/cable_coil/cut,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating/dirt,
-/area/city/outdoors)
-"bw" = (
-/obj/item/wallframe/apc,
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "bx" = (
 /turf/open/floor/iron{
@@ -402,12 +357,6 @@
 /obj/structure/table,
 /turf/open/floor/iron,
 /area/city/outdoors)
-"bE" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "bF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron{
@@ -429,12 +378,6 @@
 "bJ" = (
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/r_wall,
-/area/city/outdoors)
-"bK" = (
-/obj/structure/door_assembly/door_assembly_mhatch{
-	name = "broken airlock"
-	},
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "bL" = (
 /obj/structure/sign/warning/securearea{
@@ -458,13 +401,6 @@
 	heat_capacity = 1e+006;
 	icon_state = "platingdmg3"
 	},
-/area/city/outdoors)
-"bP" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/item/stack/cable_coil/cut,
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "bQ" = (
 /turf/open/floor/iron{
@@ -511,21 +447,12 @@
 	icon_state = "platingdmg1"
 	},
 /area/city/outdoors)
-"bY" = (
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron/dark,
-/area/city/outdoors)
 "bZ" = (
 /obj/structure/fluff/fokoff_sign,
 /turf/open/floor/plating/dirt,
 /area/city/outdoors)
 "ca" = (
 /obj/structure/window/reinforced,
-/turf/open/floor/iron,
-/area/city/outdoors)
-"cb" = (
-/obj/structure/window/reinforced,
-/obj/effect/spawner/random/maintenance,
 /turf/open/floor/iron,
 /area/city/outdoors)
 "cc" = (
@@ -542,25 +469,11 @@
 	},
 /turf/open/floor/iron,
 /area/city/outdoors)
-"cf" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "cg" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/directional{
 	dir = 6
 	},
 /turf/open/floor/plating/rust,
-/area/city/outdoors)
-"ch" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "ci" = (
 /obj/structure/noticeboard,
@@ -569,10 +482,6 @@
 "cj" = (
 /obj/item/stack/cable_coil/cut,
 /turf/open/floor/iron,
-/area/city/outdoors)
-"cl" = (
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating,
 /area/city/outdoors)
 "cm" = (
 /obj/item/stack/cable_coil,
@@ -599,22 +508,6 @@
 /obj/structure/grille/broken,
 /turf/open/floor/iron,
 /area/city/outdoors)
-"ct" = (
-/obj/structure/girder,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"cu" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 9
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"cv" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "cw" = (
 /obj/effect/turf_decal/stripes{
 	icon_state = "warningline";
@@ -629,23 +522,11 @@
 	},
 /turf/open/floor/plating,
 /area/city/outdoors)
-"cy" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 8
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "cz" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/city/outdoors)
-"cA" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "cB" = (
 /turf/open/floor/iron/cafeteria{
@@ -679,11 +560,6 @@
 	},
 /turf/open/floor/plating,
 /area/city/outdoors)
-"cG" = (
-/obj/structure/table,
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron,
-/area/city/outdoors)
 "cH" = (
 /obj/structure/girder,
 /turf/open/floor/plating/rust,
@@ -699,12 +575,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating/rust,
-/area/city/outdoors)
-"cL" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 4
-	},
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "cM" = (
 /obj/item/stack/rods,
@@ -735,10 +605,6 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/city/outdoors)
-"cR" = (
-/obj/item/stack/rods,
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "cT" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -778,21 +644,6 @@
 	temperature = 251
 	},
 /area/city/outdoors)
-"cY" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 6
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"cZ" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/directional{
-	dir = 9
-	},
-/obj/item/shard{
-	icon_state = "medium"
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "db" = (
 /obj/structure/lattice,
 /obj/structure/fluff/broken_flooring{
@@ -825,10 +676,6 @@
 	},
 /turf/open/floor/iron,
 /area/city/outdoors)
-"dg" = (
-/obj/structure/grille/broken,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "dh" = (
 /obj/structure/lattice,
 /obj/structure/fluff/broken_flooring{
@@ -856,19 +703,6 @@
 /obj/structure/lattice,
 /turf/open/floor/plating/dirt,
 /area/city/outdoors)
-"dm" = (
-/obj/item/shard{
-	icon_state = "small"
-	},
-/obj/item/shard{
-	icon_state = "medium"
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"dn" = (
-/obj/structure/cable,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "do" = (
 /obj/machinery/door/airlock/glass,
 /turf/open/floor/plating,
@@ -880,10 +714,6 @@
 "dq" = (
 /obj/item/stack/sheet/iron,
 /turf/open/floor/plating,
-/area/city/outdoors)
-"dr" = (
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating/rust,
 /area/city/outdoors)
 "ds" = (
 /obj/structure/fluff/broken_flooring{
@@ -998,21 +828,6 @@
 	},
 /turf/closed/mineral/random/low_chance,
 /area/city/outdoors)
-"dM" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/middle,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"dN" = (
-/obj/item/shard,
-/obj/structure/grille/broken,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"dO" = (
-/obj/item/shard{
-	icon_state = "medium"
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "dP" = (
 /obj/structure/sign/warning/electricshock{
 	pixel_y = -32
@@ -1078,35 +893,13 @@
 /obj/structure/lattice,
 /turf/open/floor/plating/dirt,
 /area/city/outdoors)
-"ea" = (
-/obj/structure/closet,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron,
-/area/city/outdoors)
 "eb" = (
 /obj/structure/frame/computer,
 /turf/open/floor/iron,
 /area/city/outdoors)
-"ec" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/item/shard{
-	icon_state = "small"
-	},
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "ed" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/rust,
-/area/city/outdoors)
-"ee" = (
-/obj/structure/closet/crate/engineering,
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating,
 /area/city/outdoors)
 "eg" = (
 /obj/structure/prop/industrial/machine2,
@@ -1161,23 +954,6 @@
 	dir = 8
 	},
 /turf/open/floor/plating/rust,
-/area/city/outdoors)
-"ep" = (
-/obj/item/stack/cable_coil/cut,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
-"eq" = (
-/obj/structure/closet/cardboard/metal,
-/turf/open/floor/plating,
-/area/city/outdoors)
-"er" = (
-/obj/structure/closet/crate/trashcart/filled,
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#e8eaff"
-	},
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating,
 /area/city/outdoors)
 "es" = (
 /obj/machinery/light{
@@ -1253,25 +1029,12 @@
 /obj/structure/chair,
 /turf/open/floor/plating/rust,
 /area/city/outdoors)
-"eH" = (
-/obj/structure/table,
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating/rust,
-/area/city/outdoors)
-"eI" = (
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "eJ" = (
 /obj/structure/closet/toolcloset,
 /turf/open/floor/plating,
 /area/city/outdoors)
 "eK" = (
 /obj/structure/closet/cardboard,
-/turf/open/floor/plating,
-/area/city/outdoors)
-"eL" = (
-/obj/structure/closet/crate/trashcart/filled,
 /turf/open/floor/plating,
 /area/city/outdoors)
 "eN" = (
@@ -1294,10 +1057,6 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/plating/rust,
 /area/city/outdoors)
-"eQ" = (
-/obj/structure/window/reinforced,
-/turf/open/floor/plating/airless,
-/area/city/outdoors)
 "eR" = (
 /obj/structure/cable,
 /turf/open/floor/plating/rust,
@@ -1306,11 +1065,6 @@
 /obj/structure/sign/departments/engineering{
 	pixel_x = -32
 	},
-/turf/open/floor/plating,
-/area/city/outdoors)
-"eT" = (
-/obj/structure/closet/crate/trashcart/filled,
-/obj/effect/decal/cleanable/garbage,
 /turf/open/floor/plating,
 /area/city/outdoors)
 "eU" = (
@@ -1360,12 +1114,6 @@
 	},
 /obj/structure/lattice,
 /turf/closed/mineral/random/low_chance,
-/area/city/outdoors)
-"eZ" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plating/airless,
 /area/city/outdoors)
 "fa" = (
 /obj/item/shard{
@@ -1419,11 +1167,6 @@
 /area/city/outdoors)
 "fi" = (
 /obj/structure/closet/crate/maint,
-/turf/open/floor/plating,
-/area/city/outdoors)
-"fj" = (
-/obj/structure/closet/crate/maint,
-/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/city/outdoors)
 "fk" = (
@@ -1529,10 +1272,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/iron/dark,
-/area/city/outdoors)
-"fB" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "fC" = (
@@ -1797,10 +1536,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
-"gu" = (
-/obj/structure/closet/crate/bin,
-/turf/open/floor/iron/dark,
-/area/city/outdoors)
 "gv" = (
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/light{
@@ -1900,13 +1635,6 @@
 /area/city/outdoors)
 "gL" = (
 /obj/structure/sign/poster/official/work_for_a_future{
-	pixel_y = 32
-	},
-/turf/open/floor/iron/dark,
-/area/city/outdoors)
-"gM" = (
-/obj/structure/closet/crate/trashcart/filled,
-/obj/machinery/newscaster{
 	pixel_y = 32
 	},
 /turf/open/floor/iron/dark,
@@ -2134,16 +1862,6 @@
 	},
 /turf/open/floor/plating,
 /area/city/outdoors)
-"hH" = (
-/obj/effect/decal/cleanable/garbage,
-/obj/effect/decal/cleanable/plastic,
-/turf/open/floor/iron/dark,
-/area/city/outdoors)
-"hI" = (
-/obj/structure/closet/crate/maint,
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron/dark,
-/area/city/outdoors)
 "hJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/plastic,
@@ -2156,13 +1874,6 @@
 /area/city/outdoors)
 "hL" = (
 /obj/effect/decal/cleanable/garbage,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/city/outdoors)
-"hM" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/city/outdoors)
@@ -2181,12 +1892,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/city/outdoors)
-"hR" = (
-/obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/robot_debris,
 /turf/open/floor/plating,
 /area/city/outdoors)
 "hS" = (
@@ -5008,10 +4713,6 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
-"pB" = (
-/obj/effect/turf_decal/bot,
-/turf/closed/wall/neon,
-/area/city/outdoors)
 "pC" = (
 /obj/structure/prop/statue/dino4{
 	pixel_x = -16
@@ -5165,12 +4866,6 @@
 	},
 /obj/machinery/light/floor,
 /turf/open/floor/iron/white,
-/area/city/outdoors)
-"pZ" = (
-/obj/machinery/door/airlock{
-	dir = 4
-	},
-/turf/closed/wall/neon,
 /area/city/outdoors)
 "qa" = (
 /obj/structure/railing/industrial,
@@ -5399,15 +5094,6 @@
 	},
 /turf/open/floor/iron,
 /area/city/outdoors)
-"qH" = (
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#e8eaff"
-	},
-/obj/effect/spawner/random/maintenance,
-/obj/structure/closet/crate,
-/turf/open/floor/plating,
-/area/city/outdoors)
 "qI" = (
 /obj/structure/table/glass,
 /obj/machinery/door/window/eastright{
@@ -5558,11 +5244,6 @@
 	icon_state = "closed";
 	dir = 8
 	},
-/turf/open/floor/plating,
-/area/city/outdoors)
-"rc" = (
-/obj/structure/closet/crate,
-/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/city/outdoors)
 "rd" = (
@@ -7379,13 +7060,6 @@
 	dir = 5
 	},
 /turf/open/floor/iron/dark,
-/area/city/outdoors)
-"vW" = (
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#e8eaff"
-	},
-/turf/open/space/basic,
 /area/city/outdoors)
 "vX" = (
 /obj/machinery/rnd/destructive_analyzer,
@@ -11069,10 +10743,6 @@
 /obj/structure/chair/wood,
 /turf/open/floor/carpet,
 /area/city/outdoors)
-"Gl" = (
-/obj/item/book/codex_gigas,
-/turf/open/floor/wood,
-/area/city/outdoors)
 "Gm" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet,
@@ -11496,30 +11166,12 @@
 /obj/structure/sign/neon/big/ianhi,
 /turf/open/floor/pavement,
 /area/city/outdoors)
-"Hr" = (
-/obj/item/stack/tile/carpet/neon/simple{
-	dir = 5
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
-	},
-/turf/open/floor/iron/white,
-/area/city/outdoors)
 "Hs" = (
 /obj/effect/landmark/start/medical_doctor,
 /obj/machinery/atmospherics/pipe/smart/manifold{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/white,
-/area/city/outdoors)
-"Ht" = (
-/obj/item/stack/tile/carpet/neon/simple{
-	dir = 9
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 6
-	},
 /turf/open/floor/iron/white,
 /area/city/outdoors)
 "Hu" = (
@@ -11618,10 +11270,6 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
-/area/city/outdoors)
-"HI" = (
-/obj/item/stack/tile/carpet/neon/simple,
-/turf/open/floor/iron,
 /area/city/outdoors)
 "HJ" = (
 /obj/effect/turf_decal/siding/white{
@@ -11903,28 +11551,10 @@
 /obj/structure/window/fulltile,
 /turf/open/floor/road,
 /area/city/outdoors)
-"Iu" = (
-/obj/item/stack/tile/carpet/neon/simple{
-	dir = 6
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/turf/open/floor/iron/white,
-/area/city/outdoors)
 "Iv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/city/outdoors)
-"Iw" = (
-/obj/item/stack/tile/carpet/neon/simple{
-	dir = 10
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
 	},
 /turf/open/floor/iron/white,
 /area/city/outdoors)
@@ -13181,30 +12811,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/city/outdoors)
-"LQ" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 8
-	},
-/obj/structure/table,
-/obj/item/book/manual/wiki/medicine,
-/obj/item/storage/belt/medical{
-	pixel_y = 2
-	},
-/obj/item/storage/belt/medical{
-	pixel_y = 2
-	},
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/structure/cable,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/blood_filter,
-/turf/open/floor/iron/white,
-/area/city/outdoors)
 "LR" = (
 /obj/machinery/modular_computer/console/preset/id{
 	dir = 4
@@ -13989,14 +13595,172 @@
 /obj/structure/closet/secure_closet/research_director,
 /turf/open/floor/iron,
 /area/city/outdoors)
-"NW" = (
-/obj/machinery/light/floor,
-/turf/open/openspace,
-/turf/open/floor/glass/reinforced,
+"Ob" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/plating,
 /area/city/outdoors)
-"NX" = (
-/obj/structure/railing/corner{
+"Ok" = (
+/obj/structure/table,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating/rust,
+/area/city/outdoors)
+"Ot" = (
+/obj/item/shard{
+	icon_state = "medium"
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Oz" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"OA" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/general/visible{
+	icon_state = "pipe11-3";
+	dir = 10
+	},
+/turf/open/floor/iron/white,
+/area/city/outdoors)
+"OS" = (
+/obj/machinery/atmospherics/pipe/smart/simple/general/visible,
+/turf/open/floor/iron,
+/area/city/outdoors)
+"Pp" = (
+/obj/structure/grille/broken,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"PC" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating/rust,
+/area/city/outdoors)
+"PD" = (
+/obj/structure/closet/crate/trashcart/filled,
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
+/turf/open/floor/iron/dark,
+/area/city/outdoors)
+"PF" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"PM" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/item/book/manual/wiki/medicine,
+/obj/item/storage/belt/medical{
+	pixel_y = 2
+	},
+/obj/item/storage/belt/medical{
+	pixel_y = 2
+	},
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/structure/cable,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/blood_filter,
+/turf/open/floor/iron/white,
+/area/city/outdoors)
+"PN" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"PT" = (
+/obj/structure/closet/crate/engineering,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"PV" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Qa" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/general/visible{
+	icon_state = "pipe11-3";
+	dir = 9
+	},
+/turf/open/floor/iron/white,
+/area/city/outdoors)
+"Qj" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/city/outdoors)
+"Qm" = (
+/obj/structure/closet/crate/maint,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron/dark,
+/area/city/outdoors)
+"Qo" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron/dark,
+/area/city/outdoors)
+"QB" = (
+/obj/structure/closet/crate/trashcart/filled,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"QJ" = (
+/obj/item/shard{
+	icon_state = "small"
+	},
+/obj/item/shard{
+	icon_state = "medium"
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"QY" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/end{
 	dir = 4
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Ri" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/middle,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Rz" = (
+/obj/item/wallframe/apc,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"RA" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"RE" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/general/visible{
+	icon_state = "pipe11-3";
+	dir = 6
+	},
+/turf/open/floor/iron/white,
+/area/city/outdoors)
+"Se" = (
+/obj/structure/railing/corner{
+	dir = 1
 	},
 /obj/effect/turf_decal/tile/straight/neutral{
 	icon_state = "tile_straight";
@@ -14005,7 +13769,21 @@
 /turf/open/floor/iron/dark,
 /turf/open/openspace,
 /area/city/outdoors)
-"NY" = (
+"Sg" = (
+/obj/item/shard,
+/obj/structure/grille/broken,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"St" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/obj/effect/spawner/random/maintenance,
+/obj/structure/closet/crate,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"SC" = (
 /obj/structure/railing{
 	dir = 1
 	},
@@ -14016,9 +13794,64 @@
 /turf/open/floor/iron/dark,
 /turf/open/openspace,
 /area/city/outdoors)
-"NZ" = (
+"SD" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/open/floor/iron/dark,
+/area/city/outdoors)
+"SJ" = (
+/obj/effect/decal/cleanable/glass,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/robot_debris,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"SN" = (
+/obj/item/book/codex_gigas,
+/turf/open/floor/wood,
+/area/city/outdoors)
+"ST" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 9
+	},
+/obj/item/shard{
+	icon_state = "medium"
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Ta" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Tg" = (
+/obj/machinery/light/floor,
+/turf/open/openspace,
+/turf/open/floor/glass/reinforced,
+/area/city/outdoors)
+"Th" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"TC" = (
+/obj/effect/decal/cleanable/garbage,
+/obj/effect/decal/cleanable/plastic,
+/turf/open/floor/iron/dark,
+/area/city/outdoors)
+"TJ" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"TW" = (
 /obj/structure/railing/corner{
-	dir = 1
+	dir = 4
 	},
 /obj/effect/turf_decal/tile/straight/neutral{
 	icon_state = "tile_straight";
@@ -14026,6 +13859,151 @@
 	},
 /turf/open/floor/iron/dark,
 /turf/open/openspace,
+/area/city/outdoors)
+"Ub" = (
+/obj/structure/closet/cardboard/metal,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"UI" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating/dirt,
+/area/city/outdoors)
+"US" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/binary/thermomachine/freezer/on,
+/turf/open/floor/iron/white,
+/area/city/outdoors)
+"Vn" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Vw" = (
+/obj/machinery/door/airlock{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/city/outdoors)
+"Vy" = (
+/obj/structure/closet/crate/trashcart/filled,
+/obj/effect/decal/cleanable/garbage,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"VG" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"VP" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Wa" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"We" = (
+/obj/structure/window/reinforced,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/city/outdoors)
+"Wh" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Wl" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/turf/open/space/basic,
+/area/city/outdoors)
+"Wo" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron/dark,
+/area/city/outdoors)
+"Wr" = (
+/obj/structure/closet/crate/maint,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"WA" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"WD" = (
+/obj/structure/closet,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/city/outdoors)
+"WO" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/item/stack/cable_coil/cut,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Xd" = (
+/obj/structure/closet/crate/trashcart/filled,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Xn" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"Xr" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/shard{
+	icon_state = "small"
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"XD" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/city/outdoors)
+"Yg" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/general/visible{
+	icon_state = "pipe11-3";
+	dir = 5
+	},
+/turf/open/floor/iron/white,
+/area/city/outdoors)
+"YO" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/directional{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/city/outdoors)
+"YV" = (
+/obj/structure/table,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/city/outdoors)
+"ZT" = (
+/obj/item/stack/cable_coil/cut,
+/turf/open/floor/plating,
 /area/city/outdoors)
 
 (1,1,1) = {"
@@ -14351,7 +14329,7 @@ ae
 ae
 ae
 ae
-cl
+PV
 ae
 ad
 aa
@@ -14642,7 +14620,7 @@ ad
 aM
 ad
 dj
-cl
+PV
 dq
 dj
 ae
@@ -15124,14 +15102,14 @@ ag
 db
 aI
 aK
-dr
+PC
 dA
 aK
 au
 au
 au
 aM
-aU
+XD
 au
 aK
 au
@@ -15184,7 +15162,7 @@ ax
 ax
 ax
 ay
-bf
+UI
 ab
 ai
 ai
@@ -15705,7 +15683,7 @@ au
 aK
 aK
 ad
-cl
+PV
 ae
 aI
 aK
@@ -16068,7 +16046,7 @@ aK
 ae
 ae
 ae
-bf
+UI
 aI
 aI
 ax
@@ -16274,7 +16252,7 @@ ax
 ax
 ax
 ax
-dM
+Ri
 ax
 aI
 aI
@@ -16438,8 +16416,8 @@ aI
 ax
 ax
 ax
-bt
-ea
+VG
+WD
 au
 au
 eP
@@ -16511,7 +16489,7 @@ aI
 aI
 aM
 am
-cG
+YV
 cJ
 aK
 am
@@ -16520,7 +16498,7 @@ aI
 aI
 aK
 ax
-dN
+Sg
 eb
 au
 au
@@ -16602,8 +16580,8 @@ am
 aI
 aK
 dB
-aC
-aC
+ae
+ae
 au
 eG
 aK
@@ -16675,7 +16653,7 @@ am
 aM
 am
 aY
-cA
+Vn
 cK
 cQ
 cX
@@ -16684,10 +16662,10 @@ aM
 am
 aK
 aK
-dO
-aC
+Ot
+ae
 aK
-eH
+Ok
 au
 aK
 ae
@@ -16757,20 +16735,20 @@ aM
 aM
 am
 aY
-bu
-cL
-cL
-cY
+Oz
+TJ
+TJ
+PN
 aM
 aM
 aM
 aM
-aC
+ae
 ad
-ec
+Xr
 eo
 aK
-aC
+ae
 aK
 aK
 ae
@@ -16831,8 +16809,8 @@ aI
 am
 aM
 ca
-cf
-aC
+Wa
+ae
 aK
 aK
 aK
@@ -16846,13 +16824,13 @@ aJ
 au
 bx
 au
-aC
-aC
-bK
+ae
+ae
+eN
 bp
 bx
-aC
-aC
+ae
+ae
 au
 aK
 ae
@@ -16913,7 +16891,7 @@ aI
 aM
 am
 ca
-cf
+Wa
 aK
 aK
 aK
@@ -16932,10 +16910,10 @@ ad
 dC
 bp
 bp
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
 ae
 ae
 ae
@@ -16990,26 +16968,26 @@ ai
 ax
 ax
 am
-bf
+UI
 am
 aM
 aK
-cb
-cf
+We
+Wa
 aK
 au
 au
-cu
-cy
-cy
+Wh
+Xn
+Xn
 cD
 au
 au
-cR
-cZ
-cy
-dg
-dm
+dt
+ST
+Xn
+Pp
+QJ
 bp
 bp
 dC
@@ -17017,7 +16995,7 @@ bp
 bp
 ag
 ag
-aC
+ae
 ae
 ae
 aK
@@ -17077,21 +17055,21 @@ am
 aM
 aK
 cc
-cf
+Wa
 au
 au
-aC
+ae
 au
 cz
 au
 aZ
-aC
+ae
 au
 aK
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
 ag
 bp
 bp
@@ -17099,7 +17077,7 @@ bp
 bp
 bp
 ag
-eZ
+bU
 ae
 ae
 aK
@@ -17131,7 +17109,7 @@ ax
 ad
 ae
 ae
-cl
+PV
 ae
 ax
 aI
@@ -17157,7 +17135,7 @@ ax
 aI
 aM
 bI
-aU
+XD
 cc
 cg
 au
@@ -17166,15 +17144,15 @@ cr
 au
 aJ
 au
-aC
+ae
 aK
 aK
 aK
 aK
 aK
 aK
-aC
-aC
+ae
+ae
 bQ
 au
 aM
@@ -17239,7 +17217,7 @@ aM
 aM
 am
 aM
-bP
+WO
 aK
 aK
 au
@@ -17252,11 +17230,11 @@ bx
 aK
 aK
 aK
-aC
+ae
 au
 bx
 au
-aC
+ae
 dD
 aK
 am
@@ -17317,28 +17295,28 @@ au
 au
 aJ
 au
-bq
-bw
+YO
+Rz
 bD
 bJ
-aC
+ae
 ca
-ch
+Th
 au
 au
-aC
+ae
 au
 au
 aK
-aC
-aC
-aC
+ae
+ae
+ae
 aK
 aK
-aC
+ae
 bx
-aC
-aC
+ae
+ae
 aK
 aK
 aK
@@ -17399,8 +17377,8 @@ aJ
 aR
 au
 au
-br
-aC
+QY
+ae
 au
 aM
 bs
@@ -17408,14 +17386,14 @@ bs
 am
 cj
 au
-aC
+ae
 aK
-aC
+ae
 aK
 aK
-aC
-aC
-aC
+ae
+ae
+ae
 aK
 aK
 aK
@@ -17482,9 +17460,9 @@ au
 au
 au
 bs
-aC
-aC
-bK
+ae
+ae
+eN
 bQ
 au
 am
@@ -17492,24 +17470,24 @@ aK
 aK
 aK
 aK
-aC
-aC
+ae
+ae
 aK
 aK
-aC
+ae
 aK
 aK
-aC
+ae
 aK
 aZ
 au
 aK
 aK
 aK
-aC
-aC
+ae
+ae
 aM
-aC
+ae
 ae
 aK
 ae
@@ -17563,8 +17541,8 @@ aK
 aK
 aY
 aK
-bt
-aC
+VG
+ae
 au
 am
 bR
@@ -17572,13 +17550,13 @@ cd
 ci
 aK
 aK
-aC
-aC
+ae
+ae
 aK
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
 aK
 aK
 aK
@@ -17589,9 +17567,9 @@ dE
 aK
 aZ
 am
-eI
+PV
 aM
-cv
+VP
 ae
 aK
 ae
@@ -17645,28 +17623,28 @@ aK
 aK
 aK
 aK
-bu
-aC
-bE
+Oz
+ae
+Ta
 bL
 am
 ad
 am
 aK
 au
-aC
-aC
+ae
+ae
 aK
 aK
-aC
-aC
+ae
+ae
 aK
 aK
 aK
 aK
 aK
 au
-aC
+ae
 au
 aK
 au
@@ -17731,24 +17709,24 @@ am
 aM
 aM
 am
-aC
+ae
 ce
 aK
 aK
 bQ
-aC
-aC
+ae
+ae
 aJ
 aK
-aC
+ae
 aK
 aK
-aC
-aC
+ae
+ae
 aK
-aC
+ae
 au
-aC
+ae
 bx
 au
 am
@@ -17818,19 +17796,19 @@ aK
 aK
 au
 au
-aC
-aC
-aC
+ae
+ae
+ae
 aK
-aC
-aC
+ae
+ae
 bx
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
 au
-aC
+ae
 aZ
 bQ
 am
@@ -17900,19 +17878,19 @@ aK
 au
 aJ
 aK
-aC
-cv
-cA
+ae
+VP
+Vn
 aK
-aC
-aC
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
+ae
+ae
 au
-aC
-aC
+ae
+ae
 aK
 au
 aM
@@ -17983,17 +17961,17 @@ cj
 cm
 aK
 au
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
 aK
 aK
 au
@@ -18060,29 +18038,29 @@ ai
 bp
 am
 am
-aC
+ae
 au
 aK
 aK
 aK
 aK
 aK
-aC
-aC
+ae
+ae
 au
 bx
-aC
+ae
 au
 au
 aK
 aK
 aK
-aU
+XD
 am
 am
 bp
 ag
-eQ
+Ob
 ag
 ae
 ae
@@ -18164,7 +18142,7 @@ aM
 aM
 ag
 ag
-eQ
+Ob
 ag
 ae
 ae
@@ -18225,13 +18203,13 @@ ai
 ai
 ai
 ai
-aC
-aC
+ae
+ae
 au
 au
 au
 au
-aC
+ae
 au
 aZ
 au
@@ -18244,10 +18222,10 @@ aM
 am
 aM
 bp
-aC
-aC
+ae
+ae
 ca
-aC
+ae
 ae
 ae
 ae
@@ -18304,16 +18282,16 @@ ai
 ai
 ai
 ai
-aC
-aC
+ae
+ae
 au
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
 au
-aC
-aC
+ae
+ae
 ad
 ad
 au
@@ -18387,14 +18365,14 @@ ai
 ai
 ai
 ai
-aC
+ae
 au
-aC
+ae
 au
 aZ
 au
-aC
-aC
+ae
+ae
 au
 bQ
 aM
@@ -18407,8 +18385,8 @@ ag
 ag
 ag
 ag
-aC
-ep
+ae
+ZT
 au
 au
 aM
@@ -18470,8 +18448,8 @@ ai
 ai
 ai
 ai
-aC
-aC
+ae
+ae
 au
 au
 au
@@ -18486,10 +18464,10 @@ aK
 aM
 bp
 ag
-aC
-aC
-dn
-dn
+ae
+ae
+WA
+WA
 au
 aK
 eR
@@ -18547,11 +18525,11 @@ ai
 ai
 ai
 ai
-aC
-aC
+ae
+ae
 au
-aC
-aC
+ae
+ae
 aK
 aK
 bx
@@ -18567,9 +18545,9 @@ au
 aK
 am
 bp
-dn
-dn
-aC
+WA
+WA
+ae
 au
 aK
 aK
@@ -18585,7 +18563,7 @@ ag
 ae
 ae
 aM
-gM
+PD
 av
 aK
 av
@@ -18628,9 +18606,9 @@ ai
 ai
 ai
 ai
-aC
+ae
 ad
-aC
+ae
 aK
 aK
 aK
@@ -18712,7 +18690,7 @@ ai
 ai
 ai
 aM
-aC
+ae
 au
 aK
 aK
@@ -18793,8 +18771,8 @@ ai
 ai
 ai
 ai
-aC
-aC
+ae
+ae
 au
 au
 aK
@@ -18803,8 +18781,8 @@ aK
 aK
 aK
 aK
-aC
-aC
+ae
+ae
 bx
 aK
 aM
@@ -18874,9 +18852,9 @@ ai
 ai
 ai
 ai
-aC
+ae
 ad
-aC
+ae
 bx
 aK
 aZ
@@ -18886,7 +18864,7 @@ aK
 aK
 aK
 au
-aC
+ae
 au
 aK
 ad
@@ -18955,7 +18933,7 @@ ai
 ai
 ai
 ai
-aC
+ae
 bh
 aM
 au
@@ -18969,7 +18947,7 @@ aK
 aK
 aK
 bx
-aC
+ae
 aK
 aK
 aK
@@ -19034,7 +19012,7 @@ aa
 aa
 ad
 ad
-aC
+ae
 aM
 ad
 aM
@@ -19048,8 +19026,8 @@ aK
 aK
 aK
 aK
-aC
-aC
+ae
+ae
 au
 au
 aJ
@@ -19116,7 +19094,7 @@ aa
 aa
 ad
 ae
-aC
+ae
 ad
 aK
 aK
@@ -19130,7 +19108,7 @@ aK
 aK
 aK
 au
-aC
+ae
 au
 au
 bx
@@ -19198,7 +19176,7 @@ aa
 aa
 ad
 ae
-aC
+ae
 ad
 aK
 aK
@@ -19211,8 +19189,8 @@ aK
 aK
 aK
 au
-aC
-aC
+ae
+ae
 bx
 aZ
 au
@@ -19280,7 +19258,7 @@ aa
 aa
 ad
 an
-aC
+ae
 aM
 aK
 aZ
@@ -19301,8 +19279,8 @@ aK
 cE
 aM
 aK
-aC
-aC
+ae
+ae
 ae
 ag
 ag
@@ -19362,7 +19340,7 @@ aa
 aa
 ad
 ae
-aC
+ae
 ad
 ad
 aK
@@ -19383,8 +19361,8 @@ aJ
 au
 aK
 aK
-aC
-aC
+ae
+ae
 ae
 ag
 ag
@@ -19444,8 +19422,8 @@ aa
 aa
 ad
 ae
-aC
-aC
+ae
+ae
 aM
 aM
 aM
@@ -19465,8 +19443,8 @@ au
 aK
 cH
 aK
-aC
-aC
+ae
+ae
 ae
 ag
 ag
@@ -19526,10 +19504,10 @@ aa
 aa
 ad
 an
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
 aM
 aM
 aM
@@ -19546,9 +19524,9 @@ aK
 aK
 aK
 aK
-aC
-aC
-aC
+ae
+ae
+ae
 ae
 ag
 ag
@@ -19608,29 +19586,29 @@ aa
 aa
 ad
 ae
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-ct
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+dj
 aK
-aC
+ae
 aK
-aC
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
+ae
 ae
 ag
 ag
@@ -19690,29 +19668,29 @@ aa
 aa
 ad
 ae
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
-aC
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
+ae
 ae
 ag
 ag
@@ -19943,7 +19921,7 @@ aE
 aE
 ad
 au
-aU
+XD
 au
 au
 au
@@ -20119,7 +20097,7 @@ ad
 au
 au
 au
-aU
+XD
 au
 au
 au
@@ -20758,7 +20736,7 @@ ad
 au
 au
 au
-aU
+XD
 au
 au
 au
@@ -21015,7 +20993,7 @@ au
 ad
 au
 au
-aU
+XD
 au
 au
 au
@@ -21851,7 +21829,7 @@ ad
 dv
 dF
 ae
-ee
+PT
 bz
 eJ
 ae
@@ -21862,7 +21840,7 @@ fr
 fi
 fi
 ae
-fj
+Wr
 ad
 ae
 ae
@@ -22023,7 +22001,7 @@ ae
 ae
 ae
 ae
-fj
+Wr
 ae
 ae
 fi
@@ -22180,11 +22158,11 @@ an
 ae
 ae
 ae
-eq
+Ub
 ae
 ae
 ae
-fj
+Wr
 fi
 ae
 ae
@@ -22197,7 +22175,7 @@ ae
 ad
 av
 av
-hH
+TC
 ad
 ae
 ae
@@ -22350,7 +22328,7 @@ ae
 ae
 fi
 fi
-fj
+Wr
 ft
 fK
 ae
@@ -22361,7 +22339,7 @@ cO
 ad
 av
 gC
-hI
+Qm
 ad
 ae
 ae
@@ -22672,9 +22650,9 @@ dx
 dx
 dx
 dx
-er
-eL
-eT
+Xd
+QB
+Vy
 eK
 ad
 ae
@@ -23094,7 +23072,7 @@ fL
 fT
 gc
 av
-gu
+Qo
 ad
 gT
 av
@@ -26316,7 +26294,7 @@ au
 au
 ad
 au
-aU
+XD
 au
 au
 au
@@ -26721,7 +26699,7 @@ au
 au
 au
 au
-aU
+XD
 au
 au
 ad
@@ -26784,7 +26762,7 @@ ae
 ae
 ad
 au
-aU
+XD
 au
 au
 au
@@ -27491,7 +27469,7 @@ aw
 ad
 bX
 bm
-cl
+PV
 ae
 ad
 bd
@@ -27546,7 +27524,7 @@ bB
 ae
 ad
 au
-aU
+XD
 au
 au
 au
@@ -27823,7 +27801,7 @@ av
 ad
 aw
 aw
-aP
+Qj
 aw
 aw
 aw
@@ -27861,7 +27839,7 @@ au
 au
 au
 au
-aU
+XD
 au
 au
 ad
@@ -28637,7 +28615,7 @@ ad
 ad
 ad
 av
-bY
+Wo
 av
 ad
 aw
@@ -28841,7 +28819,7 @@ ae
 ad
 au
 au
-aU
+XD
 au
 au
 au
@@ -28928,7 +28906,7 @@ au
 au
 au
 au
-aU
+XD
 au
 ad
 ae
@@ -29449,7 +29427,7 @@ aa
 ad
 aw
 aw
-aP
+Qj
 aw
 aw
 aw
@@ -30149,7 +30127,7 @@ ae
 ad
 au
 au
-aU
+XD
 au
 au
 au
@@ -30335,7 +30313,7 @@ bB
 ae
 ad
 au
-aU
+XD
 au
 au
 au
@@ -30668,7 +30646,7 @@ au
 au
 ad
 au
-aU
+XD
 au
 au
 ad
@@ -30973,7 +30951,7 @@ au
 au
 au
 au
-aU
+XD
 au
 ad
 au
@@ -31792,7 +31770,7 @@ hh
 hp
 ad
 hK
-hR
+SJ
 hK
 hL
 hK
@@ -32027,17 +32005,17 @@ ad
 ae
 ae
 ad
-fB
+SD
 fT
 gc
 av
-gu
+Qo
 ad
 gT
 av
 hs
 ad
-hM
+PF
 hK
 ib
 hK
@@ -36781,11 +36759,11 @@ iV
 jf
 iV
 vB
-NW
+Tg
 wl
 wl
 wl
-NW
+Tg
 iH
 jh
 jh
@@ -37109,11 +37087,11 @@ iV
 iV
 iV
 vB
-NW
+Tg
 wl
 wl
 wl
-NW
+Tg
 iH
 jh
 jh
@@ -37346,8 +37324,8 @@ av
 av
 av
 iV
-qH
-rc
+St
+RA
 ae
 sl
 sW
@@ -39348,7 +39326,7 @@ Hn
 HG
 HT
 Il
-NX
+TW
 je
 iH
 jh
@@ -39430,7 +39408,7 @@ Hn
 pv
 Gv
 Im
-NY
+SC
 jf
 iH
 jh
@@ -39512,7 +39490,7 @@ Ho
 pv
 HU
 In
-NZ
+Se
 jf
 iH
 jh
@@ -42706,10 +42684,10 @@ Fo
 vk
 zH
 GV
-Hr
+Yg
 au
 au
-Iu
+RE
 IN
 zH
 iH
@@ -42789,10 +42767,10 @@ FY
 zH
 GW
 Hs
-HI
-HI
+OS
+OS
 Iv
-lq
+US
 iW
 iH
 jh
@@ -42870,10 +42848,10 @@ Do
 Cu
 zH
 GX
-Ht
+Qa
 au
 au
-Iw
+OA
 IO
 iW
 iH
@@ -49244,7 +49222,7 @@ ts
 ts
 ts
 vq
-vW
+Wl
 wC
 xh
 au
@@ -50307,7 +50285,7 @@ ja
 ja
 ja
 ja
-pZ
+Vw
 ja
 ja
 ja
@@ -50329,7 +50307,7 @@ Ef
 zt
 jl
 FF
-Gl
+SN
 GN
 jl
 jl
@@ -51037,7 +51015,7 @@ ja
 fN
 fN
 fN
-pB
+ja
 fN
 fN
 fN
@@ -65164,7 +65142,7 @@ JF
 JF
 JF
 zH
-LQ
+PM
 LZ
 KX
 Mu
