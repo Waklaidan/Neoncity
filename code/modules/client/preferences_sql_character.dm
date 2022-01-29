@@ -1,4 +1,4 @@
-/proc/character_exists_in_db(var/unique_id)
+/proc/character_exists_in_db(unique_id)
 	var/datum/db_query/character_query = SSdbcore.NewQuery({"SELECT real_name FROM [format_table_name("characters")] WHERE unique_id = :unique_id"}, list(
 			"unique_id" = unique_id
 		))
@@ -78,7 +78,7 @@
 	if(update_character_to_db(unique_id, real_name, parent.ckey, default_slot))
 		return TRUE
 
-/proc/delete_character_from_db(var/unique_id)
+/proc/delete_character_from_db(unique_id)
 
 	var/datum/db_query/query_delete_character = SSdbcore.NewQuery(
 		"DELETE FROM [format_table_name("characters")] WHERE unique_id = :unique_id",
