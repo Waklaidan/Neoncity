@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-prop-types */
 import { sortBy, sortStrings } from "common/collections";
 import { BooleanLike, classes } from "common/react";
 import { ComponentType, createComponentVNode, InfernoNode } from "inferno";
@@ -334,23 +335,16 @@ export const FeatureValueInput = (props: {
 
 export const DisplayNum = (props: {
   feature: Feature<unknown>,
-  value: unknown,
+  value: null,
   featureId: string}) => {
-  if (!props.serverData) {
-    return <Box>Loading...</Box>;
-  }
-
 
   return <Box>{props.value}</Box>;
 };
 
 export const DisplayValue = (props: {
   feature: Feature<unknown>,
-  value: unknown,
+  value: null,
   featureId: string}) => {
-  if (!props.value) {
-    return <Box>Loading...</Box>;
-  }
 
   return <Box>{props.value}</Box>;
 };
