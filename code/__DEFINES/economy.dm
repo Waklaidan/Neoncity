@@ -64,5 +64,5 @@
 
 // Min/Max for bank balances
 
-#define MIN_BANK -999999999999
-#define MAX_BANK 999999999999
+#define MIN_BANK -9999999
+#define MAX_BANK 9999999

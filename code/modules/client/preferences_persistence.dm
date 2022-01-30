@@ -24,6 +24,6 @@
 		if(starting_bank)
 			preference.on_persistent_bank_save(starting_bank, preferences)
 
-	preferences.save_character()
+	preferences.full_character_save()
 
 	return TRUE

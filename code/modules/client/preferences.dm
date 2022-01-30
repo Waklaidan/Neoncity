@@ -113,7 +113,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	var/loaded_preferences_successfully = load_preferences()
 	if(loaded_preferences_successfully)
-		if(load_character())
+		if(full_character_load())
 			return
 	//we couldn't load character data so just randomize the character appearance + name
 	randomise_appearance_prefs() //let's create a random character then - rather than a fat, bald and naked man.
@@ -123,7 +123,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	if(!loaded_preferences_successfully)
 		save_preferences()
-	save_character() //let's save this new random character so it doesn't keep generating new ones.
+	full_character_save() //let's save this new random character so it doesn't keep generating new ones.
 
 /datum/preferences/ui_interact(mob/user, datum/tgui/ui)
 	// If you leave and come back, re-register the character preview
@@ -214,15 +214,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			if(tgui_alert(usr, "Save changes to current slot before changing slot?", "Save Character", list("Save Character", "Discard Changes")) != "Discard Changes")
 				// Save existing character
-				save_character()
+				full_character_save()
 			else
 				tainted_character_profiles = TRUE
 
 			// SAFETY: `load_character` performs sanitization the slot number
-			if (!load_character(params["slot"]))
+			if (!full_character_load(params["slot"]))
 				tainted_character_profiles = TRUE
 				randomise_appearance_prefs()
-				save_character()
+				full_character_save()
 
 			for (var/datum/preference_middleware/preference_middleware as anything in middleware)
 				preference_middleware.on_new_character(usr)
@@ -306,7 +306,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			if(tgui_alert(usr, "Save this character?", "Save Character", list("Yes", "No")) != "Yes")
 				return FALSE
-			save_character()
+			full_character_save()
 			return TRUE
 
 	for (var/datum/preference_middleware/preference_middleware as anything in middleware)
@@ -317,9 +317,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	return FALSE
 
 /datum/preferences/ui_close(mob/user)
-	if(tgui_alert(usr, "Save changes to current slot before closing?", "Save Character", list("Save Character", "Discard Changes")) != "Discard Changes")
-		// Save existing character
-		save_character()
 	save_preferences()
 	QDEL_NULL(character_preview_view)
 

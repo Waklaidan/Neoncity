@@ -227,8 +227,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 				continue
 			max_save_slots = max(max_save_slots, slotnum) //so we can still update byond member slots after they lose memeber status
 			default_slot = slotnum
-			if (load_character())
-				save_character()
+			if (full_character_load())
+				full_character_save()
 		default_slot = old_default_slot
 		max_save_slots = old_max_save_slots
 		save_preferences()
@@ -268,6 +268,19 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["key_bindings"], key_bindings)
 	WRITE_FILE(S["hearted_until"], (hearted_until > world.realtime ? hearted_until : null))
 	WRITE_FILE(S["favorite_outfits"], favorite_outfits)
+	return TRUE
+
+/datum/preferences/proc/full_character_load(slot)
+	load_character(slot)
+	if(SSdbcore.Connect())
+		if(!add_character_to_db())// dup check is already included in proc
+			update_character_prefs_to_db()
+
+		if(!add_character_bank_to_db()) // dup check in proc
+			// we're updating the bank from the db since they can earn offline
+			// end of round saving uses a different proc.
+			update_bank_from_db()
+
 	return TRUE
 
 /datum/preferences/proc/load_character(slot)
@@ -333,14 +346,22 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	all_quirks = SSquirks.filter_invalid_quirks(SANITIZE_LIST(all_quirks))
 	validate_quirks()
 
-	if(SSdbcore.Connect())
-		if(!add_character_to_db())// dup check is already included in proc
-			update_character_prefs_to_db()
+	return TRUE
 
-		if(!add_character_bank_to_db()) // dup check in proc
-			// we're updating the bank from the db since they can earn offline
-			// end of round saving uses a different proc.
-			update_bank_from_db()
+/datum/preferences/proc/full_character_save()
+	save_character()
+
+	if(SSdbcore.Connect())
+		if(current_character_exists_in_db())
+			update_character_prefs_to_db()
+		else
+			add_character_to_db()
+
+		if(current_bank_exists_in_db())
+			// since we're in-game, we can save to this proc.
+			bank_prefs_to_db()
+		else
+			add_character_bank_to_db()
 
 	return TRUE
 
@@ -384,19 +405,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Quirks
 	WRITE_FILE(S["all_quirks"] , all_quirks)
 
-	if(SSdbcore.Connect())
-		if(current_character_exists_in_db())
-			update_character_prefs_to_db()
-		else
-			add_character_to_db()
-
-		if(current_bank_exists_in_db())
-			// since we're in-game, we can save to this proc.
-			bank_prefs_to_db()
-		else
-			add_character_bank_to_db()
-
-
 	return TRUE
 
 /datum/preferences/proc/sanitize_be_special(list/input_be_special)
@@ -424,7 +432,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	randomise_appearance_prefs() //let's create a random character then
 
-	save_character()
+	full_character_save()
 
 	return TRUE
 
