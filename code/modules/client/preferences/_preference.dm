@@ -217,8 +217,7 @@ GLOBAL_LIST_INIT(preference_entries_by_key, init_preference_entries_by_key())
 
 /// At the end of the round this will be called on the bank.
 /datum/preference/proc/on_persistent_bank_save(datum/bank_account/target, datum/preferences/preferences)
-	SHOULD_NOT_SLEEP(TRUE)
-	SHOULD_CALL_PARENT(FALSE)
+	return TRUE
 
 /// Returns which savefile to use for a given savefile identifier
 /datum/preferences/proc/get_savefile_for_savefile_identifier(savefile_identifier)
