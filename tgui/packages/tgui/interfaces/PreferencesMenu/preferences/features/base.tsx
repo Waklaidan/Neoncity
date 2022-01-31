@@ -333,18 +333,7 @@ export const FeatureValueInput = (props: {
   );
 };
 
-export const DisplayNum = (props: {
-  feature: Feature<unknown>,
-  value: null,
-  featureId: string}) => {
-
-  return <Box>{props.value}</Box>;
-};
-
-export const DisplayValue = (props: {
-  feature: Feature<unknown>,
-  value: null,
-  featureId: string}) => {
+export const DisplayValue = (props) => {
 
   return <Box>{props.value}</Box>;
 };

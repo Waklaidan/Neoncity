@@ -1,8 +1,7 @@
-import { Feature, DisplayNum } from "../base";
+import { Feature, DisplayValue } from "../base";
 
 export const bank_balance: Feature<string> = {
   name: "Bank Balance",
-  category: "GAMEPLAY",
   description: "Current amount of currency this character has.",
-  component: DisplayNum,
+  component: DisplayValue,
 };
