@@ -93,6 +93,9 @@
 	///List of objective-specific equipment that couldn't properly be given to the mind
 	var/list/failed_special_equipment
 
+	///Assigned client, so we don't lose it when we save characters.
+	var/client/client = null
+
 /datum/mind/New(_key)
 	key = _key
 	martial_art = default_martial_art
@@ -129,6 +132,12 @@
 	current = new_current
 	if(current)
 		RegisterSignal(src, COMSIG_PARENT_QDELETING, .proc/clear_current)
+
+		// add the client to this mind, for persistence reference.
+		if(current.client)
+			client = current.client
+		else
+			client = null
 
 /datum/mind/proc/clear_current(datum/source)
 	SIGNAL_HANDLER

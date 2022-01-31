@@ -71,7 +71,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 			cli.prefs.all_quirks -= quirk_name
 			badquirk = TRUE
 	if(badquirk)
-		cli.prefs.save_character()
+		cli.prefs.full_character_save()
 
 	// Assign wayfinding pinpointer granting quirk if they're new
 	if(cli.get_exp_living(TRUE) < EXP_ASSIGN_WAYFINDER && !user.has_quirk(/datum/quirk/item_quirk/needswayfinder))

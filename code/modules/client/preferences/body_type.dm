@@ -26,3 +26,6 @@
 	return initial(species.sexes)
 
 #undef USE_GENDER
+
+/datum/preference/choiced/body_type/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+	preferences.value_cache[type] = target.body_type

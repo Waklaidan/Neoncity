@@ -61,3 +61,8 @@
 #define PAYMENT_CLINICAL "clinical"
 #define PAYMENT_FRIENDLY "friendly"
 #define PAYMENT_ANGRY "angry"
+
+// Min/Max for bank balances
+
+#define MIN_BANK -9999999
+#define MAX_BANK 9999999

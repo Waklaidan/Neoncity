@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-prop-types */
 import { sortBy, sortStrings } from "common/collections";
 import { BooleanLike, classes } from "common/react";
 import { ComponentType, createComponentVNode, InfernoNode } from "inferno";
@@ -331,3 +332,11 @@ export const FeatureValueInput = (props: {
     />
   );
 };
+
+export const DisplayValue = (props) => {
+
+  return <Box>{props.value}</Box>;
+};
+
+
+

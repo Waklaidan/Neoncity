@@ -7,17 +7,18 @@
 	var/datum/job/account_job
 	var/list/bank_cards = list()
 	var/add_to_accounts = TRUE
-	var/account_id
+	var/account_id = ""
 	var/being_dumped = FALSE //pink levels are rising
 	var/datum/bounty/civilian_bounty
 	var/list/datum/bounty/bounties
 	COOLDOWN_DECLARE(bounty_timer)
 
-/datum/bank_account/New(newname, job, modifier = 1)
+/datum/bank_account/New(newname, job, modifier = 1, unique_id = null, starting_balance = 0)
 	account_holder = newname
 	account_job = job
 	payday_modifier = modifier
-	setup_unique_account_id()
+	account_balance = starting_balance
+	setup_unique_account_id(unique_id)
 
 /datum/bank_account/Destroy()
 	if(add_to_accounts)
@@ -25,16 +26,17 @@
 	return ..()
 
 /// Proc guarantees the account_id possesses a unique number. If it doesn't, it tries to find a unique alternative. It then adds it to the `SSeconomy.bank_accounts_by_id` global list.
-/datum/bank_account/proc/setup_unique_account_id()
+/datum/bank_account/proc/setup_unique_account_id(unique_id)
 	if (!add_to_accounts)
 		return
 	if(account_id && !SSeconomy.bank_accounts_by_id["[account_id]"])
 		SSeconomy.bank_accounts_by_id["[account_id]"] = src
 		return //Already unique
-	for(var/i in 1 to 1000)
-		account_id = rand(111111, 999999)
-		if(!SSeconomy.bank_accounts_by_id["[account_id]"])
-			break
+	if(unique_id)
+		account_id = unique_id
+
+	else
+		account_id = unique_code("ACC")
 	if(SSeconomy.bank_accounts_by_id["[account_id]"])
 		stack_trace("Unable to find a unique account ID, substituting currently existing account of id [account_id].")
 	SSeconomy.bank_accounts_by_id["[account_id]"] = src
