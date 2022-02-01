@@ -23,5 +23,10 @@
 /datum/preference/numeric/bank_balance/apply_to_bank(datum/bank_account/target, value)
 	target.account_balance = value
 
-/datum/preference/choiced/social_class/on_persistent_bank_save(datum/bank_account/target, datum/preferences/preferences)
-	preferences.value_cache[type] = target.account_balance
+/datum/preference/numeric/bank_balance/on_persistent_bank_save(datum/bank_account/target, datum/preferences/preferences)
+	preferences.write_preference(src, target.account_balance)
+
+	if(SSdbcore.Connect()) // save to the DB.
+		bank_update_to_db(target.account_id, target.account_balance, target.account_holder, preferences.parent.ckey)
+
+	return TRUE

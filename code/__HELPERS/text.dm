@@ -1048,7 +1048,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 	unique_code = "-[unique_code]"
 	t = round(world.realtime / (10 * 60 * 60 * 24))
 	for(var/_ = 1 to 3)
-		unique_code = "[prefix ? "[prefix]-" : ""][c[(t % l) + 1]][unique_code]"
+		unique_code = "[prefix ? "[prefix]-" : ""][c[(t % l) + 1]][unique_code][rand(0,9999)]"
 		t = round(t / l)
 
 	return unique_code

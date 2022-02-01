@@ -99,6 +99,64 @@ CREATE TABLE `ban` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `banks`
+--
+
+DROP TABLE IF EXISTS `banks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE IF NOT EXISTS `banks` (
+  `unique_id` varchar(64) NOT NULL,
+  `account_holder` varchar(60) NOT NULL,
+  `bank_balance` int(18) NOT NULL,
+  `ckey` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `banks`
+--
+ALTER TABLE `banks`
+  ADD PRIMARY KEY (`unique_id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+--
+-- Table structure for table `characters`
+--
+
+DROP TABLE IF EXISTS `characters`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE IF NOT EXISTS `characters` (
+  `ckey` varchar(32) NOT NULL,
+  `real_name` varchar(60) NOT NULL,
+  `slot` int(2) NOT NULL,
+  `unique_id` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `characters`
+--
+ALTER TABLE `characters`
+  ADD PRIMARY KEY (`unique_id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+--
 -- Table structure for table `citation`
 --
 DROP TABLE IF EXISTS `citation`;

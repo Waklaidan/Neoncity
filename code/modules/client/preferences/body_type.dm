@@ -6,6 +6,8 @@
 	savefile_key = "body_type"
 	savefile_identifier = PREFERENCE_CHARACTER
 
+	persistent = TRUE
+
 /datum/preference/choiced/body_type/init_possible_values()
 	return list(USE_GENDER, MALE, FEMALE)
 
@@ -28,4 +30,5 @@
 #undef USE_GENDER
 
 /datum/preference/choiced/body_type/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
-	preferences.value_cache[type] = target.body_type
+	preferences.write_preference(src, target.body_type)
+	return TRUE
