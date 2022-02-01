@@ -106,7 +106,7 @@
  * all args are fed into creating an image, they are byond vars for images you'll recognize in the byond docs
  * (except source, source is the object whose appearance we're copying.)
  */
-/datum/element/decal/proc/generate_appearance(_icon, _icon_state, _dir, _plane, _layer, _color, _alpha, _smoothing, source)
+/datum/element/decal/proc/generate_appearance(_icon, _icon_state, _dir, _plane, _layer, _color, _alpha, _smoothing, source, _appearance_flags = RESET_COLOR)
 	if(!_icon || !_icon_state)
 		return FALSE
 	var/temp_image = image(_icon, null, isnull(_smoothing) ? _icon_state : "[_icon_state]-[_smoothing]", _layer, _dir)
@@ -114,6 +114,7 @@
 	pic.plane = _plane
 	pic.color = _color
 	pic.alpha = _alpha
+	pic.appearance_flags = _appearance_flags
 	return TRUE
 
 /datum/element/decal/Detach(atom/source)

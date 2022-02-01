@@ -96,23 +96,25 @@ GLOBAL_LIST_EMPTY(station_turfs)
 
 /turf/update_overlays()
 	. = ..()
-	if(color)
-		base_color = color
-		color = null
 
 	set_light(0)
 
-	if(base_color || paint_color)
-		var/applied_color = (paint_color ? paint_color : base_color)
-		. += mutable_appearance(icon, icon_state, alpha = 200, color = applied_color)
+	remove_atom_colour(FIXED_COLOUR_PRIORITY)
+	remove_atom_colour(WASHABLE_COLOUR_PRIORITY)
 
-	//readd overlays
+	if(base_color && !paint_color)
+		add_atom_colour(base_color, FIXED_COLOUR_PRIORITY)
+
+	if(paint_color)
+		add_atom_colour(paint_color, WASHABLE_COLOUR_PRIORITY)
+
+//readd overlays
 	if(pattern_type && pattern_color)
-		. += mutable_appearance(pattern_type, "[smoothing_junction]", alpha = 255, color = pattern_color)
+		. += mutable_appearance(pattern_type, "[smoothing_junction]", appearance_flags = RESET_COLOR, alpha = 255, color = pattern_color)
 
 		if(pattern_glow)
 			set_light(2,2, pattern_color)
-			. += emissive_appearance(pattern_type, "[smoothing_junction]", alpha = 255)
+			. += emissive_appearance(pattern_type, "[smoothing_junction]", appearance_flags = RESET_COLOR, alpha = 255)
 
 /**
  * Turf Initialize
@@ -135,6 +137,9 @@ GLOBAL_LIST_EMPTY(station_turfs)
 	assemble_baseturfs()
 
 	levelupdate()
+
+	if(color)
+		base_color = color
 
 	if (length(smoothing_groups))
 		sortTim(smoothing_groups) //In case it's not properly ordered, let's avoid duplicate entries with the same values.
@@ -184,6 +189,7 @@ GLOBAL_LIST_EMPTY(station_turfs)
 			armor = getArmor(arglist(armor))
 		else if (!armor)
 			armor = getArmor()
+
 
 	return INITIALIZE_HINT_NORMAL
 
