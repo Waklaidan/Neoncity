@@ -135,7 +135,7 @@
 /datum/preference/color/hair_color/apply_to_human(mob/living/carbon/human/target, value)
 	target.hair_color = value
 
-/datum/preference/color_legacy/hair_color/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
+/datum/preference/color/hair_color/on_persistent_human_save(mob/living/carbon/human/target, datum/preferences/preferences)
 	preferences.write_preference(src, target.hair_color)
 	return TRUE
 
