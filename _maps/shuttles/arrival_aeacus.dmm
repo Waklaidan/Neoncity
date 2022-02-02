@@ -1,0 +1,373 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle/arrival)
+"b" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/shuttle/arrival)
+"c" = (
+/obj/structure/fluff/bus/dense,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"d" = (
+/turf/template_noop,
+/area/shuttle/arrival)
+"e" = (
+/obj/machinery/door/airlock/titanium{
+	color = "grey";
+	name = "Arrivals Shuttle Airlock"
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 4
+	},
+/obj/docking_port/mobile/arrivals{
+	dir = 4;
+	height = 13;
+	name = "aeacus arrival train";
+	width = 6
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"f" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/arrival)
+"g" = (
+/obj/structure/shuttle/engine/heater{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/arrival)
+"h" = (
+/obj/effect/turf_decal/siding/brown{
+	icon_state = "siding_line";
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"i" = (
+/obj/machinery/light/wall,
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"j" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"k" = (
+/obj/effect/turf_decal/trimline/yellow/end,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"l" = (
+/obj/machinery/requests_console{
+	department = "Arrival shuttle";
+	name = "Arrivals Shuttle console"
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/shuttle/arrival)
+"m" = (
+/obj/effect/turf_decal/siding/brown{
+	icon_state = "siding_line";
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/yellow/line,
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"n" = (
+/obj/effect/turf_decal/trimline/yellow/end{
+	icon_state = "trimline_end";
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"o" = (
+/obj/effect/turf_decal/trimline/green,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"p" = (
+/obj/effect/turf_decal/trimline/yellow/end{
+	icon_state = "trimline_end";
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"q" = (
+/obj/effect/turf_decal/trimline/yellow/line,
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"r" = (
+/obj/machinery/door/airlock/titanium{
+	color = "grey";
+	name = "Arrivals Shuttle Airlock"
+	},
+/obj/effect/turf_decal/trimline/yellow/line,
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"s" = (
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"t" = (
+/obj/machinery/door/airlock/titanium{
+	color = "grey";
+	name = "Arrivals Shuttle Airlock"
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"u" = (
+/obj/structure/fluff/bus/passable/seat/driver,
+/obj/effect/turf_decal/trimline/yellow/line,
+/obj/effect/turf_decal/trimline/yellow/line{
+	icon_state = "trimline";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"v" = (
+/obj/effect/turf_decal/siding/brown{
+	icon_state = "siding_line";
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"w" = (
+/obj/structure/chair/comfy/shuttle{
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"x" = (
+/obj/machinery/light/warm,
+/obj/structure/chair/comfy/shuttle{
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"y" = (
+/obj/structure/fluff/bus/passable,
+/obj/effect/turf_decal/siding/brown{
+	icon_state = "siding_line";
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+"z" = (
+/obj/structure/fluff/bus/passable,
+/obj/structure/window/reinforced,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/arrival)
+
+(1,1,1) = {"
+a
+f
+f
+f
+a
+"}
+(2,1,1) = {"
+b
+g
+g
+g
+b
+"}
+(3,1,1) = {"
+c
+h
+m
+v
+y
+"}
+(4,1,1) = {"
+c
+i
+n
+w
+z
+"}
+(5,1,1) = {"
+c
+j
+o
+x
+z
+"}
+(6,1,1) = {"
+c
+i
+p
+w
+z
+"}
+(7,1,1) = {"
+c
+j
+q
+w
+z
+"}
+(8,1,1) = {"
+b
+a
+q
+a
+b
+"}
+(9,1,1) = {"
+d
+b
+r
+b
+d
+"}
+(10,1,1) = {"
+b
+a
+q
+a
+b
+"}
+(11,1,1) = {"
+c
+j
+q
+w
+z
+"}
+(12,1,1) = {"
+c
+i
+n
+w
+z
+"}
+(13,1,1) = {"
+e
+k
+o
+x
+z
+"}
+(14,1,1) = {"
+c
+i
+p
+w
+z
+"}
+(15,1,1) = {"
+c
+j
+s
+w
+z
+"}
+(16,1,1) = {"
+b
+a
+s
+a
+b
+"}
+(17,1,1) = {"
+d
+b
+t
+b
+d
+"}
+(18,1,1) = {"
+b
+a
+s
+a
+b
+"}
+(19,1,1) = {"
+c
+j
+s
+w
+z
+"}
+(20,1,1) = {"
+c
+i
+n
+w
+z
+"}
+(21,1,1) = {"
+c
+j
+o
+x
+z
+"}
+(22,1,1) = {"
+c
+i
+p
+w
+z
+"}
+(23,1,1) = {"
+c
+j
+s
+w
+z
+"}
+(24,1,1) = {"
+b
+l
+u
+b
+b
+"}
+(25,1,1) = {"
+a
+a
+a
+a
+a
+"}

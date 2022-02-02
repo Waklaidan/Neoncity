@@ -2,7 +2,7 @@
 	gender = PLURAL
 	name = "water"
 	desc = "Shallow water."
-	icon = 'icons/turf/floors.dmi'
+	icon = 'icons/turf/water.dmi'
 	icon_state = "riverwater_motion"
 	baseturfs = /turf/open/chasm/lavaland
 	initial_gas_mix = OPENTURF_LOW_PRESSURE
@@ -17,4 +17,7 @@
 	heavyfootstep = FOOTSTEP_WATER
 
 /turf/open/water/jungle
+	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
+
+/turf/open/water/planet
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS

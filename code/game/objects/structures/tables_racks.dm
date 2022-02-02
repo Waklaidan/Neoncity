@@ -424,9 +424,9 @@
 /obj/structure/table/wood
 	name = "wooden table"
 	desc = "Do not apply fire to this. Rumour says it burns easily."
-	icon = 'icons/obj/smooth_structures/wood_table.dmi'
-	icon_state = "wood_table-0"
-	base_icon_state = "wood_table"
+	icon = 'icons/obj/smooth_structures/table_greyscale.dmi'
+	icon_state = "table_greyscale-0"
+	base_icon_state = "table_greyscale"
 	frame = /obj/structure/table_frame/wood
 	framestack = /obj/item/stack/sheet/mineral/wood
 	buildstack = /obj/item/stack/sheet/mineral/wood
@@ -434,6 +434,32 @@
 	max_integrity = 70
 	smoothing_groups = list(SMOOTH_GROUP_WOOD_TABLES) //Don't smooth with SMOOTH_GROUP_TABLES
 	canSmoothWith = list(SMOOTH_GROUP_WOOD_TABLES)
+	color = MATERIAL_WOOD_OAK
+
+/obj/structure/table/wood/mahogany
+	color = MATERIAL_WOOD_MAHOGANY
+	framestack = /obj/item/stack/sheet/mineral/wood/mahogany
+	buildstack = /obj/item/stack/sheet/mineral/wood/mahogany
+
+/obj/structure/table/wood/ebony
+	color = MATERIAL_WOOD_EBONY
+	framestack = /obj/item/stack/sheet/mineral/wood/ebony
+	buildstack = /obj/item/stack/sheet/mineral/wood/ebony
+
+/obj/structure/table/wood/pine
+	color = MATERIAL_WOOD_PINE
+	framestack = /obj/item/stack/sheet/mineral/wood/pine
+	buildstack = /obj/item/stack/sheet/mineral/wood/pine
+
+/obj/structure/table/wood/maple
+	color = MATERIAL_WOOD_MAPLE
+	framestack = /obj/item/stack/sheet/mineral/wood/maple
+	buildstack = /obj/item/stack/sheet/mineral/wood/maple
+
+/obj/structure/table/wood/yew
+	color = MATERIAL_WOOD_YEW
+	framestack = /obj/item/stack/sheet/mineral/wood/yew
+	buildstack = /obj/item/stack/sheet/mineral/wood/yew
 
 /obj/structure/table/wood/narsie_act(total_override = TRUE)
 	if(!total_override)
@@ -446,6 +472,7 @@
 	icon_state = "poker_table-0"
 	base_icon_state = "poker_table"
 	buildstack = /obj/item/stack/tile/carpet
+	color = null
 
 /obj/structure/table/wood/poker/narsie_act()
 	..(FALSE)
@@ -462,6 +489,7 @@
 	smoothing_groups = list(SMOOTH_GROUP_FANCY_WOOD_TABLES) //Don't smooth with SMOOTH_GROUP_TABLES or SMOOTH_GROUP_WOOD_TABLES
 	canSmoothWith = list(SMOOTH_GROUP_FANCY_WOOD_TABLES)
 	var/smooth_icon = 'icons/obj/smooth_structures/fancy_table.dmi' // see Initialize()
+	color = null
 
 /obj/structure/table/wood/fancy/Initialize(mapload)
 	. = ..()
