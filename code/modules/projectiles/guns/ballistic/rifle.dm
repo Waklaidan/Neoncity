@@ -158,7 +158,7 @@
 
 /obj/item/gun/ballistic/rifle/boltaction/pipegun/prime
 	name = "regal pipegun"
-	desc = "Older, territorial assistants typically possess more valuable loot."
+	desc = "Older, territorial civilians typically possess more valuable loot."
 	icon_state = "musket_prime"
 	inhand_icon_state = "musket_prime"
 	worn_icon_state = "musket_prime"
