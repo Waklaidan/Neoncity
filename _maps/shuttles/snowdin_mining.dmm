@@ -31,11 +31,25 @@
 "j" = (
 /turf/closed/wall/rust,
 /area/shuttle/snowdin/elevator2)
+"V" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Elevator Access"
+	},
+/obj/docking_port/mobile/elevator{
+	dir = 4;
+	dwidth = 2;
+	height = 5;
+	id = "snowdin_mining";
+	name = "mining elevator";
+	width = 5
+	},
+/turf/open/floor/plating,
+/area/shuttle/snowdin/elevator2)
 
 (1,1,1) = {"
 j
 b
-c
+V
 b
 d
 "}

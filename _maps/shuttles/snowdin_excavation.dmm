@@ -24,12 +24,25 @@
 	},
 /turf/open/floor/engine,
 /area/shuttle/snowdin/elevator1)
+"s" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Elevator Access"
+	},
+/obj/docking_port/mobile/elevator{
+	dir = 4;
+	height = 6;
+	id = "snowdin_excavation";
+	name = "excavation elevator";
+	width = 6
+	},
+/turf/open/floor/plating,
+/area/shuttle/snowdin/elevator1)
 
 (1,1,1) = {"
 d
 b
 c
-c
+s
 b
 d
 "}
