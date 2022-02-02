@@ -97,8 +97,6 @@ GLOBAL_LIST_EMPTY(station_turfs)
 /turf/update_overlays()
 	. = ..()
 
-	set_light(0)
-
 	remove_atom_colour(FIXED_COLOUR_PRIORITY)
 	remove_atom_colour(WASHABLE_COLOUR_PRIORITY)
 
@@ -113,7 +111,6 @@ GLOBAL_LIST_EMPTY(station_turfs)
 		. += mutable_appearance(pattern_type, "[smoothing_junction]", appearance_flags = RESET_COLOR, alpha = 255, color = pattern_color)
 
 		if(pattern_glow)
-			set_light(2,2, pattern_color)
 			. += emissive_appearance(pattern_type, "[smoothing_junction]", appearance_flags = RESET_COLOR, alpha = 255)
 
 /**
@@ -131,6 +128,10 @@ GLOBAL_LIST_EMPTY(station_turfs)
 		stack_trace("Warning: [src]([type]) initialized multiple times!")
 	flags_1 |= INITIALIZED_1
 
+	if(color)
+		base_color = color
+		color = null
+
 	// by default, vis_contents is inherited from the turf that was here before
 	vis_contents.Cut()
 
@@ -138,8 +139,6 @@ GLOBAL_LIST_EMPTY(station_turfs)
 
 	levelupdate()
 
-	if(color)
-		base_color = color
 
 	if (length(smoothing_groups))
 		sortTim(smoothing_groups) //In case it's not properly ordered, let's avoid duplicate entries with the same values.
@@ -189,6 +188,8 @@ GLOBAL_LIST_EMPTY(station_turfs)
 			armor = getArmor(arglist(armor))
 		else if (!armor)
 			armor = getArmor()
+
+	update_icon()
 
 
 	return INITIALIZE_HINT_NORMAL

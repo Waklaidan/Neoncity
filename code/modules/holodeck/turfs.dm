@@ -98,12 +98,20 @@
 	name = "basalt"
 	icon_state = "basalt0"
 	tiled_dirt = FALSE
+	var/lava_color = LIGHT_COLOR_LAVA
 
 /turf/open/floor/holofloor/basalt/Initialize(mapload)
 	. = ..()
 	if(prob(15))
 		icon_state = "basalt[rand(0, 12)]"
 		set_basalt_light(src)
+
+/turf/open/floor/holofloor/basalt/proc/set_basalt_light(turf/open/floor/holofloor/basalt/B)
+	switch(B.icon_state)
+		if("basalt1", "basalt2", "basalt3")
+			B.set_light(2, 0.6, B.lava_color) //more light
+		if("basalt5", "basalt9")
+			B.set_light(1.4, 0.6, B.lava_color) //barely anything!
 
 /turf/open/floor/holofloor/space
 	name = "\proper space"

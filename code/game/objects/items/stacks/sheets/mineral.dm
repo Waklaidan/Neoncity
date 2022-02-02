@@ -51,6 +51,38 @@ GLOBAL_LIST_INIT(sandstone_recipes, list ( \
 	amount = 30
 
 /*
+ * Sandstone
+ */
+
+GLOBAL_LIST_INIT(concrete_recipes, list ( \
+	new/datum/stack_recipe("Breakdown into sand", /obj/item/stack/ore/glass, 1, one_per_turf = FALSE, on_floor = TRUE) \
+	))
+
+/obj/item/stack/sheet/mineral/concrete
+	name = "concrete brick"
+	desc = "This appears to be a combination of both sand and stone."
+	singular_name = "concrete brick"
+	icon_state = "sheet-sandstone"
+	inhand_icon_state = "sheet-sandstone"
+	throw_speed = 3
+	throw_range = 5
+	mats_per_unit = list(/datum/material/concrete=MINERAL_MATERIAL_AMOUNT)
+	sheettype = "sandstone"
+	merge_type = /obj/item/stack/sheet/mineral/concrete
+	walltype = /turf/closed/wall/mineral/concrete
+	material_type = /datum/material/concrete
+
+	color = COLOR_GRAY
+
+/obj/item/stack/sheet/mineral/concrete/get_main_recipes()
+	. = ..()
+	. += GLOB.concrete_recipes
+
+/obj/item/stack/sheet/mineral/concrete/thirty
+	amount = 30
+
+
+/*
  * Sandbags
  */
 

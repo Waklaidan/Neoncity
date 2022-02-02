@@ -20,7 +20,7 @@
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_GOLD_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_GOLD_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/gold = 4000)
-	base_color = "#cf951f"
+	color = "#cf951f"
 
 /turf/closed/wall/mineral/silver
 	name = "silver wall"
@@ -33,7 +33,7 @@
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_SILVER_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_SILVER_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/silver = 4000)
-	base_color = "#fff000"
+	color = "#fff000"
 
 /turf/closed/wall/mineral/diamond
 	name = "diamond wall"
@@ -49,7 +49,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_DIAMOND_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/diamond = 4000)
 
-	base_color = "#33cccc"
+	color = "#33cccc"
 
 /turf/closed/wall/mineral/diamond/hulk_recoil(obj/item/bodypart/arm, mob/living/carbon/human/hulkman, damage = 41)
 	return ..()
@@ -66,7 +66,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_BANANIUM_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/bananium = 4000)
 
-	base_color = COLOR_YELLOW
+	color = COLOR_YELLOW
 
 /turf/closed/wall/mineral/sandstone
 	name = "sandstone wall"
@@ -81,7 +81,22 @@
 	canSmoothWith = list(SMOOTH_GROUP_SANDSTONE_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/sandstone = 4000)
 
-	base_color = "#ffcc66"
+	color = "#ffcc66"
+
+/turf/closed/wall/mineral/concrete
+	name = "concrete wall"
+	desc = "A wall with concrete plating. Rough."
+	icon = 'icons/turf/walls/brick.dmi'
+//	icon_state = "sandstone_wall-0"
+//	base_icon_state = "sandstone_wall"
+	sheet_type = /obj/item/stack/sheet/mineral/concrete
+	explosion_block = 0
+	smoothing_flags = SMOOTH_BITMASK
+	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_CONCRETE_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_CONCRETE_WALLS, SMOOTH_GROUP_AIRLOCK)
+	custom_materials = list(/datum/material/concrete = 4000)
+
+	color = COLOR_GRAY
 
 /turf/closed/wall/mineral/uranium
 	article = "a"
@@ -96,7 +111,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_URANIUM_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/uranium = 4000)
 
-	base_color = COLOR_GREEN
+	color = COLOR_GREEN
 
 /turf/closed/wall/mineral/uranium/proc/radiate()
 	if(!active)
@@ -143,7 +158,37 @@
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_WALLS, SMOOTH_GROUP_PLASMA_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_PLASMA_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/plasma = 4000)
-	base_color = COLOR_PURPLE
+	color = COLOR_PURPLE
+
+/turf/closed/wall/mineral/plasma/attackby(obj/item/W, mob/user, params)
+	if(W.get_temperature() > 300)//If the temperature of the object is over 300, then ignite
+		message_admins("Plasma wall ignited by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(src)]")
+		log_game("Plasma wall ignited by [key_name(user)] in [AREACOORD(src)]")
+		ignite(W.get_temperature())
+		return
+	..()
+
+/turf/closed/wall/mineral/plasma/proc/PlasmaBurn(temperature)
+	new girder_type(src)
+	ScrapeAway()
+	var/turf/open/T = src
+	T.atmos_spawn_air("plasma=400;TEMP=[temperature]")
+
+/turf/closed/wall/mineral/plasma/temperature_expose(datum/gas_mixture/air, exposed_temperature)//Doesn't work because walls have superconduction turned off
+	if(exposed_temperature > 300)
+		PlasmaBurn(exposed_temperature)
+
+/turf/closed/wall/mineral/plasma/proc/ignite(exposed_temperature)
+	if(exposed_temperature > 300)
+		PlasmaBurn(exposed_temperature)
+
+/turf/closed/wall/mineral/plasma/bullet_act(obj/projectile/Proj)
+	if(istype(Proj, /obj/projectile/beam))
+		PlasmaBurn(2500)
+	else if(istype(Proj, /obj/projectile/ion))
+		PlasmaBurn(500)
+	. = ..()
+
 /turf/closed/wall/mineral/wood
 	name = "wooden wall"
 	desc = "A wall with wooden plating. Stiff."
@@ -208,7 +253,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_IRON_WALLS, SMOOTH_GROUP_AIRLOCK)
 	custom_materials = list(/datum/material/iron = 5000)
 
-	base_color = COLOR_GRAY
+	color = COLOR_GRAY
 
 /turf/closed/wall/mineral/snow
 	name = "packed snow wall"
@@ -261,7 +306,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_TITANIUM_WALLS, SMOOTH_GROUP_AIRLOCK, SMOOTH_GROUP_SHUTTLE_PARTS)
 	custom_materials = list(/datum/material/titanium = 4000)
 
-	base_color = COLOR_VERY_LIGHT_GRAY
+	color = COLOR_VERY_LIGHT_GRAY
 
 /turf/closed/wall/mineral/titanium/rust_heretic_act()
 	return // titanium does not rust

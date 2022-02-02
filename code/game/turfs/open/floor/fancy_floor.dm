@@ -215,6 +215,7 @@
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+
 /turf/open/floor/grass/snow/setup_broken_states()
 	return list("snow_dug")
 
@@ -235,11 +236,19 @@
 	ore_type = /obj/item/stack/ore/glass/basalt
 	initial_gas_mix = OPENTURF_LOW_PRESSURE
 	slowdown = 0
+	var/lava_color = LIGHT_COLOR_LAVA
 
 /turf/open/floor/grass/snow/basalt/spawniconchange()
 	if(prob(15))
 		icon_state = "basalt[rand(0, 12)]"
 		set_basalt_light(src)
+
+/turf/open/floor/grass/snow/basalt/proc/set_basalt_light(turf/open/floor/grass/snow/basalt/B)
+	switch(B.icon_state)
+		if("basalt1", "basalt2", "basalt3")
+			B.set_light(2, 0.6, B.lava_color) //more light
+		if("basalt5", "basalt9")
+			B.set_light(1.4, 0.6, B.lava_color) //barely anything!
 
 /turf/open/floor/grass/snow/basalt/safe
 	planetary_atmos = FALSE
@@ -267,11 +276,19 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	var/lava_color = LIGHT_COLOR_LAVA
 
 /turf/open/floor/grass/fakebasalt/spawniconchange()
 	if(prob(15))
 		icon_state = "basalt[rand(0, 12)]"
 		set_basalt_light(src)
+
+/turf/open/floor/grass/fakebasalt/proc/set_basalt_light(turf/open/floor/grass/fakebasalt/B)
+	switch(B.icon_state)
+		if("basalt1", "basalt2", "basalt3")
+			B.set_light(2, 0.6, B.lava_color) //more light
+		if("basalt5", "basalt9")
+			B.set_light(1.4, 0.6, B.lava_color) //barely anything!
 
 /turf/open/floor/carpet
 	name = "carpet"

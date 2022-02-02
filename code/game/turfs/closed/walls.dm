@@ -33,7 +33,7 @@
 
 	var/list/dent_decals
 
-	base_color = COLOR_FLOORTILE_GRAY
+	color = COLOR_FLOORTILE_GRAY
 
 /turf/closed/wall/Initialize(mapload)
 	. = ..()

@@ -5,7 +5,7 @@
 	buildstackamount = 1
 	item_chair = null
 	var/mutable_appearance/armrest
-	color = "#c45c57"
+	color = "#CB2A2A"
 
 /obj/structure/chair/sofa/Initialize(mapload)
 	armrest = mutable_appearance(icon, "[icon_state]_armrest", ABOVE_MOB_LAYER)
@@ -40,6 +40,81 @@
 	icon_state = "sofaend_right"
 
 /obj/structure/chair/sofa/corner
+	icon_state = "sofacorner"
+
+
+// color variation:
+
+/obj/structure/chair/sofa/brown
+	color = "#8B5921"
+
+/obj/structure/chair/sofa/brown/left
+	icon_state = "sofaend_left"
+
+/obj/structure/chair/sofa/brown/right
+	icon_state = "sofaend_right"
+
+/obj/structure/chair/sofa/brown/corner
+	icon_state = "sofacorner"
+
+/obj/structure/chair/sofa/beige
+	color = "#fffdc3"
+
+/obj/structure/chair/sofa/beige/left
+	icon_state = "sofaend_left"
+
+/obj/structure/chair/sofa/beige/right
+	icon_state = "sofaend_right"
+
+/obj/structure/chair/sofa/beige/corner
+	icon_state = "sofacorner"
+
+/obj/structure/chair/sofa/teal
+	color = "#00ffff"
+
+/obj/structure/chair/sofa/teal/left
+	icon_state = "sofaend_left"
+
+/obj/structure/chair/sofa/teal/right
+	icon_state = "sofaend_right"
+
+/obj/structure/chair/sofa/teal/corner
+	icon_state = "sofacorner"
+
+/obj/structure/chair/sofa/black
+	color = "#494949"
+
+/obj/structure/chair/sofa/black/left
+	icon_state = "sofaend_left"
+
+/obj/structure/chair/sofa/black/right
+	icon_state = "sofaend_right"
+
+/obj/structure/chair/sofa/black/corner
+	icon_state = "sofacorner"
+
+/obj/structure/chair/sofa/lime
+	color = "#fffb00"
+
+/obj/structure/chair/sofa/lime/left
+	icon_state = "sofaend_left"
+
+/obj/structure/chair/sofa/lime/right
+	icon_state = "sofaend_right"
+
+/obj/structure/chair/sofa/lime/corner
+	icon_state = "sofacorner"
+
+/obj/structure/chair/sofa/red
+	color = "#CB2A2A"
+
+/obj/structure/chair/sofa/red/left
+	icon_state = "sofaend_left"
+
+/obj/structure/chair/sofa/red/right
+	icon_state = "sofaend_right"
+
+/obj/structure/chair/sofa/red/corner
 	icon_state = "sofacorner"
 
 // Original icon ported from Eris(?) and updated to work here.
