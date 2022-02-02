@@ -729,7 +729,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 		ruleset.vars[variable] = rule_conf[variable]
 	if(CONFIG_GET(flag/protect_roles_from_antagonist))
 		ruleset.restricted_roles |= ruleset.protected_roles
-	if(CONFIG_GET(flag/protect_civilian_from_antagonist))
+	if(CONFIG_GET(flag/protect_civilians_from_antagonist))
 		ruleset.restricted_roles |= JOB_CIVILIAN
 
 /// Refund threat, but no more than threat_level.
