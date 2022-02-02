@@ -273,6 +273,12 @@
 	name = "The Arena"
 	mappath = "_maps/templates/the_arena.dmm"
 
+/datum/map_template/shuttle/emergency/aeacus
+	suffix = "aeacus"
+	name = "Aeacus Emergency Tram"
+	credit_cost = CARGO_CRATE_VALUE * 4
+	description = "This old tram has all the facilities to carry civilians from Aeacus to anywhere in central Cascington."
+
 /datum/map_template/shuttle/emergency/birdboat
 	suffix = "birdboat"
 	name = "Birdboat Station Emergency Shuttle"
@@ -619,6 +625,10 @@
 /datum/map_template/shuttle/arrival/delta
 	suffix = "delta"
 	name = "arrival shuttle (Delta)"
+
+/datum/map_template/shuttle/arrival/aeacus
+	suffix = "aeacus"
+	name = "arrival shuttle (Aeacus)"
 
 /datum/map_template/shuttle/arrival/kilo
 	suffix = "kilo"
