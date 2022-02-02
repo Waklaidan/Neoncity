@@ -11363,7 +11363,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/chapel,
 /area/service/chapel)
 "Ls" = (
@@ -13128,7 +13128,7 @@
 /obj/structure/chair/pew{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/chapel{
 	dir = 8
 	},

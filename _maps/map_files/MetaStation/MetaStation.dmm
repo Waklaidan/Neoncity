@@ -1189,7 +1189,7 @@
 "ajr" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/spawner/random/structure/closet_private,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/misc/civilianformal,
 /turf/open/floor/wood,
 /area/commons/dorms)
 "ajx" = (
@@ -6745,7 +6745,7 @@
 	},
 /obj/machinery/light/small/directional/east,
 /obj/machinery/newscaster/directional/south,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/landmark/start/hangover,
 /obj/machinery/button/door/directional/east{
 	id = "AuxToilet1";
@@ -7213,7 +7213,7 @@
 /area/hallway/secondary/entry)
 "bvD" = (
 /obj/structure/chair,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -9438,7 +9438,7 @@
 /area/security/prison)
 "caY" = (
 /obj/structure/chair,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -12890,7 +12890,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -13275,7 +13275,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -19152,7 +19152,7 @@
 /area/hallway/primary/central)
 "eFs" = (
 /obj/structure/chair/stool/directional/east,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/wood,
 /area/service/bar)
 "eFu" = (
@@ -22293,7 +22293,7 @@
 /area/command/corporate_showroom)
 "fEM" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/misc/civilianformal,
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
 /obj/effect/turf_decal/tile/neutral{
@@ -23089,7 +23089,7 @@
 	},
 /obj/machinery/light/small/directional/east,
 /obj/machinery/newscaster/directional/east,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/landmark/start/hangover,
 /obj/machinery/button/door/directional/south{
 	id = "Toilet4";
@@ -32428,7 +32428,7 @@
 	},
 /obj/machinery/light/small/directional/east,
 /obj/machinery/newscaster/directional/south,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/landmark/start/hangover,
 /obj/machinery/button/door/directional/east{
 	id = "AuxToilet2";
@@ -42195,7 +42195,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/fitness/recreation)
 "mMY" = (
@@ -43103,7 +43103,7 @@
 /area/hallway/primary/fore)
 "mZe" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/misc/civilianformal,
 /obj/structure/sign/map/right{
 	desc = "A framed picture of the station. Clockwise from security at the top (red), you see engineering (yellow), science (purple), escape (red and white), medbay (green), arrivals (blue and white), and finally cargo (brown).";
 	icon_state = "map-right-MS";
@@ -44955,7 +44955,7 @@
 /area/medical/virology)
 "nHy" = (
 /obj/structure/chair,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
@@ -53187,7 +53187,7 @@
 /area/engineering/main)
 "qzj" = (
 /obj/effect/spawner/random/structure/closet_private,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/misc/civilianformal,
 /turf/open/floor/wood,
 /area/commons/dorms)
 "qzs" = (
@@ -56704,7 +56704,7 @@
 /area/maintenance/port/aft)
 "rQr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/neutral/line,
 /turf/open/floor/iron/dark,
@@ -57494,7 +57494,7 @@
 /area/space)
 "sdV" = (
 /obj/machinery/airalarm/directional/north,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/misc/civilianformal,
 /obj/effect/landmark/start/hangover,
 /obj/effect/spawner/random/structure/closet_private,
 /turf/open/floor/wood,
@@ -59610,7 +59610,7 @@
 	},
 /area/maintenance/port)
 "sTB" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/wood,
 /area/service/bar)
 "sTE" = (
@@ -61411,13 +61411,13 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/commons/fitness/recreation)
 "tyx" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/misc/civilianformal,
 /obj/item/clothing/suit/hooded/wintercoat,
 /obj/item/clothing/shoes/winterboots,
 /obj/effect/turf_decal/tile/neutral{
@@ -63474,7 +63474,7 @@
 /area/commons/toilet/restrooms)
 "uml" = (
 /obj/structure/chair,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/fitness/recreation)
 "umn" = (
@@ -64677,7 +64677,7 @@
 "uJY" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/light/small/directional/north,
-/obj/item/clothing/under/misc/assistantformal,
+/obj/item/clothing/under/misc/civilianformal,
 /obj/structure/sign/map/left{
 	desc = "A framed picture of the station. Clockwise from security at the top (red), you see engineering (yellow), science (purple), escape (red and white), medbay (green), arrivals (blue and white), and finally cargo (brown).";
 	icon_state = "map-left-MS";
@@ -68722,7 +68722,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/freezer,
 /area/commons/toilet/restrooms)
 "wfq" = (
@@ -70523,7 +70523,7 @@
 	},
 /obj/machinery/light/small/directional/west,
 /obj/machinery/newscaster/directional/south,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/landmark/start/hangover,
 /obj/effect/spawner/random/trash/graffiti{
 	pixel_x = -32;
@@ -71056,7 +71056,7 @@
 /turf/open/floor/iron/dark,
 /area/command/bridge)
 "wXv" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/structure/chair/comfy/black,
 /turf/open/floor/wood,
 /area/service/library)

@@ -4936,7 +4936,7 @@
 /area/hallway/primary/central)
 "aLy" = (
 /obj/structure/chair/comfy/beige,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/grimy,
 /area/hallway/secondary/entry)
 "aLz" = (
@@ -5310,7 +5310,7 @@
 /obj/structure/chair/comfy/beige{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/grimy,
 /area/hallway/secondary/entry)
 "aPc" = (
@@ -7807,7 +7807,7 @@
 	pixel_y = 2
 	},
 /obj/structure/mirror/directional/west,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/freezer,
 /area/commons/toilet)
 "byf" = (
@@ -10714,7 +10714,7 @@
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "cqN" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/structure/chair/pew{
 	dir = 1
 	},
@@ -14457,7 +14457,7 @@
 /area/service/library)
 "dSr" = (
 /obj/structure/chair/office,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -14547,7 +14547,7 @@
 	},
 /area/science/research)
 "dVN" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/service/hydroponics/garden)
 "dVS" = (
@@ -15589,7 +15589,7 @@
 /turf/open/floor/iron,
 /area/security/checkpoint/supply)
 "evt" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
@@ -18060,7 +18060,7 @@
 /area/science/mixing)
 "fKz" = (
 /obj/structure/chair/comfy/black,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/wood,
 /area/service/library)
 "fKW" = (
@@ -18181,7 +18181,7 @@
 /area/science/research)
 "fQb" = (
 /obj/structure/chair/stool/directional/west,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/locker)
 "fQk" = (
@@ -24596,7 +24596,7 @@
 /area/cargo/office)
 "iVB" = (
 /obj/structure/chair/stool/directional/east,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/dorms)
 "iVE" = (
@@ -31240,7 +31240,7 @@
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "myF" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/commons/storage/primary)
@@ -31622,7 +31622,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/structure/chair/stool/directional/south,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/locker)
 "mHH" = (
@@ -46083,7 +46083,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/fitness)
 "tYl" = (
@@ -46850,7 +46850,7 @@
 /area/hallway/primary/starboard)
 "uoh" = (
 /obj/structure/chair/stool/directional/south,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/storage/primary)
 "uoj" = (
@@ -50613,7 +50613,7 @@
 /turf/open/floor/wood,
 /area/command/meeting_room)
 "wjF" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -51906,7 +51906,7 @@
 /area/security/detectives_office)
 "wUK" = (
 /obj/structure/chair/stool/directional/west,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/commons/dorms)
 "wVe" = (
@@ -54107,7 +54107,7 @@
 /turf/open/floor/iron/dark,
 /area/hallway/secondary/entry)
 "xTM" = (
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/green{
 	dir = 4
