@@ -133,7 +133,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 		if("basalt1", "basalt2", "basalt3")
 			B.set_light(2, 0.6, B.lava_color) //more light
 		if("basalt5", "basalt9")
-			B.set_light(1.4, 0.6, B.lava_color] : LIGHT_COLOR_LAVA) //barely anything!
+			B.set_light(1.4, 0.6, B.lava_color) //barely anything!
 
 ///////Surface. The surface is warm, but survivable without a suit. Internals are required. The floors break to chasms, which drop you into the underground.
 

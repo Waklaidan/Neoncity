@@ -111,7 +111,7 @@
 		if("basalt1", "basalt2", "basalt3")
 			B.set_light(2, 0.6, B.lava_color) //more light
 		if("basalt5", "basalt9")
-			B.set_light(1.4, 0.6, B.lava_color] : LIGHT_COLOR_LAVA) //barely anything!
+			B.set_light(1.4, 0.6, B.lava_color) //barely anything!
 
 /turf/open/floor/holofloor/space
 	name = "\proper space"
@@ -162,7 +162,6 @@
 /turf/open/floor/holofloor/wood
 	icon_state = "wood"
 	tiled_dirt = FALSE
-	color = MATERIAL_WOOD_OAK
 
 /turf/open/floor/holofloor/snow
 	gender = PLURAL
