@@ -106,7 +106,7 @@
 		icon_state = "basalt[rand(0, 12)]"
 		set_basalt_light(src)
 
-/turf/open/floor/holofloor/basalt/proc/set_basalt_light(turf/open/floor/B)
+/turf/open/floor/holofloor/basalt/proc/set_basalt_light(turf/open/floor/holofloor/basalt/B)
 	switch(B.icon_state)
 		if("basalt1", "basalt2", "basalt3")
 			B.set_light(2, 0.6, B.lava_color) //more light

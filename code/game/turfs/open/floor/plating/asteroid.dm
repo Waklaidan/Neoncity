@@ -128,7 +128,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	set_light(0)
 	return ..()
 
-/turf/open/floor/plating/asteroid/basalt/proc/set_basalt_light(turf/open/floor/B)
+/turf/open/floor/plating/asteroid/basalt/proc/set_basalt_light(turf/open/floor/plating/asteroid/basalt/B)
 	switch(B.icon_state)
 		if("basalt1", "basalt2", "basalt3")
 			B.set_light(2, 0.6, B.lava_color) //more light
