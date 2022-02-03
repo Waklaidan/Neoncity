@@ -52178,14 +52178,14 @@
 	location = "QM #4"
 	},
 /obj/effect/turf_decal/delivery,
+/obj/machinery/button/door/directional/west{
+	id = "warehouse_shutters";
+	name = "warehouse shutters control"
+	},
 /mob/living/simple_animal/bot/mulebot{
 	beacon_freq = 1400;
 	home_destination = "QM #1";
 	suffix = "#1"
-	},
-/obj/machinery/button/door/directional/west{
-	id = "warehouse_shutters";
-	name = "warehouse shutters control"
 	},
 /turf/open/floor/iron,
 /area/cargo/storage)
@@ -61438,8 +61438,8 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/human/species/monkey/punpun,
 /obj/effect/landmark/event_spawn,
+/mob/living/carbon/human/species/monkey/punpun,
 /turf/open/floor/carpet/green,
 /area/service/bar/atrium)
 "lVS" = (
@@ -79865,10 +79865,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/duct,
 /mob/living/simple_animal/hostile/retaliate/goat{
 	name = "Pete"
 	},
-/obj/machinery/duct,
 /turf/open/floor/iron/freezer,
 /area/service/kitchen/coldroom)
 "qQF" = (
@@ -101547,7 +101547,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/mob/living/simple_animal/sloth/citrus,
 /obj{
 	name = "---Merge conflict marker---"
 	},
@@ -101567,6 +101566,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+/mob/living/simple_animal/sloth/citrus,
 /mob/living/simple_animal/sloth/citrus,
 /turf/open/floor/iron,
 /area/cargo/qm)
@@ -107002,7 +107002,6 @@
 /turf/open/floor/wood,
 /area/service/library)
 "ykg" = (
-/obj/machinery/suit_storage_unit/md,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},

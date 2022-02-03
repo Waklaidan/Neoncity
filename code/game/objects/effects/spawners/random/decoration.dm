@@ -67,7 +67,7 @@
 		/obj/structure/statue/plasma/xeno = 15,
 		/obj/structure/statue/gold/hos = 5,
 		/obj/structure/statue/gold/hop = 5,
-		/obj/structure/statue/gold/cmo = 5,
+		/obj/structure/statue/gold/md = 5,
 		/obj/structure/statue/gold/ce = 5,
 		/obj/structure/statue/gold/rd = 5,
 		/obj/structure/statue/bananium/clown = 1,

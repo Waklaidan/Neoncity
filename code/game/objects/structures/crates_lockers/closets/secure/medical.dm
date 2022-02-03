@@ -74,11 +74,11 @@
 /obj/structure/closet/secure_closet/chief_medical/PopulateContents()
 	..()
 
-	new /obj/item/clothing/suit/bio_suit/cmo(src)
-	new /obj/item/clothing/head/bio_hood/cmo(src)
+	new /obj/item/clothing/suit/bio_suit/md(src)
+	new /obj/item/clothing/head/bio_hood/md(src)
 	new /obj/item/storage/bag/garment/chief_medical(src)
-	new /obj/item/cartridge/cmo(src)
-	new /obj/item/radio/headset/heads/cmo(src)
+	new /obj/item/cartridge/md(src)
+	new /obj/item/radio/headset/heads/md(src)
 	new /obj/item/megaphone/command(src)
 	new /obj/item/defibrillator/compact/loaded(src)
 	new /obj/item/healthanalyzer/advanced(src)
@@ -90,7 +90,7 @@
 	new /obj/item/pet_carrier(src)
 	new /obj/item/wallframe/defib_mount(src)
 	new /obj/item/circuitboard/machine/techfab/department/medical(src)
-	new /obj/item/storage/photo_album/cmo(src)
+	new /obj/item/storage/photo_album/md(src)
 	new /obj/item/storage/lockbox/medal/med(src)
 
 

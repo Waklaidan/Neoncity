@@ -197,7 +197,7 @@
 	icon_state = "coatcmo"
 	inhand_icon_state = "coatcmo"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 50, FIRE = 20, ACID = 30)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/cmo
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/md
 
 /obj/item/clothing/suit/hooded/wintercoat/medical/cmo/Initialize(mapload)
 	. = ..()

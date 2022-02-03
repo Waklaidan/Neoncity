@@ -104,7 +104,7 @@
 	new /obj/item/clothing/under/rank/medical/chief_medical_officer/skirt(src)
 	new /obj/item/clothing/suit/toggle/labcoat/cmo(src)
 	new /obj/item/clothing/gloves/color/latex/nitrile(src)
-	new /obj/item/clothing/neck/cloak/cmo(src)
+	new /obj/item/clothing/neck/cloak/md(src)
 	new /obj/item/clothing/shoes/sneakers/blue (src)
 	new /obj/item/clothing/suit/hooded/wintercoat/medical/cmo(src)
 

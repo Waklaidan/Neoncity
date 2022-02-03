@@ -69,7 +69,7 @@
 	progression_minimum = 10 MINUTES
 	item = /obj/item/mmi/syndie
 	cost = 2
-	restricted_roles = list(JOB_ROBOTICIST, JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER)
+	restricted_roles = list(JOB_ROBOTICIST, JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_MEDICAL_DOCTOR, JOB_MEDICAL_DIRECTOR)
 	surplus = 0
 
 /datum/uplink_item/role_restricted/explosive_hot_potato
@@ -152,7 +152,7 @@
 	Insert into an Operating Console to enable the procedure."
 	progression_minimum = 25 MINUTES
 	item = /obj/item/disk/surgery/brainwashing
-	restricted_roles = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER, JOB_ROBOTICIST)
+	restricted_roles = list(JOB_MEDICAL_DOCTOR, JOB_MEDICAL_DIRECTOR, JOB_ROBOTICIST)
 	cost = 5
 
 /datum/uplink_item/role_restricted/reverse_revolver
@@ -198,7 +198,7 @@
 	progression_minimum = 30 MINUTES
 	item = /obj/item/gun/chem
 	cost = 12
-	restricted_roles = list(JOB_CHEMIST, JOB_CHIEF_MEDICAL_OFFICER, JOB_BOTANIST)
+	restricted_roles = list(JOB_CHEMIST, JOB_MEDICAL_DIRECTOR, JOB_BOTANIST)
 
 /datum/uplink_item/role_restricted/pie_cannon
 	name = "Banana Cream Pie Cannon"

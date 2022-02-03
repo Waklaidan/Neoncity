@@ -195,6 +195,6 @@ GLOBAL_LIST_INIT(department_order_cooldowns, list(
 	name = "medical order console"
 	circuit = /obj/item/circuitboard/computer/medical_orders
 	department_delivery_areas = list(/area/medical/medbay/central)
-	override_access = ACCESS_CMO
+	override_access = ACCESS_MD
 	req_one_access = REGION_ACCESS_MEDBAY
 	dep_groups = list("Medical")
