@@ -2,7 +2,7 @@
 	name = "Destroy Heirloom"
 	objectives = list(
 		list(
-			// There's about 16 jobs in common, so assistant has a 1/21 chance of getting chosen.
+			// There's about 16 jobs in common, so civilian has a 1/21 chance of getting chosen.
 			/datum/traitor_objective/destroy_heirloom/common = 20,
 			/datum/traitor_objective/destroy_heirloom/less_common = 1,
 		) = 4,
@@ -53,12 +53,12 @@
 		/datum/job/atmospheric_technician,
 	)
 
-/// This is only for assistants, because the syndies are a lot less likely to give a shit about what an assistant does, so they're a lot less likely to appear
+/// This is only for civilians, because the syndies are a lot less likely to give a shit about what an civilian does, so they're a lot less likely to appear
 /datum/traitor_objective/destroy_heirloom/less_common
 	/// 30 minutes in, syndicate won't care about common heirlooms anymore
 	progression_maximum = 30 MINUTES
 	target_jobs = list(
-		/datum/job/assistant
+		/datum/job/civilian
 	)
 
 /datum/traitor_objective/destroy_heirloom/uncommon

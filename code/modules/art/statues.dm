@@ -196,8 +196,8 @@
 	custom_materials = list(/datum/material/sandstone=MINERAL_MATERIAL_AMOUNT*5)
 	abstract_type = /obj/structure/statue/sandstone
 
-/obj/structure/statue/sandstone/assistant
-	name = "statue of an assistant"
+/obj/structure/statue/sandstone/civilian
+	name = "statue of a civilian"
 	desc = "A cheap statue of sandstone for a greyshirt."
 	icon_state = "assist"
 

@@ -19,7 +19,7 @@
 
 		var/mob/living/carbon/human/dummy/consistent/dummy = new
 		dummy.set_species(species_type)
-		dummy.equipOutfit(/datum/outfit/job/assistant/consistent, visualsOnly = TRUE)
+		dummy.equipOutfit(/datum/outfit/job/civilian/consistent, visualsOnly = TRUE)
 		dummy.dna.species.prepare_human_for_preview(dummy)
 		COMPILE_OVERLAYS(dummy)
 

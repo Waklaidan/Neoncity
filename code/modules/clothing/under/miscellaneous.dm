@@ -73,10 +73,10 @@
 	can_adjust = FALSE
 	custom_price = PAYCHECK_EASY
 
-/obj/item/clothing/under/misc/assistantformal
-	name = "assistant's formal uniform"
-	desc = "An assistant's formal-wear. Why an assistant needs formal-wear is still unknown."
-	icon_state = "assistant_formal"
+/obj/item/clothing/under/misc/civilianformal
+	name = "civilian's formal uniform"
+	desc = "A civilian's formal-wear. Why a civilian needs formal-wear is still unknown."
+	icon_state = "civilian_formal"
 	inhand_icon_state = "gy_suit"
 	can_adjust = FALSE
 

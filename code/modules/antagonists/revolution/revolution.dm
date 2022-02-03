@@ -187,8 +187,8 @@
 /datum/antagonist/rev/head/get_preview_icon()
 	var/icon/final_icon = render_preview_outfit(preview_outfit)
 
-	final_icon.Blend(make_assistant_icon("Business Hair"), ICON_UNDERLAY, -8, 0)
-	final_icon.Blend(make_assistant_icon("CIA"), ICON_UNDERLAY, 8, 0)
+	final_icon.Blend(make_civilian_icon("Business Hair"), ICON_UNDERLAY, -8, 0)
+	final_icon.Blend(make_civilian_icon("CIA"), ICON_UNDERLAY, 8, 0)
 
 	// Apply the rev head HUD, but scale up the preview icon a bit beforehand.
 	// Otherwise, the R gets cut off.
@@ -203,17 +203,17 @@
 
 	return finish_preview_icon(final_icon)
 
-/datum/antagonist/rev/head/proc/make_assistant_icon(hairstyle)
-	var/mob/living/carbon/human/dummy/consistent/assistant = new
-	assistant.hairstyle = hairstyle
-	assistant.update_hair()
+/datum/antagonist/rev/head/proc/make_civilian_icon(hairstyle)
+	var/mob/living/carbon/human/dummy/consistent/civilian = new
+	civilian.hairstyle = hairstyle
+	civilian.update_hair()
 
-	var/icon/assistant_icon = render_preview_outfit(/datum/outfit/job/assistant/consistent, assistant)
-	assistant_icon.ChangeOpacity(0.5)
+	var/icon/civilian_icon = render_preview_outfit(/datum/outfit/job/civilian/consistent, civilian)
+	civilian_icon.ChangeOpacity(0.5)
 
-	qdel(assistant)
+	qdel(civilian)
 
-	return assistant_icon
+	return civilian_icon
 
 /datum/antagonist/rev/proc/can_be_converted(mob/living/candidate)
 	if(!candidate.mind)

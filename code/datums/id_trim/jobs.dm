@@ -5,7 +5,7 @@
 
 /// ID Trims for station jobs.
 /datum/id_trim/job
-	trim_state = "trim_assistant"
+	trim_state = "trim_civilian"
 
 	/// The extra access the card should have when CONFIG_GET(flag/jobs_have_minimal_access) is FALSE.
 	var/list/extra_access = list()
@@ -78,23 +78,23 @@
 
 	return TRUE
 
-/datum/id_trim/job/assistant
-	assignment = "Assistant"
-	trim_state = "trim_assistant"
+/datum/id_trim/job/civilian
+	assignment = "Civilian"
+	trim_state = "trim_civilian"
 	extra_access = list(ACCESS_MAINT_TUNNELS)
 	minimal_access = list()
-	config_job = "assistant"
+	config_job = "civilian"
 	template_access = list(ACCESS_CAPTAIN, ACCESS_HOP, ACCESS_CHANGE_IDS)
-	job = /datum/job/assistant
+	job = /datum/job/civilian
 
-/datum/id_trim/job/assistant/refresh_trim_access()
+/datum/id_trim/job/civilian/refresh_trim_access()
 	. = ..()
 
 	if(!.)
 		return
 
-	// Config has assistant maint access set.
-	if(CONFIG_GET(flag/assistants_have_maint_access))
+	// Config has civilian maint access set.
+	if(CONFIG_GET(flag/civilians_have_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
 
 /datum/id_trim/job/atmospheric_technician

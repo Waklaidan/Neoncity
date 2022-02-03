@@ -432,7 +432,7 @@
 	remarks = list("So that is how icing is made!", "Placing fruit on top? How simple...", "Huh layering cake seems harder then this...", "This book smells like candy", "A clown must have made this page, or they forgot to spell check it before printing...", "Wait, a way to cook slime to be safe?")
 
 /obj/item/book/granter/crafting_recipe/pipegun_prime
-	name = "diary of a dead assistant"
+	name = "diary of a dead civilian"
 	desc = "A battered journal. Looks like he had a pretty rough life."
 	crafting_recipe_types = list(
 		/datum/crafting_recipe/pipegun_prime

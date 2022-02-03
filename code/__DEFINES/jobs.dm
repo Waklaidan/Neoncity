@@ -27,7 +27,7 @@
  */
 
 //No department
-#define JOB_ASSISTANT "Assistant"
+#define JOB_CIVILIAN "Civilian"
 #define JOB_PRISONER "Prisoner"
 //Command
 #define JOB_CAPTAIN "Captain"
@@ -99,7 +99,7 @@
 #define JOB_CENTCOM_PRIVATE_SECURITY "Private Security Force"
 
 
-#define JOB_DISPLAY_ORDER_ASSISTANT 1
+#define JOB_DISPLAY_ORDER_CIVILIAN 1
 #define JOB_DISPLAY_ORDER_CAPTAIN 2
 #define JOB_DISPLAY_ORDER_HEAD_OF_PERSONNEL 3
 #define JOB_DISPLAY_ORDER_BARTENDER 4
@@ -154,8 +154,8 @@
 #define DEPARTMENT_MEDICAL "Medical"
 #define DEPARTMENT_BITFLAG_SILICON (1<<7)
 #define DEPARTMENT_SILICON "Silicon"
-#define DEPARTMENT_BITFLAG_ASSISTANT (1<<8)
-#define DEPARTMENT_ASSISTANT "Assistant"
+#define DEPARTMENT_BITFLAG_CIVILIAN (1<<8)
+#define DEPARTMENT_CIVILIAN "Civilian"
 #define DEPARTMENT_BITFLAG_CAPTAIN (1<<9)
 #define DEPARTMENT_CAPTAIN "Captain"
 

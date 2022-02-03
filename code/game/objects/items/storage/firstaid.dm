@@ -148,7 +148,7 @@
 
 /obj/item/storage/firstaid/ancient/heirloom
 	desc = "A first aid kit with the ability to heal common types of injuries. You start thinking of the good old days just by looking at it."
-	empty = TRUE // long since been ransacked by hungry powergaming assistants breaking into med storage
+	empty = TRUE // long since been ransacked by hungry powergaming civilians breaking into med storage
 
 /obj/item/storage/firstaid/fire
 	name = "burn treatment kit"

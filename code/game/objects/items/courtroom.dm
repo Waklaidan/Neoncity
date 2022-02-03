@@ -25,7 +25,7 @@
 
 /obj/item/gavelblock
 	name = "gavel block"
-	desc = "Smack it with a gavel hammer when the assistants get rowdy."
+	desc = "Smack it with a gavel hammer when the civilians get rowdy."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "gavelblock"
 	force = 2

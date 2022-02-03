@@ -1,10 +1,10 @@
-GLOBAL_DATUM(colored_assistant, /datum/colored_assistant)
+GLOBAL_DATUM(colored_civilian, /datum/colored_civilian)
 
 /*
-Assistant
+Civilian
 */
-/datum/job/assistant
-	title = JOB_ASSISTANT
+/datum/job/civilian
+	title = JOB_CIVILIAN
 	description = "Get your space legs, assist people, ask the HoP to give you a job."
 	faction = FACTION_STATION
 	total_positions = 5
@@ -12,16 +12,16 @@ Assistant
 	supervisors = "absolutely everyone"
 	selection_color = "#dddddd"
 	exp_granted_type = EXP_TYPE_CREW
-	outfit = /datum/outfit/job/assistant
+	outfit = /datum/outfit/job/civilian
 	plasmaman_outfit = /datum/outfit/plasmaman
-	paycheck = PAYCHECK_ASSISTANT // Get a job. Job reassignment changes your paycheck now. Get over it.
+	paycheck = PAYCHECK_CIVILIAN // Get a job. Job reassignment changes your paycheck now. Get over it.
 
 	liver_traits = list(TRAIT_GREYTIDE_METABOLISM)
 
 	paycheck_department = ACCOUNT_CIV
-	display_order = JOB_DISPLAY_ORDER_ASSISTANT
+	display_order = JOB_DISPLAY_ORDER_CIVILIAN
 
-	department_for_prefs = /datum/job_department/assistant
+	department_for_prefs = /datum/job_department/civilian
 
 	family_heirlooms = list(/obj/item/storage/toolbox/mechanical/old/heirloom, /obj/item/clothing/gloves/cut/heirloom)
 
@@ -37,39 +37,39 @@ Assistant
 	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS
 	rpg_title = "Lout"
 
-/datum/outfit/job/assistant
-	name = JOB_ASSISTANT
-	jobtype = /datum/job/assistant
-	id_trim = /datum/id_trim/job/assistant
+/datum/outfit/job/civilian
+	name = JOB_CIVILIAN
+	jobtype = /datum/job/civilian
+	id_trim = /datum/id_trim/job/civilian
 
-/datum/outfit/job/assistant/pre_equip(mob/living/carbon/human/target)
+/datum/outfit/job/civilian/pre_equip(mob/living/carbon/human/target)
 	..()
 	give_jumpsuit(target)
 
-/datum/outfit/job/assistant/proc/give_jumpsuit(mob/living/carbon/human/target)
+/datum/outfit/job/civilian/proc/give_jumpsuit(mob/living/carbon/human/target)
 	var/static/jumpsuit_number = 0
 	jumpsuit_number += 1
 
-	if (isnull(GLOB.colored_assistant))
-		var/configured_type = get_configured_colored_assistant_type()
-		GLOB.colored_assistant = new configured_type
+	if (isnull(GLOB.colored_civilian))
+		var/configured_type = get_configured_colored_civilian_type()
+		GLOB.colored_civilian = new configured_type
 
-	var/index = (jumpsuit_number % GLOB.colored_assistant.jumpsuits.len) + 1
+	var/index = (jumpsuit_number % GLOB.colored_civilian.jumpsuits.len) + 1
 
 	//We don't cache these, because they can delete on init
 	//Too fragile, better to just eat the cost
 	if (target.jumpsuit_style == PREF_SUIT)
-		uniform = GLOB.colored_assistant.jumpsuits[index]
+		uniform = GLOB.colored_civilian.jumpsuits[index]
 	else
-		uniform = GLOB.colored_assistant.jumpskirts[index]
+		uniform = GLOB.colored_civilian.jumpskirts[index]
 
-/datum/outfit/job/assistant/consistent
-	name = "Assistant - Consistent"
+/datum/outfit/job/civilian/consistent
+	name = "Civilian - Consistent"
 
-/datum/outfit/job/assistant/consistent/give_jumpsuit(mob/living/carbon/human/target)
+/datum/outfit/job/civilian/consistent/give_jumpsuit(mob/living/carbon/human/target)
 	uniform = /obj/item/clothing/under/color/grey
 
-/datum/outfit/job/assistant/consistent/post_equip(mob/living/carbon/human/H, visualsOnly)
+/datum/outfit/job/civilian/consistent/post_equip(mob/living/carbon/human/H, visualsOnly)
 	..()
 
 	// This outfit is used by the assets SS, which is ran before the atoms SS
@@ -77,24 +77,24 @@ Assistant
 		H.w_uniform?.update_greyscale()
 		H.update_inv_w_uniform()
 
-/proc/get_configured_colored_assistant_type()
-	return CONFIG_GET(flag/grey_assistants) ? /datum/colored_assistant/grey : /datum/colored_assistant/random
+/proc/get_configured_colored_civilian_type()
+	return CONFIG_GET(flag/grey_civilians) ? /datum/colored_civilian/grey : /datum/colored_civilian/random
 
-/// Defines a style of jumpsuit/jumpskirt for assistants.
+/// Defines a style of jumpsuit/jumpskirt for civilians.
 /// Jumpsuit and jumpskirt lists should match in colors, as they are used interchangably.
-/datum/colored_assistant
+/datum/colored_civilian
 	var/list/jumpsuits
 	var/list/jumpskirts
 
-/datum/colored_assistant/grey
+/datum/colored_civilian/grey
 	jumpsuits = list(/obj/item/clothing/under/color/grey)
 	jumpskirts = list(/obj/item/clothing/under/color/jumpskirt/grey)
 
-/datum/colored_assistant/random
+/datum/colored_civilian/random
 	jumpsuits = list(/obj/item/clothing/under/color/random)
 	jumpskirts = list(/obj/item/clothing/under/color/jumpskirt/random)
 
-/datum/colored_assistant/christmas
+/datum/colored_civilian/christmas
 	jumpsuits = list(
 		/obj/item/clothing/under/color/green,
 		/obj/item/clothing/under/color/red,
@@ -105,7 +105,7 @@ Assistant
 		/obj/item/clothing/under/color/jumpskirt/red,
 	)
 
-/datum/colored_assistant/mcdonalds
+/datum/colored_civilian/mcdonalds
 	jumpsuits = list(
 		/obj/item/clothing/under/color/yellow,
 		/obj/item/clothing/under/color/red,
@@ -116,7 +116,7 @@ Assistant
 		/obj/item/clothing/under/color/jumpskirt/red,
 	)
 
-/datum/colored_assistant/halloween
+/datum/colored_civilian/halloween
 	jumpsuits = list(
 		/obj/item/clothing/under/color/orange,
 		/obj/item/clothing/under/color/black,
@@ -127,7 +127,7 @@ Assistant
 		/obj/item/clothing/under/color/jumpskirt/black,
 	)
 
-/datum/colored_assistant/ikea
+/datum/colored_civilian/ikea
 	jumpsuits = list(
 		/obj/item/clothing/under/color/yellow,
 		/obj/item/clothing/under/color/blue,
@@ -138,7 +138,7 @@ Assistant
 		/obj/item/clothing/under/color/jumpskirt/blue,
 	)
 
-/datum/colored_assistant/mud
+/datum/colored_civilian/mud
 	jumpsuits = list(
 		/obj/item/clothing/under/color/brown,
 		/obj/item/clothing/under/color/lightbrown,
@@ -149,7 +149,7 @@ Assistant
 		/obj/item/clothing/under/color/jumpskirt/lightbrown,
 	)
 
-/datum/colored_assistant/warm
+/datum/colored_civilian/warm
 	jumpsuits = list(
 		/obj/item/clothing/under/color/red,
 		/obj/item/clothing/under/color/pink,
@@ -164,7 +164,7 @@ Assistant
 		/obj/item/clothing/under/color/jumpskirt/yellow,
 	)
 
-/datum/colored_assistant/cold
+/datum/colored_civilian/cold
 	jumpsuits = list(
 		/obj/item/clothing/under/color/blue,
 		/obj/item/clothing/under/color/darkblue,
@@ -184,9 +184,9 @@ Assistant
 	)
 
 /// Will pick one color, and stick with it
-/datum/colored_assistant/solid
+/datum/colored_civilian/solid
 
-/datum/colored_assistant/solid/New()
+/datum/colored_civilian/solid/New()
 	var/obj/item/clothing/under/color/random_jumpsuit_type = get_random_jumpsuit()
 	jumpsuits = list(random_jumpsuit_type)
 

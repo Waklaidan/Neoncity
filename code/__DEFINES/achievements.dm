@@ -44,7 +44,7 @@
 #define MEDAL_LEGENDARY_MINER "Legendary Miner"
 
 //Mafia medal hub IDs (wins)
-#define MAFIA_MEDAL_ASSISTANT "Assistant"
+#define MAFIA_MEDAL_CIVILIAN "Civilian"
 #define MAFIA_MEDAL_DETECTIVE "Detective"
 #define MAFIA_MEDAL_PSYCHOLOGIST "Psychologist"
 #define MAFIA_MEDAL_CHAPLAIN "Chaplain"

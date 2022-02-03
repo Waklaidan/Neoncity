@@ -350,7 +350,7 @@
 			NewTerrainWalls = /turf/closed/wall/mineral/cult
 			NewFlora = list(/mob/living/simple_animal/hostile/asteroid/goldgrub)
 			florachance = 1
-		if("winter") //Snow terrain is slow to move in and cold! Get the assistants to shovel your driveway.
+		if("winter") //Snow terrain is slow to move in and cold! Get the civilians to shovel your driveway.
 			NewTerrainFloors = /turf/open/floor/grass/snow/actually_safe
 			NewTerrainWalls = /turf/closed/wall/mineral/wood
 			NewTerrainChairs = /obj/structure/chair/wood

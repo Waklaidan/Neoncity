@@ -88,7 +88,7 @@
 
 /obj/item/clothing/head/cowboy_hat_grey
 	name = "drifter hat"
-	desc = "The hat for an assistant with no name."
+	desc = "The hat for an civilian with no name."
 	icon_state = "cowboy_hat_grey"
 	inhand_icon_state = "cowboy_hat_grey"
 

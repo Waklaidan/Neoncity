@@ -41,7 +41,7 @@
 	values[GDUFFELBAG] = /obj/item/storage/backpack/duffelbag
 
 	// In a perfect world, these would be your department's backpack.
-	// However, this doesn't factor in assistants, or no high slot, and would
+	// However, this doesn't factor in civilians, or no high slot, and would
 	// also increase the spritesheet size a lot.
 	// I play medical doctor, and so medical doctor you get.
 	values[DBACKPACK] = /obj/item/storage/backpack/medic

@@ -54,20 +54,20 @@
 	mob_species = /datum/species/plasmaman
 	outfit = /datum/outfit/plasmaman
 
-/obj/effect/mob_spawn/corpse/human/assistant
-	name = JOB_ASSISTANT
-	outfit = /datum/outfit/job/assistant
+/obj/effect/mob_spawn/corpse/human/civilian
+	name = JOB_CIVILIAN
+	outfit = /datum/outfit/job/civilian
 	icon_state = "corpsegreytider"
 
-/obj/effect/mob_spawn/corpse/human/assistant/beesease_infection/special(mob/living/spawned_mob)
+/obj/effect/mob_spawn/corpse/human/civilian/beesease_infection/special(mob/living/spawned_mob)
 	. = ..()
 	spawned_mob.ForceContractDisease(new /datum/disease/beesease)
 
-/obj/effect/mob_spawn/corpse/human/assistant/brainrot_infection/special(mob/living/spawned_mob)
+/obj/effect/mob_spawn/corpse/human/civilian/brainrot_infection/special(mob/living/spawned_mob)
 	. = ..()
 	spawned_mob.ForceContractDisease(new /datum/disease/brainrot)
 
-/obj/effect/mob_spawn/corpse/human/assistant/spanishflu_infection/special(mob/living/spawned_mob)
+/obj/effect/mob_spawn/corpse/human/civilian/spanishflu_infection/special(mob/living/spawned_mob)
 	. = ..()
 	spawned_mob.ForceContractDisease(new /datum/disease/fluspanish)
 

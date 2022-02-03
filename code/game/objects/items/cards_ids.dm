@@ -64,7 +64,7 @@
 	/// Registered owner's age.
 	var/registered_age = 30
 
-	/// The job name registered on the card (for example: Assistant).
+	/// The job name registered on the card (for example: Civilian).
 	var/assignment
 
 	/// Trim datum associated with the card. Controls which job icon is displayed on the card and which accesses do not require wildcards.
@@ -1303,7 +1303,7 @@
 					if(selected_trim_path)
 						SSid_access.apply_trim_to_chameleon_card(src, trim_list[selected_trim_path])
 
-				var/target_occupation = tgui_input_text(user, "What occupation would you like to put on this card?\nNote: This will not grant any access levels.", "Agent card job assignment", assignment ? assignment : "Assistant")
+				var/target_occupation = tgui_input_text(user, "What occupation would you like to put on this card?\nNote: This will not grant any access levels.", "Agent card job assignment", assignment ? assignment : JOB_CIVILIAN)
 				if(target_occupation)
 					assignment = target_occupation
 

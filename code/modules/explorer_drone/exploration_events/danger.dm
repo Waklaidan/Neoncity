@@ -47,16 +47,16 @@
 /datum/exploration_event/simple/danger/carp/surface_variety
 	required_site_traits = list(EXPLORATION_SITE_SURFACE)
 
-/datum/exploration_event/simple/danger/assistant
-	name = "assistant attack"
+/datum/exploration_event/simple/danger/civilian
+	name = "civilian attack"
 	required_site_traits = list(EXPLORATION_SITE_STATION)
 	deep_scan_description = "Detected mask usage coefficent suggests a sizeable crowd of undersirables on the site."
-	description = "You encounter a shaggy creature dressed in gray! It's a deranged assistant!"
+	description = "You encounter a shaggy creature dressed in gray! It's a deranged civilian!"
 	has_tool_action_text = "Fight"
 	no_tool_action_text = "Escape!"
 	has_tool_description = "You charge your laser to fend it off."
 	no_tool_description = "Unfortunately you have no weaponry so the only option is flight."
-	avoid_log = "Defeated an assistant."
+	avoid_log = "Defeated an civilian."
 
 /datum/exploration_event/simple/danger/collapse
 	name = "collapse"

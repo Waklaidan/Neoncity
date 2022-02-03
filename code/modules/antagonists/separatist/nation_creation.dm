@@ -27,7 +27,7 @@
 
 	if(!department)
 		//picks a random department if none was given
-		department = pick(list(/datum/job_department/assistant, /datum/job_department/medical, /datum/job_department/engineering, /datum/job_department/science, /datum/job_department/cargo, /datum/job_department/service, /datum/job_department/security) - independent_departments)
+		department = pick(list(/datum/job_department/civilian, /datum/job_department/medical, /datum/job_department/engineering, /datum/job_department/science, /datum/job_department/cargo, /datum/job_department/service, /datum/job_department/security) - independent_departments)
 		if(!department)
 			if(message_admins)
 				message_admins("Department Revolt could not create a nation, as all the departments are independent! You have created nations, you madman!")
@@ -70,6 +70,6 @@
 		message_admins("The nation of [nation.name] has been formed. Affected jobs are [jobs_english_list]. Any new crewmembers with these jobs will join the secession.")
 	if(announcement)
 		var/announce_text = "The new independent state of [nation.name] has formed from the ashes of the [department.department_name] department!"
-		if(istype(department, /datum/job_department/assistant)) //the text didn't really work otherwise
-			announce_text = "The assistants of the station have risen to form the new independent state of [nation.name]!"
+		if(istype(department, /datum/job_department/civilian)) //the text didn't really work otherwise
+			announce_text = "The civilians of the station have risen to form the new independent state of [nation.name]!"
 		priority_announce(announce_text, "Secession from [GLOB.station_name]",  has_important_message = TRUE)

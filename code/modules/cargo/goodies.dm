@@ -124,7 +124,7 @@
 /datum/supply_pack/goody/valentine
 	name = "Valentine Card"
 	desc = "Make an impression on that special someone! Comes with one valentine card and a free candy heart!"
-	cost = PAYCHECK_ASSISTANT * 2
+	cost = PAYCHECK_CIVILIAN * 2
 	contains = list(/obj/item/valentine, /obj/item/food/candyheart)
 
 /datum/supply_pack/goody/beeplush

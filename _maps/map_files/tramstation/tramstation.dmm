@@ -175,7 +175,7 @@
 /area/service/hydroponics/garden)
 "abK" = (
 /obj/structure/chair/comfy/black,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/wood,
 /area/service/library)
@@ -492,7 +492,7 @@
 "aeb" = (
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/button/door/directional/east{
 	id = "private_a";
 	name = "Privacy Bolts";
@@ -1503,7 +1503,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/status_display/ai/directional/south,
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron/white,
@@ -2946,7 +2946,7 @@
 "atG" = (
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/button/door/directional/west{
 	id = "private_f";
 	name = "Privacy Bolts";
@@ -2988,7 +2988,7 @@
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/chapel{
 	dir = 8
 	},
@@ -3006,7 +3006,7 @@
 /obj/structure/chair/pew{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/chapel{
 	dir = 8
 	},
@@ -3341,7 +3341,7 @@
 "avM" = (
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/button/door/directional/west{
 	id = "private_k";
 	name = "Privacy Bolts";
@@ -4193,7 +4193,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/cafeteria,
 /area/commons/dorms/laundry)
 "aAk" = (
@@ -5166,7 +5166,7 @@
 "aGa" = (
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/button/door/directional/east{
 	id = "private_d";
 	name = "Privacy Bolts";
@@ -7282,7 +7282,7 @@
 "aZL" = (
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/button/door/directional/west{
 	id = "private_m";
 	name = "Privacy Bolts";
@@ -7478,7 +7478,7 @@
 	dir = 1
 	},
 /obj/structure/chair/stool/bar/directional/south,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/duct,
 /turf/open/floor/iron,
 /area/service/bar)
@@ -7639,8 +7639,8 @@
 /obj/structure/closet/crate{
 	name = "Stations and Syndicate Starter Bundle"
 	},
-/obj/item/toy/figure/assistant,
-/obj/item/toy/figure/assistant,
+/obj/item/toy/figure/civilian,
+/obj/item/toy/figure/civilian,
 /obj/item/toy/figure/syndie,
 /obj/item/toy/figure/syndie,
 /obj/item/toy/figure/wizard,
@@ -16101,7 +16101,7 @@
 	dir = 8;
 	pixel_y = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/spawner/random/trash/graffiti{
 	pixel_y = 32;
 	spawn_loot_chance = 25
@@ -16542,7 +16542,7 @@
 /obj/structure/chair/sofa/corner{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -20005,7 +20005,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 8
 	},
@@ -31776,7 +31776,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/chair/stool/bar/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -35008,7 +35008,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/white,
 /area/medical/medbay/lobby)
 "ldC" = (
@@ -36643,7 +36643,7 @@
 /obj/structure/chair/sofa/right{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen/diner)
 "lIK" = (
@@ -38615,7 +38615,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/cargo/office)
 "mvv" = (
@@ -39113,7 +39113,7 @@
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/service/bar)
 "mGg" = (
@@ -39734,7 +39734,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/landmark/start/hangover,
 /obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/dark,
 /area/security/courtroom)
 "mQD" = (
@@ -46419,7 +46419,7 @@
 	dir = 1
 	},
 /obj/structure/chair/stool/directional/west,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/service/bar)
 "pjU" = (
@@ -50675,7 +50675,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen/diner)
 "qNW" = (
@@ -52675,7 +52675,7 @@
 /obj/structure/chair/sofa/left{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen/diner)
 "ryt" = (
@@ -56270,7 +56270,7 @@
 	dir = 1
 	},
 /obj/structure/chair/sofa/corp/left,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/service/bar)
 "sQh" = (
@@ -56407,7 +56407,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start/hangover,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron/dark,
 /area/security/courtroom)
 "sSb" = (
@@ -59232,7 +59232,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/landmark/start/hangover,
 /obj/effect/spawner/random/trash/graffiti{
 	pixel_y = -32;
@@ -60734,7 +60734,7 @@
 /turf/open/openspace,
 /area/hallway/primary/tram/center)
 "utE" = (
-/obj/item/toy/figure/assistant,
+/obj/item/toy/figure/civilian,
 /obj/effect/spawner/random/engineering/tracking_beacon,
 /turf/open/floor/plating/airless,
 /area/science/test_area)
@@ -62034,7 +62034,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
@@ -63029,7 +63029,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/structure/sign/painting/library{
 	pixel_y = -32
 	},
@@ -63663,7 +63663,7 @@
 	dir = 1
 	},
 /obj/structure/chair/stool/bar/directional/south,
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/service/bar)
 "vDM" = (
@@ -68462,7 +68462,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 6
 	},
@@ -70090,7 +70090,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/civilian,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,

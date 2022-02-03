@@ -36,7 +36,7 @@
 		bounty_num = rand(1,12)
 	switch(bounty_num)
 		if(1)
-			var/subtype = pick(subtypesof(/datum/bounty/item/assistant))
+			var/subtype = pick(subtypesof(/datum/bounty/item/civilian))
 			return new subtype
 		if(2)
 			var/subtype = pick(subtypesof(/datum/bounty/item/mech))

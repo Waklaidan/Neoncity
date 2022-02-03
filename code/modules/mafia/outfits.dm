@@ -8,8 +8,8 @@
 
 //town
 
-/datum/outfit/mafia/assistant
-	name = "Mafia Assistant"
+/datum/outfit/mafia/civilian
+	name = "Mafia Civilian"
 
 	uniform = /obj/item/clothing/under/color/rainbow
 

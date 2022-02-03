@@ -30,14 +30,14 @@
 	var/static/list/nation_suffixes = list("stan", "topia", "land", "nia", "ca", "tova", "dor", "ador", "tia", "sia", "ano", "tica", "tide", "cis", "marea", "co", "taoide", "slavia", "stotzka")
 	return pick(nation_prefixes) + pick(nation_suffixes)
 
-/// A special assistant only department, primarily for use by the preferences menu
-/datum/job_department/assistant
-	department_name = DEPARTMENT_ASSISTANT
-	department_bitflags = DEPARTMENT_BITFLAG_ASSISTANT
+/// A special civilian only department, primarily for use by the preferences menu
+/datum/job_department/civilian
+	department_name = DEPARTMENT_CIVILIAN
+	department_bitflags = DEPARTMENT_BITFLAG_CIVILIAN
 	nation_prefixes = list("Assa", "Mainte", "Tunnel", "Gris", "Grey", "Liath", "Grigio", "Ass", "Assi")
-	// Don't add department_head! Assistants names should not be in bold.
+	// Don't add department_head! Civilian names should not be in bold.
 
-/datum/job_department/assistant/generate_nation_name()
+/datum/job_department/civilian/generate_nation_name()
 	var/nomadic_name = pick("roving clans", "barbaric tribes", "tides", "bandit kingdom", "tribal society", "marauder clans", "horde")
 	return "The [nomadic_name] of [..()]"
 

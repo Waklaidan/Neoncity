@@ -236,8 +236,8 @@
 	icon_state = "smoke"
 
 /obj/structure/sign/poster/contraband/grey_tide
-	name = "Grey Tide"
-	desc = "A rebellious poster symbolizing assistant solidarity."
+	name = "Civ Tide"
+	desc = "A rebellious poster symbolizing civilian solidarity."
 	icon_state = "grey_tide"
 
 /obj/structure/sign/poster/contraband/missing_gloves

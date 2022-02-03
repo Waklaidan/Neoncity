@@ -3,10 +3,10 @@
 
 ///ALL THE ACHIEVEMENTS FOR WINNING A ROUND AS A ROLE///
 
-/datum/award/achievement/mafia/assistant
-	name = "Assistant Victory"
+/datum/award/achievement/mafia/civilian
+	name = "Civilian Victory"
 	desc = "If you got killed instead of someone more important, you just flexed the true strength of your \"\"\"\"role\"\"\"\"."
-	database_id = MAFIA_MEDAL_ASSISTANT
+	database_id = MAFIA_MEDAL_CIVILIAN
 	icon = "town"
 
 /datum/award/achievement/mafia/detective
@@ -47,7 +47,7 @@
 
 /datum/award/achievement/mafia/hop
 	name = "Head of Personnel Victory"
-	desc = "King of Assistants, waster of a single mafia's night, thrower of games."
+	desc = "King of Civilians, waster of a single mafia's night, thrower of games."
 	database_id = MAFIA_MEDAL_HOP
 	icon = "town"
 

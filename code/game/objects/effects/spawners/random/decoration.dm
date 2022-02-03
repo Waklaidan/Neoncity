@@ -56,7 +56,7 @@
 		/obj/structure/statue/bronze/marx = 50,
 		/obj/item/statuebust = 50,
 		/obj/item/statuebust/hippocratic = 50,
-		/obj/structure/statue/sandstone/assistant = 50,
+		/obj/structure/statue/sandstone/civilian = 50,
 		/obj/structure/statue/sandstone/venus = 50,
 		/obj/structure/statue/silver/md = 20,
 		/obj/structure/statue/silver/janitor = 20,

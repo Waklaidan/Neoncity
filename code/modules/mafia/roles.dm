@@ -1,5 +1,5 @@
 /datum/mafia_role
-	var/name = JOB_ASSISTANT
+	var/name = JOB_CIVILIAN
 	var/desc = "You are a crewmember without any special abilities."
 	var/win_condition = "kill all mafia and solo killing roles."
 	var/team = MAFIA_TEAM_TOWN
@@ -17,12 +17,12 @@
 	///how many votes your role COULD count for, now or later. used in checking victory
 	var/vote_potential = 1
 	///what they get equipped with when they are revealed
-	var/datum/outfit/revealed_outfit = /datum/outfit/mafia/assistant
+	var/datum/outfit/revealed_outfit = /datum/outfit/mafia/civilian
 	///action = uses
 	var/list/actions = list()
 	var/list/targeted_actions = list()
 	///what the role gets when it wins a game
-	var/winner_award = /datum/award/achievement/mafia/assistant
+	var/winner_award = /datum/award/achievement/mafia/civilian
 
 	///so mafia have to also kill them to have a majority
 	var/game_status = MAFIA_ALIVE
@@ -678,8 +678,8 @@
 		add_note("N[game.turn] - [target.body.real_name] - Unable to investigate")
 		return
 	if((target.role_flags & ROLE_UNDETECTABLE))
-		to_chat(body,span_warning("[target.body.real_name]'s memories reveal that they are the Assistant."))
-		add_note("N[game.turn] - [target.body.real_name] - Assistant")
+		to_chat(body,span_warning("[target.body.real_name]'s memories reveal that they are a civilian."))
+		add_note("N[game.turn] - [target.body.real_name] - Civilian")
 	else
 		to_chat(body,span_warning("[target.body.real_name]'s memories reveal that they are the [target.name]."))
 		add_note("N[game.turn] - [target.body.real_name] - [target.name]")

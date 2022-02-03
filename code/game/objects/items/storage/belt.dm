@@ -693,7 +693,7 @@
 	inhand_icon_state = "fannypack_leather"
 	worn_icon_state = "fannypack_leather"
 	dying_key = DYE_REGISTRY_FANNYPACK
-	custom_price = PAYCHECK_ASSISTANT * 2
+	custom_price = PAYCHECK_CIVILIAN * 2
 
 /obj/item/storage/belt/fannypack/ComponentInitialize()
 	. = ..()

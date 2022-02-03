@@ -160,7 +160,7 @@
 		/obj/item/storage/belt/cummerbund = 1
 	)
 	refill_canister = /obj/item/vending_refill/autodrobe
-	default_price = PAYCHECK_ASSISTANT * 0.8 //Default of 40.
+	default_price = PAYCHECK_CIVILIAN * 0.8 //Default of 40.
 	extra_price = PAYCHECK_HARD
 	payment_department = ACCOUNT_SRV
 	light_mask="theater-light-mask"

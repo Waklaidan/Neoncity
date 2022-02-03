@@ -113,7 +113,7 @@ BROTHER_OBJECTIVES_AMOUNT 2
 PROTECT_ROLES_FROM_ANTAGONIST
 
 ## Uncomment to prohibit assistants from becoming most antagonists.
-#PROTECT_ASSISTANT_FROM_ANTAGONIST
+#PROTECT_CIVILIANS_FROM_ANTAGONIST
 
 ## If non-human species are barred from joining as a head of staff
 #ENFORCE_HUMAN_AUTHORITY
@@ -184,8 +184,8 @@ MINIMAL_ACCESS_THRESHOLD 20
 ## This option is ignored if MINIMAL_ACCESS_THRESHOLD is used.
 #JOBS_HAVE_MINIMAL_ACCESS
 
-## Uncomment to give assistants maint access.
-#ASSISTANTS_HAVE_MAINT_ACCESS
+## Uncomment to give civilian maint access.
+#CIVILIANS_HAVE_MAINT_ACCESS
 
 ## Uncoment to give security maint access. Note that if you dectivate JOBS_HAVE_MINIMAL_ACCESS security already gets maint from that.
 #SECURITY_HAS_MAINT_ACCESS
@@ -367,7 +367,7 @@ ROUNDSTART_RACES ethereal
 #ROUNDSTART_NO_HARD_CHECK felinid
 
 ##Overflow job. Default is assistant
-OVERFLOW_JOB Assistant
+OVERFLOW_JOB Civilian
 
 ## Overflow slot cap. Set to -1 for unlimited. If limited, it will still open up if every other job is full.
 OVERFLOW_CAP -1
@@ -377,7 +377,7 @@ OVERFLOW_CAP -1
 #STARLIGHT
 
 ## Uncomment to bring back old grey suit assistants instead of the now default rainbow colored assistants.
-#GREY_ASSISTANTS
+#GREY_CIVILIANS
 
 ##Limit Spell Choices##
 ## Uncomment to disallow wizards from using certain spells that may be too chaotic/fun for your playerbase

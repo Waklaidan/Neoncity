@@ -163,8 +163,8 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/item/clothing/under/color/grey,
 		/obj/item/melee/baton/security/cattleprod,
 		/obj/item/spear,
-		/obj/item/toy/figure/assistant,
-		/obj/structure/statue/sandstone/assistant,
+		/obj/item/toy/figure/civilian,
+		/obj/structure/statue/sandstone/civilian,
 	)) + typecacheof(list(/obj/item/clothing/mask/gas), ignore_root_path = FALSE, only_root_path = TRUE // to match only specific items in this phobia and not subtypes, use an additional typecacheof w/ ignore_root_path set FALSE and only_root_patch set TRUE
 	)),
 

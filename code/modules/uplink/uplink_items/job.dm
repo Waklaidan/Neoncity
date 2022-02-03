@@ -40,7 +40,7 @@
 	desc = "A tattered old jumpsuit that will provide absolutely no benefit to you."
 	item = /obj/item/clothing/under/color/grey/ancient
 	cost = 20
-	restricted_roles = list(JOB_ASSISTANT)
+	restricted_roles = list(JOB_CIVILIAN)
 	surplus = 0
 
 // Low progression cost

@@ -28,7 +28,7 @@
 #define NEUTRAL_DISRUPT "disrupt"
 
 //role flags (special status of roles like detection immune)
-///to all forms of detection, shows themselves as an assistant.
+///to all forms of detection, shows themselves as an civilian.
 #define ROLE_UNDETECTABLE (1<<0)
 ///has the ability to kill at night and thus, blocks the game from ending with other teams alive.
 #define ROLE_CAN_KILL (1<<1)
