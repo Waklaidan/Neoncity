@@ -31,7 +31,7 @@
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "ar" = (
-/obj/effect/mob_spawn/corpse/human/assistant,
+/obj/effect/mob_spawn/corpse/human/civilian,
 /obj/item/construction/rcd,
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron,
