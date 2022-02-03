@@ -276,7 +276,7 @@
 /turf/open/floor/mineral/titanium/airless,
 /area/shuttle/abandoned/cargo)
 "aR" = (
-/obj/effect/mob_spawn/corpse/human/assistant,
+/obj/effect/mob_spawn/corpse/human/civilian,
 /turf/open/floor/mineral/titanium/airless,
 /area/shuttle/abandoned/cargo)
 "aS" = (
@@ -302,7 +302,7 @@
 /area/shuttle/abandoned/engine)
 "aW" = (
 /obj/effect/spawner/random/trash/hobo_squat,
-/obj/effect/mob_spawn/corpse/human/assistant,
+/obj/effect/mob_spawn/corpse/human/civilian,
 /turf/open/floor/pod,
 /area/shuttle/abandoned/cargo)
 "aX" = (
@@ -413,7 +413,7 @@
 /area/shuttle/abandoned/cargo)
 "bp" = (
 /obj/effect/decal/cleanable/blood,
-/obj/effect/mob_spawn/corpse/human/assistant,
+/obj/effect/mob_spawn/corpse/human/civilian,
 /turf/open/floor/mineral/titanium/airless,
 /area/shuttle/abandoned/cargo)
 "bq" = (
@@ -1243,7 +1243,7 @@
 /area/shuttle/abandoned/bridge)
 "AC" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/mob_spawn/corpse/human/assistant,
+/obj/effect/mob_spawn/corpse/human/civilian,
 /turf/open/floor/mineral/titanium/blue/airless,
 /area/shuttle/abandoned/cargo)
 "CS" = (
