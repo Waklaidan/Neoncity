@@ -46,9 +46,6 @@
 /area/maintenance/port/central)
 "aaC" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
 /obj/effect/landmark/start/civilian,
@@ -371,9 +368,6 @@
 	pixel_y = 3
 	},
 /obj/item/food/grown/poppy,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
@@ -4766,9 +4760,6 @@
 /area/hallway/secondary/entry)
 "aDS" = (
 /obj/structure/bookcase,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/pew{
 	dir = 4
 	},
@@ -9619,9 +9610,6 @@
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "bQy" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/toilet{
 	dir = 4;
 	pixel_y = 8
@@ -12592,9 +12580,6 @@
 /turf/open/floor/iron,
 /area/cargo/sorting)
 "cVI" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -18835,9 +18820,6 @@
 	dir = 8;
 	pixel_x = 11
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
 	},
@@ -18990,9 +18972,6 @@
 /turf/open/floor/iron/white,
 /area/science/lab)
 "fmF" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/comfy/black,
 /obj/effect/landmark/start/civilian,
 /obj/machinery/light/small/directional/north,
@@ -19050,9 +19029,6 @@
 /turf/open/floor/plating,
 /area/hallway/primary/central)
 "fnM" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -19531,9 +19507,6 @@
 /turf/open/floor/iron,
 /area/commons/dorms)
 "fvY" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
@@ -19584,9 +19557,6 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/table/glass,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
@@ -20141,9 +20111,6 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair{
 	dir = 4
 	},
@@ -21621,9 +21588,6 @@
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/aisat/foyer)
 "gfr" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -26593,9 +26557,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
 /obj/effect/landmark/start/civilian,
@@ -27069,9 +27030,6 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "igJ" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/item/beacon,
 /obj/item/toy/figure/civilian,
 /turf/open/space/basic,
@@ -29199,9 +29157,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/status_display/evac/directional/east,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
@@ -32016,9 +31971,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 4
 	},
@@ -32266,9 +32218,6 @@
 /turf/open/floor/iron,
 /area/security/office)
 "jYi" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/landmark/event_spawn,
@@ -35968,9 +35917,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
@@ -42231,9 +42177,6 @@
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
 	dir = 1
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -43587,9 +43530,6 @@
 /turf/open/floor/plating,
 /area/maintenance/central)
 "ogb" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
 /obj/effect/landmark/start/civilian,
@@ -48387,9 +48327,6 @@
 /turf/open/floor/grass,
 /area/science/genetics)
 "pNd" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/cable,
 /obj/effect/landmark/event_spawn,
 /mob/living/simple_animal/hostile/lizard/wags_his_tail,
@@ -48731,9 +48668,6 @@
 /turf/open/floor/iron,
 /area/hallway/secondary/entry)
 "pTa" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/pew{
 	dir = 4
 	},
@@ -49226,9 +49160,6 @@
 /turf/open/floor/iron/dark,
 /area/engineering/storage/tech)
 "qeH" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 6
 	},
@@ -50623,9 +50554,6 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "qHp" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
 /obj/effect/landmark/start/civilian,
@@ -52893,9 +52821,6 @@
 /area/medical/virology)
 "rxe" = (
 /obj/effect/turf_decal/sand/plating,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -52977,9 +52902,6 @@
 	},
 /obj/effect/landmark/event_spawn,
 /obj/effect/landmark/start/medical_doctor,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/office/light{
 	dir = 4
 	},
@@ -53424,9 +53346,6 @@
 	dir = 8
 	},
 /obj/machinery/washing_machine,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -55736,9 +55655,6 @@
 /turf/open/floor/engine/co2,
 /area/engineering/atmos)
 "sxO" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -56568,9 +56484,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/sand,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -61563,9 +61476,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/bed,
 /obj/item/bedsheet/dorms,
 /obj/effect/landmark/start/civilian,
@@ -64923,9 +64833,6 @@
 /turf/open/openspace,
 /area/hallway/primary/tram/left)
 "vUD" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/toilet{
 	dir = 8;
 	pixel_y = 8
@@ -68249,9 +68156,6 @@
 /turf/open/floor/iron,
 /area/hallway/secondary/exit/departure_lounge)
 "xfT" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair{
 	dir = 1
 	},
@@ -70600,9 +70504,6 @@
 /turf/open/floor/plating,
 /area/maintenance/department/security)
 "xVj" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -71565,9 +71466,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/table/glass,
 /obj/item/folder/blue{
 	pixel_x = 6;

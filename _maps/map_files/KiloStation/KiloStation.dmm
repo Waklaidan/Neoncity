@@ -23722,9 +23722,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -27296,9 +27293,6 @@
 	dir = 5
 	},
 /mob/living/simple_animal/bot/cleanbot/autopatrol,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
@@ -37248,9 +37242,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/delivery,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/turf_decal/delivery,
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -65382,9 +65373,6 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 8

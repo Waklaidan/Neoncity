@@ -15548,9 +15548,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/stool/directional/east,
 /obj/effect/landmark/start/civilian,
 /obj/structure/cable,
@@ -16495,9 +16492,6 @@
 	},
 /obj/structure/railing/corner{
 	dir = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/structure/chair/comfy/brown{
 	buildstackamount = 0;
@@ -30433,9 +30427,6 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/status_display/evac/directional/north,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair,
 /obj/effect/landmark/start/civilian,
 /obj/machinery/camera{
@@ -35415,9 +35406,6 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair{
 	dir = 1
@@ -37231,9 +37219,6 @@
 	dir = 8
 	},
 /obj/machinery/bounty_board/directional/west,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair{
 	dir = 4
 	},
@@ -38406,9 +38391,6 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/structure/chair/stool/directional/north,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/stool/bar/directional/north,
 /obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/tile/red{
@@ -62279,9 +62261,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/stool/directional/west,
 /obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/tile/red{
@@ -63594,9 +63573,6 @@
 "mzG" = (
 /obj/effect/turf_decal/delivery,
 /obj/item/kirbyplants/random,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair{
 	dir = 4
 	},
@@ -74406,9 +74382,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/toilet{
 	dir = 8
@@ -81185,9 +81158,6 @@
 /turf/open/floor/iron/dark,
 /area/service/library)
 "rkz" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair{
 	dir = 8
 	},
@@ -88496,9 +88466,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/table/wood,
 /obj/item/clipboard,
 /obj/machinery/camera{
@@ -88980,9 +88947,6 @@
 "ton" = (
 /obj/structure/cable,
 /obj/effect/spawner/structure/window/reinforced,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/comfy/brown,
 /obj/effect/landmark/start/civilian,
 /turf/open/floor/plating,
@@ -101547,9 +101511,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -104120,9 +104081,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/stool/directional/west,
 /obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/tile/neutral{
@@ -105204,9 +105162,6 @@
 /turf/open/floor/iron/dark,
 /area/engineering/gravity_generator)
 "xIY" = (
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/tile/red{
 	dir = 1

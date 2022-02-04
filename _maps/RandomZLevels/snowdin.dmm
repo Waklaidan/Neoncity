@@ -7655,9 +7655,6 @@
 /area/awaymission/snowdin/post/cavern1)
 "vl" = (
 /obj/effect/mob_spawn/corpse/human/civilian,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/mob_spawn/human/corpse/civilian,
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
@@ -11161,9 +11158,6 @@
 	oxy_damage = 50
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/effect/mob_spawn/human/corpse/civilian{
 	brute_damage = 150;
 	oxy_damage = 50

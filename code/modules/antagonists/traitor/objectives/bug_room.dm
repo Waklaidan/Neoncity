@@ -21,7 +21,7 @@
 
 	var/list/applicable_heads = list(
 		JOB_RESEARCH_DIRECTOR = /area/command/heads_quarters/rd,
-		JOB_CHIEF_MEDICAL_OFFICER = /area/command/heads_quarters/md,
+		JOB_MEDICAL_DIRECTOR = /area/command/heads_quarters/md,
 		JOB_CHIEF_ENGINEER = /area/command/heads_quarters/ce,
 		JOB_HEAD_OF_PERSONNEL = /area/command/heads_quarters/hop,
 		JOB_CAPTAIN = /area/command/heads_quarters/captain, // For head roles so that they can still get this objective.

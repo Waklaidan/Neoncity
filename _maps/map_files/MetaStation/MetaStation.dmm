@@ -1190,9 +1190,6 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/spawner/random/structure/closet_private,
 /obj/item/clothing/under/misc/civilianformal,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/machinery/airalarm/directional/north,
 /obj/item/clothing/under/misc/civilianformal,
@@ -19159,9 +19156,6 @@
 "eFs" = (
 /obj/structure/chair/stool/directional/east,
 /obj/effect/landmark/start/civilian,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/chair/stool/directional/west,
 /obj/effect/landmark/start/civilian,
 /turf/open/floor/wood,
@@ -23112,9 +23106,6 @@
 	pixel_y = -32;
 	spawn_loot_chance = 50
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/toilet{
 	dir = 4
 	},
@@ -25774,9 +25765,6 @@
 /area/service/hydroponics)
 "gQK" = (
 /obj/effect/spawner/random/decoration/statue,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/statue/sandstone/civilian,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
@@ -53219,9 +53207,6 @@
 "qzj" = (
 /obj/effect/spawner/random/structure/closet_private,
 /obj/item/clothing/under/misc/civilianformal,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/clothing/under/misc/civilianformal,
 /turf/open/floor/wood,
@@ -57533,9 +57518,6 @@
 /obj/item/clothing/under/misc/civilianformal,
 /obj/effect/landmark/start/hangover,
 /obj/effect/spawner/random/structure/closet_private,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/machinery/airalarm/directional/north,
 /obj/item/clothing/under/misc/civilianformal,
@@ -70577,9 +70559,6 @@
 	name = "Lock Control";
 	normaldoorcontrol = 1;
 	specialfunctions = 4
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/structure/toilet{
 	pixel_y = 8

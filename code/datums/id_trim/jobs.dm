@@ -181,16 +181,16 @@
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CHANGE_IDS)
 	job = /datum/job/chief_engineer
 
-/datum/id_trim/job/chief_medical_officer
+/datum/id_trim/job/medical_director
 	assignment = "Medical Director"
-	trim_state = "trim_chiefmedicalofficer"
+	trim_state = "trim_medicaldirector"
 	extra_access = list(ACCESS_TELEPORTER)
 	extra_wildcard_access = list()
 	minimal_access = list(ACCESS_CHEMISTRY, ACCESS_EVA, ACCESS_HEADS, ACCESS_KEYCARD_AUTH, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MEDICAL,
 					ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_PHARMACY, ACCESS_PSYCHOLOGY, ACCESS_RC_ANNOUNCE,
 					ACCESS_SEC_DOORS, ACCESS_SURGERY, ACCESS_VIROLOGY)
 	minimal_wildcard_access = list(ACCESS_MD)
-	config_job = "chief_medical_officer"
+	config_job = "medical_director"
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CHANGE_IDS)
 	job = /datum/job/medical_director
 

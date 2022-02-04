@@ -99,9 +99,6 @@
 "ks" = (
 /obj/structure/flora/rock/icy,
 /obj/effect/mob_spawn/corpse/human/civilian,
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/structure/flora/rock/icy,
 /obj/effect/mob_spawn/human/corpse/civilian,
 /turf/open/floor/plating/asteroid/snow/icemoon,
@@ -115,9 +112,6 @@
 /obj/effect/mob_spawn/corpse/human/civilian,
 /mob/living/simple_animal/hostile/skeleton/eskimo{
 	name = "Village Hunter"
-	},
-/obj{
-	name = "---Merge conflict marker---"
 	},
 /obj/effect/decal/cleanable/blood/gibs/up,
 /obj/effect/mob_spawn/human/corpse/civilian,
