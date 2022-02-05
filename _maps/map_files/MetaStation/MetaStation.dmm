@@ -10547,7 +10547,7 @@
 "cnB" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner,
 /obj/machinery/camera/directional/east{
-	c_tag = "Medbay Main Hallway- CMO";
+	c_tag = "Medbay Main Hallway- MD";
 	network = list("ss13","medbay")
 	},
 /turf/open/floor/iron/white,
@@ -24257,7 +24257,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance{
-	name = "CMO Maintenance";
+	name = "MD Maintenance";
 	req_access_txt = "40"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -36535,8 +36535,8 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/machinery/button/door/directional/south{
-	id = "cmoprivacy";
-	name = "CMO Privacy Shutters";
+	id = "mdprivacy";
+	name = "MD Privacy Shutters";
 	pixel_x = -8;
 	req_access_txt = "40"
 	},
@@ -47712,7 +47712,7 @@
 "oEG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
-	id = "cmoprivacy";
+	id = "mdprivacy";
 	name = "privacy shutter"
 	},
 /obj/structure/cable,

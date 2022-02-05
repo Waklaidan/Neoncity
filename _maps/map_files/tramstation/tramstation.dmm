@@ -30704,7 +30704,7 @@
 /turf/open/floor/iron,
 /area/commons/dorms)
 "jve" = (
-/obj/machinery/suit_storage_unit/cmo,
+/obj/machinery/suit_storage_unit/md,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
 	},
@@ -35243,8 +35243,8 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cmoshutter";
-	name = "CMO Office Shutters"
+	id = "mdshutter";
+	name = "MD Office Shutters"
 	},
 /turf/open/floor/plating,
 /area/command/heads_quarters/md)
@@ -40676,7 +40676,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 1;
-	name = "sorting disposal pipe (CMO's Office)";
+	name = "sorting disposal pipe (MD's Office)";
 	sortType = 10
 	},
 /turf/open/floor/iron/white,
@@ -51400,8 +51400,8 @@
 	},
 /obj/machinery/keycard_auth/directional/north,
 /obj/machinery/button/door/directional/north{
-	id = "cmoshutter";
-	name = "CMO Privacy Shutters";
+	id = "mdshutter";
+	name = "MD Privacy Shutters";
 	pixel_y = 38;
 	req_access_txt = "40"
 	},

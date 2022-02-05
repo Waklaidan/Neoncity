@@ -23722,11 +23722,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
 "cBD" = (
@@ -27293,26 +27288,6 @@
 	dir = 5
 	},
 /mob/living/simple_animal/bot/cleanbot/autopatrol,
-/obj/effect/turf_decal/tile/purple,
-/obj/effect/turf_decal/tile/purple{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue,
-/obj/machinery/light/directional/south,
-/obj/effect/turf_decal/stripes/corner,
-/obj/machinery/button/door/directional/south{
-	id = "custodialwagon";
-	name = "Custodial Bay Toggle";
-	req_access_txt = "26'"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/mob/living/simple_animal/bot/cleanbot{
-	auto_patrol = 1;
-	icon_state = "cleanbot1";
-	name = "Mopficcer Sweepsky"
-	},
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
 "dAD" = (
@@ -37242,14 +37217,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/civilian,
 /obj/effect/turf_decal/delivery,
-/obj/effect/turf_decal/delivery,
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
 "hiz" = (
@@ -65374,18 +65341,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/machinery/light/directional/west,
-/obj/machinery/firealarm/directional/west,
-/obj/effect/landmark/start/civilian,
 /turf/open/floor/iron,
 /area/hallway/secondary/exit/departure_lounge)
 "rnA" = (

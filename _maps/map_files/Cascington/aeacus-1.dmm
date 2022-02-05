@@ -16250,8 +16250,8 @@
 	pixel_y = -25
 	},
 /obj/machinery/button/door{
-	id = "cmoprivacy";
-	name = "CMO Privacy Shutters";
+	id = "mdprivacy";
+	name = "MD Privacy Shutters";
 	pixel_x = -7;
 	pixel_y = -26;
 	req_access_txt = "40"

@@ -32857,8 +32857,8 @@
 /area/command/heads_quarters/rd)
 "euq" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cmoshutter";
-	name = "CMO Office Shutters"
+	id = "mdshutter";
+	name = "Medical Director Office Shutters"
 	},
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
 /obj/effect/spawner/structure/window/reinforced,
@@ -55548,7 +55548,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "CMO"
+	cycle_id = "MD"
 	},
 /turf/open/floor/iron/white,
 /area/command/heads_quarters/md)
@@ -68736,7 +68736,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 4;
-	name = "CMO's Junction";
+	name = "MD's Junction";
 	sortType = 10
 	},
 /turf/open/floor/iron,
@@ -70031,8 +70031,8 @@
 "ojk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cmoshutter";
-	name = "CMO Office Shutters"
+	id = "mdshutter";
+	name = "Medical Director Office Shutters"
 	},
 /turf/open/floor/plating,
 /area/command/heads_quarters/md)
@@ -78990,7 +78990,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "CMO"
+	cycle_id = "MD"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -79599,8 +79599,8 @@
 	pixel_x = -8
 	},
 /obj/machinery/button/door/directional/south{
-	id = "cmoshutter";
-	name = "CMO Office Shutters";
+	id = "mdshutter";
+	name = "MD Office Shutters";
 	pixel_x = 6;
 	pixel_y = -26;
 	req_access_txt = "40"
@@ -104938,8 +104938,8 @@
 "xFF" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cmoshutter";
-	name = "CMO Office Shutters"
+	id = "mdshutter";
+	name = "MD Office Shutters"
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -143937,7 +143937,7 @@ abD
 abD
 abD
 abD
-lvz
+abD
 abD
 abD
 ahz
