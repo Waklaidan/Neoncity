@@ -107,7 +107,7 @@
 	storage_type = /obj/item/tank/internals/oxygen
 	mod_type = /obj/item/mod/control/pre_equipped/medical
 
-/obj/machinery/suit_storage_unit/cmo
+/obj/machinery/suit_storage_unit/md
 	mask_type = /obj/item/clothing/mask/breath/medical
 	storage_type = /obj/item/tank/internals/oxygen
 	mod_type = /obj/item/mod/control/pre_equipped/rescue

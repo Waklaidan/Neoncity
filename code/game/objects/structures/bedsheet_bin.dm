@@ -391,9 +391,9 @@ LINEN BINS
 	worn_icon_state = "sheetmedical"
 	bedsheet_type = BEDSHEET_DOUBLE
 
-/obj/item/bedsheet/cmo/double
-	icon_state = "double_sheetcmo"
-	worn_icon_state = "sheetcmo"
+/obj/item/bedsheet/md/double
+	icon_state = "double_sheetmd"
+	worn_icon_state = "sheetmd"
 	bedsheet_type = BEDSHEET_DOUBLE
 
 /obj/item/bedsheet/hos/double

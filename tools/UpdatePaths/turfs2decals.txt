@@ -91,7 +91,7 @@
 /turf/open/floor/plasteel/caution/corner {dir=2} : /turf/open/floor/iron/dark/corner {@OLD;dir=@SKIP}
 /turf/open/floor/plasteel/caution/corner {dir=4} : /obj/effect/turf_decal/tile/yellow {dir=@OLD} , /turf/open/floor/iron {@OLD;dir=@SKIP}
 /turf/open/floor/plasteel/caution/corner {dir=8} : /obj/effect/turf_decal/tile/yellow {dir=@OLD} , /turf/open/floor/iron {@OLD;dir=@SKIP}
-/turf/open/floor/plasteel/cmo : /obj/effect/turf_decal/tile/blue {dir=4} , /obj/effect/turf_decal/tile/blue {dir=8} , /turf/open/floor/iron/white {@OLD;dir=@SKIP}
+/turf/open/floor/plasteel/md : /obj/effect/turf_decal/tile/blue {dir=4} , /obj/effect/turf_decal/tile/blue {dir=8} , /turf/open/floor/iron/white {@OLD;dir=@SKIP}
 /turf/open/floor/plasteel/dark/telecomms/mainframe : /turf/open/floor/iron/dark/telecomms {@OLD;dir=@SKIP}
 /turf/open/floor/plasteel/dark/telecomms/server : /turf/open/floor/iron/dark/telecomms {@OLD;dir=@SKIP}
 /turf/open/floor/plasteel/dark/telecomms/server/walkway : /turf/open/floor/iron/dark/telecomms {@OLD;dir=@SKIP}

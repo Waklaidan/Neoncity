@@ -85,7 +85,7 @@
 	new /obj/item/assembly/flash/handheld(src)
 	new /obj/item/reagent_containers/hypospray/md(src)
 	new /obj/item/autosurgeon/organ/md(src)
-	new /obj/item/door_remote/chief_medical_officer(src)
+	new /obj/item/door_remote/medical_director(src)
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)
 	new /obj/item/wallframe/defib_mount(src)

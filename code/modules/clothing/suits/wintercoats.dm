@@ -194,12 +194,12 @@
 /obj/item/clothing/suit/hooded/wintercoat/medical/md
 	name = "medical director's winter coat"
 	desc = "A winter coat in a vibrant shade of blue with a small silver caduceus instead of a plastic zipper tab. The normal liner is replaced with an exceptionally thick, soft layer of fur."
-	icon_state = "coatcmo"
-	inhand_icon_state = "coatcmo"
+	icon_state = "coatmd"
+	inhand_icon_state = "coatmd"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 50, FIRE = 20, ACID = 30)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/md
 
-/obj/item/clothing/suit/hooded/wintercoat/medical/cmo/Initialize(mapload)
+/obj/item/clothing/suit/hooded/wintercoat/medical/md/Initialize(mapload)
 	. = ..()
 	allowed += list(
 		/obj/item/melee/baton/telescopic,
@@ -207,7 +207,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/medical/md
 	desc = "A blue winter coat hood."
-	icon_state = "hood_cmo"
+	icon_state = "hood_md"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 50, FIRE = 20, ACID = 30)
 
 // Chemist

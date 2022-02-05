@@ -32,10 +32,10 @@
 /obj/item/clothing/suit/toggle/labcoat/md
 	name = "medical director's labcoat"
 	desc = "Bluer than the standard model."
-	icon_state = "labcoat_cmo"
-	inhand_icon_state = "labcoat_cmo"
+	icon_state = "labcoat_md"
+	inhand_icon_state = "labcoat_md"
 
-/obj/item/clothing/suit/toggle/labcoat/cmo/Initialize(mapload)
+/obj/item/clothing/suit/toggle/labcoat/md/Initialize(mapload)
 	. = ..()
 	allowed += list(
 		/obj/item/melee/baton/telescopic,

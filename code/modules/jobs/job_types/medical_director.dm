@@ -1,4 +1,4 @@
-/datum/job/chief_medical_officer
+/datum/job/medical_director
 	title = JOB_MEDICAL_DIRECTOR
 	description = "Coordinate doctors and other medbay employees, ensure they \
 		know how to save lives, check for injuries on the crew monitor."
@@ -18,7 +18,7 @@
 	exp_granted_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/md
-	plasmaman_outfit = /datum/outfit/plasmaman/chief_medical_officer
+	plasmaman_outfit = /datum/outfit/plasmaman/medical_director
 	departments_list = list(
 		/datum/job_department/medical,
 		/datum/job_department/command,
@@ -29,7 +29,7 @@
 
 	liver_traits = list(TRAIT_MEDICAL_METABOLISM, TRAIT_ROYAL_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_CHIEF_MEDICAL_OFFICER
+	display_order = JOB_DISPLAY_ORDER_MEDICAL_DIRECTOR
 	bounty_types = CIV_JOB_MED
 
 	mail_goodies = list(
@@ -54,8 +54,8 @@
 	jobtype = /datum/job/medical_director
 
 	id = /obj/item/card/id/advanced/silver
-	id_trim = /datum/id_trim/job/chief_medical_officer
-	uniform = /obj/item/clothing/under/rank/medical/chief_medical_officer
+	id_trim = /datum/id_trim/job/medical_director
+	uniform = /obj/item/clothing/under/rank/medical/medical_director
 	suit = /obj/item/clothing/suit/toggle/labcoat/md
 	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(
@@ -80,7 +80,7 @@
 	skillchips = list(/obj/item/skillchip/entrails_reader)
 
 /datum/outfit/job/md/mod
-	name = "Chief Medical Officer (MODsuit)"
+	name = "Medical Director (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/mod/control/pre_equipped/rescue
