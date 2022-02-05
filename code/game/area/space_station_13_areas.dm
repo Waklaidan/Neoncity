@@ -512,9 +512,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Chief Engineer's Office"
 	icon_state = "ce_office"
 
-/area/command/heads_quarters/cmo
-	name = "\improper Chief Medical Officer's Office"
-	icon_state = "cmo_office"
+/area/command/heads_quarters/md
+	name = "\improper Medical Director's Office"
+	icon_state = "md_office"
 
 /area/command/heads_quarters/hop
 	name = "\improper Head of Personnel's Office"

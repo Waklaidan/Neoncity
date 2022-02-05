@@ -66,31 +66,31 @@
 	new /obj/item/clothing/mask/muzzle(src)
 	new /obj/item/clothing/glasses/blindfold(src)
 
-/obj/structure/closet/secure_closet/chief_medical
-	name = "\proper chief medical officer's locker"
-	req_access = list(ACCESS_CMO)
-	icon_state = "cmo"
+/obj/structure/closet/secure_closet/medical_director
+	name = "\proper medical director's locker"
+	req_access = list(ACCESS_MD)
+	icon_state = "md"
 
 /obj/structure/closet/secure_closet/chief_medical/PopulateContents()
 	..()
 
-	new /obj/item/clothing/suit/bio_suit/cmo(src)
-	new /obj/item/clothing/head/bio_hood/cmo(src)
+	new /obj/item/clothing/suit/bio_suit/md(src)
+	new /obj/item/clothing/head/bio_hood/md(src)
 	new /obj/item/storage/bag/garment/chief_medical(src)
-	new /obj/item/cartridge/cmo(src)
-	new /obj/item/radio/headset/heads/cmo(src)
+	new /obj/item/cartridge/md(src)
+	new /obj/item/radio/headset/heads/md(src)
 	new /obj/item/megaphone/command(src)
 	new /obj/item/defibrillator/compact/loaded(src)
 	new /obj/item/healthanalyzer/advanced(src)
 	new /obj/item/assembly/flash/handheld(src)
-	new /obj/item/reagent_containers/hypospray/cmo(src)
-	new /obj/item/autosurgeon/organ/cmo(src)
-	new /obj/item/door_remote/chief_medical_officer(src)
+	new /obj/item/reagent_containers/hypospray/md(src)
+	new /obj/item/autosurgeon/organ/md(src)
+	new /obj/item/door_remote/medical_director(src)
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)
 	new /obj/item/wallframe/defib_mount(src)
 	new /obj/item/circuitboard/machine/techfab/department/medical(src)
-	new /obj/item/storage/photo_album/cmo(src)
+	new /obj/item/storage/photo_album/md(src)
 	new /obj/item/storage/lockbox/medal/med(src)
 
 

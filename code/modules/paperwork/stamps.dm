@@ -52,10 +52,10 @@
 	icon_state = "stamp-rd"
 	dye_color = DYE_RD
 
-/obj/item/stamp/cmo
-	name = "chief medical officer's rubber stamp"
-	icon_state = "stamp-cmo"
-	dye_color = DYE_CMO
+/obj/item/stamp/md
+	name = "medical director's rubber stamp"
+	icon_state = "stamp-md"
+	dye_color = DYE_MD
 
 /obj/item/stamp/denied
 	name = "\improper DENIED rubber stamp"

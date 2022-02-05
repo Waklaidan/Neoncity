@@ -74,14 +74,14 @@
 /obj/item/clothing/suit/bio_suit/scientist
 	icon_state = "bio_scientist"
 
-//CMO's biosuit, blue stripe
-/obj/item/clothing/head/bio_hood/cmo
-	icon_state = "bio_cmo"
+//MD's biosuit, blue stripe
+/obj/item/clothing/head/bio_hood/md
+	icon_state = "bio_md"
 
-/obj/item/clothing/suit/bio_suit/cmo
-	icon_state = "bio_cmo"
+/obj/item/clothing/suit/bio_suit/md
+	icon_state = "bio_md"
 
-/obj/item/clothing/suit/bio_suit/cmo/Initialize(mapload)
+/obj/item/clothing/suit/bio_suit/md/Initialize(mapload)
 	. = ..()
 	allowed += list(/obj/item/melee/baton/telescopic)
 

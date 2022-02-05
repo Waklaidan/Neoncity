@@ -37,7 +37,7 @@
 	name = "emergency response team medical locker"
 	desc = "A storage unit containing equipment for an Emergency Response Team Medical Officer."
 	req_access = list(ACCESS_CENT_MEDICAL)
-	icon_state = "cmo"
+	icon_state = "md"
 
 /obj/structure/closet/secure_closet/ert_med/PopulateContents()
 	..()

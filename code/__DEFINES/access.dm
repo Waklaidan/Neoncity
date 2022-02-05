@@ -47,7 +47,7 @@
 #define ACCESS_LIBRARY 37
 #define ACCESS_LAWYER 38
 #define ACCESS_VIROLOGY 39
-#define ACCESS_CMO 40
+#define ACCESS_MD 40
 #define ACCESS_QM 41
 #define ACCESS_COURT 42
 #define ACCESS_SURGERY 45
@@ -303,7 +303,7 @@
 	ACCESS_HOS, \
 	ACCESS_HOP, \
 	ACCESS_CE, \
-	ACCESS_CMO, \
+	ACCESS_MD, \
 	ACCESS_RD, \
 )
 
@@ -386,7 +386,7 @@
 )
 /// Name for the Medbay region.
 #define REGION_MEDBAY "Medbay"
-/// Used to seed the accesses_by_region list in SSid_access. A list of all medbay regional accesses that are overseen by the CMO.
+/// Used to seed the accesses_by_region list in SSid_access. A list of all medbay regional accesses that are overseen by the MD.
 #define REGION_ACCESS_MEDBAY list( \
 	ACCESS_MEDICAL, \
 	ACCESS_MORGUE, \
@@ -394,7 +394,7 @@
 	ACCESS_VIROLOGY, \
 	ACCESS_SURGERY, \
 	ACCESS_MECH_MEDICAL, \
-	ACCESS_CMO, \
+	ACCESS_MD, \
 	ACCESS_PHARMACY, \
 	ACCESS_PSYCHOLOGY, \
 )
@@ -486,7 +486,7 @@
 	/obj/item/pda/science = list(REGION_RESEARCH), \
 	/obj/item/pda/heads/hop = list(REGION_COMMAND), \
 	/obj/item/pda/heads/hos = list(REGION_COMMAND), \
-	/obj/item/pda/heads/cmo = list(REGION_COMMAND), \
+	/obj/item/pda/heads/md = list(REGION_COMMAND), \
 	/obj/item/pda/heads/ce = list(REGION_COMMAND), \
 	/obj/item/pda/heads/rd = list(REGION_COMMAND), \
 	/obj/item/pda/captain = list(REGION_COMMAND), \

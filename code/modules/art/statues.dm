@@ -113,9 +113,9 @@
 	name = "statue of the head of personnel"
 	icon_state = "hop"
 
-/obj/structure/statue/gold/cmo
-	name = "statue of the chief medical officer"
-	icon_state = "cmo"
+/obj/structure/statue/gold/md
+	name = "statue of the medical director"
+	icon_state = "md"
 
 /obj/structure/statue/gold/ce
 	name = "statue of the chief engineer"

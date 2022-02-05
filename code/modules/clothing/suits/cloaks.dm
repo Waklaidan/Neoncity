@@ -23,10 +23,10 @@
 	name = "quartermaster's cloak"
 	desc = "Worn by Cargonia, supplying the station with the necessary tools for survival."
 
-/obj/item/clothing/neck/cloak/cmo
-	name = "chief medical officer's cloak"
+/obj/item/clothing/neck/cloak/md
+	name = "medical director's cloak"
 	desc = "Worn by Meditopia, the valiant men and women keeping pestilence at bay."
-	icon_state = "cmocloak"
+	icon_state = "mdcloak"
 
 /obj/item/clothing/neck/cloak/ce
 	name = "chief engineer's cloak"

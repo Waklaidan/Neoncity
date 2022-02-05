@@ -204,11 +204,11 @@
 			"rarity": "rare"
 		},
 		{
-			"id": "CMO",
-			"name": "Chief Medical Officer",
-			"desc": "Head of the medical department, the CMO is expected to maintain the standards of his underlings.",
+			"id": "MD",
+			"name": "Medical Director",
+			"desc": "Head of the medical department, the MD is expected to maintain the standards of his underlings.",
 			"rules": "If a Medical faction card on your side of the field would gain power or resolve from an event, equipment, or card effect, it gains +1 more.",
-			"icon_state": "cmo",
+			"icon_state": "md",
 			"power": "4",
 			"resolve": "5",
 			"faction": "Medical",
@@ -218,11 +218,11 @@
 			"rarity": "common"
 		},
 		{
-			"id": "cmo_suit",
+			"id": "md_suit",
 			"name": "DeForest Medical Corporation 'Lifesaver' Carapace",
 			"desc": "An advanced voidsuit designed for emergency medical personnel. Features include a built-in medical HUD and advanced medical gauntlets.",
 			"rules": "Tap this card: tap the equipped creature and re-equip 'DeForest Medical Corporation 'Lifesaver' Carapace' on a different creature on your side of the field. This effect may be activated once per turn.",
-			"icon_state": "cmo_hardsuit",
+			"icon_state": "md_hardsuit",
 			"power": "1",
 			"resolve": "3",
 			"faction": "Medical",
@@ -920,7 +920,7 @@
 		{
 			"id": "runtime",
 			"name": "Runtime",
-			"desc": "Runtime is the CMO's personal feline companion, and is well known for her laziness. It's said that opening a tin of tuna anywhere on the station will bring her running.",
+			"desc": "Runtime is the MD's personal feline companion, and is well known for her laziness. It's said that opening a tin of tuna anywhere on the station will bring her running.",
 			"rules": "You may sacrifice this card: reduce the cost of summoning a medical faction card this turn by 2 mana.",
 			"icon_state": "runtime",
 			"power": "0",

@@ -76,10 +76,10 @@
 	icon_state = "album_blue"
 	persistence_id = "Captain"
 
-/obj/item/storage/photo_album/cmo
-	name = "photo album (Chief Medical Officer)"
+/obj/item/storage/photo_album/md
+	name = "photo album (Medical Director)"
 	icon_state = "album_blue"
-	persistence_id = "CMO"
+	persistence_id = "MD"
 
 /obj/item/storage/photo_album/qm
 	name = "photo album (Quartermaster)"

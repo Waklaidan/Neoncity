@@ -99,6 +99,8 @@
 "ks" = (
 /obj/structure/flora/rock/icy,
 /obj/effect/mob_spawn/corpse/human/civilian,
+/obj/structure/flora/rock/icy,
+/obj/effect/mob_spawn/corpse/human/civilian,
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "kY" = (
@@ -108,6 +110,11 @@
 "la" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
 /obj/effect/mob_spawn/corpse/human/civilian,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/mob_spawn/corpse/human/civilian,
+/mob/living/simple_animal/hostile/skeleton/eskimo{
+	name = "Village Hunter"
+	},
 /mob/living/simple_animal/hostile/skeleton/eskimo{
 	name = "Village Hunter"
 	},

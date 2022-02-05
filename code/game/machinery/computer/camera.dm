@@ -323,8 +323,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/security/telescreen/entertai
 	desc = "Used for watching the engine, telecommunications and the minisat."
 	network = list("engine", "singularity", "tcomms", "minisat")
 
-/obj/machinery/computer/security/telescreen/cmo
-	name = "\improper Chief Medical Officer's telescreen"
+/obj/machinery/computer/security/telescreen/md
+	name = "\improper Medical Director's telescreen"
 	desc = "A telescreen with access to the medbay's camera network."
 	network = list("medbay")
 

@@ -88,7 +88,7 @@
 			desc = "[initial(desc)] Looks like it's been used up."
 	return TRUE
 
-/obj/item/autosurgeon/organ/cmo
+/obj/item/autosurgeon/organ/md
 	desc = "A single use autosurgeon that contains a medical heads-up display augment. A screwdriver can be used to remove it, but implants can't be placed back in."
 	uses = 1
 	starting_organ = /obj/item/organ/cyberimp/eyes/hud/medical

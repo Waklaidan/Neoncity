@@ -2,11 +2,11 @@
 	title = JOB_PARAMEDIC
 	description = "Run around the station looking for patients, respond to \
 		emergencies, give patients a roller bed ride to medbay."
-	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
+	department_head = list(JOB_MEDICAL_DIRECTOR)
 	faction = FACTION_STATION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the chief medical officer"
+	supervisors = "the medical director"
 	selection_color = "#ffeef0"
 	exp_granted_type = EXP_TYPE_CREW
 

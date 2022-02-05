@@ -221,11 +221,11 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/heads/ce
 
-/obj/item/radio/headset/heads/cmo
-	name = "\proper the chief medical officer's headset"
+/obj/item/radio/headset/heads/md
+	name = "\proper the medical director's headset"
 	desc = "The headset of the highly trained medical chief."
 	icon_state = "com_headset"
-	keyslot = new /obj/item/encryptionkey/heads/cmo
+	keyslot = new /obj/item/encryptionkey/heads/md
 
 /obj/item/radio/headset/heads/hop
 	name = "\proper the head of personnel's headset"

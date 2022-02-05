@@ -752,7 +752,7 @@
 
 /obj/structure/sign/poster/official/moth_meth
 	name = "Safety Moth - Methamphetamine"
-	desc = "This informational poster uses Safety Moth™ to tell the viewer to seek CMO approval before cooking methamphetamine. \"Stay close to the target temperature, and never go over!\" ...You shouldn't ever be making this."
+	desc = "This informational poster uses Safety Moth™ to tell the viewer to seek MD approval before cooking methamphetamine. \"Stay close to the target temperature, and never go over!\" ...You shouldn't ever be making this."
 	icon_state = "aspev_meth"
 
 /obj/structure/sign/poster/official/moth_epi

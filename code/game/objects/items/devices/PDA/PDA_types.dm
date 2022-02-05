@@ -138,9 +138,9 @@
 	greyscale_config = /datum/greyscale_config/pda/stripe_thick/head
 	greyscale_colors = "#C4A56D#69DBF3#e2e2e2"
 
-/obj/item/pda/heads/cmo
-	name = "chief medical officer PDA"
-	default_cartridge = /obj/item/cartridge/cmo
+/obj/item/pda/heads/md
+	name = "medical director PDA"
+	default_cartridge = /obj/item/cartridge/md
 	greyscale_config = /datum/greyscale_config/pda/stripe_thick/head
 	greyscale_colors = "#e2e2e2#000099#5d99be"
 

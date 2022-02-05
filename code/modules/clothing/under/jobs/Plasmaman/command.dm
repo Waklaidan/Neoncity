@@ -29,11 +29,11 @@
 	inhand_icon_state = "ce_envirosuit"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 95, ACID = 95)
 
-/obj/item/clothing/under/plasmaman/chief_medical_officer
-	name = "chief medical officer's plasma envirosuit"
-	desc = "It's an envirosuit worn by those with the experience to be \"Chief Medical Officer\"."
-	icon_state = "cmo_envirosuit"
-	inhand_icon_state = "cmo_envirosuit"
+/obj/item/clothing/under/plasmaman/medical_director
+	name = "medical director's plasma envirosuit"
+	desc = "It's an envirosuit worn by those with the experience to be \"Medical Director\"."
+	icon_state = "md_envirosuit"
+	inhand_icon_state = "md_envirosuit"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 95, ACID = 95)
 
 /obj/item/clothing/under/plasmaman/research_director

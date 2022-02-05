@@ -2,11 +2,11 @@
 	title = JOB_VIROLOGIST
 	description = "Study the effects of various diseases and synthesize a \
 		vaccine for them. Engineer beneficial viruses."
-	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
+	department_head = list(JOB_MEDICAL_DIRECTOR)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the chief medical officer"
+	supervisors = "the medical director"
 	selection_color = "#ffeef0"
 	exp_requirements = 60
 	exp_required_type = EXP_TYPE_CREW

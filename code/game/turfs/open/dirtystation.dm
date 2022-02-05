@@ -115,7 +115,7 @@
 
 		//Medical areas. Mostly clean by space-OSHA standards, but has some blood and oil spread about.
 	var/static/list/medical_dirt_areas = typecacheof(list(/area/medical,
-														/area/command/heads_quarters/cmo))
+														/area/command/heads_quarters/md))
 	if(is_type_in_typecache(A, medical_dirt_areas))
 		if(prob(66))
 			if(prob(5))
