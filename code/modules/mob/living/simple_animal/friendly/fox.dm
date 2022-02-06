@@ -35,10 +35,10 @@
 	. = ..()
 	AddElement(/datum/element/pet_bonus, "pants and yaps happily!")
 
-//Captain fox
+//Mayor fox
 /mob/living/simple_animal/pet/fox/renault
 	name = "Renault"
-	desc = "Renault, the Captain's trustworthy fox."
+	desc = "Renault, the Mayor's trustworthy fox."
 	gender = FEMALE
 	gold_core_spawnable = NO_SPAWN
 	unique_pet = TRUE

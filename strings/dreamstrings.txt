@@ -12,7 +12,7 @@
 %A% %ADJECTIVE% monkey
 %A% %ADJECTIVE% loved one
 %A% %ADJECTIVE% monster
-the %ADJECTIVE% captain
+the %ADJECTIVE% mayor
 %A% %ADJECTIVE% hat
 %A% %ADJECTIVE% ID card
 %A% %ADJECTIVE% bottle

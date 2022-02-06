@@ -1,8 +1,8 @@
-/obj/item/clothing/under/plasmaman/captain
-	name = "captain's plasma envirosuit"
-	desc = "It's a blue envirosuit with some gold markings denoting the rank of \"Captain\"."
-	icon_state = "captain_envirosuit"
-	inhand_icon_state = "captain_envirosuit"
+/obj/item/clothing/under/plasmaman/mayor
+	name = "mayor's plasma envirosuit"
+	desc = "It's a blue envirosuit with some gold markings denoting the rank of \"Mayor\"."
+	icon_state = "mayor_envirosuit"
+	inhand_icon_state = "mayor_envirosuit"
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 95, ACID = 95, WOUND = 15)

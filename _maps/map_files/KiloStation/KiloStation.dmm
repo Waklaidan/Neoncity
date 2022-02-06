@@ -21296,12 +21296,12 @@
 "coG" = (
 /obj/structure/bed/dogbed/renault,
 /obj/machinery/button/door/directional/south{
-	id = "captain_escape";
+	id = "mayor_escape";
 	name = "Tactical Relocation Toggle"
 	},
 /mob/living/simple_animal/pet/fox/renault,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "coH" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -27157,7 +27157,7 @@
 /area/engineering/supermatter/room)
 "dws" = (
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "dwU" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -34753,9 +34753,9 @@
 	color = "#596479";
 	dir = 1
 	},
-/obj/effect/landmark/start/captain,
+/obj/effect/landmark/start/mayor,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "gps" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -36181,7 +36181,7 @@
 /obj/item/pinpointer/nuke,
 /obj/item/disk/nuclear/fake,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "gRl" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -36838,7 +36838,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "hck" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/bot,
@@ -37983,10 +37983,10 @@
 	},
 /obj/item/folder/blue,
 /obj/item/melee/chainofcommand,
-/obj/item/toy/figure/captain,
+/obj/item/toy/figure/mayor,
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "hAH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -38542,10 +38542,10 @@
 /turf/open/floor/iron/dark,
 /area/service/bar/atrium)
 "hMr" = (
-/obj/structure/displaycase/captain,
+/obj/structure/displaycase/mayor,
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "hMH" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -40437,7 +40437,7 @@
 "iyc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "iyi" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -43831,7 +43831,7 @@
 /obj/item/storage/fancy/donut_box,
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "jEI" = (
 /obj/machinery/camera/directional/west{
 	c_tag = "Prison Recreation";
@@ -45613,14 +45613,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/command{
-	name = "Captain's Office";
+	name = "Mayor's Office";
 	req_access_txt = "20"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "klb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
@@ -46745,7 +46745,7 @@
 /obj/structure/cable,
 /obj/machinery/holopad/secure,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "kFf" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 8
@@ -50725,7 +50725,7 @@
 	pixel_y = 3
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "maq" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -50738,7 +50738,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "maF" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -51385,7 +51385,7 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "mmm" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -51773,7 +51773,7 @@
 	dir = 6
 	},
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "msw" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 8
@@ -52986,12 +52986,12 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/structure/plaque/static_plaque/golden/captain{
+/obj/structure/plaque/static_plaque/golden/mayor{
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "mNE" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/techstorage/medical_all,
@@ -53877,10 +53877,10 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/captains,
+/obj/structure/closet/secure_closet/mayors,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "nfw" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -55359,7 +55359,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "nMI" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -58435,7 +58435,7 @@
 "oTg" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/camera/directional/north{
-	c_tag = "Captain's Office";
+	c_tag = "Mayor's Office";
 	name = "command camera"
 	},
 /obj/structure/chair/comfy/brown{
@@ -58444,7 +58444,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "oTh" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt,
@@ -59479,7 +59479,7 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "pls" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -60068,7 +60068,7 @@
 /obj/structure/mirror/directional/west,
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "pvi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/directional/east,
@@ -60211,7 +60211,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "pxE" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/tile/neutral{
@@ -60656,7 +60656,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "pEB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -61757,7 +61757,7 @@
 /obj/machinery/status_display/evac/directional/north,
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "qax" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -63010,14 +63010,14 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/command{
-	name = "Captain's Tactical Relocation";
+	name = "Mayor's Tactical Relocation";
 	req_access_txt = "20"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "qAu" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -66052,7 +66052,7 @@
 /obj/machinery/light/directional/east,
 /obj/item/storage/secure/safe/directional/east,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "rDe" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -66577,7 +66577,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "rJU" = (
 /turf/closed/wall/rust,
 /area/engineering/atmos)
@@ -66875,7 +66875,7 @@
 /area/engineering/atmos)
 "rPt" = (
 /turf/closed/wall/r_wall/rust,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "rPu" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/caution/stand_clear,
@@ -67001,7 +67001,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "rSO" = (
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
@@ -70059,7 +70059,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "taM" = (
 /obj/machinery/nuclearbomb/selfdestruct,
 /turf/open/floor/circuit/green{
@@ -70632,7 +70632,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/fore)
 "tnh" = (
-/obj/machinery/suit_storage_unit/captain,
+/obj/machinery/suit_storage_unit/mayor,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -70642,7 +70642,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "tnC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -71508,7 +71508,7 @@
 /area/medical/surgery)
 "tEb" = (
 /turf/closed/wall/r_wall,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "tEd" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -72278,12 +72278,12 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/caution/stand_clear,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "captain_escape";
+	id = "mayor_escape";
 	name = "Tactical Relocation Shutter"
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "tRp" = (
 /turf/closed/wall/r_wall/rust,
 /area/engineering/supermatter/room)
@@ -72327,15 +72327,15 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/obj/item/stamp/captain{
+/obj/item/stamp/mayor{
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/item/pen/fountain/captain,
+/obj/item/pen/fountain/mayor,
 /obj/item/radio/intercom/directional/south,
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "tSu" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -75477,7 +75477,7 @@
 "vgz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "vgH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/mix_output{
 	dir = 1
@@ -78380,7 +78380,7 @@
 	dir = 8
 	},
 /obj/structure/table/wood,
-/obj/item/storage/photo_album/captain,
+/obj/item/storage/photo_album/mayor,
 /obj/machinery/newscaster/security_unit/directional/east,
 /obj/item/disk/nuclear{
 	pixel_x = 4;
@@ -78388,7 +78388,7 @@
 	},
 /obj/item/camera,
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "wlV" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -79253,7 +79253,7 @@
 "wCe" = (
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "wCg" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/engineering/glass{
@@ -79407,7 +79407,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "wEY" = (
 /turf/closed/wall/rust,
 /area/commons/locker)
@@ -79885,7 +79885,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
 /obj/machinery/camera/directional/west{
-	c_tag = "Captain's Tactical Relocation";
+	c_tag = "Mayor's Tactical Relocation";
 	name = "command camera"
 	},
 /turf/open/floor/plating,
@@ -80324,7 +80324,7 @@
 "wUj" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/door/airlock/command{
-	name = "Captain's Office";
+	name = "Mayor's Office";
 	req_access_txt = "20"
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -80334,7 +80334,7 @@
 	cycle_id = "bridge-passthrough"
 	},
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "wUq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -80770,7 +80770,7 @@
 /obj/machinery/computer/security/wooden_tv,
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblue,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "xbr" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -81180,12 +81180,12 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/requests_console/directional/south{
 	announcementConsole = 1;
-	department = "Captain's Desk";
+	department = "Mayor's Desk";
 	departmentType = 5;
-	name = "Captain's Requests Console"
+	name = "Mayor's Requests Console"
 	},
 /turf/open/floor/iron/dark,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "xmd" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/neutral,
@@ -82576,10 +82576,10 @@
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/ai)
 "xIB" = (
-/obj/effect/landmark/start/captain,
+/obj/effect/landmark/start/mayor,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/command/heads_quarters/captain)
+/area/command/heads_quarters/mayor)
 "xIH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,

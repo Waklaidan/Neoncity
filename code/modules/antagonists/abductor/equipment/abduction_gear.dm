@@ -167,7 +167,7 @@
 	icon_state = "gizmo_scan"
 	inhand_icon_state = "silencer"
 	var/mode = GIZMO_SCAN
-	var/datum/weakref/marked_target 
+	var/datum/weakref/marked_target
 	var/obj/machinery/abductor/console/console
 
 /obj/item/abductor/gizmo/attack_self(mob/user)
@@ -642,7 +642,7 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 	icon = 'icons/obj/abductor.dmi'
 	icon_state = "abductor_headset"
 	inhand_icon_state = "abductor_headset"
-	keyslot2 = new /obj/item/encryptionkey/heads/captain
+	keyslot2 = new /obj/item/encryptionkey/heads/mayor
 
 /obj/item/radio/headset/abductor/Initialize(mapload)
 	. = ..()

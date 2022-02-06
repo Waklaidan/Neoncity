@@ -4,8 +4,7 @@
 	name = "station charter"
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "scroll2"
-	desc = "An official document entrusting the governance of the station \
-		and surrounding space to the Captain."
+	desc = "An official document entrusting the governance of the area to the Mayor."
 	var/used = FALSE
 	var/name_type = "station"
 
@@ -83,12 +82,12 @@
 
 /obj/item/station_charter/proc/rename_station(designation, uname, ureal_name, ukey)
 	set_station_name(designation)
-	minor_announce("[ureal_name] has designated your station as [html_decode(station_name())]", "Captain's Charter") //decode station_name to avoid minor_announce double encode
+	minor_announce("[ureal_name] has designated your station as [html_decode(station_name())]", "Mayor's Charter") //decode station_name to avoid minor_announce double encode
 	log_game("[ukey] has renamed the station as [station_name()].")
 
 	name = "station charter for [station_name()]"
 	desc = "An official document entrusting the governance of \
-		[station_name()] and surrounding space to Captain [uname]."
+		[station_name()] and surrounding space to Mayor [uname]."
 	SSblackbox.record_feedback("text", "station_renames", 1, "[station_name()]")
 	if(!unlimited_uses)
 		used = TRUE
@@ -112,10 +111,10 @@
 
 /obj/item/station_charter/banner/rename_station(designation, uname, ureal_name, ukey)
 	set_station_name(designation)
-	minor_announce("[ureal_name] has designated the [name_type] as [html_decode(station_name())]", "Captain's Banner") //decode station_name to avoid minor_announce double encode
+	minor_announce("[ureal_name] has designated the [name_type] as [html_decode(station_name())]", "Mayor's Banner") //decode station_name to avoid minor_announce double encode
 	log_game("[ukey] has renamed the [name_type] as [station_name()].")
 	name = "banner of [station_name()]"
-	desc = "The banner bears the official coat of arms of Nanotrasen, signifying that [station_name()] has been claimed by Captain [uname] in the name of the company."
+	desc = "The banner bears the official coat of arms of Nanotrasen, signifying that [station_name()] has been claimed by Mayor [uname] in the name of the company."
 	SSblackbox.record_feedback("text", "station_renames", 1, "[station_name()]")
 	if(!unlimited_uses)
 		used = TRUE

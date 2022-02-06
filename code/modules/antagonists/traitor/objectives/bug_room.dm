@@ -24,7 +24,7 @@
 		JOB_MEDICAL_DIRECTOR = /area/command/heads_quarters/md,
 		JOB_CHIEF_ENGINEER = /area/command/heads_quarters/ce,
 		JOB_HEAD_OF_PERSONNEL = /area/command/heads_quarters/hop,
-		JOB_CAPTAIN = /area/command/heads_quarters/captain, // For head roles so that they can still get this objective.
+		JOB_MAYOR = /area/command/heads_quarters/mayor, // For head roles so that they can still get this objective.
 	)
 	var/datum/job/target_office
 	var/requires_head_as_supervisor = TRUE
@@ -35,7 +35,7 @@
 	progression_minimum = 10 MINUTES
 	progression_maximum = 40 MINUTES
 	applicable_heads = list(
-		JOB_CAPTAIN = /area/command/heads_quarters/captain,
+		JOB_MAYOR = /area/command/heads_quarters/mayor,
 	)
 	progression_reward = list(5 MINUTES, 10 MINUTES)
 	telecrystal_reward = list(1, 2)

@@ -39,28 +39,28 @@
 		return
 	step_towards(L, get_step(L, direction))
 
-//Captain
+//Mayor
 /obj/item/clothing/head/caphat
-	name = "captain's hat"
+	name = "mayor's hat"
 	desc = "It's good being the king."
-	icon_state = "captain"
+	icon_state = "mayor"
 	inhand_icon_state = "that"
 	flags_inv = 0
 	armor = list(MELEE = 25, BULLET = 15, LASER = 25, ENERGY = 35, BOMB = 25, BIO = 0, FIRE = 50, ACID = 50, WOUND = 5)
 	strip_delay = 60
-	dog_fashion = /datum/dog_fashion/head/captain
+	dog_fashion = /datum/dog_fashion/head/mayor
 
-//Captain: This is no longer space-worthy
+//Mayor: This is no longer space-worthy
 /obj/item/clothing/head/caphat/parade
-	name = "captain's parade cap"
-	desc = "Worn only by Captains with an abundance of class."
+	name = "mayor's parade cap"
+	desc = "Worn only by Mayors with an abundance of class."
 	icon_state = "capcap"
 
 	dog_fashion = null
 
 /obj/item/clothing/head/caphat/beret
-	name = "captain's beret"
-	desc = "For the Captains known for their sense of fashion."
+	name = "mayor's beret"
+	desc = "For the Mayors known for their sense of fashion."
 	icon_state = "beret_badge"
 	greyscale_config = /datum/greyscale_config/beret_badge
 	greyscale_config_worn = /datum/greyscale_config/beret_badge/worn

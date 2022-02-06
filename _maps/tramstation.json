@@ -25,7 +25,7 @@
 		"cook": {
 			"additional_cqc_areas": ["/area/service/kitchen/diner"]
 		},
-		"captain": {
+		"mayor": {
 			"special_charter": "asteroid"
 		}
 	}

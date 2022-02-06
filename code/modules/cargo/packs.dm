@@ -2142,7 +2142,7 @@
 	name = "Fox Crate"
 	desc = "The fox goes...? Comes with a collar!"//what does the fox say
 	cost = CARGO_CRATE_VALUE * 10
-	access_view = ACCESS_CAPTAIN
+	access_view = ACCESS_MAYOR
 	contains = list(/mob/living/simple_animal/pet/fox,
 					/obj/item/clothing/neck/petcollar)
 	crate_name = "fox crate"
@@ -2204,7 +2204,7 @@
 	contains = list(/obj/item/clothing/head/collectable/chef,
 					/obj/item/clothing/head/collectable/paper,
 					/obj/item/clothing/head/collectable/tophat,
-					/obj/item/clothing/head/collectable/captain,
+					/obj/item/clothing/head/collectable/mayor,
 					/obj/item/clothing/head/collectable/beret,
 					/obj/item/clothing/head/collectable/welding,
 					/obj/item/clothing/head/collectable/flatcap,

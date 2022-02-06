@@ -782,7 +782,7 @@
 /obj/item/card/id/advanced/update_overlays()
 	. = ..()
 
-	if(registered_name && registered_name != "Captain")
+	if(registered_name && registered_name != "Mayor")
 		. += mutable_appearance(icon, assigned_icon_state)
 
 	var/trim_icon_file = trim_icon_override ? trim_icon_override : trim?.trim_icon
@@ -828,16 +828,16 @@
 	inhand_icon_state = "gold_id"
 	wildcard_slots = WILDCARD_LIMIT_GOLD
 
-/obj/item/card/id/advanced/gold/captains_spare
-	name = "captain's spare ID"
+/obj/item/card/id/advanced/gold/mayors_spare
+	name = "mayor's spare ID"
 	desc = "The spare ID of the High Lord himself."
-	registered_name = "Captain"
-	trim = /datum/id_trim/job/captain
+	registered_name = "Mayor"
+	trim = /datum/id_trim/job/mayor
 	registered_age = null
 
-/obj/item/card/id/advanced/gold/captains_spare/update_label() //so it doesn't change to Captain's ID card (Captain) on a sneeze
-	if(registered_name == "Captain")
-		name = "[initial(name)][(!assignment || assignment == "Captain") ? "" : " ([assignment])"]"
+/obj/item/card/id/advanced/gold/mayors_spare/update_label() //so it doesn't change to Mayor's ID card (Mayor) on a sneeze
+	if(registered_name == "Mayor")
+		name = "[initial(name)][(!assignment || assignment == "Mayor") ? "" : " ([assignment])"]"
 		update_appearance(UPDATE_ICON)
 	else
 		..()
@@ -927,12 +927,12 @@
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare
 	name = "syndicate captain's spare ID"
 	desc = "The spare ID of the Dark Lord himself."
-	registered_name = "Captain"
+	registered_name = "captain"
 	registered_age = null
 
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare/update_label()
-	if(registered_name == "Captain")
-		name = "[initial(name)][(!assignment || assignment == "Captain") ? "" : " ([assignment])"]"
+	if(registered_name == "captain")
+		name = "[initial(name)][(!assignment || assignment == "captain") ? "" : " ([assignment])"]"
 		update_appearance(UPDATE_ICON)
 		return
 

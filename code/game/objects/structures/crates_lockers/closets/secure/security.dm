@@ -1,25 +1,25 @@
-/obj/structure/closet/secure_closet/captains
-	name = "\proper captain's locker"
-	req_access = list(ACCESS_CAPTAIN)
+/obj/structure/closet/secure_closet/mayors
+	name = "\proper mayor's locker"
+	req_access = list(ACCESS_MAYOR)
 	icon_state = "cap"
 
-/obj/structure/closet/secure_closet/captains/PopulateContents()
+/obj/structure/closet/secure_closet/mayors/PopulateContents()
 	..()
 
-	new /obj/item/storage/backpack/captain(src)
-	new /obj/item/storage/backpack/satchel/cap(src)
-	new /obj/item/storage/backpack/duffelbag/captain(src)
+	new /obj/item/storage/backpack/mayor(src)
+	new /obj/item/storage/backpack/satchel/mayor(src)
+	new /obj/item/storage/backpack/duffelbag/mayor(src)
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)
-	new /obj/item/storage/bag/garment/captain(src)
-	new /obj/item/cartridge/captain(src)
+	new /obj/item/storage/bag/garment/mayor(src)
+	new /obj/item/cartridge/mayor(src)
 	new /obj/item/storage/box/silver_ids(src)
-	new /obj/item/radio/headset/heads/captain/alt(src)
-	new /obj/item/radio/headset/heads/captain(src)
+	new /obj/item/radio/headset/heads/mayor/alt(src)
+	new /obj/item/radio/headset/heads/mayor(src)
 	new /obj/item/storage/belt/sabre(src)
 	new /obj/item/gun/energy/e_gun(src)
-	new /obj/item/door_remote/captain(src)
-	new /obj/item/storage/photo_album/captain(src)
+	new /obj/item/door_remote/mayor(src)
+	new /obj/item/storage/photo_album/mayor(src)
 
 /obj/structure/closet/secure_closet/hop
 	name = "\proper head of personnel's locker"

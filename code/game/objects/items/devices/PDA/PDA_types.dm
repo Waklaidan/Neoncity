@@ -151,14 +151,14 @@
 	greyscale_config = /datum/greyscale_config/pda/stripe_thick/head
 	greyscale_colors = "#e2e2e2#000099#9F5CA5"
 
-/obj/item/pda/captain
-	name = "captain PDA"
-	default_cartridge = /obj/item/cartridge/captain
-	insert_type = /obj/item/pen/fountain/captain
-	greyscale_config = /datum/greyscale_config/pda/captain
+/obj/item/pda/mayor
+	name = "mayor PDA"
+	default_cartridge = /obj/item/cartridge/mayor
+	insert_type = /obj/item/pen/fountain/mayor
+	greyscale_config = /datum/greyscale_config/pda/mayor
 	greyscale_colors = "#2C7CB2#FF0000#FFFFFF#F5D67B"
 
-/obj/item/pda/captain/Initialize(mapload)
+/obj/item/pda/mayor/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_PDA_CHECK_DETONATE, .proc/pda_no_detonate)
 

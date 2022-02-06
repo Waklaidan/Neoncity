@@ -94,8 +94,8 @@
 	time = 30
 	category = CAT_PRIMAL
 
-/obj/item/pen/fountain/captain
-	name = "captain's fountain pen"
+/obj/item/pen/fountain/mayor
+	name = "mayor's fountain pen"
 	desc = "It's an expensive Oak fountain pen. The nib is quite sharp."
 	icon_state = "pen-fountain-o"
 	force = 5
@@ -113,11 +113,11 @@
 						)
 	embedding = list("embed_chance" = 75)
 
-/obj/item/pen/fountain/captain/Initialize(mapload)
+/obj/item/pen/fountain/mayor/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, 200, 115) //the pen is mightier than the sword
 
-/obj/item/pen/fountain/captain/reskin_obj(mob/M)
+/obj/item/pen/fountain/mayor/reskin_obj(mob/M)
 	..()
 	if(current_skin)
 		desc = "It's an expensive [current_skin] fountain pen. The nib is quite sharp."
@@ -135,7 +135,7 @@
 	SEND_SIGNAL(src, COMSIG_PEN_ROTATED, deg, user)
 
 /obj/item/pen/attack(mob/living/M, mob/user, params)
-	if(force) // If the pen has a force value, call the normal attack procs. Used for e-daggers and captain's pen mostly.
+	if(force) // If the pen has a force value, call the normal attack procs. Used for e-daggers and mayor's pen mostly.
 		return ..()
 	if(!M.try_inject(user, injection_flags = INJECT_TRY_SHOW_ERROR_MESSAGE))
 		return FALSE

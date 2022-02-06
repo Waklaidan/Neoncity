@@ -113,10 +113,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/noticeboard, 32)
 
 // Notice boards for the heads of staff (plus the qm)
 
-/obj/structure/noticeboard/captain
-	name = "Captain's Notice Board"
-	desc = "Important notices from the Captain."
-	req_access = list(ACCESS_CAPTAIN)
+/obj/structure/noticeboard/mayor
+	name = "Mayor's Notice Board"
+	desc = "Important notices from the Mayor."
+	req_access = list(ACCESS_MAYOR)
 
 /obj/structure/noticeboard/hop
 	name = "Head of Personnel's Notice Board"

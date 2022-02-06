@@ -2,13 +2,13 @@
 	title = JOB_MEDICAL_DIRECTOR
 	description = "Coordinate doctors and other medbay employees, ensure they \
 		know how to save lives, check for injuries on the crew monitor."
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	head_announce = list(RADIO_CHANNEL_MEDICAL)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the mayor"
 	selection_color = "#ffddf0"
 	req_admin_notify = 1
 	minimal_player_age = 7
@@ -45,8 +45,8 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 
 
-/datum/job/medical_director/get_captaincy_announcement(mob/living/captain)
-	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
+/datum/job/medical_director/get_mayordom_announcement(mob/living/mayor)
+	return "Due to staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
 /datum/outfit/job/md

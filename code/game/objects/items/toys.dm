@@ -1,7 +1,7 @@
 /* Toys!
  * Contains
  * Balloons
- * Captain's Aid
+ * Mayor's Aid
  * Fake singularity
  * Toy gun
  * Toy swords
@@ -184,15 +184,15 @@
 #undef BALLOON_COLORS
 
 /*
-* Captain's Aid
+* Mayor's Aid
 */
-#define CAPTAINSAID_MODE_OFF 1
+#define MAYORSAID_MODE_OFF 1
 
-/obj/item/toy/captainsaid
-	name = "\improper Captain's Aid"
-	desc = "Every captain's greatest ally when exploring the vast emptiness of space, now with a color display!"
+/obj/item/toy/mayorsaid
+	name = "\improper Mayor's Aid"
+	desc = "Every mayor's greatest ally when exploring the vast emptiness of space, now with a color display!"
 	icon = 'icons/obj/toy.dmi'
-	icon_state = "captainsaid_off"
+	icon_state = "mayorsaid_off"
 	/// List of modes it can cycle through
 	var/list/modes = list(
 		"off",
@@ -202,28 +202,28 @@
 		"aft",
 	)
 	/// Current mode of the item, changed when cycling through modes
-	var/current_mode = CAPTAINSAID_MODE_OFF
+	var/current_mode = MAYORSAID_MODE_OFF
 
-/obj/item/toy/captainsaid/examine_more(mob/user)
+/obj/item/toy/mayorsaid/examine_more(mob/user)
 	. = ..()
 	. += span_notice("You could swear you've been hearing advertisments for the 'soon upcoming' release of a tablet version for the better part of 3 years...")
 
-/obj/item/toy/captainsaid/attack_self(mob/living/user)
+/obj/item/toy/mayorsaid/attack_self(mob/living/user)
 	current_mode++
 	playsound(src, 'sound/items/screwdriver2.ogg', 50, vary = TRUE)
 	if (current_mode <= modes.len)
 		balloon_alert(user, "set to [current_mode]")
 	else
 		balloon_alert(user, "turned off")
-		current_mode = CAPTAINSAID_MODE_OFF
-	icon_state = "captainsaid_[modes[current_mode]]"
+		current_mode = MAYORSAID_MODE_OFF
+	icon_state = "mayorsaid_[modes[current_mode]]"
 	update_appearance(UPDATE_ICON)
 
-#undef CAPTAINSAID_MODE_OFF
+#undef MAYORSAID_MODE_OFF
 
-/obj/item/toy/captainsaid/collector
-	name = "\improper Collector's Edition Captain's Aid"
-	desc = "A copy of the first run of Captain's Aid ever released. Functionally the same as the later batches, just more expensive. For the truly aristocratic."
+/obj/item/toy/mayorsaid/collector
+	name = "\improper Collector's Edition Mayor's Aid"
+	desc = "A copy of the first run of Mayor's Aid ever released. Functionally the same as the later batches, just more expensive. For the truly aristocratic."
 
 /*
  * Fake singularity
@@ -1428,9 +1428,9 @@
 	icon_state = "botanist"
 	toysay = "Blaze it!"
 
-/obj/item/toy/figure/captain
-	name = "\improper Captain action figure"
-	icon_state = "captain"
+/obj/item/toy/figure/mayor
+	name = "\improper Mayor action figure"
+	icon_state = "mayor"
 	toysay = "Any heads of staff?"
 
 /obj/item/toy/figure/cargotech
@@ -1519,9 +1519,9 @@
 	icon_state = "curator"
 	toysay = "One day while..."
 
-/obj/item/toy/figure/md
+/obj/item/toy/figure/doc
 	name = "\improper Medical Doctor action figure"
-	icon_state = "md"
+	icon_state = "doc"
 	toysay = "The patient is already dead!"
 
 /obj/item/toy/figure/paramedic

@@ -34,23 +34,23 @@ SUBSYSTEM_DEF(job)
 	var/list/dynamic_forced_occupations
 
 	/// A list of all jobs associated with the station. These jobs also have various icons associated with them including sechud and card trims.
-	var/list/station_jobs
+	var/list/station_jobs = list()
 	/// A list of all Head of Staff jobs.
-	var/list/head_of_staff_jobs
+	var/list/head_of_staff_jobs = list()
 	/// A list of additional jobs that have various icons associated with them including sechud and card trims.
-	var/list/additional_jobs_with_icons
+	var/list/additional_jobs_with_icons = list()
 	/// A list of jobs associed with Centcom and should use the standard NT Centcom icons.
-	var/list/centcom_jobs
+	var/list/centcom_jobs = list()
 
 	/**
 	 * Keys should be assigned job roles. Values should be >= 1.
 	 * Represents the chain of command on the station. Lower numbers mean higher priority.
 	 * Used to give the Cap's Spare safe code to a an appropriate player.
-	 * Assumed Captain is always the highest in the chain of command.
+	 * Assumed Mayor is always the highest in the chain of command.
 	 * See [/datum/controller/subsystem/ticker/proc/equip_characters]
 	 */
 	var/list/chain_of_command = list(
-		JOB_CAPTAIN = 1,
+		JOB_MAYOR = 1,
 		JOB_HEAD_OF_PERSONNEL = 2,
 		JOB_RESEARCH_DIRECTOR = 3,
 		JOB_CHIEF_ENGINEER = 4,
@@ -59,9 +59,9 @@ SUBSYSTEM_DEF(job)
 		JOB_QUARTERMASTER = 7,
 	)
 
-	/// If TRUE, some player has been assigned Captaincy or Acting Captaincy at some point during the shift and has been given the spare ID safe code.
-	var/assigned_captain = FALSE
-	/// Whether the emergency safe code has been requested via a comms console on shifts with no Captain or Acting Captain.
+	/// If TRUE, some player has been assigned Mayordom or Acting Mayor at some point during the shift and has been given the spare ID safe code.
+	var/assigned_mayor = FALSE
+	/// Whether the emergency safe code has been requested via a comms console on shifts with no Mayor or Acting Mayor.
 	var/safe_code_requested = FALSE
 	/// Timer ID for the emergency safe code request.
 	var/safe_code_timer_id
@@ -792,7 +792,7 @@ SUBSYSTEM_DEF(job)
 /// Builds various lists of jobs based on station, centcom and additional jobs with icons associated with them.
 /datum/controller/subsystem/job/proc/setup_job_lists()
 	station_jobs = list(
-		JOB_CIVILIAN, JOB_CAPTAIN, JOB_HEAD_OF_PERSONNEL, JOB_BARTENDER, JOB_BOTANIST,
+		JOB_CIVILIAN, JOB_MAYOR, JOB_HEAD_OF_PERSONNEL, JOB_BARTENDER, JOB_BOTANIST,
 		JOB_COOK, JOB_JANITOR, JOB_CLOWN, JOB_MIME, JOB_CURATOR, JOB_LAWYER, JOB_CHAPLAIN,
 		JOB_PSYCHOLOGIST, JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN,
 		JOB_QUARTERMASTER, JOB_CARGO_TECHNICIAN, JOB_SHAFT_MINER, JOB_MEDICAL_DIRECTOR,
@@ -802,7 +802,7 @@ SUBSYSTEM_DEF(job)
 	)
 
 	head_of_staff_jobs = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_RESEARCH_DIRECTOR,
@@ -831,31 +831,31 @@ SUBSYSTEM_DEF(job)
 
 /obj/item/paper/fluff/spare_id_safe_code
 	name = "Nanotrasen-Approved Spare ID Safe Code"
-	desc = "Proof that you have been approved for Captaincy, with all its glory and all its horror."
+	desc = "Proof that you have been approved for Mayordom, with all its glory and all its horror."
 
 /obj/item/paper/fluff/spare_id_safe_code/Initialize(mapload)
 	. = ..()
 	var/safe_code = SSid_access.spare_id_safe_code
 
-	info = "Captain's Spare ID safe code combination: [safe_code ? safe_code : "\[REDACTED\]"]<br><br>The spare ID can be found in its dedicated safe on the bridge.<br><br>If your job would not ordinarily have Head of Staff access, your ID card has been specially modified to possess it."
+	info = "Mayor's Spare ID safe code combination: [safe_code ? safe_code : "\[REDACTED\]"]<br><br>The spare ID can be found in its dedicated safe on the bridge.<br><br>If your job would not ordinarily have Head of Staff access, your ID card has been specially modified to possess it."
 	update_appearance()
 
 /obj/item/paper/fluff/emergency_spare_id_safe_code
 	name = "Emergency Spare ID Safe Code Requisition"
-	desc = "Proof that nobody has been approved for Captaincy. A skeleton key for a skeleton shift."
+	desc = "Proof that nobody has been approved for Mayordom. A skeleton key for a skeleton shift."
 
 /obj/item/paper/fluff/emergency_spare_id_safe_code/Initialize(mapload)
 	. = ..()
 	var/safe_code = SSid_access.spare_id_safe_code
 
-	info = "Captain's Spare ID safe code combination: [safe_code ? safe_code : "\[REDACTED\]"]<br><br>The spare ID can be found in its dedicated safe on the bridge."
+	info = "Mayor's Spare ID safe code combination: [safe_code ? safe_code : "\[REDACTED\]"]<br><br>The spare ID can be found in its dedicated safe on the bridge."
 	update_appearance()
 
-/datum/controller/subsystem/job/proc/promote_to_captain(mob/living/carbon/human/new_captain, acting_captain = FALSE)
+/datum/controller/subsystem/job/proc/promote_to_mayor(mob/living/carbon/human/new_mayor, acting_mayor = FALSE)
 	var/id_safe_code = SSid_access.spare_id_safe_code
 
 	if(!id_safe_code)
-		CRASH("Cannot promote [new_captain.real_name] to Captain, there is no id_safe_code.")
+		CRASH("Cannot promote [new_mayor.real_name] to Mayor, there is no id_safe_code.")
 
 	var/paper = new /obj/item/paper/fluff/spare_id_safe_code()
 	var/list/slots = list(
@@ -864,21 +864,21 @@ SUBSYSTEM_DEF(job)
 		LOCATION_BACKPACK = ITEM_SLOT_BACKPACK,
 		LOCATION_HANDS = ITEM_SLOT_HANDS
 	)
-	var/where = new_captain.equip_in_one_of_slots(paper, slots, FALSE) || "at your feet"
+	var/where = new_mayor.equip_in_one_of_slots(paper, slots, FALSE) || "at your feet"
 
-	if(acting_captain)
-		to_chat(new_captain, span_notice("Due to your position in the chain of command, you have been promoted to Acting Captain. You can find in important note about this [where]."))
+	if(acting_mayor)
+		to_chat(new_mayor, span_notice("Due to your position in the chain of command, you have been promoted to Acting Mayor. You can find in important note about this [where]."))
 	else
-		to_chat(new_captain, span_notice("You can find the code to obtain your spare ID from the secure safe on the Bridge [where]."))
+		to_chat(new_mayor, span_notice("You can find the code to obtain your spare ID from the secure safe on the Bridge [where]."))
 
 	// Force-give their ID card bridge access.
-	var/obj/item/id_slot = new_captain.get_item_by_slot(ITEM_SLOT_ID)
+	var/obj/item/id_slot = new_mayor.get_item_by_slot(ITEM_SLOT_ID)
 	if(id_slot)
 		var/obj/item/card/id/id_card = id_slot.GetID()
 		if(!(ACCESS_HEADS in id_card.access))
 			id_card.add_wildcards(list(ACCESS_HEADS), mode=FORCE_ADD_ALL)
 
-	assigned_captain = TRUE
+	assigned_mayor = TRUE
 
 /// Send a drop pod containing a piece of paper with the spare ID safe code to loc
 /datum/controller/subsystem/job/proc/send_spare_id_safe_code(loc)

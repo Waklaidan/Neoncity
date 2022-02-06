@@ -35,7 +35,7 @@
 	icon_state = "hellgun"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hellfire)
 
-/obj/item/gun/energy/laser/captain
+/obj/item/gun/energy/laser/mayor
 	name = "antique laser gun"
 	icon_state = "caplaser"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -47,7 +47,7 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hellfire/antique)
 
-/obj/item/gun/energy/laser/captain/scattershot
+/obj/item/gun/energy/laser/mayor/scattershot
 	name = "scatter shot laser rifle"
 	icon_state = "lasercannon"
 	w_class = WEIGHT_CLASS_BULKY

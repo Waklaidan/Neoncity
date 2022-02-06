@@ -547,7 +547,7 @@
 "bL" = (
 /obj/structure/bed,
 /obj/item/bedsheet/nanotrasen,
-/obj/item/clothing/suit/hooded/wintercoat/captain{
+/obj/item/clothing/suit/hooded/wintercoat/mayor{
 	name = "manager's winter coat"
 	},
 /turf/open/floor/wood,

@@ -60,14 +60,14 @@
 	helmet_type = /obj/item/clothing/head/helmet/space/eva
 	mask_type = /obj/item/clothing/mask/breath
 
-/obj/machinery/suit_storage_unit/captain
-	mask_type = /obj/item/clothing/mask/gas/atmos/captain
-	storage_type = /obj/item/tank/jetpack/oxygen/captain
+/obj/machinery/suit_storage_unit/mayor
+	mask_type = /obj/item/clothing/mask/gas/atmos/mayor
+	storage_type = /obj/item/tank/jetpack/oxygen/mayor
 	mod_type = /obj/item/mod/control/pre_equipped/magnate
 
 /obj/machinery/suit_storage_unit/centcom
 	mask_type = /obj/item/clothing/mask/gas/atmos/centcom
-	storage_type = /obj/item/tank/jetpack/oxygen/captain
+	storage_type = /obj/item/tank/jetpack/oxygen/mayor
 	mod_type = /obj/item/mod/control/pre_equipped/corporate
 
 /obj/machinery/suit_storage_unit/engine

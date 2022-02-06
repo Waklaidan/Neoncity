@@ -14,7 +14,7 @@ const Human: Species = {
       icon: "bullhorn",
       name: "Chain of Command",
       description: "Nanotrasen only recognizes humans for command roles, such \
-        as Captain.",
+        as Mayor.",
     }],
     neutral: [],
     bad: [],

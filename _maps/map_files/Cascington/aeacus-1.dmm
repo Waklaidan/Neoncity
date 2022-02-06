@@ -81,7 +81,7 @@
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "as" = (
-/obj/item/toy/figure/captain,
+/obj/item/toy/figure/mayor,
 /obj/structure/toilet,
 /obj/structure/sign/poster/contraband/rebels_unite{
 	pixel_y = 32
@@ -4234,7 +4234,7 @@
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "nE" = (
-/obj/structure/closet/secure_closet/captains,
+/obj/structure/closet/secure_closet/mayors,
 /turf/open/floor/wood,
 /area/city/outdoors)
 "nF" = (
@@ -4379,8 +4379,8 @@
 /area/city/outdoors)
 "nY" = (
 /obj/structure/bed,
-/obj/item/bedsheet/captain,
-/obj/effect/landmark/start/captain,
+/obj/item/bedsheet/mayor,
+/obj/effect/landmark/start/mayor,
 /obj/item/storage/secure/safe{
 	pixel_x = 6;
 	pixel_y = 28
@@ -11551,7 +11551,7 @@
 /area/city/outdoors)
 "HT" = (
 /obj/structure/chair/comfy/brown,
-/obj/effect/landmark/start/captain,
+/obj/effect/landmark/start/mayor,
 /turf/open/floor/wood,
 /area/city/outdoors)
 "HU" = (
@@ -11560,11 +11560,11 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/obj/item/stamp/captain{
+/obj/item/stamp/mayor{
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/item/pen/fountain/captain,
+/obj/item/pen/fountain/mayor,
 /obj/structure/table/wood,
 /obj/structure/window/reinforced,
 /turf/open/floor/wood,
@@ -13927,7 +13927,7 @@
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "Os" = (
-/obj/machinery/suit_storage_unit/captain,
+/obj/machinery/suit_storage_unit/mayor,
 /turf/open/floor/wood,
 /area/city/outdoors)
 "Ou" = (
@@ -14414,7 +14414,7 @@
 /area/city/outdoors)
 "PM" = (
 /obj/machinery/door/airlock/command{
-	name = "Captain's Quarters";
+	name = "Mayor's Quarters";
 	req_access_txt = "20"
 	},
 /turf/open/floor/wood,
@@ -15450,7 +15450,7 @@
 "Sr" = (
 /obj/machinery/door/airlock/command{
 	dir = 4;
-	name = "Captain's Office";
+	name = "Mayor's Office";
 	req_access_txt = "20"
 	},
 /turf/open/floor/iron/color/light/orange,

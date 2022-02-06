@@ -180,10 +180,10 @@
 	icon_state = "brown"
 	inhand_icon_state = "browngloves"
 
-/obj/item/clothing/gloves/color/captain
+/obj/item/clothing/gloves/color/mayor
 	desc = "Regal blue gloves, with a nice gold trim, a diamond anti-shock coating, and an integrated thermal barrier. Swanky."
-	name = "captain's gloves"
-	icon_state = "captain"
+	name = "mayor's gloves"
+	icon_state = "mayor"
 	inhand_icon_state = "egloves"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05

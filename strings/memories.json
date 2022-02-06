@@ -339,7 +339,7 @@
 	"won_revolution_starts":[
 		"%PROTAGONIST raising the flag of the revolution over the corpses of the former dictators",
 		"a flag waving above a pile of corpses with %PROTAGONIST standing over it",
-		"a statue of the former captain toppled over, with %PROTAGONIST next to it",
+		"a statue of the former mayor toppled over, with %PROTAGONIST next to it",
 		"a poster that says %STATION_NAME with a cross in it, hailing in a new era"
 	],
 	"won_revolution_moods":[

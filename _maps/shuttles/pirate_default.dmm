@@ -1045,7 +1045,7 @@
 "zw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/door/airlock{
-	name = "Captain's Quarters"
+	name = "Mayor's Quarters"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/airlock/cutaiwire,

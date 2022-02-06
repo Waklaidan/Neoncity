@@ -148,8 +148,8 @@
 
 /datum/gang_theme/wild_wasteland
 	name = "Wild, Wild Wasteland"
-	description = "Hey everybody, this is Three Dog, your friendly neighborhood disc jockey on 207.7! Today we got a shoutout to our man, the Captain on the Nanotrasen station in SSC territory! \
-	Our generous donator wanted us to say that, ahem, *crinkles paper*, 'Tunnel Snakes Rule'? Whatever that means, I'm sure it means a lot to the good captain! And now, we resume our \
+	description = "Hey everybody, this is Three Dog, your friendly neighborhood disc jockey on 207.7! Today we got a shoutout to our man, the Mayor on the Nanotrasen station in SSC territory! \
+	Our generous donator wanted us to say that, ahem, *crinkles paper*, 'Tunnel Snakes Rule'? Whatever that means, I'm sure it means a lot to the good mayor! And now, we resume our \
 	10 hour marathon of Johnny Guitar, on repeat!"
 	involved_gangs = list(/datum/antagonist/gang/tmc, /datum/antagonist/gang/pg, /datum/antagonist/gang/tunnel_snakes)
 	gang_objectives = list(
@@ -226,17 +226,17 @@
 
 		/datum/antagonist/gang/saints = "Thank you for volunteering within the organization for the Saints Flow Recovery Project! \
 		This station is currently illegally in possession of a data disk containing the secret recipe for Saints Flow. \
-		It has been disguised as the nuclear authentication disk and entrusted to the Captain. Your objective is simple. \
+		It has been disguised as the nuclear authentication disk and entrusted to the Mayor. Your objective is simple. \
 		Get that fucking disk. You have been provided with a Pinpointer to assist in this task.",
 
 		/datum/antagonist/gang/morningstar = "Greetings, agent. Welcome to the Garment Recovery Task Force. \
 		This station is currently illegally in possession of a data disk containing as of yet unreleased clothing patterns. \
-		It has been disguised as the nuclear authentication disk and entrusted to the Captain. Your objective is simple. \
+		It has been disguised as the nuclear authentication disk and entrusted to the Mayor. Your objective is simple. \
 		Get that fucking disk. You have been provided with a Pinpointer to assist in this task.",
 
 		/datum/antagonist/gang/yakuza = "Congratulations on your promotion! Welcome to the Evidence Recovery Squad. \
 		This station is currently illegally in possession of a data disk containing compromising evidence of the Boss. \
-		It has been disguised as the nuclear authentication disk and entrusted to the Captain. Your objective is simple. \
+		It has been disguised as the nuclear authentication disk and entrusted to the Mayor. Your objective is simple. \
 		Get that fucking disk. You have been provided with a Pinpointer to assist in this task.",
 	)
 

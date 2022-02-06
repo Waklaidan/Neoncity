@@ -185,7 +185,7 @@
 	antag_flag = ROLE_SLEEPER_AGENT
 	antag_flag_override = ROLE_TRAITOR
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
@@ -269,7 +269,7 @@
 	restricted_roles = list(
 		JOB_AI,
 		JOB_CYBORG,
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_RESEARCH_DIRECTOR,
@@ -399,7 +399,7 @@
 	antag_flag = ROLE_WIZARD_MIDROUND
 	antag_flag_override = ROLE_WIZARD
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -438,7 +438,7 @@
 	enemy_roles = list(
 		JOB_AI,
 		JOB_CYBORG,
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -485,7 +485,7 @@
 	antag_datum = /datum/antagonist/blob
 	antag_flag = ROLE_BLOB
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -508,7 +508,7 @@
 	antag_flag = ROLE_BLOB_INFECTION
 	antag_flag_override = ROLE_BLOB
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_PRISONER,
@@ -521,7 +521,7 @@
 		ROLE_POSITRONIC_BRAIN,
 	)
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -564,7 +564,7 @@
 	antag_datum = /datum/antagonist/xeno
 	antag_flag = ROLE_ALIEN
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -616,7 +616,7 @@
 	antag_flag = ROLE_NIGHTMARE
 	antag_flag_override = ROLE_ALIEN
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -667,7 +667,7 @@
 	antag_flag = ROLE_SPACE_DRAGON
 	antag_flag_override = ROLE_SPACE_DRAGON
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -716,7 +716,7 @@
 	antag_datum = /datum/antagonist/abductor
 	antag_flag = ROLE_ABDUCTOR
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -759,7 +759,7 @@
 	antag_datum = /datum/antagonist/ninja
 	antag_flag = ROLE_NINJA
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -803,7 +803,7 @@
 	antag_flag = ROLE_SPIDER
 	required_type = /mob/dead/observer
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -826,7 +826,7 @@
 	antag_datum = /datum/antagonist/revenant
 	antag_flag = ROLE_REVENANT
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -896,7 +896,7 @@
 	antag_flag = "Space Pirates"
 	required_type = /mob/dead/observer
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -928,7 +928,7 @@
 		ROLE_POSITRONIC_BRAIN,
 	)
 	enemy_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -969,7 +969,7 @@
 	antag_flag = ROLE_OPPORTUNIST
 	antag_flag_override = ROLE_THIEF
 	protected_roles = list(
-		JOB_CAPTAIN,
+		JOB_MAYOR,
 		JOB_DETECTIVE,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,

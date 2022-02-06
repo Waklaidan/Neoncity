@@ -50,7 +50,7 @@
 	if(visualsOnly)
 		return
 	var/obj/item/radio/R = H.ears
-	R.keyslot = new /obj/item/encryptionkey/heads/captain
+	R.keyslot = new /obj/item/encryptionkey/heads/mayor
 	R.recalculateChannels()
 
 /datum/outfit/centcom/ert/commander/alert
@@ -565,7 +565,7 @@
 	if(visualsOnly)
 		return
 	var/obj/item/radio/headset = equipper.ears
-	headset.keyslot = new /obj/item/encryptionkey/heads/captain
+	headset.keyslot = new /obj/item/encryptionkey/heads/mayor
 	headset.recalculateChannels()
 
 /datum/outfit/centcom/ert/marine/security

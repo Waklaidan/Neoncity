@@ -102,6 +102,9 @@
 	/// List of family heirlooms this job can get with the family heirloom quirk. List of types.
 	var/list/family_heirlooms
 
+	/// All values = (JOB_STATION_JOB | JOB_HEAD_JOB)
+	var/job_type_flags = NONE
+
 	/// All values = (JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_BOLD_SELECT_TEXT | JOB_ASSIGN_QUIRKS)
 	var/job_flags = NONE
 
@@ -201,7 +204,7 @@
 
 /datum/job/proc/announce_head(mob/living/carbon/human/H, channels) //tells the given channel that the given mob is the new department head. See communications.dm for valid channels.
 	if(H && GLOB.announcement_systems.len)
-		//timer because these should come after the captain announcement
+		//timer because these should come after the mayor announcement
 		SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/_addtimer, CALLBACK(pick(GLOB.announcement_systems), /obj/machinery/announcement_system/proc/announce, "NEWHEAD", H.real_name, H.job, channels), 1))
 
 //If the configuration option is set to require players to be logged as old enough to play certain jobs, then this proc checks that they are, otherwise it just returns 1
@@ -345,8 +348,8 @@
 	return
 
 
-/datum/job/proc/get_captaincy_announcement(mob/living/captain)
-	return "Due to extreme staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
+/datum/job/proc/get_mayordom_announcement(mob/living/mayor)
+	return "Due to extreme staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
 /// Returns an atom where the mob should spawn in.

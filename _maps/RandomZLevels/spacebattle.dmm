@@ -2001,11 +2001,11 @@
 /area/awaymission/spacebattle/cruiser)
 "hJ" = (
 /obj/structure/bed,
-/obj/item/bedsheet/captain,
+/obj/item/bedsheet/mayor,
 /turf/open/floor/wood,
 /area/awaymission/spacebattle/cruiser)
 "hK" = (
-/obj/structure/closet/secure_closet/captains,
+/obj/structure/closet/secure_closet/mayors,
 /turf/open/floor/wood,
 /area/awaymission/spacebattle/cruiser)
 "hL" = (

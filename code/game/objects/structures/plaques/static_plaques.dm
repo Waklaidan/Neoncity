@@ -16,8 +16,8 @@
 	desc = "To be Robust is not an action or a way of life, but a mental state. Only those with the force of Will strong enough to act during a crisis, saving friend from foe, are truly Robust. Stay Robust my friends."
 	icon_state = "goldenplaque"
 
-/obj/structure/plaque/static_plaque/golden/captain
-	name = "The Most Robust Captain Award for Robustness"
+/obj/structure/plaque/static_plaque/golden/mayor
+	name = "The Most Robust Mayor Award for Robustness"
 
 // Commission plaques, to give a little backstory to the stations. Commission dates are date of merge (or best approximation, in the case of Meta) + 540 years to convert to SS13 dates.
 // Where PRs are available, I've linked them. Where they are unavailable, a git hash is provided instead for the direct commit that added/removed the map.

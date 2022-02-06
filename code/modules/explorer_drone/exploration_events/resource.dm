@@ -225,7 +225,7 @@
 	success_log = "Retrieved encryption keys from derelict satellite"
 	delay_message = "Hacking..."
 	action_text = "Hack lock"
-	loot_type = /obj/item/encryptionkey/heads/captain
+	loot_type = /obj/item/encryptionkey/heads/mayor
 
 /datum/exploration_event/simple/resource/welded_locker
 	name = "welded locker"

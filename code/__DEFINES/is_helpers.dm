@@ -247,7 +247,7 @@ GLOBAL_LIST_INIT(book_types, typecacheof(list(
 #define is_job(job_type)  (istype(job_type, /datum/job))
 #define is_civilian_job(job_type) (istype(job_type, /datum/job/civilian))
 #define is_bartender_job(job_type) (istype(job_type, /datum/job/bartender))
-#define is_captain_job(job_type) (istype(job_type, /datum/job/captain))
+#define is_mayor_job(job_type) (istype(job_type, /datum/job/mayor))
 #define is_chaplain_job(job_type) (istype(job_type, /datum/job/chaplain))
 #define is_clown_job(job_type) (istype(job_type, /datum/job/clown))
 #define is_detective_job(job_type) (istype(job_type, /datum/job/detective))

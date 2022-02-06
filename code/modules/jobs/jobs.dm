@@ -38,7 +38,7 @@ GLOBAL_PROTECT(exp_specialmap)
 			return job.department_head //this is a list
 
 /proc/get_full_job_name(job)
-	var/static/regex/cap_expand = new("cap(?!tain)")
+	var/static/regex/cap_expand = new("may(?!or)")
 	var/static/regex/md_expand = new("md")
 	var/static/regex/hos_expand = new("hos")
 	var/static/regex/hop_expand = new("hop")
@@ -54,7 +54,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	var/static/regex/borg_expand = new("(?<!cy)borg")
 
 	job = lowertext(job)
-	job = cap_expand.Replace(job, "captain")
+	job = cap_expand.Replace(job, "mayor")
 	job = md_expand.Replace(job, "medical director")
 	job = hos_expand.Replace(job, "head of security")
 	job = hop_expand.Replace(job, "head of personnel")

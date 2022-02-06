@@ -92,7 +92,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
-	req_access = list(ACCESS_CAPTAIN)
+	req_access = list(ACCESS_MAYOR)
 	icon_locked = "medalbox+l"
 	icon_closed = "medalbox"
 	icon_broken = "medalbox+b"
@@ -118,7 +118,7 @@
 		..()
 
 /obj/item/storage/lockbox/medal/PopulateContents()
-	new /obj/item/clothing/accessory/medal/gold/captain(src)
+	new /obj/item/clothing/accessory/medal/gold/mayor(src)
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
 	new /obj/item/clothing/accessory/medal/silver/security(src)

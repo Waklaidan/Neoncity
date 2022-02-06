@@ -54,17 +54,17 @@
 /// Trim for various Centcom corpses.
 /datum/id_trim/centcom/corpse/bridge_officer
 	assignment = "Bridge Officer"
-	access = list(ACCESS_CENT_CAPTAIN)
+	access = list(ACCESS_CENT_MAYOR)
 
 /// Trim for various Centcom corpses.
 /datum/id_trim/centcom/corpse/commander
 	assignment = "Commander"
-	access = list(ACCESS_CENT_CAPTAIN, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE)
+	access = list(ACCESS_CENT_MAYOR, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE)
 
 /// Trim for various Centcom corpses.
 /datum/id_trim/centcom/corpse/private_security
 	assignment = "Private Security Force"
-	access = list(ACCESS_CENT_CAPTAIN, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE, ACCESS_SECURITY, ACCESS_MECH_SECURITY)
+	access = list(ACCESS_CENT_MAYOR, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE, ACCESS_SECURITY, ACCESS_MECH_SECURITY)
 
 /// Trim for various Centcom corpses.
 /datum/id_trim/centcom/corpse/private_security/tradepost_officer
@@ -73,7 +73,7 @@
 /// Trim for various Centcom corpses.
 /datum/id_trim/centcom/corpse/assault
 	assignment = "Nanotrasen Assault Force"
-	access = list(ACCESS_CENT_CAPTAIN, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE, ACCESS_SECURITY, ACCESS_MECH_SECURITY)
+	access = list(ACCESS_CENT_MAYOR, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE, ACCESS_SECURITY, ACCESS_MECH_SECURITY)
 
 /// Trim for various various ruins.
 /datum/id_trim/engioutpost
@@ -99,7 +99,7 @@
 /// Trim for the pirate captain.
 /datum/id_trim/pirate/captain
 	assignment = "Pirate Captain"
-	trim_state = "trim_captain"
+	trim_state = "trim_mayor"
 
 /// Trim for the pirate captain.
 /datum/id_trim/pirate/captain/silverscale

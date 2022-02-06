@@ -66,7 +66,7 @@
 /obj/item/soap/deluxe
 	desc = "A deluxe Waffle Co. brand bar of soap. Smells of high-class luxury."
 	icon_state = "soapdeluxe"
-	cleanspeed = 20 //captain gets one of these
+	cleanspeed = 20 //mayor gets one of these
 
 /obj/item/soap/syndie
 	desc = "An untrustworthy bar of soap made of strong chemical agents that dissolve blood faster."

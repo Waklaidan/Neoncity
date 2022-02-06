@@ -4,8 +4,8 @@
 @use '../colors.scss';
 
 $department_map: (
-  'Assistant': colors.$grey,
-  'Captain': colors.fg(colors.$blue),
+  'Civilian': colors.$grey,
+  'Mayor': colors.fg(colors.$blue),
   'Cargo': colors.$brown,
   'Command': colors.$yellow,
   'Security': colors.$red,
@@ -155,7 +155,7 @@ $department_map: (
           }
         }
 
-        &--Captain {
+        &--Mayor {
           border: 3px solid rgba(200, 200, 0, 1);
 
           &:first-child {

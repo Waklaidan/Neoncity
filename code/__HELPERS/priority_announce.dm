@@ -12,17 +12,11 @@
 		announcement += "<h1 class='alert'>Priority Announcement</h1>"
 		if (title && length(title) > 0)
 			announcement += "<br><h2 class='alert'>[html_encode(title)]</h2>"
-	else if(type == "Captain")
-		announcement += "<h1 class='alert'>Captain Announces</h1>"
-		GLOB.news_network.SubmitArticle(html_encode(text), "Captain's Announcement", "Station Announcements", null)
-	else if(type == "Syndicate Captain")
-		announcement += "<h1 class='alert'>Syndicate Captain Announces</h1>"
+		announcement += "<h1 class='alert'>Mayor Announces</h1>"
+		GLOB.news_network.SubmitArticle(html_encode(text), "Mayor's Announcement", "Council Announcements", null)
+	else if(type == "Syndicate Mayor")
+		announcement += "<h1 class='alert'>Syndicate Mayor Announces</h1>"
 
-	else
-		if(!sender_override)
-			announcement += "<h1 class='alert'>[command_name()] Update</h1>"
-		else
-			announcement += "<h1 class='alert'>[sender_override]</h1>"
 		if (title && length(title) > 0)
 			announcement += "<br><h2 class='alert'>[html_encode(title)]</h2>"
 
@@ -60,7 +54,7 @@
 /proc/call_emergency_meeting(mob/living/user, area/button_zone)
 	var/meeting_sound = sound('sound/misc/emergency_meeting.ogg')
 	var/announcement
-	announcement += "<h1 class='alert'>Captain Alert</h1>"
+	announcement += "<h1 class='alert'>Mayor Alert</h1>"
 	announcement += "<br>[span_alert("[user] has called an Emergency Meeting!")]<br><br>"
 
 	for(var/mob/mob_to_teleport in GLOB.player_list) //gotta make sure the whole crew's here!

@@ -177,19 +177,19 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/heads
 	command = TRUE
 
-/obj/item/radio/headset/heads/captain
-	name = "\proper the captain's headset"
+/obj/item/radio/headset/heads/mayor
+	name = "\proper the mayor's headset"
 	desc = "The headset of the king."
 	icon_state = "com_headset"
-	keyslot = new /obj/item/encryptionkey/heads/captain
+	keyslot = new /obj/item/encryptionkey/heads/mayor
 
-/obj/item/radio/headset/heads/captain/alt
-	name = "\proper the captain's bowman headset"
+/obj/item/radio/headset/heads/mayor/alt
+	name = "\proper the mayor's bowman headset"
 	desc = "The headset of the boss. Protects ears from flashbangs."
 	icon_state = "com_headset_alt"
 	inhand_icon_state = "com_headset_alt"
 
-/obj/item/radio/headset/heads/captain/alt/ComponentInitialize()
+/obj/item/radio/headset/heads/mayor/alt/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
@@ -229,7 +229,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/heads/hop
 	name = "\proper the head of personnel's headset"
-	desc = "The headset of the guy who will one day be captain."
+	desc = "The headset of the guy who will one day be mayor."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/heads/hop
 
@@ -263,7 +263,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot2 = null
 
 /obj/item/radio/headset/headset_cent/commander
-	keyslot = new /obj/item/encryptionkey/heads/captain
+	keyslot = new /obj/item/encryptionkey/heads/mayor
 
 /obj/item/radio/headset/headset_cent/alt
 	name = "\improper CentCom bowman headset"

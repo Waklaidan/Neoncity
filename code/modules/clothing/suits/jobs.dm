@@ -21,10 +21,10 @@
 	body_parts_covered = CHEST|GROIN|LEGS
 	permeability_coefficient = 0.5
 
-//Captain
+//Mayor
 /obj/item/clothing/suit/captunic
-	name = "captain's parade tunic"
-	desc = "Worn by a Captain to show their class."
+	name = "mayor's parade tunic"
+	desc = "Worn by a Mayor to show their class."
 	icon_state = "captunic"
 	inhand_icon_state = "bio_suit"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS

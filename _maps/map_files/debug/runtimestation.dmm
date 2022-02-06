@@ -287,7 +287,7 @@
 /turf/open/floor/iron,
 /area/engineering/main)
 "bf" = (
-/obj/machinery/suit_storage_unit/captain,
+/obj/machinery/suit_storage_unit/mayor,
 /turf/open/floor/iron,
 /area/engineering/main)
 "bg" = (
@@ -459,7 +459,7 @@
 	pixel_y = -6
 	},
 /obj/item/card/id/advanced/chameleon,
-/obj/item/card/id/advanced/gold/captains_spare{
+/obj/item/card/id/advanced/gold/mayors_spare{
 	pixel_x = -6;
 	pixel_y = 6
 	},
@@ -1920,7 +1920,7 @@
 /area/construction)
 "gz" = (
 /obj/structure/table,
-/obj/item/card/id/advanced/gold/captains_spare,
+/obj/item/card/id/advanced/gold/mayors_spare,
 /obj/machinery/keycard_auth/directional/north,
 /turf/open/floor/iron,
 /area/hallway/secondary/exit/departure_lounge)
@@ -2366,7 +2366,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/captains{
+/obj/structure/closet/secure_closet/mayors{
 	locked = 0
 	},
 /turf/open/floor/iron,

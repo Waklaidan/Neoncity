@@ -1067,7 +1067,7 @@
 /obj/machinery/status_display/evac{
 	pixel_y = 32
 	},
-/obj/structure/plaque/static_plaque/golden/captain{
+/obj/structure/plaque/static_plaque/golden/mayor{
 	pixel_x = 32
 	},
 /obj/item/gun/energy/laser/retro,
@@ -1422,7 +1422,7 @@
 "cI" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/airlock/shuttle{
-	name = "NTMS-037 Captain's Quarters"
+	name = "NTMS-037 Mayor's Quarters"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -1438,7 +1438,7 @@
 /area/shuttle/abandoned/crew)
 "cK" = (
 /obj/structure/bed,
-/obj/item/bedsheet/captain,
+/obj/item/bedsheet/mayor,
 /turf/open/floor/wood,
 /area/shuttle/abandoned/crew)
 "cL" = (

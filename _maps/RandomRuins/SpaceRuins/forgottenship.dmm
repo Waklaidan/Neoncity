@@ -467,12 +467,12 @@
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bx" = (
 /obj/machinery/door/airlock/grunge{
-	name = "Captain's room";
+	name = "Mayor's room";
 	req_one_access_txt = "150"
 	},
 /obj/machinery/door/poddoor{
 	id = "fscaproom";
-	name = "Captain's blast door";
+	name = "Mayor's blast door";
 	state_open = 1
 	},
 /turf/open/floor/carpet/royalblack,
@@ -708,12 +708,12 @@
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "ch" = (
 /obj/machinery/door/airlock/grunge{
-	name = "Captain's room";
+	name = "Mayor's room";
 	req_one_access_txt = "150"
 	},
 /obj/machinery/door/poddoor{
 	id = "fscaproom";
-	name = "Captain's blast door";
+	name = "Mayor's blast door";
 	state_open = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,

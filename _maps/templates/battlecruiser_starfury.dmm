@@ -3092,7 +3092,7 @@
 /area/shuttle/sbc_starfury)
 "ii" = (
 /obj/machinery/door/airlock{
-	name = "Captain's Quarters";
+	name = "Mayor's Quarters";
 	req_access_txt = "151"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3203,7 +3203,7 @@
 /obj/structure/closet/secure_closet{
 	anchored = 1;
 	icon_state = "hos";
-	name = "Captain's Locker";
+	name = "Mayor's Locker";
 	req_access_txt = "151"
 	},
 /obj/item/storage/lockbox/medal{
