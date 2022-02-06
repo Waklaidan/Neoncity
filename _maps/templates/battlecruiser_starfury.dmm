@@ -3217,7 +3217,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark/corner{
 	dir = 1
 	},
-/obj/item/card/id/advanced/black/syndicate_command/mayor_id/syndie_spare,
+/obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare,
 /obj/item/clothing/head/hos/syndicate,
 /obj/item/clothing/head/hos/beret/syndicate,
 /obj/item/clothing/under/syndicate/skirt,
@@ -3318,7 +3318,7 @@
 /turf/open/floor/iron,
 /area/shuttle/sbc_starfury)
 "iE" = (
-/obj/effect/mob_spawn/ghost_role/human/syndicate/battlecruiser/mayor{
+/obj/effect/mob_spawn/ghost_role/human/syndicate/battlecruiser/captain{
 	dir = 4
 	},
 /turf/open/floor/carpet,
