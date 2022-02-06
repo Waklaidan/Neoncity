@@ -177,12 +177,12 @@
 	head = /obj/item/clothing/head/helmet/space/plasmaman/clown
 	mask = /obj/item/clothing/mask/gas/clown_hat/plasmaman
 
-/datum/outfit/plasmaman/captain
-	name = "Captain Plasmaman"
+/datum/outfit/plasmaman/mayor
+	name = "Mayor Plasmaman"
 
-	uniform = /obj/item/clothing/under/plasmaman/captain
-	gloves = /obj/item/clothing/gloves/color/captain //Too iconic to be replaced with a plasma version
-	head = /obj/item/clothing/head/helmet/space/plasmaman/captain
+	uniform = /obj/item/clothing/under/plasmaman/mayor
+	gloves = /obj/item/clothing/gloves/color/mayor //Too iconic to be replaced with a plasma version
+	head = /obj/item/clothing/head/helmet/space/plasmaman/mayor
 
 /datum/outfit/plasmaman/head_of_personnel
 	name = "Head of Personnel Plasmaman"

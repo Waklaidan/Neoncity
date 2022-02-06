@@ -99,8 +99,8 @@
 /obj/item/clothing/under/misc/coordinator
 	name = "coordinator jumpsuit"
 	desc = "A jumpsuit made by party people, from party people, for party people."
-	icon = 'icons/obj/clothing/under/captain.dmi'
-	worn_icon = 'icons/mob/clothing/under/captain.dmi'
-	icon_state = "captain_parade"
+	icon = 'icons/obj/clothing/under/mayor.dmi'
+	worn_icon = 'icons/mob/clothing/under/mayor.dmi'
+	icon_state = "mayor_parade"
 	inhand_icon_state = "by_suit"
 	can_adjust = FALSE

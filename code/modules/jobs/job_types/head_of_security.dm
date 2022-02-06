@@ -3,12 +3,12 @@
 	description = "Coordinate security personnel, ensure they are not corrupt, \
 		make sure every department is protected."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	head_announce = list(RADIO_CHANNEL_SECURITY)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the mayor"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
 	minimal_player_age = 14
@@ -40,8 +40,8 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 
 
-/datum/job/head_of_security/get_captaincy_announcement(mob/living/captain)
-	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
+/datum/job/head_of_security/get_mayordom_announcement(mob/living/mayor)
+	return "Due to staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
 /datum/outfit/job/hos

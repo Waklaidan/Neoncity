@@ -142,7 +142,7 @@ GLOBAL_LIST_INIT(dye_registry, list(
 		DYE_CHAP = /obj/item/bedsheet/chaplain/double,
 		DYE_QM = /obj/item/bedsheet/qm/double,
 		DYE_LAW = /obj/item/bedsheet/black/double,
-		DYE_CAPTAIN = /obj/item/bedsheet/captain/double,
+		DYE_MAYOR = /obj/item/bedsheet/mayor/double,
 		DYE_HOP = /obj/item/bedsheet/hop/double,
 		DYE_HOS = /obj/item/bedsheet/hos/double,
 		DYE_CE = /obj/item/bedsheet/ce/double,

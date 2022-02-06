@@ -116,7 +116,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 
 	possible_items = list(
 		/datum/objective_item/steal/reflector,
-		/datum/objective_item/steal/capmedal,
+		/datum/objective_item/steal/maymedal,
 		/datum/objective_item/steal/hdd_extraction,
 		/datum/objective_item/steal/documents,
 	)
@@ -128,7 +128,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 
 	possible_items = list(
 		/datum/objective_item/steal/hoslaser,
-		/datum/objective_item/steal/caplaser,
+		/datum/objective_item/steal/maylaser,
 		/datum/objective_item/steal/nuke_core,
 		/datum/objective_item/steal/supermatter,
 	)

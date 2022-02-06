@@ -1163,7 +1163,7 @@
 /area/awaymission/caves/bmp_asteroid)
 "el" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/mayor/scattershot,
 /turf/open/floor/wood,
 /area/awaymission/caves/northblock)
 "em" = (
@@ -1354,8 +1354,8 @@
 "fc" = (
 /obj/structure/closet/crate,
 /obj/item/paper/fluff/awaymissions/caves/shipment_receipt,
-/obj/item/gun/energy/laser/captain/scattershot,
-/obj/item/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/mayor/scattershot,
+/obj/item/gun/energy/laser/mayor/scattershot,
 /obj/item/gun/energy/laser,
 /obj/item/grenade/syndieminibomb/concussion,
 /obj/item/grenade/syndieminibomb/concussion,
@@ -1422,7 +1422,7 @@
 	},
 /obj/item/paper/fluff/awaymissions/caves/shipment_receipt,
 /obj/item/organ/eyes/robotic/thermals,
-/obj/item/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/mayor/scattershot,
 /obj/item/slimepotion/fireproof,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
@@ -1464,7 +1464,7 @@
 	},
 /area/awaymission/caves/bmp_asteroid/level_two)
 "fw" = (
-/obj/item/gun/energy/laser/captain/scattershot,
+/obj/item/gun/energy/laser/mayor/scattershot,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},

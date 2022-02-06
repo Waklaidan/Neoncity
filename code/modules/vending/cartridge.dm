@@ -13,7 +13,7 @@
 		/obj/item/cartridge/janitor = 10,
 		/obj/item/cartridge/signal/ordnance = 10,
 		/obj/item/pda/heads = 10,
-		/obj/item/cartridge/captain = 3,
+		/obj/item/cartridge/mayor = 3,
 		/obj/item/cartridge/quartermaster = 10
 	)
 	refill_canister = /obj/item/vending_refill/cart

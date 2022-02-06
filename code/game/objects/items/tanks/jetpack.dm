@@ -187,11 +187,11 @@
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL
 
-/obj/item/tank/jetpack/oxygen/captain
-	name = "captain's jetpack"
+/obj/item/tank/jetpack/oxygen/mayor
+	name = "mayor's jetpack"
 	desc = "A compact, lightweight jetpack containing a high amount of compressed oxygen."
-	icon_state = "jetpack-captain"
-	inhand_icon_state = "jetpack-captain"
+	icon_state = "jetpack-mayor"
+	inhand_icon_state = "jetpack-mayor"
 	w_class = WEIGHT_CLASS_NORMAL
 	volume = 90
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF //steal objective items are hard to destroy.

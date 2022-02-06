@@ -23,7 +23,7 @@
 	name = "\improper Nanotrasen Private Security Commander"
 	uniform = /obj/item/clothing/under/rank/centcom/commander
 	suit = /obj/item/clothing/suit/armor/bulletproof
-	ears = /obj/item/radio/headset/heads/captain
+	ears = /obj/item/radio/headset/heads/mayor
 	glasses = /obj/item/clothing/glasses/eyepatch
 	mask = /obj/item/clothing/mask/cigarette/cigar/cohiba
 	head = /obj/item/clothing/head/centhat

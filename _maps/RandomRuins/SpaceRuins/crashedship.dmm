@@ -759,7 +759,7 @@
 /area/awaymission/bmpship/aft)
 "cY" = (
 /obj/structure/table,
-/obj/item/paper/fluff/ruins/crashedship/captains_log,
+/obj/item/paper/fluff/ruins/crashedship/mayors_log,
 /turf/open/floor/carpet,
 /area/awaymission/bmpship/fore)
 "cZ" = (

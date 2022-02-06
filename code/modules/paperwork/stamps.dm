@@ -27,8 +27,8 @@
 	icon_state = "stamp-law"
 	dye_color = DYE_LAW
 
-/obj/item/stamp/captain
-	name = "captain's rubber stamp"
+/obj/item/stamp/mayor
+	name = "mayor's rubber stamp"
 	icon_state = "stamp-cap"
 	dye_color = DYE_MAYOR
 

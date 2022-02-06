@@ -43,13 +43,13 @@
 	icon_state = "tophat"
 	inhand_icon_state = "that"
 
-/obj/item/clothing/head/collectable/captain
-	name = "collectable captain's hat"
+/obj/item/clothing/head/collectable/mayor
+	name = "collectable mayor's hat"
 	desc = "A collectable hat that'll make you look just like a real comdom!"
-	icon_state = "captain"
+	icon_state = "mayor"
 	inhand_icon_state = "caphat"
 
-	dog_fashion = /datum/dog_fashion/head/captain
+	dog_fashion = /datum/dog_fashion/head/mayor
 
 /obj/item/clothing/head/collectable/police
 	name = "collectable police officer's hat"

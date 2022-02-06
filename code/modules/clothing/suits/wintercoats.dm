@@ -56,23 +56,23 @@
 	icon_state = "hood_centcom"
 	armor = list(MELEE = 35, BULLET = 40, LASER = 40, ENERGY = 50, BOMB = 35, BIO = 10, FIRE = 10, ACID = 60)
 
-// Captain
-/obj/item/clothing/suit/hooded/wintercoat/captain
-	name = "captain's winter coat"
+// Mayor
+/obj/item/clothing/suit/hooded/wintercoat/mayor
+	name = "mayor's winter coat"
 	desc = "A luxurious winter coat, stuffed with the down of the endangered Uka bird and trimmed with genuine sable. The fabric is an indulgently soft micro-fiber, \
 			and the deep ultramarine colour is only one that could be achieved with minute amounts of crystalline bluespace dust woven into the thread between the plectrums. \
 			Extremely lavish, and extremely durable."
-	icon_state = "coatcaptain"
-	inhand_icon_state = "coatcaptain"
+	icon_state = "coatmayor"
+	inhand_icon_state = "coatmayor"
 	armor = list(MELEE = 25, BULLET = 30, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, FIRE = 0, ACID = 50)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/captain
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/mayor
 
-/obj/item/clothing/suit/hooded/wintercoat/captain/Initialize(mapload)
+/obj/item/clothing/suit/hooded/wintercoat/mayor/Initialize(mapload)
 	. = ..()
 	allowed += GLOB.security_wintercoat_allowed
 
-/obj/item/clothing/head/hooded/winterhood/captain
-	icon_state = "hood_captain"
+/obj/item/clothing/head/hooded/winterhood/mayor
+	icon_state = "hood_mayor"
 	armor = list(MELEE = 25, BULLET = 30, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, FIRE = 0, ACID = 50)
 
 // Head of Personnel

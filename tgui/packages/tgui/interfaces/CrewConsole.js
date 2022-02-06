@@ -17,7 +17,7 @@ const jobIsHead = jobId => jobId % 10 === 0;
 
 const jobToColor = jobId => {
   if (jobId === 0) {
-    return COLORS.department.captain;
+    return COLORS.department.mayor;
   }
   if (jobId >= 10 && jobId < 20) {
     return COLORS.department.security;

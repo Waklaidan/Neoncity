@@ -21,7 +21,7 @@
 			/mob/living/simple_animal/pet/dog/corgi/ian,
 			/mob/living/simple_animal/pet/dog/corgi/puppy/ian
 		),
-		JOB_CAPTAIN = /mob/living/simple_animal/pet/fox/renault,
+		JOB_MAYOR = /mob/living/simple_animal/pet/fox/renault,
 		JOB_MEDICAL_DIRECTOR = /mob/living/simple_animal/pet/cat/runtime,
 		JOB_CHIEF_ENGINEER = /mob/living/simple_animal/parrot/poly,
 	)

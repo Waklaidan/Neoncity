@@ -147,11 +147,11 @@
 	icon_state = "securitypack"
 	inhand_icon_state = "securitypack"
 
-/obj/item/storage/backpack/captain
-	name = "captain's backpack"
+/obj/item/storage/backpack/mayor
+	name = "mayor's backpack"
 	desc = "It's a special backpack made exclusively for Nanotrasen officers."
-	icon_state = "captainpack"
-	inhand_icon_state = "captainpack"
+	icon_state = "mayorpack"
+	inhand_icon_state = "mayorpack"
 
 /obj/item/storage/backpack/industrial
 	name = "industrial backpack"
@@ -299,7 +299,7 @@
 	inhand_icon_state = "satchel-explorer"
 
 /obj/item/storage/backpack/satchel/cap
-	name = "captain's satchel"
+	name = "mayor's satchel"
 	desc = "An exclusive satchel for Nanotrasen officers."
 	icon_state = "satchel-cap"
 	inhand_icon_state = "satchel-cap"
@@ -366,11 +366,11 @@
 	var/add_dropdel = TRUE //clarified boolean
 	AddComponent(/datum/component/curse_of_hunger, add_dropdel)
 
-/obj/item/storage/backpack/duffelbag/captain
-	name = "captain's duffel bag"
-	desc = "A large duffel bag for holding extra captainly goods."
-	icon_state = "duffel-captain"
-	inhand_icon_state = "duffel-captain"
+/obj/item/storage/backpack/duffelbag/mayor
+	name = "mayor's duffel bag"
+	desc = "A large duffel bag for holding extra mayorly goods."
+	icon_state = "duffel-mayor"
+	inhand_icon_state = "duffel-mayor"
 
 /obj/item/storage/backpack/duffelbag/med
 	name = "medical duffel bag"

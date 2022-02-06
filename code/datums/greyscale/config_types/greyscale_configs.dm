@@ -116,9 +116,9 @@
 	name = "Chaplain PDA"
 	json_config = 'code/datums/greyscale/json_configs/pda_chaplain.json'
 
-/datum/greyscale_config/pda/captain
-	name = "Captain PDA"
-	json_config = 'code/datums/greyscale/json_configs/pda_captain.json'
+/datum/greyscale_config/pda/mayor
+	name = "Mayor PDA"
+	json_config = 'code/datums/greyscale/json_configs/pda_mayor.json'
 
 /datum/greyscale_config/pda/clown
 	name = "Clown PDA"

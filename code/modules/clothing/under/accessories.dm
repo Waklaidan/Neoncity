@@ -186,7 +186,7 @@
 
 /obj/item/clothing/accessory/medal/conduct
 	name = "distinguished conduct medal"
-	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given by Nanotrasen. It is often awarded by a captain to a member of his crew."
+	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given by Nanotrasen. It is often awarded by a mayor to a member of his crew."
 
 /obj/item/clothing/accessory/medal/bronze_heart
 	name = "bronze heart medal"
@@ -231,7 +231,7 @@
 	icon_state = "gold"
 	medaltype = "medal-gold"
 	custom_materials = list(/datum/material/gold=1000)
-	
+
 /obj/item/clothing/accessory/medal/med_medal
 	name = "exemplary performance medal"
 	desc = "A medal awarded to those who have shown distinguished conduct, performance, and initiative within the medical department."
@@ -244,9 +244,9 @@
 	icon_state = "med_medal2"
 	above_suit = TRUE
 
-/obj/item/clothing/accessory/medal/gold/captain
-	name = "medal of captaincy"
-	desc = "A golden medal awarded exclusively to those promoted to the rank of captain. It signifies the codified responsibilities of a captain to Nanotrasen, and their undisputable authority over their crew."
+/obj/item/clothing/accessory/medal/gold/mayor
+	name = "medal of mayordom"
+	desc = "A golden medal awarded exclusively to those promoted to the rank of mayor. It signifies the codified responsibilities of a mayor to Nanotrasen, and their undisputable authority over their crew."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/accessory/medal/gold/heroism

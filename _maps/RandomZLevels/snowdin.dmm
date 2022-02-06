@@ -2653,7 +2653,7 @@
 /area/awaymission/snowdin/cave/cavern)
 "hG" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/hooded/wintercoat/captain{
+/obj/item/clothing/suit/hooded/wintercoat/mayor{
 	name = "overseer's winter coat"
 	},
 /obj/item/clothing/shoes/winterboots,
@@ -7887,7 +7887,7 @@
 /area/awaymission/snowdin/post/broken_shuttle)
 "we" = (
 /mob/living/simple_animal/hostile/skeleton/ice{
-	name = "Captain Bones"
+	name = "Mayor Bones"
 	},
 /turf/open/floor/plating/asteroid/snow{
 	floor_variance = 0;

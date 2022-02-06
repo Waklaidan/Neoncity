@@ -168,9 +168,9 @@
 /obj/item/clothing/under/rank/centcom_officer : /obj/item/clothing/under/rank/centcom/officer
 /obj/item/clothing/under/rank/centcom_commander : /obj/item/clothing/under/rank/centcom/commander
 
-/obj/item/clothing/under/gimmick/rank/captain/suit : /obj/item/clothing/under/rank/captain/suit
-/obj/item/clothing/under/gimmick/rank/captain/suit/skirt : /obj/item/clothing/under/rank/captain/suit/skirt
-/obj/item/clothing/under/captainparade : /obj/item/clothing/under/rank/captain/parade
+/obj/item/clothing/under/gimmick/rank/mayor/suit : /obj/item/clothing/under/rank/mayor/suit
+/obj/item/clothing/under/gimmick/rank/mayor/suit/skirt : /obj/item/clothing/under/rank/mayor/suit/skirt
+/obj/item/clothing/under/mayorparade : /obj/item/clothing/under/rank/mayor/parade
 
 /obj/item/clothing/under/rank/security : /obj/item/clothing/under/rank/security/officer
 /obj/item/clothing/under/rank/security/grey : /obj/item/clothing/under/rank/security/officer/grey

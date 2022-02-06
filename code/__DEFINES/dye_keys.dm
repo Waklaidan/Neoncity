@@ -21,7 +21,7 @@
 #define DYE_SYNDICATE "syndicate"
 #define DYE_QM "qm"
 #define DYE_LAW "law"
-#define DYE_Mayor "mayor"
+#define DYE_MAYOR "mayor"
 #define DYE_HOP "hop"
 #define DYE_HOS "hos"
 #define DYE_CE "ce"

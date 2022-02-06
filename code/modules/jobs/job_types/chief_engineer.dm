@@ -3,12 +3,12 @@
 	description = "Coordinate engineering, ensure equipment doesn't get stolen, \
 		make sure the Supermatter doesn't blow up, maintain telecommunications."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
-	department_head = list(JOB_CAPTAIN)
+	department_head = list(JOB_MAYOR)
 	head_announce = list("Engineering")
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the mayor"
 	selection_color = "#ffeeaa"
 	req_admin_notify = 1
 	minimal_player_age = 7
@@ -48,8 +48,8 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 
 
-/datum/job/chief_engineer/get_captaincy_announcement(mob/living/captain)
-	return "Due to staffing shortages, newly promoted Acting Captain [captain.real_name] on deck!"
+/datum/job/chief_engineer/get_mayordom_announcement(mob/living/mayor)
+	return "Due to staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
 /datum/outfit/job/ce

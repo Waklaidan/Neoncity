@@ -201,8 +201,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/storage/secure/safe, 32)
  * get access to it.
  */
 /obj/item/storage/secure/safe/caps_spare
-	name = "captain's spare ID safe"
-	desc = "In case of emergency, do not break glass. All Mayors and Acting Captains are provided with codes to access this safe. \
+	name = "mayor's spare ID safe"
+	desc = "In case of emergency, do not break glass. All Mayors and Acting Mayors are provided with codes to access this safe. \
 It is made out of the same material as the station's Black Box and is designed to resist all conventional weaponry. \
 There appears to be a small amount of surface corrosion. It doesn't look like it could withstand much of an explosion."
 	can_hack_open = FALSE
@@ -220,7 +220,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/storage/secure/safe/caps_spare, 32)
 	SEND_SIGNAL(src, COMSIG_TRY_STORAGE_SET_LOCKSTATE, TRUE)
 
 /obj/item/storage/secure/safe/caps_spare/PopulateContents()
-	new /obj/item/card/id/advanced/gold/captains_spare(src)
+	new /obj/item/card/id/advanced/gold/mayors_spare(src)
 
 /obj/item/storage/secure/safe/caps_spare/rust_heretic_act()
 	take_damage(damage_amount = 100, damage_type = BRUTE, damage_flag = MELEE, armour_penetration = 100)

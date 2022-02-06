@@ -6,9 +6,9 @@
 	slot_flags = NONE
 	resistance_flags = FLAMMABLE
 
-/obj/item/storage/bag/garment/captain
-	name = "captain's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the captain."
+/obj/item/storage/bag/garment/mayor
+	name = "mayor's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the mayor."
 
 /obj/item/storage/bag/garment/hos
 	name = "head of security's garment bag"
@@ -42,21 +42,21 @@
 		/obj/item/clothing,
 	))
 
-/obj/item/storage/bag/garment/captain/PopulateContents()
-	new /obj/item/clothing/under/rank/captain(src)
-	new /obj/item/clothing/under/rank/captain/skirt(src)
-	new /obj/item/clothing/under/rank/captain/parade(src)
+/obj/item/storage/bag/garment/mayor/PopulateContents()
+	new /obj/item/clothing/under/rank/mayor(src)
+	new /obj/item/clothing/under/rank/mayor/skirt(src)
+	new /obj/item/clothing/under/rank/mayor/parade(src)
 	new /obj/item/clothing/suit/armor/vest/capcarapace(src)
-	new /obj/item/clothing/suit/armor/vest/capcarapace/captains_formal(src)
+	new /obj/item/clothing/suit/armor/vest/capcarapace/mayors_formal(src)
 	new /obj/item/clothing/suit/captunic(src)
 	new /obj/item/clothing/glasses/sunglasses/gar/giga(src)
-	new /obj/item/clothing/gloves/color/captain(src)
+	new /obj/item/clothing/gloves/color/mayor(src)
 	new /obj/item/clothing/head/caphat(src)
 	new /obj/item/clothing/head/caphat/parade(src)
 	new /obj/item/clothing/head/crown/fancy(src)
 	new /obj/item/clothing/neck/cloak/cap(src)
 	new /obj/item/clothing/shoes/sneakers/brown(src)
-	new /obj/item/clothing/suit/hooded/wintercoat/captain(src)
+	new /obj/item/clothing/suit/hooded/wintercoat/mayor(src)
 
 
 /obj/item/storage/bag/garment/hop/PopulateContents()

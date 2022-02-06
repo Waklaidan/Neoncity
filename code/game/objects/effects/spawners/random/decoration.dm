@@ -74,7 +74,7 @@
 		/obj/structure/statue/elder_atmosian = 1,
 		/obj/structure/statue/uranium/nuke = 1,
 		/obj/structure/statue/uranium/eng = 1,
-		/obj/structure/statue/diamond/captain = 1,
+		/obj/structure/statue/diamond/mayor = 1,
 		/obj/structure/statue/diamond/ai1 = 1,
 		/obj/structure/statue/diamond/ai2 = 1,
 	)

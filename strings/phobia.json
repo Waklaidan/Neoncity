@@ -41,7 +41,7 @@
 		"md",
 		"chief engineer",
 		"ce",
-		"captain",
+		"mayor",
 		"deathsquad",
 		"death squad",
 		"alien",
@@ -152,7 +152,7 @@
 
 	"authority": [
 		"cap",
-		"captain",
+		"mayor",
 		"chief",
 		"head",
 		"hop",

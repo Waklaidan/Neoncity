@@ -1,6 +1,6 @@
 /obj/machinery/vending/games
 	name = "\improper Good Clean Fun"
-	desc = "Vends things that the Captain and Head of Personnel are probably not going to appreciate you fiddling with instead of your job..."
+	desc = "Vends things that the Mayor and Head of Personnel are probably not going to appreciate you fiddling with instead of your job..."
 	product_ads = "Escape to a fantasy world!;Fuel your gambling addiction!;Ruin your friendships!;Roll for initiative!;Elves and dwarves!;Paranoid computers!;Totally not satanic!;Fun times forever!"
 	icon_state = "games"
 	panel_type = "panel4"
@@ -50,7 +50,7 @@
 		/obj/item/melee/skateboard/hoverboard = 1,
 		/obj/item/storage/box/tail_pin = 1,
 		/obj/item/toy/intento = 3,
-		/obj/item/toy/captainsaid = 1,
+		/obj/item/toy/mayorsaid = 1,
 	)
 	refill_canister = /obj/item/vending_refill/games
 	default_price = PAYCHECK_CIVILIAN

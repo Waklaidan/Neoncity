@@ -1844,7 +1844,7 @@
 	. = ..()
 	var/obj/item/organ/liver/liver = M.getorganslot(ORGAN_SLOT_LIVER)
 	if(liver)
-		// Heads of staff and the captain have a "royal metabolism"
+		// Heads of staff and the mayor have a "royal metabolism"
 		if(HAS_TRAIT(liver, TRAIT_ROYAL_METABOLISM))
 			if(DT_PROB(5, delta_time))
 				to_chat(M, "You feel like royalty.")

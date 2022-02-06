@@ -8,7 +8,7 @@
 		) = 4,
 		/datum/traitor_objective/destroy_heirloom/uncommon = 3,
 		/datum/traitor_objective/destroy_heirloom/rare = 2,
-		/datum/traitor_objective/destroy_heirloom/captain = 1
+		/datum/traitor_objective/destroy_heirloom/mayor = 1
 	)
 
 /datum/traitor_objective/destroy_heirloom
@@ -90,11 +90,11 @@
 		/datum/job/research_director,
 	)
 
-/datum/traitor_objective/destroy_heirloom/captain
+/datum/traitor_objective/destroy_heirloom/mayor
 	progression_minimum = 30 MINUTES
 	target_jobs = list(
 		/datum/job/head_of_security,
-		/datum/job/captain
+		/datum/job/mayor
 	)
 
 /datum/traitor_objective/destroy_heirloom/generate_objective(datum/mind/generating_for, list/possible_duplicates)

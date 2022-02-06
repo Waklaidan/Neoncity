@@ -163,8 +163,8 @@
 	custom_materials = list(/datum/material/diamond=MINERAL_MATERIAL_AMOUNT*5)
 	abstract_type = /obj/structure/statue/diamond
 
-/obj/structure/statue/diamond/captain
-	name = "statue of THE captain."
+/obj/structure/statue/diamond/mayor
+	name = "statue of THE mayor."
 	icon_state = "cap"
 
 /obj/structure/statue/diamond/ai1

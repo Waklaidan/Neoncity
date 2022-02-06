@@ -8084,7 +8084,7 @@
 /obj/item/clipboard,
 /obj/item/folder/blue,
 /obj/item/melee/chainofcommand,
-/obj/item/stamp/captain,
+/obj/item/stamp/mayor,
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
 	},
@@ -14537,7 +14537,7 @@
 /obj/item/flashlight/lamp,
 /obj/machinery/requests_console/directional/north{
 	announcementConsole = 1;
-	department = "Captain's Desk";
+	department = "Mayor's Desk";
 	departmentType = 5
 	},
 /turf/open/floor/iron/grimy,
@@ -16622,7 +16622,7 @@
 /area/centcom/admin)
 "YJ" = (
 /obj/structure/dresser,
-/obj/structure/plaque/static_plaque/golden/captain{
+/obj/structure/plaque/static_plaque/golden/mayor{
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/tile/neutral{

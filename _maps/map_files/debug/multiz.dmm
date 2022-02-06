@@ -399,7 +399,7 @@
 	dir = 8;
 	pixel_x = -25
 	},
-/obj/structure/closet/secure_closet/captains,
+/obj/structure/closet/secure_closet/mayors,
 /obj/structure/cable,
 /turf/open/floor/iron{
 	dir = 8
@@ -411,7 +411,7 @@
 /area/command/bridge)
 "bJ" = (
 /obj/structure/table,
-/obj/item/card/id/advanced/gold/captains_spare,
+/obj/item/card/id/advanced/gold/mayors_spare,
 /turf/open/floor/iron,
 /area/command/bridge)
 "bK" = (
@@ -1440,7 +1440,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/tank/jetpack/oxygen/captain,
+/obj/item/tank/jetpack/oxygen/mayor,
 /obj/item/storage/belt/utility/chief/full,
 /obj/item/clothing/gloves/color/yellow{
 	pixel_y = 10

@@ -14,8 +14,8 @@
 			announcement += "<br><h2 class='alert'>[html_encode(title)]</h2>"
 		announcement += "<h1 class='alert'>Mayor Announces</h1>"
 		GLOB.news_network.SubmitArticle(html_encode(text), "Mayor's Announcement", "Council Announcements", null)
-	else if(type == "Syndicate Captain")
-		announcement += "<h1 class='alert'>Syndicate Captain Announces</h1>"
+	else if(type == "Syndicate Mayor")
+		announcement += "<h1 class='alert'>Syndicate Mayor Announces</h1>"
 
 		if (title && length(title) > 0)
 			announcement += "<br><h2 class='alert'>[html_encode(title)]</h2>"

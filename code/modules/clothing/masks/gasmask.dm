@@ -104,8 +104,8 @@
 	resistance_flags = FIRE_PROOF
 	max_filters = 3
 
-/obj/item/clothing/mask/gas/atmos/captain
-	name = "captain's gas mask"
+/obj/item/clothing/mask/gas/atmos/mayor
+	name = "mayor's gas mask"
 	desc = "Nanotrasen cut corners and repainted a spare atmospheric gas mask, but don't tell anyone."
 	icon_state = "gas_cap"
 	inhand_icon_state = "gas_cap"

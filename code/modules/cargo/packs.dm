@@ -2204,7 +2204,7 @@
 	contains = list(/obj/item/clothing/head/collectable/chef,
 					/obj/item/clothing/head/collectable/paper,
 					/obj/item/clothing/head/collectable/tophat,
-					/obj/item/clothing/head/collectable/captain,
+					/obj/item/clothing/head/collectable/mayor,
 					/obj/item/clothing/head/collectable/beret,
 					/obj/item/clothing/head/collectable/welding,
 					/obj/item/clothing/head/collectable/flatcap,

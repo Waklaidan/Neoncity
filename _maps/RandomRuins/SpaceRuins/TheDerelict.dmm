@@ -1096,7 +1096,7 @@
 /area/ruin/space/derelict/bridge)
 "fp" = (
 /obj/machinery/door/window{
-	name = "Captain's Quarters";
+	name = "Mayor's Quarters";
 	req_access_txt = "20"
 	},
 /obj/structure/grille,

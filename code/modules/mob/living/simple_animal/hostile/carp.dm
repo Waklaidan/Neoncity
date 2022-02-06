@@ -246,7 +246,7 @@
 	AddElement(/datum/element/pet_bonus, "bloops happily!")
 	colored_disk_mouth = mutable_appearance(SSgreyscale.GetColoredIconByType(/datum/greyscale_config/carp/disk_mouth, greyscale_colors), "disk_mouth")
 	ADD_TRAIT(src, TRAIT_DISK_VERIFIER, INNATE_TRAIT) //carp can verify disky
-	ADD_TRAIT(src, TRAIT_CAN_STRIP, INNATE_TRAIT) //carp can take the disk off the captain
+	ADD_TRAIT(src, TRAIT_CAN_STRIP, INNATE_TRAIT) //carp can take the disk off the mayor
 
 /mob/living/simple_animal/hostile/carp/cayenne/death(gibbed)
 	if(disky)

@@ -30,7 +30,7 @@
 #define JOB_CIVILIAN "Civilian"
 #define JOB_PRISONER "Prisoner"
 //Command
-#define JOB_CAPTAIN "Captain"
+#define JOB_MAYOR "Mayor"
 #define JOB_HEAD_OF_PERSONNEL "Head of Personnel"
 #define JOB_HEAD_OF_SECURITY "Head of Security"
 #define JOB_RESEARCH_DIRECTOR "Research Director"
@@ -156,8 +156,8 @@
 #define DEPARTMENT_SILICON "Silicon"
 #define DEPARTMENT_BITFLAG_CIVILIAN (1<<8)
 #define DEPARTMENT_CIVILIAN "Civilian"
-#define DEPARTMENT_BITFLAG_CAPTAIN (1<<9)
-#define DEPARTMENT_CAPTAIN "Captain"
+#define DEPARTMENT_BITFLAG_MAYOR (1<<9)
+#define DEPARTMENT_MAYOR "Mayor"
 
 /* Job datum job_flags */
 /// Whether the mob is announced on arrival.

@@ -233,7 +233,7 @@
 
 /obj/item/paper/crumpled/ruins/snowdin/misc1
 	name = "Mission Prologue"
-	info = {"Holy shit, what a rush! Those Nanotrasen bastards didn't even know what hit 'em! All five of us dropped in right on the captain, didn't even have time to yell! We were in and out with that disk in mere minutes!
+	info = {"Holy shit, what a rush! Those Nanotrasen bastards didn't even know what hit 'em! All five of us dropped in right on the mayor, didn't even have time to yell! We were in and out with that disk in mere minutes!
 	Crew didn't even know what was happening till the delta alert went down and by then we were already gone. We got a case to drink on the way home to celebrate, fuckin' job well done!"}
 
 /obj/item/paper/crumpled/ruins/snowdin/dontdeadopeninside
@@ -335,7 +335,7 @@
 	DELAY 10
 	SAY ..We are getting paid, aren't we..?
 	DELAY 15
-	PRESET /datum/preset_holoimage/captain
+	PRESET /datum/preset_holoimage/mayor
 	NAME Caleb Reed
 	DELAY 10
 	SAY Paid in experience! That's the Nanotrasen Motto!

@@ -780,7 +780,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 /**
  * Prompts the user to input and send a message to another PDA.
- * the everyone arg is used for mass messaging from lawyer and captain carts.
+ * the everyone arg is used for mass messaging from lawyer and mayor carts.
  * rigged for PDA bombs. fakename and fakejob for forged messages (also PDA bombs).
  */
 /obj/item/pda/proc/send_message(mob/living/user, list/obj/item/pda/targets, everyone = FALSE, rigged = FALSE, fakename, fakejob)

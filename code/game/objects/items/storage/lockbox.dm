@@ -118,7 +118,7 @@
 		..()
 
 /obj/item/storage/lockbox/medal/PopulateContents()
-	new /obj/item/clothing/accessory/medal/gold/captain(src)
+	new /obj/item/clothing/accessory/medal/gold/mayor(src)
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
 	new /obj/item/clothing/accessory/medal/silver/security(src)

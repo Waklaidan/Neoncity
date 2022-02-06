@@ -917,8 +917,8 @@
 	registered_name = "Syndicate"
 	trim = /datum/id_trim/syndicom/crew
 
-/obj/item/card/id/advanced/black/syndicate_command/mayor_id
-	name = "syndicate mayor ID card"
+/obj/item/card/id/advanced/black/syndicate_command/captain_id
+	name = "syndicate captain ID card"
 	desc = "An ID straight from the Syndicate."
 	registered_name = "Syndicate"
 	trim = /datum/id_trim/syndicom/captain
@@ -927,12 +927,12 @@
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare
 	name = "syndicate captain's spare ID"
 	desc = "The spare ID of the Dark Lord himself."
-	registered_name = "Captain"
+	registered_name = "captain"
 	registered_age = null
 
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare/update_label()
-	if(registered_name == "Captain")
-		name = "[initial(name)][(!assignment || assignment == "Captain") ? "" : " ([assignment])"]"
+	if(registered_name == "captain")
+		name = "[initial(name)][(!assignment || assignment == "captain") ? "" : " ([assignment])"]"
 		update_appearance(UPDATE_ICON)
 		return
 

@@ -130,12 +130,12 @@ LINEN BINS
 	inhand_icon_state = "sheetrainbow"
 	dream_messages = list("honk", "laughter", "a prank", "a joke", "a smiling face", "the clown")
 
-/obj/item/bedsheet/captain
-	name = "captain's bedsheet"
-	desc = "It has a Nanotrasen symbol on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among most modern captains."
-	icon_state = "sheetcaptain"
-	inhand_icon_state = "sheetcaptain"
-	dream_messages = list("authority", "a golden ID", "sunglasses", "a green disc", "an antique gun", "the captain")
+/obj/item/bedsheet/mayor
+	name = "mayor's bedsheet"
+	desc = "It has a Nanotrasen symbol on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among most modern mayors."
+	icon_state = "sheetmayor"
+	inhand_icon_state = "sheetmayor"
+	dream_messages = list("authority", "a golden ID", "sunglasses", "a green disc", "an antique gun", "the mayor")
 
 /obj/item/bedsheet/rd
 	name = "research director's bedsheet"
@@ -376,9 +376,9 @@ LINEN BINS
 	worn_icon_state = "sheetclown"
 	bedsheet_type = BEDSHEET_DOUBLE
 
-/obj/item/bedsheet/captain/double
-	icon_state = "double_sheetcaptain"
-	worn_icon_state = "sheetcaptain"
+/obj/item/bedsheet/mayor/double
+	icon_state = "double_sheetmayor"
+	worn_icon_state = "sheetmayor"
 	bedsheet_type = BEDSHEET_DOUBLE
 
 /obj/item/bedsheet/rd/double

@@ -106,11 +106,11 @@
 			"rarity": "common"
 		},
 		{
-			"id": "captain",
-			"name": "Captain",
-			"desc": "Every Captain is expected to lay down their life for their assigned station. Any Captain who returns to Centcom alive without permission is ceremonially executed before being cloned and stripped of rank.",
+			"id": "mayor",
+			"name": "Mayor",
+			"desc": "Every Mayor is expected to lay down their life for their assigned station. Any Mayor who returns to Centcom alive without permission is ceremonially executed before being cloned and stripped of rank.",
 			"rules": "Tap this card: inflict -1/-1 to an opposing creature card.",
-			"icon_state": "captain",
+			"icon_state": "mayor",
 			"power": "5",
 			"resolve": "5",
 			"faction": "Command",
@@ -121,10 +121,10 @@
 		},
 		{
 			"id": "caps_suit",
-			"name": "Apadyne Technologies Mk.2 R.I.O.T. Suit (Captain's Version)",
-			"desc": "A heavily customised Apadyne Technologies Mk.2 R.I.O.T. Suit, rebuilt and refitted to Nanotrasen's highest standards for issue to Station Captains.",
+			"name": "Apadyne Technologies Mk.2 R.I.O.T. Suit (Mayor's Version)",
+			"desc": "A heavily customised Apadyne Technologies Mk.2 R.I.O.T. Suit, rebuilt and refitted to Nanotrasen's highest standards for issue to Station Mayors.",
 			"rules": "On equip: tap the equipped card for 2 turns, without triggering the target card's effects.",
-			"icon_state": "captain_hardsuit",
+			"icon_state": "mayor_hardsuit",
 			"power": "-1",
 			"resolve": "5",
 			"faction": "Command",
@@ -1475,7 +1475,7 @@
 		{
 			"id": "weekend_at_bernies",
 			"name": "Weekend at Nanotrasen's",
-			"desc": "Holy shit! We just accidentally killed the Captain! Here, uhh... oh god, stuff him in that wheelchair over there, before anyone comes in. Yeah, yeah! Get his sunglasses, cover his face. Oh my god, oh my god, oh my god. No one will be able to tell, he looks sorta fine, right? Right?",
+			"desc": "Holy shit! We just accidentally killed the Mayor! Here, uhh... oh god, stuff him in that wheelchair over there, before anyone comes in. Yeah, yeah! Get his sunglasses, cover his face. Oh my god, oh my god, oh my god. No one will be able to tell, he looks sorta fine, right? Right?",
 			"rules": "Return a creature card from your graveyard to the battlefield.",
 			"icon_state": "weekend_at_bernies",
 			"power": "0",
