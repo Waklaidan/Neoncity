@@ -36,7 +36,7 @@
 /turf/template_noop,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "ag" = (
-/obj/effect/mob_spawn/ghost_role/human/syndicatespace/mayor,
+/obj/effect/mob_spawn/ghost_role/human/syndicatespace/captain,
 /turf/open/floor/carpet/royalblack,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "ah" = (
