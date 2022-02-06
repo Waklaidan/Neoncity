@@ -7,7 +7,7 @@
 	..()
 
 	new /obj/item/storage/backpack/mayor(src)
-	new /obj/item/storage/backpack/satchel/cap(src)
+	new /obj/item/storage/backpack/satchel/mayor(src)
 	new /obj/item/storage/backpack/duffelbag/mayor(src)
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)

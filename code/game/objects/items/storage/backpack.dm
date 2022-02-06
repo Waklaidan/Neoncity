@@ -298,11 +298,11 @@
 	icon_state = "satchel-explorer"
 	inhand_icon_state = "satchel-explorer"
 
-/obj/item/storage/backpack/satchel/cap
+/obj/item/storage/backpack/satchel/mayor
 	name = "mayor's satchel"
-	desc = "An exclusive satchel for Nanotrasen officers."
-	icon_state = "satchel-cap"
-	inhand_icon_state = "satchel-cap"
+	desc = "An exclusive satchel for mayors."
+	icon_state = "satchel-mayor"
+	inhand_icon_state = "satchel-mayor"
 
 /obj/item/storage/backpack/satchel/flat
 	name = "smuggler's satchel"

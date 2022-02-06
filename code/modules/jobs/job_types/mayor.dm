@@ -71,7 +71,7 @@
 
 
 	backpack = /obj/item/storage/backpack/mayor
-	satchel = /obj/item/storage/backpack/satchel/cap
+	satchel = /obj/item/storage/backpack/satchel/mayor
 	duffelbag = /obj/item/storage/backpack/duffelbag/mayor
 
 	accessory = /obj/item/clothing/accessory/medal/gold/mayor
