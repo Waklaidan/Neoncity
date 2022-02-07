@@ -22,7 +22,7 @@
 	new /obj/item/storage/photo_album/mayor(src)
 
 /obj/structure/closet/secure_closet/hop
-	name = "\proper head of personnel's locker"
+	name = "\proper city clerk's locker"
 	req_access = list(ACCESS_HOP)
 	icon_state = "hop"
 

@@ -250,8 +250,8 @@
 	template_access = list(ACCESS_MAYOR, ACCESS_RD, ACCESS_CHANGE_IDS)
 	job = /datum/job/geneticist
 
-/datum/id_trim/job/head_of_personnel
-	assignment = "Head of Personnel"
+/datum/id_trim/job/city_clerk
+	assignment = "City Clerk"
 	trim_state = "trim_headofpersonnel"
 	extra_access = list()
 	extra_wildcard_access = list()
@@ -262,9 +262,9 @@
 					ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MORGUE, ACCESS_PSYCHOLOGY, ACCESS_QM, ACCESS_RC_ANNOUNCE,
 					ACCESS_RESEARCH, ACCESS_SEC_DOORS, ACCESS_TELEPORTER, ACCESS_THEATRE, ACCESS_VAULT, ACCESS_WEAPONS, ACCESS_SERVICE)
 	minimal_wildcard_access = list(ACCESS_HOP)
-	config_job = "head_of_personnel"
+	config_job = "city_clerk"
 	template_access = list(ACCESS_MAYOR, ACCESS_CHANGE_IDS)
-	job = /datum/job/head_of_personnel
+	job = /datum/job/city_clerk
 
 /datum/id_trim/job/head_of_security
 	assignment = "Head of Security"

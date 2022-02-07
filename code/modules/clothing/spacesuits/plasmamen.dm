@@ -331,15 +331,15 @@
 	visor_icon = "clown_envisor"
 	smile_state = "clown_smile"
 
-/obj/item/clothing/head/helmet/space/plasmaman/head_of_personnel
-	name = "head of personnel's envirosuit helmet"
-	desc = "A special containment helmet designed for the Head of Personnel. Embarrassingly enough, it looks way too much like the mayor's design save for the red stripes."
+/obj/item/clothing/head/helmet/space/plasmaman/city_clerk
+	name = "city clerk's envirosuit helmet"
+	desc = "A special containment helmet designed for the City Clerk. Embarrassingly enough, it looks way too much like the mayor's design save for the red stripes."
 	icon_state = "hop_envirohelm"
 	inhand_icon_state = "hop_envirohelm"
 
 /obj/item/clothing/head/helmet/space/plasmaman/mayor
 	name = "mayor's plasma envirosuit helmet"
-	desc = "A special containment helmet designed for the Mayor. Embarrassingly enough, it looks way too much like the Head of Personnel's design save for the gold stripes. I mean, come on. Gold stripes can fix anything."
+	desc = "A special containment helmet designed for the Mayor. Embarrassingly enough, it looks way too much like the City Clerk's design save for the gold stripes. I mean, come on. Gold stripes can fix anything."
 	icon_state = "mayor_envirohelm"
 	inhand_icon_state = "mayor_envirohelm"
 	armor = list(MELEE = 20, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 100, FIRE = 100, ACID = 75, WOUND = 10)

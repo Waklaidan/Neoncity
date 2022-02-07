@@ -31,7 +31,7 @@
 #define JOB_PRISONER "Prisoner"
 //Command
 #define JOB_MAYOR "Mayor"
-#define JOB_HEAD_OF_PERSONNEL "Head of Personnel"
+#define JOB_HEAD_OF_PERSONNEL "City Clerk"
 #define JOB_HEAD_OF_SECURITY "Head of Security"
 #define JOB_RESEARCH_DIRECTOR "Research Director"
 #define JOB_CHIEF_ENGINEER "Chief Engineer"

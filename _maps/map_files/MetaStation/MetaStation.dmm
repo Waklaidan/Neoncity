@@ -11197,7 +11197,7 @@
 /area/engineering/atmos)
 "ctB" = (
 /obj/structure/chair/office,
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/machinery/light_switch{
 	pixel_x = 38;
 	pixel_y = -35
@@ -15090,7 +15090,7 @@
 "dpY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "City Clerk";
 	req_access_txt = "57"
 	},
 /obj/structure/disposalpipe/segment{
@@ -38367,7 +38367,7 @@
 /turf/open/floor/iron,
 /area/maintenance/port/aft)
 "lwf" = (
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/structure/chair/office{
 	dir = 8
 	},
@@ -47981,7 +47981,7 @@
 	base_state = "rightsecure";
 	dir = 1;
 	icon_state = "rightsecure";
-	name = "Head of Personnel's Desk";
+	name = "City Clerk's Desk";
 	req_access_txt = "57"
 	},
 /obj/machinery/door/firedoor,
@@ -56179,9 +56179,9 @@
 	},
 /obj/machinery/requests_console/directional/north{
 	announcementConsole = 1;
-	department = "Head of Personnel's Desk";
+	department = "City Clerk's Desk";
 	departmentType = 5;
-	name = "Head of Personnel's Requests Console"
+	name = "City Clerk's Requests Console"
 	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
@@ -56561,7 +56561,7 @@
 "rMH" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "City Clerk";
 	req_access_txt = "57"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -67320,7 +67320,7 @@
 /area/security/office)
 "vDP" = (
 /obj/machinery/camera/directional/south{
-	c_tag = "Head of Personnel's Office"
+	c_tag = "City Clerk's Office"
 	},
 /obj/structure/table/wood,
 /obj/item/storage/box/pdas{

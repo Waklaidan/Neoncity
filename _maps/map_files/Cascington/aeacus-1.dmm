@@ -3498,7 +3498,7 @@
 /area/city/outdoors)
 "lS" = (
 /obj/structure/chair/office/light,
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /turf/open/floor/carpet,
 /area/city/outdoors)
 "lT" = (
@@ -4438,7 +4438,7 @@
 /area/city/outdoors)
 "oe" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Quarters";
+	name = "City Clerk's Quarters";
 	req_access_txt = "57"
 	},
 /turf/open/floor/wood,

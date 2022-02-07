@@ -473,7 +473,7 @@
 		current_target = null
 
 /datum/mafia_role/hop
-	name = "Head of Personnel"
+	name = "City Clerk"
 	desc = "You can reveal yourself once per game, tripling your vote power but becoming unable to be protected!"
 	role_type = TOWN_SUPPORT
 	role_flags = ROLE_UNIQUE

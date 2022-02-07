@@ -2680,7 +2680,7 @@
 "arA" = (
 /obj/machinery/photocopier,
 /obj/machinery/camera{
-	c_tag = "Command - Head of Personnel's Office";
+	c_tag = "Command - City Clerk's Office";
 	dir = 9
 	},
 /obj/item/radio/intercom/directional/north,
@@ -24944,7 +24944,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/machinery/computer/security/telescreen/vault{
 	pixel_y = 30
 	},
@@ -31434,9 +31434,9 @@
 "jKG" = (
 /obj/machinery/requests_console/directional/north{
 	announcementConsole = 1;
-	department = "Head of Personnel's Desk";
+	department = "City Clerk's Desk";
 	departmentType = 5;
-	name = "Head of Personnel's Requests Console"
+	name = "City Clerk's Requests Console"
 	},
 /obj/structure/table/wood,
 /obj/item/storage/secure/briefcase{
@@ -41999,7 +41999,7 @@
 /area/engineering/atmospherics_engine)
 "nFe" = (
 /obj/structure/chair/office,
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/machinery/button/flasher{
 	id = "hopflash";
 	pixel_x = 38;
@@ -43229,7 +43229,7 @@
 /obj/machinery/light/directional/east,
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 1;
-	name = "sorting disposal pipe (Head of Personnel's Office)";
+	name = "sorting disposal pipe (City Clerk's Office)";
 	sortType = 15
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -44799,7 +44799,7 @@
 /area/engineering/atmos)
 "oBX" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "City Clerk";
 	req_access_txt = "57"
 	},
 /obj/machinery/door/firedoor,

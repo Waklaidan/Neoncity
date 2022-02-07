@@ -39,8 +39,8 @@
 
 	var/list/stolen_valor
 
-	var/static/list/officers = list("Mayor", "Head of Personnel", "Head of Security")
-	var/static/list/command = list("Mayor" = "Cpt.","Head of Personnel" = "Lt.")
+	var/static/list/officers = list("Mayor", "City Clerk", "Head of Security")
+	var/static/list/command = list("Mayor" = "Cpt.","City Clerk" = "Lt.")
 	var/static/list/security = list("Head of Security" = "Maj.", "Warden" = "Sgt.", "Detective" = "Det.", "Security Officer" = "Officer")
 	var/static/list/engineering = list("Chief Engineer" = "Chief Engineer", "Station Engineer" = "Engineer", "Atmospherics Technician" = "Technician")
 	var/static/list/medical = list("Medical Director" = "M.D.D.", "Medical Doctor" = "M.D.", "Chemist" = "Pharm.D.")

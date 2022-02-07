@@ -1203,7 +1203,7 @@
 /area/security/warden)
 "ahB" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "City Clerk";
 	req_access_txt = "57"
 	},
 /obj/structure/cable,
@@ -16187,13 +16187,13 @@
 /area/security/prison)
 "eMK" = (
 /obj/machinery/camera/directional/south{
-	c_tag = "Head of Personnel's Office"
+	c_tag = "City Clerk's Office"
 	},
 /obj/machinery/requests_console/directional/south{
 	announcementConsole = 1;
-	department = "Head of Personnel's Desk";
+	department = "City Clerk's Desk";
 	departmentType = 5;
-	name = "Head of Personnel's Requests Console"
+	name = "City Clerk's Requests Console"
 	},
 /turf/open/floor/iron,
 /area/command/heads_quarters/hop)
@@ -33476,7 +33476,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /turf/open/floor/iron,
 /area/command/heads_quarters/hop)
 "nFX" = (
@@ -44298,7 +44298,7 @@
 	base_state = "rightsecure";
 	dir = 4;
 	icon_state = "rightsecure";
-	name = "Head of Personnel's Desk";
+	name = "City Clerk's Desk";
 	req_access_txt = "57"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -47766,7 +47766,7 @@
 /area/maintenance/port/aft)
 "uGL" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "City Clerk";
 	req_access_txt = "57"
 	},
 /obj/structure/cable,

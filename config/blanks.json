@@ -67,7 +67,7 @@
 			"<p><span style=\"35;font-family: 'Verdana';\">[<input type=\"text\" style=\"font: '12x Verdana';\" id=\"paperfield_10012\" maxlength=\"3\" size=\"3\" />]:[<input type=\"text\" style=\"font: '12x Verdana';\" id=\"paperfield_10013\" maxlength=\"3\" size=\"3\" />]</span></p>",
 			"<p style=\"color: gray;\">Place for a stamp</p>",
 			"<hr />",
-			"<p style=\"color: grey; text-align: justify;\">The decision of the head of staff or his deputy is sufficient grounds for dismissal. If only the head of personnel or his deputy makes the decision to dismiss, VOID values must be entered in the head of department fields.</p>",
+			"<p style=\"color: grey; text-align: justify;\">The decision of the head of staff or his deputy is sufficient grounds for dismissal. If only the city clerk or his deputy makes the decision to dismiss, VOID values must be entered in the head of department fields.</p>",
 			"<hr />",
 			"<p><strong>Name of department head or deputy head (with signature):</strong></p>",
 			"<p><span style=\"35;font-family: 'Verdana';\">[<input type=\"text\" style=\"font: '12x Verdana';\" id=\"paperfield_10014\" maxlength=\"35\" size=\"35\" />]</span></p>",

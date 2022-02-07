@@ -33,7 +33,7 @@
 	dye_color = DYE_MAYOR
 
 /obj/item/stamp/hop
-	name = "head of personnel's rubber stamp"
+	name = "city clerk's rubber stamp"
 	icon_state = "stamp-hop"
 	dye_color = DYE_HOP
 

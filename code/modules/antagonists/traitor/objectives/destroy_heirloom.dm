@@ -85,7 +85,7 @@
 		/datum/job/warden,
 		/datum/job/detective,
 		// Heads of staff
-		/datum/job/head_of_personnel,
+		/datum/job/city_clerk,
 		/datum/job/medical_director,
 		/datum/job/research_director,
 	)

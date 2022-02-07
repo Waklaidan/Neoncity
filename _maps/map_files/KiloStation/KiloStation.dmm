@@ -4435,7 +4435,7 @@
 "aur" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Office";
+	name = "City Clerk's Office";
 	req_access_txt = "57"
 	},
 /obj/machinery/navbeacon/wayfinding,
@@ -26588,9 +26588,9 @@
 	},
 /obj/machinery/requests_console/directional/west{
 	announcementConsole = 1;
-	department = "Head of Personnel's Desk";
+	department = "City Clerk's Desk";
 	departmentType = 5;
-	name = "Head of Personnel's Requests Console"
+	name = "City Clerk's Requests Console"
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/carpet/blue,
@@ -30358,7 +30358,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral,
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/structure/chair/office,
 /turf/open/floor/iron/dark,
 /area/command/heads_quarters/hop)
@@ -55639,7 +55639,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "nUa" = (
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/structure/chair/office{
 	dir = 8
 	},
@@ -56462,7 +56462,7 @@
 	base_state = "rightsecure";
 	dir = 1;
 	icon_state = "rightsecure";
-	name = "Head of Personnel's Desk";
+	name = "City Clerk's Desk";
 	req_access_txt = "57"
 	},
 /obj/machinery/door/window/southright{
@@ -82374,7 +82374,7 @@
 	},
 /obj/structure/noticeboard/directional/north,
 /obj/machinery/camera/directional/north{
-	c_tag = "Head of Personnel's Office";
+	c_tag = "City Clerk's Office";
 	name = "command camera"
 	},
 /turf/open/floor/wood,
@@ -83055,7 +83055,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Office";
+	name = "City Clerk's Office";
 	req_access_txt = "57"
 	},
 /obj/structure/disposalpipe/segment{

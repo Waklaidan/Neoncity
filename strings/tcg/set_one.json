@@ -555,7 +555,7 @@
 		},
 		{
 			"id": "HOP",
-			"name": "Head of Personnel",
+			"name": "City Clerk",
 			"desc": "The head of the Cargo and Service Departments, guardian of all access, and Ian's lovable, yet dumb, sidekick.",
 			"rules": "Once per turn: Select a friendly creature card. That card gains changeling.",
 			"icon_state": "hop",

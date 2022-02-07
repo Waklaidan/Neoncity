@@ -14239,7 +14239,7 @@
 "cpO" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Office";
+	name = "City Clerk's Office";
 	req_access_txt = "57"
 	},
 /obj/structure/cable,
@@ -34929,7 +34929,7 @@
 /area/medical/treatment_center)
 "eXb" = (
 /obj/structure/chair/office,
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
@@ -43502,7 +43502,7 @@
 /turf/open/floor/iron,
 /area/maintenance/port/fore)
 "hnn" = (
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
@@ -46566,7 +46566,7 @@
 /area/service/chapel/office)
 "ibN" = (
 /obj/machinery/camera/directional/east{
-	c_tag = "Central Hallway - Head of Personnel Line";
+	c_tag = "Central Hallway - City Clerk Line";
 	name = "hallway camera"
 	},
 /obj/effect/turf_decal/tile/neutral,
@@ -50956,9 +50956,9 @@
 /obj/item/stamp/hop,
 /obj/machinery/requests_console/directional/north{
 	announcementConsole = 1;
-	department = "Head of Personnel's Desk";
+	department = "City Clerk's Desk";
 	departmentType = 5;
-	name = "Head of Personnel's Requests Console"
+	name = "City Clerk's Requests Console"
 	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/hop)
@@ -61325,7 +61325,7 @@
 	name = "HoP Blast door"
 	},
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Office";
+	name = "City Clerk's Office";
 	req_access_txt = "57"
 	},
 /obj/structure/cable,
@@ -80080,7 +80080,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -88296,7 +88296,7 @@
 /area/cargo/drone_bay)
 "tfO" = (
 /obj/machinery/camera/directional/east{
-	c_tag = "Bridge - Head of Personnel's Office";
+	c_tag = "Bridge - City Clerk's Office";
 	name = "command camera"
 	},
 /obj/structure/cable,
@@ -91754,7 +91754,7 @@
 /area/commons/fitness/recreation)
 "ueE" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Quarters";
+	name = "City Clerk's Quarters";
 	req_access_txt = "57"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,

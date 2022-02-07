@@ -1,4 +1,4 @@
-/datum/job/head_of_personnel
+/datum/job/city_clerk
 	title = JOB_HEAD_OF_PERSONNEL
 	description = "Alter access on ID cards, manage civil and supply departments, \
 		protect Ian, run the station when the mayor dies."
@@ -18,7 +18,7 @@
 	exp_granted_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/hop
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_personnel
+	plasmaman_outfit = /datum/outfit/plasmaman/city_clerk
 	departments_list = list(
 		/datum/job_department/service,
 		/datum/job_department/command,
@@ -44,17 +44,17 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 
 
-/datum/job/head_of_personnel/get_mayordom_announcement(mob/living/mayor)
+/datum/job/city_clerk/get_mayordom_announcement(mob/living/mayor)
 	return "Due to staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
 /datum/outfit/job/hop
-	name = "Head of Personnel"
-	jobtype = /datum/job/head_of_personnel
+	name = "City Clerk"
+	jobtype = /datum/job/city_clerk
 
 	id = /obj/item/card/id/advanced/silver
-	id_trim = /datum/id_trim/job/head_of_personnel
-	uniform = /obj/item/clothing/under/rank/civilian/head_of_personnel
+	id_trim = /datum/id_trim/job/city_clerk
+	uniform = /obj/item/clothing/under/rank/civilian/city_clerk
 	backpack_contents = list(
 		/obj/item/melee/baton/telescopic = 1,
 		/obj/item/modular_computer/tablet/preset/advanced/command = 1,
@@ -76,7 +76,7 @@
 		undershirt = /datum/sprite_accessory/undershirt/ian
 
 //only pet worth reviving
-/datum/job/head_of_personnel/get_mail_goodies(mob/recipient)
+/datum/job/city_clerk/get_mail_goodies(mob/recipient)
 	. = ..()
 	// Strange Reagent if the pet is dead.
 	for(var/mob/living/simple_animal/pet/dog/corgi/ian/staff_pet in GLOB.dead_mob_list)
@@ -85,13 +85,13 @@
 
 /obj/item/paper/fluff/ids_for_dummies
 	name = "Memo: New IDs and You"
-	desc = "It looks like this was left by the last Head of Personnel to man this station. It explains some information about new IDs."
+	desc = "It looks like this was left by the last City Clerk to man this station. It explains some information about new IDs."
 	info = {"
 <h1>Dummy's Guide To New IDs</h1>
 <h2>The Basics</h2>
-<p>Card Trim - This is the job assigned to the card. The card's trim decides what Basic accesses the card can hold. Basic accesses cost nothing! Grey ID cards cannot hold Head of Staff or Mayor trims. Silver ID cards can hold Head of Staff trims but not Mayor trims and are in a box in the Head of Personnel's office and orderable from cargo. Gold ID cards can hold all access. The only guaranteed Gold ID card is the Mayor's Spare, held in a golden safe on the bridge with access codes given to the station's highest ranking officer. All other gold ID cards are carried exclusively by Mayors.</p>
+<p>Card Trim - This is the job assigned to the card. The card's trim decides what Basic accesses the card can hold. Basic accesses cost nothing! Grey ID cards cannot hold Head of Staff or Mayor trims. Silver ID cards can hold Head of Staff trims but not Mayor trims and are in a box in the City Clerk's office and orderable from cargo. Gold ID cards can hold all access. The only guaranteed Gold ID card is the Mayor's Spare, held in a golden safe on the bridge with access codes given to the station's highest ranking officer. All other gold ID cards are carried exclusively by Mayors.</p>
 <p>Wildcards - These are any additional accesses a card has that are not part of the card's trim. Lower quality ID cards have fewer wildcards and the wildcards they do have are of lower rarity.</p>
-<p>Job Changes - To change a job, you need to go to the PDA & ID Painter that's in every Head of Personnel office. This can be used to apply a new trim to an ID card, but this will wipe all that card's accesses in the process. You then take this ID card to any modular computer with the Plexagon Access Management app and when logged in with the appropriate Head of Staff or ID Console access can then select from Templates to quick-fill accesses or apply them manually.</p>
+<p>Job Changes - To change a job, you need to go to the PDA & ID Painter that's in every City Clerk office. This can be used to apply a new trim to an ID card, but this will wipe all that card's accesses in the process. You then take this ID card to any modular computer with the Plexagon Access Management app and when logged in with the appropriate Head of Staff or ID Console access can then select from Templates to quick-fill accesses or apply them manually.</p>
 <p>Firing Staff - Terminating a staff member's employment will wipe any trim from their card, remove all access and instantly set them as demoted.</p>
 <h2>Changing Jobs - Step by Step</h2>
 <ol>
