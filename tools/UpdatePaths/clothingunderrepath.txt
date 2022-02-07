@@ -159,8 +159,8 @@
 
 /obj/item/clothing/under/rank/chief_engineer : /obj/item/clothing/under/rank/engineering/chief_engineer
 /obj/item/clothing/under/rank/chief_engineer/skirt : /obj/item/clothing/under/rank/engineering/chief_engineer/skirt
-/obj/item/clothing/under/rank/atmospheric_technician : /obj/item/clothing/under/rank/engineering/atmospheric_technician
-/obj/item/clothing/under/rank/atmospheric_technician/skirt : /obj/item/clothing/under/rank/engineering/atmospheric_technician/skirt
+/obj/item/clothing/under/rank/firefighter : /obj/item/clothing/under/rank/engineering/firefighter
+/obj/item/clothing/under/rank/firefighter/skirt : /obj/item/clothing/under/rank/engineering/firefighter/skirt
 /obj/item/clothing/under/rank/engineer : /obj/item/clothing/under/rank/engineering/engineer
 /obj/item/clothing/under/rank/engineer/hazard : /obj/item/clothing/under/rank/engineering/engineer/hazard
 /obj/item/clothing/under/rank/engineer/skirt : /obj/item/clothing/under/rank/engineering/engineer/skirt

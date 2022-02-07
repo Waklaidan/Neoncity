@@ -66,7 +66,7 @@
 		JOB_HEAD_OF_SECURITY,
 		JOB_STATION_ENGINEER,
 		JOB_SCIENTIST,
-		JOB_ATMOSPHERIC_TECHNICIAN,
+		JOB_FIREFIGHTER,
 	)
 	exists_on_map = TRUE
 
@@ -80,7 +80,7 @@
 /datum/objective_item/steal/low_risk/fireaxe
 	name = "a fire axe"
 	targetitem = /obj/item/fireaxe
-	excludefromjob = list(JOB_CHIEF_ENGINEER,JOB_STATION_ENGINEER,JOB_ATMOSPHERIC_TECHNICIAN)
+	excludefromjob = list(JOB_CHIEF_ENGINEER,JOB_STATION_ENGINEER,JOB_FIREFIGHTER)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/low_risk/nullrod
@@ -232,7 +232,7 @@
 	targetitem = /obj/item/tank
 	difficulty = 3
 	excludefromjob = list(
-		JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN,
+		JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_FIREFIGHTER,
 		JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_ROBOTICIST,
 	)
 
@@ -287,7 +287,7 @@
 	name = "the Blackbox"
 	targetitem = /obj/item/blackbox
 	difficulty = 10
-	excludefromjob = list(JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
+	excludefromjob = list(JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_FIREFIGHTER)
 	exists_on_map = TRUE
 
 //Unique Objectives

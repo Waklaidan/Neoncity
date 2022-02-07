@@ -14353,7 +14353,7 @@
 /turf/open/floor/iron,
 /area/hallway/secondary/command)
 "dGY" = (
-/obj/effect/landmark/start/atmospheric_technician,
+/obj/effect/landmark/start/firefighter,
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "dGZ" = (
@@ -47472,7 +47472,7 @@
 /area/mine/explored)
 "pAe" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
-/obj/effect/landmark/start/atmospheric_technician,
+/obj/effect/landmark/start/firefighter,
 /obj/machinery/navbeacon/wayfinding/incinerator,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
@@ -67544,7 +67544,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/landmark/start/atmospheric_technician,
+/obj/effect/landmark/start/firefighter,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},

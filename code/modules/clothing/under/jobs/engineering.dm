@@ -22,15 +22,15 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	fitted = FEMALE_UNIFORM_TOP
 
-/obj/item/clothing/under/rank/engineering/atmospheric_technician
-	desc = "It's a jumpsuit worn by atmospheric technicians. Made from fire resistant materials."
-	name = "atmospheric technician's jumpsuit"
+/obj/item/clothing/under/rank/engineering/firefighter
+	desc = "It's a jumpsuit worn by firefighters. Made from fire resistant materials."
+	name = "firefighter's jumpsuit"
 	icon_state = "atmos"
 	inhand_icon_state = "atmos_suit"
 
-/obj/item/clothing/under/rank/engineering/atmospheric_technician/skirt
-	name = "atmospheric technician's jumpskirt"
-	desc = "It's a jumpskirt worn by atmospheric technicians. Made from fire resistant materials."
+/obj/item/clothing/under/rank/engineering/firefighter/skirt
+	name = "firefighter's jumpskirt"
+	desc = "It's a jumpskirt worn by firefighters. Made from fire resistant materials."
 	icon_state = "atmos_skirt"
 	inhand_icon_state = "atmos_suit"
 	body_parts_covered = CHEST|GROIN|ARMS

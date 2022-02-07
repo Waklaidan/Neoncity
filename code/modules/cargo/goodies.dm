@@ -93,7 +93,7 @@
 
 /datum/supply_pack/goody/firstaidburns_single
 	name = "Burn Treatment Kit Single-Pack"
-	desc = "A single burn first-aid kit. The advertisement displays a winking atmospheric technician giving a thumbs up, saying \"Mistakes happen!\""
+	desc = "A single burn first-aid kit. The advertisement displays a winking firefighter giving a thumbs up, saying \"Mistakes happen!\""
 	cost = PAYCHECK_MEDIUM * 4
 	contains = list(/obj/item/storage/firstaid/fire)
 

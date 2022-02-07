@@ -1408,7 +1408,7 @@
 	toysay = "Greytide world wide!"
 
 /obj/item/toy/figure/atmos
-	name = "\improper Atmospheric Technician action figure"
+	name = "\improper Firefighter action figure"
 	icon_state = "atmos"
 	toysay = "Glory to Atmosia!"
 

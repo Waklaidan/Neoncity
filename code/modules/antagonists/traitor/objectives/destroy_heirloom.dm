@@ -50,7 +50,7 @@
 		/datum/job/roboticist,
 		// Engineering
 		/datum/job/station_engineer,
-		/datum/job/atmospheric_technician,
+		/datum/job/firefighter,
 	)
 
 /// This is only for civilians, because the syndies are a lot less likely to give a shit about what an civilian does, so they're a lot less likely to appear
