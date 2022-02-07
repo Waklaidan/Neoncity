@@ -269,7 +269,7 @@
 	if(visualsOnly)
 		return
 	var/obj/item/radio/R = H.ears
-	R.keyslot = new /obj/item/encryptionkey/heads/hop
+	R.keyslot = new /obj/item/encryptionkey/heads/cc
 	R.recalculateChannels()
 
 /datum/outfit/centcom/ert/chaplain/inquisitor

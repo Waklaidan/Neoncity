@@ -58,13 +58,13 @@
 	suit = /obj/item/clothing/suit/toggle/lawyer
 	shoes = /obj/item/clothing/shoes/laceup
 
-/datum/outfit/mafia/hop
+/datum/outfit/mafia/cc
 	name = "Mafia City Clerk"
 
 	uniform = /obj/item/clothing/under/rank/civilian/city_clerk
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	head = /obj/item/clothing/head/hopcap
+	head = /obj/item/clothing/head/cccap
 	glasses = /obj/item/clothing/glasses/sunglasses
 
 /datum/outfit/mafia/hos

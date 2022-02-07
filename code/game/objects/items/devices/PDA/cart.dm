@@ -146,7 +146,7 @@
 	icon_state = "cart-h"
 	access = CART_MANIFEST | CART_STATUS_DISPLAY
 
-/obj/item/cartridge/hop
+/obj/item/cartridge/cc
 	name = "\improper HumanResources9001 cartridge"
 	icon_state = "cart-h"
 	access = CART_MANIFEST | CART_STATUS_DISPLAY | CART_JANITOR | CART_SECURITY | CART_NEWSCASTER | CART_QUARTERMASTER | CART_DRONEPHONE

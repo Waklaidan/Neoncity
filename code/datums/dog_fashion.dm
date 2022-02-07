@@ -157,7 +157,7 @@
 	..()
 	desc = "You must respect Elder [M.real_name]."
 
-/datum/dog_fashion/head/hop
+/datum/dog_fashion/head/cc
 	name = "Lieutenant REAL_NAME"
 	desc = "Can actually be trusted to not run off on their own."
 
@@ -181,7 +181,7 @@
 	obj_icon_state = "festive"
 
 /datum/dog_fashion/head/pumpkin/unlit
-	name = "Headless HoP-less REAL_NAME"
+	name = "Headless CC-less REAL_NAME"
 	desc = "A spooky dog spirit of a beloved pet who lost their owner."
 	obj_icon_state = "pumpkin0"
 	speak = list("BOO!", "AUUUUUUU", "RAAARGH!")
@@ -192,7 +192,7 @@
 	obj_icon_state = "pumpkin1"
 
 /datum/dog_fashion/head/blumpkin/unlit
-	name = "Hue-less Headless HoP-less REAL_NAME"
+	name = "Hue-less Headless CC-less REAL_NAME"
 	desc = "An evil dog spirit of a beloved pet that haunts your treats pantries!"
 	obj_icon_state = "blumpkin0"
 	speak = list("BOO!", "AUUUUUUU", "RAAARGH!")

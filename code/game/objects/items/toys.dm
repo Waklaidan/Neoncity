@@ -1489,9 +1489,9 @@
 	icon_state = "geneticist"
 	toysay = "Smash!"
 
-/obj/item/toy/figure/hop
+/obj/item/toy/figure/cc
 	name = "\improper City Clerk action figure"
-	icon_state = "hop"
+	icon_state = "cc"
 	toysay = "Giving out all access!"
 
 /obj/item/toy/figure/hos

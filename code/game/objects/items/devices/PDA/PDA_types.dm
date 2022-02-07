@@ -122,9 +122,9 @@
 	greyscale_config = /datum/greyscale_config/pda/head
 	greyscale_colors = "#789876#a92323"
 
-/obj/item/pda/heads/hop
+/obj/item/pda/heads/cc
 	name = "city clerk PDA"
-	default_cartridge = /obj/item/cartridge/hop
+	default_cartridge = /obj/item/cartridge/cc
 
 /obj/item/pda/heads/hos
 	name = "chief of police PDA"

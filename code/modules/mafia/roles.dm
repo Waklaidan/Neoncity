@@ -472,25 +472,25 @@
 		current_target.role_flags &= ~ROLE_ROLEBLOCKED
 		current_target = null
 
-/datum/mafia_role/hop
+/datum/mafia_role/cc
 	name = "City Clerk"
 	desc = "You can reveal yourself once per game, tripling your vote power but becoming unable to be protected!"
 	role_type = TOWN_SUPPORT
 	role_flags = ROLE_UNIQUE
 	hud_icon = "hudheadofpersonnel"
 	revealed_icon = "headofpersonnel"
-	revealed_outfit = /datum/outfit/mafia/hop
-	winner_award = /datum/award/achievement/mafia/hop
+	revealed_outfit = /datum/outfit/mafia/cc
+	winner_award = /datum/award/achievement/mafia/cc
 
 	targeted_actions = list("Reveal")
 	vote_potential = 3
 
-/datum/mafia_role/hop/validate_action_target(datum/mafia_controller/game, action, datum/mafia_role/target)
+/datum/mafia_role/cc/validate_action_target(datum/mafia_controller/game, action, datum/mafia_role/target)
 	. = ..()
 	if(!. || game.phase == MAFIA_PHASE_NIGHT || game.turn == 1 || target.game_status != MAFIA_ALIVE || target != src || (role_flags & ROLE_REVEALED))
 		return FALSE
 
-/datum/mafia_role/hop/handle_action(datum/mafia_controller/game, action, datum/mafia_role/target)
+/datum/mafia_role/cc/handle_action(datum/mafia_controller/game, action, datum/mafia_role/target)
 	. = ..()
 	reveal_role(game, TRUE)
 	role_flags |= ROLE_VULNERABLE

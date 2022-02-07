@@ -5,7 +5,7 @@ Civilian
 */
 /datum/job/civilian
 	title = JOB_CIVILIAN
-	description = "Get your space legs, assist people, ask the HoP to give you a job."
+	description = "Get your space legs, assist people, ask the CC to give you a job."
 	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 5

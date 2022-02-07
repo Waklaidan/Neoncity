@@ -84,7 +84,7 @@
 	extra_access = list(ACCESS_MAINT_TUNNELS)
 	minimal_access = list()
 	config_job = "civilian"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/civilian
 
 /datum/id_trim/job/civilian/refresh_trim_access()
@@ -113,7 +113,7 @@
 	extra_access = list(ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_MORGUE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE, ACCESS_WEAPONS, ACCESS_SERVICE)
 	config_job = "bartender"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/bartender
 
 /datum/id_trim/job/botanist
@@ -122,7 +122,7 @@
 	extra_access = list(ACCESS_BAR, ACCESS_KITCHEN)
 	minimal_access = list(ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_SERVICE)
 	config_job = "botanist"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/botanist
 
 /datum/id_trim/job/mayor
@@ -147,7 +147,7 @@
 	extra_access = list(ACCESS_QM, ACCESS_MINING, ACCESS_MINING_STATION)
 	minimal_access = list(ACCESS_CARGO, ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MINING, ACCESS_MINERAL_STOREROOM)
 	config_job = "retail_assistant"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/retail_assistant
 
 /datum/id_trim/job/chaplain
@@ -156,7 +156,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_MORGUE, ACCESS_THEATRE, ACCESS_SERVICE)
 	config_job = "chaplain"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/chaplain
 
 /datum/id_trim/job/chemist
@@ -200,7 +200,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_THEATRE, ACCESS_SERVICE)
 	config_job = "clown"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/clown
 
 /datum/id_trim/job/cook
@@ -209,7 +209,7 @@
 	extra_access = list(ACCESS_BAR, ACCESS_HYDROPONICS)
 	minimal_access = list(ACCESS_KITCHEN, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_SERVICE)
 	config_job = "cook"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/cook
 
 /datum/id_trim/job/journalist
@@ -218,7 +218,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_LIBRARY, ACCESS_MINING_STATION, ACCESS_SERVICE)
 	config_job = "journalist"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/journalist
 
 /datum/id_trim/job/detective
@@ -261,7 +261,7 @@
 					ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MINING, ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM,
 					ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MORGUE, ACCESS_PSYCHOLOGY, ACCESS_QM, ACCESS_RC_ANNOUNCE,
 					ACCESS_RESEARCH, ACCESS_SEC_DOORS, ACCESS_TELEPORTER, ACCESS_THEATRE, ACCESS_VAULT, ACCESS_WEAPONS, ACCESS_SERVICE)
-	minimal_wildcard_access = list(ACCESS_HOP)
+	minimal_wildcard_access = list(ACCESS_CC)
 	config_job = "city_clerk"
 	template_access = list(ACCESS_MAYOR, ACCESS_CHANGE_IDS)
 	job = /datum/job/city_clerk
@@ -296,7 +296,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM, ACCESS_SERVICE)
 	config_job = "janitor"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/janitor
 
 /datum/id_trim/job/lawyer
@@ -305,7 +305,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_COURT, ACCESS_LAWYER, ACCESS_SEC_DOORS, ACCESS_SERVICE)
 	config_job = "lawyer"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_HOS, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_HOS, ACCESS_CHANGE_IDS)
 	job = /datum/job/lawyer
 
 /datum/id_trim/job/medical_doctor
@@ -323,7 +323,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_THEATRE, ACCESS_SERVICE)
 	config_job = "mime"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/mime
 
 /datum/id_trim/job/paramedic
@@ -340,7 +340,7 @@
 	assignment = "Prisoner"
 	trim_state = "trim_prisoner"
 	config_job = "prisoner"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_HOS, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_HOS, ACCESS_CHANGE_IDS)
 	job = /datum/job/prisoner
 
 /datum/id_trim/job/prisoner/one
@@ -377,7 +377,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_MEDICAL, ACCESS_PSYCHOLOGY, ACCESS_SERVICE)
 	config_job = "psychologist"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_MD, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_MD, ACCESS_CHANGE_IDS)
 	job = /datum/job/psychologist
 
 /datum/id_trim/job/quartermaster
@@ -387,7 +387,7 @@
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_CARGO, ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MINING, ACCESS_MINING_STATION,
 					ACCESS_MINERAL_STOREROOM, ACCESS_MINING, ACCESS_QM, ACCESS_RC_ANNOUNCE, ACCESS_VAULT)
 	config_job = "quartermaster"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/quartermaster
 
 /datum/id_trim/job/research_director
@@ -477,7 +477,7 @@
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_MAILSORTING, ACCESS_MECH_MINING, ACCESS_MINERAL_STOREROOM, ACCESS_MINING,
 					ACCESS_MINING_STATION)
 	config_job = "shaft_miner"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_CHANGE_IDS)
 	job = /datum/job/shaft_miner
 
 /// ID card obtained from the mining Disney dollar points vending machine.

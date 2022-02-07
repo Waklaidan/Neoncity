@@ -1308,7 +1308,7 @@
 	},
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "ajt" = (
 /obj/item/storage/secure/safe/directional/east,
 /obj/machinery/airalarm/directional/north,
@@ -2685,7 +2685,7 @@
 	},
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "arD" = (
 /obj/structure/table/wood,
 /obj/item/food/baguette,
@@ -4359,7 +4359,7 @@
 "aBk" = (
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "aBx" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -4528,7 +4528,7 @@
 /obj/machinery/firealarm/directional/east,
 /mob/living/simple_animal/pet/dog/corgi/ian,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "aCA" = (
 /obj/effect/turf_decal/trimline/yellow/warning{
 	dir = 1
@@ -4620,11 +4620,11 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "aCR" = (
 /obj/structure/table/wood,
 /obj/item/folder/blue,
-/obj/item/stamp/hop,
+/obj/item/stamp/cc,
 /obj/machinery/button/ticket_machine{
 	pixel_x = 32
 	},
@@ -4636,7 +4636,7 @@
 	pixel_y = -36
 	},
 /obj/machinery/button/door/directional/south{
-	id = "hop";
+	id = "cc";
 	name = "Privacy Shutters Control";
 	pixel_x = -8;
 	req_access_txt = "28"
@@ -4652,7 +4652,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "aCS" = (
 /obj/effect/turf_decal/trimline/neutral/filled/corner,
 /turf/open/floor/iron,
@@ -11553,7 +11553,7 @@
 /obj/machinery/recharger,
 /obj/machinery/newscaster/security_unit/directional/north,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "cFZ" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/machinery/light/small/directional/east,
@@ -15044,7 +15044,7 @@
 	},
 /obj/machinery/holopad,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "dUF" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -17296,7 +17296,7 @@
 	dir = 6
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "eFI" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/supply/visible,
 /turf/closed/wall/r_wall,
@@ -19197,11 +19197,11 @@
 "fqS" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
-	id = "hop";
+	id = "cc";
 	name = "privacy shutters"
 	},
 /turf/open/floor/plating,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "fqZ" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 5
@@ -22108,7 +22108,7 @@
 "gpw" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "gpz" = (
 /obj/machinery/vending/wardrobe/robo_wardrobe,
 /obj/effect/turf_decal/trimline/purple/filled/line{
@@ -22232,7 +22232,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "grR" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 1
@@ -24950,7 +24950,7 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "hrG" = (
 /obj/structure/rack,
 /obj/item/circuitboard/machine/exoscanner{
@@ -25912,7 +25912,7 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/ticket_machine/directional/north,
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "hKA" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
@@ -26114,9 +26114,9 @@
 /area/command/heads_quarters/mayor)
 "hOf" = (
 /obj/structure/window/reinforced,
-/obj/structure/closet/secure_closet/hop,
+/obj/structure/closet/secure_closet/cc,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "hOi" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	req_one_access_txt = "12"
@@ -28924,7 +28924,7 @@
 /area/hallway/primary/central)
 "iMZ" = (
 /turf/closed/wall/r_wall,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "iNk" = (
 /obj/structure/chair/comfy/beige,
 /obj/effect/landmark/start/hangover,
@@ -30963,7 +30963,7 @@
 /obj/effect/turf_decal/bot,
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "jAM" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -31451,7 +31451,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "jKR" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/trimline/white/line{
@@ -31650,7 +31650,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "jOA" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -32590,12 +32590,12 @@
 	pixel_x = -32
 	},
 /obj/machinery/button/door/directional/north{
-	id = "hop";
+	id = "cc";
 	name = "Privacy Shutters Control";
 	req_access_txt = "28"
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "keI" = (
 /obj/machinery/door/airlock{
 	id_tag = "private_b";
@@ -33234,7 +33234,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "kqO" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -33714,7 +33714,7 @@
 /obj/item/kirbyplants/random,
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "kCd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/east,
@@ -34074,7 +34074,7 @@
 	},
 /obj/item/pen,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "kJx" = (
 /obj/structure/cable,
 /turf/open/floor/wood,
@@ -34847,10 +34847,10 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "hopqueue";
-	name = "HoP Queue Shutters"
+	name = "CC Queue Shutters"
 	},
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "kYu" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 10
@@ -35760,7 +35760,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "lnX" = (
 /obj/structure/railing/corner,
 /obj/effect/turf_decal/trimline/purple/filled/corner,
@@ -36476,7 +36476,7 @@
 /area/ai_monitored/command/nuke_storage)
 "lCs" = (
 /turf/closed/wall,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "lCz" = (
 /obj/structure/chair/comfy/beige{
 	dir = 8
@@ -42006,7 +42006,7 @@
 	pixel_y = -25
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "nFg" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 5
@@ -42246,7 +42246,7 @@
 	dir = 9
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "nJk" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/asteroid/airless,
@@ -44291,7 +44291,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "osV" = (
 /obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "engsm";
@@ -44810,7 +44810,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "oBZ" = (
 /obj/structure/closet/secure_closet/brig,
 /obj/effect/turf_decal/trimline/red/filled/line,
@@ -46740,7 +46740,7 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "pmr" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -48334,9 +48334,9 @@
 /area/mine/explored)
 "pNi" = (
 /obj/effect/turf_decal/bot,
-/obj/machinery/navbeacon/wayfinding/hop,
+/obj/machinery/navbeacon/wayfinding/cc,
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "pNr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -48621,7 +48621,7 @@
 	id = "hopflash"
 	},
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "pRZ" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
@@ -51368,7 +51368,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "qWJ" = (
 /obj/machinery/duct,
 /obj/effect/decal/cleanable/dirt,
@@ -51436,7 +51436,7 @@
 	dir = 6
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "qXA" = (
 /obj/machinery/door/airlock/external{
 	name = "External Access"
@@ -53864,10 +53864,10 @@
 /obj/effect/turf_decal/loading_area,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "hopqueue";
-	name = "HoP Queue Shutters"
+	name = "CC Queue Shutters"
 	},
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "rPD" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 1
@@ -55361,7 +55361,7 @@
 "srV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "srW" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Control Room";
@@ -56225,7 +56225,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "sJG" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
@@ -61736,7 +61736,7 @@
 /obj/effect/landmark/start/hangover,
 /obj/effect/mapping_helpers/trapdoor_placer,
 /turf/open/floor/iron,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "uFQ" = (
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 8
@@ -62104,11 +62104,11 @@
 /area/maintenance/port/central)
 "uMP" = (
 /obj/machinery/door/window{
-	name = "HoP's Desk";
+	name = "CC's Desk";
 	req_access_txt = "57"
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "uMQ" = (
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
 	dir = 8
@@ -63599,7 +63599,7 @@
 	req_access_txt = "57"
 	},
 /obj/machinery/door/poddoor/preopen{
-	id = "hop";
+	id = "cc";
 	name = "privacy shutters"
 	},
 /obj/machinery/door/window/westright{
@@ -63607,7 +63607,7 @@
 	name = "Access Queue"
 	},
 /turf/open/floor/plating,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "vvu" = (
 /obj/effect/turf_decal/trimline/red/filled/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -66793,7 +66793,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "wFn" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -68331,7 +68331,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/command/heads_quarters/hop)
+/area/command/heads_quarters/cc)
 "xjM" = (
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = -32

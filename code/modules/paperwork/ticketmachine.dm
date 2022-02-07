@@ -13,7 +13,7 @@
 	maptext_x = 7
 	maptext_y = 10
 	layer = HIGH_OBJ_LAYER
-	var/ticket_number = 0 //Increment the ticket number whenever the HOP presses his button
+	var/ticket_number = 0 //Increment the ticket number whenever the CC presses his button
 	var/current_number = 0 //What ticket number are we currently serving?
 	var/max_number = 100 //At this point, you need to refill it.
 	var/cooldown = 50
@@ -42,7 +42,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/ticket_machine, 32)
 	to_chat(user, span_notice("You store linkage information in [I]'s buffer."))
 	return TRUE
 
-/obj/machinery/ticket_machine/emag_act(mob/user) //Emag the ticket machine to dispense burning tickets, as well as randomize its number to destroy the HoP's mind.
+/obj/machinery/ticket_machine/emag_act(mob/user) //Emag the ticket machine to dispense burning tickets, as well as randomize its number to destroy the CC's mind.
 	if(obj_flags & EMAGGED)
 		return
 	to_chat(user, span_warning("You overload [src]'s bureaucratic logic circuitry to its MAXIMUM setting."))
@@ -97,7 +97,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/ticket_machine, 32)
 
 /obj/item/assembly/control/ticket_machine
 	name = "ticket machine controller"
-	desc = "A remote controller for the HoP's ticket machine."
+	desc = "A remote controller for the CC's ticket machine."
 	var/datum/weakref/linked //To whom are we linked?
 
 /obj/item/assembly/control/ticket_machine/Initialize(mapload)
@@ -200,7 +200,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/ticket_machine, 32)
 	user.put_in_hands(theirticket)
 	ticket_holders += user_ref
 	tickets += theirticket
-	if(obj_flags & EMAGGED) //Emag the machine to destroy the HOP's life.
+	if(obj_flags & EMAGGED) //Emag the machine to destroy the CC's life.
 		ready = FALSE
 		addtimer(CALLBACK(src, .proc/reset_cooldown), cooldown)//Small cooldown to prevent piles of flaming tickets
 		theirticket.fire_act()

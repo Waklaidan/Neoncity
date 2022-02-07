@@ -21,17 +21,17 @@
 	new /obj/item/door_remote/mayor(src)
 	new /obj/item/storage/photo_album/mayor(src)
 
-/obj/structure/closet/secure_closet/hop
+/obj/structure/closet/secure_closet/cc
 	name = "\proper city clerk's locker"
-	req_access = list(ACCESS_HOP)
-	icon_state = "hop"
+	req_access = list(ACCESS_CC)
+	icon_state = "cc"
 
-/obj/structure/closet/secure_closet/hop/PopulateContents()
+/obj/structure/closet/secure_closet/cc/PopulateContents()
 	..()
-	new /obj/item/storage/bag/garment/hop(src)
+	new /obj/item/storage/bag/garment/cc(src)
 	new /obj/item/storage/lockbox/medal/service(src)
-	new /obj/item/cartridge/hop(src)
-	new /obj/item/radio/headset/heads/hop(src)
+	new /obj/item/cartridge/cc(src)
+	new /obj/item/radio/headset/heads/cc(src)
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/megaphone/command(src)
@@ -41,8 +41,8 @@
 	new /obj/item/pet_carrier(src)
 	new /obj/item/door_remote/civilian(src)
 	new /obj/item/circuitboard/machine/techfab/department/service(src)
-	new /obj/item/storage/photo_album/hop(src)
-	new /obj/item/storage/lockbox/medal/hop(src)
+	new /obj/item/storage/photo_album/cc(src)
+	new /obj/item/storage/lockbox/medal/cc(src)
 
 /obj/structure/closet/secure_closet/hos
 	name = "\proper chief of police's locker"

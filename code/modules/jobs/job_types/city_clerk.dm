@@ -17,7 +17,7 @@
 	exp_required_type_department = EXP_TYPE_SERVICE
 	exp_granted_type = EXP_TYPE_CREW
 
-	outfit = /datum/outfit/job/hop
+	outfit = /datum/outfit/job/cc
 	plasmaman_outfit = /datum/outfit/plasmaman/city_clerk
 	departments_list = list(
 		/datum/job_department/service,
@@ -48,7 +48,7 @@
 	return "Due to staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
-/datum/outfit/job/hop
+/datum/outfit/job/cc
 	name = "City Clerk"
 	jobtype = /datum/job/city_clerk
 
@@ -60,17 +60,17 @@
 		/obj/item/modular_computer/tablet/preset/advanced/command = 1,
 		/obj/item/storage/box/ids = 1,
 		)
-	belt = /obj/item/pda/heads/hop
-	ears = /obj/item/radio/headset/heads/hop
-	head = /obj/item/clothing/head/hopcap
+	belt = /obj/item/pda/heads/cc
+	ears = /obj/item/radio/headset/heads/cc
+	head = /obj/item/clothing/head/cccap
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 
 	chameleon_extras = list(
 		/obj/item/gun/energy/e_gun,
-		/obj/item/stamp/hop,
+		/obj/item/stamp/cc,
 		)
 
-/datum/outfit/job/hop/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cc/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(locate(/datum/holiday/ianbirthday) in SSevents.holidays)
 		undershirt = /datum/sprite_accessory/undershirt/ian
@@ -96,7 +96,7 @@
 <h2>Changing Jobs - Step by Step</h2>
 <ol>
 <li>Grab an appropriate ID card. Head of Staff jobs require a silver ID card. Mayor requires a gold ID card.</li>
-<li>Insert the ID card into the combined PDA Painter and ID Trimmer in the HoP office.</li>
+<li>Insert the ID card into the combined PDA Painter and ID Trimmer in the CC office.</li>
 <li>Select to appropriate trim then hit the button to apply it to the card. This will wipe all the card's access.</li>
 <li>Remove the ID from the PDA/ID Painter and open up any modular computer with the Plexagon Access Management application downloaded.</li>
 <li>Login to the app using an ID card with any Head of Staff private office access for limited access or the ID Console access for unlimited access.</li>

@@ -33,7 +33,7 @@ SUBSYSTEM_DEF(id_access)
 	/// Helper list containing all station regions.
 	var/list/station_regions = list()
 
-	/// The roundstart generated code for the spare ID safe. This is given to the Mayor on shift start. If there's no Mayor, it's given to the HoP. If there's no HoP
+	/// The roundstart generated code for the spare ID safe. This is given to the Mayor on shift start. If there's no Mayor, it's given to the CC. If there's no CC
 	var/spare_id_safe_code = ""
 
 /datum/controller/subsystem/id_access/Initialize(timeofday)
@@ -158,7 +158,7 @@ SUBSYSTEM_DEF(id_access)
 			"templates" = list(),
 			"pdas" = list(),
 		),
-		"[ACCESS_HOP]" = list(
+		"[ACCESS_CC]" = list(
 			"regions" = list(REGION_GENERAL, REGION_SUPPLY),
 			"head" = JOB_CITY_CLERK,
 			"templates" = list(),
@@ -293,7 +293,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_VAULT]"] = "Main Vault"
 	desc_by_access["[ACCESS_MINING_STATION]"] = "Mining EVA"
 	desc_by_access["[ACCESS_XENOBIOLOGY]"] = "Xenobiology Lab"
-	desc_by_access["[ACCESS_HOP]"] = "HoP Office"
+	desc_by_access["[ACCESS_CC]"] = "CC Office"
 	desc_by_access["[ACCESS_HOS]"] = "HoS Office"
 	desc_by_access["[ACCESS_CE]"] = "CE Office"
 	desc_by_access["[ACCESS_PHARMACY]"] = "Pharmacy"

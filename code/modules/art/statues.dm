@@ -109,9 +109,9 @@
 	name = "statue of the chief of police"
 	icon_state = "hos"
 
-/obj/structure/statue/gold/hop
+/obj/structure/statue/gold/cc
 	name = "statue of the city clerk"
-	icon_state = "hop"
+	icon_state = "cc"
 
 /obj/structure/statue/gold/md
 	name = "statue of the medical director"

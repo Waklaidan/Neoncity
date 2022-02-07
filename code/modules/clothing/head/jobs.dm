@@ -67,12 +67,12 @@
 	greyscale_colors = "#0070B7#FFCE5B"
 
 //City Clerk
-/obj/item/clothing/head/hopcap
+/obj/item/clothing/head/cccap
 	name = "city clerk's cap"
 	icon_state = "hopcap"
 	desc = "The symbol of true bureaucratic micromanagement."
 	armor = list(MELEE = 25, BULLET = 15, LASER = 25, ENERGY = 35, BOMB = 25, BIO = 0, FIRE = 50, ACID = 50)
-	dog_fashion = /datum/dog_fashion/head/hop
+	dog_fashion = /datum/dog_fashion/head/cc
 
 //Chaplain
 /obj/item/clothing/head/nun_hood

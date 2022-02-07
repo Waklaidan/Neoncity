@@ -76,7 +76,7 @@
 	armor = list(MELEE = 25, BULLET = 30, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, FIRE = 0, ACID = 50)
 
 // City Clerk
-/obj/item/clothing/suit/hooded/wintercoat/hop
+/obj/item/clothing/suit/hooded/wintercoat/cc
 	name = "city clerk's winter coat"
 	desc = "A cozy winter coat, covered in thick fur. The breast features a proud yellow chevron, reminding everyone that you're the second banana."
 	icon_state = "coathop"
@@ -85,9 +85,9 @@
 	allowed = list(
 		/obj/item/melee/baton/telescopic,
 	)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/hop
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/cc
 
-/obj/item/clothing/head/hooded/winterhood/hop
+/obj/item/clothing/head/hooded/winterhood/cc
 	icon_state = "hood_hop"
 
 // Botanist

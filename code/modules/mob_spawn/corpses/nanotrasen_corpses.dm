@@ -7,7 +7,7 @@
 
 /datum/outfit/nanotrasenbridgeofficer
 	name = "Bridge Officer"
-	ears = /obj/item/radio/headset/heads/hop
+	ears = /obj/item/radio/headset/heads/cc
 	uniform = /obj/item/clothing/under/rank/centcom/officer
 	suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/sneakers/black

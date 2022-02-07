@@ -300,7 +300,7 @@
 /obj/machinery/navbeacon/wayfinding/bridge
 	location = "Bridge"
 
-/obj/machinery/navbeacon/wayfinding/hop
+/obj/machinery/navbeacon/wayfinding/cc
 	location = "City Clerk's Office"
 
 /obj/machinery/navbeacon/wayfinding/vault

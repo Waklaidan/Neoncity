@@ -2790,7 +2790,7 @@
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "kc" = (
-/obj/structure/closet/secure_closet/hop,
+/obj/structure/closet/secure_closet/cc,
 /turf/open/floor/wood,
 /area/city/outdoors)
 "kd" = (
@@ -3435,7 +3435,7 @@
 /area/city/outdoors)
 "lH" = (
 /obj/structure/bed,
-/obj/item/bedsheet/hop,
+/obj/item/bedsheet/cc,
 /turf/open/floor/carpet,
 /area/city/outdoors)
 "lI" = (
@@ -5745,7 +5745,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/table/glass,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "hop";
+	id = "cc";
 	name = "Privacy Shutters"
 	},
 /turf/open/floor/iron/dark,
@@ -5788,7 +5788,7 @@
 "rM" = (
 /obj/structure/table/glass,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "hop";
+	id = "cc";
 	name = "Privacy Shutters"
 	},
 /obj/machinery/door/window/brigdoor{
@@ -9795,7 +9795,7 @@
 	dir = 8
 	},
 /obj/machinery/button/door/directional/north{
-	id = "hop";
+	id = "cc";
 	name = "Privacy Shutters Control";
 	pixel_x = 26;
 	req_access_txt = "57"

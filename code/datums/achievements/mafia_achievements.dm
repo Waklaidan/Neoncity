@@ -45,10 +45,10 @@
 	database_id = MAFIA_MEDAL_LAWYER
 	icon = "town"
 
-/datum/award/achievement/mafia/hop
+/datum/award/achievement/mafia/cc
 	name = "City Clerk Victory"
 	desc = "King of Civilians, waster of a single mafia's night, thrower of games."
-	database_id = MAFIA_MEDAL_HOP
+	database_id = MAFIA_MEDAL_CC
 	icon = "town"
 
 /datum/award/achievement/mafia/warden
