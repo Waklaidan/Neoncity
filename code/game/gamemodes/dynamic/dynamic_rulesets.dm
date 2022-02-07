@@ -98,7 +98,7 @@
 	ruletype = "Latejoin"
 
 /// By default, a rule is acceptable if it satisfies the threat level/population requirements.
-/// If your rule has extra checks, such as counting security officers, do that in ready() instead
+/// If your rule has extra checks, such as counting police officers, do that in ready() instead
 /datum/dynamic_ruleset/proc/acceptable(population = 0, threat_level = 0)
 	pop_per_requirement = pop_per_requirement > 0 ? pop_per_requirement : mode.pop_per_requirement
 	indice_pop = min(requirements.len,round(population/pop_per_requirement)+1)

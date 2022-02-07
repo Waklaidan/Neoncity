@@ -131,7 +131,7 @@
 	desc = "A purple hood that smells of space cleaner."
 	icon_state = "hood_janitor"
 
-// Security Officer
+// Police Officer
 /obj/item/clothing/suit/hooded/wintercoat/security
 	name = "security winter coat"
 	desc = "A red, armour-padded winter coat. It glitters with a mild ablative coating and a robust air of authority.  The zipper tab is a pair of jingly little handcuffs that get annoying after the first ten seconds."

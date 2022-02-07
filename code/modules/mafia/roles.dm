@@ -347,7 +347,7 @@
 		current_protected = null
 
 /datum/mafia_role/officer
-	name = "Security Officer"
+	name = "Police Officer"
 	desc = "You can protect a single person each night. If they are attacked, you will retaliate, killing yourself and the attacker."
 	revealed_outfit = /datum/outfit/mafia/security
 	revealed_icon = "securityofficer"

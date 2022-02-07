@@ -354,7 +354,7 @@ SUBSYSTEM_DEF(ticker)
 
 
 /datum/controller/subsystem/ticker/proc/equip_characters()
-	GLOB.security_officer_distribution = decide_security_officer_departments(
+	GLOB.police_officer_distribution = decide_police_officer_departments(
 		shuffle(GLOB.new_player_list),
 		shuffle(GLOB.available_depts),
 	)
@@ -422,7 +422,7 @@ SUBSYSTEM_DEF(ticker)
 			CHECK_TICK
 
 
-/datum/controller/subsystem/ticker/proc/decide_security_officer_departments(
+/datum/controller/subsystem/ticker/proc/decide_police_officer_departments(
 	list/new_players,
 	list/departments,
 )
@@ -431,7 +431,7 @@ SUBSYSTEM_DEF(ticker)
 
 	for (var/mob/dead/new_player/new_player_mob as anything in new_players)
 		var/mob/living/carbon/human/character = new_player_mob.new_character
-		if (istype(character) && is_security_officer_job(character.mind?.assigned_role))
+		if (istype(character) && is_police_officer_job(character.mind?.assigned_role))
 			officer_mobs += character
 
 			var/datum/client_interface/client = GET_CLIENT(new_player_mob)

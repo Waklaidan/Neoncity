@@ -24,7 +24,7 @@ const Moth: Species = {
       icon: "sun",
       name: "Bright Lights",
       description: "Moths need an extra layer of flash protection to protect \
-        themselves, such as against security officers or when welding. Welding \
+        themselves, such as against police officers or when welding. Welding \
         masks will work.",
     }],
   },

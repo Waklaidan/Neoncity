@@ -1,4 +1,4 @@
-/// Which department to put security officers in, when the config is enabled
+/// Which department to put police officers in, when the config is enabled
 /datum/preference/choiced/security_department
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	can_randomize = FALSE

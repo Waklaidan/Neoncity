@@ -34,7 +34,7 @@
 	icon = "town"
 
 /datum/award/achievement/mafia/officer
-	name = "Security Officer Victory"
+	name = "Police Officer Victory"
 	desc = "Don't worry, you can win this if you're dead! You... did use your ability to become dead, right?"
 	database_id = MAFIA_MEDAL_OFFICER
 	icon = "town"

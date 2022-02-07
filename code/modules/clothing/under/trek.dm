@@ -16,7 +16,7 @@
 
 /obj/item/clothing/under/trek/engsec
 	name = "engsec uniform"
-	desc = "The uniform worn by engineering/security officers."
+	desc = "The uniform worn by engineering/police officers."
 	icon_state = "trek_engsec"
 	inhand_icon_state = "r_suit"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 0,ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0) //more sec than eng, but w/e.

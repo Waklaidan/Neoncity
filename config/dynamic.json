@@ -24,7 +24,7 @@
 			},
 			"protected_roles": [
 				"Prisoner",
-				"Security Officer",
+				"Police Officer",
 				"Warden",
 				"Detective",
 				"Chief of Police",

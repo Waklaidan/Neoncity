@@ -46,7 +46,7 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/rank/security/officer/formal
-	name = "security officer's formal uniform"
+	name = "police officer's formal uniform"
 	desc = "The latest in fashionable security outfits."
 	icon_state = "officerblueclothes"
 	inhand_icon_state = "officerblueclothes"

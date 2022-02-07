@@ -415,7 +415,7 @@
 			"<p><span style=\"35;font-family: 'Verdana';\">[<input type=\"text\" style=\"font: '12x Verdana';\" id=\"paperfield_10010\" maxlength=\"35\" size=\"35\" />]</span></p>",
 			"<p><span style=\"35;font-family: 'Verdana';\">[<input type=\"text\" style=\"font: '12x Verdana';\" id=\"paperfield_10011\" maxlength=\"35\" size=\"35\" />]</span></p>",
 			"<hr />",
-			"<p style=\"color: grey; text-align: justify;\">This permit authorizes the possession, custody, and use of the listed equipment by the person designated on the permit. The Designated Person must present this permit to any Security Officer on first request. The permit may be revoked and withdrawn at any time without cause. When filling out this form, the authorizer should fill in the blank fields with the VOID designation.</p>",
+			"<p style=\"color: grey; text-align: justify;\">This permit authorizes the possession, custody, and use of the listed equipment by the person designated on the permit. The Designated Person must present this permit to any Police Officer on first request. The permit may be revoked and withdrawn at any time without cause. When filling out this form, the authorizer should fill in the blank fields with the VOID designation.</p>",
 			"<hr />",
 			"<p><strong>The name of the permittee (with signature):</strong></p>",
 			"<p><span style=\"35;font-family: 'Verdana';\">[<input type=\"text\" style=\"font: '12x Verdana';\" id=\"paperfield_10012\" maxlength=\"35\" size=\"35\" />]</span></p>",

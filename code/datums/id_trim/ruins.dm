@@ -13,7 +13,7 @@
 /// Trim for the oldstation ruin/Charlie station
 /datum/id_trim/away/old/sec
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_SEC)
-	assignment = "Charlie Station Security Officer"
+	assignment = "Charlie Station Police Officer"
 
 /// Trim for the oldstation ruin/Charlie station
 /datum/id_trim/away/old/sci

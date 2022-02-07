@@ -1584,7 +1584,7 @@
 	toysay = "Get that fucking disk!"
 
 /obj/item/toy/figure/secofficer
-	name = "\improper Security Officer action figure"
+	name = "\improper Police Officer action figure"
 	icon_state = "secofficer"
 	toysay = "I am the law!"
 	toysound = 'sound/runtime/complionator/dredd.ogg'

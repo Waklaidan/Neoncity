@@ -426,19 +426,19 @@
 	job = /datum/job/scientist
 
 /// Sec officers have departmental variants. They each have their own trims with bonus departmental accesses.
-/datum/id_trim/job/security_officer
-	assignment = "Security Officer"
+/datum/id_trim/job/police_officer
+	assignment = "Police Officer"
 	trim_state = "trim_securityofficer"
 	extra_access = list(ACCESS_FORENSICS_LOCKERS, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE)
 	minimal_access = list(ACCESS_BRIG, ACCESS_COURT, ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_MECH_SECURITY,
 					ACCESS_MINERAL_STOREROOM, ACCESS_WEAPONS)
 	/// List of bonus departmental accesses that departmental sec officers get.
 	var/department_access = list()
-	config_job = "security_officer"
+	config_job = "police_officer"
 	template_access = list(ACCESS_MAYOR, ACCESS_HOS, ACCESS_CHANGE_IDS)
-	job = /datum/job/security_officer
+	job = /datum/job/police_officer
 
-/datum/id_trim/job/security_officer/refresh_trim_access()
+/datum/id_trim/job/police_officer/refresh_trim_access()
 	. = ..()
 
 	if(!.)
@@ -450,23 +450,23 @@
 
 	access |= department_access
 
-/datum/id_trim/job/security_officer/supply
-	assignment = "Security Officer (Cargo)"
+/datum/id_trim/job/police_officer/supply
+	assignment = "Police Officer (Cargo)"
 	trim_state = "trim_securityofficer_car"
 	department_access = list(ACCESS_AUX_BASE, ACCESS_CARGO, ACCESS_MAILSORTING, ACCESS_MINING, ACCESS_MINING_STATION)
 
-/datum/id_trim/job/security_officer/engineering
-	assignment = "Security Officer (Engineering)"
+/datum/id_trim/job/police_officer/engineering
+	assignment = "Police Officer (Engineering)"
 	trim_state = "trim_securityofficer_engi"
 	department_access = list(ACCESS_ATMOSPHERICS, ACCESS_AUX_BASE, ACCESS_CONSTRUCTION, ACCESS_ENGINE)
 
-/datum/id_trim/job/security_officer/medical
-	assignment = "Security Officer (Medical)"
+/datum/id_trim/job/police_officer/medical
+	assignment = "Police Officer (Medical)"
 	trim_state = "trim_securityofficer_med"
 	department_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY)
 
-/datum/id_trim/job/security_officer/science
-	assignment = "Security Officer (Science)"
+/datum/id_trim/job/police_officer/science
+	assignment = "Police Officer (Science)"
 	trim_state = "trim_securityofficer_sci"
 	department_access = list(ACCESS_AUX_BASE, ACCESS_RESEARCH, ACCESS_RND)
 

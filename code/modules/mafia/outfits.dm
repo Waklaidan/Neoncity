@@ -43,7 +43,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 
 /datum/outfit/mafia/security
-	name = "Mafia Security Officer"
+	name = "Mafia Police Officer"
 
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black

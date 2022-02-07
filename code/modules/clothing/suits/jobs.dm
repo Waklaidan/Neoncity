@@ -149,8 +149,8 @@
 
 //Security
 /obj/item/clothing/suit/security/officer
-	name = "security officer's jacket"
-	desc = "This jacket is for those special occasions when a security officer isn't required to wear their armor."
+	name = "police officer's jacket"
+	desc = "This jacket is for those special occasions when a police officer isn't required to wear their armor."
 	icon_state = "officerbluejacket"
 	inhand_icon_state = "officerbluejacket"
 	body_parts_covered = CHEST|ARMS

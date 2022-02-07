@@ -82,7 +82,7 @@
 	integer = FALSE
 	min_val = 0
 
-/datum/config_entry/number/security_scaling_coeff //how much does the amount of players get divided by to determine open security officer positions
+/datum/config_entry/number/security_scaling_coeff //how much does the amount of players get divided by to determine open police officer positions
 	default = 8
 	integer = FALSE
 	min_val = 0

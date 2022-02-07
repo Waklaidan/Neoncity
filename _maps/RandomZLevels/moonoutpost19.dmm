@@ -2578,7 +2578,7 @@
 "fT" = (
 /obj/structure/closet/secure_closet{
 	icon_state = "sec";
-	name = "security officer's locker";
+	name = "police officer's locker";
 	req_access_txt = "201"
 	},
 /obj/item/clothing/suit/armor/vest,

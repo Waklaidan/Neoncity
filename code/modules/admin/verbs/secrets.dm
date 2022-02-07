@@ -86,10 +86,10 @@ GLOBAL_DATUM(everyone_a_traitor, /datum/everyone_is_a_traitor_controller)
 		if("infinite_sec")
 			if(!is_debugger)
 				return
-			var/datum/job/sec_job = SSjob.GetJobType(/datum/job/security_officer)
+			var/datum/job/sec_job = SSjob.GetJobType(/datum/job/police_officer)
 			sec_job.total_positions = -1
 			sec_job.spawn_positions = -1
-			message_admins("[key_name_admin(holder)] has removed the cap on security officers.")
+			message_admins("[key_name_admin(holder)] has removed the cap on police officers.")
 		//Buttons for helpful stuff. This is where people land in the tgui
 		if("clear_virus")
 			var/choice = tgui_alert(usr, "Are you sure you want to cure all disease?",, list("Yes", "Cancel"))

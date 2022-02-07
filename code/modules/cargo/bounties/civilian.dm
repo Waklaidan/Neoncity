@@ -127,7 +127,7 @@
 
 /datum/bounty/item/civilian/poppy
 	name = "Poppies"
-	description = "Commander Zot really wants to sweep Security Officer Olivia off her feet. Send a shipment of Poppies - her favorite flower - and he'll happily reward you."
+	description = "Commander Zot really wants to sweep Police Officer Olivia off her feet. Send a shipment of Poppies - her favorite flower - and he'll happily reward you."
 	reward = CARGO_CRATE_VALUE * 2
 	required_count = 3
 	wanted_types = list(/obj/item/food/grown/poppy)

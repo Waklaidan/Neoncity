@@ -961,7 +961,7 @@
 		},
 		{
 			"id": "sec_officer",
-			"name": "Security Officer",
+			"name": "Police Officer",
 			"desc": "Nanotrasen would like to remind all employees to support their station security team; remember, the boys in red keep you safe!",
 			"rules": "Squad Tactics",
 			"icon_state": "sec",

@@ -6,10 +6,10 @@
 	"d" = SEC_DEPT_SUPPLY, \
 ))
 
-/// Test that security officers with specific distributions get their departments.
-/datum/unit_test/security_officer_roundstart_distribution
+/// Test that police officers with specific distributions get their departments.
+/datum/unit_test/police_officer_roundstart_distribution
 
-/datum/unit_test/security_officer_roundstart_distribution/proc/test(
+/datum/unit_test/police_officer_roundstart_distribution/proc/test(
 	list/preferences,
 	list/expected,
 )
@@ -24,11 +24,11 @@
 	else
 		Fail(failure_message)
 
-/datum/unit_test/security_officer_roundstart_distribution/Run()
+/datum/unit_test/police_officer_roundstart_distribution/Run()
 	test_distributions()
 	test_with_mock_players()
 
-/datum/unit_test/security_officer_roundstart_distribution/proc/test_distributions()
+/datum/unit_test/police_officer_roundstart_distribution/proc/test_distributions()
 	test(list("a"), list("a"))
 	test(list("a", "b"), list("a", "a"))
 	test(list("a", "b", "c"), list("a", "a", "a"))
@@ -40,13 +40,13 @@
 	test(list("a", SEC_DEPT_NONE), list("a", "a"))
 	test(list(SEC_DEPT_NONE, SEC_DEPT_NONE, SEC_DEPT_NONE, SEC_DEPT_NONE), list("d", "d", "c", "c"))
 
-/datum/unit_test/security_officer_roundstart_distribution/proc/test_with_mock_players()
+/datum/unit_test/police_officer_roundstart_distribution/proc/test_with_mock_players()
 	var/mob/dead/new_player/officer_a = create_officer("a")
 	var/mob/dead/new_player/officer_b = create_officer("b")
 	var/mob/dead/new_player/officer_c = create_officer("c")
 	var/mob/dead/new_player/officer_d = create_officer("d")
 
-	var/list/outcome = SSticker.decide_security_officer_departments(
+	var/list/outcome = SSticker.decide_police_officer_departments(
 		list(officer_a, officer_b, officer_c, officer_d),
 		SECURITY_OFFICER_DEPARTMENTS,
 	)
@@ -56,7 +56,7 @@
 	TEST_ASSERT_EQUAL(outcome[REF(officer_c.new_character)], SECURITY_OFFICER_DEPARTMENTS_TO_NAMES["b"], "Officer C's department outcome was incorrect.")
 	TEST_ASSERT_EQUAL(outcome[REF(officer_d.new_character)], SECURITY_OFFICER_DEPARTMENTS_TO_NAMES["a"], "Officer D's department outcome was incorrect.")
 
-/datum/unit_test/security_officer_roundstart_distribution/proc/create_officer(preference)
+/datum/unit_test/police_officer_roundstart_distribution/proc/create_officer(preference)
 	var/mob/dead/new_player/new_player = allocate(/mob/dead/new_player)
 	var/datum/client_interface/mock_client = new
 
@@ -70,16 +70,16 @@
 
 	var/mob/living/carbon/human/new_character = allocate(/mob/living/carbon/human)
 	new_character.mind_initialize()
-	new_character.mind.set_assigned_role(SSjob.GetJobType(/datum/job/security_officer))
+	new_character.mind.set_assigned_role(SSjob.GetJobType(/datum/job/police_officer))
 
 	new_player.new_character = new_character
 	new_player.mock_client = mock_client
 	return new_player
 
-/// Test that latejoin security officers are put into the correct department
-/datum/unit_test/security_officer_latejoin_distribution
+/// Test that latejoin police officers are put into the correct department
+/datum/unit_test/police_officer_latejoin_distribution
 
-/datum/unit_test/security_officer_latejoin_distribution/proc/test(
+/datum/unit_test/police_officer_latejoin_distribution/proc/test(
 	preference,
 	list/preferences_of_others,
 	expected,
@@ -100,7 +100,7 @@
 
 	TEST_ASSERT_EQUAL(result, expected, failure_message)
 
-/datum/unit_test/security_officer_latejoin_distribution/Run()
+/datum/unit_test/police_officer_latejoin_distribution/Run()
 	test("a", list(), "a")
 	test("b", list(), "b")
 	test("a", list("b"), "b")

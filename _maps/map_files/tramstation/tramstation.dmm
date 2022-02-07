@@ -13378,7 +13378,7 @@
 /turf/open/floor/iron,
 /area/engineering/break_room)
 "dme" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/chair{
 	dir = 1
 	},
@@ -17377,7 +17377,7 @@
 /turf/open/floor/iron/dark,
 /area/medical/morgue)
 "eIl" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/chair{
 	dir = 8
 	},
@@ -38137,7 +38137,7 @@
 /turf/open/floor/iron,
 /area/science/mixing)
 "mir" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/chair{
 	dir = 4
 	},
@@ -40093,7 +40093,7 @@
 /turf/open/floor/iron/white,
 /area/science/cytology)
 "mTE" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/chair{
 	dir = 8
 	},
@@ -51010,7 +51010,7 @@
 /turf/open/floor/iron/dark,
 /area/security/interrogation)
 "qQb" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron,
 /area/security/office)
 "qQk" = (
@@ -62462,7 +62462,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/tram/center)
 "uVc" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/chair{
 	dir = 1
 	},

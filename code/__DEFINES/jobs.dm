@@ -43,11 +43,11 @@
 //Security
 #define JOB_WARDEN "Warden"
 #define JOB_DETECTIVE "Detective"
-#define JOB_SECURITY_OFFICER "Security Officer"
-#define JOB_SECURITY_OFFICER_MEDICAL "Security Officer (Medical)"
-#define JOB_SECURITY_OFFICER_ENGINEERING "Security Officer (Engineering)"
-#define JOB_SECURITY_OFFICER_SCIENCE "Security Officer (Science)"
-#define JOB_SECURITY_OFFICER_SUPPLY "Security Officer (Cargo)"
+#define JOB_SECURITY_OFFICER "Police Officer"
+#define JOB_SECURITY_OFFICER_MEDICAL "Police Officer (Medical)"
+#define JOB_SECURITY_OFFICER_ENGINEERING "Police Officer (Engineering)"
+#define JOB_SECURITY_OFFICER_SCIENCE "Police Officer (Science)"
+#define JOB_SECURITY_OFFICER_SUPPLY "Police Officer (Cargo)"
 //Engineering
 #define JOB_STATION_ENGINEER "Station Engineer"
 #define JOB_FIREFIGHTER "Firefighter"

@@ -98,7 +98,7 @@ TRAITOR_SCALING_COEFF 6
 BROTHER_SCALING_COEFF 6
 CHANGELING_SCALING_COEFF 6
 
-## Variables calculate how number of open security officer positions will scale to population.
+## Variables calculate how number of open police officer positions will scale to population.
 ## Used as (Officers = Population / Coeff)
 ## Set to 0 to disable scaling and use default numbers instead.
 SECURITY_SCALING_COEFF 8
@@ -193,7 +193,7 @@ MINIMAL_ACCESS_THRESHOLD 20
 ## Uncomment to give everyone maint access.
 #EVERYONE_HAS_MAINT_ACCESS
 
-## Comment this out this to make security officers spawn in departmental security posts
+## Comment this out this to make police officers spawn in departmental security posts
 #SEC_START_BRIG
 
 

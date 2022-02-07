@@ -49,7 +49,7 @@
 #define MAFIA_MEDAL_PSYCHOLOGIST "Psychologist"
 #define MAFIA_MEDAL_CHAPLAIN "Chaplain"
 #define MAFIA_MEDAL_MD "Medical Doctor"
-#define MAFIA_MEDAL_OFFICER "Security Officer"
+#define MAFIA_MEDAL_OFFICER "Police Officer"
 #define MAFIA_MEDAL_LAWYER "Lawyer"
 #define MAFIA_MEDAL_HOP "City Clerk"
 #define MAFIA_MEDAL_HOS "Chief of Police"

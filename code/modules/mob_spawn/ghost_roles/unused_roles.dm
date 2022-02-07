@@ -168,8 +168,8 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	faction = list("nanotrasenprivate")
-	prompt_name = "a private security officer"
-	you_are_text = "You are a Nanotrasen Private Security Officer!"
+	prompt_name = "a private police officer"
+	you_are_text = "You are a Nanotrasen Private Police Officer!"
 	flavour_text = "If higher command has an assignment for you, it's best you follow that. Otherwise, death to The Syndicate."
 	outfit = /datum/outfit/nanotrasensoldier
 

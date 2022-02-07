@@ -81,7 +81,7 @@
 	progression_maximum = 60 MINUTES
 	target_jobs = list(
 		// Security
-		/datum/job/security_officer,
+		/datum/job/police_officer,
 		/datum/job/warden,
 		/datum/job/detective,
 		// Heads of staff

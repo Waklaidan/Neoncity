@@ -28869,7 +28869,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/neutral,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -36988,7 +36988,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -41803,7 +41803,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -42132,7 +42132,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -49199,7 +49199,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -49549,7 +49549,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -61508,7 +61508,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -68792,7 +68792,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron/dark,
 /area/security/office)
 "szb" = (
@@ -76318,7 +76318,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -77693,7 +77693,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron/dark,
 /area/security/office)
 "vXR" = (

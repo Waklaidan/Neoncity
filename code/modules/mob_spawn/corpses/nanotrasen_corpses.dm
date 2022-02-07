@@ -34,11 +34,11 @@
 	id_trim = /datum/id_trim/centcom/corpse/commander
 
 /obj/effect/mob_spawn/corpse/human/nanotrasensoldier
-	name = "\improper Nanotrasen Private Security Officer"
+	name = "\improper Nanotrasen Private Police Officer"
 	outfit = /datum/outfit/nanotrasensoldier
 
 /datum/outfit/nanotrasensoldier
-	name = "NT Private Security Officer"
+	name = "NT Private Police Officer"
 	uniform = /obj/item/clothing/under/rank/security/officer
 	suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/combat

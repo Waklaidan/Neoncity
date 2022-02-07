@@ -7427,7 +7427,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron/dark,
 /area/security/range)
 "bAJ" = (
@@ -8919,7 +8919,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron,
 /area/security/office)
 "bUb" = (
@@ -63093,7 +63093,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron,
 /area/security/office)
 "ufg" = (
@@ -69224,7 +69224,7 @@
 /area/hallway/secondary/exit/departure_lounge)
 "wow" = (
 /obj/structure/cable,
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron,
 /area/security/office)
 "woy" = (

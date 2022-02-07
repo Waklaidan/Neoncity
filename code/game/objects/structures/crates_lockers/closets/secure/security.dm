@@ -94,7 +94,7 @@
 	new /obj/item/door_remote/chief_of_police(src)
 
 /obj/structure/closet/secure_closet/security
-	name = "security officer's locker"
+	name = "police officer's locker"
 	req_access = list(ACCESS_SECURITY)
 	icon_state = "sec"
 

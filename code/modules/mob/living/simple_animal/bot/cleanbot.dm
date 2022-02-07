@@ -41,7 +41,7 @@
 
 	var/static/list/officers = list("Mayor", "City Clerk", "Chief of Police")
 	var/static/list/command = list("Mayor" = "Cpt.","City Clerk" = "Lt.")
-	var/static/list/security = list("Chief of Police" = "Maj.", "Warden" = "Sgt.", "Detective" = "Det.", "Security Officer" = "Officer")
+	var/static/list/security = list("Chief of Police" = "Maj.", "Warden" = "Sgt.", "Detective" = "Det.", "Police Officer" = "Officer")
 	var/static/list/engineering = list("Chief Engineer" = "Chief Engineer", "Station Engineer" = "Engineer", "Atmospherics Technician" = "Technician")
 	var/static/list/medical = list("Medical Director" = "M.D.D.", "Medical Doctor" = "M.D.", "Chemist" = "Pharm.D.")
 	var/static/list/research = list("Research Director" = "Ph.D.", "Roboticist" = "M.S.", "Scientist" = "B.S.")

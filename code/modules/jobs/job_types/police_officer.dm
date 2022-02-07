@@ -1,4 +1,4 @@
-/datum/job/security_officer
+/datum/job/police_officer
 	title = JOB_SECURITY_OFFICER
 	description = "Protect company assets, follow the Standard Operating \
 		Procedure, eat donuts."
@@ -45,36 +45,36 @@
 GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY))
 
 /**
- * The department distribution of the security officers.
+ * The department distribution of the police officers.
  *
- * Keys are refs of the security officer mobs. This is to preserve the list's structure even if the
+ * Keys are refs of the police officer mobs. This is to preserve the list's structure even if the
  * mob gets deleted. This is also safe, as mobs are guaranteed to have a unique ref, as per /mob/GenerateTag().
  */
-GLOBAL_LIST_EMPTY(security_officer_distribution)
+GLOBAL_LIST_EMPTY(police_officer_distribution)
 
 
-/datum/job/security_officer/after_roundstart_spawn(mob/living/spawning, client/player_client)
+/datum/job/police_officer/after_roundstart_spawn(mob/living/spawning, client/player_client)
 	. = ..()
 	if(ishuman(spawning))
 		setup_department(spawning, player_client)
 
 
-/datum/job/security_officer/after_latejoin_spawn(mob/living/spawning)
+/datum/job/police_officer/after_latejoin_spawn(mob/living/spawning)
 	. = ..()
 	if(ishuman(spawning))
 		var/department = setup_department(spawning, spawning.client)
 		if(department)
-			announce_latejoin(spawning, department, GLOB.security_officer_distribution)
+			announce_latejoin(spawning, department, GLOB.police_officer_distribution)
 
 
 /// Returns the department this mob was assigned to, if any.
-/datum/job/security_officer/proc/setup_department(mob/living/carbon/human/spawning, client/player_client)
+/datum/job/police_officer/proc/setup_department(mob/living/carbon/human/spawning, client/player_client)
 	var/department = player_client?.prefs?.read_preference(/datum/preference/choiced/security_department)
 	if (!isnull(department))
 		department = get_my_department(spawning, department)
 
 		// This should theoretically still run if a player isn't in the distributions, but isn't a late join.
-		GLOB.security_officer_distribution[REF(spawning)] = department
+		GLOB.police_officer_distribution[REF(spawning)] = department
 
 	var/ears = null
 	var/accessory = null
@@ -84,22 +84,22 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	switch(department)
 		if(SEC_DEPT_SUPPLY)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/supply
-			dep_trim = /datum/id_trim/job/security_officer/supply
+			dep_trim = /datum/id_trim/job/police_officer/supply
 			destination = /area/security/checkpoint/supply
 			accessory = /obj/item/clothing/accessory/armband/cargo
 		if(SEC_DEPT_ENGINEERING)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/engi
-			dep_trim = /datum/id_trim/job/security_officer/engineering
+			dep_trim = /datum/id_trim/job/police_officer/engineering
 			destination = /area/security/checkpoint/engineering
 			accessory = /obj/item/clothing/accessory/armband/engine
 		if(SEC_DEPT_MEDICAL)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/med
-			dep_trim = /datum/id_trim/job/security_officer/medical
+			dep_trim = /datum/id_trim/job/police_officer/medical
 			destination = /area/security/checkpoint/medical
 			accessory = /obj/item/clothing/accessory/armband/medblue
 		if(SEC_DEPT_SCIENCE)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/sci
-			dep_trim = /datum/id_trim/job/security_officer/science
+			dep_trim = /datum/id_trim/job/police_officer/science
 			destination = /area/security/checkpoint/science
 			accessory = /obj/item/clothing/accessory/armband/science
 
@@ -141,7 +141,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	return department
 
 
-/datum/job/security_officer/proc/announce_latejoin(
+/datum/job/police_officer/proc/announce_latejoin(
 	mob/officer,
 	department,
 	distribution,
@@ -179,24 +179,24 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 
 	signal.send_to_receivers()
 
-/datum/job/security_officer/proc/get_my_department(mob/character, preferred_department)
-	var/department = GLOB.security_officer_distribution[REF(character)]
+/datum/job/police_officer/proc/get_my_department(mob/character, preferred_department)
+	var/department = GLOB.police_officer_distribution[REF(character)]
 
-	// This passes when they are a round start security officer.
+	// This passes when they are a round start police officer.
 	if (department)
 		return department
 
 	return get_new_officer_distribution_from_late_join(
 		preferred_department,
 		shuffle(GLOB.available_depts),
-		GLOB.security_officer_distribution,
+		GLOB.police_officer_distribution,
 	)
 
 /datum/outfit/job/security
-	name = "Security Officer"
-	jobtype = /datum/job/security_officer
+	name = "Police Officer"
+	jobtype = /datum/job/police_officer
 
-	id_trim = /datum/id_trim/job/security_officer
+	id_trim = /datum/id_trim/job/police_officer
 	uniform = /obj/item/clothing/under/rank/security/officer
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	suit_store = /obj/item/gun/energy/disabler
@@ -226,7 +226,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	implants = list(/obj/item/implant/mindshield)
 
 /datum/outfit/job/security/mod
-	name = "Security Officer (MODsuit)"
+	name = "Police Officer (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/mod/control/pre_equipped/security
@@ -255,7 +255,7 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	keyslot = new /obj/item/encryptionkey/headset_sec
 	keyslot2 = new /obj/item/encryptionkey/headset_sci
 
-/// Returns the distribution of splitting the given security officers into departments.
+/// Returns the distribution of splitting the given police officers into departments.
 /// Return value is an assoc list of candidate => SEC_DEPT_*.
 /proc/get_officer_departments(list/preferences, list/departments)
 	if (!preferences.len)

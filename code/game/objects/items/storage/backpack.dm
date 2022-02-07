@@ -199,7 +199,7 @@
 
 /obj/item/storage/backpack/ert/security
 	name = "emergency response team security backpack"
-	desc = "A spacious backpack with lots of pockets, worn by Security Officers of an Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, worn by Police Officers of an Emergency Response Team."
 	icon_state = "ert_security"
 
 /obj/item/storage/backpack/ert/medical

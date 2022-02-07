@@ -2177,7 +2177,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
@@ -12474,7 +12474,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "cVO" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -13959,7 +13959,7 @@
 /turf/open/floor/iron,
 /area/service/hydroponics)
 "dCY" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -18436,7 +18436,7 @@
 /turf/open/floor/iron/white,
 /area/science/mixing)
 "fTQ" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -30994,7 +30994,7 @@
 /area/engineering/main)
 "mnQ" = (
 /obj/structure/chair,
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -34583,7 +34583,7 @@
 /turf/open/floor/iron,
 /area/command/bridge)
 "ofY" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -43712,7 +43712,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/project)
 "sLp" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -46888,7 +46888,7 @@
 /turf/open/floor/iron/white,
 /area/science/mixing)
 "und" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/structure/chair{
 	dir = 8
 	},
@@ -50763,7 +50763,7 @@
 /turf/open/floor/iron/white,
 /area/medical/medbay/aft)
 "wlA" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /turf/open/floor/iron,
 /area/security/office)
 "wlK" = (
@@ -50890,7 +50890,7 @@
 /turf/open/floor/iron,
 /area/command/heads_quarters/hop)
 "wom" = (
-/obj/effect/landmark/start/security_officer,
+/obj/effect/landmark/start/police_officer,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
