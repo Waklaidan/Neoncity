@@ -1,5 +1,5 @@
 /datum/job/chief_of_police
-	title = JOB_HEAD_OF_SECURITY
+	title = JOB_CHIEF_OF_POLICE
 	description = "Coordinate security personnel, ensure they are not corrupt, \
 		make sure every department is protected."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
@@ -30,7 +30,7 @@
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 
-	display_order = JOB_DISPLAY_ORDER_HEAD_OF_SECURITY
+	display_order = JOB_DISPLAY_ORDER_CHIEF_OF_POLICE
 	bounty_types = CIV_JOB_SEC
 
 	family_heirlooms = list(/obj/item/book/manual/wiki/security_space_law)

@@ -214,7 +214,7 @@
 
 /datum/id_trim/job/journalist
 	assignment = "Journalist"
-	trim_state = "trim_journalist"
+	trim_state = "trim_curator"
 	extra_access = list()
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_LIBRARY, ACCESS_MINING_STATION, ACCESS_SERVICE)
 	config_job = "journalist"

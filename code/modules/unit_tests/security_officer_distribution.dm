@@ -1,5 +1,5 @@
-#define SECURITY_OFFICER_DEPARTMENTS list("a", "b", "c", "d")
-#define SECURITY_OFFICER_DEPARTMENTS_TO_NAMES (list( \
+#define POLICE_OFFICER_DEPARTMENTS list("a", "b", "c", "d")
+#define POLICE_OFFICER_DEPARTMENTS_TO_NAMES (list( \
 	"a" = SEC_DEPT_ENGINEERING, \
 	"b" = SEC_DEPT_MEDICAL, \
 	"c" = SEC_DEPT_SCIENCE, \
@@ -13,7 +13,7 @@
 	list/preferences,
 	list/expected,
 )
-	var/list/outcome = get_officer_departments(preferences, SECURITY_OFFICER_DEPARTMENTS)
+	var/list/outcome = get_officer_departments(preferences, POLICE_OFFICER_DEPARTMENTS)
 	var/failure_message = "Tested with [json_encode(preferences)] and expected [json_encode(expected)], got [json_encode(outcome)]"
 
 	if (outcome.len == expected.len)
@@ -48,13 +48,13 @@
 
 	var/list/outcome = SSticker.decide_police_officer_departments(
 		list(officer_a, officer_b, officer_c, officer_d),
-		SECURITY_OFFICER_DEPARTMENTS,
+		POLICE_OFFICER_DEPARTMENTS,
 	)
 
-	TEST_ASSERT_EQUAL(outcome[REF(officer_a.new_character)], SECURITY_OFFICER_DEPARTMENTS_TO_NAMES["a"], "Officer A's department outcome was incorrect.")
-	TEST_ASSERT_EQUAL(outcome[REF(officer_b.new_character)], SECURITY_OFFICER_DEPARTMENTS_TO_NAMES["b"], "Officer B's department outcome was incorrect.")
-	TEST_ASSERT_EQUAL(outcome[REF(officer_c.new_character)], SECURITY_OFFICER_DEPARTMENTS_TO_NAMES["b"], "Officer C's department outcome was incorrect.")
-	TEST_ASSERT_EQUAL(outcome[REF(officer_d.new_character)], SECURITY_OFFICER_DEPARTMENTS_TO_NAMES["a"], "Officer D's department outcome was incorrect.")
+	TEST_ASSERT_EQUAL(outcome[REF(officer_a.new_character)], POLICE_OFFICER_DEPARTMENTS_TO_NAMES["a"], "Officer A's department outcome was incorrect.")
+	TEST_ASSERT_EQUAL(outcome[REF(officer_b.new_character)], POLICE_OFFICER_DEPARTMENTS_TO_NAMES["b"], "Officer B's department outcome was incorrect.")
+	TEST_ASSERT_EQUAL(outcome[REF(officer_c.new_character)], POLICE_OFFICER_DEPARTMENTS_TO_NAMES["b"], "Officer C's department outcome was incorrect.")
+	TEST_ASSERT_EQUAL(outcome[REF(officer_d.new_character)], POLICE_OFFICER_DEPARTMENTS_TO_NAMES["a"], "Officer D's department outcome was incorrect.")
 
 /datum/unit_test/police_officer_roundstart_distribution/proc/create_officer(preference)
 	var/mob/dead/new_player/new_player = allocate(/mob/dead/new_player)
@@ -63,10 +63,10 @@
 	mock_client.prefs = new
 	var/write_success = mock_client.prefs.write_preference(
 		GLOB.preference_entries[/datum/preference/choiced/security_department],
-		SECURITY_OFFICER_DEPARTMENTS_TO_NAMES[preference],
+		POLICE_OFFICER_DEPARTMENTS_TO_NAMES[preference],
 	)
 
-	TEST_ASSERT(write_success, "Couldn't write department [SECURITY_OFFICER_DEPARTMENTS_TO_NAMES[preference]]")
+	TEST_ASSERT(write_success, "Couldn't write department [POLICE_OFFICER_DEPARTMENTS_TO_NAMES[preference]]")
 
 	var/mob/living/carbon/human/new_character = allocate(/mob/living/carbon/human)
 	new_character.mind_initialize()
@@ -92,7 +92,7 @@
 
 	var/result = get_new_officer_distribution_from_late_join(
 		preference,
-		SECURITY_OFFICER_DEPARTMENTS,
+		POLICE_OFFICER_DEPARTMENTS,
 		distribution,
 	)
 
@@ -109,4 +109,4 @@
 	test("a", list("a", "a", "b", "b"), "c")
 	test("a", list("a", "a", "b", "b", "c", "c", "d", "d"), "a")
 
-#undef SECURITY_OFFICER_DEPARTMENTS
+#undef POLICE_OFFICER_DEPARTMENTS

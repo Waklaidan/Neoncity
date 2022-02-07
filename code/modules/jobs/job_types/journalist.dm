@@ -1,8 +1,8 @@
 /datum/job/journalist
-	title = JOB_CURATOR
+	title = JOB_JOURNALIST
 	description = "Read and write books and hand them to people, stock \
 		bookshelves, report on station news."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CITY_CLERK)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
@@ -16,7 +16,7 @@
 	paycheck = PAYCHECK_EASY
 	paycheck_department = ACCOUNT_SRV
 
-	display_order = JOB_DISPLAY_ORDER_CURATOR
+	display_order = JOB_DISPLAY_ORDER_JOURNALIST
 	departments_list = list(
 		/datum/job_department/service,
 		)
@@ -53,4 +53,4 @@
 	if(visualsOnly)
 		return
 
-	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_CURATOR)
+	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_JOURNALIST)

@@ -23,7 +23,7 @@
 		JOB_RESEARCH_DIRECTOR = /area/command/heads_quarters/rd,
 		JOB_MEDICAL_DIRECTOR = /area/command/heads_quarters/md,
 		JOB_CHIEF_ENGINEER = /area/command/heads_quarters/ce,
-		JOB_HEAD_OF_PERSONNEL = /area/command/heads_quarters/hop,
+		JOB_CITY_CLERK = /area/command/heads_quarters/hop,
 		JOB_MAYOR = /area/command/heads_quarters/mayor, // For head roles so that they can still get this objective.
 	)
 	var/datum/job/target_office
@@ -45,7 +45,7 @@
 	progression_minimum = 20 MINUTES
 	progression_maximum = 60 MINUTES
 	applicable_heads = list(
-		JOB_HEAD_OF_SECURITY = /area/command/heads_quarters/hos,
+		JOB_CHIEF_OF_POLICE = /area/command/heads_quarters/hos,
 	)
 	progression_reward = list(10 MINUTES, 15 MINUTES)
 	telecrystal_reward = list(2, 3)

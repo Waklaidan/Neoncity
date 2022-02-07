@@ -1,5 +1,5 @@
 /datum/job/city_clerk
-	title = JOB_HEAD_OF_PERSONNEL
+	title = JOB_CITY_CLERK
 	description = "Alter access on ID cards, manage civil and supply departments, \
 		protect Ian, run the station when the mayor dies."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
@@ -30,7 +30,7 @@
 
 	liver_traits = list(TRAIT_ROYAL_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_HEAD_OF_PERSONNEL
+	display_order = JOB_DISPLAY_ORDER_CITY_CLERK
 
 	mail_goodies = list(
 		/obj/item/card/id/advanced/silver = 10,

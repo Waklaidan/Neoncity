@@ -1,9 +1,9 @@
 /datum/job/police_officer
-	title = JOB_SECURITY_OFFICER
+	title = JOB_POLICE_OFFICER
 	description = "Protect company assets, follow the Standard Operating \
 		Procedure, eat donuts."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
-	department_head = list(JOB_HEAD_OF_SECURITY)
+	department_head = list(JOB_CHIEF_OF_POLICE)
 	faction = FACTION_STATION
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
@@ -23,7 +23,7 @@
 	mind_traits = list(TRAIT_DONUT_LOVER)
 	liver_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_SECURITY_OFFICER
+	display_order = JOB_DISPLAY_ORDER_POLICE_OFFICER
 	bounty_types = CIV_JOB_SEC
 	departments_list = list(
 		/datum/job_department/security,

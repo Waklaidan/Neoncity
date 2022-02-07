@@ -160,13 +160,13 @@ SUBSYSTEM_DEF(id_access)
 		),
 		"[ACCESS_HOP]" = list(
 			"regions" = list(REGION_GENERAL, REGION_SUPPLY),
-			"head" = JOB_HEAD_OF_PERSONNEL,
+			"head" = JOB_CITY_CLERK,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_HOS]" = list(
 			"regions" = list(REGION_SECURITY),
-			"head" = JOB_HEAD_OF_SECURITY,
+			"head" = JOB_CHIEF_OF_POLICE,
 			"templates" = list(),
 			"pdas" = list(),
 		),

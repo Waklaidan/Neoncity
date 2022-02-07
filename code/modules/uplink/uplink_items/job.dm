@@ -16,7 +16,7 @@
 			Be warned, that spirits are often capricious or just little assholes. To use, simply speak your question aloud, then begin shaking."
 	item = /obj/item/toy/eightball/haunted
 	cost = 2
-	restricted_roles = list(JOB_CURATOR)
+	restricted_roles = list(JOB_JOURNALIST)
 	limited_stock = 1 //please don't spam deadchat
 
 /datum/uplink_item/role_restricted/bureaucratic_error_remote
@@ -25,7 +25,7 @@
 	cost = 2
 	limited_stock = 1
 	item = /obj/item/devices/bureaucratic_error_remote
-	restricted_roles = list(JOB_HEAD_OF_PERSONNEL, JOB_QUARTERMASTER)
+	restricted_roles = list(JOB_CITY_CLERK, JOB_QUARTERMASTER)
 
 /datum/uplink_item/role_restricted/clumsinessinjector //clown ops can buy this too, but it's in the pointless badassery section for them
 	name = "Clumsiness Injector"

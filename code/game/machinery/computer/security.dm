@@ -906,7 +906,7 @@ What a mess.*/
 					if("rank")
 						var/list/L = list(
 							JOB_MAYOR,
-							JOB_HEAD_OF_PERSONNEL,
+							JOB_CITY_CLERK,
 							JOB_AI,
 							JOB_CENTCOM,
 						)

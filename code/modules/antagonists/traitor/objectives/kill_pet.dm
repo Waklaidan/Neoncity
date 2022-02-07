@@ -17,7 +17,7 @@
 
 	/// Possible heads mapped to their pet type. Can be a list of possible pets
 	var/list/possible_heads = list(
-		JOB_HEAD_OF_PERSONNEL = list(
+		JOB_CITY_CLERK = list(
 			/mob/living/simple_animal/pet/dog/corgi/ian,
 			/mob/living/simple_animal/pet/dog/corgi/puppy/ian
 		),
@@ -44,7 +44,7 @@
 
 	limited_to_department_head = FALSE
 	possible_heads = list(
-		JOB_HEAD_OF_SECURITY = list(
+		JOB_CHIEF_OF_POLICE = list(
 			/mob/living/simple_animal/hostile/carp/lia,
 			/mob/living/simple_animal/hostile/retaliate/bat/sgt_araneus
 		),
