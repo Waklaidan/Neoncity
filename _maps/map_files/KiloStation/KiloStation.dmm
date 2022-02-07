@@ -54398,7 +54398,7 @@
 	pixel_x = 5;
 	pixel_y = 1
 	},
-/obj/item/toy/figure/curator,
+/obj/item/toy/figure/journalist,
 /turf/open/floor/carpet/green,
 /area/service/library)
 "nqY" = (
@@ -62325,7 +62325,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/modular_computer/console/preset/curator{
+/obj/machinery/modular_computer/console/preset/journalist{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -71952,7 +71952,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/machinery/vending/wardrobe/curator_wardrobe,
+/obj/machinery/vending/wardrobe/journalist_wardrobe,
 /obj/machinery/firealarm/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/status_display/evac/directional/north,

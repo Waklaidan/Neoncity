@@ -212,14 +212,14 @@
 	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
 	job = /datum/job/cook
 
-/datum/id_trim/job/curator
-	assignment = "Curator"
-	trim_state = "trim_curator"
+/datum/id_trim/job/journalist
+	assignment = "Journalist"
+	trim_state = "trim_journalist"
 	extra_access = list()
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_LIBRARY, ACCESS_MINING_STATION, ACCESS_SERVICE)
-	config_job = "curator"
+	config_job = "journalist"
 	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
-	job = /datum/job/curator
+	job = /datum/job/journalist
 
 /datum/id_trim/job/detective
 	assignment = "Detective"

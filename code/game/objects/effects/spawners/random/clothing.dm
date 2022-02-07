@@ -115,7 +115,7 @@
 		/obj/structure/closet/wardrobe/virology_white,
 		/obj/structure/closet/wardrobe/science_white,
 		/obj/structure/closet/wardrobe/botanist,
-		/obj/structure/closet/wardrobe/curator,
+		/obj/structure/closet/wardrobe/journalist,
 		/obj/structure/closet/wardrobe/pjs,
 	)
 

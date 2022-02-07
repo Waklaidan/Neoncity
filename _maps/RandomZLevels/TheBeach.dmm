@@ -934,7 +934,7 @@
 /area/awaymission/beach)
 "cZ" = (
 /obj/item/clothing/head/collectable/paper{
-	desc = "What looks like an ordinary paper hat is actually a rare and valuable collector's edition paper hat. Keep away from fire, Curators, and ocean waves."
+	desc = "What looks like an ordinary paper hat is actually a rare and valuable collector's edition paper hat. Keep away from fire, Journalists, and ocean waves."
 	},
 /turf/open/floor/plating/beach/water,
 /area/awaymission/beach)

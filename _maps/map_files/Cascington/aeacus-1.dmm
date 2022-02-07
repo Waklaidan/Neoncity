@@ -11142,7 +11142,7 @@
 /turf/open/floor/wood/large,
 /area/city/outdoors)
 "GK" = (
-/obj/machinery/modular_computer/console/preset/curator{
+/obj/machinery/modular_computer/console/preset/journalist{
 	icon_state = "console";
 	dir = 1
 	},
@@ -13162,7 +13162,7 @@
 /area/city/outdoors)
 "Mh" = (
 /obj/machinery/door/morgue{
-	name = "Curator's Study";
+	name = "Journalist's Study";
 	req_access_txt = "37"
 	},
 /turf/open/floor/wood/large,
@@ -13573,7 +13573,7 @@
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "Nr" = (
-/obj/machinery/vending/wardrobe/curator_wardrobe,
+/obj/machinery/vending/wardrobe/journalist_wardrobe,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "Ns" = (

@@ -5,7 +5,7 @@
 /**
  * ## portrait printer!
  *
- * Program that lets the curator browse all of the portraits in the database
+ * Program that lets the journalist browse all of the portraits in the database
  * They are free to print them out as they please.
  */
 /datum/computer_file/program/portrait_printer

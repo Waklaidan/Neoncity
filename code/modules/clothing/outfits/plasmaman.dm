@@ -133,12 +133,12 @@
 	gloves = /obj/item/clothing/gloves/color/plasmaman/white
 	head = /obj/item/clothing/head/helmet/space/plasmaman/white
 
-/datum/outfit/plasmaman/curator
-	name = "Curator Plasmaman"
+/datum/outfit/plasmaman/journalist
+	name = "Journalist Plasmaman"
 
-	uniform = /obj/item/clothing/under/plasmaman/curator
+	uniform = /obj/item/clothing/under/plasmaman/journalist
 	gloves = /obj/item/clothing/gloves/color/plasmaman/prototype
-	head = /obj/item/clothing/head/helmet/space/plasmaman/curator
+	head = /obj/item/clothing/head/helmet/space/plasmaman/journalist
 
 /datum/outfit/plasmaman/botany
 	name = "Botany Plasmaman"

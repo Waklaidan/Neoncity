@@ -344,11 +344,11 @@
 			"rarity": "rare"
 		},
 		{
-			"id": "curator",
-			"name": "Curator",
-			"desc": "In Nanotrasen polls, the Curator has ranked as the most pointless job on station, much to the ire of the Curator's union. Thankfully, we don't have to listen to them.",
+			"id": "journalist",
+			"name": "Journalist",
+			"desc": "In Nanotrasen polls, the Journalist has ranked as the most pointless job on station, much to the ire of the Journalist's union. Thankfully, we don't have to listen to them.",
 			"rules": "On Summon: Draw 1 card: if it's an event card, discard it.",
-			"icon_state": "curator",
+			"icon_state": "journalist",
 			"power": "1",
 			"resolve": "1",
 			"faction": "Service",

@@ -192,15 +192,15 @@
 		/obj/item/tank/internals/emergency_oxygen,
 		)
 
-//Curator
-/obj/item/clothing/suit/curator
+//Journalist
+/obj/item/clothing/suit/journalist
 	name = "treasure hunter's coat"
 	desc = "Both fashionable and lightly armoured, this jacket is favoured by treasure hunters the galaxy over."
 	icon_state = "curator"
 	inhand_icon_state = "curator"
 	blood_overlay_type = "coat"
 	body_parts_covered = CHEST|ARMS
-	allowed = list(/obj/item/tank/internals, /obj/item/melee/curator_whip, /obj/item/storage/bag/books)
+	allowed = list(/obj/item/tank/internals, /obj/item/melee/journalist_whip, /obj/item/storage/bag/books)
 	armor = list(MELEE = 25, BULLET = 10, LASER = 25, ENERGY = 35, BOMB = 0, BIO = 0, FIRE = 0, ACID = 45)
 	cold_protection = CHEST|ARMS
 	heat_protection = CHEST|ARMS

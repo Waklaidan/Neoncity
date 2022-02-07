@@ -65100,7 +65100,7 @@
 /area/engineering/storage_shared)
 "uRq" = (
 /obj/machinery/light_switch/directional/east,
-/obj/machinery/modular_computer/console/preset/curator{
+/obj/machinery/modular_computer/console/preset/journalist{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -70683,7 +70683,7 @@
 "wPd" = (
 /obj/machinery/light/small/directional/north,
 /obj/machinery/computer/security/telescreen/entertainment/directional/east,
-/obj/machinery/vending/wardrobe/curator_wardrobe,
+/obj/machinery/vending/wardrobe/journalist_wardrobe,
 /turf/open/floor/engine/cult,
 /area/service/library)
 "wPo" = (

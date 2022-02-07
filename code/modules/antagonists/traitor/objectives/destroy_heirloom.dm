@@ -72,7 +72,7 @@
 		/datum/job/chaplain,
 		/datum/job/bartender,
 		/datum/job/cook,
-		/datum/job/curator,
+		/datum/job/journalist,
 	)
 
 /datum/traitor_objective/destroy_heirloom/rare

@@ -6436,7 +6436,7 @@
 /turf/open/floor/iron/dark,
 /area/engineering/engine_smes)
 "aRg" = (
-/obj/machinery/vending/wardrobe/curator_wardrobe,
+/obj/machinery/vending/wardrobe/journalist_wardrobe,
 /turf/open/floor/engine/cult,
 /area/service/library)
 "aRh" = (
@@ -7668,7 +7668,7 @@
 /obj/item/toy/figure/borg,
 /obj/item/toy/figure/botanist,
 /obj/item/toy/figure/chef,
-/obj/item/toy/figure/curator,
+/obj/item/toy/figure/journalist,
 /obj/item/folder/blue,
 /obj/item/folder/red,
 /obj/item/folder/red,
@@ -19521,7 +19521,7 @@
 /obj/item/toy/figure/borg,
 /obj/item/toy/figure/botanist,
 /obj/item/toy/figure/chef,
-/obj/item/toy/figure/curator,
+/obj/item/toy/figure/journalist,
 /obj/item/folder/blue,
 /obj/item/folder/red,
 /obj/item/folder/red,
@@ -70083,7 +70083,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/modular_computer/console/preset/curator{
+/obj/machinery/modular_computer/console/preset/journalist{
 	dir = 8
 	},
 /turf/open/floor/wood,

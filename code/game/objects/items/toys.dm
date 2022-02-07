@@ -1514,8 +1514,8 @@
 	icon_state = "lawyer"
 	toysay = "My client is a dirty traitor!"
 
-/obj/item/toy/figure/curator
-	name = "\improper Curator action figure"
+/obj/item/toy/figure/journalist
+	name = "\improper Journalist action figure"
 	icon_state = "curator"
 	toysay = "One day while..."
 

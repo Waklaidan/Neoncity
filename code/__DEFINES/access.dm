@@ -497,7 +497,7 @@
 	/obj/item/pda/lawyer = list(REGION_GENERAL, REGION_SECURITY), \
 	/obj/item/pda/botanist = list(REGION_GENERAL), \
 	/obj/item/pda/roboticist = list(REGION_RESEARCH), \
-	/obj/item/pda/curator = list(REGION_GENERAL), \
+	/obj/item/pda/journalist = list(REGION_GENERAL), \
 	/obj/item/pda/cook = list(REGION_GENERAL), \
 	/obj/item/pda/bar = list(REGION_GENERAL), \
 	/obj/item/pda/atmos = list(REGION_ENGINEERING), \

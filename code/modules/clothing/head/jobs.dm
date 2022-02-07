@@ -318,9 +318,9 @@
 	flags_1 = NONE
 
 
-//Curator
+//Journalist
 
-/obj/item/clothing/head/fedora/curator
+/obj/item/clothing/head/fedora/journalist
 	name = "treasure hunter's fedora"
 	desc = "You got red text today kid, but it doesn't mean you have to like it."
 	icon_state = "curator"

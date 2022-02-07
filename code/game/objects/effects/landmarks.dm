@@ -134,7 +134,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "Head of Personnel"
 
 /obj/effect/landmark/start/librarian
-	name = "Curator"
+	name = "Journalist"
 	icon_state = "Curator"
 
 /obj/effect/landmark/start/lawyer

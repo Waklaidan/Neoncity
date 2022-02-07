@@ -101,7 +101,7 @@
 	access = CART_SECURITY
 	spam_enabled = 1
 
-/obj/item/cartridge/curator
+/obj/item/cartridge/journalist
 	name = "\improper Lib-Tweet cartridge"
 	icon_state = "cart-s"
 	access = CART_NEWSCASTER

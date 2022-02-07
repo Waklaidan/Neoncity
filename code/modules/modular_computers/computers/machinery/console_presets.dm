@@ -106,14 +106,14 @@
 	hard_drive.store_file(new/datum/computer_file/program/chatclient())
 	hard_drive.store_file(new/datum/computer_file/program/arcade())
 
-// curator
-/obj/machinery/modular_computer/console/preset/curator
+// journalist
+/obj/machinery/modular_computer/console/preset/journalist
 	console_department = "Civilian"
-	name = "curator console"
+	name = "journalist console"
 	desc = "A stationary computer. This one comes preloaded with art programs."
 	_has_printer = TRUE
 
-/obj/machinery/modular_computer/console/preset/curator/install_programs()
+/obj/machinery/modular_computer/console/preset/journalist/install_programs()
 	var/obj/item/computer_hardware/hard_drive/hard_drive = cpu.all_components[MC_HDD]
 	hard_drive.store_file(new/datum/computer_file/program/portrait_printer())
 
