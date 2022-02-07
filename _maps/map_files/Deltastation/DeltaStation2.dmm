@@ -940,7 +940,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -48970,7 +48970,7 @@
 /turf/open/floor/iron,
 /area/maintenance/port/fore)
 "iHY" = (
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -54824,7 +54824,7 @@
 /area/ai_monitored/turret_protected/ai_upload)
 "kmY" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Office";
+	name = "Chief of Police's Office";
 	req_access_txt = "58"
 	},
 /obj/structure/disposalpipe/segment{
@@ -59161,7 +59161,7 @@
 "luH" = (
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/camera/directional/north{
-	c_tag = "Security - Head of Security's Office"
+	c_tag = "Security - Chief of Police's Office"
 	},
 /obj/structure/bed/dogbed/lia,
 /obj/effect/turf_decal/tile/neutral{
@@ -60244,7 +60244,7 @@
 /area/maintenance/department/electrical)
 "lIn" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Quarters";
+	name = "Chief of Police's Quarters";
 	req_access_txt = "58"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -65047,7 +65047,7 @@
 /obj/item/bedsheet/hos,
 /obj/machinery/status_display/evac/directional/north,
 /obj/machinery/camera/directional/north{
-	c_tag = "Security - Head of Security's Quarters"
+	c_tag = "Security - Chief of Police's Quarters"
 	},
 /turf/open/floor/iron/grimy,
 /area/command/heads_quarters/hos)
@@ -66063,9 +66063,9 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/requests_console/directional/north{
 	announcementConsole = 1;
-	department = "Head of Security's Desk";
+	department = "Chief of Police's Desk";
 	departmentType = 5;
-	name = "Head of Security's Requests Console"
+	name = "Chief of Police's Requests Console"
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1

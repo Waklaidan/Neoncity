@@ -1,4 +1,4 @@
-/datum/job/head_of_security
+/datum/job/chief_of_police
 	title = JOB_HEAD_OF_SECURITY
 	description = "Coordinate security personnel, ensure they are not corrupt, \
 		make sure every department is protected."
@@ -18,7 +18,7 @@
 	exp_granted_type = EXP_TYPE_CREW
 
 	outfit = /datum/outfit/job/hos
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_security
+	plasmaman_outfit = /datum/outfit/plasmaman/chief_of_police
 	departments_list = list(
 		/datum/job_department/security,
 		/datum/job_department/command,
@@ -40,17 +40,17 @@
 	voice_of_god_power = 1.4 //Command staff has authority
 
 
-/datum/job/head_of_security/get_mayordom_announcement(mob/living/mayor)
+/datum/job/chief_of_police/get_mayordom_announcement(mob/living/mayor)
 	return "Due to staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
 /datum/outfit/job/hos
-	name = "Head of Security"
-	jobtype = /datum/job/head_of_security
+	name = "Chief of Police"
+	jobtype = /datum/job/chief_of_police
 
 	id = /obj/item/card/id/advanced/silver
-	id_trim = /datum/id_trim/job/head_of_security
-	uniform = /obj/item/clothing/under/rank/security/head_of_security
+	id_trim = /datum/id_trim/job/chief_of_police
+	uniform = /obj/item/clothing/under/rank/security/chief_of_police
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	suit_store = /obj/item/gun/energy/e_gun
 	backpack_contents = list(
@@ -78,7 +78,7 @@
 	implants = list(/obj/item/implant/mindshield)
 
 /datum/outfit/job/hos/mod
-	name = "Head of Security (MODsuit)"
+	name = "Chief of Police (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/mod/control/pre_equipped/safeguard

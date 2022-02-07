@@ -569,9 +569,9 @@
 		},
 		{
 			"id": "HOS",
-			"name": "Head of Security",
+			"name": "Chief of Police",
 			"desc": "Nanotrasen hires most heads of staff based on their qualifications as being amicable, good at conflict resolution, ability to handle high-stakes situations, humanity, and desire to learn. Heads of Security only need a highschool degree.",
-			"rules": "On Summon: Select a card type. That card type now costs 1 extra mana to summon. This effect persists until Head of Security is removed from the battlefield.",
+			"rules": "On Summon: Select a card type. That card type now costs 1 extra mana to summon. This effect persists until Chief of Police is removed from the battlefield.",
 			"icon_state": "hos",
 			"power": "4",
 			"resolve": "4",

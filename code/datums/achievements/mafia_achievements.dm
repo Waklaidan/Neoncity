@@ -58,7 +58,7 @@
 	icon = "town"
 
 /datum/award/achievement/mafia/hos
-	name = "Head of Security Victory"
+	name = "Chief of Police Victory"
 	desc = "Certified not shitcurity."
 	database_id = MAFIA_MEDAL_HOS
 	icon = "town"

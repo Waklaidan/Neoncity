@@ -179,9 +179,9 @@
 	icon_state = "warden_envirohelm"
 	inhand_icon_state = "warden_envirohelm"
 
-/obj/item/clothing/head/helmet/space/plasmaman/security/head_of_security
-	name = "head of security's plasma envirosuit helmet"
-	desc = "A special containment helmet designed for the Head of Security. A pair of gold stripes are added to differentiate them from other members of security."
+/obj/item/clothing/head/helmet/space/plasmaman/security/chief_of_police
+	name = "chief of police's plasma envirosuit helmet"
+	desc = "A special containment helmet designed for the Chief of Police. A pair of gold stripes are added to differentiate them from other members of security."
 	icon_state = "hos_envirohelm"
 	inhand_icon_state = "hos_envirohelm"
 	armor = list(MELEE = 20, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 100, FIRE = 100, ACID = 75, WOUND = 10)

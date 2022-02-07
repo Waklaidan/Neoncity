@@ -13497,7 +13497,7 @@
 "Ne" = (
 /obj/structure/closet/secure_closet/hos,
 /obj/item/clothing/suit/armor/hos/trenchcoat,
-/obj/item/clothing/under/rank/security/head_of_security/grey,
+/obj/item/clothing/under/rank/security/chief_of_police/grey,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "Nf" = (
@@ -13776,7 +13776,7 @@
 /area/city/outdoors)
 "NY" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Quarters";
+	name = "Chief of Police's Quarters";
 	req_access_txt = "58"
 	},
 /turf/open/floor/iron/grimy,
@@ -15074,7 +15074,7 @@
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "Ru" = (
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /obj/structure/chair/comfy/black,
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
@@ -15493,7 +15493,7 @@
 /area/city/outdoors)
 "Sw" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Office";
+	name = "Chief of Police's Office";
 	req_access_txt = "58"
 	},
 /turf/open/floor/iron/dark,

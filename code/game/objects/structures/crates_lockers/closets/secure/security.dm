@@ -45,7 +45,7 @@
 	new /obj/item/storage/lockbox/medal/hop(src)
 
 /obj/structure/closet/secure_closet/hos
-	name = "\proper head of security's locker"
+	name = "\proper chief of police's locker"
 	req_access = list(ACCESS_HOS)
 	icon_state = "hos"
 
@@ -91,7 +91,7 @@
 	new /obj/item/storage/belt/security/full(src)
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/clothing/gloves/krav_maga/sec(src)
-	new /obj/item/door_remote/head_of_security(src)
+	new /obj/item/door_remote/chief_of_police(src)
 
 /obj/structure/closet/secure_closet/security
 	name = "security officer's locker"

@@ -68,9 +68,9 @@
 	glasses = /obj/item/clothing/glasses/sunglasses
 
 /datum/outfit/mafia/hos
-	name = "Mafia Head of Security"
+	name = "Mafia Chief of Police"
 
-	uniform = /obj/item/clothing/under/rank/security/head_of_security
+	uniform = /obj/item/clothing/under/rank/security/chief_of_police
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black

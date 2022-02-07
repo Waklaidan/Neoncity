@@ -112,9 +112,9 @@ As an Firefighter, your backpack firefighter tank can launch resin. This resin w
 As an Firefighter, your ATMOS holofan projector blocks gases while allowing objects to pass through. With it, you can quickly contain gas spills, fires and hull breaches.
 As an Firefighter, burning a plasma/oxygen mix inside the incinerator will not only produce power, but also gases such as tritium, water vapor and carbon dioxide.
 As an Firefighter, you can change the layer of a pipe by clicking with it on a wrenched pipe or other atmos component of the desired layer.
-As the Head of Security, you are expected to coordinate your security force to handle any threat that comes to the station. Sometimes it means making use of the armory to handle a blob, sometimes it means being ruthless during a revolution or cult.
-As the Head of Security, you can call for executions or forced cyborgization, but may require the Mayor's approval.
-As the Head of Security, don't let the power go to your head. You may have high access, great equipment, and a miniature army at your side, but being a terrible person without a good reason is grounds for banning.
+As the Chief of Police, you are expected to coordinate your security force to handle any threat that comes to the station. Sometimes it means making use of the armory to handle a blob, sometimes it means being ruthless during a revolution or cult.
+As the Chief of Police, you can call for executions or forced cyborgization, but may require the Mayor's approval.
+As the Chief of Police, don't let the power go to your head. You may have high access, great equipment, and a miniature army at your side, but being a terrible person without a good reason is grounds for banning.
 As the Warden, your duty is to be the watchdog of the brig and handler of prisoners when little is happening, and to hand out equipment and weapons to the security officers when a crisis strikes.
 As the Warden, keep a close eye on the armory at all times, as it is a favored strike point of nuclear operatives and cocky traitors.
 As the Warden, if a prisoner's crimes are heinous enough you can put them in permabrig or the gulag. Make sure to check on them once in a while!
@@ -128,7 +128,7 @@ As the Detective, people leave fingerprints everywhere and on everything. With t
 As the Detective, you can use your forensics scanner from a distance. Use this to scan boxes or other storage containers.
 As the Detective, your revolver can be loaded with .357 ammunition obtained from a hacked autolathe. Firing it has a decent chance to blow up your revolver.
 As the Lawyer, try to negotiate with the Warden if sentences seem too high for the crime.
-As the Lawyer, you can try to convince the Mayor and Head of Security to hold trials for prisoners in the courtroom.
+As the Lawyer, you can try to convince the Mayor and Chief of Police to hold trials for prisoners in the courtroom.
 As the City Clerk, you are not higher ranking than other heads of staff, even though you are expected to take the Mayor's place first should he go missing. If the situation seems too rough for you, consider allowing another head to become temporary Mayor.
 As the Mime, your invisible wall power blocks people as well as projectiles. You can use it in a pinch to delay your pursuer.
 As the Mime, you can use :r and :l to speak through your ventriloquist dummy.
@@ -170,7 +170,7 @@ As a Shaft Miner, always have a GPS on you, so a fellow miner or cyborg can come
 As a Shaft Miner, you can craft a variety of equipment from the local fauna. Bone axes, lava boats and ash drake armour are just a few of them!
 As a Traitor, the cryptographic sequencer (emag) can not only open lockers, crates, APCs and more. It can also do things like hack cyborgs, and even cause bots to go berserk. Use it on the right machines, and you can even contact the Syndicate. Experiment!
 As a Traitor, subverting the AI to serve you can make it an extremely powerful ally. However, be careful of the wording in the laws you give it, as it may use your poorly written laws against you!
-As a Traitor, the Mayor and the Head of Security are two of the most difficult to kill targets on the station. If either one is your target, plan carefully.
+As a Traitor, the Mayor and the Chief of Police are two of the most difficult to kill targets on the station. If either one is your target, plan carefully.
 As a Traitor, you can manufacture and recycle revolver bullets at a hacked autolathe, making the revolver an extremely powerful tool.
 As a Traitor, you may sometimes be assigned to hunt other traitors, and in turn be hunted by others.
 As a Traitor, the syndicate encryption key is very useful for coordinating plans with your fellow traitors -- or, of course, betraying them.

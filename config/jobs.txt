@@ -4,7 +4,7 @@
 #Positions can be set to -1 to allow unlimited slots
 Mayor=1,1
 City Clerk=1,1
-Head of Security=1,1
+Chief of Police=1,1
 Chief Engineer=1,1
 Research Director=1,1
 Chief Medical Officer=1,1

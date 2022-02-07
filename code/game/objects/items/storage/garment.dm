@@ -11,8 +11,8 @@
 	desc = "A bag for storing extra clothes and shoes. This one belongs to the mayor."
 
 /obj/item/storage/bag/garment/hos
-	name = "head of security's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the head of security."
+	name = "chief of police's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the chief of police."
 
 /obj/item/storage/bag/garment/hop
 	name = "city clerk's garment bag"
@@ -70,12 +70,12 @@
 	new /obj/item/clothing/suit/hooded/wintercoat/hop(src)
 
 /obj/item/storage/bag/garment/hos/PopulateContents()
-	new /obj/item/clothing/under/rank/security/head_of_security/grey(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/skirt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/alt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/alt/skirt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/parade/female(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/parade(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/grey(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/skirt(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/alt(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/alt/skirt(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/parade/female(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/parade(src)
 	new /obj/item/clothing/suit/armor/hos(src)
 	new /obj/item/clothing/suit/armor/hos/hos_formal(src)
 	new /obj/item/clothing/suit/armor/vest/leather(src)

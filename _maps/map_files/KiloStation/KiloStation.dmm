@@ -37960,7 +37960,7 @@
 	color = "#c45c57";
 	dir = 1
 	},
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hos)
 "hzC" = (
@@ -40892,7 +40892,7 @@
 /obj/effect/turf_decal/tile/neutral,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/camera/directional/north{
-	c_tag = "Head of Security's Office"
+	c_tag = "Chief of Police's Office"
 	},
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -55474,7 +55474,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /turf/open/floor/iron/dark,
 /area/security/office)
 "nQl" = (
@@ -56559,9 +56559,9 @@
 	},
 /obj/machinery/requests_console/directional/west{
 	announcementConsole = 1;
-	department = "Head of Security's Desk";
+	department = "Chief of Police's Desk";
 	departmentType = 5;
-	name = "Head of Security's Requests Console"
+	name = "Chief of Police's Requests Console"
 	},
 /turf/open/floor/wood,
 /area/command/heads_quarters/hos)
@@ -78863,7 +78863,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Office";
+	name = "Chief of Police's Office";
 	req_access_txt = "58"
 	},
 /obj/structure/disposalpipe/segment,
@@ -80739,7 +80739,7 @@
 "xaV" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Office";
+	name = "Chief of Police's Office";
 	req_access_txt = "58"
 	},
 /obj/structure/cable,

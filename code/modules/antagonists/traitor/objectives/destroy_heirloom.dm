@@ -93,7 +93,7 @@
 /datum/traitor_objective/destroy_heirloom/mayor
 	progression_minimum = 30 MINUTES
 	target_jobs = list(
-		/datum/job/head_of_security,
+		/datum/job/chief_of_police,
 		/datum/job/mayor
 	)
 

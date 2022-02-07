@@ -17,7 +17,7 @@
 	var/list/minimal_wildcard_access = list()
 	/// Static list. Cache of any mapping config job changes.
 	var/static/list/job_changes
-	/// What config entry relates to this job. Should be a lowercase job name with underscores for spaces, eg "prisoner" "research_director" "head_of_security"
+	/// What config entry relates to this job. Should be a lowercase job name with underscores for spaces, eg "prisoner" "research_director" "chief_of_police"
 	var/config_job
 	/// An ID card with an access in this list can apply this trim to IDs or use it as a job template when adding access to a card. If the list is null, cannot be used as a template. Should be Head of Staff or ID Console accesses or it may do nothing.
 	var/list/template_access
@@ -266,8 +266,8 @@
 	template_access = list(ACCESS_MAYOR, ACCESS_CHANGE_IDS)
 	job = /datum/job/city_clerk
 
-/datum/id_trim/job/head_of_security
-	assignment = "Head of Security"
+/datum/id_trim/job/chief_of_police
+	assignment = "Chief of Police"
 	trim_state = "trim_headofsecurity"
 	extra_access = list(ACCESS_TELEPORTER)
 	extra_wildcard_access = list()
@@ -276,11 +276,11 @@
 					ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM,
 					ACCESS_MINING, ACCESS_MORGUE, ACCESS_RC_ANNOUNCE, ACCESS_RESEARCH, ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_WEAPONS)
 	minimal_wildcard_access = list(ACCESS_HOS)
-	config_job = "head_of_security"
+	config_job = "chief_of_police"
 	template_access = list(ACCESS_MAYOR, ACCESS_CHANGE_IDS)
-	job = /datum/job/head_of_security
+	job = /datum/job/chief_of_police
 
-/datum/id_trim/job/head_of_security/refresh_trim_access()
+/datum/id_trim/job/chief_of_police/refresh_trim_access()
 	. = ..()
 
 	if(!.)

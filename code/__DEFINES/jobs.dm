@@ -32,7 +32,7 @@
 //Command
 #define JOB_MAYOR "Mayor"
 #define JOB_HEAD_OF_PERSONNEL "City Clerk"
-#define JOB_HEAD_OF_SECURITY "Head of Security"
+#define JOB_HEAD_OF_SECURITY "Chief of Police"
 #define JOB_RESEARCH_DIRECTOR "Research Director"
 #define JOB_CHIEF_ENGINEER "Chief Engineer"
 #define JOB_MEDICAL_DIRECTOR "Medical Director"

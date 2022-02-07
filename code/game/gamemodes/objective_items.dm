@@ -120,7 +120,7 @@
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/hoslaser
-	name = "the head of security's personal laser gun"
+	name = "the chief of police's personal laser gun"
 	targetitem = /obj/item/gun/energy/e_gun/hos
 	difficulty = 10
 	excludefromjob = list(JOB_HEAD_OF_SECURITY)

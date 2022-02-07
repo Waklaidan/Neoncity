@@ -1495,7 +1495,7 @@
 	toysay = "Giving out all access!"
 
 /obj/item/toy/figure/hos
-	name = "\improper Head of Security action figure"
+	name = "\improper Chief of Police action figure"
 	icon_state = "hos"
 	toysay = "Go ahead, make my day."
 

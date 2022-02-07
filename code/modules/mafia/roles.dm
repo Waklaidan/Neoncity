@@ -497,7 +497,7 @@
 	vote_power = 3
 
 /datum/mafia_role/hos
-	name = "Head of Security"
+	name = "Chief of Police"
 	desc = "You can decide to execute during the night, visiting someone killing, and revealing them. If they are innocent, you will die at the start of the next night."
 	role_type = TOWN_KILLING
 	role_flags = ROLE_CAN_KILL | ROLE_UNIQUE
@@ -539,7 +539,7 @@
 	if(!target.kill(game,src,FALSE))//protection
 		to_chat(body,span_danger("Your attempt at executing [target.body.real_name] was prevented, or [target.body.real_name] is immune!"))
 	else
-		to_chat(target.body, span_userdanger("You have been executed by the Head of Security!"))
+		to_chat(target.body, span_userdanger("You have been executed by the Chief of Police!"))
 		target.reveal_role(game, verbose = TRUE)
 		if(target.team == MAFIA_TEAM_TOWN)
 			to_chat(body,span_userdanger("You have killed an innocent crewmember. You will die tomorrow night."))

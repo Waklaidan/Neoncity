@@ -35436,7 +35436,7 @@
 /turf/open/floor/iron/white,
 /area/medical/pharmacy)
 "lhK" = (
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
 	},
@@ -55475,7 +55475,7 @@
 /area/service/kitchen)
 "suv" = (
 /obj/machinery/door/airlock/command/glass{
-	name = "Head of Security";
+	name = "Chief of Police";
 	req_access_txt = "58"
 	},
 /obj/structure/cable,
@@ -65073,12 +65073,12 @@
 /obj/machinery/computer/secure_data,
 /obj/machinery/requests_console/directional/north{
 	announcementConsole = 1;
-	department = "Head of Security's Desk";
+	department = "Chief of Police's Desk";
 	departmentType = 5;
-	name = "Head of Security's Requests Console"
+	name = "Chief of Police's Requests Console"
 	},
 /obj/machinery/camera{
-	c_tag = "Security - Head of Security's Office";
+	c_tag = "Security - Chief of Police's Office";
 	dir = 9;
 	network = list("ss13","Security")
 	},
@@ -70205,7 +70205,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 4;
-	name = "sorting disposal pipe (Head of Security's Office)";
+	name = "sorting disposal pipe (Chief of Police's Office)";
 	sortType = 8
 	},
 /turf/open/floor/iron,

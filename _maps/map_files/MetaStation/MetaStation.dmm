@@ -29252,7 +29252,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /turf/open/floor/wood,
 /area/command/heads_quarters/hos)
 "iej" = (
@@ -37627,7 +37627,7 @@
 /obj/structure/closet/secure_closet/hos,
 /obj/item/clothing/shoes/cowboy/black,
 /obj/machinery/camera/directional/north{
-	c_tag = "Head of Security's Office"
+	c_tag = "Chief of Police's Office"
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
@@ -38541,7 +38541,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
 "lyV" = (
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /obj/structure/chair/comfy/black,
 /turf/open/floor/iron/dark,
 /area/security/office)
@@ -38690,7 +38690,7 @@
 /area/hallway/primary/port)
 "lCS" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Office";
+	name = "Chief of Police's Office";
 	req_access_txt = "58"
 	},
 /obj/structure/cable,
@@ -46573,7 +46573,7 @@
 /obj/item/clothing/suit/security/officer,
 /obj/item/clothing/under/rank/security/warden/formal,
 /obj/item/clothing/suit/security/warden,
-/obj/item/clothing/under/rank/security/head_of_security/formal,
+/obj/item/clothing/under/rank/security/chief_of_police/formal,
 /obj/item/clothing/suit/security/hos,
 /obj/item/clothing/head/beret/sec/navyofficer,
 /obj/item/clothing/head/beret/sec/navyofficer,
@@ -55618,9 +55618,9 @@
 /obj/machinery/keycard_auth/directional/west,
 /obj/machinery/requests_console/directional/north{
 	announcementConsole = 1;
-	department = "Head of Security's Desk";
+	department = "Chief of Police's Desk";
 	departmentType = 5;
-	name = "Head of Security Requests Console"
+	name = "Chief of Police Requests Console"
 	},
 /obj/machinery/button/door/directional/north{
 	id = "hosspace";

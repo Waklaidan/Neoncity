@@ -521,7 +521,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "hop_office"
 
 /area/command/heads_quarters/hos
-	name = "\improper Head of Security's Office"
+	name = "\improper Chief of Police's Office"
 	icon_state = "hos_office"
 
 /area/command/heads_quarters/rd
