@@ -1,4 +1,4 @@
-/datum/job/cargo_technician
+/datum/job/retail_assistant
 	title = JOB_CARGO_TECHNICIAN
 	description = "Distribute supplies to the departments that ordered them, \
 		collect empty crates, load and unload the supply shuttle, \
@@ -36,10 +36,10 @@
 
 
 /datum/outfit/job/cargo_tech
-	name = "Cargo Technician"
-	jobtype = /datum/job/cargo_technician
+	name = "Retail Assistant"
+	jobtype = /datum/job/retail_assistant
 
-	id_trim = /datum/id_trim/job/cargo_technician
+	id_trim = /datum/id_trim/job/retail_assistant
 	uniform = /obj/item/clothing/under/rank/cargo/tech
 	backpack_contents = list(
 		/obj/item/modular_computer/tablet/preset/cargo = 1,

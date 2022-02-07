@@ -18010,7 +18010,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/sorting)
 "fIO" = (
@@ -19098,7 +19098,7 @@
 /turf/open/floor/iron/white,
 /area/medical/pharmacy)
 "ggW" = (
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/structure/chair/office{
 	dir = 4
 	},
@@ -36182,7 +36182,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/cargo/office)

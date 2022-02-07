@@ -13,7 +13,7 @@ Assistant=-1,-1
 Prisoner=0,2
 
 Quartermaster=1,1
-Cargo Technician=3,2
+Retail Assistant=3,2
 Shaft Miner=3,3
 
 Bartender=1,1

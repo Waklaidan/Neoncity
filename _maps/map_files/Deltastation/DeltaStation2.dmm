@@ -25149,7 +25149,7 @@
 	dir = 8
 	},
 /obj/structure/chair/office,
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/office)
 "dyv" = (
@@ -35044,7 +35044,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -53141,7 +53141,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/storage)
 "jQa" = (
@@ -56434,7 +56434,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -61483,7 +61483,7 @@
 /turf/open/floor/iron,
 /area/maintenance/department/crew_quarters/bar)
 "lXC" = (
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/cargo/storage)
@@ -69994,7 +69994,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral,
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron,
 /area/cargo/drone_bay)
@@ -73545,7 +73545,7 @@
 "pbs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/cargo/storage)
@@ -91486,7 +91486,7 @@
 /area/commons/locker)
 "ubc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/cargo/storage)

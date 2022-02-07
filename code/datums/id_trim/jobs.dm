@@ -141,14 +141,14 @@
 
 	return ..()
 
-/datum/id_trim/job/cargo_technician
-	assignment = "Cargo Technician"
+/datum/id_trim/job/retail_assistant
+	assignment = "Retail Assistant"
 	trim_state = "trim_cargotechnician"
 	extra_access = list(ACCESS_QM, ACCESS_MINING, ACCESS_MINING_STATION)
 	minimal_access = list(ACCESS_CARGO, ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MINING, ACCESS_MINERAL_STOREROOM)
-	config_job = "cargo_technician"
+	config_job = "retail_assistant"
 	template_access = list(ACCESS_MAYOR, ACCESS_HOP, ACCESS_CHANGE_IDS)
-	job = /datum/job/cargo_technician
+	job = /datum/job/retail_assistant
 
 /datum/id_trim/job/chaplain
 	assignment = "Chaplain"

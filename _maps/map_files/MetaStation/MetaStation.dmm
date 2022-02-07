@@ -21886,7 +21886,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/sorting)
 "fzp" = (
@@ -35199,7 +35199,7 @@
 /area/science/mixing/chamber)
 "knc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/warehouse)
 "knj" = (
@@ -45175,7 +45175,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/sorting)
 "nLu" = (
@@ -48712,7 +48712,7 @@
 /turf/open/floor/iron/dark,
 /area/engineering/storage/tech)
 "oWC" = (
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/storage)
 "oWG" = (
@@ -58147,7 +58147,7 @@
 /area/engineering/gravity_generator)
 "sqo" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,

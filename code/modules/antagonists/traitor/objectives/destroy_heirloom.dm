@@ -43,7 +43,7 @@
 		/datum/job/mime,
 		/datum/job/lawyer,
 		// Cargo
-		/datum/job/cargo_technician,
+		/datum/job/retail_assistant,
 		// Science
 		/datum/job/geneticist,
 		/datum/job/scientist,

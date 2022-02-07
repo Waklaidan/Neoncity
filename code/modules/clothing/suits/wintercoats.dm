@@ -390,7 +390,7 @@
 	desc = "A yellow and blue winter coat hood."
 	icon_state = "hood_atmos"
 
-// Cargo Technician
+// Retail Assistant
 /obj/item/clothing/suit/hooded/wintercoat/cargo
 	name = "cargo winter coat"
 	desc = "A tan-and-grey winter coat. The zipper tab is a small pin resembling a MULE. It fills you with the warmth of a fierce independence."

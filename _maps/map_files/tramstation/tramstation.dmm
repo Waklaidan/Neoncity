@@ -8772,7 +8772,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/cargo/storage)
 "bAr" = (
@@ -10508,7 +10508,7 @@
 /area/medical/treatment_center)
 "cgO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/structure/chair/office{
 	dir = 1
 	},
@@ -12572,7 +12572,7 @@
 /turf/open/floor/catwalk_floor,
 /area/hallway/primary/tram/center)
 "cVD" = (
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 8;
 	sortType = 1
@@ -50279,7 +50279,7 @@
 /turf/open/floor/plating,
 /area/mine/explored)
 "qCl" = (
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/glass,
 /area/cargo/storage)
 "qCn" = (
@@ -68777,7 +68777,7 @@
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 8
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /obj/structure/chair/office,
 /turf/open/floor/iron,
 /area/cargo/office)

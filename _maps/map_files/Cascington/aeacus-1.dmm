@@ -7952,7 +7952,7 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/city/outdoors)
 "xW" = (

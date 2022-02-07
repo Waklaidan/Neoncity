@@ -135,9 +135,9 @@
 		},
 		{
 			"id": "cargo_tech",
-			"name": "Cargo Technician",
-			"desc": "The grunts of Cargo. Any reports that Cargo Technicians are frequently overcome by revolutionary fervour are exaggerated.",
-			"rules": "Once per turn, you may give 'Cargo Technician' -1/0 until the start of your next turn and gain 1 mana.",
+			"name": "Retail Assistant",
+			"desc": "The grunts of Cargo. Any reports that Retail Assistants are frequently overcome by revolutionary fervour are exaggerated.",
+			"rules": "Once per turn, you may give 'Retail Assistant' -1/0 until the start of your next turn and gain 1 mana.",
 			"icon_state": "cargo_tech",
 			"power": "3",
 			"resolve": "1",

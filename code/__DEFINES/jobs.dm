@@ -62,7 +62,7 @@
 #define JOB_GENETICIST "Geneticist"
 //Supply
 #define JOB_QUARTERMASTER "Quartermaster"
-#define JOB_CARGO_TECHNICIAN "Cargo Technician"
+#define JOB_CARGO_TECHNICIAN "Retail Assistant"
 #define JOB_SHAFT_MINER "Shaft Miner"
 //Service
 #define JOB_BARTENDER "Bartender"

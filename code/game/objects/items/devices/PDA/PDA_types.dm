@@ -163,7 +163,7 @@
 	RegisterSignal(src, COMSIG_PDA_CHECK_DETONATE, .proc/pda_no_detonate)
 
 /obj/item/pda/cargo
-	name = "cargo technician PDA"
+	name = "retail assistant PDA"
 	default_cartridge = /obj/item/cartridge/quartermaster
 	greyscale_colors = "#D6B328#6506ca"
 
