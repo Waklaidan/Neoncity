@@ -228,7 +228,7 @@
 	minimal_access = list(ACCESS_BRIG, ACCESS_COURT, ACCESS_FORENSICS_LOCKERS, ACCESS_SEC_DOORS,ACCESS_MAINT_TUNNELS, ACCESS_MORGUE,
 					ACCESS_MECH_SECURITY, ACCESS_MINERAL_STOREROOM, ACCESS_WEAPONS)
 	config_job = "detective"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOS, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_COP, ACCESS_CHANGE_IDS)
 	job = /datum/job/detective
 
 /datum/id_trim/job/detective/refresh_trim_access()
@@ -275,7 +275,7 @@
 					ACCESS_ENGINE, ACCESS_EVA, ACCESS_FORENSICS_LOCKERS, ACCESS_GATEWAY, ACCESS_HEADS, ACCESS_KEYCARD_AUTH,
 					ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM,
 					ACCESS_MINING, ACCESS_MORGUE, ACCESS_RC_ANNOUNCE, ACCESS_RESEARCH, ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_WEAPONS)
-	minimal_wildcard_access = list(ACCESS_HOS)
+	minimal_wildcard_access = list(ACCESS_COP)
 	config_job = "chief_of_police"
 	template_access = list(ACCESS_MAYOR, ACCESS_CHANGE_IDS)
 	job = /datum/job/chief_of_police
@@ -305,7 +305,7 @@
 	extra_access = list()
 	minimal_access = list(ACCESS_COURT, ACCESS_LAWYER, ACCESS_SEC_DOORS, ACCESS_SERVICE)
 	config_job = "lawyer"
-	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_HOS, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_COP, ACCESS_CHANGE_IDS)
 	job = /datum/job/lawyer
 
 /datum/id_trim/job/medical_doctor
@@ -340,7 +340,7 @@
 	assignment = "Prisoner"
 	trim_state = "trim_prisoner"
 	config_job = "prisoner"
-	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_HOS, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_COP, ACCESS_CHANGE_IDS)
 	job = /datum/job/prisoner
 
 /datum/id_trim/job/prisoner/one
@@ -435,7 +435,7 @@
 	/// List of bonus departmental accesses that departmental sec officers get.
 	var/department_access = list()
 	config_job = "police_officer"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOS, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_COP, ACCESS_CHANGE_IDS)
 	job = /datum/job/police_officer
 
 /datum/id_trim/job/police_officer/refresh_trim_access()
@@ -512,7 +512,7 @@
 	minimal_access = list(ACCESS_ARMORY, ACCESS_BRIG, ACCESS_COURT, ACCESS_MECH_SECURITY, ACCESS_MINERAL_STOREROOM,
 					ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_WEAPONS) // See /datum/job/warden/get_access()
 	config_job = "warden"
-	template_access = list(ACCESS_MAYOR, ACCESS_HOS, ACCESS_CHANGE_IDS)
+	template_access = list(ACCESS_MAYOR, ACCESS_COP, ACCESS_CHANGE_IDS)
 	job = /datum/job/warden
 
 /datum/id_trim/job/warden/refresh_trim_access()

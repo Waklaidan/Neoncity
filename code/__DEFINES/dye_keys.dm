@@ -23,7 +23,7 @@
 #define DYE_LAW "law"
 #define DYE_MAYOR "mayor"
 #define DYE_CC "cc"
-#define DYE_HOS "hos"
+#define DYE_COP "hos"
 #define DYE_CE "ce"
 #define DYE_RD "rd"
 #define DYE_MD "md"

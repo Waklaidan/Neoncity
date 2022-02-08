@@ -135,8 +135,8 @@
 
 	dog_fashion = /datum/dog_fashion/head
 
-/obj/item/clothing/head/collectable/hos
-	name = "collectable HoS hat"
+/obj/item/clothing/head/collectable/cop
+	name = "collectable CoP hat"
 	desc = "Now you too can beat prisoners, set silly sentences, and arrest for no reason!"
 	icon_state = "hoscap"
 	dynamic_hair_suffix = ""

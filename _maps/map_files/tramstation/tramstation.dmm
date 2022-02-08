@@ -2166,7 +2166,7 @@
 	req_access_txt = "3"
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "aoD" = (
 /obj/effect/turf_decal/trimline/neutral/filled/corner,
 /turf/open/floor/iron,
@@ -3273,9 +3273,9 @@
 "avg" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
-/obj/item/stamp/hos,
+/obj/item/stamp/cop,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "avk" = (
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 1
@@ -7492,7 +7492,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "bbA" = (
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
@@ -10904,7 +10904,7 @@
 /area/maintenance/central)
 "cso" = (
 /turf/closed/wall,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "csF" = (
 /obj/structure/railing{
 	dir = 1
@@ -13971,7 +13971,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "dzy" = (
 /turf/closed/wall/r_wall,
 /area/cargo/miningdock)
@@ -16254,7 +16254,7 @@
 "enu" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "env" = (
 /obj/machinery/vending/wardrobe/jani_wardrobe,
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -19804,7 +19804,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "fAR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/closed/wall/r_wall,
@@ -20617,7 +20617,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "fNO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -27424,7 +27424,7 @@
 "inb" = (
 /obj/structure/chair/comfy/black,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "inl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -31401,7 +31401,7 @@
 /obj/item/toy/figure/wizard{
 	pixel_y = -3
 	},
-/obj/item/toy/figure/hos{
+/obj/item/toy/figure/cop{
 	pixel_y = 15
 	},
 /obj/item/toy/figure/secofficer{
@@ -31854,7 +31854,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "jSN" = (
 /obj/structure/reflector/box/anchored{
 	dir = 1
@@ -38591,7 +38591,7 @@
 "mrn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "mrq" = (
 /turf/closed/wall/rock/porous,
 /area/maintenance/central/secondary)
@@ -39681,7 +39681,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "mNk" = (
 /obj/machinery/door/airlock/mining{
 	name = "Mining Office";
@@ -43554,7 +43554,7 @@
 /area/service/bar)
 "ogH" = (
 /turf/closed/wall/r_wall,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "ogJ" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -48713,7 +48713,7 @@
 /obj/machinery/newscaster/security_unit/directional/north,
 /obj/machinery/modular_computer/console/preset/id,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "pTP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/firecloset,
@@ -48850,7 +48850,7 @@
 /obj/item/book/manual/wiki/security_space_law,
 /obj/item/taperecorder,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "pXz" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -55484,7 +55484,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "suC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -56176,7 +56176,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "sIh" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Tunnel Access";
@@ -59622,7 +59622,7 @@
 	dir = 6
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "tUi" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 9
@@ -62851,10 +62851,10 @@
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "ves" = (
-/obj/machinery/suit_storage_unit/hos,
+/obj/machinery/suit_storage_unit/cop,
 /obj/machinery/keycard_auth/directional/east,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "veB" = (
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 8
@@ -64907,7 +64907,7 @@
 /area/maintenance/solars/port/aft)
 "vWh" = (
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "vWv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/neutral/filled/line,
@@ -65083,7 +65083,7 @@
 	network = list("ss13","Security")
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "vZD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/neutral/filled/corner,
@@ -66571,10 +66571,10 @@
 /turf/open/floor/iron,
 /area/security/prison)
 "wBH" = (
-/obj/machinery/computer/security/hos,
+/obj/machinery/computer/security/cop,
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "wBO" = (
 /obj/effect/turf_decal/trimline/red/filled/corner{
 	dir = 1
@@ -69631,8 +69631,8 @@
 /turf/open/floor/wood,
 /area/service/theater)
 "xGU" = (
-/obj/structure/closet/secure_closet/hos,
-/obj/item/storage/secure/safe/hos{
+/obj/structure/closet/secure_closet/cop,
+/obj/item/storage/secure/safe/cop{
 	pixel_x = 35
 	},
 /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
@@ -69642,7 +69642,7 @@
 	pixel_y = 32
 	},
 /turf/open/floor/carpet,
-/area/command/heads_quarters/hos)
+/area/command/heads_quarters/cop)
 "xHa" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/machinery/duct,

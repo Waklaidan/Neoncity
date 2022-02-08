@@ -162,7 +162,7 @@
 	inhand_icon_state = "wardenbluejacket"
 	body_parts_covered = CHEST|ARMS
 
-/obj/item/clothing/suit/security/hos
+/obj/item/clothing/suit/security/cop
 	name = "chief of police's jacket"
 	desc = "This piece of clothing was specifically designed for asserting superior authority."
 	icon_state = "hosbluejacket"

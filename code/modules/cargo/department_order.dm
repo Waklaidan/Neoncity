@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(department_order_cooldowns, list(
 	name = "security order console"
 	circuit = /obj/item/circuitboard/computer/security_orders
 	department_delivery_areas = list(/area/security/brig)
-	override_access = ACCESS_HOS
+	override_access = ACCESS_COP
 	req_one_access = REGION_ACCESS_SECURITY
 	dep_groups = list("Security", "Armory")
 

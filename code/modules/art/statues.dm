@@ -105,7 +105,7 @@
 	custom_materials = list(/datum/material/gold=MINERAL_MATERIAL_AMOUNT*5)
 	abstract_type = /obj/structure/statue/gold
 
-/obj/structure/statue/gold/hos
+/obj/structure/statue/gold/cop
 	name = "statue of the chief of police"
 	icon_state = "hos"
 

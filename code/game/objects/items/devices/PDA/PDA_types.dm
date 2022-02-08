@@ -126,9 +126,9 @@
 	name = "city clerk PDA"
 	default_cartridge = /obj/item/cartridge/cc
 
-/obj/item/pda/heads/hos
+/obj/item/pda/heads/cop
 	name = "chief of police PDA"
-	default_cartridge = /obj/item/cartridge/hos
+	default_cartridge = /obj/item/cartridge/cop
 	greyscale_config = /datum/greyscale_config/pda/head
 	greyscale_colors = "#cc4242#0000cc"
 

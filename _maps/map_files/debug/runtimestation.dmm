@@ -670,7 +670,7 @@
 /area/command/bridge)
 "cr" = (
 /obj/machinery/light/directional/south,
-/obj/structure/closet/secure_closet/hos{
+/obj/structure/closet/secure_closet/cop{
 	locked = 0
 	},
 /obj/effect/turf_decal/tile/blue,

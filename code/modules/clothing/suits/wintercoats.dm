@@ -150,15 +150,15 @@
 	armor = list(MELEE = 25, BULLET = 15, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, FIRE = 0, ACID = 45)
 
 // Chief of Police
-/obj/item/clothing/suit/hooded/wintercoat/security/hos
+/obj/item/clothing/suit/hooded/wintercoat/security/cop
 	name = "chief of police's winter coat"
 	desc = "A red, armour-padded winter coat, lovingly woven with a Kevlar interleave and reinforced with semi-ablative polymers and a silver azide fill material. The zipper tab looks like a tiny replica of Beepsky."
 	icon_state = "coathos"
 	inhand_icon_state = "coathos"
 	armor = list(MELEE = 35, BULLET = 25, LASER = 40, ENERGY = 50, BOMB = 35, BIO = 0, FIRE = 0, ACID = 55)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/hos
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/cop
 
-/obj/item/clothing/head/hooded/winterhood/security/hos
+/obj/item/clothing/head/hooded/winterhood/security/cop
 	desc = "A red, armour-padded winter hood, lovingly woven with a Kevlar interleave. Definitely not bulletproof, especially not the part where your face goes."
 	icon_state = "hood_hos"
 

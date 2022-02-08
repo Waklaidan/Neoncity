@@ -164,7 +164,7 @@ LINEN BINS
 	inhand_icon_state = "sheetmd"
 	dream_messages = list("authority", "a silvery ID", "healing", "life", "surgery", "a cat", "the medical director")
 
-/obj/item/bedsheet/hos
+/obj/item/bedsheet/cop
 	name = "chief of police's bedsheet"
 	desc = "It is decorated with a shield emblem. While crime doesn't sleep, you do, but you are still THE LAW!"
 	icon_state = "sheethos"
@@ -396,7 +396,7 @@ LINEN BINS
 	worn_icon_state = "sheetmd"
 	bedsheet_type = BEDSHEET_DOUBLE
 
-/obj/item/bedsheet/hos/double
+/obj/item/bedsheet/cop/double
 	icon_state = "double_sheethos"
 	worn_icon_state = "sheethos"
 	bedsheet_type = BEDSHEET_DOUBLE

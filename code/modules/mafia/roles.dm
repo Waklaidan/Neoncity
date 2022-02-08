@@ -496,30 +496,30 @@
 	role_flags |= ROLE_VULNERABLE
 	vote_power = 3
 
-/datum/mafia_role/hos
+/datum/mafia_role/cop
 	name = "Chief of Police"
 	desc = "You can decide to execute during the night, visiting someone killing, and revealing them. If they are innocent, you will die at the start of the next night."
 	role_type = TOWN_KILLING
 	role_flags = ROLE_CAN_KILL | ROLE_UNIQUE
-	revealed_outfit = /datum/outfit/mafia/hos
+	revealed_outfit = /datum/outfit/mafia/cop
 	revealed_icon = "headofsecurity"
 	hud_icon = "hudheadofsecurity"
-	winner_award = /datum/award/achievement/mafia/hos
+	winner_award = /datum/award/achievement/mafia/cop
 
 	targeted_actions = list("Execute")
 	var/datum/mafia_role/execute_target
 
-/datum/mafia_role/hos/New(datum/mafia_controller/game)
+/datum/mafia_role/cop/New(datum/mafia_controller/game)
 	. = ..()
 	RegisterSignal(game,COMSIG_MAFIA_NIGHT_ACTION_PHASE,.proc/execute)
 
-/datum/mafia_role/hos/validate_action_target(datum/mafia_controller/game,action,datum/mafia_role/target)
+/datum/mafia_role/cop/validate_action_target(datum/mafia_controller/game,action,datum/mafia_role/target)
 	. = ..()
 	if(!.)
 		return
 	return game.phase == MAFIA_PHASE_NIGHT && target.game_status == MAFIA_ALIVE && target != src
 
-/datum/mafia_role/hos/handle_action(datum/mafia_controller/game,action,datum/mafia_role/target)
+/datum/mafia_role/cop/handle_action(datum/mafia_controller/game,action,datum/mafia_role/target)
 	if(execute_target == target)
 		to_chat(body,span_warning("You have decided against executing tonight."))
 		execute_target = null
@@ -527,7 +527,7 @@
 	to_chat(body,span_warning("You have decided to execute [target.body.real_name] tonight."))
 	execute_target = target
 
-/datum/mafia_role/hos/proc/execute(datum/mafia_controller/game)
+/datum/mafia_role/cop/proc/execute(datum/mafia_controller/game)
 	SIGNAL_HANDLER
 
 	if(!execute_target)
@@ -546,7 +546,7 @@
 			RegisterSignal(game,COMSIG_MAFIA_SUNDOWN,.proc/internal_affairs)
 			role_flags |= ROLE_VULNERABLE
 
-/datum/mafia_role/hos/proc/internal_affairs(datum/mafia_controller/game)
+/datum/mafia_role/cop/proc/internal_affairs(datum/mafia_controller/game)
 	SIGNAL_HANDLER
 	to_chat(body,span_userdanger("You have been killed by Nanotrasen Internal Affairs!"))
 	reveal_role(game, verbose = TRUE)

@@ -134,7 +134,7 @@
 
 //Security
 
-/obj/item/clothing/head/hos
+/obj/item/clothing/head/cop
 	name = "chief of police cap"
 	desc = "The robust standard-issue cap of the Chief of Police. For showing the officers who's in charge."
 	armor = list(MELEE = 40, BULLET = 30, LASER = 25, ENERGY = 35, BOMB = 25, BIO = 10, FIRE = 50, ACID = 60, WOUND = 10)
@@ -142,11 +142,11 @@
 	strip_delay = 80
 	dynamic_hair_suffix = ""
 
-/obj/item/clothing/head/hos/syndicate
+/obj/item/clothing/head/cop/syndicate
 	name = "syndicate cap"
 	desc = "A black cap fit for a high ranking syndicate officer."
 
-/obj/item/clothing/head/hos/beret
+/obj/item/clothing/head/cop/beret
 	name = "chief of police's beret"
 	desc = "A robust beret for the Chief of Police, for looking stylish while not sacrificing protection."
 	icon_state = "beret_badge"
@@ -154,12 +154,12 @@
 	greyscale_config_worn = /datum/greyscale_config/beret_badge/worn
 	greyscale_colors = "#3F3C40#FFCE5B"
 
-/obj/item/clothing/head/hos/beret/navyhos
+/obj/item/clothing/head/cop/beret/navyhos
 	name = "chief of police's formal beret"
 	desc = "A special beret with the Chief of Police's insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
 	greyscale_colors = "#3C485A#FFCE5B"
 
-/obj/item/clothing/head/hos/beret/syndicate
+/obj/item/clothing/head/cop/beret/syndicate
 	name = "syndicate beret"
 	desc = "A black beret with thick armor padding inside. Stylish and robust."
 

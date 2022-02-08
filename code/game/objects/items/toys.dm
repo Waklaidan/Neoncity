@@ -1494,7 +1494,7 @@
 	icon_state = "cc"
 	toysay = "Giving out all access!"
 
-/obj/item/toy/figure/hos
+/obj/item/toy/figure/cop
 	name = "\improper Chief of Police action figure"
 	icon_state = "hos"
 	toysay = "Go ahead, make my day."

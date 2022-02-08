@@ -14,7 +14,7 @@
 	user.visible_message(span_suicide("[user] is strangling [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
 	return(OXYLOSS)
 
-/obj/item/clothing/neck/cloak/hos
+/obj/item/clothing/neck/cloak/cop
 	name = "chief of police's cloak"
 	desc = "Worn by Securistan, ruling the station with an iron fist."
 	icon_state = "hoscloak"

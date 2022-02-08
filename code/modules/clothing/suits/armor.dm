@@ -74,7 +74,7 @@
 	icon_state = "cuirass"
 	inhand_icon_state = "armor"
 
-/obj/item/clothing/suit/armor/hos
+/obj/item/clothing/suit/armor/cop
 	name = "armored greatcoat"
 	desc = "A greatcoat enhanced with a special alloy for some extra protection and style for those with a commanding presence."
 	icon_state = "hos"
@@ -85,7 +85,7 @@
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	strip_delay = 80
 
-/obj/item/clothing/suit/armor/hos/trenchcoat
+/obj/item/clothing/suit/armor/cop/trenchcoat
 	name = "armored trenchcoat"
 	desc = "A trenchcoat enhanced with a special lightweight kevlar. The epitome of tactical plainclothes."
 	icon_state = "hostrench"
@@ -93,14 +93,14 @@
 	flags_inv = 0
 	strip_delay = 80
 
-/obj/item/clothing/suit/armor/hos/hos_formal
+/obj/item/clothing/suit/armor/cop/hos_formal
 	name = "\improper Chief of Police's parade jacket"
 	desc = "For when an armoured vest isn't fashionable enough."
 	icon_state = "hosformal"
 	inhand_icon_state = "hostrench"
 	body_parts_covered = CHEST|GROIN|ARMS
 
-/obj/item/clothing/suit/armor/hos/hos_formal/Initialize(mapload)
+/obj/item/clothing/suit/armor/cop/hos_formal/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/toggle_icon)
 

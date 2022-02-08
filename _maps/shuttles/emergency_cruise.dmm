@@ -1102,7 +1102,7 @@
 	},
 /obj/structure/chair/comfy/shuttle{
 	dir = 1;
-	name = "Shuttle HoS seat"
+	name = "Shuttle CoP seat"
 	},
 /turf/open/floor/iron/white,
 /area/shuttle/escape)

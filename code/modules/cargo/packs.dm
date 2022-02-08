@@ -373,8 +373,8 @@
 					/obj/item/clothing/suit/security/warden,
 					/obj/item/clothing/head/beret/sec/navywarden,
 					/obj/item/clothing/under/rank/security/chief_of_police/formal,
-					/obj/item/clothing/suit/security/hos,
-					/obj/item/clothing/head/hos/beret/navyhos)
+					/obj/item/clothing/suit/security/cop,
+					/obj/item/clothing/head/cop/beret/navyhos)
 	crate_name = "security clothing crate"
 
 /datum/supply_pack/security/stingpack
@@ -2120,7 +2120,7 @@
 	name = "Crab Rocket"
 	desc = "CRAAAAAAB ROCKET. CRAB ROCKET. CRAB ROCKET. CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB ROCKET. CRAFT. ROCKET. BUY. CRAFT ROCKET. CRAB ROOOCKET. CRAB ROOOOCKET. CRAB CRAB CRAB CRAB CRAB CRAB CRAB CRAB ROOOOOOOOOOOOOOOOOOOOOOCK EEEEEEEEEEEEEEEEEEEEEEEEE EEEETTTTTTTTTTTTAAAAAAAAA AAAHHHHHHHHHHHHH. CRAB ROCKET. CRAAAB ROCKEEEEEEEEEGGGGHHHHTT CRAB CRAB CRAABROCKET CRAB ROCKEEEET."//fun fact: i actually spent like 10 minutes and transcribed the entire video.
 	cost = CARGO_CRATE_VALUE * 8
-	access_view = ACCESS_HOS
+	access_view = ACCESS_COP
 	contains = list(/mob/living/simple_animal/crab)
 	crate_name = "look sir free crabs"
 	DropPodOnly = TRUE
@@ -2213,7 +2213,7 @@
 					/obj/item/clothing/head/collectable/rabbitears,
 					/obj/item/clothing/head/collectable/wizard,
 					/obj/item/clothing/head/collectable/hardhat,
-					/obj/item/clothing/head/collectable/hos,
+					/obj/item/clothing/head/collectable/cop,
 					/obj/item/clothing/head/collectable/cc,
 					/obj/item/clothing/head/collectable/thunderdome,
 					/obj/item/clothing/head/collectable/swat,

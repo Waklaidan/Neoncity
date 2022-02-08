@@ -60,7 +60,7 @@
 #define ACCESS_XENOBIOLOGY 55
 #define ACCESS_CE 56
 #define ACCESS_CC 57
-#define ACCESS_HOS 58
+#define ACCESS_COP 58
 /// Request console announcements
 #define ACCESS_RC_ANNOUNCE 59
 /// Used for events which require at least two people to confirm them
@@ -300,7 +300,7 @@
 
 /// Private head of staff offices, usually only granted to most cards by trimming. Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_PRV_COMMAND)
 #define PRIVATE_COMMAND_ACCESS list( \
-	ACCESS_HOS, \
+	ACCESS_COP, \
 	ACCESS_CC, \
 	ACCESS_CE, \
 	ACCESS_MD, \
@@ -372,7 +372,7 @@
 )
 /// Name for the Security region.
 #define REGION_SECURITY "Security"
-/// Used to seed the accesses_by_region list in SSid_access. A list of all security regional accesses that are overseen by the HoS.
+/// Used to seed the accesses_by_region list in SSid_access. A list of all security regional accesses that are overseen by the CoP.
 #define REGION_ACCESS_SECURITY list( \
 	ACCESS_SEC_DOORS, \
 	ACCESS_WEAPONS, \
@@ -382,7 +382,7 @@
 	ACCESS_FORENSICS_LOCKERS, \
 	ACCESS_COURT, \
 	ACCESS_MECH_SECURITY, \
-	ACCESS_HOS, \
+	ACCESS_COP, \
 )
 /// Name for the Medbay region.
 #define REGION_MEDBAY "Medbay"
@@ -485,7 +485,7 @@
 	/obj/item/pda/janitor = list(REGION_GENERAL), \
 	/obj/item/pda/science = list(REGION_RESEARCH), \
 	/obj/item/pda/heads/cc = list(REGION_COMMAND), \
-	/obj/item/pda/heads/hos = list(REGION_COMMAND), \
+	/obj/item/pda/heads/cop = list(REGION_COMMAND), \
 	/obj/item/pda/heads/md = list(REGION_COMMAND), \
 	/obj/item/pda/heads/ce = list(REGION_COMMAND), \
 	/obj/item/pda/heads/rd = list(REGION_COMMAND), \

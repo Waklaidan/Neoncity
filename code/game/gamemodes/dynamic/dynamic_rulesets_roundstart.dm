@@ -276,7 +276,7 @@
 	restricted_roles = list(
 		JOB_MAYOR,
 		JOB_CHIEF_OF_POLICE,
-	) // Just to be sure that a wizard getting picked won't ever imply a Mayor or HoS not getting drafted
+	) // Just to be sure that a wizard getting picked won't ever imply a Mayor or CoP not getting drafted
 	required_candidates = 1
 	weight = 2
 	cost = 20
@@ -391,7 +391,7 @@
 	restricted_roles = list(
 		JOB_MAYOR,
 		JOB_CHIEF_OF_POLICE,
-	) // Just to be sure that a nukie getting picked won't ever imply a Mayor or HoS not getting drafted
+	) // Just to be sure that a nukie getting picked won't ever imply a Mayor or CoP not getting drafted
 	required_candidates = 5
 	weight = 3
 	cost = 20

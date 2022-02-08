@@ -92,7 +92,7 @@
 	icon_state = "rd_cypherkey"
 	channels = list(RADIO_CHANNEL_SCIENCE = 1, RADIO_CHANNEL_COMMAND = 1)
 
-/obj/item/encryptionkey/heads/hos
+/obj/item/encryptionkey/heads/cop
 	name = "\proper the chief of police's encryption key"
 	icon_state = "hos_cypherkey"
 	channels = list(RADIO_CHANNEL_SECURITY = 1, RADIO_CHANNEL_COMMAND = 1)

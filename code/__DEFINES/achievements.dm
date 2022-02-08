@@ -52,7 +52,7 @@
 #define MAFIA_MEDAL_OFFICER "Police Officer"
 #define MAFIA_MEDAL_LAWYER "Lawyer"
 #define MAFIA_MEDAL_CC "City Clerk"
-#define MAFIA_MEDAL_HOS "Chief of Police"
+#define MAFIA_MEDAL_COP "Chief of Police"
 #define MAFIA_MEDAL_WARDEN "Warden"
 #define MAFIA_MEDAL_CHANGELING "CHANGELING"
 #define MAFIA_MEDAL_THOUGHTFEEDER "Thoughtfeeder"

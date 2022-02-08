@@ -13468,7 +13468,7 @@
 /turf/open/floor/wood/parquet/ebony,
 /area/city/outdoors)
 "MY" = (
-/obj/machinery/suit_storage_unit/hos,
+/obj/machinery/suit_storage_unit/cop,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "MZ" = (
@@ -13495,14 +13495,14 @@
 /turf/open/floor/iron,
 /area/city/outdoors)
 "Ne" = (
-/obj/structure/closet/secure_closet/hos,
-/obj/item/clothing/suit/armor/hos/trenchcoat,
+/obj/structure/closet/secure_closet/cop,
+/obj/item/clothing/suit/armor/cop/trenchcoat,
 /obj/item/clothing/under/rank/security/chief_of_police/grey,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "Nf" = (
 /obj/structure/bed,
-/obj/item/bedsheet/hos,
+/obj/item/bedsheet/cop,
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
@@ -13536,7 +13536,7 @@
 /area/city/outdoors)
 "Nm" = (
 /obj/structure/table/wood,
-/obj/item/storage/secure/safe/hos{
+/obj/item/storage/secure/safe/cop{
 	pixel_x = 32
 	},
 /obj/item/flashlight/lamp,

@@ -17,7 +17,7 @@
 	exp_required_type_department = EXP_TYPE_SECURITY
 	exp_granted_type = EXP_TYPE_CREW
 
-	outfit = /datum/outfit/job/hos
+	outfit = /datum/outfit/job/cop
 	plasmaman_outfit = /datum/outfit/plasmaman/chief_of_police
 	departments_list = list(
 		/datum/job_department/security,
@@ -44,24 +44,24 @@
 	return "Due to staffing shortages, newly promoted Acting Mayor [mayor.real_name] on deck!"
 
 
-/datum/outfit/job/hos
+/datum/outfit/job/cop
 	name = "Chief of Police"
 	jobtype = /datum/job/chief_of_police
 
 	id = /obj/item/card/id/advanced/silver
 	id_trim = /datum/id_trim/job/chief_of_police
 	uniform = /obj/item/clothing/under/rank/security/chief_of_police
-	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
+	suit = /obj/item/clothing/suit/armor/cop/trenchcoat
 	suit_store = /obj/item/gun/energy/e_gun
 	backpack_contents = list(
 		/obj/item/evidencebag = 1,
 		/obj/item/modular_computer/tablet/preset/advanced/command = 1,
 		)
-	belt = /obj/item/pda/heads/hos
-	ears = /obj/item/radio/headset/heads/hos/alt
+	belt = /obj/item/pda/heads/cop
+	ears = /obj/item/radio/headset/heads/cop/alt
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/hos/beret
+	head = /obj/item/clothing/head/cop/beret
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
@@ -72,12 +72,12 @@
 
 	box = /obj/item/storage/box/survival/security
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun/hos,
-		/obj/item/stamp/hos,
+		/obj/item/gun/energy/e_gun/cop,
+		/obj/item/stamp/cop,
 		)
 	implants = list(/obj/item/implant/mindshield)
 
-/datum/outfit/job/hos/mod
+/datum/outfit/job/cop/mod
 	name = "Chief of Police (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen

@@ -42,7 +42,7 @@
 	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_VENTCRAWLER_ALWAYS, INNATE_TRAIT)
 
-/mob/living/simple_animal/hostile/retaliate/bat/sgt_araneus //Despite being a bat for... reasons, this is now a spider, and is one of the HoS' pets.
+/mob/living/simple_animal/hostile/retaliate/bat/sgt_araneus //Despite being a bat for... reasons, this is now a spider, and is one of the CoP' pets.
 	name = "Sergeant Araneus"
 	real_name = "Sergeant Araneus"
 	desc = "A fierce companion of the Chief of Police, this spider has been carefully trained by Nanotrasen specialists. Its beady, staring eyes send shivers down your spine."

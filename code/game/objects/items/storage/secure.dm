@@ -188,7 +188,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/storage/secure/safe, 32)
 		return
 	return attack_self(user)
 
-/obj/item/storage/secure/safe/hos
+/obj/item/storage/secure/safe/cop
 	name = "chief of police's safe"
 
 /**

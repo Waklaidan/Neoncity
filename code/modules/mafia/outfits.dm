@@ -67,14 +67,14 @@
 	head = /obj/item/clothing/head/cccap
 	glasses = /obj/item/clothing/glasses/sunglasses
 
-/datum/outfit/mafia/hos
+/datum/outfit/mafia/cop
 	name = "Mafia Chief of Police"
 
 	uniform = /obj/item/clothing/under/rank/security/chief_of_police
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
+	suit = /obj/item/clothing/suit/armor/cop/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/hos/beret
+	head = /obj/item/clothing/head/cop/beret
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 /datum/outfit/mafia/warden

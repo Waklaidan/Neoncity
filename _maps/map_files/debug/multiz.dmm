@@ -472,7 +472,7 @@
 	},
 /area/hallway/secondary/entry)
 "bW" = (
-/obj/structure/closet/secure_closet/hos,
+/obj/structure/closet/secure_closet/cop,
 /turf/open/floor/iron{
 	dir = 1
 	},

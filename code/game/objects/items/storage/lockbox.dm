@@ -172,7 +172,7 @@
 /obj/item/storage/lockbox/medal/sec
 	name = "security medal box"
 	desc = "A locked box used to store medals to be given to members of the security department."
-	req_access = list(ACCESS_HOS)
+	req_access = list(ACCESS_COP)
 
 /obj/item/storage/lockbox/medal/med
 	name = "medical medal box"

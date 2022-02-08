@@ -87,7 +87,7 @@
 		return
 
 	var/obj/item/radio/R = H.ears
-	R.keyslot = new /obj/item/encryptionkey/heads/hos
+	R.keyslot = new /obj/item/encryptionkey/heads/cop
 	R.recalculateChannels()
 
 /datum/outfit/centcom/ert/security/alert
@@ -583,7 +583,7 @@
 		return
 
 	var/obj/item/radio/headset = equipper.ears
-	headset.keyslot = new /obj/item/encryptionkey/heads/hos
+	headset.keyslot = new /obj/item/encryptionkey/heads/cop
 	headset.recalculateChannels()
 
 /datum/outfit/centcom/ert/marine/medic

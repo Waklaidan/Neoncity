@@ -57,10 +57,10 @@
 	database_id = MAFIA_MEDAL_WARDEN
 	icon = "town"
 
-/datum/award/achievement/mafia/hos
+/datum/award/achievement/mafia/cop
 	name = "Chief of Police Victory"
 	desc = "Certified not shitcurity."
-	database_id = MAFIA_MEDAL_HOS
+	database_id = MAFIA_MEDAL_COP
 	icon = "town"
 
 /datum/award/achievement/mafia/changeling

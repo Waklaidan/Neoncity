@@ -199,19 +199,19 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/heads/rd
 
-/obj/item/radio/headset/heads/hos
+/obj/item/radio/headset/heads/cop
 	name = "\proper the chief of police's headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station."
 	icon_state = "com_headset"
-	keyslot = new /obj/item/encryptionkey/heads/hos
+	keyslot = new /obj/item/encryptionkey/heads/cop
 
-/obj/item/radio/headset/heads/hos/alt
+/obj/item/radio/headset/heads/cop/alt
 	name = "\proper the chief of police's bowman headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs."
 	icon_state = "com_headset_alt"
 	inhand_icon_state = "com_headset_alt"
 
-/obj/item/radio/headset/heads/hos/ComponentInitialize()
+/obj/item/radio/headset/heads/cop/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 

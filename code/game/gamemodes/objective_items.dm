@@ -121,7 +121,7 @@
 
 /datum/objective_item/steal/hoslaser
 	name = "the chief of police's personal laser gun"
-	targetitem = /obj/item/gun/energy/e_gun/hos
+	targetitem = /obj/item/gun/energy/e_gun/cop
 	difficulty = 10
 	excludefromjob = list(JOB_CHIEF_OF_POLICE)
 	exists_on_map = TRUE

@@ -128,10 +128,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/noticeboard, 32)
 	desc = "Important notices from the Chief Engineer."
 	req_access = list(ACCESS_CE)
 
-/obj/structure/noticeboard/hos
+/obj/structure/noticeboard/cop
 	name = "Chief of Police's Notice Board"
 	desc = "Important notices from the Chief of Police."
-	req_access = list(ACCESS_HOS)
+	req_access = list(ACCESS_COP)
 
 /obj/structure/noticeboard/md
 	name = "Medical Director's Notice Board"

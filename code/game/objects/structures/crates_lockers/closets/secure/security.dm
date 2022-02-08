@@ -44,17 +44,17 @@
 	new /obj/item/storage/photo_album/cc(src)
 	new /obj/item/storage/lockbox/medal/cc(src)
 
-/obj/structure/closet/secure_closet/hos
+/obj/structure/closet/secure_closet/cop
 	name = "\proper chief of police's locker"
-	req_access = list(ACCESS_HOS)
+	req_access = list(ACCESS_COP)
 	icon_state = "hos"
 
-/obj/structure/closet/secure_closet/hos/PopulateContents()
+/obj/structure/closet/secure_closet/cop/PopulateContents()
 	..()
 
-	new /obj/item/cartridge/hos(src)
-	new /obj/item/radio/headset/heads/hos(src)
-	new /obj/item/storage/bag/garment/hos(src)
+	new /obj/item/cartridge/cop(src)
+	new /obj/item/radio/headset/heads/cop(src)
+	new /obj/item/storage/bag/garment/cop(src)
 	new /obj/item/storage/lockbox/medal/sec(src)
 	new /obj/item/megaphone/sec(src)
 	new /obj/item/holosign_creator/security(src)
@@ -62,10 +62,10 @@
 	new /obj/item/storage/box/flashbangs(src)
 	new /obj/item/shield/riot/tele(src)
 	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/gun/energy/e_gun/hos(src)
+	new /obj/item/gun/energy/e_gun/cop(src)
 	new /obj/item/pinpointer/nuke(src)
 	new /obj/item/circuitboard/machine/techfab/department/security(src)
-	new /obj/item/storage/photo_album/hos(src)
+	new /obj/item/storage/photo_album/cop(src)
 
 
 /obj/structure/closet/secure_closet/warden
@@ -167,7 +167,7 @@
 
 /obj/structure/closet/secure_closet/injection
 	name = "lethal injections"
-	req_access = list(ACCESS_HOS)
+	req_access = list(ACCESS_COP)
 
 /obj/structure/closet/secure_closet/injection/PopulateContents()
 	..()

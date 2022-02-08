@@ -88,7 +88,7 @@
 	mask_type = /obj/item/clothing/mask/gas/sechailer
 	mod_type = /obj/item/mod/control/pre_equipped/security
 
-/obj/machinery/suit_storage_unit/hos
+/obj/machinery/suit_storage_unit/cop
 	mask_type = /obj/item/clothing/mask/gas/sechailer
 	storage_type = /obj/item/tank/internals/oxygen
 	mod_type = /obj/item/mod/control/pre_equipped/safeguard

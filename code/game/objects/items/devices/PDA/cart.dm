@@ -156,7 +156,7 @@
 		VIBE_BOT,
 	)
 
-/obj/item/cartridge/hos
+/obj/item/cartridge/cop
 	name = "\improper R.O.B.U.S.T. DELUXE cartridge"
 	icon_state = "cart-hos"
 	access = CART_MANIFEST | CART_STATUS_DISPLAY | CART_SECURITY
