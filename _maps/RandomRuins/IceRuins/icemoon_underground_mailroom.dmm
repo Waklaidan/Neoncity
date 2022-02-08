@@ -287,7 +287,7 @@
 	dir = 2
 	},
 /obj/structure/window/spawner/east,
-/obj/item/toy/figure/cargotech,
+/obj/item/toy/figure/retailassistant,
 /obj/item/paper/crumpled/bloody/fluff/stations/lavaland/mailroom/waiting,
 /turf/open/floor/noslip,
 /area/ruin/powered/mailroom)

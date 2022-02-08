@@ -111,7 +111,7 @@
 
 /obj/structure/statue/gold/cc
 	name = "statue of the city clerk"
-	icon_state = "cc"
+	icon_state = "hop"
 
 /obj/structure/statue/gold/md
 	name = "statue of the medical director"

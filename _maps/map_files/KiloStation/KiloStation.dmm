@@ -19772,7 +19772,7 @@
 	req_access_txt = "57"
 	},
 /obj/machinery/button/door/directional/east{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Toggle";
 	pixel_y = 6;
 	req_access_txt = "57"
@@ -56455,7 +56455,7 @@
 /obj/machinery/door/firedoor,
 /obj/item/folder/blue,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters"
 	},
 /obj/machinery/door/window/brigdoor{
@@ -56646,7 +56646,7 @@
 /area/command/bridge)
 "olM" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters"
 	},
 /obj/effect/spawner/structure/window/reinforced,
@@ -75346,7 +75346,7 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/table,
 /obj/item/multitool,
-/obj/item/toy/figure/cargotech{
+/obj/item/toy/figure/retailassistant{
 	pixel_x = -9
 	},
 /obj/item/toy/figure/miner{

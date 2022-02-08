@@ -25682,7 +25682,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters"
 	},
 /obj/effect/spawner/structure/window/reinforced,
@@ -32615,7 +32615,7 @@
 	req_access_txt = "57"
 	},
 /obj/machinery/button/door/directional/north{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Control";
 	pixel_x = 6;
 	req_access_txt = "57"
@@ -39377,7 +39377,7 @@
 /area/engineering/atmos)
 "qBZ" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters"
 	},
 /obj/effect/spawner/structure/window/reinforced,
@@ -44302,7 +44302,7 @@
 	req_access_txt = "57"
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters"
 	},
 /obj/machinery/flasher/directional/north{

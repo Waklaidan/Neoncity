@@ -5745,7 +5745,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/table/glass,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters"
 	},
 /turf/open/floor/iron/dark,
@@ -5788,7 +5788,7 @@
 "rM" = (
 /obj/structure/table/glass,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters"
 	},
 /obj/machinery/door/window/brigdoor{
@@ -9795,7 +9795,7 @@
 	dir = 8
 	},
 /obj/machinery/button/door/directional/north{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Control";
 	pixel_x = 26;
 	req_access_txt = "57"

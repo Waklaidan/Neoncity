@@ -89,7 +89,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Quartermaster"
 	icon_state = "Quartermaster"
 
-/obj/effect/landmark/start/atmospheric_technician
+/obj/effect/landmark/start/firefighter
 	name = "Atmospheric Technician"
 	icon_state = "Atmospheric Technician"
 

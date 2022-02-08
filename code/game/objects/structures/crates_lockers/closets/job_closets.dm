@@ -130,11 +130,11 @@
 	generate_items_inside(items_inside,src)
 	return
 
-/obj/structure/closet/wardrobe/cargotech
+/obj/structure/closet/wardrobe/retailassistant
 	name = "cargo wardrobe"
 	icon_door = "orange"
 
-/obj/structure/closet/wardrobe/cargotech/PopulateContents()
+/obj/structure/closet/wardrobe/retailassistant/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/suit/hooded/wintercoat/cargo = 1,
 		/obj/item/clothing/under/rank/cargo/tech = 3,

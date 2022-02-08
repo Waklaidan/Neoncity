@@ -4636,7 +4636,7 @@
 	pixel_y = -36
 	},
 /obj/machinery/button/door/directional/south{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Control";
 	pixel_x = -8;
 	req_access_txt = "28"
@@ -19197,7 +19197,7 @@
 "fqS" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
-	id = "cc";
+	id = "hop";
 	name = "privacy shutters"
 	},
 /turf/open/floor/plating,
@@ -32590,7 +32590,7 @@
 	pixel_x = -32
 	},
 /obj/machinery/button/door/directional/north{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Control";
 	req_access_txt = "28"
 	},
@@ -63599,7 +63599,7 @@
 	req_access_txt = "57"
 	},
 /obj/machinery/door/poddoor/preopen{
-	id = "cc";
+	id = "hop";
 	name = "privacy shutters"
 	},
 /obj/machinery/door/window/westright{

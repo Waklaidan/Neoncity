@@ -24,7 +24,7 @@
 /obj/structure/closet/secure_closet/cc
 	name = "\proper city clerk's locker"
 	req_access = list(ACCESS_CC)
-	icon_state = "cc"
+	icon_state = "hop"
 
 /obj/structure/closet/secure_closet/cc/PopulateContents()
 	..()

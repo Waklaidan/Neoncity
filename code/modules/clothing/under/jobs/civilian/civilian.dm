@@ -59,7 +59,7 @@
 /obj/item/clothing/under/rank/civilian/city_clerk
 	desc = "It's a jumpsuit worn by someone who works in the position of \"City Clerk\"."
 	name = "city clerk's jumpsuit"
-	icon_state = "cc"
+	icon_state = "hop"
 	inhand_icon_state = "b_suit"
 
 /obj/item/clothing/under/rank/civilian/city_clerk/skirt

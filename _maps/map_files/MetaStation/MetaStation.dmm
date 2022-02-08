@@ -576,7 +576,7 @@
 	},
 /obj/structure/table/wood,
 /obj/machinery/button/door/directional/north{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Control";
 	req_access_txt = "28"
 	},
@@ -3220,7 +3220,7 @@
 /area/security/detectives_office)
 "aBz" = (
 /obj/machinery/button/door/directional/west{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Control";
 	req_access_txt = "57"
 	},
@@ -15631,7 +15631,7 @@
 	pixel_y = -34
 	},
 /obj/machinery/button/door/directional/south{
-	id = "cc";
+	id = "hop";
 	name = "Privacy Shutters Control";
 	pixel_x = -6;
 	req_access_txt = "57"
@@ -16470,7 +16470,7 @@
 "dNC" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
-	id = "cc";
+	id = "hop";
 	name = "privacy shutters"
 	},
 /obj/structure/cable,
@@ -27094,7 +27094,7 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron,
 /area/engineering/atmospherics_engine)
-"cc" = (
+"hop" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -47990,7 +47990,7 @@
 	name = "Reception Window"
 	},
 /obj/machinery/door/poddoor/preopen{
-	id = "cc";
+	id = "hop";
 	name = "privacy shutters"
 	},
 /obj/structure/cable,

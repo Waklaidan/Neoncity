@@ -1011,7 +1011,7 @@
 /turf/open/lava/smooth,
 /area/ruin/powered/clownplanet)
 "CB" = (
-/obj/item/paper/crumpled/bloody/ruins/lavaland/clown_planet/cce,
+/obj/item/paper/crumpled/bloody/ruins/lavaland/clown_planet/hope,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/mapping_helpers/no_lava,
 /turf/open/floor/noslip,

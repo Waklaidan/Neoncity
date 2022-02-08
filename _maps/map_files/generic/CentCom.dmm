@@ -2513,7 +2513,7 @@
 /turf/open/floor/iron,
 /area/centcom/supply)
 "jN" = (
-/obj/structure/closet/wardrobe/cargotech,
+/obj/structure/closet/wardrobe/retailassistant,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/supply)

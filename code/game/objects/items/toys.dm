@@ -1433,7 +1433,7 @@
 	icon_state = "mayor"
 	toysay = "Any heads of staff?"
 
-/obj/item/toy/figure/cargotech
+/obj/item/toy/figure/retailassistant
 	name = "\improper Retail Assistant action figure"
 	icon_state = "cargotech"
 	toysay = "For Cargonia!"
@@ -1491,7 +1491,7 @@
 
 /obj/item/toy/figure/cc
 	name = "\improper City Clerk action figure"
-	icon_state = "cc"
+	icon_state = "hop"
 	toysay = "Giving out all access!"
 
 /obj/item/toy/figure/cop

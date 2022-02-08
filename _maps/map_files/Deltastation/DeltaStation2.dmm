@@ -97450,7 +97450,7 @@
 "vBl" = (
 /obj/structure/table,
 /obj/item/clipboard,
-/obj/item/toy/figure/cargotech,
+/obj/item/toy/figure/retailassistant,
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 8

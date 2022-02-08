@@ -126,8 +126,8 @@
 
 /obj/item/clothing/under/rank/cargo : /obj/item/clothing/under/rank/cargo/qm
 /obj/item/clothing/under/rank/cargo/skirt : /obj/item/clothing/under/rank/cargo/qm/skirt
-/obj/item/clothing/under/rank/cargotech : /obj/item/clothing/under/rank/cargo/tech
-/obj/item/clothing/under/rank/cargotech/skirt : /obj/item/clothing/under/rank/cargo/tech/skirt
+/obj/item/clothing/under/rank/retailassistant : /obj/item/clothing/under/rank/cargo/tech
+/obj/item/clothing/under/rank/retailassistant/skirt : /obj/item/clothing/under/rank/cargo/tech/skirt
 /obj/item/clothing/under/rank/miner : /obj/item/clothing/under/rank/cargo/miner
 /obj/item/clothing/under/rank/miner/lavaland : /obj/item/clothing/under/rank/cargo/miner/lavaland
 
