@@ -72,7 +72,7 @@
 	preferences.write_preference(src, target.facial_hairstyle)
 	return TRUE
 /datum/preference/choiced/facial_hair_color
-	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
+	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "facial_hair_color"
 	relevant_species_trait = FACEHAIR
@@ -131,7 +131,7 @@
 	preferences.write_preference(src, target.grad_color[GRADIENT_FACIAL_HAIR_KEY])
 	return TRUE
 /datum/preference/choiced/hair_color
-	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
+	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "hair_color"
 	relevant_species_trait = HAIR
