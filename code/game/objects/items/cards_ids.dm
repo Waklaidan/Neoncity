@@ -632,8 +632,8 @@
 	trim = /datum/id_trim/away/old/sci
 
 /obj/item/card/id/away/old/eng
-	name = "Charlie Station Engineer's ID card"
-	desc = "A faded Charlie Station ID card. You can make out the rank \"Station Engineer\"."
+	name = "Charlie District Engineer's ID card"
+	desc = "A faded Charlie Station ID card. You can make out the rank \"District Engineer\"."
 	trim = /datum/id_trim/away/old/eng
 
 /obj/item/card/id/away/old/apc

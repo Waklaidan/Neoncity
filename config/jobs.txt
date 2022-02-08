@@ -28,7 +28,7 @@ Lawyer=2,2
 
 Chaplain=1,1
 
-Station Engineer=5,5
+District Engineer=5,5
 Firefighter=3,2
 
 Medical Doctor=5,3

@@ -16633,7 +16633,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron,
 /area/engineering/main)
@@ -24632,7 +24632,7 @@
 "hlk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/layer3,
 /turf/open/floor/iron,
@@ -28865,7 +28865,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/engineering/engine_smes)
@@ -48187,7 +48187,7 @@
 "pKu" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/structure/cable/layer3,
 /turf/open/floor/iron,
 /area/engineering/main)
@@ -60294,7 +60294,7 @@
 /turf/open/floor/iron/white,
 /area/science/xenobiology)
 "ugn" = (
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/structure/cable/multilayer/connected,
 /turf/open/floor/iron,
 /area/engineering/engine_smes)
@@ -66052,7 +66052,7 @@
 /turf/open/floor/iron/dark,
 /area/hallway/secondary/exit)
 "wtK" = (
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /turf/open/floor/iron,
 /area/engineering/main)
 "wuk" = (

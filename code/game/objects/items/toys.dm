@@ -1480,7 +1480,7 @@
 	toysay = "Kill 'em all!"
 
 /obj/item/toy/figure/engineer
-	name = "\improper Station Engineer action figure"
+	name = "\improper District Engineer action figure"
 	icon_state = "engineer"
 	toysay = "Oh god, the singularity is loose!"
 

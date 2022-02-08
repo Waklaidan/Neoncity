@@ -62,7 +62,7 @@ def parse_role(bantype, job):
         role = "Server"
     else:
         #TG: Some legacy jobbans are missing the last character from their job string.
-        job_name_fixes = {"A":"AI", "Mayo":"Mayor", "Cargo Technicia":"Retail Assistant", "Chaplai":"Chaplain", "Che":"Chef", "Chemis":"Chemist", "Chief Enginee":"Chief Engineer", "Chief Medical Office":"Chief Medical Officer", "Cybor":"Cyborg", "Detectiv":"Detective", "Head of Personne":"City Clerk", "Head of Securit":"Chief of Police", "Mim":"Mime", "pA":"pAI", "Quartermaste":"Quartermaster", "Research Directo":"Research Director", "Scientis":"Scientist", "Security Office":"Police Officer", "Station Enginee":"Station Engineer", "Syndicat":"Syndicate", "Warde":"Warden"}
+        job_name_fixes = {"A":"AI", "Mayo":"Mayor", "Cargo Technicia":"Retail Assistant", "Chaplai":"Chaplain", "Che":"Chef", "Chemis":"Chemist", "Chief Enginee":"Chief Engineer", "Chief Medical Office":"Chief Medical Officer", "Cybor":"Cyborg", "Detectiv":"Detective", "Head of Personne":"City Clerk", "Head of Securit":"Chief of Police", "Mim":"Mime", "pA":"pAI", "Quartermaste":"Quartermaster", "Research Directo":"Research Director", "Scientis":"Scientist", "Security Office":"Police Officer", "Station Enginee":"District Engineer", "Syndicat":"Syndicate", "Warde":"Warden"}
         keep_job_names = ("AI", "City Clerk", "Chief of Police", "OOC", "pAI")
         if job in job_name_fixes:
             role = job_name_fixes[job]

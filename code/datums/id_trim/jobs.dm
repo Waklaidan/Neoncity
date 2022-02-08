@@ -486,15 +486,15 @@
 	minimal_access = list(ACCESS_MAILSORTING, ACCESS_MECH_MINING, ACCESS_MINERAL_STOREROOM, ACCESS_MINING, ACCESS_MINING_STATION)
 	template_access = null
 
-/datum/id_trim/job/station_engineer
-	assignment = "Station Engineer"
+/datum/id_trim/job/district_engineer
+	assignment = "District Engineer"
 	trim_state = "trim_stationengineer"
 	extra_access = list(ACCESS_ATMOSPHERICS)
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_CONSTRUCTION, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_EXTERNAL_AIRLOCKS,
 					ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE, ACCESS_MINERAL_STOREROOM, ACCESS_TCOMSAT, ACCESS_TECH_STORAGE)
-	config_job = "station_engineer"
+	config_job = "district_engineer"
 	template_access = list(ACCESS_MAYOR, ACCESS_CE, ACCESS_CHANGE_IDS)
-	job = /datum/job/station_engineer
+	job = /datum/job/district_engineer
 
 /datum/id_trim/job/virologist
 	assignment = "Virologist"

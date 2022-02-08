@@ -124,7 +124,7 @@
 	progression_minimum = 15 MINUTES
 	item = /obj/item/storage/toolbox/emergency/turret
 	cost = 11
-	restricted_roles = list(JOB_STATION_ENGINEER)
+	restricted_roles = list(JOB_DISTRICT_ENGINEER)
 
 /datum/uplink_item/role_restricted/magillitis_serum
 	name = "Magillitis Serum Autoinjector"

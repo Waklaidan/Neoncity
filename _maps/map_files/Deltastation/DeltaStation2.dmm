@@ -51068,7 +51068,7 @@
 /turf/open/floor/iron,
 /area/service/hydroponics)
 "jmU" = (
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room)
 "jnj" = (
@@ -52102,7 +52102,7 @@
 /turf/open/floor/iron,
 /area/service/hydroponics)
 "jCw" = (
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -59901,7 +59901,7 @@
 /area/science/storage)
 "lEK" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -61748,7 +61748,7 @@
 /area/security/office)
 "maI" = (
 /obj/structure/chair/office,
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
 /area/engineering/main)
@@ -75118,7 +75118,7 @@
 /turf/open/floor/iron/dark,
 /area/command/gateway)
 "pAK" = (
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -83451,7 +83451,7 @@
 /turf/open/floor/iron/white,
 /area/medical/virology)
 "rRc" = (
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -94480,7 +94480,7 @@
 /turf/open/floor/iron,
 /area/hallway/secondary/entry)
 "uMp" = (
-/obj/effect/landmark/start/station_engineer,
+/obj/effect/landmark/start/district_engineer,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},

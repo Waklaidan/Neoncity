@@ -807,7 +807,7 @@
 		},
 		{
 			"id": "plasma_engi",
-			"name": "Station Engineer (Plasmaman)",
+			"name": "District Engineer (Plasmaman)",
 			"desc": "The ever industrious plasmamen are well suited to engineering work, due to their natural radiation resistance.",
 			"rules": "Immunity to Battlefields",
 			"icon_state": "engi_plasma",
@@ -1073,8 +1073,8 @@
 		},
 		{
 			"id": "engi",
-			"name": "Station Engineer",
-			"desc": "Station Engineers maintain the intricate and delicate web of machinery that keeps you, and everyone else aboard your station, alive. No pressure there, then.",
+			"name": "District Engineer",
+			"desc": "District Engineers maintain the intricate and delicate web of machinery that keeps you, and everyone else aboard your station, alive. No pressure there, then.",
 			"rules": "Tap this card: Reduce the damage a card would take this turn from a battlefield to zero.",
 			"icon_state": "engi",
 			"power": "2",

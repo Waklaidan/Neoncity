@@ -49,7 +49,7 @@
 		/datum/job/scientist,
 		/datum/job/roboticist,
 		// Engineering
-		/datum/job/station_engineer,
+		/datum/job/district_engineer,
 		/datum/job/firefighter,
 	)
 

@@ -326,7 +326,7 @@
 	desc = "A white winter coat hood. It's warm."
 	icon_state = "hood_genetics"
 
-// Station Engineer
+// District Engineer
 /obj/item/clothing/suit/hooded/wintercoat/engineering
 	name = "engineering winter coat"
 	desc = "A surprisingly heavy yellow winter coat with reflective orange stripes. It has a small wrench for its zipper tab, and the inside layer is covered with a radiation-resistant silver-nylon blend. Because you're worth it."

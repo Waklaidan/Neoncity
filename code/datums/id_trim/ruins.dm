@@ -23,7 +23,7 @@
 /// Trim for the oldstation ruin/Charlie station
 /datum/id_trim/away/old/eng
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_ENGINE)
-	assignment = "Charlie Station Engineer"
+	assignment = "Charlie District Engineer"
 
 /// Trim for the oldstation ruin/Charlie station
 /datum/id_trim/away/old/apc
@@ -77,12 +77,12 @@
 
 /// Trim for various various ruins.
 /datum/id_trim/engioutpost
-	assignment = "Senior Station Engineer"
+	assignment = "Senior District Engineer"
 	trim_state = "trim_stationengineer"
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_ENGINE, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_MAINT_TUNNELS)
 
 /// Trim for various various ruins.
-/datum/id_trim/job/station_engineer/gunner
+/datum/id_trim/job/district_engineer/gunner
 	assignment = "Gunner"
 	template_access = null
 

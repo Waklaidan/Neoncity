@@ -120,7 +120,7 @@ GLOBAL_DATUM_INIT(crewmonitor, /datum/crewmonitor, new)
 		JOB_GENETICIST = 33,
 		// 40-49: Engineering
 		JOB_CHIEF_ENGINEER = 40,
-		JOB_STATION_ENGINEER = 41,
+		JOB_DISTRICT_ENGINEER = 41,
 		JOB_FIREFIGHTER = 42,
 		// 50-59: Cargo
 		JOB_CITY_CLERK = 50,

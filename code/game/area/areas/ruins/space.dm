@@ -240,7 +240,7 @@
 	icon_state = "bluenew"
 
 /area/ruin/space/has_grav/ancientstation/engi
-	name = "Charlie Station Engineering"
+	name = "Charlie District Engineering"
 	icon_state = "engine"
 	ambience_index = AMBIENCE_ENGI
 
