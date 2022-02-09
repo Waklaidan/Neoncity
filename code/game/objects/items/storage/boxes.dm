@@ -1582,11 +1582,11 @@
 	desc = "This legendary figure of still dubious historical accuracy is thought to have been a world-famous archeologist who embarked on countless adventures in far away lands, along with his trademark whip and fedora hat."
 
 /obj/item/storage/box/hero/PopulateContents()
-	new /obj/item/clothing/head/fedora/curator(src)
-	new /obj/item/clothing/suit/curator(src)
-	new /obj/item/clothing/under/rank/civilian/curator/treasure_hunter(src)
+	new /obj/item/clothing/head/fedora/journalist(src)
+	new /obj/item/clothing/suit/journalist(src)
+	new /obj/item/clothing/under/rank/civilian/journalist/treasure_hunter(src)
 	new /obj/item/clothing/shoes/workboots/mining(src)
-	new /obj/item/melee/curator_whip(src)
+	new /obj/item/melee/journalist_whip(src)
 
 /obj/item/storage/box/hero/astronaut
 	name = "First Man on the Moon - 1960's."

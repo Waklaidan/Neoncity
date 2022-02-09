@@ -14,8 +14,8 @@
 	user.visible_message(span_suicide("[user] is strangling [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
 	return(OXYLOSS)
 
-/obj/item/clothing/neck/cloak/hos
-	name = "head of security's cloak"
+/obj/item/clothing/neck/cloak/cop
+	name = "chief of police's cloak"
 	desc = "Worn by Securistan, ruling the station with an iron fist."
 	icon_state = "hoscloak"
 
@@ -44,9 +44,9 @@
 	desc = "Worn by the commander of Space Station 13."
 	icon_state = "capcloak"
 
-/obj/item/clothing/neck/cloak/hop
-	name = "head of personnel's cloak"
-	desc = "Worn by the Head of Personnel. It smells faintly of bureaucracy."
+/obj/item/clothing/neck/cloak/cc
+	name = "city clerk's cloak"
+	desc = "Worn by the City Clerk. It smells faintly of bureaucracy."
 	icon_state = "hopcloak"
 
 /obj/item/clothing/suit/hooded/cloak/goliath

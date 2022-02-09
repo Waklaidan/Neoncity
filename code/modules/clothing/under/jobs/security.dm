@@ -46,7 +46,7 @@
 	can_adjust = FALSE
 
 /obj/item/clothing/under/rank/security/officer/formal
-	name = "security officer's formal uniform"
+	name = "police officer's formal uniform"
 	desc = "The latest in fashionable security outfits."
 	icon_state = "officerblueclothes"
 	inhand_icon_state = "officerblueclothes"
@@ -127,41 +127,41 @@
 	alt_covers_chest = TRUE
 
 /*
- * Head of Security
+ * Chief of Police
  */
-/obj/item/clothing/under/rank/security/head_of_security
-	name = "head of security's jumpsuit"
-	desc = "A security jumpsuit decorated for those few with the dedication to achieve the position of Head of Security."
+/obj/item/clothing/under/rank/security/chief_of_police
+	name = "chief of police's jumpsuit"
+	desc = "A security jumpsuit decorated for those few with the dedication to achieve the position of Chief of Police."
 	icon_state = "rhos"
 	inhand_icon_state = "r_suit"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 50, ACID = 50, WOUND = 10)
 	strip_delay = 60
 
-/obj/item/clothing/under/rank/security/head_of_security/skirt
-	name = "head of security's jumpskirt"
-	desc = "A security jumpskirt decorated for those few with the dedication to achieve the position of Head of Security."
+/obj/item/clothing/under/rank/security/chief_of_police/skirt
+	name = "chief of police's jumpskirt"
+	desc = "A security jumpskirt decorated for those few with the dedication to achieve the position of Chief of Police."
 	icon_state = "rhos_skirt"
 	inhand_icon_state = "r_suit"
 	body_parts_covered = CHEST|GROIN|ARMS
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	fitted = FEMALE_UNIFORM_TOP
 
-/obj/item/clothing/under/rank/security/head_of_security/grey
-	name = "head of security's grey jumpsuit"
+/obj/item/clothing/under/rank/security/chief_of_police/grey
+	name = "chief of police's grey jumpsuit"
 	desc = "There are old men, and there are bold men, but there are very few old, bold men."
 	icon_state = "hos"
 	inhand_icon_state = "gy_suit"
 
-/obj/item/clothing/under/rank/security/head_of_security/alt
-	name = "head of security's turtleneck"
-	desc = "A stylish alternative to the normal head of security jumpsuit, complete with tactical pants."
+/obj/item/clothing/under/rank/security/chief_of_police/alt
+	name = "chief of police's turtleneck"
+	desc = "A stylish alternative to the normal chief of police jumpsuit, complete with tactical pants."
 	icon_state = "hosalt"
 	inhand_icon_state = "bl_suit"
 	alt_covers_chest = TRUE
 
-/obj/item/clothing/under/rank/security/head_of_security/alt/skirt
-	name = "head of security's turtleneck skirt"
-	desc = "A stylish alternative to the normal head of security jumpsuit, complete with a tactical skirt."
+/obj/item/clothing/under/rank/security/chief_of_police/alt/skirt
+	name = "chief of police's turtleneck skirt"
+	desc = "A stylish alternative to the normal chief of police jumpsuit, complete with a tactical skirt."
 	icon_state = "hosalt_skirt"
 	inhand_icon_state = "bl_suit"
 	body_parts_covered = CHEST|GROIN|ARMS
@@ -169,24 +169,24 @@
 	fitted = FEMALE_UNIFORM_TOP
 	alt_covers_chest = TRUE
 
-/obj/item/clothing/under/rank/security/head_of_security/parade
-	name = "head of security's parade uniform"
-	desc = "A male head of security's luxury-wear, for special occasions."
+/obj/item/clothing/under/rank/security/chief_of_police/parade
+	name = "chief of police's parade uniform"
+	desc = "A male chief of police's luxury-wear, for special occasions."
 	icon_state = "hos_parade_male"
 	inhand_icon_state = "r_suit"
 	can_adjust = FALSE
 
-/obj/item/clothing/under/rank/security/head_of_security/parade/female
-	name = "head of security's parade uniform"
-	desc = "A female head of security's luxury-wear, for special occasions."
+/obj/item/clothing/under/rank/security/chief_of_police/parade/female
+	name = "chief of police's parade uniform"
+	desc = "A female chief of police's luxury-wear, for special occasions."
 	icon_state = "hos_parade_fem"
 	inhand_icon_state = "r_suit"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
-/obj/item/clothing/under/rank/security/head_of_security/formal
-	desc = "The insignia on this uniform tells you that this uniform belongs to the Head of Security."
-	name = "head of security's formal uniform"
+/obj/item/clothing/under/rank/security/chief_of_police/formal
+	desc = "The insignia on this uniform tells you that this uniform belongs to the Chief of Police."
+	name = "chief of police's formal uniform"
 	icon_state = "hosblueclothes"
 	inhand_icon_state = "hosblueclothes"
 	alt_covers_chest = TRUE

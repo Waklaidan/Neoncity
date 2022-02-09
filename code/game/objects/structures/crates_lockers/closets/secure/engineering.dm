@@ -68,7 +68,7 @@
 
 
 /obj/structure/closet/secure_closet/atmospherics
-	name = "\proper atmospheric technician's locker"
+	name = "\proper firefighter's locker"
 	req_access = list(ACCESS_ATMOSPHERICS)
 	icon_state = "atmos"
 

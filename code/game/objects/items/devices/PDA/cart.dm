@@ -101,7 +101,7 @@
 	access = CART_SECURITY
 	spam_enabled = 1
 
-/obj/item/cartridge/curator
+/obj/item/cartridge/journalist
 	name = "\improper Lib-Tweet cartridge"
 	icon_state = "cart-s"
 	access = CART_NEWSCASTER
@@ -146,7 +146,7 @@
 	icon_state = "cart-h"
 	access = CART_MANIFEST | CART_STATUS_DISPLAY
 
-/obj/item/cartridge/hop
+/obj/item/cartridge/cc
 	name = "\improper HumanResources9001 cartridge"
 	icon_state = "cart-h"
 	access = CART_MANIFEST | CART_STATUS_DISPLAY | CART_JANITOR | CART_SECURITY | CART_NEWSCASTER | CART_QUARTERMASTER | CART_DRONEPHONE
@@ -156,7 +156,7 @@
 		VIBE_BOT,
 	)
 
-/obj/item/cartridge/hos
+/obj/item/cartridge/cop
 	name = "\improper R.O.B.U.S.T. DELUXE cartridge"
 	icon_state = "cart-hos"
 	access = CART_MANIFEST | CART_STATUS_DISPLAY | CART_SECURITY

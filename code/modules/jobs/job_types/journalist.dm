@@ -1,22 +1,22 @@
-/datum/job/curator
-	title = JOB_CURATOR
+/datum/job/journalist
+	title = JOB_JOURNALIST
 	description = "Read and write books and hand them to people, stock \
 		bookshelves, report on station news."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CITY_CLERK)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the city clerk"
 	selection_color = "#bbe291"
 	exp_granted_type = EXP_TYPE_CREW
 
-	outfit = /datum/outfit/job/curator
-	plasmaman_outfit = /datum/outfit/plasmaman/curator
+	outfit = /datum/outfit/job/journalist
+	plasmaman_outfit = /datum/outfit/plasmaman/journalist
 
 	paycheck = PAYCHECK_EASY
 	paycheck_department = ACCOUNT_SRV
 
-	display_order = JOB_DISPLAY_ORDER_CURATOR
+	display_order = JOB_DISPLAY_ORDER_JOURNALIST
 	departments_list = list(
 		/datum/job_department/service,
 		)
@@ -28,17 +28,17 @@
 	voice_of_god_silence_power = 3
 	rpg_title = "Veteran Adventurer"
 
-/datum/outfit/job/curator
-	name = "Curator"
-	jobtype = /datum/job/curator
+/datum/outfit/job/journalist
+	name = "Journalist"
+	jobtype = /datum/job/journalist
 
-	id_trim = /datum/id_trim/job/curator
-	uniform = /obj/item/clothing/under/rank/civilian/curator
+	id_trim = /datum/id_trim/job/journalist
+	uniform = /obj/item/clothing/under/rank/civilian/journalist
 	backpack_contents = list(
 		/obj/item/barcodescanner = 1,
 		/obj/item/choice_beacon/hero = 1,
 	)
-	belt = /obj/item/pda/curator
+	belt = /obj/item/pda/journalist
 	ears = /obj/item/radio/headset/headset_srv
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/laser_pointer
@@ -47,10 +47,10 @@
 
 	accessory = /obj/item/clothing/accessory/pocketprotector/full
 
-/datum/outfit/job/curator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/journalist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 
 	if(visualsOnly)
 		return
 
-	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_CURATOR)
+	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_JOURNALIST)

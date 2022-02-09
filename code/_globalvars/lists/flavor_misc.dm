@@ -258,14 +258,14 @@ GLOBAL_LIST_INIT(scarySounds, list(
 5 CE Office
 6 Atmospherics
 7 Security
-8 HoS Office
+8 CoP Office
 9 Medbay
 10 MD Office
 11 Chemistry
 12 Research
 13 RD Office
 14 Robotics
-15 HoP Office
+15 CC Office
 16 Library
 17 Chapel
 18 Theatre
@@ -303,8 +303,8 @@ GLOBAL_LIST_INIT(TAGGERLOCATIONS, list(
 	"Engineering",
 	"Experimentor Lab",
 	"Genetics",
-	"HoP Office",
-	"HoS Office",
+	"CC Office",
+	"CoP Office",
 	"Hydroponics",
 	"Janitor Closet",
 	"Kitchen",

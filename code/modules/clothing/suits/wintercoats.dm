@@ -75,9 +75,9 @@
 	icon_state = "hood_mayor"
 	armor = list(MELEE = 25, BULLET = 30, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, FIRE = 0, ACID = 50)
 
-// Head of Personnel
-/obj/item/clothing/suit/hooded/wintercoat/hop
-	name = "head of personnel's winter coat"
+// City Clerk
+/obj/item/clothing/suit/hooded/wintercoat/cc
+	name = "city clerk's winter coat"
 	desc = "A cozy winter coat, covered in thick fur. The breast features a proud yellow chevron, reminding everyone that you're the second banana."
 	icon_state = "coathop"
 	inhand_icon_state = "coathop"
@@ -85,9 +85,9 @@
 	allowed = list(
 		/obj/item/melee/baton/telescopic,
 	)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/hop
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/cc
 
-/obj/item/clothing/head/hooded/winterhood/hop
+/obj/item/clothing/head/hooded/winterhood/cc
 	icon_state = "hood_hop"
 
 // Botanist
@@ -131,7 +131,7 @@
 	desc = "A purple hood that smells of space cleaner."
 	icon_state = "hood_janitor"
 
-// Security Officer
+// Police Officer
 /obj/item/clothing/suit/hooded/wintercoat/security
 	name = "security winter coat"
 	desc = "A red, armour-padded winter coat. It glitters with a mild ablative coating and a robust air of authority.  The zipper tab is a pair of jingly little handcuffs that get annoying after the first ten seconds."
@@ -149,16 +149,16 @@
 	icon_state = "hood_security"
 	armor = list(MELEE = 25, BULLET = 15, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 0, FIRE = 0, ACID = 45)
 
-// Head of Security
-/obj/item/clothing/suit/hooded/wintercoat/security/hos
-	name = "head of security's winter coat"
+// Chief of Police
+/obj/item/clothing/suit/hooded/wintercoat/security/cop
+	name = "chief of police's winter coat"
 	desc = "A red, armour-padded winter coat, lovingly woven with a Kevlar interleave and reinforced with semi-ablative polymers and a silver azide fill material. The zipper tab looks like a tiny replica of Beepsky."
 	icon_state = "coathos"
 	inhand_icon_state = "coathos"
 	armor = list(MELEE = 35, BULLET = 25, LASER = 40, ENERGY = 50, BOMB = 35, BIO = 0, FIRE = 0, ACID = 55)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/hos
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/cop
 
-/obj/item/clothing/head/hooded/winterhood/security/hos
+/obj/item/clothing/head/hooded/winterhood/security/cop
 	desc = "A red, armour-padded winter hood, lovingly woven with a Kevlar interleave. Definitely not bulletproof, especially not the part where your face goes."
 	icon_state = "hood_hos"
 
@@ -326,7 +326,7 @@
 	desc = "A white winter coat hood. It's warm."
 	icon_state = "hood_genetics"
 
-// Station Engineer
+// District Engineer
 /obj/item/clothing/suit/hooded/wintercoat/engineering
 	name = "engineering winter coat"
 	desc = "A surprisingly heavy yellow winter coat with reflective orange stripes. It has a small wrench for its zipper tab, and the inside layer is covered with a radiation-resistant silver-nylon blend. Because you're worth it."
@@ -390,7 +390,7 @@
 	desc = "A yellow and blue winter coat hood."
 	icon_state = "hood_atmos"
 
-// Cargo Technician
+// Retail Assistant
 /obj/item/clothing/suit/hooded/wintercoat/cargo
 	name = "cargo winter coat"
 	desc = "A tan-and-grey winter coat. The zipper tab is a small pin resembling a MULE. It fills you with the warmth of a fierce independence."

@@ -1,13 +1,13 @@
-/datum/job/cargo_technician
-	title = JOB_CARGO_TECHNICIAN
+/datum/job/retail_assistant
+	title = JOB_RETAIL_ASSISTANT
 	description = "Distribute supplies to the departments that ordered them, \
 		collect empty crates, load and unload the supply shuttle, \
 		ship bounty cubes."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CITY_CLERK)
 	faction = FACTION_STATION
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the quartermaster and the head of personnel"
+	supervisors = "the quartermaster and the city clerk"
 	selection_color = "#dcba97"
 	exp_granted_type = EXP_TYPE_CREW
 
@@ -16,7 +16,7 @@
 
 	paycheck = PAYCHECK_EASY
 	paycheck_department = ACCOUNT_CAR
-	display_order = JOB_DISPLAY_ORDER_CARGO_TECHNICIAN
+	display_order = JOB_DISPLAY_ORDER_RETAIL_ASSISTANT
 	bounty_types = CIV_JOB_RANDOM
 	departments_list = list(
 		/datum/job_department/cargo,
@@ -36,10 +36,10 @@
 
 
 /datum/outfit/job/cargo_tech
-	name = "Cargo Technician"
-	jobtype = /datum/job/cargo_technician
+	name = "Retail Assistant"
+	jobtype = /datum/job/retail_assistant
 
-	id_trim = /datum/id_trim/job/cargo_technician
+	id_trim = /datum/id_trim/job/retail_assistant
 	uniform = /obj/item/clothing/under/rank/cargo/tech
 	backpack_contents = list(
 		/obj/item/modular_computer/tablet/preset/cargo = 1,

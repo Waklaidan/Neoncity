@@ -200,7 +200,7 @@
 
 /obj/item/clothing/accessory/medal/ribbon/cargo
 	name = "\"cargo tech of the shift\" award"
-	desc = "An award bestowed only upon those cargotechs who have exhibited devotion to their duty in keeping with the highest traditions of Cargonia."
+	desc = "An award bestowed only upon those retailassistants who have exhibited devotion to their duty in keeping with the highest traditions of Cargonia."
 
 /obj/item/clothing/accessory/medal/silver
 	name = "silver medal"
@@ -218,7 +218,7 @@
 	desc = "An award for distinguished combat and sacrifice in defence of Nanotrasen's commercial interests. Often awarded to security staff."
 
 /obj/item/clothing/accessory/medal/silver/excellence
-	name = "\proper the head of personnel award for outstanding achievement in the field of excellence"
+	name = "\proper the city clerk award for outstanding achievement in the field of excellence"
 	desc = "Nanotrasen's dictionary defines excellence as \"the quality or condition of being excellent\". This is awarded to those rare crewmembers who fit that definition."
 
 /obj/item/clothing/accessory/medal/silver/bureaucracy

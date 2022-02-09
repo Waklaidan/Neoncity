@@ -81,7 +81,7 @@
 
 /datum/supply_pack/goody/gripper_single
 	name = "Gripper Gloves Single-Pack"
-	desc = "A spare pair of gripper gloves. Perfect for when the security vendor is empty (or when you're not actually a security officer)."
+	desc = "A spare pair of gripper gloves. Perfect for when the security vendor is empty (or when you're not actually a police officer)."
 	cost = PAYCHECK_HARD * 6
 	contains = list(/obj/item/clothing/gloves/tackler)
 
@@ -93,7 +93,7 @@
 
 /datum/supply_pack/goody/firstaidburns_single
 	name = "Burn Treatment Kit Single-Pack"
-	desc = "A single burn first-aid kit. The advertisement displays a winking atmospheric technician giving a thumbs up, saying \"Mistakes happen!\""
+	desc = "A single burn first-aid kit. The advertisement displays a winking firefighter giving a thumbs up, saying \"Mistakes happen!\""
 	cost = PAYCHECK_MEDIUM * 4
 	contains = list(/obj/item/storage/firstaid/fire)
 

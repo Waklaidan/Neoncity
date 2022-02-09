@@ -149,8 +149,8 @@
 
 //Security
 /obj/item/clothing/suit/security/officer
-	name = "security officer's jacket"
-	desc = "This jacket is for those special occasions when a security officer isn't required to wear their armor."
+	name = "police officer's jacket"
+	desc = "This jacket is for those special occasions when a police officer isn't required to wear their armor."
 	icon_state = "officerbluejacket"
 	inhand_icon_state = "officerbluejacket"
 	body_parts_covered = CHEST|ARMS
@@ -162,8 +162,8 @@
 	inhand_icon_state = "wardenbluejacket"
 	body_parts_covered = CHEST|ARMS
 
-/obj/item/clothing/suit/security/hos
-	name = "head of security's jacket"
+/obj/item/clothing/suit/security/cop
+	name = "chief of police's jacket"
 	desc = "This piece of clothing was specifically designed for asserting superior authority."
 	icon_state = "hosbluejacket"
 	inhand_icon_state = "hosbluejacket"
@@ -192,15 +192,15 @@
 		/obj/item/tank/internals/emergency_oxygen,
 		)
 
-//Curator
-/obj/item/clothing/suit/curator
+//Journalist
+/obj/item/clothing/suit/journalist
 	name = "treasure hunter's coat"
 	desc = "Both fashionable and lightly armoured, this jacket is favoured by treasure hunters the galaxy over."
 	icon_state = "curator"
 	inhand_icon_state = "curator"
 	blood_overlay_type = "coat"
 	body_parts_covered = CHEST|ARMS
-	allowed = list(/obj/item/tank/internals, /obj/item/melee/curator_whip, /obj/item/storage/bag/books)
+	allowed = list(/obj/item/tank/internals, /obj/item/melee/journalist_whip, /obj/item/storage/bag/books)
 	armor = list(MELEE = 25, BULLET = 10, LASER = 25, ENERGY = 35, BOMB = 0, BIO = 0, FIRE = 0, ACID = 45)
 	cold_protection = CHEST|ARMS
 	heat_protection = CHEST|ARMS

@@ -1,5 +1,5 @@
-/datum/job/atmospheric_technician
-	title = JOB_ATMOSPHERIC_TECHNICIAN
+/datum/job/firefighter
+	title = JOB_FIREFIGHTER
 	description = "Ensure the air is breathable on the station, fill oxygen tanks, fight fires, purify the air."
 	department_head = list(JOB_CHIEF_ENGINEER)
 	faction = FACTION_STATION
@@ -19,7 +19,7 @@
 
 	liver_traits = list(TRAIT_ENGINEER_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_ATMOSPHERIC_TECHNICIAN
+	display_order = JOB_DISPLAY_ORDER_FIREFIGHTER
 	bounty_types = CIV_JOB_ENG
 	departments_list = list(
 		/datum/job_department/engineering,
@@ -39,11 +39,11 @@
 	rpg_title = "Aeromancer"
 
 /datum/outfit/job/atmos
-	name = "Atmospheric Technician"
-	jobtype = /datum/job/atmospheric_technician
+	name = "Firefighter"
+	jobtype = /datum/job/firefighter
 
-	id_trim = /datum/id_trim/job/atmospheric_technician
-	uniform = /obj/item/clothing/under/rank/engineering/atmospheric_technician
+	id_trim = /datum/id_trim/job/firefighter
+	uniform = /obj/item/clothing/under/rank/engineering/firefighter
 	backpack_contents = list(
 		/obj/item/modular_computer/tablet/preset/advanced/atmos = 1,
 		)
@@ -60,7 +60,7 @@
 	pda_slot = ITEM_SLOT_LPOCKET
 
 /datum/outfit/job/atmos/mod
-	name = "Atmospheric Technician (MODsuit)"
+	name = "Firefighter (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/mod/control/pre_equipped/atmospheric

@@ -1,12 +1,12 @@
 /datum/job/quartermaster
 	title = JOB_QUARTERMASTER
-	description = "Coordinate cargo technicians and shaft miners, assist with \
+	description = "Coordinate retail assistants and shaft miners, assist with \
 		economical purchasing."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CITY_CLERK)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the city clerk"
 	selection_color = "#d7b088"
 	exp_required_type_department = EXP_TYPE_SUPPLY
 	exp_granted_type = EXP_TYPE_CREW

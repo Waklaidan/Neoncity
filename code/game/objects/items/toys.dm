@@ -1408,7 +1408,7 @@
 	toysay = "Greytide world wide!"
 
 /obj/item/toy/figure/atmos
-	name = "\improper Atmospheric Technician action figure"
+	name = "\improper Firefighter action figure"
 	icon_state = "atmos"
 	toysay = "Glory to Atmosia!"
 
@@ -1433,8 +1433,8 @@
 	icon_state = "mayor"
 	toysay = "Any heads of staff?"
 
-/obj/item/toy/figure/cargotech
-	name = "\improper Cargo Technician action figure"
+/obj/item/toy/figure/retailassistant
+	name = "\improper Retail Assistant action figure"
 	icon_state = "cargotech"
 	toysay = "For Cargonia!"
 
@@ -1480,7 +1480,7 @@
 	toysay = "Kill 'em all!"
 
 /obj/item/toy/figure/engineer
-	name = "\improper Station Engineer action figure"
+	name = "\improper District Engineer action figure"
 	icon_state = "engineer"
 	toysay = "Oh god, the singularity is loose!"
 
@@ -1489,13 +1489,13 @@
 	icon_state = "geneticist"
 	toysay = "Smash!"
 
-/obj/item/toy/figure/hop
-	name = "\improper Head of Personnel action figure"
+/obj/item/toy/figure/cc
+	name = "\improper City Clerk action figure"
 	icon_state = "hop"
 	toysay = "Giving out all access!"
 
-/obj/item/toy/figure/hos
-	name = "\improper Head of Security action figure"
+/obj/item/toy/figure/cop
+	name = "\improper Chief of Police action figure"
 	icon_state = "hos"
 	toysay = "Go ahead, make my day."
 
@@ -1514,8 +1514,8 @@
 	icon_state = "lawyer"
 	toysay = "My client is a dirty traitor!"
 
-/obj/item/toy/figure/curator
-	name = "\improper Curator action figure"
+/obj/item/toy/figure/journalist
+	name = "\improper Journalist action figure"
 	icon_state = "curator"
 	toysay = "One day while..."
 
@@ -1584,7 +1584,7 @@
 	toysay = "Get that fucking disk!"
 
 /obj/item/toy/figure/secofficer
-	name = "\improper Security Officer action figure"
+	name = "\improper Police Officer action figure"
 	icon_state = "secofficer"
 	toysay = "I am the law!"
 	toysound = 'sound/runtime/complionator/dredd.ogg'

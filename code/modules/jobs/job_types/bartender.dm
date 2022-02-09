@@ -1,11 +1,11 @@
 /datum/job/bartender
 	title = JOB_BARTENDER
 	description = "Serve booze, mix drinks, keep the crew drunk."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CITY_CLERK)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the city clerk"
 	selection_color = "#bbe291"
 	exp_granted_type = EXP_TYPE_CREW
 

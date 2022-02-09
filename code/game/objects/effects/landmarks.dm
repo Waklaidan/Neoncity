@@ -69,8 +69,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Janitor"
 	icon_state = "Janitor"
 
-/obj/effect/landmark/start/cargo_technician
-	name = "Cargo Technician"
+/obj/effect/landmark/start/retail_assistant
+	name = "Retail Assistant"
 	icon_state = "Cargo Technician"
 
 /obj/effect/landmark/start/bartender
@@ -89,7 +89,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Quartermaster"
 	icon_state = "Quartermaster"
 
-/obj/effect/landmark/start/atmospheric_technician
+/obj/effect/landmark/start/firefighter
 	name = "Atmospheric Technician"
 	icon_state = "Atmospheric Technician"
 
@@ -101,16 +101,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Shaft Miner"
 	icon_state = "Shaft Miner"
 
-/obj/effect/landmark/start/security_officer
-	name = "Security Officer"
+/obj/effect/landmark/start/police_officer
+	name = "Police Officer"
 	icon_state = "Security Officer"
 
 /obj/effect/landmark/start/botanist
 	name = "Botanist"
 	icon_state = "Botanist"
 
-/obj/effect/landmark/start/head_of_security
-	name = "Head of Security"
+/obj/effect/landmark/start/chief_of_police
+	name = "Chief of Police"
 	icon_state = "Head of Security"
 
 /obj/effect/landmark/start/mayor
@@ -129,20 +129,20 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Chief Engineer"
 	icon_state = "Chief Engineer"
 
-/obj/effect/landmark/start/head_of_personnel
-	name = "Head of Personnel"
+/obj/effect/landmark/start/city_clerk
+	name = "City Clerk"
 	icon_state = "Head of Personnel"
 
 /obj/effect/landmark/start/librarian
-	name = "Curator"
+	name = "Journalist"
 	icon_state = "Curator"
 
 /obj/effect/landmark/start/lawyer
 	name = "Lawyer"
 	icon_state = "Lawyer"
 
-/obj/effect/landmark/start/station_engineer
-	name = "Station Engineer"
+/obj/effect/landmark/start/district_engineer
+	name = "District Engineer"
 	icon_state = "Station Engineer"
 
 /obj/effect/landmark/start/medical_doctor

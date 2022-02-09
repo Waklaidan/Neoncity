@@ -4,8 +4,8 @@ import { Icon, Section, Table, Tooltip } from "../components";
 import { Window } from "../layouts";
 
 const commandJobs = [
-  "Head of Personnel",
-  "Head of Security",
+  "City Clerk",
+  "Chief of Police",
   "Chief Engineer",
   "Research Director",
   "Chief Medical Officer",

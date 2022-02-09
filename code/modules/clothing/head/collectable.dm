@@ -32,7 +32,7 @@
 
 /obj/item/clothing/head/collectable/paper
 	name = "collectable paper hat"
-	desc = "What looks like an ordinary paper hat is actually a rare and valuable collector's edition paper hat. Keep away from water, fire, and Curators."
+	desc = "What looks like an ordinary paper hat is actually a rare and valuable collector's edition paper hat. Keep away from water, fire, and Journalists."
 	icon_state = "paper"
 
 	dog_fashion = /datum/dog_fashion/head
@@ -135,17 +135,17 @@
 
 	dog_fashion = /datum/dog_fashion/head
 
-/obj/item/clothing/head/collectable/hos
-	name = "collectable HoS hat"
+/obj/item/clothing/head/collectable/cop
+	name = "collectable CoP hat"
 	desc = "Now you too can beat prisoners, set silly sentences, and arrest for no reason!"
 	icon_state = "hoscap"
 	dynamic_hair_suffix = ""
 
-/obj/item/clothing/head/collectable/hop
-	name = "collectable HoP hat"
+/obj/item/clothing/head/collectable/cc
+	name = "collectable CC hat"
 	desc = "It's your turn to demand excessive paperwork, signatures, stamps, and hire more clowns! Papers, please!"
 	icon_state = "hopcap"
-	dog_fashion = /datum/dog_fashion/head/hop
+	dog_fashion = /datum/dog_fashion/head/cc
 
 /obj/item/clothing/head/collectable/thunderdome
 	name = "collectable Thunderdome helmet"

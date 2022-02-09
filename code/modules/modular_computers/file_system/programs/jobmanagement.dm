@@ -17,8 +17,8 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	///Jobs blacklisted from having their slots edited.
 	var/list/blacklisted = list(
 		JOB_MAYOR,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CITY_CLERK,
+		JOB_CHIEF_OF_POLICE,
 		JOB_RESEARCH_DIRECTOR,
 		JOB_CHIEF_ENGINEER,
 		JOB_MEDICAL_DIRECTOR,

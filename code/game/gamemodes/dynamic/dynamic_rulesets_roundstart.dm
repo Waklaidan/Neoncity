@@ -14,9 +14,9 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -110,9 +110,9 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -169,9 +169,9 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -218,9 +218,9 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -275,8 +275,8 @@
 	minimum_required_age = 14
 	restricted_roles = list(
 		JOB_MAYOR,
-		JOB_HEAD_OF_SECURITY,
-	) // Just to be sure that a wizard getting picked won't ever imply a Mayor or HoS not getting drafted
+		JOB_CHIEF_OF_POLICE,
+	) // Just to be sure that a wizard getting picked won't ever imply a Mayor or CoP not getting drafted
 	required_candidates = 1
 	weight = 2
 	cost = 20
@@ -325,10 +325,10 @@
 		JOB_CHAPLAIN,
 		JOB_CYBORG,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CITY_CLERK,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_candidates = 2
@@ -390,8 +390,8 @@
 	minimum_required_age = 14
 	restricted_roles = list(
 		JOB_MAYOR,
-		JOB_HEAD_OF_SECURITY,
-	) // Just to be sure that a nukie getting picked won't ever imply a Mayor or HoS not getting drafted
+		JOB_CHIEF_OF_POLICE,
+	) // Just to be sure that a nukie getting picked won't ever imply a Mayor or CoP not getting drafted
 	required_candidates = 5
 	weight = 3
 	cost = 20
@@ -483,11 +483,11 @@
 		JOB_MEDICAL_DIRECTOR,
 		JOB_CYBORG,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CITY_CLERK,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
 		JOB_RESEARCH_DIRECTOR,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_candidates = 3
@@ -573,7 +573,7 @@
 	antag_datum = /datum/antagonist/gang
 	antag_flag = ROLE_FAMILIES
 	protected_roles = list(
-		JOB_HEAD_OF_PERSONNEL,
+		JOB_CITY_CLERK,
 		JOB_PRISONER,
 	)
 	restricted_roles = list(
@@ -581,9 +581,9 @@
 		JOB_MAYOR,
 		JOB_CYBORG,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_RESEARCH_DIRECTOR,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_candidates = 3
@@ -712,9 +712,9 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(

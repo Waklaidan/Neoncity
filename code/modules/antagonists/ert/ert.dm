@@ -14,7 +14,7 @@
 	var/leader = FALSE
 	var/datum/outfit/outfit = /datum/outfit/centcom/ert/security
 	var/datum/outfit/plasmaman_outfit = /datum/outfit/plasmaman/centcom_official
-	var/role = "Security Officer"
+	var/role = "Police Officer"
 	var/list/name_source
 	var/random_names = TRUE
 	var/rip_and_tear = FALSE

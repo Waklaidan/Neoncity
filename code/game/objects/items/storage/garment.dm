@@ -10,13 +10,13 @@
 	name = "mayor's garment bag"
 	desc = "A bag for storing extra clothes and shoes. This one belongs to the mayor."
 
-/obj/item/storage/bag/garment/hos
-	name = "head of security's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the head of security."
+/obj/item/storage/bag/garment/cop
+	name = "chief of police's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the chief of police."
 
-/obj/item/storage/bag/garment/hop
-	name = "head of personnel's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the head of personnel."
+/obj/item/storage/bag/garment/cc
+	name = "city clerk's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the city clerk."
 
 /obj/item/storage/bag/garment/research_director
 	name = "research director's garment bag"
@@ -59,32 +59,32 @@
 	new /obj/item/clothing/suit/hooded/wintercoat/mayor(src)
 
 
-/obj/item/storage/bag/garment/hop/PopulateContents()
-	new /obj/item/clothing/under/rank/civilian/head_of_personnel(src)
-	new /obj/item/clothing/under/rank/civilian/head_of_personnel/skirt(src)
+/obj/item/storage/bag/garment/cc/PopulateContents()
+	new /obj/item/clothing/under/rank/civilian/city_clerk(src)
+	new /obj/item/clothing/under/rank/civilian/city_clerk/skirt(src)
 	new /obj/item/clothing/suit/armor/vest/alt(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
-	new /obj/item/clothing/head/hopcap(src)
-	new /obj/item/clothing/neck/cloak/hop(src)
+	new /obj/item/clothing/head/cccap(src)
+	new /obj/item/clothing/neck/cloak/cc(src)
 	new /obj/item/clothing/shoes/sneakers/brown(src)
-	new /obj/item/clothing/suit/hooded/wintercoat/hop(src)
+	new /obj/item/clothing/suit/hooded/wintercoat/cc(src)
 
-/obj/item/storage/bag/garment/hos/PopulateContents()
-	new /obj/item/clothing/under/rank/security/head_of_security/grey(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/skirt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/alt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/alt/skirt(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/parade/female(src)
-	new /obj/item/clothing/under/rank/security/head_of_security/parade(src)
-	new /obj/item/clothing/suit/armor/hos(src)
-	new /obj/item/clothing/suit/armor/hos/hos_formal(src)
+/obj/item/storage/bag/garment/cop/PopulateContents()
+	new /obj/item/clothing/under/rank/security/chief_of_police/grey(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/skirt(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/alt(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/alt/skirt(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/parade/female(src)
+	new /obj/item/clothing/under/rank/security/chief_of_police/parade(src)
+	new /obj/item/clothing/suit/armor/cop(src)
+	new /obj/item/clothing/suit/armor/cop/hos_formal(src)
 	new /obj/item/clothing/suit/armor/vest/leather(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses/gars/giga(src)
-	new /obj/item/clothing/head/hos(src)
+	new /obj/item/clothing/head/cop(src)
 	new /obj/item/clothing/mask/gas/sechailer/swat(src)
-	new /obj/item/clothing/neck/cloak/hos(src)
-	new /obj/item/clothing/suit/hooded/wintercoat/security/hos(src)
+	new /obj/item/clothing/neck/cloak/cop(src)
+	new /obj/item/clothing/suit/hooded/wintercoat/security/cop(src)
 
 /obj/item/storage/bag/garment/research_director/PopulateContents()
 	new /obj/item/clothing/under/rank/rnd/research_director(src)

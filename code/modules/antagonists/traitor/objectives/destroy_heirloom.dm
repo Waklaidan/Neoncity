@@ -43,14 +43,14 @@
 		/datum/job/mime,
 		/datum/job/lawyer,
 		// Cargo
-		/datum/job/cargo_technician,
+		/datum/job/retail_assistant,
 		// Science
 		/datum/job/geneticist,
 		/datum/job/scientist,
 		/datum/job/roboticist,
 		// Engineering
-		/datum/job/station_engineer,
-		/datum/job/atmospheric_technician,
+		/datum/job/district_engineer,
+		/datum/job/firefighter,
 	)
 
 /// This is only for civilians, because the syndies are a lot less likely to give a shit about what an civilian does, so they're a lot less likely to appear
@@ -72,7 +72,7 @@
 		/datum/job/chaplain,
 		/datum/job/bartender,
 		/datum/job/cook,
-		/datum/job/curator,
+		/datum/job/journalist,
 	)
 
 /datum/traitor_objective/destroy_heirloom/rare
@@ -81,11 +81,11 @@
 	progression_maximum = 60 MINUTES
 	target_jobs = list(
 		// Security
-		/datum/job/security_officer,
+		/datum/job/police_officer,
 		/datum/job/warden,
 		/datum/job/detective,
 		// Heads of staff
-		/datum/job/head_of_personnel,
+		/datum/job/city_clerk,
 		/datum/job/medical_director,
 		/datum/job/research_director,
 	)
@@ -93,7 +93,7 @@
 /datum/traitor_objective/destroy_heirloom/mayor
 	progression_minimum = 30 MINUTES
 	target_jobs = list(
-		/datum/job/head_of_security,
+		/datum/job/chief_of_police,
 		/datum/job/mayor
 	)
 

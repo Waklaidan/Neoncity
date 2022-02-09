@@ -92,8 +92,8 @@
 	icon_state = "rd_cypherkey"
 	channels = list(RADIO_CHANNEL_SCIENCE = 1, RADIO_CHANNEL_COMMAND = 1)
 
-/obj/item/encryptionkey/heads/hos
-	name = "\proper the head of security's encryption key"
+/obj/item/encryptionkey/heads/cop
+	name = "\proper the chief of police's encryption key"
 	icon_state = "hos_cypherkey"
 	channels = list(RADIO_CHANNEL_SECURITY = 1, RADIO_CHANNEL_COMMAND = 1)
 
@@ -107,8 +107,8 @@
 	icon_state = "md_cypherkey"
 	channels = list(RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_COMMAND = 1)
 
-/obj/item/encryptionkey/heads/hop
-	name = "\proper the head of personnel's encryption key"
+/obj/item/encryptionkey/heads/cc
+	name = "\proper the city clerk's encryption key"
 	icon_state = "hop_cypherkey"
 	channels = list(RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_COMMAND = 1)
 

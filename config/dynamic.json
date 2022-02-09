@@ -24,10 +24,10 @@
 			},
 			"protected_roles": [
 				"Prisoner",
-				"Security Officer",
+				"Police Officer",
 				"Warden",
 				"Detective",
-				"Head of Security",
+				"Chief of Police",
 				"Mayor"
 			],
 			"restricted_roles": [

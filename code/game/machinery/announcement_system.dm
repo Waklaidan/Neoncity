@@ -88,7 +88,7 @@ GLOBAL_LIST_EMPTY(announcement_systems)
 
 	broadcast(message, channels)
 
-/// Announces a new security officer joining over the radio
+/// Announces a new police officer joining over the radio
 /obj/machinery/announcement_system/proc/announce_officer(mob/officer, department)
 	if (!is_operational)
 		return

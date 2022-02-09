@@ -2790,7 +2790,7 @@
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "kc" = (
-/obj/structure/closet/secure_closet/hop,
+/obj/structure/closet/secure_closet/cc,
 /turf/open/floor/wood,
 /area/city/outdoors)
 "kd" = (
@@ -3435,7 +3435,7 @@
 /area/city/outdoors)
 "lH" = (
 /obj/structure/bed,
-/obj/item/bedsheet/hop,
+/obj/item/bedsheet/cc,
 /turf/open/floor/carpet,
 /area/city/outdoors)
 "lI" = (
@@ -3498,7 +3498,7 @@
 /area/city/outdoors)
 "lS" = (
 /obj/structure/chair/office/light,
-/obj/effect/landmark/start/head_of_personnel,
+/obj/effect/landmark/start/city_clerk,
 /turf/open/floor/carpet,
 /area/city/outdoors)
 "lT" = (
@@ -4438,7 +4438,7 @@
 /area/city/outdoors)
 "oe" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel's Quarters";
+	name = "City Clerk's Quarters";
 	req_access_txt = "57"
 	},
 /turf/open/floor/wood,
@@ -7952,7 +7952,7 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
-/obj/effect/landmark/start/cargo_technician,
+/obj/effect/landmark/start/retail_assistant,
 /turf/open/floor/iron,
 /area/city/outdoors)
 "xW" = (
@@ -11142,7 +11142,7 @@
 /turf/open/floor/wood/large,
 /area/city/outdoors)
 "GK" = (
-/obj/machinery/modular_computer/console/preset/curator{
+/obj/machinery/modular_computer/console/preset/journalist{
 	icon_state = "console";
 	dir = 1
 	},
@@ -13162,7 +13162,7 @@
 /area/city/outdoors)
 "Mh" = (
 /obj/machinery/door/morgue{
-	name = "Curator's Study";
+	name = "Journalist's Study";
 	req_access_txt = "37"
 	},
 /turf/open/floor/wood/large,
@@ -13468,7 +13468,7 @@
 /turf/open/floor/wood/parquet/ebony,
 /area/city/outdoors)
 "MY" = (
-/obj/machinery/suit_storage_unit/hos,
+/obj/machinery/suit_storage_unit/cop,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "MZ" = (
@@ -13495,14 +13495,14 @@
 /turf/open/floor/iron,
 /area/city/outdoors)
 "Ne" = (
-/obj/structure/closet/secure_closet/hos,
-/obj/item/clothing/suit/armor/hos/trenchcoat,
-/obj/item/clothing/under/rank/security/head_of_security/grey,
+/obj/structure/closet/secure_closet/cop,
+/obj/item/clothing/suit/armor/cop/trenchcoat,
+/obj/item/clothing/under/rank/security/chief_of_police/grey,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "Nf" = (
 /obj/structure/bed,
-/obj/item/bedsheet/hos,
+/obj/item/bedsheet/cop,
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
@@ -13536,7 +13536,7 @@
 /area/city/outdoors)
 "Nm" = (
 /obj/structure/table/wood,
-/obj/item/storage/secure/safe/hos{
+/obj/item/storage/secure/safe/cop{
 	pixel_x = 32
 	},
 /obj/item/flashlight/lamp,
@@ -13573,7 +13573,7 @@
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "Nr" = (
-/obj/machinery/vending/wardrobe/curator_wardrobe,
+/obj/machinery/vending/wardrobe/journalist_wardrobe,
 /turf/open/floor/iron/grimy,
 /area/city/outdoors)
 "Ns" = (
@@ -13776,7 +13776,7 @@
 /area/city/outdoors)
 "NY" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Quarters";
+	name = "Chief of Police's Quarters";
 	req_access_txt = "58"
 	},
 /turf/open/floor/iron/grimy,
@@ -15074,7 +15074,7 @@
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
 "Ru" = (
-/obj/effect/landmark/start/head_of_security,
+/obj/effect/landmark/start/chief_of_police,
 /obj/structure/chair/comfy/black,
 /turf/open/floor/iron/dark,
 /area/city/outdoors)
@@ -15493,7 +15493,7 @@
 /area/city/outdoors)
 "Sw" = (
 /obj/machinery/door/airlock/command{
-	name = "Head of Security's Office";
+	name = "Chief of Police's Office";
 	req_access_txt = "58"
 	},
 /turf/open/floor/iron/dark,

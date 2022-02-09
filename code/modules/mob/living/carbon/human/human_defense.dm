@@ -687,7 +687,7 @@
 /mob/living/carbon/human/singularity_act()
 	. = 20
 	switch(mind?.assigned_role.type)
-		if(/datum/job/chief_engineer, /datum/job/station_engineer)
+		if(/datum/job/chief_engineer, /datum/job/district_engineer)
 			. = 100
 		if(/datum/job/clown)
 			. = rand(-1000, 1000)

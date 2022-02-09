@@ -168,7 +168,7 @@
 
 /obj/item/clothing/head/helmet/space/plasmaman/security
 	name = "security plasma envirosuit helmet"
-	desc = "A plasmaman containment helmet designed for security officers, protecting them from burning alive, alongside other undesirables."
+	desc = "A plasmaman containment helmet designed for police officers, protecting them from burning alive, alongside other undesirables."
 	icon_state = "security_envirohelm"
 	inhand_icon_state = "security_envirohelm"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 100, ACID = 75)
@@ -179,9 +179,9 @@
 	icon_state = "warden_envirohelm"
 	inhand_icon_state = "warden_envirohelm"
 
-/obj/item/clothing/head/helmet/space/plasmaman/security/head_of_security
-	name = "head of security's plasma envirosuit helmet"
-	desc = "A special containment helmet designed for the Head of Security. A pair of gold stripes are added to differentiate them from other members of security."
+/obj/item/clothing/head/helmet/space/plasmaman/security/chief_of_police
+	name = "chief of police's plasma envirosuit helmet"
+	desc = "A special containment helmet designed for the Chief of Police. A pair of gold stripes are added to differentiate them from other members of security."
 	icon_state = "hos_envirohelm"
 	inhand_icon_state = "hos_envirohelm"
 	armor = list(MELEE = 20, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 100, FIRE = 100, ACID = 75, WOUND = 10)
@@ -255,7 +255,7 @@
 
 /obj/item/clothing/head/helmet/space/plasmaman/atmospherics
 	name = "atmospherics plasma envirosuit helmet"
-	desc = "A space-worthy helmet specially designed for atmos technician plasmamen, the usual purple stripes being replaced by atmos' blue. Has improved thermal shielding."
+	desc = "A space-worthy helmet specially designed for firefighternician plasmamen, the usual purple stripes being replaced by atmos' blue. Has improved thermal shielding."
 	icon_state = "atmos_envirohelm"
 	inhand_icon_state = "atmos_envirohelm"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 100, ACID = 75)
@@ -295,8 +295,8 @@
 	icon_state = "white_envirohelm"
 	inhand_icon_state = "white_envirohelm"
 
-/obj/item/clothing/head/helmet/space/plasmaman/curator
-	name = "curator's plasma envirosuit helmet"
+/obj/item/clothing/head/helmet/space/plasmaman/journalist
+	name = "journalist's plasma envirosuit helmet"
 	desc = "A slight modification on a traditional voidsuit helmet, this helmet was Nanotrasen's first solution to the *logistical problems* that come with employing plasmamen. Despite their limitations, these helmets still see use by historians and old-school plasmamen alike."
 	icon_state = "prototype_envirohelm"
 	inhand_icon_state = "prototype_envirohelm"
@@ -331,15 +331,15 @@
 	visor_icon = "clown_envisor"
 	smile_state = "clown_smile"
 
-/obj/item/clothing/head/helmet/space/plasmaman/head_of_personnel
-	name = "head of personnel's envirosuit helmet"
-	desc = "A special containment helmet designed for the Head of Personnel. Embarrassingly enough, it looks way too much like the mayor's design save for the red stripes."
+/obj/item/clothing/head/helmet/space/plasmaman/city_clerk
+	name = "city clerk's envirosuit helmet"
+	desc = "A special containment helmet designed for the City Clerk. Embarrassingly enough, it looks way too much like the mayor's design save for the red stripes."
 	icon_state = "hop_envirohelm"
 	inhand_icon_state = "hop_envirohelm"
 
 /obj/item/clothing/head/helmet/space/plasmaman/mayor
 	name = "mayor's plasma envirosuit helmet"
-	desc = "A special containment helmet designed for the Mayor. Embarrassingly enough, it looks way too much like the Head of Personnel's design save for the gold stripes. I mean, come on. Gold stripes can fix anything."
+	desc = "A special containment helmet designed for the Mayor. Embarrassingly enough, it looks way too much like the City Clerk's design save for the gold stripes. I mean, come on. Gold stripes can fix anything."
 	icon_state = "mayor_envirohelm"
 	inhand_icon_state = "mayor_envirohelm"
 	armor = list(MELEE = 20, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 100, FIRE = 100, ACID = 75, WOUND = 10)

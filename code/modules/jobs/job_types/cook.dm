@@ -1,11 +1,11 @@
 /datum/job/cook
 	title = JOB_COOK
 	description = "Serve food, cook meat, keep the crew fed."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CITY_CLERK)
 	faction = FACTION_STATION
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the city clerk"
 	selection_color = "#bbe291"
 	exp_granted_type = EXP_TYPE_CREW
 	var/cooks = 0 //Counts cooks amount

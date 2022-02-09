@@ -130,11 +130,11 @@
 	generate_items_inside(items_inside,src)
 	return
 
-/obj/structure/closet/wardrobe/cargotech
+/obj/structure/closet/wardrobe/retailassistant
 	name = "cargo wardrobe"
 	icon_door = "orange"
 
-/obj/structure/closet/wardrobe/cargotech/PopulateContents()
+/obj/structure/closet/wardrobe/retailassistant/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/suit/hooded/wintercoat/cargo = 1,
 		/obj/item/clothing/under/rank/cargo/tech = 3,
@@ -155,7 +155,7 @@
 		/obj/item/storage/backpack/satchel/eng = 1,
 		/obj/item/storage/backpack/industrial = 1,
 		/obj/item/clothing/suit/hooded/wintercoat/engineering/atmos = 3,
-		/obj/item/clothing/under/rank/engineering/atmospheric_technician = 3,
+		/obj/item/clothing/under/rank/engineering/firefighter = 3,
 		/obj/item/clothing/shoes/sneakers/black = 3)
 	generate_items_inside(items_inside,src)
 	return
@@ -305,14 +305,14 @@
 		/obj/item/clothing/mask/bandana = 3)
 	generate_items_inside(items_inside,src)
 
-/obj/structure/closet/wardrobe/curator
+/obj/structure/closet/wardrobe/journalist
 	name = "treasure hunting wardrobe"
 	icon_door = "black"
 
-/obj/structure/closet/wardrobe/curator/PopulateContents()
-	new /obj/item/clothing/head/fedora/curator(src)
-	new /obj/item/clothing/suit/curator(src)
-	new /obj/item/clothing/under/rank/civilian/curator/treasure_hunter(src)
+/obj/structure/closet/wardrobe/journalist/PopulateContents()
+	new /obj/item/clothing/head/fedora/journalist(src)
+	new /obj/item/clothing/suit/journalist(src)
+	new /obj/item/clothing/under/rank/civilian/journalist/treasure_hunter(src)
 	new /obj/item/clothing/shoes/workboots/mining(src)
 	new /obj/item/storage/backpack/satchel/explorer(src)
 

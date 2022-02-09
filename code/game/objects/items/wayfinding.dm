@@ -300,8 +300,8 @@
 /obj/machinery/navbeacon/wayfinding/bridge
 	location = "Bridge"
 
-/obj/machinery/navbeacon/wayfinding/hop
-	location = "Head of Personnel's Office"
+/obj/machinery/navbeacon/wayfinding/cc
+	location = "City Clerk's Office"
 
 /obj/machinery/navbeacon/wayfinding/vault
 	location = "Vault"

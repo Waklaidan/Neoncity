@@ -164,19 +164,19 @@ LINEN BINS
 	inhand_icon_state = "sheetmd"
 	dream_messages = list("authority", "a silvery ID", "healing", "life", "surgery", "a cat", "the medical director")
 
-/obj/item/bedsheet/hos
-	name = "head of security's bedsheet"
+/obj/item/bedsheet/cop
+	name = "chief of police's bedsheet"
 	desc = "It is decorated with a shield emblem. While crime doesn't sleep, you do, but you are still THE LAW!"
 	icon_state = "sheethos"
 	inhand_icon_state = "sheethos"
-	dream_messages = list("authority", "a silvery ID", "handcuffs", "a baton", "a flashbang", "sunglasses", "the head of security")
+	dream_messages = list("authority", "a silvery ID", "handcuffs", "a baton", "a flashbang", "sunglasses", "the chief of police")
 
-/obj/item/bedsheet/hop
-	name = "head of personnel's bedsheet"
+/obj/item/bedsheet/cc
+	name = "city clerk's bedsheet"
 	desc = "It is decorated with a key emblem. For those rare moments when you can rest and cuddle with Ian without someone screaming for you over the radio."
 	icon_state = "sheethop"
 	inhand_icon_state = "sheethop"
-	dream_messages = list("authority", "a silvery ID", "obligation", "a computer", "an ID", "a corgi", "the head of personnel")
+	dream_messages = list("authority", "a silvery ID", "obligation", "a computer", "an ID", "a corgi", "the city clerk")
 
 /obj/item/bedsheet/ce
 	name = "chief engineer's bedsheet"
@@ -396,12 +396,12 @@ LINEN BINS
 	worn_icon_state = "sheetmd"
 	bedsheet_type = BEDSHEET_DOUBLE
 
-/obj/item/bedsheet/hos/double
+/obj/item/bedsheet/cop/double
 	icon_state = "double_sheethos"
 	worn_icon_state = "sheethos"
 	bedsheet_type = BEDSHEET_DOUBLE
 
-/obj/item/bedsheet/hop/double
+/obj/item/bedsheet/cc/double
 	icon_state = "double_sheethop"
 	worn_icon_state = "sheethop"
 	bedsheet_type = BEDSHEET_DOUBLE

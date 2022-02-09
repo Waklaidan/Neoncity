@@ -31,8 +31,8 @@
 #define JOB_PRISONER "Prisoner"
 //Command
 #define JOB_MAYOR "Mayor"
-#define JOB_HEAD_OF_PERSONNEL "Head of Personnel"
-#define JOB_HEAD_OF_SECURITY "Head of Security"
+#define JOB_CITY_CLERK "City Clerk"
+#define JOB_CHIEF_OF_POLICE "Chief of Police"
 #define JOB_RESEARCH_DIRECTOR "Research Director"
 #define JOB_CHIEF_ENGINEER "Chief Engineer"
 #define JOB_MEDICAL_DIRECTOR "Medical Director"
@@ -43,14 +43,14 @@
 //Security
 #define JOB_WARDEN "Warden"
 #define JOB_DETECTIVE "Detective"
-#define JOB_SECURITY_OFFICER "Security Officer"
-#define JOB_SECURITY_OFFICER_MEDICAL "Security Officer (Medical)"
-#define JOB_SECURITY_OFFICER_ENGINEERING "Security Officer (Engineering)"
-#define JOB_SECURITY_OFFICER_SCIENCE "Security Officer (Science)"
-#define JOB_SECURITY_OFFICER_SUPPLY "Security Officer (Cargo)"
+#define JOB_POLICE_OFFICER "Police Officer"
+#define JOB_POLICE_OFFICER_MEDICAL "Police Officer (Medical)"
+#define JOB_POLICE_OFFICER_ENGINEERING "Police Officer (Engineering)"
+#define JOB_POLICE_OFFICER_SCIENCE "Police Officer (Science)"
+#define JOB_POLICE_OFFICER_SUPPLY "Police Officer (Cargo)"
 //Engineering
-#define JOB_STATION_ENGINEER "Station Engineer"
-#define JOB_ATMOSPHERIC_TECHNICIAN "Atmospheric Technician"
+#define JOB_DISTRICT_ENGINEER "District Engineer"
+#define JOB_FIREFIGHTER "Firefighter"
 //Medical
 #define JOB_MEDICAL_DOCTOR "Medical Doctor"
 #define JOB_PARAMEDIC "Paramedic"
@@ -62,7 +62,7 @@
 #define JOB_GENETICIST "Geneticist"
 //Supply
 #define JOB_QUARTERMASTER "Quartermaster"
-#define JOB_CARGO_TECHNICIAN "Cargo Technician"
+#define JOB_RETAIL_ASSISTANT "Retail Assistant"
 #define JOB_SHAFT_MINER "Shaft Miner"
 //Service
 #define JOB_BARTENDER "Bartender"
@@ -71,7 +71,7 @@
 #define JOB_JANITOR "Janitor"
 #define JOB_CLOWN "Clown"
 #define JOB_MIME "Mime"
-#define JOB_CURATOR "Curator"
+#define JOB_JOURNALIST "Journalist"
 #define JOB_LAWYER "Lawyer"
 #define JOB_CHAPLAIN "Chaplain"
 #define JOB_PSYCHOLOGIST "Psychologist"
@@ -101,24 +101,24 @@
 
 #define JOB_DISPLAY_ORDER_CIVILIAN 1
 #define JOB_DISPLAY_ORDER_MAYOR 2
-#define JOB_DISPLAY_ORDER_HEAD_OF_PERSONNEL 3
+#define JOB_DISPLAY_ORDER_CITY_CLERK 3
 #define JOB_DISPLAY_ORDER_BARTENDER 4
 #define JOB_DISPLAY_ORDER_BOTANIST 5
 #define JOB_DISPLAY_ORDER_COOK 6
 #define JOB_DISPLAY_ORDER_JANITOR 7
 #define JOB_DISPLAY_ORDER_CLOWN 8
 #define JOB_DISPLAY_ORDER_MIME 9
-#define JOB_DISPLAY_ORDER_CURATOR 10
+#define JOB_DISPLAY_ORDER_JOURNALIST 10
 #define JOB_DISPLAY_ORDER_LAWYER 11
 #define JOB_DISPLAY_ORDER_CHAPLAIN 12
 #define JOB_DISPLAY_ORDER_PSYCHOLOGIST 13
 #define JOB_DISPLAY_ORDER_AI 14
 #define JOB_DISPLAY_ORDER_CYBORG 15
 #define JOB_DISPLAY_ORDER_CHIEF_ENGINEER 16
-#define JOB_DISPLAY_ORDER_STATION_ENGINEER 17
-#define JOB_DISPLAY_ORDER_ATMOSPHERIC_TECHNICIAN 18
+#define JOB_DISPLAY_ORDER_DISTRICT_ENGINEER 17
+#define JOB_DISPLAY_ORDER_FIREFIGHTER 18
 #define JOB_DISPLAY_ORDER_QUARTERMASTER 19
-#define JOB_DISPLAY_ORDER_CARGO_TECHNICIAN 20
+#define JOB_DISPLAY_ORDER_RETAIL_ASSISTANT 20
 #define JOB_DISPLAY_ORDER_SHAFT_MINER 21
 #define JOB_DISPLAY_ORDER_MEDICAL_DIRECTOR 22
 #define JOB_DISPLAY_ORDER_MEDICAL_DOCTOR 23
@@ -129,10 +129,10 @@
 #define JOB_DISPLAY_ORDER_SCIENTIST 28
 #define JOB_DISPLAY_ORDER_ROBOTICIST 29
 #define JOB_DISPLAY_ORDER_GENETICIST 30
-#define JOB_DISPLAY_ORDER_HEAD_OF_SECURITY 31
+#define JOB_DISPLAY_ORDER_CHIEF_OF_POLICE 31
 #define JOB_DISPLAY_ORDER_WARDEN 32
 #define JOB_DISPLAY_ORDER_DETECTIVE 33
-#define JOB_DISPLAY_ORDER_SECURITY_OFFICER 34
+#define JOB_DISPLAY_ORDER_POLICE_OFFICER 34
 #define JOB_DISPLAY_ORDER_PRISONER 35
 
 

@@ -3,7 +3,7 @@
 	select_name = "ion"
 	fire_sound = 'sound/weapons/ionrifle.ogg'
 
-/obj/item/ammo_casing/energy/ion/hos
+/obj/item/ammo_casing/energy/ion/cop
 	projectile_type = /obj/projectile/ion/weak
 	e_cost = 300
 

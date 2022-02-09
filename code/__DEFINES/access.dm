@@ -59,8 +59,8 @@
 #define ACCESS_MINING_STATION 54
 #define ACCESS_XENOBIOLOGY 55
 #define ACCESS_CE 56
-#define ACCESS_HOP 57
-#define ACCESS_HOS 58
+#define ACCESS_CC 57
+#define ACCESS_COP 58
 /// Request console announcements
 #define ACCESS_RC_ANNOUNCE 59
 /// Used for events which require at least two people to confirm them
@@ -300,8 +300,8 @@
 
 /// Private head of staff offices, usually only granted to most cards by trimming. Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_PRV_COMMAND)
 #define PRIVATE_COMMAND_ACCESS list( \
-	ACCESS_HOS, \
-	ACCESS_HOP, \
+	ACCESS_COP, \
+	ACCESS_CC, \
 	ACCESS_CE, \
 	ACCESS_MD, \
 	ACCESS_RD, \
@@ -358,7 +358,7 @@
 #define REGION_ACCESS_ALL_STATION COMMON_ACCESS + COMMAND_ACCESS + PRIVATE_COMMAND_ACCESS + MAYOR_ACCESS
 /// Name for the General region.
 #define REGION_GENERAL "General"
-/// Used to seed the accesses_by_region list in SSid_access. A list of general service accesses that are overseen by the HoP.
+/// Used to seed the accesses_by_region list in SSid_access. A list of general service accesses that are overseen by the CC.
 #define REGION_ACCESS_GENERAL list( \
 	ACCESS_KITCHEN, \
 	ACCESS_BAR, \
@@ -372,7 +372,7 @@
 )
 /// Name for the Security region.
 #define REGION_SECURITY "Security"
-/// Used to seed the accesses_by_region list in SSid_access. A list of all security regional accesses that are overseen by the HoS.
+/// Used to seed the accesses_by_region list in SSid_access. A list of all security regional accesses that are overseen by the CoP.
 #define REGION_ACCESS_SECURITY list( \
 	ACCESS_SEC_DOORS, \
 	ACCESS_WEAPONS, \
@@ -382,7 +382,7 @@
 	ACCESS_FORENSICS_LOCKERS, \
 	ACCESS_COURT, \
 	ACCESS_MECH_SECURITY, \
-	ACCESS_HOS, \
+	ACCESS_COP, \
 )
 /// Name for the Medbay region.
 #define REGION_MEDBAY "Medbay"
@@ -433,7 +433,7 @@
 )
 /// Name for the Supply region.
 #define REGION_SUPPLY "Supply"
-/// Used to seed the accesses_by_region list in SSid_access. A list of all cargo regional accesses that are overseen by the HoP.
+/// Used to seed the accesses_by_region list in SSid_access. A list of all cargo regional accesses that are overseen by the CC.
 #define REGION_ACCESS_SUPPLY list( \
 	ACCESS_MAILSORTING, \
 	ACCESS_MINING, \
@@ -457,7 +457,7 @@
 	ACCESS_EVA, \
 	ACCESS_GATEWAY, \
 	ACCESS_ALL_PERSONAL_LOCKERS, \
-	ACCESS_HOP, \
+	ACCESS_CC, \
 	ACCESS_MAYOR, \
 	ACCESS_VAULT, \
 )
@@ -484,8 +484,8 @@
 	/obj/item/pda/warden = list(REGION_SECURITY), \
 	/obj/item/pda/janitor = list(REGION_GENERAL), \
 	/obj/item/pda/science = list(REGION_RESEARCH), \
-	/obj/item/pda/heads/hop = list(REGION_COMMAND), \
-	/obj/item/pda/heads/hos = list(REGION_COMMAND), \
+	/obj/item/pda/heads/cc = list(REGION_COMMAND), \
+	/obj/item/pda/heads/cop = list(REGION_COMMAND), \
 	/obj/item/pda/heads/md = list(REGION_COMMAND), \
 	/obj/item/pda/heads/ce = list(REGION_COMMAND), \
 	/obj/item/pda/heads/rd = list(REGION_COMMAND), \
@@ -497,7 +497,7 @@
 	/obj/item/pda/lawyer = list(REGION_GENERAL, REGION_SECURITY), \
 	/obj/item/pda/botanist = list(REGION_GENERAL), \
 	/obj/item/pda/roboticist = list(REGION_RESEARCH), \
-	/obj/item/pda/curator = list(REGION_GENERAL), \
+	/obj/item/pda/journalist = list(REGION_GENERAL), \
 	/obj/item/pda/cook = list(REGION_GENERAL), \
 	/obj/item/pda/bar = list(REGION_GENERAL), \
 	/obj/item/pda/atmos = list(REGION_ENGINEERING), \

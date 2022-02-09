@@ -44,7 +44,7 @@ GLOBAL_LIST_INIT(voice_of_god_commands, init_voice_of_god_commands())
 	var/list/mob/living/listeners = list()
 	//used to check if the speaker specified a name or a job to focus on
 	var/list/specific_listeners = list()
-	// string to remove at the end of the following of the following loop, so saying "Burn Mr. Hopkins" doesn't also burn the HoP later when we check jobs.
+	// string to remove at the end of the following of the following loop, so saying "Burn Mr. Hopkins" doesn't also burn the CC later when we check jobs.
 	var/to_remove_string
 	var/list/candidates = get_hearers_in_view(8, user) - (include_speaker ? null : user)
 	for(var/mob/living/candidate in candidates)
@@ -146,7 +146,7 @@ GLOBAL_LIST_INIT(voice_of_god_commands, init_voice_of_god_commands())
 	for(var/mob/living/carbon/target in listeners)
 		target.vomit(10 * power_multiplier, distance = power_multiplier, stun = FALSE)
 
-/// This command silences the listeners. Thrice as effective is the user is a mime or curator.
+/// This command silences the listeners. Thrice as effective is the user is a mime or journalist.
 /datum/voice_of_god_command/silence
 	trigger = "shut\\s*up|silence|be\\s*silent|ssh|quiet|hush"
 	cooldown = COOLDOWN_STUN

@@ -114,8 +114,8 @@
 					/obj/item/storage/backpack/satchel/eng = 2,
 					/obj/item/storage/backpack/industrial = 2,
 					/obj/item/clothing/suit/hooded/wintercoat/engineering/atmos = 3,
-					/obj/item/clothing/under/rank/engineering/atmospheric_technician = 3,
-					/obj/item/clothing/under/rank/engineering/atmospheric_technician/skirt = 3,
+					/obj/item/clothing/under/rank/engineering/firefighter = 3,
+					/obj/item/clothing/under/rank/engineering/firefighter/skirt = 3,
 					/obj/item/clothing/head/beret/atmos = 3,
 					/obj/item/clothing/shoes/sneakers/black = 3)
 	refill_canister = /obj/item/vending_refill/wardrobe/atmos_wardrobe
@@ -224,9 +224,9 @@
 /obj/item/vending_refill/wardrobe/hydro_wardrobe
 	machine_name = "HyDrobe"
 
-/obj/machinery/vending/wardrobe/curator_wardrobe
+/obj/machinery/vending/wardrobe/journalist_wardrobe
 	name = "CuraDrobe"
-	desc = "A lowstock vendor only capable of vending clothing for curators and librarians."
+	desc = "A lowstock vendor only capable of vending clothing for journalists and librarians."
 	icon_state = "curadrobe"
 	product_ads = "Glasses for your eyes and literature for your soul, Curadrobe has it all!; Impress & enthrall your library guests with Curadrobe's extended line of pens!"
 	vend_reply = "Thank you for using the CuraDrobe!"
@@ -236,19 +236,19 @@
 					/obj/item/pen/fourcolor = 1,
 					/obj/item/pen/fountain = 2,
 					/obj/item/clothing/accessory/pocketprotector = 2,
-					/obj/item/clothing/under/rank/civilian/curator = 1,
-					/obj/item/clothing/under/rank/civilian/curator/skirt = 1,
+					/obj/item/clothing/under/rank/civilian/journalist = 1,
+					/obj/item/clothing/under/rank/civilian/journalist/skirt = 1,
 					/obj/item/clothing/under/rank/mayor/suit = 1,
 					/obj/item/clothing/under/rank/mayor/suit/skirt = 1,
-					/obj/item/clothing/under/rank/civilian/head_of_personnel/suit = 1,
-					/obj/item/clothing/under/rank/civilian/head_of_personnel/suit/skirt = 1,
+					/obj/item/clothing/under/rank/civilian/city_clerk/suit = 1,
+					/obj/item/clothing/under/rank/civilian/city_clerk/suit/skirt = 1,
 					/obj/item/storage/backpack/satchel/explorer = 1,
 					/obj/item/clothing/glasses/regular = 2,
 					/obj/item/clothing/glasses/regular/jamjar = 1,
 					/obj/item/storage/bag/books = 1)
-	refill_canister = /obj/item/vending_refill/wardrobe/curator_wardrobe
+	refill_canister = /obj/item/vending_refill/wardrobe/journalist_wardrobe
 	payment_department = ACCOUNT_SRV
-/obj/item/vending_refill/wardrobe/curator_wardrobe
+/obj/item/vending_refill/wardrobe/journalist_wardrobe
 	machine_name = "CuraDrobe"
 
 /obj/machinery/vending/wardrobe/bar_wardrobe

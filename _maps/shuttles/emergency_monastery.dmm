@@ -641,7 +641,7 @@
 /obj/machinery/light/small/directional/east,
 /obj/machinery/door/window/northright{
 	dir = 2;
-	name = "Curator Desk Door";
+	name = "Journalist Desk Door";
 	req_access_txt = "37"
 	},
 /obj/effect/turf_decal/tile/red,
@@ -1165,7 +1165,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "od" = (
-/obj/machinery/vending/wardrobe/curator_wardrobe,
+/obj/machinery/vending/wardrobe/journalist_wardrobe,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "om" = (
@@ -2179,7 +2179,7 @@
 	base_state = "left";
 	dir = 2;
 	icon_state = "left";
-	name = "Curator Desk Door";
+	name = "Journalist Desk Door";
 	req_access_txt = "37"
 	},
 /obj/effect/turf_decal/tile/red,

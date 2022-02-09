@@ -33,7 +33,7 @@
 		"Ian" = image(icon = src.icon, icon_state = "cutout_ian"),
 		"Slaughter Demon" = image(icon = 'icons/mob/mob.dmi', icon_state = "daemon"),
 		"Laughter Demon" = image(icon = 'icons/mob/mob.dmi', icon_state = "bowmon"),
-		"Private Security Officer" = image(icon = src.icon, icon_state = "cutout_ntsec")
+		"Private Police Officer" = image(icon = src.icon, icon_state = "cutout_ntsec")
 	))
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
@@ -175,7 +175,7 @@
 			icon_state = "cutout_deathsquad"
 		if("Ian")
 			name = "Ian"
-			desc = "A cardboard cutout of the HoP's beloved corgi."
+			desc = "A cardboard cutout of the CC's beloved corgi."
 			icon_state = "cutout_ian"
 		if("Slaughter Demon")
 			name = "slaughter demon"
@@ -187,8 +187,8 @@
 			desc = "A cardboard cutout of a laughter demon."
 			icon = 'icons/mob/mob.dmi'
 			icon_state = "bowmon"
-		if("Private Security Officer")
-			name = "Private Security Officer"
+		if("Private Police Officer")
+			name = "Private Police Officer"
 			desc = "A cardboard cutout of a private security officer."
 			icon_state = "cutout_ntsec"
 		else

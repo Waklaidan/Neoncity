@@ -43,7 +43,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 
 /datum/outfit/mafia/security
-	name = "Mafia Security Officer"
+	name = "Mafia Police Officer"
 
 	uniform = /obj/item/clothing/under/rank/security/officer
 	gloves = /obj/item/clothing/gloves/color/black
@@ -58,23 +58,23 @@
 	suit = /obj/item/clothing/suit/toggle/lawyer
 	shoes = /obj/item/clothing/shoes/laceup
 
-/datum/outfit/mafia/hop
-	name = "Mafia Head of Personnel"
+/datum/outfit/mafia/cc
+	name = "Mafia City Clerk"
 
-	uniform = /obj/item/clothing/under/rank/civilian/head_of_personnel
+	uniform = /obj/item/clothing/under/rank/civilian/city_clerk
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	head = /obj/item/clothing/head/hopcap
+	head = /obj/item/clothing/head/cccap
 	glasses = /obj/item/clothing/glasses/sunglasses
 
-/datum/outfit/mafia/hos
-	name = "Mafia Head of Security"
+/datum/outfit/mafia/cop
+	name = "Mafia Chief of Police"
 
-	uniform = /obj/item/clothing/under/rank/security/head_of_security
+	uniform = /obj/item/clothing/under/rank/security/chief_of_police
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
+	suit = /obj/item/clothing/suit/armor/cop/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/hos/beret
+	head = /obj/item/clothing/head/cop/beret
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 /datum/outfit/mafia/warden

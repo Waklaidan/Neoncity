@@ -420,7 +420,7 @@
 /turf/open/floor/iron,
 /area/command/bridge)
 "bM" = (
-/obj/structure/closet/secure_closet/hop,
+/obj/structure/closet/secure_closet/cc,
 /turf/open/floor/iron{
 	dir = 4
 	},
@@ -472,7 +472,7 @@
 	},
 /area/hallway/secondary/entry)
 "bW" = (
-/obj/structure/closet/secure_closet/hos,
+/obj/structure/closet/secure_closet/cop,
 /turf/open/floor/iron{
 	dir = 1
 	},

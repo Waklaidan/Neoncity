@@ -72,7 +72,7 @@
 		/obj/item/clothing/under/dress/skirt/purple = 2,
 		/obj/item/clothing/under/suit/white/skirt = 2,
 		/obj/item/clothing/under/rank/mayor/suit/skirt = 2,
-		/obj/item/clothing/under/rank/civilian/head_of_personnel/suit/skirt = 2,
+		/obj/item/clothing/under/rank/civilian/city_clerk/suit/skirt = 2,
 		/obj/item/clothing/suit/jacket = 2,
 		/obj/item/clothing/suit/hooded/wintercoat/custom = 2,
 		/obj/item/clothing/suit/jacket/puffer/vest = 2,

@@ -32,15 +32,15 @@
 	icon_state = "stamp-cap"
 	dye_color = DYE_MAYOR
 
-/obj/item/stamp/hop
-	name = "head of personnel's rubber stamp"
+/obj/item/stamp/cc
+	name = "city clerk's rubber stamp"
 	icon_state = "stamp-hop"
-	dye_color = DYE_HOP
+	dye_color = DYE_CC
 
-/obj/item/stamp/hos
-	name = "head of security's rubber stamp"
+/obj/item/stamp/cop
+	name = "chief of police's rubber stamp"
 	icon_state = "stamp-hos"
-	dye_color = DYE_HOS
+	dye_color = DYE_COP
 
 /obj/item/stamp/ce
 	name = "chief engineer's rubber stamp"

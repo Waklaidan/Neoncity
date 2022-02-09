@@ -7,15 +7,15 @@
 	random_sensor = FALSE
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 95, ACID = 95, WOUND = 15)
 
-/obj/item/clothing/under/plasmaman/head_of_personnel
-	name = "head of personnel's plasma envirosuit"
-	desc = "It's an envirosuit worn by someone who works in the position of \"Head of Personnel\"."
+/obj/item/clothing/under/plasmaman/city_clerk
+	name = "city clerk's plasma envirosuit"
+	desc = "It's an envirosuit worn by someone who works in the position of \"City Clerk\"."
 	icon_state = "hop_envirosuit"
 	inhand_icon_state = "hop_envirosuit"
 
-/obj/item/clothing/under/plasmaman/security/head_of_security
-	name = "head of security's envirosuit"
-	desc = "A plasmaman containment suit decorated for those few with the dedication to achieve the position of Head of Security."
+/obj/item/clothing/under/plasmaman/security/chief_of_police
+	name = "chief of police's envirosuit"
+	desc = "A plasmaman containment suit decorated for those few with the dedication to achieve the position of Chief of Police."
 	icon_state = "hos_envirosuit"
 	inhand_icon_state = "hos_envirosuit"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 95, ACID = 95, WOUND = 10)

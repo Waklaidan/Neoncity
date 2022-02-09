@@ -459,7 +459,7 @@ GLOBAL_LIST_INIT(strippable_corgi_items, create_strippable_list(list(
 	name = "Ian"
 	real_name = "Ian" //Intended to hold the name without altering it.
 	gender = MALE
-	desc = "He's the HoP's beloved corgi."
+	desc = "He's the CC's beloved corgi."
 	response_help_continuous = "pets"
 	response_help_simple = "pet"
 	response_disarm_continuous = "bops"
@@ -489,7 +489,7 @@ GLOBAL_LIST_INIT(strippable_corgi_items, create_strippable_list(list(
 		icon_living = "old_corgi"
 		held_state = "old_corgi"
 		icon_dead = "old_corgi_dead"
-		desc = "At a ripe old age of [record_age], Ian's not as spry as he used to be, but he'll always be the HoP's beloved corgi." //RIP
+		desc = "At a ripe old age of [record_age], Ian's not as spry as he used to be, but he'll always be the CC's beloved corgi." //RIP
 		turns_per_move = 20
 
 /mob/living/simple_animal/pet/dog/corgi/ian/Life(delta_time = SSMOBS_DT, times_fired)
@@ -653,7 +653,7 @@ GLOBAL_LIST_INIT(strippable_corgi_items, create_strippable_list(list(
 	name = "Ian"
 	real_name = "Ian"
 	gender = MALE
-	desc = "He's the HoP's beloved corgi puppy."
+	desc = "He's the CC's beloved corgi puppy."
 
 
 /mob/living/simple_animal/pet/dog/corgi/puppy/void //Tribute to the corgis born in nullspace

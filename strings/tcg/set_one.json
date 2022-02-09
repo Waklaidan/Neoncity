@@ -64,11 +64,11 @@
 			"rarity": "common"
 		},
 		{
-			"id": "atmos_tech",
-			"name": "Atmospheric Technician",
-			"desc": "The Atmospheric Technicians are tasked with keeping the station's air clean, breathable, and, most importantly, devoid of plasma.",
+			"id": "firefighter",
+			"name": "Firefighter",
+			"desc": "The Firefighters are tasked with keeping the station's air clean, breathable, and, most importantly, devoid of plasma.",
 			"rules": "On Summon: Search your deck for an Atmospherics Battlefield card, and add it to your hand. Shuffle your deck afterward.",
-			"icon_state": "atmos_tech",
+			"icon_state": "firefighter",
 			"power": "2",
 			"resolve": "3",
 			"faction": "Engineering",
@@ -135,9 +135,9 @@
 		},
 		{
 			"id": "cargo_tech",
-			"name": "Cargo Technician",
-			"desc": "The grunts of Cargo. Any reports that Cargo Technicians are frequently overcome by revolutionary fervour are exaggerated.",
-			"rules": "Once per turn, you may give 'Cargo Technician' -1/0 until the start of your next turn and gain 1 mana.",
+			"name": "Retail Assistant",
+			"desc": "The grunts of Cargo. Any reports that Retail Assistants are frequently overcome by revolutionary fervour are exaggerated.",
+			"rules": "Once per turn, you may give 'Retail Assistant' -1/0 until the start of your next turn and gain 1 mana.",
 			"icon_state": "cargo_tech",
 			"power": "3",
 			"resolve": "1",
@@ -344,11 +344,11 @@
 			"rarity": "rare"
 		},
 		{
-			"id": "curator",
-			"name": "Curator",
-			"desc": "In Nanotrasen polls, the Curator has ranked as the most pointless job on station, much to the ire of the Curator's union. Thankfully, we don't have to listen to them.",
+			"id": "journalist",
+			"name": "Journalist",
+			"desc": "In Nanotrasen polls, the Journalist has ranked as the most pointless job on station, much to the ire of the Journalist's union. Thankfully, we don't have to listen to them.",
 			"rules": "On Summon: Draw 1 card: if it's an event card, discard it.",
-			"icon_state": "curator",
+			"icon_state": "journalist",
 			"power": "1",
 			"resolve": "1",
 			"faction": "Service",
@@ -554,11 +554,11 @@
 			"rarity": "epic"
 		},
 		{
-			"id": "HOP",
-			"name": "Head of Personnel",
+			"id": "CC",
+			"name": "City Clerk",
 			"desc": "The head of the Cargo and Service Departments, guardian of all access, and Ian's lovable, yet dumb, sidekick.",
 			"rules": "Once per turn: Select a friendly creature card. That card gains changeling.",
-			"icon_state": "hop",
+			"icon_state": "cc",
 			"power": "4",
 			"resolve": "3",
 			"faction": "Service",
@@ -568,10 +568,10 @@
 			"rarity": "uncommon"
 		},
 		{
-			"id": "HOS",
-			"name": "Head of Security",
+			"id": "COP",
+			"name": "Chief of Police",
 			"desc": "Nanotrasen hires most heads of staff based on their qualifications as being amicable, good at conflict resolution, ability to handle high-stakes situations, humanity, and desire to learn. Heads of Security only need a highschool degree.",
-			"rules": "On Summon: Select a card type. That card type now costs 1 extra mana to summon. This effect persists until Head of Security is removed from the battlefield.",
+			"rules": "On Summon: Select a card type. That card type now costs 1 extra mana to summon. This effect persists until Chief of Police is removed from the battlefield.",
 			"icon_state": "hos",
 			"power": "4",
 			"resolve": "4",
@@ -807,7 +807,7 @@
 		},
 		{
 			"id": "plasma_engi",
-			"name": "Station Engineer (Plasmaman)",
+			"name": "District Engineer (Plasmaman)",
 			"desc": "The ever industrious plasmamen are well suited to engineering work, due to their natural radiation resistance.",
 			"rules": "Immunity to Battlefields",
 			"icon_state": "engi_plasma",
@@ -961,7 +961,7 @@
 		},
 		{
 			"id": "sec_officer",
-			"name": "Security Officer",
+			"name": "Police Officer",
 			"desc": "Nanotrasen would like to remind all employees to support their station security team; remember, the boys in red keep you safe!",
 			"rules": "Squad Tactics",
 			"icon_state": "sec",
@@ -1073,8 +1073,8 @@
 		},
 		{
 			"id": "engi",
-			"name": "Station Engineer",
-			"desc": "Station Engineers maintain the intricate and delicate web of machinery that keeps you, and everyone else aboard your station, alive. No pressure there, then.",
+			"name": "District Engineer",
+			"desc": "District Engineers maintain the intricate and delicate web of machinery that keeps you, and everyone else aboard your station, alive. No pressure there, then.",
 			"rules": "Tap this card: Reduce the damage a card would take this turn from a battlefield to zero.",
 			"icon_state": "engi",
 			"power": "2",

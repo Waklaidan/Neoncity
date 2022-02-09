@@ -187,10 +187,10 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CITY_CLERK,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -263,7 +263,7 @@
 	antag_flag = ROLE_FAMILY_HEAD_ASPIRANT
 	antag_flag_override = ROLE_FAMILIES
 	protected_roles = list(
-		JOB_HEAD_OF_PERSONNEL,
+		JOB_CITY_CLERK,
 		JOB_PRISONER,
 	)
 	restricted_roles = list(
@@ -271,9 +271,9 @@
 		JOB_CYBORG,
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_RESEARCH_DIRECTOR,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	required_candidates = 3
@@ -341,10 +341,10 @@
 	enemy_roles = list(
 		JOB_CHEMIST,
 		JOB_CHIEF_ENGINEER,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_RESEARCH_DIRECTOR,
 		JOB_SCIENTIST,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	exclusive_roles = list(JOB_AI)
@@ -401,8 +401,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -440,8 +440,8 @@
 		JOB_CYBORG,
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(3,3,3,3,3,2,1,1,0,0)
 	required_candidates = 5
@@ -487,8 +487,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -510,9 +510,9 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(
@@ -523,8 +523,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -566,8 +566,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -618,8 +618,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -669,8 +669,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -718,8 +718,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 2
@@ -761,8 +761,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -805,8 +805,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 0
@@ -828,8 +828,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -898,8 +898,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 0
@@ -930,8 +930,8 @@
 	enemy_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_POLICE_OFFICER,
 	)
 	required_enemies = list(2,2,1,1,1,1,1,0,0,0)
 	required_candidates = 1
@@ -971,10 +971,10 @@
 	protected_roles = list(
 		JOB_MAYOR,
 		JOB_DETECTIVE,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CITY_CLERK,
+		JOB_CHIEF_OF_POLICE,
 		JOB_PRISONER,
-		JOB_SECURITY_OFFICER,
+		JOB_POLICE_OFFICER,
 		JOB_WARDEN,
 	)
 	restricted_roles = list(

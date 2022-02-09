@@ -66,13 +66,13 @@
 	greyscale_config_worn = /datum/greyscale_config/beret_badge/worn
 	greyscale_colors = "#0070B7#FFCE5B"
 
-//Head of Personnel
-/obj/item/clothing/head/hopcap
-	name = "head of personnel's cap"
+//City Clerk
+/obj/item/clothing/head/cccap
+	name = "city clerk's cap"
 	icon_state = "hopcap"
 	desc = "The symbol of true bureaucratic micromanagement."
 	armor = list(MELEE = 25, BULLET = 15, LASER = 25, ENERGY = 35, BOMB = 25, BIO = 0, FIRE = 50, ACID = 50)
-	dog_fashion = /datum/dog_fashion/head/hop
+	dog_fashion = /datum/dog_fashion/head/cc
 
 //Chaplain
 /obj/item/clothing/head/nun_hood
@@ -134,32 +134,32 @@
 
 //Security
 
-/obj/item/clothing/head/hos
-	name = "head of security cap"
-	desc = "The robust standard-issue cap of the Head of Security. For showing the officers who's in charge."
+/obj/item/clothing/head/cop
+	name = "chief of police cap"
+	desc = "The robust standard-issue cap of the Chief of Police. For showing the officers who's in charge."
 	armor = list(MELEE = 40, BULLET = 30, LASER = 25, ENERGY = 35, BOMB = 25, BIO = 10, FIRE = 50, ACID = 60, WOUND = 10)
 	icon_state = "hoscap"
 	strip_delay = 80
 	dynamic_hair_suffix = ""
 
-/obj/item/clothing/head/hos/syndicate
+/obj/item/clothing/head/cop/syndicate
 	name = "syndicate cap"
 	desc = "A black cap fit for a high ranking syndicate officer."
 
-/obj/item/clothing/head/hos/beret
-	name = "head of security's beret"
-	desc = "A robust beret for the Head of Security, for looking stylish while not sacrificing protection."
+/obj/item/clothing/head/cop/beret
+	name = "chief of police's beret"
+	desc = "A robust beret for the Chief of Police, for looking stylish while not sacrificing protection."
 	icon_state = "beret_badge"
 	greyscale_config = /datum/greyscale_config/beret_badge
 	greyscale_config_worn = /datum/greyscale_config/beret_badge/worn
 	greyscale_colors = "#3F3C40#FFCE5B"
 
-/obj/item/clothing/head/hos/beret/navyhos
-	name = "head of security's formal beret"
-	desc = "A special beret with the Head of Security's insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
+/obj/item/clothing/head/cop/beret/navyhos
+	name = "chief of police's formal beret"
+	desc = "A special beret with the Chief of Police's insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
 	greyscale_colors = "#3C485A#FFCE5B"
 
-/obj/item/clothing/head/hos/beret/syndicate
+/obj/item/clothing/head/cop/beret/syndicate
 	name = "syndicate beret"
 	desc = "A black beret with thick armor padding inside. Stylish and robust."
 
@@ -318,9 +318,9 @@
 	flags_1 = NONE
 
 
-//Curator
+//Journalist
 
-/obj/item/clothing/head/fedora/curator
+/obj/item/clothing/head/fedora/journalist
 	name = "treasure hunter's fedora"
 	desc = "You got red text today kid, but it doesn't mean you have to like it."
 	icon_state = "curator"

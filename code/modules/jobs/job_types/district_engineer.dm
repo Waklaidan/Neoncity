@@ -1,5 +1,5 @@
-/datum/job/station_engineer
-	title = JOB_STATION_ENGINEER
+/datum/job/district_engineer
+	title = JOB_DISTRICT_ENGINEER
 	description = "Start the Supermatter, wire the solars, repair station hull \
 		and wiring damage."
 	department_head = list(JOB_CHIEF_ENGINEER)
@@ -20,7 +20,7 @@
 
 	liver_traits = list(TRAIT_ENGINEER_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_STATION_ENGINEER
+	display_order = JOB_DISPLAY_ORDER_DISTRICT_ENGINEER
 	bounty_types = CIV_JOB_ENG
 	departments_list = list(
 		/datum/job_department/engineering,
@@ -39,10 +39,10 @@
 
 
 /datum/outfit/job/engineer
-	name = "Station Engineer"
-	jobtype = /datum/job/station_engineer
+	name = "District Engineer"
+	jobtype = /datum/job/district_engineer
 
-	id_trim = /datum/id_trim/job/station_engineer
+	id_trim = /datum/id_trim/job/district_engineer
 	uniform = /obj/item/clothing/under/rank/engineering/engineer
 	backpack_contents = list(
 		/obj/item/modular_computer/tablet/preset/advanced/engineering = 1,
@@ -63,12 +63,12 @@
 	skillchips = list(/obj/item/skillchip/job/engineer)
 
 /datum/outfit/job/engineer/gloved
-	name = "Station Engineer (Gloves)"
+	name = "District Engineer (Gloves)"
 
 	gloves = /obj/item/clothing/gloves/color/yellow
 
 /datum/outfit/job/engineer/mod
-	name = "Station Engineer (MODsuit)"
+	name = "District Engineer (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/mod/control/pre_equipped/engineering

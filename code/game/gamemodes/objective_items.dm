@@ -63,10 +63,10 @@
 		JOB_CHIEF_ENGINEER,
 		JOB_RESEARCH_DIRECTOR,
 		JOB_MEDICAL_DIRECTOR,
-		JOB_HEAD_OF_SECURITY,
-		JOB_STATION_ENGINEER,
+		JOB_CHIEF_OF_POLICE,
+		JOB_DISTRICT_ENGINEER,
 		JOB_SCIENTIST,
-		JOB_ATMOSPHERIC_TECHNICIAN,
+		JOB_FIREFIGHTER,
 	)
 	exists_on_map = TRUE
 
@@ -80,7 +80,7 @@
 /datum/objective_item/steal/low_risk/fireaxe
 	name = "a fire axe"
 	targetitem = /obj/item/fireaxe
-	excludefromjob = list(JOB_CHIEF_ENGINEER,JOB_STATION_ENGINEER,JOB_ATMOSPHERIC_TECHNICIAN)
+	excludefromjob = list(JOB_CHIEF_ENGINEER,JOB_DISTRICT_ENGINEER,JOB_FIREFIGHTER)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/low_risk/nullrod
@@ -92,7 +92,7 @@
 /datum/objective_item/steal/low_risk/clown_shoes
 	name = "the clown's shoes"
 	targetitem = /obj/item/clothing/shoes/clown_shoes
-	excludefromjob = list(JOB_CLOWN, JOB_CARGO_TECHNICIAN, JOB_QUARTERMASTER)
+	excludefromjob = list(JOB_CLOWN, JOB_RETAIL_ASSISTANT, JOB_QUARTERMASTER)
 
 /datum/objective_item/steal/low_risk/clown_shoes/TargetExists()
 	for(var/mob/player as anything in GLOB.player_list)
@@ -108,7 +108,7 @@
 /datum/objective_item/steal/low_risk/cargo_budget
 	name = "cargo's departmental budget"
 	targetitem = /obj/item/card/id/departmental_budget/car
-	excludefromjob = list(JOB_QUARTERMASTER, JOB_CARGO_TECHNICIAN)
+	excludefromjob = list(JOB_QUARTERMASTER, JOB_RETAIL_ASSISTANT)
 	exists_on_map = TRUE
 
 // High risk steal objectives
@@ -120,10 +120,10 @@
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/hoslaser
-	name = "the head of security's personal laser gun"
-	targetitem = /obj/item/gun/energy/e_gun/hos
+	name = "the chief of police's personal laser gun"
+	targetitem = /obj/item/gun/energy/e_gun/cop
 	difficulty = 10
-	excludefromjob = list(JOB_HEAD_OF_SECURITY)
+	excludefromjob = list(JOB_CHIEF_OF_POLICE)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/handtele
@@ -174,7 +174,7 @@
 	name = "a reflector trenchcoat"
 	targetitem = /obj/item/clothing/suit/hooded/ablative
 	difficulty = 3
-	excludefromjob = list(JOB_HEAD_OF_SECURITY, JOB_WARDEN)
+	excludefromjob = list(JOB_CHIEF_OF_POLICE, JOB_WARDEN)
 	exists_on_map = TRUE
 
 /datum/objective_item/steal/reactive
@@ -232,7 +232,7 @@
 	targetitem = /obj/item/tank
 	difficulty = 3
 	excludefromjob = list(
-		JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN,
+		JOB_CHIEF_ENGINEER, JOB_DISTRICT_ENGINEER, JOB_FIREFIGHTER,
 		JOB_RESEARCH_DIRECTOR, JOB_SCIENTIST, JOB_ROBOTICIST,
 	)
 
@@ -287,7 +287,7 @@
 	name = "the Blackbox"
 	targetitem = /obj/item/blackbox
 	difficulty = 10
-	excludefromjob = list(JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
+	excludefromjob = list(JOB_CHIEF_ENGINEER, JOB_DISTRICT_ENGINEER, JOB_FIREFIGHTER)
 	exists_on_map = TRUE
 
 //Unique Objectives

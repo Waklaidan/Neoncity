@@ -51,11 +51,11 @@ SUBSYSTEM_DEF(job)
 	 */
 	var/list/chain_of_command = list(
 		JOB_MAYOR = 1,
-		JOB_HEAD_OF_PERSONNEL = 2,
+		JOB_CITY_CLERK = 2,
 		JOB_RESEARCH_DIRECTOR = 3,
 		JOB_CHIEF_ENGINEER = 4,
 		JOB_MEDICAL_DIRECTOR = 5,
-		JOB_HEAD_OF_SECURITY = 6,
+		JOB_CHIEF_OF_POLICE = 6,
 		JOB_QUARTERMASTER = 7,
 	)
 
@@ -362,7 +362,7 @@ SUBSYSTEM_DEF(job)
 
 	JobDebug("DO, Len: [unassigned.len]")
 
-	//Scale number of open security officer slots to population
+	//Scale number of open police officer slots to population
 	setup_officer_positions()
 
 	//Jobs will have fewer access permissions if the number of players exceeds the threshold defined in game_options.txt
@@ -577,7 +577,7 @@ SUBSYSTEM_DEF(job)
 		return C.holder.auto_deadmin()
 
 /datum/controller/subsystem/job/proc/setup_officer_positions()
-	var/datum/job/J = SSjob.GetJob(JOB_SECURITY_OFFICER)
+	var/datum/job/J = SSjob.GetJob(JOB_POLICE_OFFICER)
 	if(!J)
 		CRASH("setup_officer_positions(): Security officer job is missing")
 
@@ -585,7 +585,7 @@ SUBSYSTEM_DEF(job)
 	if(ssc > 0)
 		if(J.spawn_positions > 0)
 			var/officer_positions = min(12, max(J.spawn_positions, round(unassigned.len / ssc))) //Scale between configured minimum and 12 officers
-			JobDebug("Setting open security officer positions to [officer_positions]")
+			JobDebug("Setting open police officer positions to [officer_positions]")
 			J.total_positions = officer_positions
 			J.spawn_positions = officer_positions
 
@@ -792,19 +792,19 @@ SUBSYSTEM_DEF(job)
 /// Builds various lists of jobs based on station, centcom and additional jobs with icons associated with them.
 /datum/controller/subsystem/job/proc/setup_job_lists()
 	station_jobs = list(
-		JOB_CIVILIAN, JOB_MAYOR, JOB_HEAD_OF_PERSONNEL, JOB_BARTENDER, JOB_BOTANIST,
-		JOB_COOK, JOB_JANITOR, JOB_CLOWN, JOB_MIME, JOB_CURATOR, JOB_LAWYER, JOB_CHAPLAIN,
-		JOB_PSYCHOLOGIST, JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN,
-		JOB_QUARTERMASTER, JOB_CARGO_TECHNICIAN, JOB_SHAFT_MINER, JOB_MEDICAL_DIRECTOR,
+		JOB_CIVILIAN, JOB_MAYOR, JOB_CITY_CLERK, JOB_BARTENDER, JOB_BOTANIST,
+		JOB_COOK, JOB_JANITOR, JOB_CLOWN, JOB_MIME, JOB_JOURNALIST, JOB_LAWYER, JOB_CHAPLAIN,
+		JOB_PSYCHOLOGIST, JOB_CHIEF_ENGINEER, JOB_DISTRICT_ENGINEER, JOB_FIREFIGHTER,
+		JOB_QUARTERMASTER, JOB_RETAIL_ASSISTANT, JOB_SHAFT_MINER, JOB_MEDICAL_DIRECTOR,
 		JOB_MEDICAL_DOCTOR, JOB_PARAMEDIC, JOB_CHEMIST, JOB_VIROLOGIST, JOB_RESEARCH_DIRECTOR,
-		JOB_SCIENTIST, JOB_ROBOTICIST, JOB_GENETICIST, JOB_HEAD_OF_SECURITY, JOB_WARDEN,
-		JOB_DETECTIVE, JOB_SECURITY_OFFICER, JOB_PRISONER,
+		JOB_SCIENTIST, JOB_ROBOTICIST, JOB_GENETICIST, JOB_CHIEF_OF_POLICE, JOB_WARDEN,
+		JOB_DETECTIVE, JOB_POLICE_OFFICER, JOB_PRISONER,
 	)
 
 	head_of_staff_jobs = list(
 		JOB_MAYOR,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
+		JOB_CITY_CLERK,
+		JOB_CHIEF_OF_POLICE,
 		JOB_RESEARCH_DIRECTOR,
 		JOB_CHIEF_ENGINEER,
 		JOB_MEDICAL_DIRECTOR,
@@ -813,7 +813,7 @@ SUBSYSTEM_DEF(job)
 	additional_jobs_with_icons = list(
 		JOB_ERT_COMMANDER, JOB_ERT_OFFICER, JOB_ERT_ENGINEER, JOB_ERT_MEDICAL_DOCTOR,
 		JOB_ERT_CLOWN, JOB_ERT_CHAPLAIN, JOB_ERT_JANITOR, JOB_ERT_DEATHSQUAD,
-		JOB_SECURITY_OFFICER_MEDICAL, JOB_SECURITY_OFFICER_ENGINEERING, JOB_SECURITY_OFFICER_SCIENCE, JOB_SECURITY_OFFICER_SUPPLY,
+		JOB_POLICE_OFFICER_MEDICAL, JOB_POLICE_OFFICER_ENGINEERING, JOB_POLICE_OFFICER_SCIENCE, JOB_POLICE_OFFICER_SUPPLY,
 	)
 
 	centcom_jobs = list(

@@ -21,17 +21,17 @@
 	new /obj/item/door_remote/mayor(src)
 	new /obj/item/storage/photo_album/mayor(src)
 
-/obj/structure/closet/secure_closet/hop
-	name = "\proper head of personnel's locker"
-	req_access = list(ACCESS_HOP)
+/obj/structure/closet/secure_closet/cc
+	name = "\proper city clerk's locker"
+	req_access = list(ACCESS_CC)
 	icon_state = "hop"
 
-/obj/structure/closet/secure_closet/hop/PopulateContents()
+/obj/structure/closet/secure_closet/cc/PopulateContents()
 	..()
-	new /obj/item/storage/bag/garment/hop(src)
+	new /obj/item/storage/bag/garment/cc(src)
 	new /obj/item/storage/lockbox/medal/service(src)
-	new /obj/item/cartridge/hop(src)
-	new /obj/item/radio/headset/heads/hop(src)
+	new /obj/item/cartridge/cc(src)
+	new /obj/item/radio/headset/heads/cc(src)
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/megaphone/command(src)
@@ -41,20 +41,20 @@
 	new /obj/item/pet_carrier(src)
 	new /obj/item/door_remote/civilian(src)
 	new /obj/item/circuitboard/machine/techfab/department/service(src)
-	new /obj/item/storage/photo_album/hop(src)
-	new /obj/item/storage/lockbox/medal/hop(src)
+	new /obj/item/storage/photo_album/cc(src)
+	new /obj/item/storage/lockbox/medal/cc(src)
 
-/obj/structure/closet/secure_closet/hos
-	name = "\proper head of security's locker"
-	req_access = list(ACCESS_HOS)
+/obj/structure/closet/secure_closet/cop
+	name = "\proper chief of police's locker"
+	req_access = list(ACCESS_COP)
 	icon_state = "hos"
 
-/obj/structure/closet/secure_closet/hos/PopulateContents()
+/obj/structure/closet/secure_closet/cop/PopulateContents()
 	..()
 
-	new /obj/item/cartridge/hos(src)
-	new /obj/item/radio/headset/heads/hos(src)
-	new /obj/item/storage/bag/garment/hos(src)
+	new /obj/item/cartridge/cop(src)
+	new /obj/item/radio/headset/heads/cop(src)
+	new /obj/item/storage/bag/garment/cop(src)
 	new /obj/item/storage/lockbox/medal/sec(src)
 	new /obj/item/megaphone/sec(src)
 	new /obj/item/holosign_creator/security(src)
@@ -62,10 +62,10 @@
 	new /obj/item/storage/box/flashbangs(src)
 	new /obj/item/shield/riot/tele(src)
 	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/gun/energy/e_gun/hos(src)
+	new /obj/item/gun/energy/e_gun/cop(src)
 	new /obj/item/pinpointer/nuke(src)
 	new /obj/item/circuitboard/machine/techfab/department/security(src)
-	new /obj/item/storage/photo_album/hos(src)
+	new /obj/item/storage/photo_album/cop(src)
 
 
 /obj/structure/closet/secure_closet/warden
@@ -91,10 +91,10 @@
 	new /obj/item/storage/belt/security/full(src)
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/clothing/gloves/krav_maga/sec(src)
-	new /obj/item/door_remote/head_of_security(src)
+	new /obj/item/door_remote/chief_of_police(src)
 
 /obj/structure/closet/secure_closet/security
-	name = "security officer's locker"
+	name = "police officer's locker"
 	req_access = list(ACCESS_SECURITY)
 	icon_state = "sec"
 
@@ -167,7 +167,7 @@
 
 /obj/structure/closet/secure_closet/injection
 	name = "lethal injections"
-	req_access = list(ACCESS_HOS)
+	req_access = list(ACCESS_COP)
 
 /obj/structure/closet/secure_closet/injection/PopulateContents()
 	..()

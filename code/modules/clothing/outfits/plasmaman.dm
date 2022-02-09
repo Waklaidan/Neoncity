@@ -133,12 +133,12 @@
 	gloves = /obj/item/clothing/gloves/color/plasmaman/white
 	head = /obj/item/clothing/head/helmet/space/plasmaman/white
 
-/datum/outfit/plasmaman/curator
-	name = "Curator Plasmaman"
+/datum/outfit/plasmaman/journalist
+	name = "Journalist Plasmaman"
 
-	uniform = /obj/item/clothing/under/plasmaman/curator
+	uniform = /obj/item/clothing/under/plasmaman/journalist
 	gloves = /obj/item/clothing/gloves/color/plasmaman/prototype
-	head = /obj/item/clothing/head/helmet/space/plasmaman/curator
+	head = /obj/item/clothing/head/helmet/space/plasmaman/journalist
 
 /datum/outfit/plasmaman/botany
 	name = "Botany Plasmaman"
@@ -184,19 +184,19 @@
 	gloves = /obj/item/clothing/gloves/color/mayor //Too iconic to be replaced with a plasma version
 	head = /obj/item/clothing/head/helmet/space/plasmaman/mayor
 
-/datum/outfit/plasmaman/head_of_personnel
-	name = "Head of Personnel Plasmaman"
+/datum/outfit/plasmaman/city_clerk
+	name = "City Clerk Plasmaman"
 
-	uniform = /obj/item/clothing/under/plasmaman/head_of_personnel
-	gloves = /obj/item/clothing/gloves/color/plasmaman/head_of_personnel
-	head = /obj/item/clothing/head/helmet/space/plasmaman/head_of_personnel
+	uniform = /obj/item/clothing/under/plasmaman/city_clerk
+	gloves = /obj/item/clothing/gloves/color/plasmaman/city_clerk
+	head = /obj/item/clothing/head/helmet/space/plasmaman/city_clerk
 
-/datum/outfit/plasmaman/head_of_security
-	name = "Head of Security Plasmaman"
+/datum/outfit/plasmaman/chief_of_police
+	name = "Chief of Police Plasmaman"
 
-	uniform = /obj/item/clothing/under/plasmaman/security/head_of_security
+	uniform = /obj/item/clothing/under/plasmaman/security/chief_of_police
 	gloves = /obj/item/clothing/gloves/color/plasmaman/black
-	head = /obj/item/clothing/head/helmet/space/plasmaman/security/head_of_security
+	head = /obj/item/clothing/head/helmet/space/plasmaman/security/chief_of_police
 
 /datum/outfit/plasmaman/chief_engineer
 	name = "Chief Engineer Plasmaman"

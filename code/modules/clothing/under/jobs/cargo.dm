@@ -18,7 +18,7 @@
 	fitted = FEMALE_UNIFORM_TOP
 
 /obj/item/clothing/under/rank/cargo/tech
-	name = "cargo technician's jumpsuit"
+	name = "retail assistant's jumpsuit"
 	desc = "Shooooorts! They're comfy and easy to wear!"
 	icon_state = "cargotech"
 	inhand_icon_state = "lb_suit"
@@ -27,7 +27,7 @@
 	alt_covers_chest = TRUE
 
 /obj/item/clothing/under/rank/cargo/tech/skirt
-	name = "cargo technician's jumpskirt"
+	name = "retail assistant's jumpskirt"
 	desc = "Skiiiiirts! They're comfy and easy to wear!"
 	icon_state = "cargo_skirt"
 	inhand_icon_state = "lb_suit"

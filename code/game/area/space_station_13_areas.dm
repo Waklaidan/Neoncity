@@ -516,12 +516,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Medical Director's Office"
 	icon_state = "md_office"
 
-/area/command/heads_quarters/hop
-	name = "\improper Head of Personnel's Office"
+/area/command/heads_quarters/cc
+	name = "\improper City Clerk's Office"
 	icon_state = "hop_office"
 
-/area/command/heads_quarters/hos
-	name = "\improper Head of Security's Office"
+/area/command/heads_quarters/cop
+	name = "\improper Chief of Police's Office"
 	icon_state = "hos_office"
 
 /area/command/heads_quarters/rd

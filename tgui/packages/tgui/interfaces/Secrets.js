@@ -62,7 +62,7 @@ const DebuggingTab = (props, context) => {
           lineHeight={lineHeightDebug}
           icon="question"
           fluid
-          content="Remove cap on security officers"
+          content="Remove cap on police officers"
           onClick={() => act("infinite_sec")} />
       </Stack.Item>
     </Stack>

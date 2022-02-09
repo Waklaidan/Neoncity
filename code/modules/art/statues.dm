@@ -105,12 +105,12 @@
 	custom_materials = list(/datum/material/gold=MINERAL_MATERIAL_AMOUNT*5)
 	abstract_type = /obj/structure/statue/gold
 
-/obj/structure/statue/gold/hos
-	name = "statue of the head of security"
+/obj/structure/statue/gold/cop
+	name = "statue of the chief of police"
 	icon_state = "hos"
 
-/obj/structure/statue/gold/hop
-	name = "statue of the head of personnel"
+/obj/structure/statue/gold/cc
+	name = "statue of the city clerk"
 	icon_state = "hop"
 
 /obj/structure/statue/gold/md
@@ -143,7 +143,7 @@
 	icon_state = "jani"
 
 /obj/structure/statue/silver/sec
-	name = "statue of a security officer"
+	name = "statue of a police officer"
 	icon_state = "sec"
 
 /obj/structure/statue/silver/secborg

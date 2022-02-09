@@ -1,4 +1,4 @@
-#define PLAYER_HOP_DELAY 25
+#define PLAYER_CC_DELAY 25
 
 //Huge, carnivorous toads that spit an immobilizing toxin at its victims before leaping onto them.
 //It has no melee attack, and its damage comes from the toxin in its bubbles and its crushing leap.
@@ -217,7 +217,7 @@
 	var/turf/new_turf = locate((target.x + rand(-3,3)),(target.y + rand(-3,3)),target.z)
 	if(player_hop)
 		new_turf = get_turf(target)
-		hop_cooldown = world.time + PLAYER_HOP_DELAY
+		hop_cooldown = world.time + PLAYER_CC_DELAY
 	if(AIStatus == AI_ON && ranged_cooldown <= world.time)
 		projectile_ready = TRUE
 		update_icons()
@@ -283,4 +283,4 @@
 	. = ..()
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_LEAPER, CELL_VIRUS_TABLE_GENERIC_MOB, 1, 5)
 
-#undef PLAYER_HOP_DELAY
+#undef PLAYER_CC_DELAY

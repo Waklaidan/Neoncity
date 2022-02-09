@@ -273,8 +273,8 @@
 /obj/item/melee/supermatter_sword/add_blood_DNA(list/blood_dna)
 	return FALSE
 
-/obj/item/melee/curator_whip
-	name = "curator's whip"
+/obj/item/melee/journalist_whip
+	name = "journalist's whip"
 	desc = "Somewhat eccentric and outdated, it still stings like hell to be hit by."
 	icon_state = "whip"
 	inhand_icon_state = "chain"
@@ -288,7 +288,7 @@
 	attack_verb_simple = list("flog", "whip", "lash", "discipline")
 	hitsound = 'sound/weapons/whip.ogg'
 
-/obj/item/melee/curator_whip/afterattack(target, mob/user, proximity_flag)
+/obj/item/melee/journalist_whip/afterattack(target, mob/user, proximity_flag)
 	. = ..()
 	if(ishuman(target) && proximity_flag)
 		var/mob/living/carbon/human/human_target = target

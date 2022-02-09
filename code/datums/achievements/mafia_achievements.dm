@@ -34,7 +34,7 @@
 	icon = "town"
 
 /datum/award/achievement/mafia/officer
-	name = "Security Officer Victory"
+	name = "Police Officer Victory"
 	desc = "Don't worry, you can win this if you're dead! You... did use your ability to become dead, right?"
 	database_id = MAFIA_MEDAL_OFFICER
 	icon = "town"
@@ -45,10 +45,10 @@
 	database_id = MAFIA_MEDAL_LAWYER
 	icon = "town"
 
-/datum/award/achievement/mafia/hop
-	name = "Head of Personnel Victory"
+/datum/award/achievement/mafia/cc
+	name = "City Clerk Victory"
 	desc = "King of Civilians, waster of a single mafia's night, thrower of games."
-	database_id = MAFIA_MEDAL_HOP
+	database_id = MAFIA_MEDAL_CC
 	icon = "town"
 
 /datum/award/achievement/mafia/warden
@@ -57,10 +57,10 @@
 	database_id = MAFIA_MEDAL_WARDEN
 	icon = "town"
 
-/datum/award/achievement/mafia/hos
-	name = "Head of Security Victory"
+/datum/award/achievement/mafia/cop
+	name = "Chief of Police Victory"
 	desc = "Certified not shitcurity."
-	database_id = MAFIA_MEDAL_HOS
+	database_id = MAFIA_MEDAL_COP
 	icon = "town"
 
 /datum/award/achievement/mafia/changeling

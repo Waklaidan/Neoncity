@@ -1,4 +1,4 @@
-/obj/item/clothing/under/rank/civilian/curator
+/obj/item/clothing/under/rank/civilian/journalist
 	name = "sensible suit"
 	desc = "It's very... sensible."
 	icon = 'icons/obj/clothing/under/suits.dmi'
@@ -7,7 +7,7 @@
 	worn_icon = 'icons/mob/clothing/under/suits.dmi'
 	can_adjust = FALSE
 
-/obj/item/clothing/under/rank/civilian/curator/skirt
+/obj/item/clothing/under/rank/civilian/journalist/skirt
 	name = "sensible suitskirt"
 	desc = "It's very... sensible."
 	icon = 'icons/obj/clothing/under/suits.dmi'
@@ -19,7 +19,7 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	fitted = FEMALE_UNIFORM_TOP
 
-/obj/item/clothing/under/rank/civilian/curator/treasure_hunter
+/obj/item/clothing/under/rank/civilian/journalist/treasure_hunter
 	name = "treasure hunter uniform"
 	desc = "A rugged uniform suitable for treasure hunting."
 	icon = 'icons/obj/clothing/under/civilian.dmi'
@@ -27,7 +27,7 @@
 	inhand_icon_state = "curator"
 	worn_icon = 'icons/mob/clothing/under/civilian.dmi'
 
-/obj/item/clothing/under/rank/civilian/curator/nasa
+/obj/item/clothing/under/rank/civilian/journalist/nasa
 	name = "\improper NASA jumpsuit"
 	desc = "It has a NASA logo on it and is made of space-proofed materials."
 	icon_state = "jumpsuit"

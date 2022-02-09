@@ -60,7 +60,7 @@
 /datum/job_department/security
 	department_name = DEPARTMENT_SECURITY
 	department_bitflags = DEPARTMENT_BITFLAG_SECURITY
-	department_head = /datum/job/head_of_security
+	department_head = /datum/job/chief_of_police
 	department_experience_type = EXP_TYPE_SECURITY
 	display_order = 2
 	label_class = "security"
@@ -114,7 +114,7 @@
 /datum/job_department/service
 	department_name = DEPARTMENT_SERVICE
 	department_bitflags = DEPARTMENT_BITFLAG_SERVICE
-	department_head = /datum/job/head_of_personnel
+	department_head = /datum/job/city_clerk
 	department_experience_type = EXP_TYPE_SERVICE
 	display_order = 7
 	label_class = "service"

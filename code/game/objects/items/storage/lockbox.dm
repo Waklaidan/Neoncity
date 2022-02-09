@@ -159,12 +159,12 @@
 			medalicon.pixel_x += ((i-6)*3)
 		. += medalicon
 
-/obj/item/storage/lockbox/medal/hop
-	name = "Head of Personnel medal box"
+/obj/item/storage/lockbox/medal/cc
+	name = "City Clerk medal box"
 	desc = "A locked box used to store medals to be given to those exhibiting excellence in management."
-	req_access = list(ACCESS_HOP)
+	req_access = list(ACCESS_CC)
 
-/obj/item/storage/lockbox/medal/hop/PopulateContents()
+/obj/item/storage/lockbox/medal/cc/PopulateContents()
 	for(var/i in 1 to 3)
 		new /obj/item/clothing/accessory/medal/silver/bureaucracy(src)
 	new /obj/item/clothing/accessory/medal/gold/ordom(src)
@@ -172,7 +172,7 @@
 /obj/item/storage/lockbox/medal/sec
 	name = "security medal box"
 	desc = "A locked box used to store medals to be given to members of the security department."
-	req_access = list(ACCESS_HOS)
+	req_access = list(ACCESS_COP)
 
 /obj/item/storage/lockbox/medal/med
 	name = "medical medal box"
@@ -198,7 +198,7 @@
 /obj/item/storage/lockbox/medal/service
 	name = "service award box"
 	desc = "A locked box used to store awards to be given to members of the service department."
-	req_access = list(ACCESS_HOP)
+	req_access = list(ACCESS_CC)
 
 /obj/item/storage/lockbox/medal/service/PopulateContents()
 		new /obj/item/clothing/accessory/medal/silver/excellence(src)

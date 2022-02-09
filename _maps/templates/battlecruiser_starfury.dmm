@@ -3218,8 +3218,8 @@
 	dir = 1
 	},
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare,
-/obj/item/clothing/head/hos/syndicate,
-/obj/item/clothing/head/hos/beret/syndicate,
+/obj/item/clothing/head/cop/syndicate,
+/obj/item/clothing/head/cop/beret/syndicate,
 /obj/item/clothing/under/syndicate/skirt,
 /obj/item/clothing/under/syndicate,
 /obj/item/storage/belt/military/assault,

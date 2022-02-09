@@ -105,7 +105,7 @@
 		/obj/structure/closet/lawcloset,
 		/obj/structure/closet/wardrobe/chaplain_black,
 		/obj/structure/closet/wardrobe/red,
-		/obj/structure/closet/wardrobe/cargotech,
+		/obj/structure/closet/wardrobe/retailassistant,
 		/obj/structure/closet/wardrobe/atmospherics_yellow,
 		/obj/structure/closet/wardrobe/engineering_yellow,
 		/obj/structure/closet/wardrobe/white/medical,
@@ -115,7 +115,7 @@
 		/obj/structure/closet/wardrobe/virology_white,
 		/obj/structure/closet/wardrobe/science_white,
 		/obj/structure/closet/wardrobe/botanist,
-		/obj/structure/closet/wardrobe/curator,
+		/obj/structure/closet/wardrobe/journalist,
 		/obj/structure/closet/wardrobe/pjs,
 	)
 

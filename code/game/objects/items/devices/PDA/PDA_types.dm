@@ -122,13 +122,13 @@
 	greyscale_config = /datum/greyscale_config/pda/head
 	greyscale_colors = "#789876#a92323"
 
-/obj/item/pda/heads/hop
-	name = "head of personnel PDA"
-	default_cartridge = /obj/item/cartridge/hop
+/obj/item/pda/heads/cc
+	name = "city clerk PDA"
+	default_cartridge = /obj/item/cartridge/cc
 
-/obj/item/pda/heads/hos
-	name = "head of security PDA"
-	default_cartridge = /obj/item/cartridge/hos
+/obj/item/pda/heads/cop
+	name = "chief of police PDA"
+	default_cartridge = /obj/item/cartridge/cop
 	greyscale_config = /datum/greyscale_config/pda/head
 	greyscale_colors = "#cc4242#0000cc"
 
@@ -163,7 +163,7 @@
 	RegisterSignal(src, COMSIG_PDA_CHECK_DETONATE, .proc/pda_no_detonate)
 
 /obj/item/pda/cargo
-	name = "cargo technician PDA"
+	name = "retail assistant PDA"
 	default_cartridge = /obj/item/cartridge/quartermaster
 	greyscale_colors = "#D6B328#6506ca"
 
@@ -210,15 +210,15 @@
 	greyscale_colors = "#484848#0099cc#d33725"
 	default_cartridge = /obj/item/cartridge/roboticist
 
-/obj/item/pda/curator
-	name = "curator PDA"
+/obj/item/pda/journalist
+	name = "journalist PDA"
 	greyscale_config = null
 	greyscale_colors = null
 	icon_state = "pda-library"
 	icon_alert = "pda-r-library"
 	icon_pai = "pai_overlay_library"
 	icon_inactive_pai = "pai_off_overlay_library"
-	default_cartridge = /obj/item/cartridge/curator
+	default_cartridge = /obj/item/cartridge/journalist
 	insert_type = /obj/item/pen/fountain
 	desc = "A portable microcomputer by Thinktronic Systems, LTD. This model is a WGW-11 series e-reader."
 	note = "Congratulations, your station has chosen the Thinktronic 5290 WGW-11 Series E-reader and Personal Data Assistant!"

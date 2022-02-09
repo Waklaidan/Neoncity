@@ -21,7 +21,7 @@
 
 /obj/structure/closet/secure_closet/ert_sec
 	name = "emergency response team security locker"
-	desc = "A storage unit containing equipment for an Emergency Response Team Security Officer."
+	desc = "A storage unit containing equipment for an Emergency Response Team Police Officer."
 	req_access = list(ACCESS_CENT_SPECOPS)
 	icon_state = "hos"
 

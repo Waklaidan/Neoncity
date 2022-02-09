@@ -118,20 +118,20 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/noticeboard, 32)
 	desc = "Important notices from the Mayor."
 	req_access = list(ACCESS_MAYOR)
 
-/obj/structure/noticeboard/hop
-	name = "Head of Personnel's Notice Board"
-	desc = "Important notices from the Head of Personnel."
-	req_access = list(ACCESS_HOP)
+/obj/structure/noticeboard/cc
+	name = "City Clerk's Notice Board"
+	desc = "Important notices from the City Clerk."
+	req_access = list(ACCESS_CC)
 
 /obj/structure/noticeboard/ce
 	name = "Chief Engineer's Notice Board"
 	desc = "Important notices from the Chief Engineer."
 	req_access = list(ACCESS_CE)
 
-/obj/structure/noticeboard/hos
-	name = "Head of Security's Notice Board"
-	desc = "Important notices from the Head of Security."
-	req_access = list(ACCESS_HOS)
+/obj/structure/noticeboard/cop
+	name = "Chief of Police's Notice Board"
+	desc = "Important notices from the Chief of Police."
+	req_access = list(ACCESS_COP)
 
 /obj/structure/noticeboard/md
 	name = "Medical Director's Notice Board"

@@ -199,19 +199,19 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/heads/rd
 
-/obj/item/radio/headset/heads/hos
-	name = "\proper the head of security's headset"
+/obj/item/radio/headset/heads/cop
+	name = "\proper the chief of police's headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station."
 	icon_state = "com_headset"
-	keyslot = new /obj/item/encryptionkey/heads/hos
+	keyslot = new /obj/item/encryptionkey/heads/cop
 
-/obj/item/radio/headset/heads/hos/alt
-	name = "\proper the head of security's bowman headset"
+/obj/item/radio/headset/heads/cop/alt
+	name = "\proper the chief of police's bowman headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs."
 	icon_state = "com_headset_alt"
 	inhand_icon_state = "com_headset_alt"
 
-/obj/item/radio/headset/heads/hos/ComponentInitialize()
+/obj/item/radio/headset/heads/cop/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_EARS))
 
@@ -227,11 +227,11 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/heads/md
 
-/obj/item/radio/headset/heads/hop
-	name = "\proper the head of personnel's headset"
+/obj/item/radio/headset/heads/cc
+	name = "\proper the city clerk's headset"
 	desc = "The headset of the guy who will one day be mayor."
 	icon_state = "com_headset"
-	keyslot = new /obj/item/encryptionkey/heads/hop
+	keyslot = new /obj/item/encryptionkey/heads/cc
 
 /obj/item/radio/headset/headset_cargo
 	name = "supply radio headset"

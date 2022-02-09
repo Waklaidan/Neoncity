@@ -56,20 +56,20 @@
 			if(!SEND_SIGNAL(src, COMSIG_TRY_STORAGE_INSERT, P, null, TRUE, TRUE))
 				qdel(P)
 
-/obj/item/storage/photo_album/hos
-	name = "photo album (Head of Security)"
+/obj/item/storage/photo_album/cop
+	name = "photo album (Chief of Police)"
 	icon_state = "album_blue"
-	persistence_id = "HoS"
+	persistence_id = "CoP"
 
 /obj/item/storage/photo_album/rd
 	name = "photo album (Research Director)"
 	icon_state = "album_blue"
 	persistence_id = "RD"
 
-/obj/item/storage/photo_album/hop
-	name = "photo album (Head of Personnel)"
+/obj/item/storage/photo_album/cc
+	name = "photo album (City Clerk)"
 	icon_state = "album_blue"
-	persistence_id = "HoP"
+	persistence_id = "CC"
 
 /obj/item/storage/photo_album/mayor
 	name = "photo album (Mayor)"

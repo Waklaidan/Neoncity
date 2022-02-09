@@ -85,7 +85,7 @@
 	icon_state = "gangtool-purple"
 	region_access = REGION_RESEARCH
 
-/obj/item/door_remote/head_of_security
+/obj/item/door_remote/chief_of_police
 	name = "security door remote"
 	icon_state = "gangtool-red"
 	region_access = REGION_SECURITY
