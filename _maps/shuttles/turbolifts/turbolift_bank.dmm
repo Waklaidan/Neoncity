@@ -1,0 +1,32 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall,
+/area/space)
+"b" = (
+/turf/open/floor/plating/elevatorshaft,
+/area/space)
+
+(1,1,1) = {"
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+b
+b
+b
+a
+"}
+(3,1,1) = {"
+b
+b
+b
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+a
+"}
