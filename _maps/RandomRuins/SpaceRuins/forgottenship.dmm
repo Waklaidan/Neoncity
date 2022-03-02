@@ -323,30 +323,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
-"bf" = (
-/obj/machinery/power/apc/syndicate{
-	dir = 1;
-	name = "Syndicate Cargo Pod APC";
-	pixel_y = 32;
-	start_charge = 0
-	},
-/obj/structure/cable,
-/obj/structure/closet/crate/secure/gear{
-	req_one_access_txt = "150"
-	},
-/obj/item/circuitboard/machine/circuit_imprinter/offstation,
-/obj/item/circuitboard/machine/protolathe/offstation,
-/obj/item/stack/sheet/iron/twenty,
-/obj/item/stack/sheet/glass{
-	amount = 10
-	},
-/obj/item/stack/cable_coil,
-/obj/item/circuitboard/computer/rdconsole,
-/obj/item/storage/box/stockparts/deluxe,
-/obj/item/storage/box/stockparts/deluxe,
-/obj/item/storage/box/beakers,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/syndicate_forgotten_cargopod)
 "bg" = (
 /obj/structure/sign/poster/contraband/syndicate_pistol,
 /turf/closed/wall/r_wall/syndicate,
@@ -440,16 +416,6 @@
 /obj/item/card/id/advanced/chameleon,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_cargopod)
-"bv" = (
-/obj/machinery/power/apc/syndicate{
-	dir = 1;
-	name = "Syndicate Forgotten Ship APC";
-	pixel_y = 32;
-	start_charge = 0
-	},
-/obj/structure/cable,
-/turf/open/floor/mineral/plastitanium,
-/area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bw" = (
 /obj/structure/closet/syndicate{
 	anchored = 1;
@@ -463,18 +429,6 @@
 /obj/item/crowbar/red,
 /obj/item/ammo_box/magazine/m9mm_aps,
 /obj/item/ammo_box/magazine/m9mm_aps,
-/turf/open/floor/carpet/royalblack,
-/area/ruin/space/has_grav/syndicate_forgotten_ship)
-"bx" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Mayor's room";
-	req_one_access_txt = "150"
-	},
-/obj/machinery/door/poddoor{
-	id = "fscaproom";
-	name = "Mayor's blast door";
-	state_open = 1
-	},
 /turf/open/floor/carpet/royalblack,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "by" = (
@@ -703,18 +657,6 @@
 	name = "Closet";
 	req_one_access_txt = "150";
 	secure = 1
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/syndicate_forgotten_ship)
-"ch" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Mayor's room";
-	req_one_access_txt = "150"
-	},
-/obj/machinery/door/poddoor{
-	id = "fscaproom";
-	name = "Mayor's blast door";
-	state_open = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
@@ -1108,25 +1050,6 @@
 /obj/item/clothing/under/syndicate/skirt,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
-"dg" = (
-/obj/structure/closet/syndicate{
-	anchored = 1;
-	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "fire" = 70, "acid" = 60);
-	desc = "A basic closet for all your villainous needs.";
-	locked = 1;
-	name = "Closet";
-	req_one_access_txt = "150";
-	secure = 1
-	},
-/obj/item/clothing/head/cop/beret/syndicate,
-/obj/item/clothing/suit/armor/vest/capcarapace/syndicate,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/under/syndicate,
-/obj/item/clothing/under/syndicate/skirt,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/shoes/combat,
-/turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/syndicate_forgotten_ship)
 "dh" = (
 /obj/machinery/camera/xray{
 	c_tag = "Cargo pod";
@@ -1226,6 +1149,47 @@
 /obj/effect/spawner/random/contraband/armory,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
+"mB" = (
+/obj/machinery/power/apc/syndicate{
+	dir = 1;
+	name = "Syndicate Forgotten Ship APC";
+	pixel_y = 25;
+	start_charge = 0
+	},
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/syndicate_forgotten_ship)
+"us" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	armor = list("melee" = 70, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "fire" = 70, "acid" = 60);
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_one_access_txt = "150";
+	secure = 1
+	},
+/obj/item/clothing/head/cop/beret/syndicate,
+/obj/item/clothing/suit/armor/vest/capcarapace/syndicate,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/under/syndicate,
+/obj/item/clothing/under/syndicate/skirt,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/shoes/combat,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/syndicate_forgotten_ship)
+"Cx" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Mayor's room";
+	req_one_access_txt = "150"
+	},
+/obj/machinery/door/poddoor{
+	id = "fscaproom";
+	name = "Mayor's blast door";
+	state_open = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ruin/space/has_grav/syndicate_forgotten_ship)
 "Ia" = (
 /obj/structure/closet/crate/secure/gear{
 	req_one_access_txt = "150"
@@ -1242,6 +1206,42 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/powered/syndicate_forgotten_vault)
+"Mb" = (
+/obj/machinery/power/apc/syndicate{
+	dir = 1;
+	name = "Syndicate Cargo Pod APC";
+	pixel_y = 25;
+	start_charge = 0
+	},
+/obj/structure/cable,
+/obj/structure/closet/crate/secure/gear{
+	req_one_access_txt = "150"
+	},
+/obj/item/circuitboard/machine/circuit_imprinter/offstation,
+/obj/item/circuitboard/machine/protolathe/offstation,
+/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/glass{
+	amount = 10
+	},
+/obj/item/stack/cable_coil,
+/obj/item/circuitboard/computer/rdconsole,
+/obj/item/storage/box/stockparts/deluxe,
+/obj/item/storage/box/stockparts/deluxe,
+/obj/item/storage/box/beakers,
+/turf/open/floor/mineral/plastitanium,
+/area/ruin/space/has_grav/syndicate_forgotten_cargopod)
+"To" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Mayor's room";
+	req_one_access_txt = "150"
+	},
+/obj/machinery/door/poddoor{
+	id = "fscaproom";
+	name = "Mayor's blast door";
+	state_open = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/ruin/space/has_grav/syndicate_forgotten_ship)
 "WR" = (
 /obj/structure/closet/crate/secure/gear{
 	req_one_access_txt = "150"
@@ -1965,10 +1965,10 @@ aa
 bZ
 cf
 aw
-ch
+Cx
 ao
 ao
-bx
+To
 aH
 cD
 cU
@@ -2015,7 +2015,7 @@ aw
 bZ
 ao
 ao
-bx
+To
 aS
 cx
 aS
@@ -2389,7 +2389,7 @@ bZ
 bO
 bS
 bZ
-bv
+mB
 aP
 aK
 aP
@@ -2410,7 +2410,7 @@ aY
 aY
 ba
 bb
-bf
+Mb
 bh
 bj
 bj
@@ -2916,7 +2916,7 @@ aw
 cb
 aw
 bZ
-dg
+us
 bZ
 ac
 aa

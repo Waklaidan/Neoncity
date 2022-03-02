@@ -381,6 +381,11 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/holding)
+"bF" = (
+/obj/structure/closet/wardrobe/retailassistant,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron,
+/area/centcom/supply)
 "bI" = (
 /obj/machinery/shower{
 	pixel_y = 12
@@ -1115,6 +1120,18 @@
 "eF" = (
 /turf/open/floor/iron/grimy,
 /area/centcom/briefing)
+"eG" = (
+/obj/structure/table/wood/poker,
+/obj/item/toy/cards/deck/wizoff{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/toy/cards/deck/tarot{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/turf/open/floor/carpet,
+/area/wizard_station)
 "eJ" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp{
@@ -2510,11 +2527,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/turf/open/floor/iron,
-/area/centcom/supply)
-"jN" = (
-/obj/structure/closet/wardrobe/retailassistant,
-/obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/centcom/supply)
 "jO" = (
@@ -6800,6 +6812,16 @@
 	},
 /turf/open/floor/iron,
 /area/syndicate_mothership/control)
+"uN" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp,
+/obj/machinery/requests_console/directional/north{
+	announcementConsole = 1;
+	department = "Mayor's Desk";
+	departmentType = 5
+	},
+/turf/open/floor/iron/grimy,
+/area/centcom/admin)
 "uO" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Shuttle Control Office";
@@ -7625,11 +7647,6 @@
 /obj/item/camera/spooky,
 /turf/open/floor/carpet,
 /area/wizard_station)
-"wQ" = (
-/obj/structure/table/wood/poker,
-/obj/item/toy/cards/deck,
-/turf/open/floor/carpet,
-/area/wizard_station)
 "wT" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/donut_box,
@@ -8079,27 +8096,6 @@
 "yg" = (
 /turf/open/floor/wood/tile,
 /area/centcom/holding)
-"yi" = (
-/obj/structure/table/wood,
-/obj/item/clipboard,
-/obj/item/folder/blue,
-/obj/item/melee/chainofcommand,
-/obj/item/stamp/mayor,
-/obj/machinery/newscaster/security_unit{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/admin)
 "yj" = (
 /obj/machinery/door/airlock/centcom{
 	name = "CentCom Security";
@@ -13808,6 +13804,27 @@
 	name = "Guest House Entrance"
 	},
 /area/centcom/holding)
+"MR" = (
+/obj/structure/closet/secure_closet/personal/cabinet,
+/obj/item/clothing/under/rank/civilian/journalist/treasure_hunter,
+/obj/item/clothing/under/dress/skirt,
+/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/under/pants/track,
+/obj/item/clothing/accessory/armband/deputy,
+/obj/item/clothing/accessory/waistcoat,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/laceup,
+/obj/item/clothing/neck/stripedredscarf,
+/obj/item/clothing/neck/tie/red,
+/obj/item/clothing/head/helmet/space/beret,
+/obj/item/clothing/suit/journalist,
+/obj/item/clothing/suit/space/officer,
+/obj/item/clothing/gloves/fingerless,
+/obj/item/clothing/gloves/color/black,
+/obj/item/clothing/glasses/eyepatch,
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/iron/grimy,
+/area/centcom/admin)
 "MU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/wood,
@@ -13989,6 +14006,24 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/control)
+"NL" = (
+/obj/structure/dresser,
+/obj/structure/plaque/static_plaque/golden/mayor{
+	pixel_x = 32
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/status_display/ai/directional/south,
+/turf/open/floor/iron/dark,
+/area/centcom/admin)
 "NM" = (
 /obj/structure/closet/crate/bin,
 /obj/machinery/light/directional/south,
@@ -14277,6 +14312,27 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/briefing)
+"Pc" = (
+/obj/structure/table/wood,
+/obj/item/clipboard,
+/obj/item/folder/blue,
+/obj/item/melee/chainofcommand,
+/obj/item/stamp/mayor,
+/obj/machinery/newscaster/security_unit{
+	pixel_y = 32
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/admin)
 "Pf" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-10"
@@ -14532,16 +14588,6 @@
 "Qe" = (
 /turf/open/ai_visible,
 /area/ai_multicam_room)
-"Qg" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp,
-/obj/machinery/requests_console/directional/north{
-	announcementConsole = 1;
-	department = "Mayor's Desk";
-	departmentType = 5
-	},
-/turf/open/floor/iron/grimy,
-/area/centcom/admin)
 "Qh" = (
 /obj/structure/destructible/cult/item_dispenser/forge/engine,
 /turf/open/floor/engine/cult,
@@ -15534,27 +15580,6 @@
 	},
 /turf/open/floor/sepia,
 /area/centcom/holding)
-"Ur" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/under/rank/civilian/journalist/treasure_hunter,
-/obj/item/clothing/under/dress/skirt,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/pants/track,
-/obj/item/clothing/accessory/armband/deputy,
-/obj/item/clothing/accessory/waistcoat,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/shoes/laceup,
-/obj/item/clothing/neck/stripedredscarf,
-/obj/item/clothing/neck/tie/red,
-/obj/item/clothing/head/helmet/space/beret,
-/obj/item/clothing/suit/journalist,
-/obj/item/clothing/suit/space/officer,
-/obj/item/clothing/gloves/fingerless,
-/obj/item/clothing/gloves/color/black,
-/obj/item/clothing/glasses/eyepatch,
-/obj/machinery/firealarm/directional/west,
-/turf/open/floor/iron/grimy,
-/area/centcom/admin)
 "Uw" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
@@ -16619,24 +16644,6 @@
 "YI" = (
 /obj/structure/sign/warning/nosmoking,
 /turf/closed/indestructible/riveted,
-/area/centcom/admin)
-"YJ" = (
-/obj/structure/dresser,
-/obj/structure/plaque/static_plaque/golden/mayor{
-	pixel_x = 32
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/status_display/ai/directional/south,
-/turf/open/floor/iron/dark,
 /area/centcom/admin)
 "YM" = (
 /obj/machinery/modular_computer/console/preset/research{
@@ -25351,7 +25358,7 @@ lI
 qE
 qE
 uF
-wQ
+eG
 wd
 Ax
 yI
@@ -55150,7 +55157,7 @@ On
 SN
 fP
 On
-Qg
+uN
 XV
 hd
 To
@@ -56181,7 +56188,7 @@ On
 HQ
 To
 WX
-Ur
+MR
 aZ
 YU
 GB
@@ -56435,7 +56442,7 @@ mG
 nl
 nD
 On
-yi
+Pc
 by
 QV
 QV
@@ -56696,7 +56703,7 @@ BV
 VE
 bz
 Mq
-YJ
+NL
 YU
 xy
 Or
@@ -58993,9 +59000,9 @@ jq
 ju
 ju
 mF
-jN
+bF
 jQ
-jN
+bF
 jf
 iZ
 lq

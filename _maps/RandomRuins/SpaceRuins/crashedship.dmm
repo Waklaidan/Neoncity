@@ -401,15 +401,6 @@
 "bV" = (
 /turf/open/floor/carpet,
 /area/awaymission/bmpship/fore)
-"bW" = (
-/obj/machinery/power/apc/unlocked{
-	dir = 1;
-	environ = 0;
-	pixel_y = 23
-	},
-/obj/structure/cable,
-/turf/open/floor/carpet,
-/area/awaymission/bmpship/fore)
 "bX" = (
 /obj/structure/table,
 /obj/item/screwdriver,
@@ -742,26 +733,12 @@
 	},
 /turf/open/floor/iron,
 /area/awaymission/bmpship/aft)
-"cW" = (
-/obj/machinery/power/apc/unlocked{
-	dir = 1;
-	environ = 0;
-	pixel_y = 23
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/awaymission/bmpship/aft)
 "cX" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /turf/open/floor/iron,
 /area/awaymission/bmpship/aft)
-"cY" = (
-/obj/structure/table,
-/obj/item/paper/fluff/ruins/crashedship/mayors_log,
-/turf/open/floor/carpet,
-/area/awaymission/bmpship/fore)
 "cZ" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/bottle/beer,
@@ -901,18 +878,6 @@
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/awaymission/bmpship/fore)
-"dN" = (
-/obj/machinery/power/apc/unlocked{
-	dir = 1;
-	pixel_y = 23
-	},
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/awaymission/bmpship/midship)
 "dO" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -1811,6 +1776,15 @@
 /obj/effect/spawner/random/entertainment/arcade,
 /turf/open/floor/iron,
 /area/awaymission/bmpship/aft)
+"vX" = (
+/obj/machinery/power/apc/unlocked{
+	dir = 1;
+	environ = 0;
+	pixel_y = 25
+	},
+/obj/structure/cable,
+/turf/open/floor/carpet,
+/area/awaymission/bmpship/fore)
 "ya" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "packerMine"
@@ -1884,6 +1858,20 @@
 /obj/effect/spawner/random/exotic/technology,
 /turf/open/floor/iron,
 /area/awaymission/bmpship/aft)
+"Nw" = (
+/obj/structure/table,
+/obj/item/paper/fluff/ruins/crashedship/mayors_log,
+/turf/open/floor/carpet,
+/area/awaymission/bmpship/fore)
+"OO" = (
+/obj/machinery/power/apc/unlocked{
+	dir = 1;
+	environ = 0;
+	pixel_y = 25
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/awaymission/bmpship/aft)
 "QM" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/airless{
@@ -1900,6 +1888,18 @@
 	dir = 8
 	},
 /obj/effect/spawner/random/food_or_drink/seed_rare,
+/turf/open/floor/iron,
+/area/awaymission/bmpship/midship)
+"Sa" = (
+/obj/machinery/power/apc/unlocked{
+	dir = 1;
+	pixel_y = 25
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/awaymission/bmpship/midship)
 "Sd" = (
@@ -2462,7 +2462,7 @@ hE
 hE
 bV
 bV
-cY
+Nw
 dt
 bV
 eg
@@ -2612,7 +2612,7 @@ aT
 aT
 aT
 hE
-bW
+vX
 db
 db
 bV
@@ -3280,7 +3280,7 @@ aq
 cK
 aq
 aq
-dN
+Sa
 dg
 dg
 eK
@@ -4705,7 +4705,7 @@ aa
 aa
 ae
 ac
-cW
+OO
 dm
 al
 eb

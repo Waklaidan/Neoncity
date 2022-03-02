@@ -48,7 +48,7 @@
 	new /obj/item/clothing/under/rank/mayor/parade(src)
 	new /obj/item/clothing/suit/armor/vest/capcarapace(src)
 	new /obj/item/clothing/suit/armor/vest/capcarapace/mayors_formal(src)
-	new /obj/item/clothing/suit/captunic(src)
+	new /obj/item/clothing/suit/capjacket(src)
 	new /obj/item/clothing/glasses/sunglasses/gar/giga(src)
 	new /obj/item/clothing/gloves/color/mayor(src)
 	new /obj/item/clothing/head/caphat(src)
