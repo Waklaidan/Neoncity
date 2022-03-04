@@ -1292,10 +1292,10 @@
 	dangerous = TRUE
 
 /datum/supply_pack/medical/cmoturtlenecks
-	name = "Chief Medical Officer Turtlenecks"
-	desc = "Contains the CMO's turtleneck and turtleneck skirt. Requires CMO access to open."
+	name = "Medical Director's Turtlenecks"
+	desc = "Contains the MD's turtleneck and turtleneck skirt. Requires MD access to open."
 	cost = CARGO_CRATE_VALUE * 2
-	access = ACCESS_CMO
+	access = ACCESS_MD
 	contains = list(/obj/item/clothing/under/rank/medical/chief_medical_officer/turtleneck,
 					/obj/item/clothing/under/rank/medical/chief_medical_officer/turtleneck/skirt)
 

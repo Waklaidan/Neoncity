@@ -947,16 +947,6 @@
 	},
 /obj/structure/closet/secure_closet/mayors,
 /obj/structure/cable,
-/obj{
-	name = "---Merge conflict marker---"
-	},
-/obj/machinery/airalarm/directional/north{
-	locked = 0;
-	pixel_y = 23
-	},
-/obj/structure/closet/secure_closet/captains,
-/obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/iron{
 	dir = 8
 	},

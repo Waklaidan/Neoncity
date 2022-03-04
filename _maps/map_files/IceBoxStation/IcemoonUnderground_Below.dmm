@@ -22,9 +22,6 @@
 "at" = (
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
-"aD" = (
-/turf/open/lava/plasma/ice_moon,
-/area/icemoon/underground)
 "bz" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -81,10 +78,19 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/mine/eva)
-"dd" = (
-/obj/machinery/light/small/directional/north,
+"dB" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/snowed/icemoon,
-/area/mine/eva)
+/area/mine/mechbay)
 "ea" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -180,18 +186,6 @@
 /obj/structure/railing,
 /turf/open/lava/plasma/ice_moon,
 /area/icemoon/underground/explored)
-"gf" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/turf/open/floor/plating/snowed/icemoon,
-/area/icemoon/underground/explored)
 "gU" = (
 /obj/structure/stairs/north,
 /obj/structure/railing{
@@ -216,40 +210,9 @@
 	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
-"hf" = (
-/obj/effect/gibspawner/human/bodypartless,
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
 "hh" = (
 /obj/structure/flora/tree/pine,
 /turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
-"hv" = (
-/obj/machinery/door/airlock/external{
-	glass = 1;
-	name = "Mining Mech Bay External Airlock";
-	opacity = 0;
-	req_access_txt = "48"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "mining-mechbay-external"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/open/floor/iron/smooth,
-/area/mine/mechbay)
-"hw" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 6
-	},
-/obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
 "hx" = (
 /obj/structure/chair/stool/directional/west,
@@ -381,10 +344,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/stone,
 /area/mine/eva)
-"lw" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plating/snowed/icemoon,
-/area/mine/eva)
 "lV" = (
 /obj/item/bodypart/head,
 /obj/effect/decal/cleanable/blood,
@@ -460,13 +419,6 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
-"nD" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/plating/snowed/smoothed/icemoon,
-/area/mine/mechbay)
 "nG" = (
 /obj/effect/turf_decal/stripes/end,
 /obj/machinery/door/airlock/external,
@@ -523,6 +475,10 @@
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron/smooth,
 /area/mine/mechbay)
+"pp" = (
+/obj/effect/gibspawner/human,
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "pI" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/bot,
@@ -560,10 +516,6 @@
 	},
 /turf/open/lava/plasma/ice_moon,
 /area/icemoon/underground/explored)
-"qX" = (
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/snowed/smoothed/icemoon,
-/area/mine/eva)
 "rd" = (
 /turf/open/floor/iron,
 /area/mine/eva)
@@ -617,6 +569,10 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/mine/mechbay)
+"ua" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/snowed/icemoon,
+/area/mine/eva)
 "uL" = (
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/stripes/corner{
@@ -641,6 +597,22 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/side,
 /area/mine/eva)
+"vn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/external{
+	glass = 1;
+	name = "Mining Mech Bay External Airlock";
+	opacity = 0;
+	req_access_txt = "48"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "mining-mechbay-external"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
+/area/mine/mechbay)
 "vx" = (
 /obj/structure/closet/crate,
 /obj/machinery/light/small/directional/south,
@@ -702,6 +674,10 @@
 /obj/machinery/mechpad,
 /turf/open/floor/iron/smooth,
 /area/mine/mechbay)
+"xh" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/mine/eva)
 "xo" = (
 /obj/structure/toilet{
 	pixel_y = 8
@@ -778,10 +754,21 @@
 	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
-"Bf" = (
-/obj/effect/gibspawner/human,
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/icemoon/underground/explored)
+"BD" = (
+/obj/machinery/door/airlock/external{
+	glass = 1;
+	name = "Mining Mech Bay External Airlock";
+	opacity = 0;
+	req_access_txt = "48"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "mining-mechbay-external"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
+/area/mine/mechbay)
 "BH" = (
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
@@ -885,6 +872,9 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/dark,
 /area/mine/eva)
+"EK" = (
+/turf/open/lava/plasma/ice_moon,
+/area/icemoon/underground)
 "Ft" = (
 /turf/open/floor/iron/smooth,
 /area/mine/mechbay)
@@ -933,8 +923,9 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
-"GR" = (
-/turf/closed/wall/r_wall,
+"Hu" = (
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/snowed/icemoon,
 /area/mine/eva)
 "HA" = (
 /obj/structure/cable,
@@ -1030,15 +1021,6 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
-"JG" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/open/floor/iron/smooth,
-/area/mine/mechbay)
 "KA" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing/corner,
@@ -1048,6 +1030,13 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating,
 /area/mine/eva)
+"KT" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/mine/mechbay)
 "KW" = (
 /obj/structure/cable,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
@@ -1183,6 +1172,18 @@
 "NB" = (
 /turf/closed/wall,
 /area/mine/eva)
+"NQ" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 6
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/underground/explored)
 "NY" = (
 /obj/structure/window/reinforced/spawner/east,
 /obj/machinery/computer/mechpad{
@@ -1281,6 +1282,10 @@
 	},
 /turf/open/floor/iron/dark/side,
 /area/mine/eva)
+"Rp" = (
+/obj/effect/gibspawner/human/bodypartless,
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/icemoon/underground/explored)
 "Rs" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing/corner{
@@ -1311,6 +1316,9 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
+/area/mine/eva)
+"RS" = (
+/turf/closed/wall/r_wall,
 /area/mine/eva)
 "Sb" = (
 /obj/structure/lattice/catwalk,
@@ -1422,22 +1430,6 @@
 	},
 /turf/open/lava/plasma/ice_moon,
 /area/icemoon/underground/explored)
-"Vl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/airlock/external{
-	glass = 1;
-	name = "Mining Mech Bay External Airlock";
-	opacity = 0;
-	req_access_txt = "48"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "mining-mechbay-external"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/iron/smooth,
-/area/mine/mechbay)
 "Vz" = (
 /obj/machinery/telecomms/relay/preset/mining,
 /obj/structure/window/reinforced/spawner/east,
@@ -1540,24 +1532,23 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
 /area/mine/mechbay)
+"YE" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/underground/explored)
 "YK" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/mine/eva)
-"Zl" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 5
-	},
-/obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/plating/snowed/icemoon,
-/area/mine/mechbay)
 "Zm" = (
 /obj/structure/rack,
 /obj/item/mecha_parts/mecha_equipment/drill,
@@ -1569,6 +1560,15 @@
 "Zs" = (
 /turf/closed/wall/ice,
 /area/icemoon/underground/explored)
+"ZM" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
+/area/mine/mechbay)
 "ZO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -19207,11 +19207,11 @@ JB
 IH
 oq
 tl
-GR
+RS
 an
 an
 an
-GR
+RS
 iD
 Ll
 Ic
@@ -19464,11 +19464,11 @@ kf
 at
 at
 cm
-GR
+RS
 xo
 pP
 it
-GR
+RS
 fU
 zt
 fR
@@ -19721,11 +19721,11 @@ at
 at
 at
 TX
-GR
+RS
 NB
 TD
 NB
-GR
+RS
 Rs
 HY
 qR
@@ -19975,8 +19975,8 @@ fQ
 Rv
 at
 at
-lw
-GR
+ua
+RS
 Wj
 NB
 Ah
@@ -19984,8 +19984,8 @@ Wd
 Ro
 NB
 Wj
-GR
-dd
+RS
+Hu
 at
 at
 Rs
@@ -20488,8 +20488,8 @@ qI
 fQ
 Rv
 at
-lw
-GR
+ua
+RS
 NB
 NB
 NB
@@ -20502,8 +20502,8 @@ NB
 Wj
 Wj
 Wj
-GR
-GR
+RS
+RS
 zt
 zt
 qI
@@ -20746,7 +20746,7 @@ fQ
 Zs
 Tu
 cm
-GR
+RS
 KF
 NB
 tE
@@ -20760,7 +20760,7 @@ iu
 iu
 Oj
 XD
-GR
+RS
 zt
 zt
 zt
@@ -21001,8 +21001,8 @@ qI
 qI
 fQ
 at
-GR
-GR
+RS
+RS
 NB
 Ou
 QN
@@ -21017,7 +21017,7 @@ yN
 Pj
 Oj
 sP
-GR
+RS
 zt
 zt
 zt
@@ -21258,7 +21258,7 @@ qI
 qI
 fQ
 at
-GR
+RS
 Nt
 zp
 Ou
@@ -21274,7 +21274,7 @@ Fx
 TC
 Se
 RJ
-GR
+RS
 Tj
 zt
 zt
@@ -21515,7 +21515,7 @@ qI
 qI
 fQ
 at
-GR
+RS
 yV
 cX
 Ou
@@ -21531,7 +21531,7 @@ hx
 iu
 kc
 Fy
-GR
+RS
 wk
 zt
 zt
@@ -21771,7 +21771,7 @@ qI
 qI
 qI
 fQ
-GR
+RS
 NB
 NB
 QN
@@ -21788,7 +21788,7 @@ Uu
 Uu
 Uu
 Uu
-GR
+RS
 wk
 zt
 zt
@@ -21962,11 +21962,11 @@ qI
 qI
 fQ
 fb
-hf
+Rp
 fQ
 fQ
 fQ
-hf
+Rp
 qI
 qI
 qI
@@ -22028,7 +22028,7 @@ qI
 qI
 qI
 fQ
-GR
+RS
 wv
 ip
 Ou
@@ -22221,7 +22221,7 @@ qI
 fQ
 fQ
 fQ
-Bf
+pp
 fQ
 fQ
 fQ
@@ -22285,7 +22285,7 @@ qI
 qI
 qI
 fQ
-GR
+RS
 yV
 md
 Ou
@@ -22479,7 +22479,7 @@ fQ
 fQ
 qy
 fQ
-hf
+Rp
 fQ
 fQ
 qI
@@ -22542,7 +22542,7 @@ qI
 qI
 qI
 fQ
-GR
+RS
 ln
 yV
 qC
@@ -22731,12 +22731,12 @@ qI
 qI
 qI
 fQ
-hf
+Rp
 fQ
 lV
 fQ
 fQ
-hf
+Rp
 fQ
 fQ
 qI
@@ -22799,12 +22799,12 @@ qI
 qI
 qI
 fQ
-GR
-GR
-GR
-GR
-GR
-GR
+RS
+RS
+RS
+RS
+RS
+RS
 NB
 Rn
 HA
@@ -22992,7 +22992,7 @@ fQ
 qI
 fQ
 fQ
-hf
+Rp
 fQ
 fQ
 fQ
@@ -23069,7 +23069,7 @@ MQ
 Uu
 Jv
 Nf
-JG
+ZM
 uL
 Zm
 lZ
@@ -23247,7 +23247,7 @@ qI
 qI
 fQ
 qI
-hf
+Rp
 fQ
 fQ
 fQ
@@ -23325,7 +23325,7 @@ zq
 vx
 Uu
 Uu
-Vl
+vn
 VS
 Uu
 MP
@@ -23576,10 +23576,10 @@ fQ
 wk
 wk
 wk
-GR
+RS
 Rn
 Xw
-GR
+RS
 MP
 LC
 Ft
@@ -23833,16 +23833,16 @@ fQ
 wk
 wk
 wk
-qX
+xh
 wk
 fF
 fF
 MP
 MP
-hv
-hv
+BD
+BD
 MP
-nD
+KT
 KW
 iv
 fQ
@@ -24095,9 +24095,9 @@ wk
 wk
 fF
 DH
-Zl
-gf
-hw
+dB
+YE
+NQ
 Uc
 fF
 wk
@@ -26301,7 +26301,7 @@ qI
 qI
 qI
 qI
-aD
+EK
 qI
 qI
 qI
@@ -26558,9 +26558,9 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
+EK
+EK
+EK
 qI
 qI
 qI
@@ -26816,11 +26816,11 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -27073,11 +27073,11 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -27331,12 +27331,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -27589,15 +27589,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -27848,15 +27848,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -28105,15 +28105,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -28362,15 +28362,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -28619,15 +28619,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -28878,13 +28878,13 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -29135,13 +29135,13 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -29392,14 +29392,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -29649,15 +29649,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -29906,15 +29906,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -30164,14 +30164,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -30422,13 +30422,13 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -30680,13 +30680,13 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -30937,13 +30937,13 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -31192,15 +31192,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -31448,16 +31448,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -31705,16 +31705,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -31962,15 +31962,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -32219,15 +32219,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -32475,15 +32475,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -32731,16 +32731,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -32988,16 +32988,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -33244,17 +33244,17 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -33501,16 +33501,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -33758,14 +33758,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -34015,14 +34015,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -34272,14 +34272,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -34529,13 +34529,13 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -34784,14 +34784,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -35040,11 +35040,11 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -35297,10 +35297,10 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -37096,15 +37096,15 @@ qI
 qI
 qI
 qI
-aD
-aD
+EK
+EK
 qI
 qI
 qI
 qI
 qI
 qI
-aD
+EK
 qI
 qI
 qI
@@ -37353,15 +37353,15 @@ qI
 qI
 qI
 qI
-aD
-aD
+EK
+EK
 qI
 qI
 qI
 qI
 qI
 qI
-aD
+EK
 qI
 qI
 qI
@@ -37610,15 +37610,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -37867,15 +37867,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -38124,15 +38124,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -38381,15 +38381,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -38638,15 +38638,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -38895,15 +38895,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -39152,15 +39152,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -39408,16 +39408,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -39665,16 +39665,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -39922,16 +39922,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -40179,16 +40179,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -40436,15 +40436,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -40693,15 +40693,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -40950,15 +40950,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -41208,14 +41208,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -41465,14 +41465,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -41722,14 +41722,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -41980,13 +41980,13 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -42237,12 +42237,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -42494,12 +42494,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -42751,12 +42751,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -43007,12 +43007,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -43264,12 +43264,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -43521,12 +43521,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -43778,12 +43778,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -44035,12 +44035,12 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -44290,14 +44290,14 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -44546,15 +44546,15 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -44802,16 +44802,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -45059,16 +45059,16 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -45314,18 +45314,18 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -45571,18 +45571,18 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
 qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -45827,20 +45827,20 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
 qI
 qI
 qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -46084,8 +46084,8 @@ qI
 qI
 qI
 qI
-aD
-aD
+EK
+EK
 qI
 qI
 qI
@@ -46095,10 +46095,10 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
-aD
+EK
+EK
+EK
+EK
 qI
 qI
 qI
@@ -46341,7 +46341,7 @@ qI
 qI
 qI
 qI
-aD
+EK
 qI
 qI
 qI
@@ -46353,9 +46353,9 @@ qI
 qI
 qI
 qI
-aD
-aD
-aD
+EK
+EK
+EK
 qI
 qI
 qI
@@ -46612,8 +46612,8 @@ qI
 qI
 qI
 qI
-aD
-aD
+EK
+EK
 qI
 qI
 qI

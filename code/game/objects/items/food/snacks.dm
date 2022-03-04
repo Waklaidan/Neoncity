@@ -334,7 +334,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	food_reagents = list(/datum/reagent/consumable/cornoil  = 1, /datum/reagent/consumable/salt = 6) //1 cornoil is equal to 1.33 nutriment
 	tastes = list("sunflowers" = 5)
 	foodtypes = JUNKFOOD | NUTS
-	custom_price = PAYCHECK_ASSISTANT * 0.4 //sunflowers are cheap in real life.
+	custom_price = PAYCHECK_CIVILIAN * 0.4 //sunflowers are cheap in real life.
 	bite_consumption = 1
 	junkiness = 25
 	w_class = WEIGHT_CLASS_SMALL
@@ -356,7 +356,7 @@ GLOBAL_LIST_INIT(safe_peanut_types, populate_safe_peanut_types())
 	bite_consumption = 2
 	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/cooking_oil = 2, /datum/reagent/consumable/salt = 3)
 	junkiness = 20
-	custom_price = PAYCHECK_ASSISTANT * 0.8  //we are filled to the brim with flavor
+	custom_price = PAYCHECK_CIVILIAN * 0.8  //we are filled to the brim with flavor
 	tastes = list("fried corn" = 1)
 	foodtypes = JUNKFOOD | FRIED
 	w_class = WEIGHT_CLASS_SMALL
