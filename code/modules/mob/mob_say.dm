@@ -1,15 +1,29 @@
 //Speech verbs.
 
+//Speech verbs.
+/mob/verb/say_typing_indicator()
+	set name = "Say"
+	set hidden = FALSE
+	set category = "IC"
+	display_typing_indicator()
+	var/message = input(usr, "", "say") as text|null
+	// If they don't type anything just drop the message.
+	clear_typing_indicator()		// clear it immediately!
+	if(!length(message))
+		return
+	return say_verb(message)
+
 ///what clients use to speak. when you type a message into the chat bar in say mode, this is the first thing that goes off serverside.
 /mob/verb/say_verb(message as text)
-	set name = "Say"
+	set name = "say_noindicator"
+	set hidden = TRUE
 	set category = "IC"
 	set instant = TRUE
 
 	if(GLOB.say_disabled) //This is here to try to identify lag problems
 		to_chat(usr, span_danger("Speech is currently admin-disabled."))
 		return
-
+	set_typing_indicator(FALSE)
 	//queue this message because verbs are scheduled to process after SendMaps in the tick and speech is pretty expensive when it happens.
 	//by queuing this for next tick the mc can compensate for its cost instead of having speech delay the start of the next tick
 	if(message)
@@ -32,9 +46,23 @@
 /mob/proc/whisper(message, datum/language/language=null)
 	say(message, language = language)
 
+
+/mob/verb/me_typing_indicator()
+	set name = "Me"
+	set hidden = FALSE
+	set category = "IC"
+	display_typing_indicator()
+	var/message = input(usr, "", "me") as message|null
+	// If they don't type anything just drop the message.
+	clear_typing_indicator()		// clear it immediately!
+	if(!length(message))
+		return
+	return me_verb(message)
+
 ///The me emote verb
 /mob/verb/me_verb(message as text)
-	set name = "Me"
+	set name = "me_noindicator"
+	set hidden = TRUE
 	set category = "IC"
 
 	if(GLOB.say_disabled) //This is here to try to identify lag problems

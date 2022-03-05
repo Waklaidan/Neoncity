@@ -4,6 +4,7 @@
 	see_in_dark = 2
 	hud_possible = list(HEALTH_HUD,STATUS_HUD,ANTAG_HUD)
 	pressure_resistance = 10
+	typing_indicator_enabled = TRUE
 
 	hud_type = /datum/hud/living
 

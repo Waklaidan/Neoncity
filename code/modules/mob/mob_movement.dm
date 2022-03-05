@@ -548,3 +548,7 @@
 	if(is_secret_level(new_turf.z) && !client?.holder)
 		return
 	return ..()
+
+/mob/Moved(atom/OldLoc, Dir, Forced = FALSE)
+	. = ..()
+	set_typing_indicator(FALSE)
