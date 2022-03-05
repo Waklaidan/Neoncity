@@ -418,8 +418,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 /datum/preferences/proc/delete_character()
 
-	delete_character_entry_from_db()
-	delete_character_bank_from_db()
+	if(SSdbcore.Connect())
+		delete_character_entry_from_db()
+		delete_character_bank_from_db()
 
 	for (var/datum/preference/preference as anything in get_preferences_in_priority_order())
 		if (preference.savefile_identifier != PREFERENCE_CHARACTER)

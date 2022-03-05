@@ -2247,10 +2247,6 @@
 	},
 /turf/open/floor/plating/rust,
 /area/city/outdoors)
-"ir" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/city/outdoors)
 "it" = (
 /obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/plating,
@@ -2283,10 +2279,6 @@
 "iz" = (
 /obj/machinery/door/airlock,
 /turf/open/floor/glass/reinforced,
-/area/city/outdoors)
-"iB" = (
-/obj/structure/lattice,
-/turf/closed/wall/rust,
 /area/city/outdoors)
 "iC" = (
 /obj/structure/fluff/broken_flooring{
@@ -2697,14 +2689,8 @@
 /turf/open/floor/iron,
 /area/city/outdoors)
 "jS" = (
-/obj/effect/turf_decal/tile/purple{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/effect/turf_decal/siding/purple/corner,
 /turf/open/floor/iron,
 /area/city/outdoors)
 "jT" = (
@@ -17280,7 +17266,7 @@ ax
 ax
 ax
 ax
-ir
+ad
 aI
 ax
 aI
@@ -17697,7 +17683,7 @@ ae
 ae
 ae
 ax
-iB
+aM
 ax
 ax
 ae
@@ -17779,7 +17765,7 @@ ae
 ae
 ae
 aI
-iB
+aM
 aI
 ax
 ae
@@ -17861,7 +17847,7 @@ ae
 ae
 ae
 aI
-iB
+aM
 aI
 aI
 fi
@@ -18025,7 +18011,7 @@ ae
 ae
 aI
 aI
-ir
+ad
 ax
 ax
 ae
@@ -27341,7 +27327,7 @@ ae
 ae
 ae
 ae
-jh
+ae
 fP
 ae
 ae
@@ -27423,7 +27409,7 @@ ae
 ae
 ae
 ae
-jh
+ae
 fP
 ae
 ae
@@ -42594,7 +42580,7 @@ gr
 gr
 gr
 gr
-gr
+so
 rv
 iH
 jh
@@ -42667,7 +42653,6 @@ ja
 av
 rk
 rv
-so
 gr
 gr
 gr
@@ -42676,7 +42661,8 @@ gr
 gr
 gr
 gr
-yr
+gr
+gr
 rv
 iH
 jh
@@ -42749,7 +42735,7 @@ ja
 av
 rk
 rv
-gr
+yr
 gr
 gr
 gr
@@ -47536,7 +47522,7 @@ je
 pN
 gN
 gN
-pN
+BX
 je
 iH
 jh
@@ -67339,12 +67325,12 @@ JL
 JL
 JL
 JL
+JL
 Oy
 JN
 Sx
 Su
 Sx
-JL
 JL
 Sx
 SA
@@ -67423,10 +67409,10 @@ JN
 JN
 JN
 JN
+JN
 Sx
 SB
 Sx
-JL
 JL
 Sx
 SB
@@ -67505,10 +67491,10 @@ je
 je
 je
 je
+je
 Sx
 RP
 Sx
-je
 je
 Sx
 SC
@@ -67585,11 +67571,11 @@ JL
 JN
 je
 Of
+Oz
 Rj
 Oz
 Oz
 av
-Oz
 Oz
 Oz
 Oz

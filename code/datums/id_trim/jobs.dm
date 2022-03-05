@@ -81,6 +81,7 @@
 /datum/id_trim/job/civilian
 	assignment = "Civilian"
 	trim_state = "trim_civilian"
+	sechud_icon_state = SECHUD_ASSISTANT
 	extra_access = list(ACCESS_MAINT_TUNNELS)
 	minimal_access = list()
 	config_job = "civilian"
@@ -100,6 +101,7 @@
 /datum/id_trim/job/firefighter
 	assignment = "Firefighter"
 	trim_state = "trim_atmospherictechnician"
+	sechud_icon_state = SECHUD_ATMOSPHERIC_TECHNICIAN
 	extra_access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
 	minimal_access = list(ACCESS_ATMOSPHERICS, ACCESS_AUX_BASE, ACCESS_CONSTRUCTION, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE,
 					ACCESS_MINERAL_STOREROOM)
@@ -110,6 +112,7 @@
 /datum/id_trim/job/bartender
 	assignment = "Bartender"
 	trim_state = "trim_bartender"
+	sechud_icon_state = SECHUD_BARTENDER
 	extra_access = list(ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_MORGUE)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINERAL_STOREROOM, ACCESS_THEATRE, ACCESS_WEAPONS, ACCESS_SERVICE)
 	config_job = "bartender"
@@ -119,6 +122,7 @@
 /datum/id_trim/job/botanist
 	assignment = "Botanist"
 	trim_state = "trim_botanist"
+	sechud_icon_state = SECHUD_BOTANIST
 	extra_access = list(ACCESS_BAR, ACCESS_KITCHEN)
 	minimal_access = list(ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_SERVICE)
 	config_job = "botanist"
@@ -129,6 +133,7 @@
 	assignment = "Mayor"
 	trim_state = "trim_mayor"
 	config_job = "mayor"
+	sechud_icon_state = SECHUD_CAPTAIN
 	template_access = list(ACCESS_MAYOR, ACCESS_CHANGE_IDS)
 	job = /datum/job/mayor
 
@@ -144,6 +149,7 @@
 /datum/id_trim/job/retail_assistant
 	assignment = "Retail Assistant"
 	trim_state = "trim_cargotechnician"
+	sechud_icon_state = SECHUD_CARGO_TECHNICIAN
 	extra_access = list(ACCESS_QM, ACCESS_MINING, ACCESS_MINING_STATION)
 	minimal_access = list(ACCESS_CARGO, ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MINING, ACCESS_MINERAL_STOREROOM)
 	config_job = "retail_assistant"
@@ -153,6 +159,7 @@
 /datum/id_trim/job/chaplain
 	assignment = "Chaplain"
 	trim_state = "trim_chaplain"
+	sechud_icon_state = SECHUD_CHAPLAIN
 	extra_access = list()
 	minimal_access = list(ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_MORGUE, ACCESS_THEATRE, ACCESS_SERVICE)
 	config_job = "chaplain"
@@ -162,6 +169,7 @@
 /datum/id_trim/job/chemist
 	assignment = "Chemist"
 	trim_state = "trim_chemist"
+	sechud_icon_state = SECHUD_CHEMIST
 	extra_access = list(ACCESS_SURGERY, ACCESS_VIROLOGY)
 	minimal_access = list(ACCESS_CHEMISTRY, ACCESS_MECH_MEDICAL, ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_PHARMACY)
 	config_job = "chemist"
@@ -170,7 +178,9 @@
 
 /datum/id_trim/job/chief_engineer
 	assignment = "Chief Engineer"
+	intern_alt_name = "Chief Engineer-in-Training"
 	trim_state = "trim_chiefengineer"
+	sechud_icon_state = SECHUD_CHIEF_ENGINEER
 	extra_access = list(ACCESS_TELEPORTER)
 	extra_wildcard_access = list()
 	minimal_access = list(ACCESS_ATMOSPHERICS, ACCESS_AUX_BASE, ACCESS_CE, ACCESS_CONSTRUCTION, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_EVA,
@@ -184,6 +194,7 @@
 /datum/id_trim/job/medical_director
 	assignment = "Medical Director"
 	trim_state = "trim_medicaldirector"
+	sechud_icon_state = SECHUD_CHIEF_MEDICAL_OFFICER
 	extra_access = list(ACCESS_TELEPORTER)
 	extra_wildcard_access = list()
 	minimal_access = list(ACCESS_CHEMISTRY, ACCESS_EVA, ACCESS_HEADS, ACCESS_KEYCARD_AUTH, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MEDICAL,
@@ -197,6 +208,7 @@
 /datum/id_trim/job/clown
 	assignment = "Clown"
 	trim_state = "trim_clown"
+	sechud_icon_state = SECHUD_CLOWN
 	extra_access = list()
 	minimal_access = list(ACCESS_THEATRE, ACCESS_SERVICE)
 	config_job = "clown"
@@ -206,6 +218,7 @@
 /datum/id_trim/job/cook
 	assignment = "Cook"
 	trim_state = "trim_cook"
+	sechud_icon_state = SECHUD_COOK
 	extra_access = list(ACCESS_BAR, ACCESS_HYDROPONICS)
 	minimal_access = list(ACCESS_KITCHEN, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_SERVICE)
 	config_job = "cook"
@@ -214,7 +227,13 @@
 
 /datum/id_trim/job/journalist
 	assignment = "Journalist"
+/datum/id_trim/job/cook/chef
+	assignment = "Chef"
+	sechud_icon_state = SECHUD_CHEF
+/datum/id_trim/job/curator
+	assignment = "Curator"
 	trim_state = "trim_curator"
+	sechud_icon_state = SECHUD_CURATOR
 	extra_access = list()
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_LIBRARY, ACCESS_MINING_STATION, ACCESS_SERVICE)
 	config_job = "journalist"
@@ -224,6 +243,7 @@
 /datum/id_trim/job/detective
 	assignment = "Detective"
 	trim_state = "trim_detective"
+	sechud_icon_state = SECHUD_DETECTIVE
 	extra_access = list()
 	minimal_access = list(ACCESS_BRIG, ACCESS_COURT, ACCESS_FORENSICS_LOCKERS, ACCESS_SEC_DOORS,ACCESS_MAINT_TUNNELS, ACCESS_MORGUE,
 					ACCESS_MECH_SECURITY, ACCESS_MINERAL_STOREROOM, ACCESS_WEAPONS)
@@ -244,6 +264,7 @@
 /datum/id_trim/job/geneticist
 	assignment = "Geneticist"
 	trim_state = "trim_geneticist"
+	sechud_icon_state = SECHUD_GENETICIST
 	extra_access = list(ACCESS_ROBOTICS, ACCESS_TECH_STORAGE, ACCESS_XENOBIOLOGY)
 	minimal_access = list(ACCESS_GENETICS, ACCESS_MECH_SCIENCE, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_RESEARCH, ACCESS_RND)
 	config_job = "geneticist"
@@ -252,7 +273,9 @@
 
 /datum/id_trim/job/city_clerk
 	assignment = "City Clerk"
+	intern_alt_name = "Head of Personnel-in-Training"
 	trim_state = "trim_headofpersonnel"
+	sechud_icon_state = SECHUD_HEAD_OF_PERSONNEL
 	extra_access = list()
 	extra_wildcard_access = list()
 	minimal_access = list(ACCESS_AI_UPLOAD, ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_AUX_BASE, ACCESS_BAR, ACCESS_CARGO, ACCESS_CHAPEL_OFFICE,
@@ -269,6 +292,8 @@
 /datum/id_trim/job/chief_of_police
 	assignment = "Chief of Police"
 	trim_state = "trim_headofsecurity"
+	intern_alt_name = "Chief of Police-in-Training"
+	sechud_icon_state = SECHUD_HEAD_OF_SECURITY
 	extra_access = list(ACCESS_TELEPORTER)
 	extra_wildcard_access = list()
 	minimal_access = list(ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_ARMORY, ACCESS_AUX_BASE, ACCESS_BRIG, ACCESS_CONSTRUCTION, ACCESS_COURT,
@@ -293,6 +318,7 @@
 /datum/id_trim/job/janitor
 	assignment = "Janitor"
 	trim_state = "trim_janitor"
+	sechud_icon_state = SECHUD_JANITOR
 	extra_access = list()
 	minimal_access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM, ACCESS_SERVICE)
 	config_job = "janitor"
@@ -302,6 +328,7 @@
 /datum/id_trim/job/lawyer
 	assignment = "Lawyer"
 	trim_state = "trim_lawyer"
+	sechud_icon_state = SECHUD_LAWYER
 	extra_access = list()
 	minimal_access = list(ACCESS_COURT, ACCESS_LAWYER, ACCESS_SEC_DOORS, ACCESS_SERVICE)
 	config_job = "lawyer"
@@ -311,6 +338,7 @@
 /datum/id_trim/job/medical_doctor
 	assignment = "Medical Doctor"
 	trim_state = "trim_medicaldoctor"
+	sechud_icon_state = SECHUD_MEDICAL_DOCTOR
 	extra_access = list(ACCESS_CHEMISTRY, ACCESS_VIROLOGY)
 	minimal_access = list(ACCESS_MECH_MEDICAL, ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_PHARMACY, ACCESS_SURGERY)
 	config_job = "medical_doctor"
@@ -320,6 +348,7 @@
 /datum/id_trim/job/mime
 	assignment = "Mime"
 	trim_state = "trim_mime"
+	sechud_icon_state = SECHUD_MIME
 	extra_access = list()
 	minimal_access = list(ACCESS_THEATRE, ACCESS_SERVICE)
 	config_job = "mime"
@@ -329,9 +358,10 @@
 /datum/id_trim/job/paramedic
 	assignment = "Paramedic"
 	trim_state = "trim_paramedic"
+	sechud_icon_state = SECHUD_PARAMEDIC
 	extra_access = list(ACCESS_SURGERY)
-	minimal_access = list(ACCESS_AUX_BASE, ACCESS_CARGO, ACCESS_CONSTRUCTION, ACCESS_ENGINE, ACCESS_EVA, ACCESS_HYDROPONICS,
-					ACCESS_MAINT_TUNNELS, ACCESS_MECH_MEDICAL, ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_RESEARCH)
+	minimal_access = list(ACCESS_CONSTRUCTION, ACCESS_HYDROPONICS, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MEDICAL,
+					ACCESS_MEDICAL, ACCESS_MINERAL_STOREROOM, ACCESS_MINING, ACCESS_MORGUE, ACCESS_RESEARCH)
 	config_job = "paramedic"
 	template_access = list(ACCESS_MAYOR, ACCESS_MD, ACCESS_CHANGE_IDS)
 	job = /datum/job/paramedic
@@ -339,6 +369,7 @@
 /datum/id_trim/job/prisoner
 	assignment = "Prisoner"
 	trim_state = "trim_prisoner"
+	sechud_icon_state = SECHUD_PRISONER
 	config_job = "prisoner"
 	template_access = list(ACCESS_MAYOR, ACCESS_CC, ACCESS_COP, ACCESS_CHANGE_IDS)
 	job = /datum/job/prisoner
@@ -374,6 +405,7 @@
 /datum/id_trim/job/psychologist
 	assignment = "Psychologist"
 	trim_state = "trim_psychologist"
+	sechud_icon_state = SECHUD_PSYCHOLOGIST
 	extra_access = list()
 	minimal_access = list(ACCESS_MEDICAL, ACCESS_PSYCHOLOGY, ACCESS_SERVICE)
 	config_job = "psychologist"
@@ -383,6 +415,7 @@
 /datum/id_trim/job/quartermaster
 	assignment = "Quartermaster"
 	trim_state = "trim_quartermaster"
+	sechud_icon_state = SECHUD_QUARTERMASTER
 	extra_access = list()
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_CARGO, ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MECH_MINING, ACCESS_MINING_STATION,
 					ACCESS_MINERAL_STOREROOM, ACCESS_MINING, ACCESS_QM, ACCESS_RC_ANNOUNCE, ACCESS_VAULT)
@@ -392,7 +425,9 @@
 
 /datum/id_trim/job/research_director
 	assignment = "Research Director"
+	intern_alt_name = "Research Director-in-Training"
 	trim_state = "trim_researchdirector"
+	sechud_icon_state = SECHUD_RESEARCH_DIRECTOR
 	extra_access = list()
 	extra_wildcard_access = list()
 	minimal_access = list(ACCESS_AI_UPLOAD, ACCESS_AUX_BASE, ACCESS_EVA, ACCESS_GATEWAY, ACCESS_GENETICS, ACCESS_HEADS, ACCESS_KEYCARD_AUTH,
@@ -408,6 +443,7 @@
 /datum/id_trim/job/roboticist
 	assignment = "Roboticist"
 	trim_state = "trim_roboticist"
+	sechud_icon_state = SECHUD_ROBOTICIST
 	extra_access = list(ACCESS_GENETICS, ACCESS_ORDNANCE, ACCESS_ORDNANCE_STORAGE, ACCESS_XENOBIOLOGY)
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_MECH_SCIENCE, ACCESS_MINERAL_STOREROOM, ACCESS_MORGUE, ACCESS_RESEARCH, ACCESS_RND,
 					ACCESS_ROBOTICS, ACCESS_TECH_STORAGE)
@@ -418,6 +454,7 @@
 /datum/id_trim/job/scientist
 	assignment = "Scientist"
 	trim_state = "trim_scientist"
+	sechud_icon_state = SECHUD_SCIENTIST
 	extra_access = list(ACCESS_GENETICS, ACCESS_ROBOTICS)
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_MECH_SCIENCE, ACCESS_MINERAL_STOREROOM, ACCESS_ORDNANCE, ACCESS_ORDNANCE_STORAGE,
 					ACCESS_RESEARCH, ACCESS_RND, ACCESS_XENOBIOLOGY)
@@ -429,6 +466,7 @@
 /datum/id_trim/job/police_officer
 	assignment = "Police Officer"
 	trim_state = "trim_securityofficer"
+	sechud_icon_state = SECHUD_SECURITY_OFFICER
 	extra_access = list(ACCESS_FORENSICS_LOCKERS, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE)
 	minimal_access = list(ACCESS_BRIG, ACCESS_COURT, ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_MECH_SECURITY,
 					ACCESS_MINERAL_STOREROOM, ACCESS_WEAPONS)
@@ -473,6 +511,7 @@
 /datum/id_trim/job/shaft_miner
 	assignment = "Shaft Miner"
 	trim_state = "trim_shaftminer"
+	sechud_icon_state = SECHUD_SHAFT_MINER
 	extra_access = list(ACCESS_CARGO, ACCESS_MAINT_TUNNELS, ACCESS_QM)
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_MAILSORTING, ACCESS_MECH_MINING, ACCESS_MINERAL_STOREROOM, ACCESS_MINING,
 					ACCESS_MINING_STATION)
@@ -489,6 +528,7 @@
 /datum/id_trim/job/district_engineer
 	assignment = "District Engineer"
 	trim_state = "trim_stationengineer"
+	sechud_icon_state = SECHUD_STATION_ENGINEER
 	extra_access = list(ACCESS_ATMOSPHERICS)
 	minimal_access = list(ACCESS_AUX_BASE, ACCESS_CONSTRUCTION, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_EXTERNAL_AIRLOCKS,
 					ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE, ACCESS_MINERAL_STOREROOM, ACCESS_TCOMSAT, ACCESS_TECH_STORAGE)
@@ -499,6 +539,7 @@
 /datum/id_trim/job/virologist
 	assignment = "Virologist"
 	trim_state = "trim_virologist"
+	sechud_icon_state = SECHUD_VIROLOGIST
 	extra_access = list(ACCESS_CHEMISTRY, ACCESS_MORGUE, ACCESS_SURGERY)
 	minimal_access = list(ACCESS_MEDICAL, ACCESS_MECH_MEDICAL, ACCESS_MINERAL_STOREROOM, ACCESS_VIROLOGY)
 	config_job = "virologist"
@@ -508,6 +549,7 @@
 /datum/id_trim/job/warden
 	assignment = "Warden"
 	trim_state = "trim_warden"
+	sechud_icon_state = SECHUD_WARDEN
 	extra_access = list(ACCESS_FORENSICS_LOCKERS, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE)
 	minimal_access = list(ACCESS_ARMORY, ACCESS_BRIG, ACCESS_COURT, ACCESS_MECH_SECURITY, ACCESS_MINERAL_STOREROOM,
 					ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_WEAPONS) // See /datum/job/warden/get_access()

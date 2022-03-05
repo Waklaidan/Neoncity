@@ -396,28 +396,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/central)
-"bf" = (
-/obj/item/storage/belt/security,
-/obj/item/assembly/flash/handheld,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet{
-	icon_state = "sec";
-	name = "police officer's locker";
-	req_access_txt = "201"
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/iron{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/central)
 "bg" = (
 /turf/open/floor/iron/grimy{
 	heat_capacity = 1e+006
@@ -2448,26 +2426,6 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
-/turf/open/floor/iron{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/central)
-"fg" = (
-/obj/machinery/camera/directional/south{
-	c_tag = "Hydroponics";
-	network = list("uo45")
-	},
-/obj/machinery/power/apc/highcap/fifteen_k{
-	locked = 0;
-	name = "Hydroponics APC";
-	pixel_y = -23;
-	start_charge = 100
-	},
-/obj/effect/turf_decal/tile/green,
-/obj/effect/turf_decal/tile/green{
-	dir = 8
-	},
-/obj/structure/cable,
 /turf/open/floor/iron{
 	heat_capacity = 1e+006
 	},
@@ -4671,23 +4629,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
-"jV" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	dir = 1;
-	locked = 0;
-	name = "UO45 Bar APC";
-	pixel_y = 23;
-	start_charge = 100
-	},
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/iron{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/crew_quarters)
 "jW" = (
 /obj/machinery/light/small/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -5522,27 +5463,6 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/gateway)
-"lu" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/obj/item/restraints/handcuffs,
-/obj/item/assembly/flash/handheld,
-/obj/item/reagent_containers/spray/pepper,
-/obj/structure/closet/secure_closet{
-	icon_state = "sec";
-	name = "police officer's locker";
-	req_access_txt = "201"
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/turf/open/floor/iron{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/research)
 "lv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/cable,
@@ -5677,25 +5597,6 @@
 	},
 /obj/machinery/firealarm/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/turf_decal/tile/purple,
-/obj/structure/cable,
-/turf/open/floor/iron/white{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/research)
-"lH" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	locked = 0;
-	name = "UO45 Research Division APC";
-	pixel_y = -23;
-	start_charge = 100
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
-	dir = 4
-	},
 /obj/effect/turf_decal/tile/purple,
 /obj/structure/cable,
 /turf/open/floor/iron/white{
@@ -6196,24 +6097,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/dark{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/gateway)
-"mE" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	locked = 0;
-	name = "UO45 Gateway APC";
-	pixel_y = -23;
-	start_charge = 100
-	},
-/obj/structure/rack,
-/obj/item/clothing/shoes/magboots,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/structure/cable,
-/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark{
 	heat_capacity = 1e+006
 	},
@@ -8803,55 +8686,11 @@
 	},
 /turf/closed/wall/r_wall,
 /area/awaymission/undergroundoutpost45/engineering)
-"rp" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	dir = 8;
-	name = "UO45 Engineering APC";
-	pixel_x = -25;
-	req_access_txt = "201";
-	start_charge = 100
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/structure/cable,
-/turf/open/floor/iron{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/engineering)
 "rq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /obj/machinery/meter/atmos{
 	id_tag = "UO45_distro_meter";
 	name = "Distribution Loop"
-	},
-/turf/open/floor/iron{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/engineering)
-"rr" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1
-	},
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet,
-/obj/structure/closet/secure_closet{
-	icon_state = "sec";
-	name = "police officer's locker";
-	req_access_txt = "201"
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/machinery/button/door/directional/east{
-	desc = "A remote control switch for the engineering security doors.";
-	id = "UO45_Engineering";
-	name = "Engineering Lockdown";
-	req_access_txt = "201"
 	},
 /turf/open/floor/iron{
 	heat_capacity = 1e+006
@@ -9365,32 +9204,6 @@
 	req_access_txt = "201"
 	},
 /turf/open/floor/carpet{
-	heat_capacity = 1e+006
-	},
-/area/awaymission/undergroundoutpost45/mining)
-"sj" = (
-/obj/machinery/power/apc/highcap/fifteen_k{
-	locked = 0;
-	name = "UO45 Mining APC";
-	pixel_y = -23;
-	start_charge = 100
-	},
-/obj/machinery/light/small/directional/south,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/engineering_personal{
-	icon_state = "mining";
-	locked = 0;
-	name = "miner's equipment";
-	req_access = null;
-	req_access_txt = "201"
-	},
-/obj/item/storage/backpack/satchel/eng,
-/obj/item/clothing/gloves/fingerless,
-/obj/effect/turf_decal/tile/brown,
-/obj/structure/cable,
-/turf/open/floor/iron{
 	heat_capacity = 1e+006
 	},
 /area/awaymission/undergroundoutpost45/mining)
@@ -12784,6 +12597,26 @@
 	temperature = 363.9
 	},
 /area/awaymission/undergroundoutpost45/caves)
+"yY" = (
+/obj/machinery/camera/directional/south{
+	c_tag = "Hydroponics";
+	network = list("uo45")
+	},
+/obj/machinery/power/apc/highcap/ten_k{
+	locked = 0;
+	name = "Hydroponics APC";
+	pixel_y = -25;
+	start_charge = 100
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/central)
 "DJ" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/effect/turf_decal/stripes/asteroid/line{
@@ -12795,12 +12628,118 @@
 	temperature = 363.9
 	},
 /area/awaymission/undergroundoutpost45/caves)
+"Fi" = (
+/obj/machinery/power/apc/highcap/ten_k{
+	locked = 0;
+	name = "UO45 Research Division APC";
+	pixel_y = -25;
+	start_charge = 100
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/structure/cable,
+/turf/open/floor/iron/white{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/research)
+"FR" = (
+/obj/machinery/power/apc/highcap/ten_k{
+	dir = 1;
+	locked = 0;
+	name = "UO45 Bar APC";
+	pixel_y = 25;
+	start_charge = 100
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/crew_quarters)
+"Kq" = (
+/obj/machinery/power/apc/highcap/ten_k{
+	locked = 0;
+	name = "UO45 Mining APC";
+	pixel_y = -25;
+	start_charge = 100
+	},
+/obj/machinery/light/small/directional/south,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/engineering_personal{
+	icon_state = "mining";
+	locked = 0;
+	name = "miner's equipment";
+	req_access = null;
+	req_access_txt = "201"
+	},
+/obj/item/storage/backpack/satchel/eng,
+/obj/item/clothing/gloves/fingerless,
+/obj/effect/turf_decal/tile/brown,
+/obj/structure/cable,
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/mining)
 "KE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
 /turf/open/floor/circuit/telecomms/server,
 /area/awaymission/undergroundoutpost45/research)
+"KW" = (
+/obj/machinery/power/apc/highcap/ten_k{
+	dir = 8;
+	name = "UO45 Engineering APC";
+	pixel_x = -25;
+	req_access_txt = "201";
+	start_charge = 100
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/engineering)
+"Lf" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/item/clothing/suit/armor/vest,
+/obj/item/clothing/head/helmet,
+/obj/structure/closet/secure_closet{
+	icon_state = "sec";
+	name = "police officer's locker";
+	req_access_txt = "201"
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/machinery/button/door/directional/east{
+	desc = "A remote control switch for the engineering security doors.";
+	id = "UO45_Engineering";
+	name = "Engineering Lockdown";
+	req_access_txt = "201"
+	},
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/engineering)
 "OF" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/effect/turf_decal/stripes/asteroid/line,
@@ -12810,6 +12749,28 @@
 	temperature = 363.9
 	},
 /area/awaymission/undergroundoutpost45/caves)
+"TL" = (
+/obj/item/storage/belt/security,
+/obj/item/assembly/flash/handheld,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/secure_closet{
+	icon_state = "sec";
+	name = "police officer's locker";
+	req_access_txt = "201"
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/central)
 "UM" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/effect/turf_decal/stripes/asteroid/line{
@@ -12821,6 +12782,45 @@
 	temperature = 363.9
 	},
 /area/awaymission/undergroundoutpost45/caves)
+"Vc" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/item/restraints/handcuffs,
+/obj/item/assembly/flash/handheld,
+/obj/item/reagent_containers/spray/pepper,
+/obj/structure/closet/secure_closet{
+	icon_state = "sec";
+	name = "police officer's locker";
+	req_access_txt = "201"
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/iron{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/research)
+"WW" = (
+/obj/machinery/power/apc/highcap/ten_k{
+	locked = 0;
+	name = "UO45 Gateway APC";
+	pixel_y = -25;
+	start_charge = 100
+	},
+/obj/structure/rack,
+/obj/item/clothing/shoes/magboots,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/iron/dark{
+	heat_capacity = 1e+006
+	},
+/area/awaymission/undergroundoutpost45/gateway)
 "YK" = (
 /obj/structure/chair/stool/directional/west,
 /obj/effect/turf_decal/tile/bar,
@@ -33007,7 +33007,7 @@ gv
 gK
 lr
 iP
-mE
+WW
 gK
 ad
 ad
@@ -38402,7 +38402,7 @@ gX
 jO
 kk
 kP
-lH
+Fi
 gy
 kd
 nk
@@ -40721,7 +40721,7 @@ mT
 nq
 nV
 nV
-lu
+Vc
 pL
 qp
 qV
@@ -41721,7 +41721,7 @@ cE
 cW
 dj
 ae
-bf
+TL
 eg
 cz
 eK
@@ -47122,7 +47122,7 @@ aS
 aS
 aS
 aS
-fg
+yY
 an
 fJ
 eJ
@@ -47651,7 +47651,7 @@ fN
 iI
 fO
 fO
-jV
+FR
 ks
 lk
 fO
@@ -47676,7 +47676,7 @@ wg
 wu
 wD
 wP
-sj
+Kq
 vL
 xn
 xs
@@ -52807,7 +52807,7 @@ rn
 sf
 sS
 tB
-rr
+Lf
 qb
 uY
 vy
@@ -53317,7 +53317,7 @@ oU
 pz
 qb
 qE
-rp
+KW
 sh
 sU
 tC
