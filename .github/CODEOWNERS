@@ -3,141 +3,143 @@
 # This list is alphabetized by User -> Filename and separated into sections for Maintainers/Contributors KEEP IT THAT WAY
 # In the event that people are to be informed of changes
 # to the same file or dir, add them to the end of under Multiple Owners
-
+/*
 # MAINTAINERS
 
 # Cobby
-/code/modules/reagents/ @ExcessiveUseOfCobblestone
-/code/modules/research/designs/medical_designs.dm @ExcessiveUseOfCobblestone
-/code/game/objects/items/storage/firstaid.dm @ExcessiveUseOfCobblestone
+/code/modules/reagents/ @GeneriedJenelle
+/code/modules/research/designs/medical_designs.dm @GeneriedJenelle
+/code/game/objects/items/storage/firstaid.dm @GeneriedJenelle
 
-# Cyberboss
+# GeneriedJenelle
 
-/code/__HELPERS/jatum.dm @Cyberboss
-/code/controllers/subsystem/atoms.dm @Cyberboss
-/code/controllers/subsystem/mapping.dm @Cyberboss
-/code/controllers/globals.dm @Cyberboss
-/code/datums/helper_datums/getrev.dm @Cyberboss
-/code/datums/map_config.dm @Cyberboss
-/code/datums/forced_movement.dm @Cyberboss
-/code/datums/holocall.dm @Cyberboss
-/code/modules/admin/verbs/adminhelp.dm @Cyberboss
-/code/modules/admin/verbs/adminpm.dm @Cyberboss
-/code/modules/mapping/ @Cyberboss
+/code/__HELPERS/jatum.dm @GeneriedJenelle
+/code/controllers/subsystem/atoms.dm @GeneriedJenelle
+/code/controllers/subsystem/mapping.dm @GeneriedJenelle
+/code/controllers/globals.dm @GeneriedJenelle
+/code/datums/helper_datums/getrev.dm @GeneriedJenelle
+/code/datums/map_config.dm @GeneriedJenelle
+/code/datums/forced_movement.dm @GeneriedJenelle
+/code/datums/holocall.dm @GeneriedJenelle
+/code/modules/admin/verbs/adminhelp.dm @GeneriedJenelle
+/code/modules/admin/verbs/adminpm.dm @GeneriedJenelle
+/code/modules/mapping/ @GeneriedJenelle
 
-# Jordie0608
+# GeneriedJenelle
 
-/SQL/ @Jordie0608
-/code/controllers/subsystem/dbcore.dm @Jordie0608
-/tools/SQLAlertEmail/ @Jordie0608
+/SQL/ @GeneriedJenelle
+/code/controllers/subsystem/dbcore.dm @GeneriedJenelle
+/tools/SQLAlertEmail/ @GeneriedJenelle
 
 # Kylerace
 /code/__DEFINES/spatial_gridmap.dm @Kylerace
 /code/controllers/subsystem/spatial_gridmap.dm @Kylerace
 
-# LemonInTheDark
+# GeneriedJenelle
 
-/code/__DEFINES/atmospherics/ @LemonInTheDark
-/code/modules/atmospherics/ @LemonInTheDark
+/code/__DEFINES/atmospherics/ @GeneriedJenelle
+/code/modules/atmospherics/ @GeneriedJenelle
 
-# Mothblocks
+# GeneriedJenelle
 
-/code/game/gamemodes/ @Mothblocks
-/code/modules/autowiki/ @Mothblocks
-/code/modules/unit_tests/ @Mothblocks
-/code/modules/client/preferences/ @Mothblocks
-/code/modules/preferences.dm @Mothblocks
-/code/modules/preferences_menu.dm @Mothblocks
-/code/modules/preferences_savefile.dm @Mothblocks
-/tgui/packages/tgui/interfaces/PreferencesMenu/ @Mothblocks
+/code/game/gamemodes/ @GeneriedJenelle
+/code/modules/autowiki/ @GeneriedJenelle
+/code/modules/unit_tests/ @GeneriedJenelle
+/code/modules/client/preferences/ @GeneriedJenelle
+/code/modules/preferences.dm @GeneriedJenelle
+/code/modules/preferences_menu.dm @GeneriedJenelle
+/code/modules/preferences_savefile.dm @GeneriedJenelle
+/tgui/packages/tgui/interfaces/PreferencesMenu/ @GeneriedJenelle
 
-# MrMelbert
+# GeneriedJenelle
 
-/code/modules/hydroponics/ @MrMelbert
+/code/modules/hydroponics/ @GeneriedJenelle
 
-# ninjanomnom
+# generiedjenelle
 
-/code/__DEFINES/dcs/ @ninjanomnom
-/code/controllers/subsystem/dcs.dm @ninjanomnom
-/code/controllers/subsystem/shuttle.dm @ninjanomnom
-/code/datums/components/ @ninjanomnom
-/code/datums/elements/ @ninjanomnom
-/code/modules/shuttle/ @ninjanomnom
+/code/__DEFINES/dcs/ @generiedjenelle
+/code/controllers/subsystem/dcs.dm @generiedjenelle
+/code/controllers/subsystem/shuttle.dm @generiedjenelle
+/code/datums/components/ @generiedjenelle
+/code/datums/elements/ @generiedjenelle
+/code/modules/shuttle/ @generiedjenelle
 
-# Ryll-Ryll/Shaps
+# GeneriedJenelle/Shaps
 
-/code/datums/wounds/ @Ryll-Ryll
-/code/datums/status_effects/wound_effects.dm @Ryll-Ryll
-/code/__DEFINES/wounds.dm @Ryll-Ryll
+/code/datums/wounds/ @GeneriedJenelle
+/code/datums/status_effects/wound_effects.dm @GeneriedJenelle
+/code/__DEFINES/wounds.dm @GeneriedJenelle
 
-# stylemistake
+# generiedjenelle
 
-/code/__DEFINES/chat.dm @stylemistake
-/code/__DEFINES/tgui.dm @stylemistake
-/code/controllers/subsystem/chat.dm @stylemistake
-/code/controllers/subsystem/tgui.dm @stylemistake
-/code/modules/tgchat @stylemistake
-/code/modules/tgui @stylemistake
-/code/modules/tgui_panel @stylemistake
-/tgui @stylemistake
+/code/__DEFINES/chat.dm @generiedjenelle
+/code/__DEFINES/tgui.dm @generiedjenelle
+/code/controllers/subsystem/chat.dm @generiedjenelle
+/code/controllers/subsystem/tgui.dm @generiedjenelle
+/code/modules/tgchat @generiedjenelle
+/code/modules/tgui @generiedjenelle
+/code/modules/tgui_panel @generiedjenelle
+/tgui @generiedjenelle
 
-# tralezab
+# generiedjenelle
 
-/code/datums/ai/ @tralezab
+/code/datums/ai/ @generiedjenelle
 
-# Watermelon914
+# GeneriedJenelle
 
-/code/modules/wiremod/ @Watermelon914
+/code/modules/wiremod/ @GeneriedJenelle
 
 # CONTRIBUTORS
 
-# Fikou
+# GeneriedJenelle
 
-/code/modules/mod/ @Fikou
-/code/modules/ruins/lavaland_ruin_code.dm @Fikou
-/code/modules/ruins/lavalandruin_code/ @Fikou
-/code/modules/mining/ @Fikou
-/code/modules/awaymissions/ @Fikou
+/code/modules/mod/ @GeneriedJenelle
+/code/modules/ruins/lavaland_ruin_code.dm @GeneriedJenelle
+/code/modules/ruins/lavalandruin_code/ @GeneriedJenelle
+/code/modules/mining/ @GeneriedJenelle
+/code/modules/awaymissions/ @GeneriedJenelle
 
-# Ghilker
+# GeneriedJenelle
 
-/code/__DEFINES/atmospherics/ @Ghilker
-/code/modules/atmospherics/ @Ghilker
+/code/__DEFINES/atmospherics/ @GeneriedJenelle
+/code/modules/atmospherics/ @GeneriedJenelle
 
-# JohnFulpWizard
+# GeneriedJenelle
 
-/code/modules/mob/living/simple_animal/bot/ @JohnFulpWillard
-/goon/ @JohnFulpWillard
+/code/modules/mob/living/simple_animal/bot/ @GeneriedJenelle
+/goon/ @GeneriedJenelle
 
-# MrStonedOne
+# GeneriedJenelle
 
-/SQL/database_changelog.txt @MrStonedOne
-/code/__DEFINES/MC.dm @MrStonedOne
-/code/controllers/admin.dm @MrStonedOne
-/code/controllers/master.dm @MrStonedOne
-/code/controllers/failsafe.dm @MrStonedOne
-/code/controllers/subsystem.dm @MrStonedOne
-/code/controllers/subsystem/timer.dm @MrStonedOne
-/code/controllers/configuration/entries @MrStonedOne
-/config/ @MrStonedOne
+/SQL/database_changelog.txt @GeneriedJenelle
+/code/__DEFINES/MC.dm @GeneriedJenelle
+/code/controllers/admin.dm @GeneriedJenelle
+/code/controllers/master.dm @GeneriedJenelle
+/code/controllers/failsafe.dm @GeneriedJenelle
+/code/controllers/subsystem.dm @GeneriedJenelle
+/code/controllers/subsystem/timer.dm @GeneriedJenelle
+/code/controllers/configuration/entries @GeneriedJenelle
+/config/ @GeneriedJenelle
 
-# NamelessFairy
+# GeneriedJenelle
 
-/code/modules/capture_the_flag/ @NamelessFairy
-/_maps/map_files/CTF/ @NamelessFairy
+/code/modules/capture_the_flag/ @GeneriedJenelle
+/_maps/map_files/CTF/ @GeneriedJenelle
 
 # MULTIPLE OWNERS
 
-/icons/ @Twaticus @Krysonism @Imaginos16
-/code/controllers/subsystem/air.dm @LemonInTheDark @MrStonedOne
-/code/modules/jobs/job_types/chief_medical_officer.dm @ExcessiveUseOfCobblestone @Ryll-Ryll
-/code/modules/jobs/job_types/medical_doctor.dm @ExcessiveUseOfCobblestone @Ryll-Ryll
-/code/modules/jobs/job_types/paramedic.dm @ExcessiveUseOfCobblestone @Ryll-Ryll
-/code/modules/surgery/ @ExcessiveUseOfCobblestone @Ryll-Ryll
-/_maps/ @EOBGames @ShizCalev @Maurukas
-/tools/build/ @MrStonedOne @stylemistake
-/tools/LinuxOneShot/ @Cyberboss @MrStonedOne
-/tools/tgs4_scripts/ @Cyberboss @MrStonedOne
+/icons/ @GeneriedJenelle @GeneriedJenelle @GeneriedJenelle
+/code/controllers/subsystem/air.dm @GeneriedJenelle @GeneriedJenelle
+/code/modules/jobs/job_types/chief_medical_officer.dm @GeneriedJenelle @GeneriedJenelle
+/code/modules/jobs/job_types/medical_doctor.dm @GeneriedJenelle @GeneriedJenelle
+/code/modules/jobs/job_types/paramedic.dm @GeneriedJenelle @GeneriedJenelle
+/code/modules/surgery/ @GeneriedJenelle @GeneriedJenelle
+/_maps/ @GeneriedJenelle @GeneriedJenelle @GeneriedJenelle
+/tools/build/ @GeneriedJenelle @GeneriedJenelle
+/tools/LinuxOneShot/ @GeneriedJenelle @GeneriedJenelle
+/tools/tgs4_scripts/ @GeneriedJenelle @GeneriedJenelle
 
 #SIC SEMPER TYRANNIS
-/code/modules/hydroponics/grown/citrus.dm @optimumtact
+/code/modules/hydroponics/grown/citrus.dm @GeneriedJenelle
+
+*/
