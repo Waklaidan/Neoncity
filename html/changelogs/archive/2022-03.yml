@@ -31,3 +31,33 @@
   tralezab:
   - bugfix: Fixes a weird bug with spellbooks that may have been locking some spell
       options when you did some specific actions
+2022-03-05:
+  Fikou:
+  - qol: modsuit radial icons highlight on extended pieces
+  - bugfix: modsuit clamp can carry wrapped crates
+  - bugfix: modsuit activation is no longer affected by do after slowdowns
+  - bugfix: lobstrosities charge now
+  GoblinBackwards:
+  - bugfix: Robotic basic and simple mobs are now damaged by EMPs.
+  LemonInTheDark:
+  - qol: Pushing off something in space will no longer cause it to be delayed for
+      half a second before drifting properly. Should look nicer now
+  - bugfix: Fixed being able to push "off" something you're moving towards, allowing
+      for infinite movement in one direction in space, at your walk speed
+  Nari Harimoto:
+  - imageadd: New thruster sprites to allow for in-wall designs
+  - bugfix: removed cycle helpers from 2 random tram maint airlocks that arent meant
+      to cycle (solo airlocks) and a duplicated APC in tram maint
+  - expansion: the tram now has new walls! they are structures that function like
+      walls so as to be built on the tram, create and deconstruct via the new tram
+      girder (screwdriver on the girder to deconstruct, there is no displaced version
+      ie wrench)
+  cacogen:
+  - balance: Hand mining weak turfs (i.e. snow) is now affected by mining level (so
+      legendary would take 7.5 seconds instead of 15)
+  - qol: Multiple people can now attempt to manually mine the same mineral turf
+  - qol: If you fail to manually mine a turf you can try again immediately instead
+      of having to wait for the cooldown to end
+  - bugfix: You can no longer mine a snow turf by hand if you're already doing it
+  - code_imp: Uses variables and time defines for mining speeds instead of deciseconds
+      and magic numbers
