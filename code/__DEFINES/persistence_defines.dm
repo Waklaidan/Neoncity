@@ -4,9 +4,12 @@
 #define PERSISTENT_PHOTO_DIRECTORY "data/persistent/images/photos/"
 #define PERSISTENT_MAP_DIRECTORY "data/persistent/maps/"
 #define PERSISTENT_OBJECT_DIRECTORY "data/persistent/objects/"
+#define PERSISTENT_LIST_DIRECTORY "data/persistent/lists/"
 
 // Persistence types
-#define PERSISTENCE_IMAGE 1
-#define PERSISTENCE_PHOTO 2
-#define PERSISTENCE_OBJECT 3
-#define PERSISTENCE_MAP 4
+#define PERSISTENCE_IMAGE "image"
+#define PERSISTENCE_PHOTO "photo"
+#define PERSISTENCE_OBJECT "object"
+#define PERSISTENCE_MAP "map"
+#define PERSISTENCE_CHARACTER "character"
+#define PERSISTENCE_LIST "list"

@@ -7,7 +7,7 @@
 
 /datum/persistent_datum
 	var/name = "Persistent Datum"
-	var/id = null
+	var/id = ""
 	var/path = PERSISTENT_DIRECTORY
 
 	var/prefix = null
@@ -16,7 +16,7 @@
 /datum/persistent_datum/proc/save_persistent_data(input, force_id)
 	return
 
-/datum/persistent_datum/proc/load_persistent_data(out)
+/datum/persistent_datum/proc/load_persistent_data(out, meta1, meta2)
 	return
 
 // Checks if the full path actually exists.
@@ -36,5 +36,11 @@
 
 /datum/persistent_datum/proc/generate_unique_code()
 	return unique_code(prefix)
+
+/datum/persistent_datum/proc/on_world_save()
+	return
+
+/datum/persistent_datum/proc/on_world_load()
+	return
 
 

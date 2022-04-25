@@ -11,7 +11,8 @@
 
 /obj/item/storage/Initialize(mapload)
 	. = ..()
-	PopulateContents()
+	if(!has_been_saved())
+		PopulateContents()
 	for (var/obj/item/item in src)
 		item.item_flags |= IN_STORAGE
 

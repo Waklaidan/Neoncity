@@ -39,7 +39,7 @@
 	if(!bullet_cost)
 		base_cost = SSmaterials.FindOrCreateMaterialCombo(custom_materials, 0.1)
 		bullet_cost = SSmaterials.FindOrCreateMaterialCombo(custom_materials, 0.9 / max_ammo)
-	if(!start_empty)
+	if(!start_empty && !has_been_saved())
 		top_off(starting=TRUE)
 
 /obj/item/ammo_box/add_weapon_description()

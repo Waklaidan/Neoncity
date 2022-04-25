@@ -239,3 +239,11 @@
 
 		if (preference.is_randomizable())
 			preference.apply_to_human(src, preference.create_random_value(preferences))
+
+///returns a human by unique_id
+/proc/get_human_by_ckey(unique_id)
+	if(!unique_id)
+		return
+	for(var/mob/living/carbon/human/H in GLOB.player_list)
+		if(H.unique_id == unique_id)
+			return H

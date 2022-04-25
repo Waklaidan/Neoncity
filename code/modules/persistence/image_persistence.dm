@@ -29,10 +29,10 @@
 
 	if(isatom(input))
 		var/obj/O = input
-		return build_composite_icon(O)
+		return O.get_image_for_saving()
 
 // returns the image id in case you need it to refer to somewhere else.
-/datum/persistent_datum/image/save_persistent_data(input, force_id)
+/datum/persistent_datum/image/save_persistent_data(input, force_id, overwrite_obj_id)
 	. = ..()
 	if(!input)
 		return FALSE
@@ -40,8 +40,11 @@
 	var/image = get_image(input)
 
 	var/full_path = get_full_path(image_id)
-	var/icon/image_to_save = icon(image, dir = SOUTH, frame = 1)
-	fcopy(image_to_save, full_path)
+	fcopy(image, full_path)
+
+	if(overwrite_obj_id && isobj(input))
+		var/obj/O = input
+		O.image_id = image_id
 
 	return image_id
 
