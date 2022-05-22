@@ -924,6 +924,34 @@ world
 	flat_icon.AddAlphaMask(alpha_mask)//Finally, let's mix in a distortion effect.
 	return flat_icon
 
+//getFlatIcon but generates an icon that can face ALL four directions. The only four.
+/proc/getCompoundIcon(atom/A)
+	var/icon/north = getFlatIcon(A,defdir=NORTH)
+	var/icon/south = getFlatIcon(A,defdir=SOUTH)
+	var/icon/east = getFlatIcon(A,defdir=EAST)
+	var/icon/west = getFlatIcon(A,defdir=WEST)
+
+	//Starts with a blank icon because of byond bugs.
+	var/icon/full = icon('icons/effects/effects.dmi', "icon_state"="nothing")
+
+	full.Insert(north,dir=NORTH)
+	full.Insert(south,dir=SOUTH)
+	full.Insert(east,dir=EAST)
+	full.Insert(west,dir=WEST)
+	qdel(north)
+	qdel(south)
+	qdel(east)
+	qdel(west)
+	return full
+
+//For photos
+/proc/build_composite_icon(atom/A)
+	var/icon/composite = icon(A.icon, A.icon_state, A.dir, 1)
+	for(var/O in A.overlays)
+		var/image/I = O
+		composite.Blend(icon(I.icon, I.icon_state, I.dir, 1), ICON_OVERLAY)
+	return composite
+
 //What the mob looks like as animated static
 //By vg's ComicIronic
 /proc/getStaticIcon(icon/A, safety = TRUE)

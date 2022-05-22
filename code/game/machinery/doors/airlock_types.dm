@@ -168,7 +168,6 @@
 
 /obj/machinery/door/airlock/gold
 	name = "gold airlock"
-	icon = 'icons/obj/doors/airlocks/station/gold.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_gold
 
 /obj/machinery/door/airlock/gold/glass
@@ -177,7 +176,6 @@
 
 /obj/machinery/door/airlock/silver
 	name = "silver airlock"
-	icon = 'icons/obj/doors/airlocks/station/silver.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_silver
 
 /obj/machinery/door/airlock/silver/glass
@@ -186,7 +184,6 @@
 
 /obj/machinery/door/airlock/diamond
 	name = "diamond airlock"
-	icon = 'icons/obj/doors/airlocks/station/diamond.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_diamond
 	normal_integrity = 1000
 	explosion_block = 2
@@ -198,7 +195,6 @@
 
 /obj/machinery/door/airlock/uranium
 	name = "uranium airlock"
-	icon = 'icons/obj/doors/airlocks/station/uranium.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_uranium
 	var/last_event = 0
 	//Is this airlock actually radioactive?
@@ -233,7 +229,6 @@
 /obj/machinery/door/airlock/plasma
 	name = "plasma airlock"
 	desc = "No way this can end badly."
-	icon = 'icons/obj/doors/airlocks/station/plasma.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_plasma
 	material_flags = MATERIAL_EFFECTS
 	material_modifier = 0.25
@@ -262,7 +257,6 @@
 
 /obj/machinery/door/airlock/sandstone
 	name = "sandstone airlock"
-	icon = 'icons/obj/doors/airlocks/station/sandstone.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_sandstone
 
 /obj/machinery/door/airlock/sandstone/glass
@@ -271,7 +265,6 @@
 
 /obj/machinery/door/airlock/wood
 	name = "wooden airlock"
-	icon = 'icons/obj/doors/airlocks/station/wood.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_wood
 
 /obj/machinery/door/airlock/wood/glass

@@ -73,7 +73,8 @@
 		addtimer(CALLBACK(src, .proc/take_contents, TRUE), 0)
 	. = ..()
 	update_appearance()
-	PopulateContents()
+	if(!has_been_saved())
+		PopulateContents()
 	if(QDELETED(src)) //It turns out populate contents has a 1 in 100 chance of qdeling src on /obj/structure/closet/emcloset
 		return //Why
 	var/static/list/loc_connections = list(

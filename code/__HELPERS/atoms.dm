@@ -310,6 +310,11 @@ rough example of the "cone" made by the 3 dirs checked
 		if(location == src)
 			return TRUE
 
+///Allows you to set an icon to an icon/image. can be overridden.
+/atom/proc/set_new_image(icon/I)
+	icon = I
+	return TRUE
+
 ///A do nothing proc
 /proc/pass(...)
 	return

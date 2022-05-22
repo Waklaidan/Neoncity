@@ -13,6 +13,8 @@
 	var/smoothing
 	/// The overlay applied by this decal to the target.
 	var/mutable_appearance/pic
+	/// Key that's used to make it easier for the persistence system to pick up on the decal.
+	var/list/persistence_key = list()
 
 /// Remove old decals and apply new decals after rotation as necessary
 /datum/controller/subsystem/processing/dcs/proc/rotate_decals(datum/source, old_dir, new_dir)
@@ -66,7 +68,7 @@
 
 
 
-/datum/element/decal/Attach(atom/target, _icon, _icon_state, _dir, _plane=FLOAT_PLANE, _layer=FLOAT_LAYER, _alpha=255, _color, _smoothing, _cleanable=FALSE, _description, mutable_appearance/_pic)
+/datum/element/decal/Attach(atom/target, _icon, _icon_state, _dir, _plane=FLOAT_PLANE, _layer=FLOAT_LAYER, _alpha=255, _color, _smoothing, _cleanable=FALSE, _description, mutable_appearance/_pic, decal_type)
 	. = ..()
 	if(!isatom(target))
 		return ELEMENT_INCOMPATIBLE
@@ -79,6 +81,10 @@
 	directional = _dir
 	base_icon_state = _icon_state
 	smoothing = _smoothing
+
+	persistence_key = list("decal_type" = "[decal_type]",
+							"dir" = "[_dir]",
+							"color" = "[_color]")
 
 	RegisterSignal(target,COMSIG_ATOM_UPDATE_OVERLAYS,.proc/apply_overlay, TRUE)
 	if(target.flags_1 & INITIALIZED_1)

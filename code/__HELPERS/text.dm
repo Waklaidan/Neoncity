@@ -1038,18 +1038,20 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 /proc/unique_code(prefix)
 	var/unique_code = ""
 
-	var/list/c = list("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
+	var/list/c = ALL_LETTERS
 	var/l = c.len
 
 	var/t = world.timeofday
 	for(var/_ = 1 to 4)
 		unique_code = "[c[(t % l) + 1]][unique_code]"
 		t = round(t / l)
-	unique_code = "-[unique_code]"
 	t = round(world.realtime / (10 * 60 * 60 * 24))
 	for(var/_ = 1 to 3)
-		unique_code = "[prefix ? "[prefix]-" : ""][c[(t % l) + 1]][unique_code][rand(0,9999)]"
+		unique_code = "[c[(t % l) + 1]][unique_code][rand(0,99)]"
 		t = round(t / l)
+
+	if(prefix)
+		unique_code = "[prefix][unique_code]"
 
 	return unique_code
 
