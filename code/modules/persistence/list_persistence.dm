@@ -10,7 +10,11 @@
 	id = PERSISTENCE_LIST
 	path = PERSISTENT_LIST_DIRECTORY
 
-/datum/persistent_datum/list/save_persistent_data(list/input, force_id)
+	var/provided_list = list()
+
+/datum/persistent_datum/list/save_persistent_data(force_id, list/input)
+	if(LAZYLEN(provided_list))
+		input = provided_list
 	if(!islist(input))
 		return
 	var/list_id = force_id ? force_id : generate_unique_code()

@@ -9,44 +9,49 @@
 	var/area/provided_area
 
 // returns the image id in case you need it to refer to somewhere else.
-/datum/persistent_datum/map/save_persistent_data(list/turfs_list, forced_id)
+/datum/persistent_datum/map/save_persistent_data(forced_id, list/turfs_list)
 	. = ..()
-	turfs_list += provided_turfs
+	if(LAZYLEN(provided_turfs))
+		turfs_list += provided_turfs
 	if(provided_area)
 		for(var/turf/T in provided_area)
 			turfs_list += T
 
 	var/map_id = forced_id ? forced_id : generate_unique_code()
-	return save_map_turfs(turfs_list, force_id = forced_id, path_to_use = get_full_path(map_id))
+	return save_map_turfs(turfs_list, path_to_use = get_full_path(map_id))
 
 /datum/persistent_datum/load_persistent_data(map_id, turf/force_start_turf)
 	. = ..()
 
 	return load_map_turfs(get_full_path(map_id), force_start_turf)
 
-/proc/save_map_turfs(list/turfs_list, force_id, path_to_use)
+/proc/save_map_turfs(list/turfs_list, path_to_use)
+	to_chat(world, span_warning("DEBUG: Turfs list has [turfs_list.len] to save at [path_to_use]")) // REMOVE
 
 	if(!islist(turfs_list))
 		CRASH("No turfs to save.")
-
+		to_chat(world, span_warning("FAILED: no turfs to save.")) // REMOVE
 
 	var/list/first_turf_coordinates = list() //doesn't need to be saved, but just in case
 	var/turf/first_turf = null
-	var/list/map_metadata = list() // just some useful map details, for debugging and stats.
 
-	var/list/complete_map_data = list()
 	var/list/all_objs = list()
 
 	var/atom_id = 0
 	var/list/full_turf_data = list()
 
+
+	// Saving all turfs starts here.
 	for(var/atom/A in turfs_list)
 		if(!A.can_save())
+			to_chat(world, span_warning("FAILED: [A] can't save.")) // REMOVE
 			continue
+		to_chat(world, span_warning("DEBUG: Atom id is now [atom_id].")) // REMOVE
 
 		atom_id++
 		var/list/turf_data = list()
 		var/turf_id = unique_code()
+		to_chat(world, span_warning("DEBUG: Turf id is now [turf_id].")) // REMOVE
 		turf_data = A.get_full_persistent_object_data(turf_id)
 
 		if(1 == atom_id)
@@ -66,6 +71,11 @@
 		var/list/internal_objs = A.get_saveable_contents()
 		all_objs |= internal_objs
 
+	// Saving all turfs ends here.
+
+
+	var/list/complete_map_data = list()
+	var/list/map_metadata = list() // just some useful map details, for debugging and stats.
 
 	map_metadata["turf_count"] = turfs_list.len
 	map_metadata["objs_count"] = all_objs.len
@@ -92,9 +102,13 @@
 
 	var/start_turf_coordinates = map_json["first_turf_coordinates"]
 
-	var/turf/start_turf = locate(start_turf_coordinates[1], start_turf_coordinates[2], start_turf_coordinates[3])
+	var/turf/start_turf
+
 	if(isturf(force_start_turf))
 		start_turf = force_start_turf
+	else
+		start_turf = locate(start_turf_coordinates[1], start_turf_coordinates[2], start_turf_coordinates[3])
+
 	if(!start_turf)
 		CRASH("Unable to find starting turf.")
 
@@ -122,3 +136,9 @@
 		all_spawned_atoms["[spawned_atom.persistent_atom_id]"] = spawned_atom
 
 	return TRUE
+
+/datum/persistent_datum/map/buildmode
+	name = "Buildmode Map Persistence"
+	id = PERSISTENCE_MAP_BUILDMODE
+	path = PERSISTENT_MAP_BUILDMODE_DIRECTORY
+	prefix = "MAP_BUILDMODE_"
