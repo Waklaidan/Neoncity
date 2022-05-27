@@ -33,6 +33,10 @@
 	if(!isturf(object))
 		return
 
+	if(!map_id)
+		to_chat(usr, "No map id found for the provided id, create one first.")
+		return
+
 	var/turf/T = object
 
 	if(LAZYACCESS(modifiers, LEFT_CLICK))
