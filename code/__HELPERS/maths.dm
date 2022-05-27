@@ -133,3 +133,9 @@
 			return "centuple"
 		else //It gets too tedious to use latin prefixes from here.
 			return "[number]-tuple"
+
+//Returns whether or not A is the middle most value
+/proc/InRange(A, lower, upper)
+	if(A < lower) return 0
+	if(A > upper) return 0
+	return 1
