@@ -549,7 +549,7 @@
 #define KEYBYINDEX(L, index) (((index <= length(L)) && (index > 0)) ? L[index] : null)
 
 //Returns list element or null. Should prevent "index out of bounds" error.
-proc/listgetindex(list/list, index)
+/proc/listgetindex(list/list, index)
 	if(istype(list) && list.len)
 		if(isnum(index))
 			if(InRange(index,1,list.len))

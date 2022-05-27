@@ -26,11 +26,9 @@
 	return load_map_turfs(get_full_path(map_id), force_start_turf)
 
 /proc/save_map_turfs(list/turfs_list, path_to_use)
-	to_chat(world, span_warning("DEBUG: Turfs list has [turfs_list.len] to save at [path_to_use]")) // REMOVE
 
 	if(!islist(turfs_list))
 		CRASH("No turfs to save.")
-		to_chat(world, span_warning("FAILED: no turfs to save.")) // REMOVE
 
 	var/list/first_turf_coordinates = list() //doesn't need to be saved, but just in case
 	var/turf/first_turf = null
@@ -44,14 +42,11 @@
 	// Saving all turfs starts here.
 	for(var/atom/A in turfs_list)
 		if(!A.can_save())
-			to_chat(world, span_warning("FAILED: [A] can't save.")) // REMOVE
 			continue
-		to_chat(world, span_warning("DEBUG: Atom id is now [atom_id].")) // REMOVE
 
 		atom_id++
 		var/list/turf_data = list()
 		var/turf_id = unique_code()
-		to_chat(world, span_warning("DEBUG: Turf id is now [turf_id].")) // REMOVE
 		turf_data = A.get_full_persistent_object_data(turf_id)
 
 		if(1 == atom_id)

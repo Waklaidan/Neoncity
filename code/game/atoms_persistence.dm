@@ -100,14 +100,12 @@
 
 	if(isturf(src))
 		var/turf/T = src
-		to_chat(world, "[src] recognised as turf") // REMOVE
 		var/list/persistence_keys = list()
 		var/list/all_overlays = list()
 		all_overlays += T.comp_lookup["[COMSIG_ATOM_UPDATE_OVERLAYS]"]
 		if(LAZYLEN(T.comp_lookup) && all_overlays)
 			for(var/datum/element/decal/D in all_overlays)
 				if(!D.pic)
-					to_chat(world, "[src] has no decal pic for [D]!") // REMOVE
 
 					continue
 				var/list/decal_details = list("icon_state" = D.pic.icon_state,
@@ -115,16 +113,11 @@
 				"color" = D.pic.color,
 				"alpha" = D.pic.alpha)
 				persistence_keys["[unique_code("DECL")]"] = decal_details
-				to_chat(world, "[src] saved [D]!") // REMOVE
-
-		else
-			to_chat(world, "[src] has no decals?") // REMOVE
 
 
 		serialized_result["decals"] = persistence_keys
 
 
-	to_chat(world, "[src] serialized successfully in [loc]!") // REMOVE
 	return serialized_result
 
 /atom/proc/deserialize(list/saved_list, load_images = TRUE)
@@ -248,17 +241,12 @@
 
 	for(var/P in associated_atoms)
 		var/obj/O = listgetindex(associated_atoms, P)
-		to_chat(world, "[O] is O.") //REMOVE
 		if(!O)
-			to_chat(world, "Huh. O doesn't exist.") //REMOVE
 			continue
 		var/atom/host = listgetindex(associated_atoms, O.persistent_host_id)
-		to_chat(world, "[host] is host.") //REMOVE
 		if(!host)
-			to_chat(world, "Huh. host doesn't exist.") //REMOVE
 			continue
 		O.forceMove(host)
-		to_chat(world, "O [O] forcemoved to host [host]") //REMOVE
 
 	return main_obj
 
