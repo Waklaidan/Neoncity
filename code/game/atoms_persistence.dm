@@ -166,8 +166,6 @@
 	if(save_image)
 		restore_persistent_image()
 
-
-
 	on_load()
 
 	return TRUE
@@ -190,10 +188,13 @@
 		spawned_atom = new_turf
 
 	else
-		spawned_atom = new type_to_spawn(loc_to_spawn, persistence_id = spawn_atom_id)
+		spawned_atom = new type_to_spawn(loc_to_spawn)
 
 	if(!spawned_atom)
 		return
+
+	if(spawn_atom_id)
+		spawned_atom.persistent_atom_id = spawn_atom_id
 
 	spawned_atom.deserialize(saved_list)
 

@@ -166,10 +166,7 @@
  *
  * We also generate a tag here if the DF_USE_TAG flag is set on the atom
  */
-/atom/New(loc, ..., persistence_id = null)
-	if(persistence_id)
-		persistent_atom_id = persistence_id
-
+/atom/New(loc, ...)
 	//atom creation method that preloads variables at creation
 	if(GLOB.use_preloader && (src.type == GLOB._preloader.target_path))//in case the instanciated atom is creating other atoms in New()
 		world.preloader_load(src)
@@ -222,11 +219,9 @@
  * * [/turf/proc/Initialize]
  * * [/turf/open/space/proc/Initialize]
  */
-/atom/proc/Initialize(mapload, ..., persistence_id)
+/atom/proc/Initialize(mapload, ...)
 	SHOULD_NOT_SLEEP(TRUE)
 	SHOULD_CALL_PARENT(TRUE)
-	if(persistence_id)
-		persistent_atom_id = persistence_id
 	if(flags_1 & INITIALIZED_1)
 		stack_trace("Warning: [src]([type]) initialized multiple times!")
 	flags_1 |= INITIALIZED_1
