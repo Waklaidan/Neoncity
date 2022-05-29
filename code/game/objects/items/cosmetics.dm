@@ -10,6 +10,9 @@
 	/// A trait that's applied while someone has this lipstick applied, and is removed when the lipstick is removed
 	var/lipstick_trait
 
+/obj/item/lipstick/unique_vars_to_save()
+	return list("color", "open")
+
 /obj/item/lipstick/purple
 	name = "purple lipstick"
 	colour = "purple"

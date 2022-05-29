@@ -30,6 +30,10 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	var/burnt = FALSE
 	/// How long the match lasts in seconds
 
+
+/obj/item/match/unique_vars_to_save()
+	return list("lit", "burnt")
+
 /obj/item/match/process(delta_time)
 	smoketime -= delta_time * (1 SECONDS)
 	if(smoketime <= 0)
@@ -271,7 +275,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	reagents.flags |= NO_REACT
 	lit = FALSE
 	update_icon()
-	
+
 	if(ismob(loc))
 		var/mob/living/M = loc
 		to_chat(M, span_notice("Your [name] goes out."))

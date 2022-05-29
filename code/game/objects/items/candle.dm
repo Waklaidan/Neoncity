@@ -15,6 +15,9 @@
 	var/infinite = FALSE
 	var/start_lit = FALSE
 
+/obj/item/candle/unique_vars_to_save()
+	return list("wax", "lit")
+
 /obj/item/candle/Initialize(mapload)
 	. = ..()
 	if(start_lit)

@@ -71,6 +71,9 @@
 	var/pre_noise = FALSE
 	var/post_noise = FALSE
 
+/obj/item/toy/crayon/unique_vars_to_save()
+	return list("charges", "is_capped")
+
 /obj/item/toy/crayon/proc/isValidSurface(surface)
 	return istype(surface, /turf/open/floor)
 

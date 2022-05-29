@@ -93,6 +93,10 @@
 	var/list/charge_timers = list()
 	var/charge_time = 1800 //three minutes
 
+
+/obj/item/card/emag/doorjack/unique_vars_to_save()
+	return list("charges")
+
 /obj/item/card/emag/doorjack/Initialize(mapload)
 	. = ..()
 	type_whitelist = list(typesof(/obj/machinery/door/airlock), typesof(/obj/machinery/door/window/), typesof(/obj/machinery/door/firedoor)) //list of all acceptable typepaths that this device can affect
