@@ -9,6 +9,9 @@
 	w_class = WEIGHT_CLASS_TINY
 	var/credits = 0
 
+/obj/item/holochip/unique_vars_to_save()
+	return list("credits")
+
 /obj/item/holochip/Initialize(mapload, amount)
 	. = ..()
 	if(amount)

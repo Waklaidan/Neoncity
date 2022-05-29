@@ -12,6 +12,9 @@
 	var/zoom_out_amt = 5.5
 	var/zoom_amt = 10
 
+/obj/item/binoculars/unique_vars_to_save()
+	return list("zoom_out_amt", "zoom_amt")
+
 /obj/item/binoculars/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
