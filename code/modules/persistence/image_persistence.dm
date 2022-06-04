@@ -9,7 +9,7 @@
 	prefix = "IMG_"
 	extension = ".png"
 
-/datum/persistent_datum/image/proc/get_image_id(input)
+/datum/persistent_datum/image/proc/get_image_id(force_id, input)
 	if(!input)
 		return
 

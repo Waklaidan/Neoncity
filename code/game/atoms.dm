@@ -166,16 +166,13 @@
  *
  * We also generate a tag here if the DF_USE_TAG flag is set on the atom
  */
-/atom/New(loc, ..., persistence_id = null)
+/atom/New(loc, ...)
 	//atom creation method that preloads variables at creation
 	if(GLOB.use_preloader && (src.type == GLOB._preloader.target_path))//in case the instanciated atom is creating other atoms in New()
 		world.preloader_load(src)
 
 	if(datum_flags & DF_USE_TAG)
 		GenerateTag()
-
-	if(persistence_id)
-		persistent_atom_id = persistence_id
 
 	var/do_initialize = SSatoms.initialized
 	if(do_initialize != INITIALIZATION_INSSATOMS)

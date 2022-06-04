@@ -6,6 +6,9 @@
 	inhand_icon_state = "radio"
 	var/uses = 1
 
+/obj/item/choice_beacon/unique_vars_to_save()
+	return list("uses")
+
 /obj/item/choice_beacon/attack_self(mob/user)
 	if(canUseBeacon(user))
 		generate_options(user)

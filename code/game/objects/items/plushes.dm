@@ -35,6 +35,9 @@
 	var/normal_desc
 	//--end of love :'(--
 
+/obj/item/toy/plush/unique_vars_to_save()
+	return list("gender")
+
 /obj/item/toy/plush/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/squeak, squeak_override)
@@ -615,7 +618,7 @@
 		return ..()
 	if(splat)
 		to_chat(user, span_notice("[src] doesn't seem to be able to go hard right now."))
-		return	
+		return
 	if(going_hard)
 		to_chat(user, span_notice("[src] is already going too hard!"))
 		return

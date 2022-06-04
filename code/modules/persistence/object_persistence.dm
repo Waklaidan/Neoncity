@@ -8,12 +8,12 @@
 	path = PERSISTENT_OBJECT_DIRECTORY
 	prefix = "OBJ_"
 
-/datum/persistent_datum/object/save_persistent_data(obj/O, force_id)
+/datum/persistent_datum/object/save_persistent_data(force_id, obj/O)
 
 	var/list/json_data = O.get_full_persistent_object_data(force_id)
 
 
-	var/output_id = generate_unique_code(O.persistent_atom_id)
+	var/output_id = generate_unique_code()
 
 	if(!json_data)
 		return
@@ -43,3 +43,9 @@
 
 	return main_obj
 
+
+/datum/persistent_datum/object/buildmode
+	name = "Buildmode Object Persistence"
+	id = PERSISTENCE_OBJECT_BUILDMODE
+	path = PERSISTENT_OBJECT_BUILDMODE_DIRECTORY
+	prefix = "OBJ_"

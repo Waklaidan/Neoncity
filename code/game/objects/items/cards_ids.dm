@@ -102,6 +102,10 @@
 	/// Boolean value. If TRUE, the [Intern] tag gets prepended to this ID card when the label is updated.
 	var/is_intern = FALSE
 
+
+/obj/item/card/id/unique_vars_to_save()
+	return list("access", "assignment", "holopay_name")
+
 /obj/item/card/id/Initialize(mapload)
 	. = ..()
 

@@ -28,6 +28,9 @@
 	force_string = "robust... against germs"
 	var/uses = 100
 
+/obj/item/soap/unique_vars_to_save()
+	return list("uses")
+
 /obj/item/soap/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/slippery, 80)

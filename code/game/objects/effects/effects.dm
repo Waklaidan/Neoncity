@@ -9,6 +9,8 @@
 	vis_flags = VIS_INHERIT_PLANE
 	blocks_emissive = EMISSIVE_BLOCK_GENERIC
 
+	dont_save = TRUE
+
 /obj/effect/attackby(obj/item/weapon, mob/user, params)
 	if(SEND_SIGNAL(weapon, COMSIG_ITEM_ATTACK_EFFECT, src, user, params) & COMPONENT_NO_AFTERATTACK)
 		return TRUE

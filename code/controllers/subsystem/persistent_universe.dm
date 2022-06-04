@@ -24,12 +24,12 @@ SUBSYSTEM_DEF(persistent_universe) // Similar to persistence subsystem but does 
 
 // common use procs
 
-/datum/controller/subsystem/persistent_universe/proc/load_persistent_file(persistence_type, file_id, meta1, meta2)
+/datum/controller/subsystem/persistent_universe/proc/load_persistent_data(persistence_type, file_id, meta1)
 	var/datum/persistent_datum/D = get_persistence_system_by_id(persistence_type)
 	if(!D)
 		return FALSE
 
-	return D.load_persistent_data(file_id, meta1, meta2)
+	return D.load_persistent_data(file_id, meta1)
 
 /datum/controller/subsystem/persistent_universe/proc/check_persistent_file(persistence_type, file_id)
 	var/datum/persistent_datum/D = get_persistence_system_by_id(persistence_type)
@@ -50,4 +50,4 @@ SUBSYSTEM_DEF(persistent_universe) // Similar to persistence subsystem but does 
 	if(!D)
 		return FALSE
 
-	return D.save_persistent_data(file_id, meta1, meta2)
+	return D.save_persistent_data(file_id, input)

@@ -1,10 +1,9 @@
 /atom
 	var/image_id = null // Used for icon persistence.
-	var/tmp/persistent_host_id	= null // temp var used for saving.
-	var/tmp/persistent_atom_id	= null // temp var used for saving
-
+	var/persistent_host_id	= null
+	var/persistent_atom_id	= null
 	var/dont_save = FALSE
-	var/save_image = FALSE
+	var/save_image = FALSE // only use this when the image will change in-game and you want it to save
 	var/save_contents = TRUE
 	var/save_reagents = TRUE
 	var/save_in_lots = TRUE
@@ -36,6 +35,16 @@
 /atom/proc/has_been_saved() // to ensure the game knows upon initialization that this is not a fresh obj
 	return persistent_atom_id
 
+/atom/proc/ensure_id(prefix) // to make sure this object has a persistent_atom_id, if not, it will make one.
+// will also return the current persistent atom id
+	if(!persistent_atom_id)
+		generate_persistence_id(prefix)
+	return persistent_atom_id
+
+/atom/proc/generate_persistence_id(prefix)
+	persistent_atom_id = unique_code(prefix)
+	return persistent_atom_id
+
 
 /atom/proc/save_persistent_image(overwrite_image_id = null)
 	var/used_image_id = overwrite_image_id ? overwrite_image_id : image_id
@@ -49,13 +58,15 @@
 	if(!used_image_id)
 		return
 	if(SSpersistent_universe && used_image_id)
-		var/icon/I = SSpersistent_universe.load_persistent_file(PERSISTENCE_IMAGE, used_image_id)
+		var/icon/I = SSpersistent_universe.load_persistent_data(PERSISTENCE_IMAGE, used_image_id)
 		if(!I)
 			return FALSE
 		icon = I
 		return I
 
 /atom/proc/serialize(save_images = TRUE, persistence_id = null)
+	on_save()
+
 	var/list/serialized_result = list()
 
 	serialized_result["type"] = path_to_save()
@@ -72,14 +83,12 @@
 
 	if(persistence_id)
 		persistent_atom_id = persistence_id
-	if(!persistent_atom_id)
-		persistent_atom_id = unique_code()
+	else
+		ensure_id()
 
 	var/atom/A = loc
 	if(isatom(A))
-		if(!A.persistent_atom_id)
-			A.persistent_atom_id = unique_code()
-		persistent_host_id = A.persistent_atom_id
+		persistent_host_id = A.ensure_id()
 
 	serialized_result["atom_id"] = persistent_atom_id
 	serialized_result["host_id"] = persistent_host_id
@@ -88,17 +97,25 @@
 		serialized_result["vars"] = all_vars
 	if(LAZYLEN(all_reagents))
 		serialized_result["reagents"] = all_reagents
-	if(isturf(src) && comp_lookup)
-		var/list/decal_data = list()
-		if(length(comp_lookup[COMSIG_ATOM_UPDATE_OVERLAYS]))
-			for(var/datum/element/decal/D in comp_lookup[COMSIG_ATOM_UPDATE_OVERLAYS])
-				var/decal_id = 0
-				decal_id++
-				decal_data["[decal_id]"] = D.persistence_key
 
-			if(LAZYLEN(decal_data))
-				serialized_result["decals"] = decal_data
+	if(isturf(src))
+		var/turf/T = src
+		var/list/persistence_keys = list()
+		var/list/all_overlays = list()
+		all_overlays += T.comp_lookup["[COMSIG_ATOM_UPDATE_OVERLAYS]"]
+		if(LAZYLEN(T.comp_lookup) && all_overlays)
+			for(var/datum/element/decal/D in all_overlays)
+				if(!D.pic)
 
+					continue
+				var/list/decal_details = list("icon_state" = D.pic.icon_state,
+				"dir" = D.pic.dir,
+				"color" = D.pic.color,
+				"alpha" = D.pic.alpha)
+				persistence_keys["[unique_code("DECL")]"] = decal_details
+
+
+		serialized_result["decals"] = persistence_keys
 
 
 	return serialized_result
@@ -119,6 +136,10 @@
 	if(the_host_id)
 		persistent_host_id = the_host_id
 
+	if(save_contents) // deletes contents in preparation.
+		for(var/atom/A in get_saveable_contents())
+			qdel(A)
+
 	if(LAZYLEN(all_vars))
 		for(var/V in all_vars)
 			vars[V] = listgetindex(all_vars,V)
@@ -134,20 +155,18 @@
 					continue
 				reagents.add_reagent(reagent_path, reagent_amount)
 
-	if(LAZYLEN(all_decals))
+	if(isturf(src))
+		var/turf/T = src
 		for(var/D in all_decals)
-			var/decal_entry = all_decals["[D]"]
-			var/decal_path = decal_entry["decal_type"]
-			if(!decal_path)
+			var/decals = all_decals[D]
+			if(!islist(decals))
 				continue
-			var/decal_dir = decal_entry["dir"]
-			var/decal_color = decal_entry["color"]
-			var/obj/effect/turf_decal/new_decal = new decal_path(src)
-			new_decal.dir = decal_dir
-			new_decal.color = decal_color
+			T.AddElement(/datum/element/decal, 'icons/turf/decals.dmi', decals["icon_state"], decals["dir"], null, null, decals["alpha"], decals["color"], null, FALSE, null)
 
 	if(save_image)
 		restore_persistent_image()
+
+	on_load()
 
 	return TRUE
 
@@ -169,10 +188,13 @@
 		spawned_atom = new_turf
 
 	else
-		spawned_atom = new type_to_spawn(loc_to_spawn, persistence_id = spawn_atom_id)
+		spawned_atom = new type_to_spawn(loc_to_spawn)
 
 	if(!spawned_atom)
 		return
+
+	if(spawn_atom_id)
+		spawned_atom.persistent_atom_id = spawn_atom_id
 
 	spawned_atom.deserialize(saved_list)
 
@@ -188,7 +210,7 @@
 /atom/proc/get_full_persistent_object_data(id_to_use)
 	var/json_data = list()
 
-	var/force_id = id_to_use ? id_to_use : unique_code("OBJ_")
+	var/force_id = id_to_use ? id_to_use : ensure_id()
 
 	json_data["main"] = serialize(persistence_id = force_id)
 
@@ -196,9 +218,7 @@
 	var/list/content_list = list()
 
 	for(var/obj/I in all_saveable_contents)
-
-		var/item_id = id_to_use ? id_to_use : unique_code()
-
+		var/item_id = I.persistent_atom_id ? I.persistent_atom_id : I.ensure_id()
 		content_list["[item_id]"] = I.serialize(item_id)
 
 	json_data["contents"] = content_list
@@ -207,12 +227,14 @@
 
 /proc/unpack_full_persistent_object_data(list/full_json, location_to_spawn)
 	var/obj/main_obj = deserialize_to_atom(full_json["main"], location_to_spawn)
+	var/list/associated_atoms = list()
+
+	associated_atoms[main_obj.persistent_atom_id] = main_obj
 
 	if(!main_obj)
 		CRASH("Unpack persistent object: No object spawned.")
 
 	var/content_atoms = full_json["contents"]
-	var/list/associated_atoms = list()
 
 	for(var/V in content_atoms)
 		var/obj/spawn_obj = deserialize_to_atom(content_atoms[V], location_to_spawn)
@@ -222,7 +244,7 @@
 		var/obj/O = listgetindex(associated_atoms, P)
 		if(!O)
 			continue
-		var/atom/host = associated_atoms["[O.persistent_host_id]"]
+		var/atom/host = listgetindex(associated_atoms, O.persistent_host_id)
 		if(!host)
 			continue
 		O.forceMove(host)
